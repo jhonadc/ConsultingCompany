@@ -1,7 +1,7 @@
 // src/app/regulations/page.jsx
 import Link from 'next/link'
-import { Container } from '@/components/Container'
 import { SectionIntro } from '@/components/SectionIntro'
+import { Container } from '@/components/Container'
 
 const regulations = [
   {
@@ -17,7 +17,7 @@ const regulations = [
   {
     title: 'MiCAR',
     slug: 'micar',
-    description: 'Markets in Crypto-Assets Regulation for EU-wide digital asset compliance.',
+    description: 'Markets in Crypto-Assets Regulation for EU-wide digital-asset compliance.',
   },
   {
     title: 'Medical Device Regulation (MDR)',
@@ -39,17 +39,43 @@ export default function RegulationsIndex() {
         </p>
       </SectionIntro>
 
-      <Container className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {regulations.map((reg) => (
-          <Link
-            key={reg.slug}
-            href={`/regulations/${reg.slug}`}
-            className="block rounded-3xl p-6 ring-1 ring-neutral-950/10 hover:bg-neutral-50"
-          >
-            <h3 className="font-display text-2xl font-semibold">{reg.title}</h3>
-            <p className="mt-2 text-neutral-600">{reg.description}</p>
-          </Link>
-        ))}
+      <Container className="mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {regulations.map((reg) => {
+            const hoverRing =
+              reg.slug === 'aiact' ? 'hover:ring-purple-500' :
+              reg.slug === 'gdpr'  ? 'hover:ring-blue-500'   :
+              reg.slug === 'micar' ? 'hover:ring-amber-700' :
+                                     'hover:ring-green-500'
+
+            return (
+              <Link
+                key={reg.slug}
+                href={`/regulations/${reg.slug}`}
+                className={`
+                  group
+                  block
+                  aspect-square
+                  rounded-2xl
+                  bg-white
+                  ring-1 ring-neutral-950/10
+                  shadow-sm
+                  flex flex-col justify-center items-center
+                  p-6 text-center
+                  transition
+                  ${hoverRing}
+                `}
+              >
+                <h4 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-800">
+                  {reg.title}
+                </h4>
+                <p className="mt-2 text-sm text-neutral-600 hidden sm:block">
+                  {reg.description}
+                </p>
+              </Link>
+            )
+          })}
+        </div>
       </Container>
     </>
   )

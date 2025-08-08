@@ -19,6 +19,7 @@ import logoPhobiaLight from '@/images/clients/mica/logo-light.svg'
 import logoUnseal from '@/images/clients/aiact/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
+import { ColorDivider } from '@/components/ColorDivider'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -40,11 +41,15 @@ const regulations = [
 
 function Regulations() {
   return (
-    <>
+    <section className="mt-24 sm:mt-32 lg:mt-40">
       <SectionIntro
-        eyebrow="Regulations"
+        // eyebrow is now a Link
+        eyebrow={
+          <Link href="/regulations" className="hover:underline">
+            Regulations
+          </Link>
+        }
         title="EU Rules We Specialize In"
-        className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
           From data privacy to AI oversight, explore our expertise across key EU regulations.
@@ -65,17 +70,10 @@ function Regulations() {
                 key={reg.slug}
                 href={`/regulations/${reg.slug}`}
                 className={`
-                  group
-                  block
-                  aspect-square
-                  rounded-2xl
-                  bg-white
-                  ring-1 ring-neutral-950/10
-                  shadow-sm
+                  group block aspect-square rounded-2xl bg-white
+                  ring-1 ring-neutral-950/10 shadow-sm
                   flex flex-col justify-center items-center
-                  p-6 text-center
-                  transition
-                  ${hoverRing}
+                  p-6 text-center transition ${hoverRing}
                 `}
               >
                 <h4 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-800">
@@ -89,7 +87,7 @@ function Regulations() {
           })}
         </div>
       </Container>
-    </>
+    </section>
   )
 }
 
@@ -179,7 +177,8 @@ function CaseStudies({ caseStudies }) {
   )
 }
 
-function Services() {
+
+export function Services() {
   return (
     <>
       <SectionIntro
@@ -188,12 +187,14 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We translate sprawling legislative texts into plain-language tasks,
+          We translate sprawling legislative texts into plain‐language tasks,
           automated controls and training that teams actually remember.
         </p>
       </SectionIntro>
+
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
+          {/* Image column */}
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
@@ -203,36 +204,70 @@ function Services() {
               />
             </FadeIn>
           </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="AI Act Literacy & Risk Assessment">
-              We run full risk-tier gap analyses, draft conformity files and
-              deliver hands-on workshops that turn your team into AI-Act-ready
-              practitioners.
-            </ListItem>
+          {/* List column */}
+<ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
+  <li>
+    <h3 className="font-display text-lg font-semibold text-neutral-900">
+      AI Act Literacy & Risk Assessment
+    </h3>
+    <p className="mt-2 text-neutral-600">
+      We run full risk-tier gap analyses…
+    </p>
+    <ColorDivider
+      primaryClass="bg-purple-700"
+      secondaryClass="bg-purple-200"
+      primaryWidth="w-16"    // feel free to widen if you like
+    />
+  </li>
 
-            <ListItem title="GDPR Privacy Engineering">
-              End-to-end DPIAs, user-friendly privacy notices, and
-              retention/deletion schedules embedded in every sprint—leaving you
-              with audit-ready evidence packs.
-            </ListItem>
+  <li>
+    <h3 className="font-display text-lg font-semibold text-neutral-900">
+      GDPR Privacy Engineering
+    </h3>
+    <p className="mt-2 text-neutral-600">
+      End-to-end DPIAs, user-friendly privacy notices…
+    </p>
+    <ColorDivider
+      primaryClass="bg-blue-700"
+      secondaryClass="bg-blue-200"
+    />
+  </li>
 
-            <ListItem title="MiCA Digital-Asset Compliance">
-              Token classification, white-paper drafting and CASP licence
-              dossiers so you can launch or list crypto assets EU-wide with zero
-              last-minute surprises.
-            </ListItem>
+  <li>
+    <h3 className="font-display text-lg font-semibold text-neutral-900">
+      MiCA Digital-Asset Compliance
+    </h3>
+    <p className="mt-2 text-neutral-600">
+      Token classification, white-paper drafting…
+    </p>
+    <ColorDivider
+      primaryClass="bg-amber-700"
+      secondaryClass="bg-amber-200"
+    />
+  </li>
 
-            <ListItem title="Integrated EU Control Framework">
-              A single control matrix covering AI Act, GDPR, MiCA, DORA, Data
-              Act, ESPR and CSRD/CSDDD—mapped to clear RACI ownership and
-              automated checks.
-            </ListItem>
-          </List>
+  <li>
+    <h3 className="font-display text-lg font-semibold text-neutral-900">
+      Integrated EU Control Framework
+    </h3>
+    <p className="mt-2 text-neutral-600">
+      A single control matrix covering AI Act, GDPR, MiCA, …
+    </p>
+    <ColorDivider
+      primaryClass="bg-green-700"
+      secondaryClass="bg-green-200"
+    />
+  </li>
+</ul>
         </div>
       </Container>
     </>
   )
 }
+
+
+
+
 
 export const metadata = {
   description:

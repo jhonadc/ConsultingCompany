@@ -1,4 +1,3 @@
-// src/app/regulations/gdpr/page.jsx
 import { Container } from '@/components/Container'
 import { SectionIntro } from '@/components/SectionIntro'
 import GdprContent from './gdpr.mdx'
@@ -11,10 +10,12 @@ export const metadata = {
 export default function GdprPage() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <SectionIntro title="GDPR" />
-      <article className="prose mx-auto mt-8 prose-neutral">
-        <GdprContent />
-      </article>
+      <div className="border-t-4 border-blue-200 pt-6">
+        <SectionIntro title="GDPR" />
+        <article className="prose mx-auto mt-8 prose-neutral">
+          <GdprContent />
+        </article>
+      </div>
     </Container>
   )
 }
