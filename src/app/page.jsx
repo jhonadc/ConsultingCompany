@@ -31,13 +31,79 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
+const regulations = [
+  { title: 'AI Act', slug: 'aiact', description: 'Europe’s groundbreaking regulation for trustworthy AI systems.' },
+  { title: 'GDPR', slug: 'gdpr', description: 'EU’s General Data Protection Regulation — protecting personal data since 2018.' },
+  { title: 'MiCAR', slug: 'micar', description: 'Markets in Crypto-Assets Regulation for EU-wide digital-asset compliance.' },
+  { title: 'Medical Device Regulation (MDR)', slug: 'mdr', description: 'EU’s MDR framework for safety and performance of medical devices.' },
+]
+
+function Regulations() {
+  return (
+    <>
+      <SectionIntro
+        eyebrow="Regulations"
+        title="EU Rules We Specialize In"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        <p>
+          From data privacy to AI oversight, explore our expertise across key EU regulations.
+        </p>
+      </SectionIntro>
+
+      <Container className="mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {regulations.map((reg) => {
+            const hoverRing =
+              reg.slug === 'gdpr'  ? 'hover:ring-blue-500'   :
+              reg.slug === 'aiact' ? 'hover:ring-purple-500' :
+              reg.slug === 'mdr'   ? 'hover:ring-green-500'  :
+                                     'hover:ring-amber-700'
+
+            return (
+              <Link
+                key={reg.slug}
+                href={`/regulations/${reg.slug}`}
+                className={`
+                  group
+                  block
+                  aspect-square
+                  rounded-2xl
+                  bg-white
+                  ring-1 ring-neutral-950/10
+                  shadow-sm
+                  flex flex-col justify-center items-center
+                  p-6 text-center
+                  transition
+                  ${hoverRing}
+                `}
+              >
+                <h4 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-800">
+                  {reg.title}
+                </h4>
+                <p className="mt-2 text-sm text-neutral-600 hidden sm:block">
+                  {reg.description}
+                </p>
+              </Link>
+            )
+          })}
+        </div>
+      </Container>
+    </>
+  )
+}
+
+
+
+
+
 function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We&apos;osve worked with hundreds of amazing people
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -63,10 +129,10 @@ function Clients() {
 function CaseStudies({ caseStudies }) {
   return (
     <>
-      <SectionIntro title="EU Regulations" className="mt-24 sm:mt-32 lg:mt-40">
+      <SectionIntro title="EU Regulations and Work Cases" className="mt-24 sm:mt-32 lg:mt-40">
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
+          We believe technology is the answer to the world&apos;oss greatest
+          challenges. It&apos;oss also the cause, so we find ourselves in bit of a
           catch 22 situation.
         </p>
       </SectionIntro>
@@ -96,7 +162,7 @@ function CaseStudies({ caseStudies }) {
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>EU Regulation</span>
+                  <span>EU Regulation and Work Cases</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -191,7 +257,7 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
-
+      <Regulations />
       <Clients />
 
       <CaseStudies caseStudies={caseStudies} />
