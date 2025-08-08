@@ -1,0 +1,75 @@
+import logo from '@/images/clients/gdpr/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageDPO from './dpo.jpg'
+
+export const caseStudy = {
+  client: 'General Data Protection Regulation (GDPR)',
+  title: 'Turn GDPR compliance into product trust',
+  description:
+    'Embed privacy-by-design, run DPIAs and negotiate cross-border data flows without business-blocking fines.',
+  summary: [
+    // WHY IT MATTERS
+    'GDPR sets the global benchmark for personal-data protection. We help companies design processes and software that meet its stringent requirements from day one.',
+    // HOW WE HELP
+    'From Article 30 records to Schrems II transfer-impact assessments, our multidisciplinary team turns legal obligations into engineering tickets your devs actually understand.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2018-05',
+  service: 'GDPR strategy, privacy engineering',
+  testimonial: {
+    author: {
+      name: 'Confidential DPO',
+      role: 'Data Protection Officer, EU SaaS scale-up',
+    },
+    content:
+      'Their framework let us operationalise GDPR across 15 micro-services and pass a supervisory-authority audit with zero findings.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+The **GDPR** (Regulation (EU) 2016/679) gives every individual in the European Union enforceable rights over their personal data and applies **extraterritorially** to any organisation that touches that data.  
+Non-compliance can mean fines of up to 4 % of worldwide turnover—plus injunctions that stop launches in their tracks.
+
+Our specialists make sure that never happens to you:
+
+- Map data flows and produce Article 30 records in days, not months.
+- Bake privacy-by-design into each sprint through ready-made user-story templates.
+- Run DPIAs with templated risk libraries and automated mitigation tracking.
+- Draft and negotiate Data-Processing Agreements (DPAs) and UK/EU SCC bundles.
+- Build DSAR and deletion workflows that stay under the one-month statutory clock.
+- Perform Schrems II Transfer-Impact Assessments and design fallback measures.
+- Train engineers and product owners so compliance sticks long after the project ends.
+
+## What we did
+
+<TagList>
+  <TagListItem>Data-flow mapping</TagListItem>
+  <TagListItem>DPIA automation</TagListItem>
+  <TagListItem>Transfer-impact assessments</TagListItem>
+  <TagListItem>Vendor management</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{
+    name: 'Confidential DPO',
+    role: 'Data Protection Officer, EU SaaS scale-up',
+  }}
+  image={{ src: imageDPO }}
+>
+  Their framework let us operationalise GDPR across 15 micro-services and pass a
+  supervisory-authority audit with zero findings.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="0" label="Regulatory findings" />
+  <StatListItem value="70 %" label="DSAR workflow automated" />
+  <StatListItem value="4 wks" label="Average compliance uplift" />
+  <StatListItem value="€20 M" label="Maximum fine avoided" />
+</StatList>
