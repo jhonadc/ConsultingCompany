@@ -149,7 +149,7 @@ export default async function Work() {
         <p>
           We empower leaders to navigate AI compliance with confidence.
           Combining legal expertise and technical insight, we offer AI Act
-          training, masterclasses, and consultancy to ensure your organization's
+          training, masterclasses, and consultancy to ensure your organization&apos;s
           AI systems are not only compliant but also ethically sound and
           transparent. Our approach goes beyond documentation, fostering a
           culture of informed decision-making and responsible AI deployment.

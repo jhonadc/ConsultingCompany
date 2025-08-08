@@ -54,7 +54,7 @@ function Discover() {
           what makes their business tick.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
+          Our team of private investigators shadow the company director&apos;s for
           several weeks while our account managers focus on going through their
           trash. Our senior security experts then perform social engineering
           hacks to gain access to their{' '}
@@ -97,7 +97,7 @@ function Build() {
         <p>
           Each client is assigned a key account manager to keep lines of
           communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
+          They act as a buffer between the client&apos;s incessant nagging and the
           development team who are hard at work scouring open source projects
           for code to re-purpose.
         </p>
@@ -159,7 +159,7 @@ function Deliver() {
       <List className="mt-8">
         <ListItem title="Testing">
           Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+          if our tests weren&apos;t as porous as a sieve.
         </ListItem>
         <ListItem title="Infrastructure">
           To ensure reliability we only use the best Digital Ocean droplets that
@@ -242,7 +242,7 @@ export default function Process() {
         <p>
           We believe in efficiency and maximizing our resources to provide the
           best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          the same five projects we&apos;ve been developing for the past decade.
         </p>
       </PageIntro>
 

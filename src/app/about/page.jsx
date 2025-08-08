@@ -42,7 +42,7 @@ function Culture() {
             are allowed to have LinkedIn profiles.
           </GridListItem>
           <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
+            We don&apos;t care when our team works just as long as they are working
             every waking second.
           </GridListItem>
           <GridListItem title="Compassion" invert>
@@ -200,12 +200,12 @@ export default async function About() {
             Founded by a lawyer-engineer who saw generic consultancies recycle
             template decks, we built a practice that delivers board-level
             masterclasses,  AI-literacy sessions, and system-specific risk
-            audits—well ahead of the Act’s first prohibitions in February 2025
+            audits—well ahead of the Act&apos;s first prohibitions in February 2025
             and the high-risk obligations that
             follow in 2026.
           </p>
           <p>
-            Each  aligns with the Act’s mandatory training requirements
+            Each  aligns with the Act&apos;s mandatory training requirements
             and culminates in an independent compliance roadmap, ensuring your
             teams move from awareness to action while meeting the new
             AI-literacy standards set out for
