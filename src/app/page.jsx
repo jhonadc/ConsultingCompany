@@ -20,16 +20,20 @@ import logoUnseal from '@/images/clients/aiact/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 import { ColorDivider } from '@/components/ColorDivider'
+import BFG from '@/images/clients/logos/BFG.svg'
+import bihlogo from '@/images/clients/logos/bihlogo.svg'
+import chariteLogo from '@/images/clients/logos/chariteLogo.png'
+import krisenchat from '@/images/clients/logos/krisenchat.svg'
+import WSLaw from '@/images/clients/logos/WSLaw.svg'
+import zib from '@/images/clients/logos/zib.svg'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['BFG', BFG],
+  ['Charité Accelerator', bihlogo],
+  ['Charité Hospital', chariteLogo],
+  ['Krisenchat', krisenchat],
+  ['WS Law', WSLaw],
+  ['Zuse Institute Berlin', zib],
 ]
 
 const regulations = [
@@ -124,7 +128,7 @@ function Clients() {
   )
 }
 
-function CaseStudies({ caseStudies }) {
+{/* function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro title="EU Regulations and Work Cases" className="mt-24 sm:mt-32 lg:mt-40">
@@ -175,7 +179,7 @@ function CaseStudies({ caseStudies }) {
       </Container>
     </>
   )
-}
+} */}
 
 
 export function Services() {
@@ -293,9 +297,10 @@ export default async function Home() {
         </FadeIn>
       </Container>
       <Regulations />
+      <Services />
       <Clients />
 
-      <CaseStudies caseStudies={caseStudies} />
+      {/* <CaseStudies caseStudies={caseStudies} /> */}
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -306,8 +311,6 @@ export default async function Home() {
         closely, making us feel very confident and sure we made the best choice.
         The results are outstanding.
       </Testimonial>
-
-      <Services />
 
       <ContactSection />
     </>

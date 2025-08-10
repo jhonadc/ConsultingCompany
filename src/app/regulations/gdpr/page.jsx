@@ -1,6 +1,7 @@
 import { Container } from '@/components/Container'
 import { SectionIntro } from '@/components/SectionIntro'
 import GdprContent from './gdpr.mdx'
+import { BackButton } from '@/components/BackButton' 
 
 export const metadata = {
   title: 'GDPR – Conforma Studio',
@@ -10,6 +11,7 @@ export const metadata = {
 export default function GdprPage() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <BackButton />
       <div className="border-t-4 border-blue-200 pt-6">
         <SectionIntro title="GDPR" />
         <article className="prose mx-auto mt-8 prose-neutral">

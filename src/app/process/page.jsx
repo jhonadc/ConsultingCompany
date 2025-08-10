@@ -1,3 +1,4 @@
+
 import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -45,27 +46,18 @@ function Section({ title, image, children }) {
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="Assess" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          We begin with a structured assessment to understand your{' '}
+          <strong className="font-semibold text-neutral-950">business model</strong>, risk appetite, and growth plans. Together we map processes and data flows to see where compliance can enable the product — not slow it down.
         </p>
         <p>
-          Our team of private investigators shadow the company director&apos;s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          Through focused stakeholder sessions we inventory AI use cases and data processing, identify applicable obligations (AI Act, GDPR, ePrivacy, and sector rules), and surface quick wins alongside critical gaps.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          You receive a concise findings brief and a prioritized{' '}
+          <strong className="font-semibold text-neutral-950">implementation plan</strong> with effort, impact, and timeline estimates.
         </p>
       </div>
 
@@ -73,12 +65,12 @@ function Discover() {
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Stakeholder interviews</TagListItem>
+        <TagListItem>System &amp; data inventory</TagListItem>
+        <TagListItem>Regulatory mapping (AI Act, GDPR)</TagListItem>
+        <TagListItem>Risk screening &amp; DPIA scoping</TagListItem>
+        <TagListItem>Gap analysis</TagListItem>
+        <TagListItem>Prioritized roadmap</TagListItem>
       </TagList>
     </Section>
   )
@@ -86,35 +78,24 @@ function Discover() {
 
 function Build() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Implement" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Using the roadmap, we implement the controls and documentation that matter: AI policy, risk management and human oversight, data protection by design, vendor governance, and clear approval workflows.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client&apos;s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          We set up a lightweight AI Management System (ISO/IEC 42001–aligned), produce the technical documentation and risk-management file (Annex IV), and prepare DPIAs and records of processing where relevant. Work runs in short sprints with weekly check-ins and visible progress.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Your team keeps ownership — we co-create templates, automate where possible, and embed the process into your existing tools so it scales with you.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'General Counsel', role: 'Growth-stage SaaS' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
+        Clear milestones, zero surprises, and audit-ready documents our external auditors actually used.
       </Blockquote>
     </Section>
   )
@@ -122,34 +103,17 @@ function Build() {
 
 function Deliver() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Sustain" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          Before go-live we validate controls, align owners, and finalize operating procedures and KPIs. The goal is durability: compliance that holds under real-world pressure.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
+          We run incident tabletop exercises, verify human-in-the-loop oversight, and check vendor and data-transfer safeguards end-to-end.
         </p>
         <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          At handover you receive an audit-ready package and a pragmatic{' '}
+          <strong className="font-semibold text-neutral-950">maintenance plan</strong> with cadences and checklists, plus options for ongoing support.
         </p>
       </div>
 
@@ -157,17 +121,14 @@ function Deliver() {
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren&apos;t as porous as a sieve.
+        <ListItem title="Validation &amp; assurance">
+          Control testing, documentation review, and traceability checks with evidence indexed for audits.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="Governance infrastructure">
+          Registers, policies, training, ticketing workflows, and versioned templates wired into your tools.
         </ListItem>
         <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+          Ongoing updates for regulatory change, ad-hoc reviews, and on-call help during audits and client diligence.
         </ListItem>
       </List>
     </Section>
@@ -186,42 +147,32 @@ function Values() {
 
       <SectionIntro
         eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        title="Pragmatic, rigorous, human"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          We combine legal precision with engineering pragmatism. Vendor-neutral, evidence-based, and focused on outcomes your business can measure — not paperwork for its own sake.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            Audit-ready records, clear rationale, and end-to-end traceability across decisions, models, and data.
           </GridListItem>
           <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            Time-boxed sprints, right-sized deliverables, and reusable assets that lower the total cost of compliance.
           </GridListItem>
           <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            Frameworks that fit your sector, size, and risk profile — never one-size-fits-all.
           </GridListItem>
           <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+            Direct advice, transparent trade-offs, and clear no-go calls when risks outweigh rewards.
           </GridListItem>
           <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            Partnership mindset: we safeguard your reputation and help teams operate confidently under scrutiny.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            We track regulatory change, adversarial trends, and new standards to keep your program future-proof.
           </GridListItem>
         </GridList>
       </Container>
@@ -232,7 +183,7 @@ function Values() {
 export const metadata = {
   title: 'Our Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'A Berlin-based compliance boutique delivering clear, audit-ready outcomes through a pragmatic, client-first process.',
 }
 
 export default function Process() {
@@ -240,9 +191,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we&apos;ve been developing for the past decade.
+          Compliance should enable growth. Our process aligns legal, technical, and product teams to reduce risk and unlock speed — without bureaucracy.
         </p>
       </PageIntro>
 
@@ -258,3 +207,4 @@ export default function Process() {
     </>
   )
 }
+
