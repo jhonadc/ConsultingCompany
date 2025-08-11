@@ -20,6 +20,7 @@ import krisenchat from '@/images/clients/logos/krisenchat.svg'
 import WSLaw from '@/images/clients/logos/WSLaw.svg'
 import zib from '@/images/clients/logos/zib.svg'
 import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
+import BFGImage from '@/images/clients/logos/BFGImage.png'
 
 const clients = [
   ['BFG', BFG],
@@ -37,47 +38,68 @@ const regulations = [
   { title: 'Medical Device Regulation (MDR)', slug: 'mdr', description: 'EU’s MDR framework for safety and performance of medical devices.' },
 ]
 
+
+
 function Regulations() {
   return (
     <section className="mt-24 sm:mt-32 lg:mt-80">
       <SectionIntro
-        // eyebrow is now a Link
-        eyebrow={
-          <Link href="/regulations" className="hover:underline">
-            Regulations
-          </Link>
-        }
+        eyebrow={<Link href="/regulations" className="hover:underline">Regulations</Link>}
         title="EU Rules We Specialize In"
       >
-        <p>
-          From data privacy to AI oversight, explore our expertise across key EU regulations.
-        </p>
+        <p>From data privacy to AI oversight, explore our expertise across key EU regulations.</p>
       </SectionIntro>
 
-      <Container className="mt-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <Container className="mt-12">
+        {/* Mobile: stacked pills */}
+        <nav
+          aria-label="Regulations"
+          className="md:hidden flex flex-col gap-3 items-stretch"
+        >
+          {regulations.map((reg) => {
+            const border =
+              reg.slug === 'gdpr'  ? 'border-blue-500'   :
+              reg.slug === 'aiact' ? 'border-purple-500' :
+              reg.slug === 'mdr'   ? 'border-green-500'  :
+                                     'border-amber-700'
+            return (
+              <Link
+                key={reg.slug}
+                href={`/regulations/${reg.slug}`}
+                className={`group inline-flex items-center justify-between
+                            w-full rounded-full border ${border}
+                            bg-white/80 px-5 py-3 text-sm text-neutral-700
+                            shadow-sm backdrop-blur-sm transition-all duration-200
+                            hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
+              >
+                <span>{reg.title}</span>
+                <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
+              </Link>
+            )
+          })}
+        </nav>
+
+        {/* Desktop/tablet: original cards */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
           {regulations.map((reg) => {
             const hoverRing =
               reg.slug === 'gdpr'  ? 'hover:ring-blue-500'   :
               reg.slug === 'aiact' ? 'hover:ring-purple-500' :
               reg.slug === 'mdr'   ? 'hover:ring-green-500'  :
                                      'hover:ring-amber-700'
-
             return (
               <Link
                 key={reg.slug}
                 href={`/regulations/${reg.slug}`}
-                className={`
-                  group block aspect-square rounded-2xl bg-white
-                  ring-1 ring-neutral-950/10 shadow-sm
-                  flex flex-col justify-center items-center
-                  p-6 text-center transition ${hoverRing}
-                `}
+                className={`group block md:aspect-square rounded-2xl bg-white
+                            ring-1 ring-neutral-950/10 shadow-sm
+                            flex flex-col justify-center items-center
+                            p-6 text-center transition ${hoverRing}`}
               >
                 <h4 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-800">
                   {reg.title}
                 </h4>
-                <p className="mt-2 text-sm text-neutral-600 hidden sm:block">
+                <p className="mt-2 text-sm text-neutral-600 hidden lg:block">
                   {reg.description}
                 </p>
               </Link>
@@ -93,25 +115,37 @@ function Regulations() {
 
 
 
+
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-20 rounded-4xl bg-neutral-950 py-14 sm:mt-28 sm:py-20 lg:mt-32">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
+        <FadeIn className="flex items-center gap-x-6">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We&apos;osve worked with hundreds of amazing people
+            We&apos;ve worked with hundreds of amazing people
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
+
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-6 items-center"
           >
             {clients.map(([client, logo]) => (
-              <li key={client}>
+              <li key={client} className="col-span-1">
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  {/* Tile enforces uniform size; Image uses object-contain */}
+                  <div className="relative h-16 sm:h-20 w-full rounded-2xl bg-neutral-900/30 p-4">
+                    <Image
+                      src={logo}
+                      alt={client}
+                      fill
+                      className="object-contain"
+                      sizes="(min-width:1024px) 200px, (min-width:640px) 160px, 140px"
+                      priority={false}
+                    />
+                  </div>
                 </FadeIn>
               </li>
             ))}
@@ -121,6 +155,7 @@ function Clients() {
     </div>
   )
 }
+
 
 {/* function CaseStudies({ caseStudies }) {
   return (
@@ -178,7 +213,7 @@ function Clients() {
 
 function ProofOfValue() {
   return (
-    <section className="mt-24 sm:mt-32 lg:mt-60">
+    <section className="mt-24 sm:mt-32 lg:mt-60 mb-20 lg:mb-40">
       <Container>
         {/* Title + paragraph + right-side CTA (stacks on mobile) */}
         <div className="grid gap-6 sm:gap-8 md:grid-cols-[1fr_auto] md:items-start">
@@ -475,7 +510,8 @@ export default async function Home() {
         {/* Right-side quick links */}
         <nav
           aria-label="Quick links"
-          className="pointer-events-auto absolute right-0 top-8 hidden flex-col gap-3 lg:flex"
+          className="pointer-events-auto z-10 mt-8 flex flex-col gap-3 items-stretch sm:items-center
+                    lg:mt-0 lg:absolute lg:right-0 lg:top-8"
         >
           {[
             { href: '/services/ai-literacy', label: 'AI Literacy Training', border: 'border-purple-500' },
@@ -485,32 +521,40 @@ export default async function Home() {
             <a
               key={link.href}
               href={link.href}
-              className={`w-56 rounded-full border-[0.9px] ${link.border} bg-white/80 px-6 py-2 text-sm text-neutral-700 shadow-sm backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
+              className={`group inline-flex items-center justify-between
+                          w-full sm:w-72 lg:w-56 rounded-full border ${link.border}
+                          bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-neutral-700
+                          shadow-sm backdrop-blur-sm transition-all duration-200
+                          hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
             >
-              {link.label} <span className="inline-block transition-transform group-hover:translate-x-1">➔</span>
+              <span>{link.label}</span>
+              <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
             </a>
           ))}
         </nav>
+
       </Container>
       <Regulations />
       <ProofOfValue />
- 
+       <SpotlightTestimonial />
       <Services />
       <Clients />
 
       {/* <CaseStudies caseStudies={caseStudies} /> */}
 
+
       <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        className="mt-24 sm:mt-32 lg:mt-20 text-sm md:text-md"
+        client={{
+          name: 'Norman Wagner - Bettencourt Financial Principal',
+          logo: BFGImage, // ✅ pass import, not JSX
+          url: 'https://bettencourtfg.com', // 👈 now clickable
+        }}
+        logoClassName="w-24 h-auto" // ✅ only if Testimonial supports it
       >
-        Conforma Studio went above and beyond our expectations, Jhonathan, the
-        CEO, got personally in touch with us and follow the project very
-        closely, making us feel very confident and sure we made the best choice.
-        The results are outstanding.
-        
+        Conforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
+        The results are outstanding and we managed to launch in Europe!
       </Testimonial>
-      <SpotlightTestimonial />
       <ContactSection />
     </>
   )
