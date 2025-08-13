@@ -31,10 +31,6 @@ const navigation = [
       { title: 'Contact us', href: '/contact' },
     ],
   },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
 ]
 
 function Navigation() {
@@ -125,7 +121,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Compliance Studio - A Berlin based company. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
