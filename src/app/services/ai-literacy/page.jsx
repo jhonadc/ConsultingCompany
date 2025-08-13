@@ -284,7 +284,7 @@ export default function AiLiteracyPage() {
       <Container className="mt-32">
         <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12">
           <div className="text-center">
-            <h2 className="font-display text-3xl font-semibold">Upskill your teams. Satisfy the mandate.</h2>
+            <h2 className="font-display text-3xl font-semibold">Mandatory by law. Strategic by choice.</h2>
             <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
               Delivered by a lawyer and software engineer. Personalised to your domain, systems, and risk. Available anywhere in Germany or Europe.
             </p>
