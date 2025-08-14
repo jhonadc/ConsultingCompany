@@ -515,7 +515,7 @@ export default async function Home() {
         >
           {[
             { href: '/services/ai-literacy', label: 'AI Literacy Training', border: 'border-purple-500' },
-            { href: '/services/highriskassessment', label: 'Am I high-risk?', border: 'border-amber-500' },
+         
             { href: '/services/ai-use-policy', label: 'AI Use Policy', border: 'border-green-500' },
           ].map((link) => (
             <a
