@@ -5,6 +5,8 @@ import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
+import RegulationsFactStrip from '@/components/RegulationsFactStrip'
+
 
 export const metadata = {
   title: 'GDPR — Comforma Compliance',
@@ -12,57 +14,47 @@ export const metadata = {
     'EU’s General Data Protection Regulation — in force since 25 May 2018. Tailored governance, controls, and evidence that stand up to audits.',
 }
 
+// Facts for GDPR (place near top of the file)
+const facts = [
+  {
+    color: '#2563eb', // blue-600
+    title: 'Enforced',
+    value: '25 May 2018',
+    description: 'Applicable across the EU',
+  },
+  {
+    color: '#f59e0b', // amber-500
+    title: 'Who this affects',
+    value: 'Organisations processing personal data in the EU',
+    description:
+      'Also non-EU companies offering goods/services to people in the EU or monitoring their behaviour.',
+  },
+  {
+    color: '#e11d48', // rose-600
+    title: 'Penalty ceiling',
+    value: 'Up to €20M or 4% global turnover',
+    description: 'For severe infringements',
+  },
+]
+
 export default function GdprPage() {
   return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
+    <Container className="mt-24 sm:mt-32 lg:mt-20">
       <BackButton />
 
       <div className="border-t-4 border-blue-400 pt-6">
         {/* Header */}
+        {/* Header */}
         <SectionIntro title="GDPR">
-          <p>
-            EU’s General Data Protection Regulation — clear rules, material fines, and expectations
-            for operational controls that work in practice.
+          <p className="text-md">
+            EU’s General Data Protection Regulation: Privacy for personal data.
           </p>
         </SectionIntro>
 
-        {/* Facts strip (centered) */}
+        {/* Compact facts strip */}
+        <RegulationsFactStrip facts={facts} />
 
-        <div className="mt-10">
-          <div className="relative overflow-hidden rounded-4xl bg-neutral-900 px-6 py-4 text-white sm:px-10 sm:py-8 lg:px-12">
-            <FadeIn className="mx-auto max-w-6xl">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                {[
-                  {
-                    h: 'Enforced',
-                    l1: '25 May 2018',
-                    l2: 'Applicable across the EU',
-                  },
-                  {
-                    h: 'Who this affects',
-                    l1: 'Any EU-based organisation processing personal data.',
-                    l2:
-                      'Also non-EU organisations that offer goods/services to people in the EU or monitor their behaviour (e.g., websites, apps, analytics).',
-                  },
-                  {
-                    h: 'Penalty ceiling',
-                    l1: '€20 million or 4% global turnover',
-                    l2: 'for severe infringements',
-                  },
-                ].map(({ h, l1, l2 }) => (
-                  <div
-                    key={h}
-                    className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/20 text-center"
-                  >
-                    <h3 className="text-sm font-bold text-white/80">{h}</h3>
-                    <p className="mt-2 text-xl font-semibold">{l1}</p>
-                    <p className="mt-1 text-sm text-white/90">{l2}</p>
-                  </div>
-                ))}
-              </div>
-            </FadeIn>
-          </div>
-        </div>
+
 
         {/* Obligations */}
         {/* Obligations – streamlined list form */}
@@ -338,6 +330,6 @@ export default function GdprPage() {
           </div>
         </Container>
       </div>
-    </Container>
+    </Container >
   )
 }

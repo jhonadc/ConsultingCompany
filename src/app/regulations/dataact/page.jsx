@@ -5,6 +5,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
+import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 export const metadata = {
     title: 'EU Data Act — Comforma Compliance',
@@ -12,56 +13,44 @@ export const metadata = {
         'Regulation (EU) 2023/2854 — fair access to and use of data from connected products and related services. We adapt product design, contracts, and operations to comply without losing competitive edge.',
 }
 
+// Facts for Data Act
+const facts = [
+    {
+        color: '#a855f7', // purple
+        title: 'Applies from',
+        value: '12 September 2025',
+        description: 'Directly applicable across the EU',
+    },
+    {
+        color: '#f59e0b', // amber
+        title: 'Who this affects',
+        value: 'Manufacturers & providers of connected products/services',
+        description: 'Plus businesses reusing such data, public bodies requesting access, and cloud/data processing providers.',
+    },
+    {
+        color: '#e11d48', // rose
+        title: 'Penalties',
+        value: 'Set by each Member State',
+        description: 'Aligned with national enforcement frameworks',
+    },
+]
+
 export default function DataActPage() {
     return (
-        <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <Container className="mt-24 sm:mt-32 lg:mt-20">
             <BackButton />
 
             <div className="border-t-4 border-amber-400 pt-6">
                 {/* Header */}
                 <SectionIntro title="EU Data Act">
-                    <p>
-                        EU rules to make data from connected products and services accessible and usable — empowering users,
-                        balancing B2B terms, enabling public-sector access in defined cases, and easing cloud switching.
+                    <p className="text-md">
+                        EU rules to make data from connected products and services accessible and usable.
                     </p>
                 </SectionIntro>
 
-                {/* Facts strip (centered) */}
-                <div className="mt-10">
-                    <div className="relative overflow-hidden rounded-4xl bg-neutral-900 px-6 py-4 text-white sm:px-10 sm:py-8 lg:px-12">
-                        <FadeIn className="mx-auto max-w-6xl">
-                            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                                {[
-                                    {
-                                        h: 'Applies from',
-                                        l1: '12 September 2025',
-                                        l2: 'Directly applicable across the EU',
-                                    },
-                                    {
-                                        h: 'Who this affects',
-                                        l1: 'Manufacturers & providers of connected products/services',
-                                        l2:
-                                            'Plus businesses reusing such data, public bodies requesting access, and cloud/data processing providers.',
-                                    },
-                                    {
-                                        h: 'Penalties',
-                                        l1: 'Set by each Member State',
-                                        l2: 'Aligned with national enforcement frameworks',
-                                    },
-                                ].map(({ h, l1, l2 }) => (
-                                    <div
-                                        key={h}
-                                        className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/20 text-center"
-                                    >
-                                        <h3 className="text-sm font-bold text-white/80">{h}</h3>
-                                        <p className="mt-2 text-xl font-semibold">{l1}</p>
-                                        <p className="mt-1 text-sm text-white/90">{l2}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </FadeIn>
-                    </div>
-                </div>
+                <RegulationsFactStrip facts={facts} />
+
+
 
                 {/* Obligations – horizontal lines style */}
                 <Container className="mt-20">
@@ -328,6 +317,6 @@ export default function DataActPage() {
                     </div>
                 </Container>
             </div>
-        </Container>
+        </Container >
     )
 }

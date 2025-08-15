@@ -5,6 +5,8 @@ import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
+import RegulationsFactStrip from '@/components/RegulationsFactStrip'
+
 
 export const metadata = {
     title: 'LGPD — Comforma Compliance',
@@ -12,56 +14,48 @@ export const metadata = {
         'Brazil’s General Data Protection Law (LGPD) — in force since 18 September 2020. Tailored governance, controls, and evidence that stand up to ANPD scrutiny.',
 }
 
+// Facts for LGPD (place near top of file)
+const facts = [
+    {
+        color: '#2563eb', // blue-600
+        title: 'Enforced',
+        value: '18 September 2020',
+        description: 'Admin sanctions since 1 Aug 2021',
+    },
+    {
+        color: '#f59e0b', // amber-500
+        title: 'Who this affects',
+        value: 'Organisations processing personal data in Brazil',
+        description:
+            'Also those offering goods/services to people in Brazil or collecting data in Brazil—regardless of location.',
+    },
+    {
+        color: '#e11d48', // rose-600
+        title: 'Penalty ceiling',
+        value: 'Up to 2% of Brazilian revenue',
+        description: 'Capped at R$50M per infraction',
+    },
+]
+
+
 export default function LgpdPage() {
     return (
-        <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <Container className="mt-24 sm:mt-32 lg:mt-20">
             <BackButton />
 
             <div className="border-t-4 border-emerald-400 pt-6">
                 {/* Header */}
+                {/* Header */}
                 <SectionIntro title="LGPD">
-                    <p>
-                        Brazil’s General Data Protection Law — clear obligations, material fines, and
-                        expectations for operational controls that work in practice.
+                    <p className="text-md">
+                        Brazil’s General Data Protection Law: Privacy for personal data.
                     </p>
                 </SectionIntro>
 
-                {/* Facts strip (centered) */}
-                <div className="mt-10">
-                    <div className="relative overflow-hidden rounded-4xl bg-neutral-900 px-6 py-4 text-white sm:px-10 sm:py-8 lg:px-12">
-                        <FadeIn className="mx-auto max-w-6xl">
-                            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                                {[
-                                    {
-                                        h: 'Enforced',
-                                        l1: '18 September 2020',
-                                        l2: 'Admin sanctions since 1 Aug 2021',
-                                    },
-                                    {
-                                        h: 'Who this affects',
-                                        l1: 'Any organisation processing personal data in Brazil or about people in Brazil.',
-                                        l2:
-                                            'Also those offering goods/services to people in Brazil or collecting data in Brazil—regardless of where you are established.',
-                                    },
-                                    {
-                                        h: 'Penalty ceiling',
-                                        l1: 'Up to 2% of Brazilian revenue',
-                                        l2: 'capped at R$50 million per infraction',
-                                    },
-                                ].map(({ h, l1, l2 }) => (
-                                    <div
-                                        key={h}
-                                        className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/20 text-center"
-                                    >
-                                        <h3 className="text-sm font-bold text-white/80">{h}</h3>
-                                        <p className="mt-2 text-xl font-semibold">{l1}</p>
-                                        <p className="mt-1 text-sm text-white/90">{l2}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </FadeIn>
-                    </div>
-                </div>
+                {/* Compact facts strip */}
+                <RegulationsFactStrip facts={facts} />
+
+
 
                 {/* Obligations – streamlined list with horizontal color bars */}
                 <Container className="mt-20">

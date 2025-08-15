@@ -6,6 +6,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
+import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 export const metadata = {
     title: 'EU Accessibility Act — Comforma Compliance',
@@ -13,55 +14,44 @@ export const metadata = {
         'Directive (EU) 2019/882 — mandatory accessibility requirements for products and services in the EU from 28 June 2025. Design, implementation, and evidence for compliance.',
 }
 
+// Facts for Accessibility Act
+const facts = [
+    {
+        color: '#a855f7', // purple
+        title: 'In application',
+        value: 'From 28 June 2025',
+        description: 'Transposed into national law',
+    },
+    {
+        color: '#f59e0b', // amber
+        title: 'Who this affects',
+        value: 'Manufacturers, importers, distributors',
+        description: 'Plus service providers in ICT, e-commerce, banking, ticketing, media, and transport sectors — both public and private.',
+    },
+    {
+        color: '#e11d48', // rose
+        title: 'Enforcement & penalties',
+        value: 'Fines set by each Member State',
+        description: 'Typically aligned with consumer protection regimes',
+    },
+]
+
+
 export default function EuAccessibilityActPage() {
     return (
-        <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <Container className="mt-24 sm:mt-32 lg:mt-20">
             <BackButton />
 
             <div className="border-t-4 border-fuchsia-400 pt-6">
                 {/* Header */}
                 <SectionIntro title="EU Accessibility Act">
-                    <p>
-                        EU-wide rules to ensure products and services are accessible to persons with disabilities — covering ICT, e-commerce, banking, transport, media, and more.
+                    <p className="text-md">
+                        EU-wide rules to ensure products and services are accessible to persons with disabilities.
                     </p>
                 </SectionIntro>
 
-                {/* Facts strip */}
-                <div className="mt-10">
-                    <div className="relative overflow-hidden rounded-4xl bg-neutral-900 px-6 py-4 text-white sm:px-10 sm:py-8 lg:px-12">
-                        <FadeIn className="mx-auto max-w-6xl">
-                            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                                {[
-                                    {
-                                        h: 'In application',
-                                        l1: 'From 28 June 2025',
-                                        l2: 'Transposed into national law',
-                                    },
-                                    {
-                                        h: 'Who this affects',
-                                        l1: 'Manufacturers, importers, distributors',
-                                        l2:
-                                            'Plus service providers in ICT, e-commerce, banking, ticketing, media, and transport sectors — both public and private.',
-                                    },
-                                    {
-                                        h: 'Enforcement & penalties',
-                                        l1: 'Fines set by each Member State',
-                                        l2: 'Typically aligned with consumer protection regimes',
-                                    },
-                                ].map(({ h, l1, l2 }) => (
-                                    <div
-                                        key={h}
-                                        className="rounded-3xl bg-white/10 p-6 ring-1 ring-white/20 text-center"
-                                    >
-                                        <h3 className="text-sm font-bold text-white/80">{h}</h3>
-                                        <p className="mt-2 text-xl font-semibold">{l1}</p>
-                                        <p className="mt-1 text-sm text-white/90">{l2}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </FadeIn>
-                    </div>
-                </div>
+                <RegulationsFactStrip facts={facts} />
+
 
                 {/* Obligations */}
                 <Container className="mt-20">

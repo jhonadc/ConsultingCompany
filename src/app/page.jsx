@@ -248,6 +248,8 @@ function Clients() {
 } */}
 
 
+
+
 function ProofOfValue() {
   return (
     <section className="mt-24 sm:mt-32 lg:mt-60 mb-20 lg:mb-40">
@@ -360,23 +362,23 @@ function ProofOfValue() {
 
 
 
-export function Services() {
+export function OurProcess() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
+        eyebrow="How we work"
         title="Turning complex EU rules into clear competitive advantage"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We translate sprawling legislative texts into plain‐language tasks,
-          automated controls and training that teams actually remember.
+          Compliance should enable growth. We align legal, technical, and product teams
+          to reduce risk and unlock speed
         </p>
       </SectionIntro>
 
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
-          {/* Image column */}
+          {/* Image column (unchanged) */}
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
@@ -386,59 +388,69 @@ export function Services() {
               />
             </FadeIn>
           </div>
-          {/* List column */}
-          <ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
-            <li>
-              <h3 className="font-display text-lg font-semibold text-neutral-900">
-                AI Act Literacy & Risk Assessment
-              </h3>
-              <p className="mt-2 text-neutral-600">
-                We run full risk-tier gap analyses…
-              </p>
-              <ColorDivider
-                primaryClass="bg-purple-700"
-                secondaryClass="bg-purple-200"
-                primaryWidth="w-16"    // feel free to widen if you like
-              />
-            </li>
 
+          {/* List column (updated items only) */}
+          <ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
+
+
+            {/* Assess */}
             <li>
               <h3 className="font-display text-lg font-semibold text-neutral-900">
-                GDPR Privacy Engineering
+                Assess
               </h3>
               <p className="mt-2 text-neutral-600">
-                End-to-end DPIAs, user-friendly privacy notices…
+                We map business model, risk appetite, data flows, and AI use cases to pinpoint
+                obligations (AI Act, GDPR, sector rules) and surface quick wins vs. critical gaps.
+                You get a concise findings brief and a prioritised plan with effort/impact/timelines.
               </p>
               <ColorDivider
                 primaryClass="bg-blue-700"
                 secondaryClass="bg-blue-200"
+                primaryWidth="w-16"
               />
             </li>
 
+            {/* Implement */}
             <li>
               <h3 className="font-display text-lg font-semibold text-neutral-900">
-                MiCA Digital-Asset Compliance
+                Implement
               </h3>
               <p className="mt-2 text-neutral-600">
-                Token classification, white-paper drafting…
+                We co-create the controls that matter: AI policy, risk &amp; human oversight,
+                privacy by design, vendor governance, and approvals—plus an ISO/IEC 42001-aligned
+                AI Management System, Annex IV technical documentation, DPIAs, and RoPA where needed.
               </p>
               <ColorDivider
-                primaryClass="bg-amber-700"
-                secondaryClass="bg-amber-200"
+                primaryClass="bg-pink-500"
+                secondaryClass="bg-pink-200"
               />
             </li>
 
+            {/* Sustain */}
             <li>
               <h3 className="font-display text-lg font-semibold text-neutral-900">
-                Integrated EU Control Framework
+                Sustain
               </h3>
               <p className="mt-2 text-neutral-600">
-                A single control matrix covering AI Act, GDPR, MiCA, …
+                Before go-live we validate controls, align owners, and set KPIs. We run tabletop
+                exercises, verify human-in-the-loop, and check transfer/vendor safeguards end-to-end.
+                Handover includes an audit-ready pack and a pragmatic maintenance cadence.
               </p>
               <ColorDivider
-                primaryClass="bg-green-700"
-                secondaryClass="bg-green-200"
+                primaryClass="bg-emerald-700"
+                secondaryClass="bg-emerald-200"
               />
+            </li>
+
+            {/* Link to detailed process */}
+            <li className="pt-2">
+              <Link
+                href="/process"
+                className="inline-flex items-center gap-1 text-md font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
+                aria-label="View detailed process"
+              >
+                View detailed process →
+              </Link>
             </li>
           </ul>
         </div>
@@ -572,9 +584,10 @@ export default async function Home() {
 
       </Container>
       <Regulations />
+
       <ProofOfValue />
       <SpotlightTestimonial />
-      <Services />
+      <OurProcess />
       <Clients />
 
       {/* <CaseStudies caseStudies={caseStudies} /> */}
