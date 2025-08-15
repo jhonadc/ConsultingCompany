@@ -19,7 +19,7 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
-import { SocialMedia } from '@/components/SocialMedia'
+
 
 const RootLayoutContext = createContext(null)
 
@@ -127,12 +127,16 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/regulations">Regulations</NavigationItem>
+        <NavigationItem href="/process">How We Work</NavigationItem>
+
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
+        <NavigationItem href="/about">About Us</NavigationItem>
         <NavigationItem href="/blog">Blog</NavigationItem>
+      </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/contact">Get in Touch</NavigationItem>
       </NavigationRow>
     </nav>
   )
@@ -222,12 +226,7 @@ function RootLayoutInner({ children }) {
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
-                  <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
-                    </h2>
-                    <SocialMedia className="mt-6" invert />
-                  </div>
+
                 </div>
               </Container>
             </div>

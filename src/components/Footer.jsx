@@ -1,59 +1,37 @@
+// src/components/Footer.jsx
 import Link from 'next/link'
-
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
-import { socialMediaProfiles } from '@/components/SocialMedia'
 
-const navigation = [
-  {
-    title: 'Work',
-    links: [
-      { title: 'GDPR', href: '/work/gdpr' },
-      { title: 'AI Act', href: '/work/aiact' },
-      { title: 'Crypto Regulation - MICA', href: '/work/mica' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
-    ],
-  },
+/** Flat, up-to-date footer links */
+const navItems = [
+  { title: 'Regulations', href: '/regulations' },
+  { title: 'How We Work', href: '/our-process' }, // or '/process' if that's your route
+  { title: 'About Us', href: '/about' },
+  { title: 'Blog', href: '/blog' },
+  { title: 'Get in Touch', href: '/contact' },
 ]
 
 function Navigation() {
   return (
-    <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
-        {navigation.map((section, sectionIndex) => (
-          <li key={sectionIndex}>
-            <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-              {section.title}
-            </div>
-            <ul role="list" className="mt-4 text-sm text-neutral-700">
-              {section.links.map((link, linkIndex) => (
-                <li key={linkIndex} className="mt-4">
-                  <Link
-                    href={link.href}
-                    className="transition hover:text-neutral-950"
-                  >
-                    {link.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <nav aria-label="Footer">
+      <ul
+        role="list"
+        className="
+          flex flex-wrap items-center
+          gap-x-6 gap-y-3
+          text-sm text-neutral-700
+        "
+      >
+        {navItems.map((item) => (
+          <li key={item.href} className="shrink-0">
+            <Link
+              href={item.href}
+              className="transition hover:text-neutral-950 hover:underline underline-offset-4"
+            >
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>
@@ -74,55 +52,35 @@ function ArrowIcon(props) {
   )
 }
 
-function NewsletterForm() {
-  return (
-    <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
-      </h2>
-      <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
-      </p>
-      <div className="relative mt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
-        />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
-          >
-            <ArrowIcon className="w-4" />
-          </button>
-        </div>
-      </div>
-    </form>
-  )
-}
+
+
 
 export function Footer() {
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-          <Navigation />
-          <div className="flex lg:justify-end">
-            <NewsletterForm />
+        {/* Top row: logo + nav + newsletter (newsletter drops below on small screens) */}
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+          <div className="flex items-center justify-between lg:block">
+            <Link href="/" aria-label="Home" className="shrink-0">
+              <Logo className="h-8" fillOnHover />
+            </Link>
           </div>
+
+          <Navigation />
+
         </div>
-        <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
-          </Link>
+
+        {/* Bottom bar */}
+        <div className="mt-12 sm:mt-16 mb-14 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-8 sm:pt-10">
           <p className="text-sm text-neutral-700">
-            © Compliance Studio - A Berlin based company. {new Date().getFullYear()}
+            © Comforma Compliance — Berlin, {new Date().getFullYear()}
           </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-neutral-500">
+            <Link href="/legal/imprint" className="hover:text-neutral-800 hover:underline underline-offset-4">Imprint</Link>
+            <span aria-hidden>•</span>
+            <Link href="/legal/privacy" className="hover:text-neutral-800 hover:underline underline-offset-4">Privacy</Link>
+          </div>
         </div>
       </FadeIn>
     </Container>
