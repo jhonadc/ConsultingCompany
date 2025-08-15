@@ -12,6 +12,8 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid'
+import { BookingForm, DEFAULT_SERVICES } from '@/components/BookingForm'
+
 
 export const metadata = {
   title: 'AI Literacy Training — Conforma Studio',
@@ -298,83 +300,14 @@ export default function AiLiteracyPage() {
         </div>
       </Container>
 
-      {/* BOOKING */}
-      <Container id="booking" className="mt-28 sm:mt-32 mb-24 scroll-mt-28 sm:scroll-mt-32">
-        <SectionIntro eyebrow="Booking" title="Request your session">
-          <p className="mx-auto max-w-3xl">
-            After you submit this form we will send proposed dates right away, along with pricing and a tailored outline for your industry and risk profile.
-          </p>
-        </SectionIntro>
+   <BookingForm
+  eyebrow="Booking"
+  title="Request your session"
+  intro="Tell us what you need—pick one or more services. We’ll send dates, pricing, and a tailored outline."
+  allowMultiple
+  defaultSelected={['high-risk', 'ai-policy']}
+/>
 
-        <form className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <input
-              type="text"
-              name="name"
-              placeholder="Full name"
-              required
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Work email"
-              required
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-            />
-          </div>
-
-          <input
-            type="text"
-            name="company"
-            placeholder="Company"
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <select
-              name="format"
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-              defaultValue="Remote (video)"
-            >
-              <option>Remote (video)</option>
-              <option>Onsite (Germany)</option>
-              <option>Onsite (Europe)</option>
-            </select>
-            <select
-              name="duration"
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-              defaultValue="Half day (4 hours)"
-            >
-              <option>Half day (4 hours)</option>
-              <option>2 x 2 hour sessions</option>
-            </select>
-          </div>
-
-          <textarea
-            name="message"
-            rows={4}
-            placeholder="Context, goals, preferred dates"
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
-
-          <label className="flex items-start gap-3 text-sm text-neutral-700">
-            <input type="checkbox" required className="mt-1 h-4 w-4 rounded border-neutral-300" />
-            I understand this training supports AI Act literacy requirements and agree to be contacted about scheduling.
-          </label>
-
-          <button
-            type="submit"
-            className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800"
-          >
-            Send request
-          </button>
-
-          <p className="text-xs text-neutral-500">
-            We include a sample agenda and an evidence checklist.
-          </p>
-        </form>
-      </Container>
     </>
   )
 }
