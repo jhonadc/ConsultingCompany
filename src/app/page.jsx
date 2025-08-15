@@ -1,5 +1,5 @@
 
- 
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { ContactSection } from '@/components/ContactSection'
@@ -31,16 +31,49 @@ const clients = [
   ['Zuse Institute Berlin', zib],
 ]
 
+//  { title: 'NIS2 Directive', slug: 'nis2directive', description: 'Strengthening cybersecurity and governance for essential and important entities in the EU.' },
+
 const regulations = [
-  { title: 'AI Act', slug: 'aiact', description: 'Europe’s groundbreaking regulation for trustworthy AI systems.' },
-  { title: 'GDPR', slug: 'gdpr', description: 'EU’s General Data Protection Regulation — protecting personal data since 2018.' },
-  { title: 'MiCAR', slug: 'micar', description: 'Markets in Crypto-Assets Regulation for EU-wide digital-asset compliance.' },
-  { title: 'Medical Device Regulation (MDR)', slug: 'mdr', description: 'EU’s MDR framework for safety and performance of medical devices.' },
+  {
+    title: 'AI Act',
+    slug: 'aiact',
+    description: 'EU framework setting strict rules for trustworthy and compliant artificial intelligence systems.'
+  },
+  {
+    title: 'GDPR',
+    slug: 'gdpr',
+    description: 'EU data protection law defining rights, obligations, and enforcement for personal data processing.'
+  },
+  {
+    title: 'LGPD',
+    slug: 'lgpd',
+    description: 'Brazil’s data protection law establishing principles, rights, and governance for personal data.'
+  },
+  {
+    title: 'EU Accessibility Act',
+    slug: 'accessibility',
+    description: 'EU rules ensuring that products and services are accessible to all users, including those with disabilities.'
+  },
+  {
+    title: 'Data Act',
+    slug: 'dataact',
+    description: 'EU regulation governing data access, sharing, interoperability, and fair contractual arrangements.'
+  },
 ]
 
 
-
+//nis2: { border: 'border-rose-500', hover: 'hover:ring-rose-500' },
 function Regulations() {
+  // Color map for each regulation slug
+  const REG_COLORS = {
+    gdpr: { border: 'border-blue-500', hover: 'hover:ring-blue-400' },
+    aiact: { border: 'border-purple-500', hover: 'hover:ring-purple-500' },
+    lgpd: { border: 'border-emerald-500', hover: 'hover:ring-emerald-500' },
+    accessibility: { border: 'border-fuchsia-500', hover: 'hover:ring-fuchsia-500' },
+    dataact: { border: 'border-amber-500', hover: 'hover:ring-amber-500' },
+  }
+  const fallback = { border: 'border-neutral-300', hover: 'hover:ring-neutral-300' }
+
   return (
     <section className="mt-24 sm:mt-32 lg:mt-80">
       <SectionIntro
@@ -52,22 +85,15 @@ function Regulations() {
 
       <Container className="mt-12">
         {/* Mobile: stacked pills */}
-        <nav
-          aria-label="Regulations"
-          className="md:hidden flex flex-col gap-3 items-stretch"
-        >
+        <nav aria-label="Regulations" className="md:hidden flex flex-col gap-3 items-stretch">
           {regulations.map((reg) => {
-            const border =
-              reg.slug === 'gdpr'  ? 'border-blue-500'   :
-              reg.slug === 'aiact' ? 'border-purple-500' :
-              reg.slug === 'mdr'   ? 'border-green-500'  :
-                                     'border-amber-700'
+            const colors = REG_COLORS[reg.slug] ?? fallback
             return (
               <Link
                 key={reg.slug}
                 href={`/regulations/${reg.slug}`}
                 className={`group inline-flex items-center justify-between
-                            w-full rounded-full border ${border}
+                            w-full rounded-full border ${colors.border}
                             bg-white/80 px-5 py-3 text-sm text-neutral-700
                             shadow-sm backdrop-blur-sm transition-all duration-200
                             hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
@@ -78,34 +104,45 @@ function Regulations() {
             )
           })}
         </nav>
-
-        {/* Desktop/tablet: original cards */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Desktop/tablet: cards */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-5 gap-6">
           {regulations.map((reg) => {
-            const hoverRing =
-              reg.slug === 'gdpr'  ? 'hover:ring-blue-500'   :
-              reg.slug === 'aiact' ? 'hover:ring-purple-500' :
-              reg.slug === 'mdr'   ? 'hover:ring-green-500'  :
-                                     'hover:ring-amber-700'
+            const colors = REG_COLORS[reg.slug] ?? fallback
             return (
               <Link
                 key={reg.slug}
                 href={`/regulations/${reg.slug}`}
-                className={`group block md:aspect-square rounded-2xl bg-white
-                            ring-1 ring-neutral-950/10 shadow-sm
-                            flex flex-col justify-center items-center
-                            p-6 text-center transition ${hoverRing}`}
+                className={`
+          group relative block aspect-square rounded-2xl bg-white
+          ring-1 ring-neutral-950/10 shadow-sm overflow-hidden
+          transition ${colors.hover}
+        `}
               >
-                <h4 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-800">
-                  {reg.title}
-                </h4>
-                <p className="mt-2 text-sm text-neutral-600 hidden lg:block">
-                  {reg.description}
-                </p>
+                {/* Absolute content fills the square; prevents growth */}
+                <div className="absolute inset-0 flex flex-col p-6 text-left">
+                  {/* Title pinned top-left */}
+                  <h4 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-800 mb-3">
+                    {reg.title}
+                  </h4>
+
+                  {/* Description centered in remaining space and clamped */}
+                  <div className="flex-1 flex items-center">
+                    <p
+                      className={`
+                text-sm text-neutral-600
+                line-clamp-3
+              `}
+                    >
+                      {reg.description}
+                    </p>
+                  </div>
+                </div>
               </Link>
             )
           })}
         </div>
+
+
       </Container>
     </section>
   )
@@ -350,60 +387,60 @@ export function Services() {
             </FadeIn>
           </div>
           {/* List column */}
-<ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
-  <li>
-    <h3 className="font-display text-lg font-semibold text-neutral-900">
-      AI Act Literacy & Risk Assessment
-    </h3>
-    <p className="mt-2 text-neutral-600">
-      We run full risk-tier gap analyses…
-    </p>
-    <ColorDivider
-      primaryClass="bg-purple-700"
-      secondaryClass="bg-purple-200"
-      primaryWidth="w-16"    // feel free to widen if you like
-    />
-  </li>
+          <ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                AI Act Literacy & Risk Assessment
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                We run full risk-tier gap analyses…
+              </p>
+              <ColorDivider
+                primaryClass="bg-purple-700"
+                secondaryClass="bg-purple-200"
+                primaryWidth="w-16"    // feel free to widen if you like
+              />
+            </li>
 
-  <li>
-    <h3 className="font-display text-lg font-semibold text-neutral-900">
-      GDPR Privacy Engineering
-    </h3>
-    <p className="mt-2 text-neutral-600">
-      End-to-end DPIAs, user-friendly privacy notices…
-    </p>
-    <ColorDivider
-      primaryClass="bg-blue-700"
-      secondaryClass="bg-blue-200"
-    />
-  </li>
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                GDPR Privacy Engineering
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                End-to-end DPIAs, user-friendly privacy notices…
+              </p>
+              <ColorDivider
+                primaryClass="bg-blue-700"
+                secondaryClass="bg-blue-200"
+              />
+            </li>
 
-  <li>
-    <h3 className="font-display text-lg font-semibold text-neutral-900">
-      MiCA Digital-Asset Compliance
-    </h3>
-    <p className="mt-2 text-neutral-600">
-      Token classification, white-paper drafting…
-    </p>
-    <ColorDivider
-      primaryClass="bg-amber-700"
-      secondaryClass="bg-amber-200"
-    />
-  </li>
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                MiCA Digital-Asset Compliance
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                Token classification, white-paper drafting…
+              </p>
+              <ColorDivider
+                primaryClass="bg-amber-700"
+                secondaryClass="bg-amber-200"
+              />
+            </li>
 
-  <li>
-    <h3 className="font-display text-lg font-semibold text-neutral-900">
-      Integrated EU Control Framework
-    </h3>
-    <p className="mt-2 text-neutral-600">
-      A single control matrix covering AI Act, GDPR, MiCA, …
-    </p>
-    <ColorDivider
-      primaryClass="bg-green-700"
-      secondaryClass="bg-green-200"
-    />
-  </li>
-</ul>
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                Integrated EU Control Framework
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                A single control matrix covering AI Act, GDPR, MiCA, …
+              </p>
+              <ColorDivider
+                primaryClass="bg-green-700"
+                secondaryClass="bg-green-200"
+              />
+            </li>
+          </ul>
         </div>
       </Container>
     </>
@@ -465,7 +502,7 @@ export function SpotlightTestimonial() {
                   aria-label="View LinkedIn profile"
                 >
                   <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
-                    <path d="M4.98 3.5a2.5 2.5 0 1 1 .02 5 2.5 2.5 0 0 1-.02-5ZM3 8.98h3.95V21H3V8.98ZM9.5 8.98H13v1.64h.05c.48-.86 1.66-1.77 3.42-1.77 3.66 0 4.34 2.1 4.34 4.83V21H16.8v-5.35c0-1.28-.02-2.93-1.79-2.93-1.8 0-2.07 1.4-2.07 2.84V21H9.5V8.98Z"/>
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 .02 5 2.5 2.5 0 0 1-.02-5ZM3 8.98h3.95V21H3V8.98ZM9.5 8.98H13v1.64h.05c.48-.86 1.66-1.77 3.42-1.77 3.66 0 4.34 2.1 4.34 4.83V21H16.8v-5.35c0-1.28-.02-2.93-1.79-2.93-1.8 0-2.07 1.4-2.07 2.84V21H9.5V8.98Z" />
                   </svg>
                   LinkedIn
                 </Link>
@@ -494,16 +531,16 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56 relative">
-        <FadeIn className="max-w-3xl">
+        <FadeIn className="max-w-4xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl leading-tight">
-            Conforma Studio.
+            Comforma Compliance.
           </h1>
           <h2 className="font-display text-3xl sm:text-5xl font-medium tracking-tight text-balance text-neutral-950 mt-2">
-            Berlin’s boutique at the crossroads of law and technology.
+            Berlin’s boutique studio for compliance in the form your business needs.
           </h2>
 
           <p className="mt-6 text-xl text-neutral-600">
-            We blend legal precision with engineering expertise to build compliance frameworks that keep your innovations ahead of EU regulation, protecting your growth, reputation, and competitive edge.{' '}
+            We shape compliance frameworks around your unique business structure — blending legal precision with engineering expertise to keep you ahead of EU regulations while protecting growth, reputation, and competitive edge.
           </p>
         </FadeIn>
 
@@ -536,7 +573,7 @@ export default async function Home() {
       </Container>
       <Regulations />
       <ProofOfValue />
-       <SpotlightTestimonial />
+      <SpotlightTestimonial />
       <Services />
       <Clients />
 
@@ -552,7 +589,7 @@ export default async function Home() {
         }}
         logoClassName="w-24 h-auto" // ✅ only if Testimonial supports it
       >
-        Conforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
+        Comforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
         The results are outstanding and we managed to launch in Europe!
       </Testimonial>
       <ContactSection />

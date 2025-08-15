@@ -32,6 +32,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
     </svg>
   )
 }
+
 export function Logo({
   className,
   invert = false,
@@ -41,7 +42,7 @@ export function Logo({
 }) {
   return (
     <svg
-      viewBox="0 0 260 32"   // widened to fit the longer wordmark
+      viewBox="0 0 260 32"
       aria-hidden="true"
       className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
@@ -52,7 +53,20 @@ export function Logo({
         filled={filled}
       />
 
-      {/* Wordmark changed to "Compliance Studio" (pure SVG, uses your site font) */}
+      {/* Mobile: show "Comforma" */}
+      <text
+        x="40"
+        y="22"
+        fontFamily="inherit"
+        fontSize="20"
+        fontWeight="600"
+        letterSpacing="-0.02em"
+        className={clsx(invert ? 'fill-white' : 'fill-neutral-950', 'sm:hidden')}
+      >
+        Comforma
+      </text>
+
+      {/* ≥ sm: show "Comforma Compliance" */}
       <text
         x="40"
         y="22"
@@ -60,12 +74,10 @@ export function Logo({
         fontSize="20"
         fontWeight="500"
         letterSpacing="-0.02em"
-        className={invert ? 'fill-white' : 'fill-neutral-950'}
+        className={clsx(invert ? 'fill-white' : 'fill-neutral-950', 'hidden sm:inline')}
       >
-        Compliance <tspan fontWeight="700">Studio</tspan>
+        Comforma <tspan fontWeight="700">Compliance</tspan>
       </text>
     </svg>
   )
 }
-
-

@@ -12,7 +12,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid'
-import { BookingForm, DEFAULT_SERVICES } from '@/components/BookingForm'
+import { BookingForm } from '@/components/BookingForm'
 
 
 export const metadata = {
@@ -25,39 +25,39 @@ export default function AiLiteracyPage() {
   return (
     <>
 
-{/* HERO */}
-<Container className="mt-12 sm:mt-16 lg:mt-20">
-  <div className="relative overflow-hidden rounded-4xl bg-neutral-950 px-6 py-16 sm:px-10 sm:py-24 lg:px-12 lg:py-28 text-white">
-    <FadeIn className="max-w-4xl">
-      <h1 className="font-display text-4xl sm:text-6xl font-semibold tracking-tight">
-        AI Literacy Training
-      </h1>
-      <p className="mt-4 text-xl sm:text-2xl font-medium text-neutral-200">
-        Meet EU AI Act Article 4 requirements in just 4 hours
-      </p>
-      <p className="mt-6 text-md sm:text-xl text-neutral-300">
-        Article 4 makes AI literacy a <span className='font-bold'>legal obligation </span>for anyone designing, deploying or overseeing AI.
-        This tailored training gives your team the skills to use AI safely and effectively, avoids compliance risks,
-        and provides documented proof for audits. Delivered in English, anywhere in Germany or Europe.
-      </p>
+      {/* HERO */}
+      <Container className="mt-12 sm:mt-16 lg:mt-20">
+        <div className="relative overflow-hidden rounded-4xl bg-neutral-950 px-6 py-16 sm:px-10 sm:py-24 lg:px-12 lg:py-28 text-white">
+          <FadeIn className="max-w-4xl">
+            <h1 className="font-display text-4xl sm:text-6xl font-semibold tracking-tight">
+              AI Literacy Training
+            </h1>
+            <p className="mt-4 text-xl sm:text-2xl font-medium text-neutral-200">
+              Meet EU AI Act Article 4 requirements in just 4 hours
+            </p>
+            <p className="mt-6 text-md sm:text-xl text-neutral-300">
+              Article 4 makes AI literacy a <span className='font-bold'>legal obligation </span>for anyone designing, deploying or overseeing AI.
+              This tailored training gives your team the skills to use AI safely and effectively, avoids compliance risks,
+              and provides documented proof for audits. Delivered in English, anywhere in Germany or Europe.
+            </p>
 
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a
-          href="#booking"
-          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105 hover:shadow-md"
-        >
-          Book your training
-        </a>
-        <a
-          href="#syllabus"
-          className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/10"
-        >
-          View syllabus
-        </a>
-      </div>
-    </FadeIn>
-  </div>
-</Container>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#booking"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105 hover:shadow-md"
+              >
+                Book your training
+              </a>
+              <a
+                href="#syllabus"
+                className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/10"
+              >
+                View syllabus
+              </a>
+            </div>
+          </FadeIn>
+        </div>
+      </Container>
 
 
       {/* DURATION & DELIVERY */}
@@ -152,7 +152,7 @@ export default function AiLiteracyPage() {
                   Focused on daily use
                 </p>
                 <p className="mt-2 text-md text-neutral-700">
-                  Concrete do and do not rules for everyday AI tasks. 
+                  Concrete do and do not rules for everyday AI tasks.
                 </p>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function AiLiteracyPage() {
         </div>
       </Container>
 
-      <BookingForm  />
+      <BookingForm />
 
 
     </>
