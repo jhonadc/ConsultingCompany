@@ -1,49 +1,61 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { Container } from '@/components/Container'
 import { SectionIntro } from '@/components/SectionIntro'
+import { DIAL_CODES } from '@/lib/dialCodes'
 
-/** Edit once — used across the site */
-export const DEFAULT_SERVICES = [
-  { id: 'general',    label: 'General Questions' },
-  { id: 'ai-literacy',label: 'AI Literacy Training' },
-  { id: 'high-risk',  label: 'High-Risk Assessment' },
-  { id: 'ai-policy',  label: 'AI Use Policy for LLMs' },
-  { id: 'gdpr',       label: 'GDPR' },
-  { id: 'lgpd',       label: 'LGPD' },
-]
+// Convert ISO country code to emoji flag
+function isoToFlag(iso) {
+  return String.fromCodePoint(...iso.toUpperCase().split('').map(c => 127397 + c.charCodeAt(0)))
+}
+
+// Detect browser country
+function detectCountryISO() {
+  const prefs = typeof navigator !== 'undefined'
+    ? (navigator.languages || [navigator.language || ''])
+    : []
+  for (const loc of prefs) {
+    if (!loc) continue
+    const parts = loc.split('-')
+    const region = (parts[1] || '').toUpperCase()
+    if (region && DIAL_CODES.find(x => x.iso === region)) return region
+  }
+  return 'DE'
+}
 
 export function BookingForm({
   id = 'booking',
   eyebrow = 'Booking',
   title = 'Request your session',
   intro = 'After you submit this form we will send proposed dates right away, along with pricing and a tailored outline for your industry and risk profile.',
-  services = DEFAULT_SERVICES,
-  showServiceField = true,     // hide on generic contact pages if you want
-  allowMultiple = false,       // multi-select (checkboxes) vs single (dropdown)
-  defaultSelected = [],        // e.g., ['ai-literacy'] or ['general','gdpr']
-  formatOptions = ['Remote (video)', 'Onsite (Germany)', 'Onsite (Europe)'],
+  service = 'general',
 }) {
   const pathname = usePathname()
   const [status, setStatus] = useState({ sending: false, ok: null, msg: '' })
+  const [countryISO, setCountryISO] = useState('DE')
+
+  useEffect(() => {
+    setCountryISO(detectCountryISO())
+  }, [])
+
+  const sortedDialCodes = useMemo(
+    () => [...DIAL_CODES].sort((a, b) => a.iso.localeCompare(b.iso)),
+    []
+  )
 
   async function handleSubmit(e) {
     e.preventDefault()
     setStatus({ sending: true, ok: null, msg: '' })
 
-    const form = new FormData(e.currentTarget)
+    const formEl = e.currentTarget
+    const form = new FormData(formEl)
     const payload = Object.fromEntries(form.entries())
-
-    // collect multiple services when checkboxes are used
-    if (allowMultiple) {
-      payload.services = services
-        .map(s => form.getAll(`service:${s.id}`)[0] ? s.id : null)
-        .filter(Boolean)
-    }
-
+    const selected = DIAL_CODES.find(x => x.iso === (payload.phoneCountry || countryISO))
+    payload.phoneDialCode = selected?.dial || '+49'
     payload.pagePath = pathname || ''
+    payload.service = service
 
     try {
       const res = await fetch('/api/send-email', {
@@ -55,7 +67,8 @@ export function BookingForm({
       if (!res.ok) throw new Error(data?.error || 'Failed')
 
       setStatus({ sending: false, ok: true, msg: 'Thanks! We will get back to you shortly.' })
-      e.currentTarget.reset()
+      formEl.reset()
+      setCountryISO(detectCountryISO())
     } catch (err) {
       console.error(err)
       setStatus({ sending: false, ok: false, msg: 'Sorry, something went wrong. Please email us directly.' })
@@ -69,109 +82,50 @@ export function BookingForm({
       </SectionIntro>
 
       <form onSubmit={handleSubmit} className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6">
-        {/* Service selector */}
-        {showServiceField && (
-          <>
-            {allowMultiple ? (
-              <fieldset className="rounded-2xl border border-neutral-200 p-4">
-                <legend className="px-1 text-sm font-medium text-neutral-900">Select service(s)</legend>
-                <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
-                  {services.map(s => (
-                    <label key={s.id} className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3">
-                      <input
-                        type="checkbox"
-                        name={`service:${s.id}`}
-                        defaultChecked={defaultSelected.includes(s.id)}
-                        className="h-4 w-4 rounded border-neutral-300"
-                      />
-                      <span className="text-sm text-neutral-800">{s.label}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-            ) : (
-              <select
-                name="service"
-                className="rounded-xl border border-neutral-300 px-4 py-3"
-                defaultValue={defaultSelected[0] || services[0]?.id || ''}
-              >
-                {services.map(s => (
-                  <option key={s.id} value={s.id}>{s.label}</option>
-                ))}
-              </select>
-            )}
-          </>
-        )}
+        <input type="hidden" name="service" value={service} />
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <input
-            type="text"
-            name="name"
-            placeholder="Full name"
-            required
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Work email"
-            required
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
+          <div className="grid gap-2">
+            <label htmlFor="name">Full name <span className="text-red-600">*</span></label>
+            <input id="name" type="text" name="name" required className="rounded-xl border px-4 py-3" />
+          </div>
+          <div className="grid gap-2">
+            <label htmlFor="email">Work email <span className="text-red-600">*</span></label>
+            <input id="email" type="email" name="email" required className="rounded-xl border px-4 py-3" />
+          </div>
         </div>
-
-        <input
-          type="text"
-          name="company"
-          placeholder="Company"
-          className="rounded-xl border border-neutral-300 px-4 py-3"
-        />
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <select
-            name="format"
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-            defaultValue={formatOptions[0]}
-          >
-            {formatOptions.map(opt => <option key={opt}>{opt}</option>)}
-          </select>
-          <input
-            type="text"
-            name="phone"
-            placeholder="Phone (optional)"
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
+          <input type="text" name="company" placeholder="Company" className="rounded-xl border px-4 py-3" />
+          <div className="flex gap-2">
+            <select
+              name="phoneCountry"
+              className="w-24 rounded-xl border px-2 py-3 text-sm"
+              value={countryISO}
+              onChange={(e) => setCountryISO(e.target.value)}
+            >
+              {sortedDialCodes.map(({ iso, dial }) => (
+                <option key={iso} value={iso}>{isoToFlag(iso)} {dial}</option>
+              ))}
+            </select>
+            <input type="tel" name="phone" placeholder="123 456 789" className="flex-1 rounded-xl border px-4 py-3" />
+          </div>
         </div>
 
-        <textarea
-          name="message"
-          rows={4}
-          placeholder="Context, goals, preferred dates"
-          className="rounded-xl border border-neutral-300 px-4 py-3"
-        />
+        <textarea name="message" rows={4} placeholder="Context, goals, preferred dates" className="rounded-xl border px-4 py-3" />
 
-        <label className="flex items-start gap-3 text-sm text-neutral-700">
-          <input type="checkbox" required className="mt-1 h-4 w-4 rounded border-neutral-300" />
-          I understand this training supports AI Act literacy requirements and agree to be contacted about scheduling.
+        <label className="flex items-start gap-3 text-sm">
+          <input type="checkbox" required className="mt-1 h-4 w-4 rounded border" />
+          I understand this training supports AI Act literacy requirements and agree to be contacted.
         </label>
 
-        {/* Honeypot + path */}
-        <input type="hidden" name="pagePath" value={pathname || ''} />
-        <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" />
-
-        <button
-          type="submit"
-          disabled={status.sending}
-          className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 disabled:opacity-60"
-        >
+        <button type="submit" disabled={status.sending} className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white">
           {status.sending ? 'Sending…' : 'Send request'}
         </button>
 
         {status.msg && (
           <p className={`text-sm ${status.ok ? 'text-green-600' : 'text-red-600'}`}>{status.msg}</p>
         )}
-
-        <p className="text-xs text-neutral-500">We include a sample agenda and an evidence checklist.</p>
       </form>
     </Container>
   )

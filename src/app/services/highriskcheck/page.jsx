@@ -12,6 +12,7 @@ import {
   DocumentMagnifyingGlassIcon,
   BoltIcon,
 } from '@heroicons/react/20/solid'
+import { BookingForm } from '@/components/BookingForm'
 
 export const metadata = {
   title: 'High-Risk AI System Assessment — Conforma Studio',
@@ -294,85 +295,7 @@ export default function HighRiskAssessmentPage() {
         </div>
       </Container>
 
-      {/* BOOKING */}
-      <Container id="booking" className="mt-28 sm:mt-32 mb-24 scroll-mt-28 sm:scroll-mt-32">
-        <SectionIntro eyebrow="Booking" title="Request your assessment">
-          <p className="mx-auto max-w-3xl">
-            After you submit this form, we’ll propose dates and pricing and send a short intake to capture context and
-            systems in scope.
-          </p>
-        </SectionIntro>
-
-        <form className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <input
-              type="text"
-              name="name"
-              placeholder="Full name"
-              required
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Work email"
-              required
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-            />
-          </div>
-
-          <input
-            type="text"
-            name="company"
-            placeholder="Company"
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <select
-              name="systems"
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-              defaultValue="1–2 AI systems"
-            >
-              <option>1–2 AI systems</option>
-              <option>3–5 AI systems</option>
-              <option>6+ AI systems</option>
-            </select>
-            <select
-              name="format"
-              className="rounded-xl border border-neutral-300 px-4 py-3"
-              defaultValue="Remote (video)"
-            >
-              <option>Remote (video)</option>
-              <option>Onsite (Germany)</option>
-              <option>Onsite (Europe)</option>
-            </select>
-          </div>
-
-          <textarea
-            name="message"
-            rows={4}
-            placeholder="Brief description of system(s): purpose, users, data, model type, region"
-            className="rounded-xl border border-neutral-300 px-4 py-3"
-          />
-
-          <label className="flex items-start gap-3 text-sm text-neutral-700">
-            <input type="checkbox" required className="mt-1 h-4 w-4 rounded border-neutral-300" />
-            I understand this assessment determines our AI Act risk tier and agree to be contacted about scheduling.
-          </label>
-
-          <button
-            type="submit"
-            className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800"
-          >
-            Send request
-          </button>
-
-          <p className="text-xs text-neutral-500">
-            You receive a regulator-ready assessment document and a next-steps roadmap if high-risk.
-          </p>
-        </form>
-      </Container>
+     <BookingForm  />
     </>
   )
 }

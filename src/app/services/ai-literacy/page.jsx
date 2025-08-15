@@ -300,13 +300,8 @@ export default function AiLiteracyPage() {
         </div>
       </Container>
 
-   <BookingForm
-  eyebrow="Booking"
-  title="Request your session"
-  intro="Tell us what you need—pick one or more services. We’ll send dates, pricing, and a tailored outline."
-  allowMultiple
-  defaultSelected={['high-risk', 'ai-policy']}
-/>
+      <BookingForm  />
+
 
     </>
   )
