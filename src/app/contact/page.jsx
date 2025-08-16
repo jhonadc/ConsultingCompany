@@ -60,10 +60,8 @@ function ContactForm() {
     const form = new FormData(formEl)
     const payload = Object.fromEntries(form.entries())
 
-    // enforce service + basic context
     payload.service = 'general'
     payload.pagePath = typeof window !== 'undefined' ? window.location.pathname : ''
-    // honeypot already in the form as "website"
 
     try {
       const res = await fetch('/api/send-email', {
@@ -81,24 +79,23 @@ function ContactForm() {
       setStatus({
         sending: false,
         ok: false,
-        msg: 'Sorry, something went wrong. Please email us directly.',
+        msg: 'Sorry, something went wrong. Please email us directly at jhonathanagusto@gmail.com.',
       })
     }
   }
 
   return (
     <FadeIn className="lg:order-last">
-      <form onSubmit={onSubmit} noValidate>
+      {/* Removed noValidate so native required/format checks run */}
+      <form onSubmit={onSubmit}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
 
-        {/* success / error note */}
         {status.msg && (
           <p
-            className={`mt-3 text-sm ${
-              status.ok ? 'text-green-600' : 'text-red-600'
-            }`}
+            className={`mt-3 text-md font-bold ${status.ok ? 'text-green-600' : 'text-red-600'
+              }`}
           >
             {status.msg}
           </p>
@@ -147,6 +144,14 @@ function ContactForm() {
         <p className="mt-3 text-xs text-neutral-500">
           <span className="text-red-600">*</span> required fields
         </p>
+
+        {/* Short GDPR disclaimer */}
+        <p className="mt-4 text-xs text-neutral-500">
+          Your details will be used only to answer your enquiry and handled in line with our{' '}
+          <Link href="/privacy" className="underline underline-offset-2 hover:text-neutral-900">
+            Privacy Notice
+          </Link>.
+        </p>
       </form>
     </FadeIn>
   )
@@ -187,7 +192,6 @@ function ContactDetails() {
     </FadeIn>
   )
 }
-
 
 export default function Contact() {
   return (

@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { Container } from '@/components/Container'
 import { SectionIntro } from '@/components/SectionIntro'
 import { DIAL_CODES } from '@/lib/dialCodes'
+import Link from 'next/link'
 
 // Convert ISO country code to emoji flag
 function isoToFlag(iso) {
@@ -87,39 +88,90 @@ export function BookingForm({
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="grid gap-2">
             <label htmlFor="name">Full name <span className="text-red-600">*</span></label>
-            <input id="name" type="text" name="name" required className="rounded-xl border px-4 py-3" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+            />
           </div>
           <div className="grid gap-2">
             <label htmlFor="email">Work email <span className="text-red-600">*</span></label>
-            <input id="email" type="email" name="email" required className="rounded-xl border px-4 py-3" />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+            />
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <input type="text" name="company" placeholder="Company" className="rounded-xl border px-4 py-3" />
+          <input
+            type="text"
+            name="company"
+            placeholder="Company"
+            className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+          />
+
+          {/* Dial code + phone, styled to match inputs */}
+
           <div className="flex gap-2">
-            <select
-              name="phoneCountry"
-              className="w-24 rounded-xl border px-2 py-3 text-sm"
-              value={countryISO}
-              onChange={(e) => setCountryISO(e.target.value)}
-            >
-              {sortedDialCodes.map(({ iso, dial }) => (
-                <option key={iso} value={iso}>{isoToFlag(iso)} {dial}</option>
-              ))}
-            </select>
-            <input type="tel" name="phone" placeholder="123 456 789" className="flex-1 rounded-xl border px-4 py-3" />
+            <div className="relative w-20">
+              <select
+                name="phoneCountry"
+                className="
+        w-full rounded-xl border border-neutral-300 bg-white px-2 py-3 text-sm
+        focus:outline-none focus:ring-2 focus:ring-neutral-900/10 appearance-none pr-6
+      "
+                value={countryISO}
+                onChange={(e) => setCountryISO(e.target.value)}
+              >
+                {sortedDialCodes.map(({ iso, dial }) => (
+                  <option key={iso} value={iso}>
+                    {isoToFlag(iso)} {dial}
+                  </option>
+                ))}
+              </select>
+              {/* caret */}
+              <span className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-neutral-400">
+                ▾
+              </span>
+            </div>
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="123 456 789"
+              className="flex-1 rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+            />
           </div>
+
         </div>
 
-        <textarea name="message" rows={4} placeholder="Context, goals, preferred dates" className="rounded-xl border px-4 py-3" />
+        <textarea
+          name="message"
+          rows={4}
+          placeholder="Context, goals, preferred dates"
+          className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+        />
 
-        <label className="flex items-start gap-3 text-sm">
-          <input type="checkbox" required className="mt-1 h-4 w-4 rounded border" />
-          I understand this training supports AI Act literacy requirements and agree to be contacted.
-        </label>
+        {/* Informational consent line (no checkbox) */}
+        <p className="mt-1 text-xs leading-relaxed text-neutral-600">
+          By submitting this form, you consent to the processing of your personal data for the purpose of
+          handling your request, in accordance with our{' '}
+          <Link href="/privacy" className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900">
+            Privacy Notice
+          </Link>.
+        </p>
 
-        <button type="submit" disabled={status.sending} className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white">
+        <button
+          type="submit"
+          disabled={status.sending}
+          className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white disabled:opacity-60"
+        >
           {status.sending ? 'Sending…' : 'Send request'}
         </button>
 
