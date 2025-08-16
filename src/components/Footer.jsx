@@ -79,7 +79,7 @@ export function Footer() {
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-neutral-500">
             <Link href="/legal/imprint" className="hover:text-neutral-800 hover:underline underline-offset-4">Imprint</Link>
             <span aria-hidden>•</span>
-            <Link href="/privacy/terms_and_conditions" className="hover:text-neutral-800 hover:underline underline-offset-4">Privacy</Link>
+            <Link href="/legal/terms_and_conditions" className="hover:text-neutral-800 hover:underline underline-offset-4">Privacy</Link>
           </div>
         </div>
       </FadeIn>
