@@ -131,7 +131,7 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'About Us – Accordant Compliance Studio',
+  title: 'About Us – AmeCari Compliance Studio',
   description:
     'A premium consulting boutique for AI governance and GDPR in Germany. We translate regulation into measurable controls, audit-ready files, and management decisions.',
 }
@@ -145,7 +145,7 @@ export default async function About() {
         <p>
           We help boards and product leaders turn the EU AI Act and GDPR into a durable competitive edge. Our work blends legal precision, engineering depth, and security discipline—controls that work in production, not just on paper.
         </p>
-        <div className="mt-10 max-w-2xl space-y-6 text-base">
+        <div className="mt-10 space-y-6 text-base">
           <p>
             Founded by a lawyer–engineer tired of recycled slideware, we deliver C-suite briefings, developer enablement, and system-specific risk audits. Every action maps to Articles and Annexes for evidence that stands up to auditors and regulators.
           </p>
@@ -169,63 +169,67 @@ export default async function About() {
           </p>
         </SectionIntro>
 
-        {/* Three-column, no cards; thin line with a short color accent */}
-        <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              k: 'Implementation over automation',
-              v: 'No boilerplate. We build approvals, risk logs, DPIA cadence, and vendor intake that actually operate in your stack.',
-              color: 'bg-neutral-200',
-              accent: 'bg-purple-600',
-            },
-            {
-              k: 'Culture, not checklists',
-              v: 'Training, clear owners, and simple routines turn rules into habit—so compliance survives org changes.',
-              color: 'bg-neutral-200',
-              accent: 'bg-blue-600',
-            },
-            {
-              k: 'Growth & security together',
-              v: 'Evidence and control clarity accelerate enterprise deals while reducing enforcement and outage risk.',
-              color: 'bg-neutral-200',
-              accent: 'bg-emerald-600',
-            },
-            {
-              k: 'Accountable & defensible',
-              v: 'Every action maps to law and standard (AI Act, GDPR, ISO 42001) with traceable decisions and proof.',
-              color: 'bg-neutral-200',
-              accent: 'bg-amber-600',
-            },
-            {
-              k: 'Vendor-neutral',
-              v: 'No kickbacks or tooling commissions. We recommend what fits your risk, not a sales quota.',
-              color: 'bg-neutral-200',
-              accent: 'bg-rose-600',
-            },
-            {
-              k: 'Long-term partner',
-              v: 'We stay on the hook: tune-ups, change logs, and evidence packs that hold up in audits and diligence.',
-              color: 'bg-neutral-200',
-              accent: 'bg-sky-600',
-            },
-          ].map(({ k, v, color, accent }) => (
-            <FadeIn key={k}>
-              <h3 className="font-display text-lg font-semibold text-neutral-950">{k}</h3>
-              <p className="mt-2 text-sm text-neutral-700">{v}</p>
-              <div className={`mt-5 h-px w-full ${color} relative`}>
-                <span className={`absolute top-0 left-0 h-px w-16 ${accent}`} />
-              </div>
-            </FadeIn>
-          ))}
+        {/* Align grid with SectionIntro block on sm/md; expand on lg */}
+        <div className="mt-20  mx-auto  max-w-2xl md:max-w-7xl px-6 sm:px-8 ">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                k: 'Implementation over automation',
+                v: 'No boilerplate. We build approvals, risk logs, DPIA cadence, and vendor intake that actually operate in your stack.',
+                color: 'bg-neutral-200',
+                accent: 'bg-purple-600',
+              },
+              {
+                k: 'Culture, not checklists',
+                v: 'Training, clear owners, and simple routines turn rules into habit—so compliance survives org changes.',
+                color: 'bg-neutral-200',
+                accent: 'bg-blue-600',
+              },
+              {
+                k: 'Growth & security together',
+                v: 'Evidence and control clarity accelerate enterprise deals while reducing enforcement and outage risk.',
+                color: 'bg-neutral-200',
+                accent: 'bg-emerald-600',
+              },
+              {
+                k: 'Accountable & defensible',
+                v: 'Every action maps to law and standard (AI Act, GDPR, ISO 42001) with traceable decisions and proof.',
+                color: 'bg-neutral-200',
+                accent: 'bg-amber-600',
+              },
+              {
+                k: 'Vendor-neutral',
+                v: 'No kickbacks or tooling commissions. We recommend what fits your risk, not a sales quota.',
+                color: 'bg-neutral-200',
+                accent: 'bg-rose-600',
+              },
+              {
+                k: 'Long-term partner',
+                v: 'We stay on the hook: tune-ups, change logs, and evidence packs that hold up in audits and diligence.',
+                color: 'bg-neutral-200',
+                accent: 'bg-sky-600',
+              },
+            ].map(({ k, v, color, accent }) => (
+              <FadeIn key={k}>
+                <h3 className="font-display text-lg  font-semibold text-neutral-950">{k}</h3>
+                <p className="mt-2 text-sm text-neutral-700">{v}</p>
+                <div className={`mt-5 h-px w-full ${color} relative`}>
+                  <span className={`absolute top-0 left-0 h-px w-16 ${accent}`} />
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </Container>
-      <Container className="mt-16">
+
+
+      {/*  <Container className="mt-16">
         <StatList>
           <StatListItem value="2 weeks" label="Avg. time to first compliance roadmap" />
           <StatListItem value="100%" label="Controls mapped to Articles/Annexes" />
           <StatListItem value="0" label="Untailored templates used" />
         </StatList>
-      </Container>
+      </Container> */}
 
       <Culture />
 
