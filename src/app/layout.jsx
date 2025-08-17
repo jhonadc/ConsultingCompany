@@ -4,11 +4,14 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s – Comforma Compliance',
-    default: 'Comforma Compliance – Tailored EU compliance solutions in Berlin',
+    template: '%s – Amecari Advisory',
+    default:
+      'Amecari Regulatory & Governance Advisory,  Tailored EU compliance solutions in Berlin',
   },
-  description: 'We shape compliance to your business needs. Supporting european and international companies to meet EU regulations including the AI Act, GDPR, LGPD, Data Act, Accessibility Act, and more.',
+  description:
+    'We shape compliance to your business needs. Supporting european and international companies to meet EU regulations including the AI Act, GDPR, LGPD, Accessibility Act, and more.',
 }
+
 
 
 export default function Layout({ children }) {

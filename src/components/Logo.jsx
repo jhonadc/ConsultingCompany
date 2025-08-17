@@ -53,7 +53,7 @@ export function Logo({
         filled={filled}
       />
 
-      {/* Mobile: show "Comforma" */}
+      {/* Mobile: show "AmeCari" */}
       <text
         x="40"
         y="22"
@@ -63,10 +63,10 @@ export function Logo({
         letterSpacing="-0.02em"
         className={clsx(invert ? 'fill-white' : 'fill-neutral-950', 'sm:hidden')}
       >
-        Comforma
+        AmeCari
       </text>
 
-      {/* ≥ sm: show "Comforma Compliance" */}
+      {/* ≥ sm: show "AmeCari Compliance" */}
       <text
         x="40"
         y="22"
@@ -76,7 +76,7 @@ export function Logo({
         letterSpacing="-0.02em"
         className={clsx(invert ? 'fill-white' : 'fill-neutral-950', 'hidden sm:inline')}
       >
-        Comforma <tspan fontWeight="700">Compliance</tspan>
+        <tspan fontWeight="700"> AmeCari </tspan>Compliance
       </text>
     </svg>
   )

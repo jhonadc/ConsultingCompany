@@ -8,8 +8,10 @@ const regulations = [
   { title: 'GDPR', slug: 'gdpr', description: 'EU’s General Data Protection Regulation — protecting personal data since 2018.' },
   { title: 'LGPD', slug: 'lgpd', description: 'Brazil’s General Data Protection Regulation.' },
   { title: 'EU Accessibility Act', slug: 'accessibility', description: 'Ensuring digital products and services are accessible to all EU users by 2025.' },
-  { title: 'Data Act', slug: 'dataact', description: 'Regulating data access, sharing, and contractual frameworks across the EU.' },
 ]
+
+//  { title: 'Data Act', slug: 'dataact', description: 'Regulating data access, sharing, and contractual frameworks across the EU.' },
+
 
 // Color map for each regulation slug
 const REG_COLORS = {
@@ -17,8 +19,9 @@ const REG_COLORS = {
   aiact: { border: 'border-purple-500', hover: 'hover:ring-purple-500' },
   lgpd: { border: 'border-emerald-500', hover: 'hover:ring-emerald-500' },
   accessibility: { border: 'border-fuchsia-500', hover: 'hover:ring-fuchsia-500' },
-  dataact: { border: 'border-amber-500', hover: 'hover:ring-amber-500' },
 }
+
+//dataact: { border: 'border-amber-500', hover: 'hover:ring-amber-500' },
 
 const fallback = { border: 'border-neutral-300', hover: 'hover:ring-neutral-300' }
 

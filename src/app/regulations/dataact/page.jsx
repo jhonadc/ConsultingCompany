@@ -8,7 +8,7 @@ import { Border } from '@/components/Border'
 import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 export const metadata = {
-    title: 'EU Data Act — Comforma Compliance',
+    title: 'EU Data Act — AmeCari Compliance',
     description:
         'Regulation (EU) 2023/2854 — fair access to and use of data from connected products and related services. We adapt product design, contracts, and operations to comply without losing competitive edge.',
 }

@@ -9,7 +9,7 @@ import { Border } from '@/components/Border'
 import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 export const metadata = {
-    title: 'EU Accessibility Act — Comforma Compliance',
+    title: 'EU Accessibility Act — Amecari Compliance',
     description:
         'Directive (EU) 2019/882 — mandatory accessibility requirements for products and services in the EU from 28 June 2025. Design, implementation, and evidence for compliance.',
 }
@@ -66,7 +66,7 @@ export default function EuAccessibilityActPage() {
                                     Meet core accessibility requirements
                                 </h3>
                                 <p className="text-neutral-600 text-sm">
-                                    Ensure products and services are perceivable, operable, understandable, and robust for persons with disabilities, following harmonised EN standards where available.
+                                    Ensure products and services are perceivable, operable and understandable for persons with disabilities, following harmonised EN standards where available.
                                 </p>
                                 <div className="h-1 w-16 bg-emerald-700 mt-2"></div>
                             </li>
@@ -173,7 +173,7 @@ export default function EuAccessibilityActPage() {
                                 {
                                     title: 'Accessibility Gap Assessment',
                                     desc:
-                                        'Fast evaluation of your products/services against EAA requirements with a practical remediation plan.',
+                                        'Fast evaluation of your websites, apps, and digital platforms against EAA requirements with a practical remediation plan.',
                                     cta: 'Start your gap check',
                                 },
                                 {
@@ -183,29 +183,30 @@ export default function EuAccessibilityActPage() {
                                     cta: 'Fix accessibility now',
                                 },
                                 {
-                                    title: 'Accessible Documentation Pack',
+                                    title: 'Accessible Digital Documentation',
                                     desc:
-                                        'Prepare product/service manuals, usage instructions, and customer communications in accessible formats.',
+                                        'Prepare user guides, customer support flows, and digital communications in accessible formats.',
                                     cta: 'Get accessible docs',
                                 },
                                 {
-                                    title: 'Supplier Accessibility Onboarding',
+                                    title: 'Accessible Procurement Toolkit',
                                     desc:
-                                        'Integrate accessibility into procurement: RFP templates, contractual clauses, and supplier verification routines.',
+                                        'Integrate accessibility into procurement for digital services: RFP templates, contractual clauses, and supplier checks.',
                                     cta: 'Align your suppliers',
-                                },
-                                {
-                                    title: 'Self-service Terminal & Device Review',
-                                    desc:
-                                        'Assess ATMs, kiosks, and ticketing machines for accessibility and deliver retrofit or replacement recommendations.',
-                                    cta: 'Check your devices',
                                 },
                                 {
                                     title: 'Conformity File & Declaration Setup',
                                     desc:
-                                        'Create technical documentation and Declarations of Conformity to satisfy enforcement and client requirements.',
+                                        'Create the required accessibility statement, technical file, and Declarations of Conformity to satisfy EAA enforcement.',
                                     cta: 'Prepare your file',
                                 },
+                                {
+                                    title: 'Ongoing Accessibility Monitoring',
+                                    desc:
+                                        'Set up automated and manual monitoring for websites, apps, and e-commerce to ensure continuous EAA compliance.',
+                                    cta: 'Stay compliant',
+                                },
+
                             ].map(({ title, desc, cta }) => (
                                 <div key={title} className="group relative lg:col-span-2">
                                     <div className="absolute inset-0 rounded-3xl bg-white ring-1 ring-neutral-950/10 shadow-sm transition-transform group-hover:-translate-y-0.5 group-hover:scale-[1.01]" />

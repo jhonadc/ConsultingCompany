@@ -54,13 +54,13 @@ const regulations = [
     slug: 'accessibility',
     description: 'EU rules ensuring that products and services are accessible to all users, including those with disabilities.'
   },
-  {
+
+]
+{/*
     title: 'Data Act',
     slug: 'dataact',
     description: 'EU regulation governing data access, sharing, interoperability, and fair contractual arrangements.'
-  },
-]
-
+  */}
 
 //nis2: { border: 'border-rose-500', hover: 'hover:ring-rose-500' },
 function Regulations() {
@@ -105,7 +105,7 @@ function Regulations() {
           })}
         </nav>
         {/* Desktop/tablet: cards */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
           {regulations.map((reg) => {
             const colors = REG_COLORS[reg.slug] ?? fallback
             return (
@@ -545,14 +545,14 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56 relative">
         <FadeIn className="max-w-4xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl leading-tight">
-            Comforma Compliance.
+            EU Regulatory and Governance Advisory.
           </h1>
           <h2 className="font-display text-3xl sm:text-5xl font-medium tracking-tight text-balance text-neutral-950 mt-2">
-            Berlin’s boutique studio for compliance in the form your business needs.
+            Berlin’s boutique studio for compliance.
           </h2>
 
           <p className="mt-6 text-xl text-neutral-600">
-            We shape compliance frameworks around your unique business structure — blending legal precision with engineering expertise to keep you ahead of EU regulations while protecting growth, reputation, and competitive edge.
+            We shape compliance frameworks around your unique business structure blending legal precision with engineering expertise to keep you ahead of EU regulations while protecting growth, reputation, and competitive edge.
           </p>
         </FadeIn>
 
@@ -602,7 +602,7 @@ export default async function Home() {
         }}
         logoClassName="w-24 h-auto" // ✅ only if Testimonial supports it
       >
-        Comforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
+        Amecari Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
         The results are outstanding and we managed to launch in Europe!
       </Testimonial>
       <ContactSection />

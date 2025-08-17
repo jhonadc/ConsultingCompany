@@ -9,7 +9,7 @@ import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 
 export const metadata = {
-    title: 'LGPD — Comforma Compliance',
+    title: 'LGPD — AmeCari Compliance',
     description:
         'Brazil’s General Data Protection Law (LGPD) — in force since 18 September 2020. Tailored governance, controls, and evidence that stand up to ANPD scrutiny.',
 }

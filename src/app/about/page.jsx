@@ -21,7 +21,7 @@ import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
-import imageJhonathan from'@/images/JhonathanPhoto.jpg'
+import imageJhonathan from '@/images/JhonathanPhoto.jpg'
 import { loadArticles } from '@/lib/mdx'
 import { JhonathanCard } from '@/components/JhonathanCard' // client component (JSX)
 
@@ -137,7 +137,7 @@ export const metadata = {
 }
 
 export default async function About() {
-  const blogArticles = (await loadArticles()).slice(0, 2)
+  //const blogArticles = (await loadArticles()).slice(0, 2)
 
   return (
     <>
@@ -157,7 +157,68 @@ export default async function About() {
           </p>
         </div>
       </PageIntro>
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <SectionIntro
+          eyebrow="Why AmeCari"
+          title="Partnership, not paperwork."
+        >
+          <p className="max-w-3xl">
+            Many firms auto-generate documents. We don’t. We design controls that run in your
+            products and teams—embedding ownership, routines, and evidence—so compliance supports
+            growth, security, and trust.
+          </p>
+        </SectionIntro>
 
+        {/* Three-column, no cards; thin line with a short color accent */}
+        <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              k: 'Implementation over automation',
+              v: 'No boilerplate. We build approvals, risk logs, DPIA cadence, and vendor intake that actually operate in your stack.',
+              color: 'bg-neutral-200',
+              accent: 'bg-purple-600',
+            },
+            {
+              k: 'Culture, not checklists',
+              v: 'Training, clear owners, and simple routines turn rules into habit—so compliance survives org changes.',
+              color: 'bg-neutral-200',
+              accent: 'bg-blue-600',
+            },
+            {
+              k: 'Growth & security together',
+              v: 'Evidence and control clarity accelerate enterprise deals while reducing enforcement and outage risk.',
+              color: 'bg-neutral-200',
+              accent: 'bg-emerald-600',
+            },
+            {
+              k: 'Accountable & defensible',
+              v: 'Every action maps to law and standard (AI Act, GDPR, ISO 42001) with traceable decisions and proof.',
+              color: 'bg-neutral-200',
+              accent: 'bg-amber-600',
+            },
+            {
+              k: 'Vendor-neutral',
+              v: 'No kickbacks or tooling commissions. We recommend what fits your risk, not a sales quota.',
+              color: 'bg-neutral-200',
+              accent: 'bg-rose-600',
+            },
+            {
+              k: 'Long-term partner',
+              v: 'We stay on the hook: tune-ups, change logs, and evidence packs that hold up in audits and diligence.',
+              color: 'bg-neutral-200',
+              accent: 'bg-sky-600',
+            },
+          ].map(({ k, v, color, accent }) => (
+            <FadeIn key={k}>
+              <h3 className="font-display text-lg font-semibold text-neutral-950">{k}</h3>
+              <p className="mt-2 text-sm text-neutral-700">{v}</p>
+              <div className={`mt-5 h-px w-full ${color} relative`}>
+                <span className={`absolute top-0 left-0 h-px w-16 ${accent}`} />
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </Container>
       <Container className="mt-16">
         <StatList>
           <StatListItem value="2 weeks" label="Avg. time to first compliance roadmap" />
@@ -170,12 +231,12 @@ export default async function About() {
 
       <Team />
 
-      <PageLinks
+      {/* <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
         intro="Actionable guidance on the EU AI Act, GDPR for ML pipelines, ISO 42001 AIMS, vendor governance, and model-security hardening."
         pages={blogArticles}
-      />
+      /> */}
 
       <ContactSection />
     </>
