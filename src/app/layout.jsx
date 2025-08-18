@@ -4,6 +4,7 @@ import '@/styles/tailwind.css'
 import Script from 'next/script'
 import GATracker from './ga-tracker'
 import { Analytics } from '@vercel/analytics/next'
+import { Suspense } from 'react' // ✅ add this
 
 export const metadata = {
   title: {
@@ -22,11 +23,14 @@ export default function Layout({ children }) {
   return (
     <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
-        {/* Track client-side route changes */}
-        <GATracker />
+        {/* Track client-side route changes (must be inside Suspense) */}
+        <Suspense fallback={null}>
+          <GATracker />
+        </Suspense>
+
         <Analytics />
 
-        {/* Google tag (gtag.js) – carregado uma única vez */}
+        {/* Google tag (gtag.js) – loaded once */}
         <Script
           id="ga-loader"
           strategy="afterInteractive"
@@ -41,10 +45,10 @@ export default function Layout({ children }) {
             // GA4
             ${GA_ID ? `gtag('config', '${GA_ID}', { send_page_view: false });` : ''}
 
-            // Google Ads (AW) – inicialização adicional
+            // Google Ads (AW)
             ${ADS_ID ? `gtag('config', '${ADS_ID}');` : ''}
 
-            // Expor gtag globalmente
+            // expose globally
             window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
           `}
         </Script>
