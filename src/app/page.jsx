@@ -507,7 +507,7 @@ export function SpotlightTestimonial() {
 
                 {/* LinkedIn */}
                 <Link
-                  href="https://www.linkedin.com/in/SEU-USUARIO" // <-- troque pelo seu link
+                  href="https://www.linkedin.com/in/jhonathanadc" // <-- troque pelo seu link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-neutral-100 transition hover:border-white/40 hover:bg-white/5"

@@ -1,3 +1,5 @@
+
+
 // app/regulations/ai-act/page.jsx
 import Link from 'next/link'
 import { Container } from '@/components/Container'
