@@ -271,9 +271,6 @@ export default function AiActPage() {
         </Container>
         <OurProcess />
 
-        <SpotlightTestimonial />
-
-
         {/* Obligations */}
         <Container className="mt-20">
           <Border />
