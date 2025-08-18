@@ -21,6 +21,7 @@ import WSLaw from '@/images/clients/logos/WSLaw.svg'
 import zib from '@/images/clients/logos/zib.svg'
 import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
 import BFGImage from '@/images/clients/logos/BFGImage.png'
+import { BookingForm } from '@/components/BookingForm'
 
 const clients = [
   ['BFG', BFG],
@@ -587,6 +588,7 @@ export default async function Home() {
 
       <ProofOfValue />
       <SpotlightTestimonial />
+      <BookingForm />
       <OurProcess />
       <Clients />
 
