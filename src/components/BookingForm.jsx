@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
@@ -7,12 +8,10 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { DIAL_CODES } from '@/lib/dialCodes'
 import Link from 'next/link'
 
-// Convert ISO country code to emoji flag
 function isoToFlag(iso) {
   return String.fromCodePoint(...iso.toUpperCase().split('').map(c => 127397 + c.charCodeAt(0)))
 }
 
-// Detect browser country
 function detectCountryISO() {
   const prefs = typeof navigator !== 'undefined'
     ? (navigator.languages || [navigator.language || ''])
@@ -31,7 +30,6 @@ export function BookingForm({
   eyebrow = 'Booking',
   title = 'Request your session',
   intro = 'Share your goals with us and discover how we can guide you through complex compliance requirements.',
-
   service = 'general',
 }) {
   const pathname = usePathname()
@@ -71,6 +69,13 @@ export function BookingForm({
       setStatus({ sending: false, ok: true, msg: 'Thanks! We will get back to you shortly.' })
       formEl.reset()
       setCountryISO(detectCountryISO())
+
+      // ✅ Fire Google Ads conversion
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {
+          'send_to': 'AW-627199583/1aBBCMzU9IgbEN-ciasC',
+        })
+      }
     } catch (err) {
       console.error(err)
       setStatus({ sending: false, ok: false, msg: 'Sorry, something went wrong. Please email us directly.' })
@@ -89,44 +94,22 @@ export function BookingForm({
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="grid gap-2">
             <label htmlFor="name">Full name <span className="text-red-600">*</span></label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              required
-              className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
-            />
+            <input id="name" type="text" name="name" required className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
           </div>
           <div className="grid gap-2">
             <label htmlFor="email">Work email <span className="text-red-600">*</span></label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
-            />
+            <input id="email" type="email" name="email" required className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <input
-            type="text"
-            name="company"
-            placeholder="Company"
-            className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
-          />
-
-          {/* Dial code + phone, styled to match inputs */}
+          <input type="text" name="company" placeholder="Company" className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
 
           <div className="flex gap-2">
             <div className="relative w-20">
               <select
                 name="phoneCountry"
-                className="
-        w-full rounded-xl border border-neutral-300 bg-white px-2 py-3 text-sm
-        focus:outline-none focus:ring-2 focus:ring-neutral-900/10 appearance-none pr-6
-      "
+                className="w-full rounded-xl border border-neutral-300 bg-white px-2 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900/10 appearance-none pr-6"
                 value={countryISO}
                 onChange={(e) => setCountryISO(e.target.value)}
               >
@@ -136,48 +119,26 @@ export function BookingForm({
                   </option>
                 ))}
               </select>
-              {/* caret */}
-              <span className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-neutral-400">
-                ▾
-              </span>
+              <span className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-neutral-400">▾</span>
             </div>
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="123 456 789"
-              className="flex-1 rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
-            />
+            <input type="tel" name="phone" placeholder="123 456 789" className="flex-1 rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
           </div>
-
         </div>
 
-        <textarea
-          name="message"
-          rows={4}
-          placeholder="Context, goals, preferred dates"
-          className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
-        />
+        <textarea name="message" rows={4} placeholder="Context, goals, preferred dates" className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
 
-        {/* Informational consent line (no checkbox) */}
         <p className="mt-1 text-xs leading-relaxed text-neutral-600">
-          By submitting this form, you consent to the processing of your personal data for the purpose of
-          handling your request, in accordance with our{' '}
-          <Link href="/privacy" className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900">
-            Privacy Notice
-          </Link>.
+          By submitting this form, you consent to the processing of your personal data for the purpose of handling your request, in accordance with our{' '}
+          <Link href="/privacy" className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900">Privacy Notice</Link>.
         </p>
 
-        <button
-          type="submit"
-          disabled={status.sending}
-          className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white disabled:opacity-60"
-        >
+        <button type="submit" disabled={status.sending} className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white disabled:opacity-60">
           {status.sending ? 'Sending…' : 'Send request'}
         </button>
 
         {status.msg && (
-          <p className={`text-sm ${status.ok ? 'text-green-600' : 'text-red-600'}`}>{status.msg}</p>
+          <p className={`text - sm ${status.ok ? 'text-green-600' : 'text-red-600'} `}>{status.msg}</p>
         )}
       </form>
     </Container>

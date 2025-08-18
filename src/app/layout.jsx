@@ -3,7 +3,7 @@ import { RootLayout as Shell } from '@/components/RootLayout'
 import '@/styles/tailwind.css'
 import Script from 'next/script'
 import GATracker from './ga-tracker'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
@@ -16,6 +16,7 @@ export const metadata = {
 }
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID
 
 export default function Layout({ children }) {
   return (
@@ -25,7 +26,7 @@ export default function Layout({ children }) {
         <GATracker />
         <Analytics />
 
-        {/* Google tag (gtag.js) */}
+        {/* Google tag (gtag.js) – carregado uma única vez */}
         <Script
           id="ga-loader"
           strategy="afterInteractive"
@@ -36,8 +37,14 @@ export default function Layout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            // Disable automatic page_view; we'll send on route changes
-            gtag('config', '${GA_ID}', { send_page_view: false });
+
+            // GA4
+            ${GA_ID ? `gtag('config', '${GA_ID}', { send_page_view: false });` : ''}
+
+            // Google Ads (AW) – inicialização adicional
+            ${ADS_ID ? `gtag('config', '${ADS_ID}');` : ''}
+
+            // Expor gtag globalmente
             window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
           `}
         </Script>
