@@ -30,7 +30,8 @@ export function BookingForm({
   id = 'booking',
   eyebrow = 'Booking',
   title = 'Request your session',
-  intro = 'After you submit this form we will send proposed dates right away, along with pricing and a tailored outline for your industry and risk profile.',
+  intro = 'Share your goals with us and discover how we can guide you through complex compliance requirements.',
+
   service = 'general',
 }) {
   const pathname = usePathname()

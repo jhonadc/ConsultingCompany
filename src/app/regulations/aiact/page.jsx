@@ -6,6 +6,12 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
 import RegulationsFactStrip from '@/components/RegulationsFactStrip'
+import { BookingForm } from '@/components/BookingForm'
+import { StylizedImage } from '@/components/StylizedImage'
+import imageLaptop from '@/images/laptop.jpg'
+import { ColorDivider } from '@/components/ColorDivider'
+import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'EU AI Act — AmeCari Compliance',
@@ -34,6 +40,170 @@ const facts = [
   },
 ]
 
+export function OurProcess() {
+  return (
+    <>
+      <SectionIntro
+        eyebrow="How we work"
+        title="Turning complex EU rules into clear competitive advantage"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        <p>
+          Compliance should enable growth. We align legal, technical, and product teams
+          to reduce risk and unlock speed
+        </p>
+      </SectionIntro>
+
+      <Container className="mt-16">
+        <div className="lg:flex lg:items-center lg:justify-end">
+          {/* Image column (unchanged) */}
+          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+              <StylizedImage
+                src={imageLaptop}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-end"
+              />
+            </FadeIn>
+          </div>
+
+          {/* List column (updated items only) */}
+          <ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
+
+
+            {/* Assess */}
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                Assess
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                We map business model, risk appetite, data flows, and AI use cases to pinpoint
+                obligations (AI Act, GDPR, sector rules) and surface quick wins vs. critical gaps.
+                You get a concise findings brief and a prioritised plan with effort/impact/timelines.
+              </p>
+              <ColorDivider
+                primaryClass="bg-blue-700"
+                secondaryClass="bg-blue-200"
+                primaryWidth="w-16"
+              />
+            </li>
+
+            {/* Implement */}
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                Implement
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                We co-create the controls that matter: AI policy, risk &amp; human oversight,
+                privacy by design, vendor governance, and approvals—plus an ISO/IEC 42001-aligned
+                AI Management System, Annex IV technical documentation, DPIAs, and RoPA where needed.
+              </p>
+              <ColorDivider
+                primaryClass="bg-pink-500"
+                secondaryClass="bg-pink-200"
+              />
+            </li>
+
+            {/* Sustain */}
+            <li>
+              <h3 className="font-display text-lg font-semibold text-neutral-900">
+                Sustain
+              </h3>
+              <p className="mt-2 text-neutral-600">
+                Before go-live we validate controls, align owners, and set KPIs. We run tabletop
+                exercises, verify human-in-the-loop, and check transfer/vendor safeguards end-to-end.
+                Handover includes an audit-ready pack and a pragmatic maintenance cadence.
+              </p>
+              <ColorDivider
+                primaryClass="bg-emerald-700"
+                secondaryClass="bg-emerald-200"
+              />
+            </li>
+
+            {/* Link to detailed process */}
+            <li className="pt-2">
+              <Link
+                href="/process"
+                className="inline-flex items-center gap-1 text-md font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
+                aria-label="View detailed process"
+              >
+                View detailed process →
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Container>
+    </>
+  )
+}
+
+export function SpotlightTestimonial() {
+  return (
+    <section className="relative">
+      <div className="bg-neutral-950">
+        <Container className="py-16 sm:py-20 lg:py-24">
+          <div className="grid items-start gap-10 sm:gap-12 md:grid-cols-2">
+            {/* Portrait */}
+            <div className="mx-auto w-full max-w-sm overflow-hidden rounded-xl bg-neutral-900 ring-1 ring-white/10">
+              <Image
+                src={JhonathanPhoto}
+                alt="Jhonathan Campos"
+                className="h-auto w-full object-cover"
+                priority
+              />
+            </div>
+
+            {/* Quote + meta */}
+            <div className="text-neutral-100">
+              <p className="mt-4 text-[17px] md:text-[18px] leading-light font-normal">
+                AI Governance Specialist with a unique dual background as a Lawyer
+                and Software Engineer. My mission is to empower companies and
+                research institutions worldwide to confidently navigate the
+                complex landscape of regulatory compliance.
+                <br /><br />
+                With deep expertise in the AI Act, GDPR, ePrivacy Directive,
+                ISO&nbsp;42001, and Medical Device Regulation, I create compliance
+                frameworks that not only meet legal requirements but also drive
+                innovation and growth.
+                <br /><br />
+                My multidisciplinary approach allows me to translate complex
+                regulations into actionable strategies, design and implement
+                compliance programs that mitigate risks, and ensure organizations
+                remain compliant and competitive—while fostering seamless
+                collaboration between legal and technical teams.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="font-semibold text-white">Jhonathan Campos</p>
+                  <p className="mt-1 text-sm text-neutral-400">
+                    Founder — AI Governance Specialist, Lawyer &amp; Software Engineer
+                  </p>
+                </div>
+
+                {/* LinkedIn */}
+                <Link
+                  href="https://www.linkedin.com/in/jhonathanadc" // <-- troque pelo seu link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-neutral-100 transition hover:border-white/40 hover:bg-white/5"
+                  aria-label="View LinkedIn profile"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 .02 5 2.5 2.5 0 0 1-.02-5ZM3 8.98h3.95V21H3V8.98ZM9.5 8.98H13v1.64h.05c.48-.86 1.66-1.77 3.42-1.77 3.66 0 4.34 2.1 4.34 4.83V21H16.8v-5.35c0-1.28-.02-2.93-1.79-2.93-1.8 0-2.07 1.4-2.07 2.84V21H9.5V8.98Z" />
+                  </svg>
+                  LinkedIn
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+    </section>
+  )
+}
+
+
 export default function AiActPage() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-20">
@@ -43,11 +213,63 @@ export default function AiActPage() {
         {/* Header */}
         <SectionIntro title="EU AI Act">
           <p className='text-md'>
-            The world’s first horizontal AI regulation, setting rules for the design, development,
+            The world’s first AI regulation, setting rules for the design, development,
             and deployment of AI systems across the EU.
           </p>
         </SectionIntro>
         <RegulationsFactStrip facts={facts} />
+
+        {/* What we offer — 3-col grid with hero nav style */}
+        <Container className="mt-24">
+          <FadeIn className="mt-6 mx-auto max-w-6xl">
+            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
+              What we offer
+            </h2>
+            <p className="mt-3 text-md text-neutral-600">
+              Targeted, high-impact services to get you compliant fast.
+            </p>
+
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { href: '/services/ai-literacy', label: 'AI Literacy Training', border: 'border-purple-500' },
+                { href: '/services/highriskcheck', label: 'Am I high-risk?', border: 'border-amber-500' },
+                { href: '/services/ai-use-policy', label: 'AI Use Policy', border: 'border-green-500' },
+              ].map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`group inline-flex items-center justify-between
+                    w-full rounded-full border ${link.border}
+                    bg-white/80 px-5 py-4 text-md sm:text-[15px] text-neutral-700
+                    shadow-sm backdrop-blur-sm transition-all duration-200
+                    hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
+                >
+                  <span>{link.label}</span>
+                  <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
+                </a>
+              ))}
+            </div>
+          </FadeIn>
+        </Container>
+        {/* CTA */}
+        <Container className="mt-28">
+          <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
+            <h2 className="font-display text-3xl font-semibold">Comply. Compete. Lead with AI you can trust.</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
+              We design AI Act compliance programmes that fit your organisation and generate
+              audit-ready proof you can stand behind.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
+            >
+              Talk to us
+            </Link>
+          </div>
+        </Container>
+        <OurProcess />
+
+        <SpotlightTestimonial />
 
 
         {/* Obligations */}
@@ -108,40 +330,6 @@ export default function AiActPage() {
             </ul>
           </FadeIn>
         </Container>
-
-        {/* What we offer — 3-col grid with hero nav style */}
-        <Container className="mt-24">
-          <FadeIn className="mt-6 mx-auto max-w-6xl">
-            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
-              What we offer
-            </h2>
-            <p className="mt-3 text-md text-neutral-600">
-              Targeted, high-impact services to get you compliant fast.
-            </p>
-
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {[
-                { href: '/services/ai-literacy', label: 'AI Literacy Training', border: 'border-purple-500' },
-                { href: '/services/highriskcheck', label: 'Am I high-risk?', border: 'border-amber-500' },
-                { href: '/services/ai-use-policy', label: 'AI Use Policy', border: 'border-green-500' },
-              ].map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className={`group inline-flex items-center justify-between
-                    w-full rounded-full border ${link.border}
-                    bg-white/80 px-5 py-4 text-sm sm:text-[15px] text-neutral-700
-                    shadow-sm backdrop-blur-sm transition-all duration-200
-                    hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
-                >
-                  <span>{link.label}</span>
-                  <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
-                </a>
-              ))}
-            </div>
-          </FadeIn>
-        </Container>
-
         {/* Why now */}
         <Container className="mt-20">
           <FadeIn className="mx-auto max-w-6xl">
@@ -171,14 +359,8 @@ export default function AiActPage() {
             </div>
           </FadeIn>
         </Container>
+        <BookingForm />
 
-        {/* Partnership note */}
-        <Container className="mt-12">
-          <FadeIn className="mx-auto max-w-4xl text-neutral-700 text-sm">
-            We are partnering with leaders in <strong>xAI</strong> to deliver a complete AI Act
-            applicability and readiness programme. Details will be announced here as soon as they are ready.
-          </FadeIn>
-        </Container>
 
         {/* CTA */}
         <Container className="mt-28">
@@ -196,6 +378,19 @@ export default function AiActPage() {
             </Link>
           </div>
         </Container>
+
+
+
+
+        {/* Partnership note */}
+        <Container className="mt-12">
+          <FadeIn className="mx-auto max-w-4xl text-neutral-700 text-sm">
+            We are partnering with leaders in <strong>xAI</strong> to deliver a complete AI Act
+            applicability and readiness programme. Details will be announced here as soon as they are ready.
+          </FadeIn>
+        </Container>
+
+
       </div>
     </Container>
   )
