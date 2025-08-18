@@ -3,6 +3,7 @@ import { RootLayout as Shell } from '@/components/RootLayout'
 import '@/styles/tailwind.css'
 import Script from 'next/script'
 import GATracker from './ga-tracker'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: {
@@ -22,6 +23,7 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         {/* Track client-side route changes */}
         <GATracker />
+        <Analytics />
 
         {/* Google tag (gtag.js) */}
         <Script
