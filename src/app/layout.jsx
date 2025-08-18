@@ -1,6 +1,8 @@
-import { RootLayout } from '@/components/RootLayout'
-
+// src/app/layout.tsx
+import { RootLayout as Shell } from '@/components/RootLayout'
 import '@/styles/tailwind.css'
+import Script from 'next/script'
+import GATracker from './ga-tracker'
 
 export const metadata = {
   title: {
@@ -12,13 +14,33 @@ export const metadata = {
     'We shape compliance to your business needs. Supporting european and international companies to meet EU regulations including the AI Act, GDPR, LGPD, Accessibility Act, and more.',
 }
 
-
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export default function Layout({ children }) {
   return (
     <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
-        <RootLayout>{children}</RootLayout>
+        {/* Track client-side route changes */}
+        <GATracker />
+
+        {/* Google tag (gtag.js) */}
+        <Script
+          id="ga-loader"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            // Disable automatic page_view; we'll send on route changes
+            gtag('config', '${GA_ID}', { send_page_view: false });
+            window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+          `}
+        </Script>
+
+        <Shell>{children}</Shell>
       </body>
     </html>
   )
