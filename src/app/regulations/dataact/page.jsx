@@ -292,7 +292,7 @@ export default function DataActPage() {
                         </div>
                         <div className="mt-4 text-left">
                             <Link
-                                href="/our-process"
+                                href="/process"
                                 className="inline-block text-sm font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
                             >
                                 See our full compliance process

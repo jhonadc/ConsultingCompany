@@ -605,7 +605,20 @@ export default async function Home() {
         Amecari Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
         The results are outstanding and we managed to launch in Europe!
       </Testimonial>
-      <ContactSection />
+      <Container className="mt-28">
+        <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
+          <h2 className="font-display text-3xl font-semibold">Avoid fines. Protect trust. Keep your business running.</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
+            We design GDPR controls that fit your organisation and generate evidence you can stand behind.
+          </p>
+          <Link
+            href="/contact"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
+          >
+            Talk to us
+          </Link>
+        </div>
+      </Container>
     </>
   )
 }

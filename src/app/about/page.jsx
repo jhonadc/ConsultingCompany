@@ -27,38 +27,45 @@ import { JhonathanCard } from '@/components/JhonathanCard' // client component (
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className=" rounded-4xl bg-neutral-950 py-24 sm:mt-20 lg:mt-20 lg:py-18">
       <SectionIntro
         eyebrow="Our values"
-        title="Premium compliance is discipline, independence, and measurable outcomes."
+        title="Integrity, trust, and human dignity at the core."
         invert
       >
         <p>
-          We operate to the standards our clients are judged by: defensible decisions, documented controls, and governance that survives audit and scrutiny.
+          We believe compliance is more than rules. It is about how companies earn trust, protect people, and act with independence.
+          Our values guide every decision, shaping partnerships that last and governance that holds up in the real world.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Integrity & Independence" invert>
-            Unvarnished advice from an independent partner—no vendor kickbacks, no commissioned tooling, no conflicts.
+          <GridListItem title="Integrity and Independence" invert>
+            We tell the truth when it is easy and when it is hard. Clients deserve advice that is free from sales targets, referral fees, and hidden agendas.
           </GridListItem>
-          <GridListItem title="Confidentiality by Design" invert>
-            Strict need-to-know access, clear data boundaries, retention controls, and NDAs for all contributors.
+
+          <GridListItem title="Stewardship of Trust" invert>
+            Compliance protects trust. We treat your data, your customers, and your reputation as assets held in our care, not as inputs to process.
           </GridListItem>
-          <GridListItem title="Proportional & Pragmatic" invert>
-            Controls tailored to your risk profile. No checkbox theater—only frameworks your teams can run.
+
+          <GridListItem title="Human Dignity" invert>
+            Regulation exists to protect people. Privacy, accessibility, and fairness are not features, they are commitments to how a company behaves.
           </GridListItem>
-          <GridListItem title="Accountable & Traceable" invert>
-            Every recommendation maps to an owner, deadline, and Article/Clause for audit-ready evidence.
+
+          <GridListItem title="Clarity over Complexity" invert>
+            Clear language and simple controls beat jargon and theater. Leaders should be able to see the risk, the decision, and the evidence at a glance.
           </GridListItem>
-          <GridListItem title="Security & Resilience" invert>
-            Secure-by-design for models, data, and supply chain to reduce rework and enforcement exposure.
+
+          <GridListItem title="Accountability with Evidence" invert>
+            Good governance leaves a trail. Every promise must be backed by who owns it, when it happens, and how it can be proven.
           </GridListItem>
-          <GridListItem title="Human-Centric" invert>
-            Safeguards aligned with fundamental rights and your values—turning compliance into customer trust.
+
+          <GridListItem title="Partnership for the Long Term" invert>
+            We aim to be part of your team. Culture, not checklists, is what keeps companies compliant through growth and change.
           </GridListItem>
         </GridList>
       </Container>
+
     </div>
   )
 }
@@ -141,30 +148,55 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Regulation into advantage. Compliance into trust.">
-        <p>
-          We help boards and product leaders turn the EU AI Act and GDPR into a durable competitive edge. Our work blends legal precision, engineering depth, and security discipline—controls that work in production, not just on paper.
-        </p>
-        <div className="mt-10 space-y-6 text-base">
-          <p>
-            Founded by a lawyer–engineer tired of recycled slideware, we deliver C-suite briefings, developer enablement, and system-specific risk audits. Every action maps to Articles and Annexes for evidence that stands up to auditors and regulators.
-          </p>
-          <p>
-            Timelines matter: prohibited AI practices apply from <strong>February&nbsp;2,&nbsp;2025</strong>; general-purpose AI provider duties start in <strong>2025</strong>; high-risk system obligations apply from <strong>2027</strong>. We design lean governance now so you’re compliant before it’s compulsory.
-          </p>
-          <p>
-            Each engagement ends with an independent compliance roadmap across AI Act, GDPR, and ISO&nbsp;42001—clear owners, deadlines, and KPIs. Practical. Defensible. Auditable.
-          </p>
-        </div>
-      </PageIntro>
+      {/* Replace <PageIntro>…</PageIntro> with this */}
       <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          <p className="text-sm font-medium text-neutral-600">About us</p>
+
+          <h1 className="mt-2 font-display text-4xl font-semibold text-neutral-950 sm:text-5xl lg:text-6xl">
+            Regulation into advantage.<br className="hidden sm:block" />
+            Compliance into trust.
+          </h1>
+
+          <div className="mt-6 max-w-6xl space-y-6 text-lg text-neutral-700 leading-7 justify-center">
+            <p>
+              Berlin is Europe’s startup capital and a testing ground for global innovation. It is also at the center of regulatory change:
+              the <strong>AI Act</strong>, <strong>GDPR</strong>, the <strong>Accessibility Act</strong> and new digital rules are being shaped and enforced here.
+            </p>
+
+            <p>
+              <strong>Generic software tools cannot translate these fast-moving rules </strong>into the governance, evidence and trust that investors, regulators and enterprise clients expect.
+              This is why we built a Compliance Studio in Berlin. <strong>Our role is not to generate paperwork. We embed regulation into your company’s DNA.</strong>
+            </p>
+
+            <p>
+              <strong>We work as a partner inside your flow.</strong> We align with your teams, adapt to your systems and build <strong>governance by design</strong>.
+              That means <strong>clear ownership</strong>, lean routines and <strong>audit-ready evidence</strong> that operates in practice.
+            </p>
+
+            <p>
+              Compliance is more than avoiding fines. In Berlin’s ecosystem of AI, health tech and digital products it is a <strong>strategic differentiator</strong>.
+              Done well, it <strong>accelerates enterprise deals, builds user trust and attracts investors who demand accountability.</strong>
+            </p>
+
+            <p>
+              Our approach applies <strong>legal expertise</strong>, <strong>engineering knowledge</strong> and <strong>security discipline</strong>.
+              We <strong>communicate, integrate and deliver solutions</strong> tailored to your risks and goals: <strong>a premium regulatory and governance advisory for companies shaping Europe’s digital future.</strong>
+            </p>
+
+          </div>
+        </div>
+      </Container>
+
+
+      <Container className="mt-24 sm:mt-32 lg:mt-30">
         <SectionIntro
           eyebrow="Why AmeCari"
           title="Partnership, not paperwork."
         >
           <p className="max-w-3xl">
             Many firms auto-generate documents. We don’t. We design controls that run in your
-            products and teams—embedding ownership, routines, and evidence—so compliance supports
+            products and teams—embedding ownership, routines, and evidence, so compliance supports
             growth, security, and trust.
           </p>
         </SectionIntro>
@@ -212,7 +244,7 @@ export default async function About() {
             ].map(({ k, v, color, accent }) => (
               <FadeIn key={k}>
                 <h3 className="font-display text-lg  font-semibold text-neutral-950">{k}</h3>
-                <p className="mt-2 text-sm text-neutral-700">{v}</p>
+                <p className="mt-2 text-md text-neutral-700">{v}</p>
                 <div className={`mt-5 h-px w-full ${color} relative`}>
                   <span className={`absolute top-0 left-0 h-px w-16 ${accent}`} />
                 </div>
