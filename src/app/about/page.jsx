@@ -149,44 +149,40 @@ export default async function About() {
   return (
     <>
       {/* Replace <PageIntro>…</PageIntro> with this */}
+      {/* Replace <PageIntro>…</PageIntro> with this */}
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
           <p className="text-sm font-medium text-neutral-600">About us</p>
 
-          <h1 className="mt-2 font-display text-4xl font-semibold text-neutral-950 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-2 font-display font-semibold text-neutral-950 text-3xl lg:text-6xl">
             Regulation into advantage.<br className="hidden sm:block" />
             Compliance into trust.
           </h1>
 
-          <div className="mt-6 max-w-6xl space-y-6 text-lg text-neutral-700 leading-7 justify-center">
+          <div className="mt-6 max-w-3xl space-y-5 text-md lg:text-lg leading-relaxed text-justify">
             <p>
-              Berlin is Europe’s startup capital and a testing ground for global innovation. It is also at the center of regulatory change:
-              the <strong>AI Act</strong>, <strong>GDPR</strong>, the <strong>Accessibility Act</strong> and new digital rules are being shaped and enforced here.
+              Berlin is Europe’s startup capital and a center of regulatory change with the <strong>AI Act</strong>, <strong>GDPR</strong> and the <strong>Accessibility Act</strong>.
             </p>
 
             <p>
-              <strong>Generic software tools cannot translate these fast-moving rules </strong>into the governance, evidence and trust that investors, regulators and enterprise clients expect.
-              This is why we built a Compliance Studio in Berlin. <strong>Our role is not to generate paperwork. We embed regulation into your company’s DNA.</strong>
+              <strong>Generic tools carry privacy risks and cannot meet the responsibility new regulations demand. We built a Compliance Studio to work within your structure and embed regulation into your daily operations.</strong>
             </p>
 
             <p>
-              <strong>We work as a partner inside your flow.</strong> We align with your teams, adapt to your systems and build <strong>governance by design</strong>.
-              That means <strong>clear ownership</strong>, lean routines and <strong>audit-ready evidence</strong> that operates in practice.
+              <strong>We integrate with your teams and systems.</strong> We design governance with clear ownership, lean routines and audit-ready evidence.
             </p>
 
             <p>
-              Compliance is more than avoiding fines. In Berlin’s ecosystem of AI, health tech and digital products it is a <strong>strategic differentiator</strong>.
-              Done well, it <strong>accelerates enterprise deals, builds user trust and attracts investors who demand accountability.</strong>
+              Compliance is not only about avoiding fines. In Berlin’s AI and health-tech ecosystem it is a <strong>strategic advantage</strong> that accelerates deals, builds trust and attracts investors.
             </p>
 
             <p>
-              Our approach applies <strong>legal expertise</strong>, <strong>engineering knowledge</strong> and <strong>security discipline</strong>.
-              We <strong>communicate, integrate and deliver solutions</strong> tailored to your risks and goals: <strong>a premium regulatory and governance advisory for companies shaping Europe’s digital future.</strong>
+              We combine <strong>legal expertise</strong>, <strong>engineering knowledge</strong> and <strong>security discipline</strong> to deliver solutions tailored to your risks and goals: <strong>a premium advisory for companies shaping Europe’s digital future.</strong>
             </p>
-
           </div>
         </div>
       </Container>
+
 
 
       <Container className="mt-24 sm:mt-32 lg:mt-30">
