@@ -48,7 +48,7 @@ export function OurProcess() {
       <SectionIntro
         eyebrow="How we work"
         title="Turning complex EU rules into clear competitive advantage"
-        className="mt-24 sm:mt-10 lg:mt-40"
+        className="mt-12 sm:mt-10 lg:mt-20"
       >
         <p>
           Compliance should enable growth. We align legal, technical, and product teams
@@ -428,8 +428,8 @@ export default function AiActPage() {
 
 
         {/* CTA */}
-        <Container className="mt-28">
-          <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
+        <Container className="mt-18">
+          <div className="rounded-4xl bg-neutral-950 px-6 py-10 text-white sm:px-10 sm:py-10 lg:px-12 text-center">
             <h2 className="font-display text-3xl font-semibold">Comply. Compete. Lead with AI you can trust.</h2>
             <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
               We design AI Act compliance programmes that fit your organisation and generate
@@ -445,31 +445,7 @@ export default function AiActPage() {
         </Container>
         <OurProcess />
 
-
-
-
         <BookingForm />
-
-
-        {/* CTA */}
-        <Container className="mt-28">
-          <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
-            <h2 className="font-display text-3xl font-semibold">Comply. Compete. Lead with AI you can trust.</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
-              We design AI Act compliance programmes that fit your organisation and generate
-              audit-ready proof you can stand behind.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
-            >
-              Talk to us
-            </Link>
-          </div>
-        </Container>
-
-
-
 
         {/* Partnership note */}
         <Container className="mt-12">
