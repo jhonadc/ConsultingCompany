@@ -40,7 +40,7 @@ export default function AiLiteracyPage() {
             <p className="mt-3 text-lg sm:text-xl font-medium text-neutral-200">
               Meet EU AI Act Article 4 requirements in just 4 hours
             </p>
-            <p className="mt-5 text-sm sm:text-base text-neutral-300">
+            <p className="mt-5 text-md sm:text-base text-neutral-300">
               Article 4 makes AI literacy a <span className="font-bold">legal obligation</span> for anyone
               designing, deploying, or overseeing AI. This tailored training gives your team the skills to use AI
               safely and effectively, avoids compliance risks, and provides documented proof for audits. Delivered
@@ -149,7 +149,7 @@ export default function AiLiteracyPage() {
                     </span>
                     <div>
                       <h3 className="text-sm font-semibold text-neutral-900">{name}</h3>
-                      <p className="mt-1 text-sm text-neutral-700">{desc}</p>
+                      <p className="mt-1 text-md text-neutral-700">{desc}</p>
                     </div>
                   </div>
                 </li>

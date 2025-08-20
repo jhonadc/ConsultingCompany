@@ -35,7 +35,7 @@ export default function AiUsePolicyPage() {
             <p className="mt-3 text-lg sm:text-xl font-medium text-neutral-200">
               From regulatory risk to enterprise asset
             </p>
-            <p className="mt-5 text-sm sm:text-base text-neutral-300">
+            <p className="mt-5 text-md sm:text-base text-neutral-300">
               In Europe, expectations for general-purpose AI are clear. The EU AI Act and the General-Purpose AI Code of
               Practice require companies to govern how AI is used. An AI Use Policy is the foundation: a legally aligned,
               technically informed document that sets boundaries, roles, and controls for AI in your company.
@@ -164,7 +164,7 @@ export default function AiUsePolicyPage() {
                     </span>
                     <div>
                       <h3 className="text-sm font-semibold text-neutral-900">{name}</h3>
-                      <p className="mt-1 text-sm text-neutral-700">{desc}</p>
+                      <p className="mt-1 text-md text-neutral-700">{desc}</p>
                     </div>
                   </div>
                 </li>
