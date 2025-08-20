@@ -34,10 +34,10 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
           src={image}
           className="h-80 w-full object-cover object-top [filter:grayscale(80%)_brightness(108%)_contrast(92%)] transition-transform duration-300 group-hover:scale-[1.02] sm:h-96"
           priority
-          style={{ objectPosition: 'center 15%' }} // ensure face shows
+          style={{ objectPosition: 'center 15%' }}
         />
         <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black to-black/0 to-40% p-6">
-          <p className="relative pl-3 font-display text-base/6 font-semibold tracking-wide text-white before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+          <p className="relative pl-3 font-display text-base/6 font-semibold tracking-wide text-white before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
             {name}
           </p>
           <p className="mt-2 text-sm text-white/90">{role}</p>
@@ -75,19 +75,20 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
 
               {/* ===== TOP SUMMARY ROW (equal heights) ===== */}
               <div className="grid gap-0 sm:grid-cols-3">
-                {/* LEFT: portrait + actions (shares row height with right) */}
-                <aside className="col-span-1 flex h-full flex-col border-b border-neutral-200 p-6 sm:border-b-0 sm:border-r sm:p-8">
-                  <div className="min-h-[240px] flex-1 overflow-hidden rounded-2xl bg-neutral-100 ring-1 ring-neutral-950/10">
+                {/* LEFT: portrait + actions — exact same total height as right */}
+                <aside className="col-span-1 grid h-full grid-rows-[1fr_auto] border-b border-neutral-200 p-6 sm:border-b-0 sm:border-r sm:p-8">
+                  {/* Photo grows to fill available height */}
+                  <div className="overflow-hidden rounded-2xl bg-neutral-100 ring-1 ring-neutral-950/10">
                     <Image
                       alt={name}
                       src={image}
                       className="h-full w-full object-cover [filter:grayscale(80%)_brightness(108%)_contrast(92%)]"
                       priority
-                      style={{ objectPosition: 'center 12%' }} // crop higher for face
+                      style={{ objectPosition: 'center 12%' }}
                     />
                   </div>
 
-                  {/* Contact actions */}
+                  {/* Contact actions pinned to bottom of left column */}
                   <div className="mt-4 grid gap-2">
                     <a
                       href="mailto:jhonathanaugusto@gmail.com"
@@ -101,6 +102,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                         ➔
                       </span>
                     </a>
+                    {/* Optional LinkedIn — keep muted if re-enabled
                     {linkedinUrl && (
                       <a
                         href={linkedinUrl}
@@ -116,41 +118,41 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                           ↗
                         </span>
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </aside>
 
-                {/* RIGHT: summary text (shares row height with left) */}
-                <section className="col-span-1 sm:col-span-2 h-full p-6 sm:p-8">
-                  {/* Name + role with micro accent bar */}
+                {/* RIGHT: summary text */}
+                <section className="col-span-1 h-full p-6 sm:col-span-2 sm:p-8">
                   <h1
                     id="jc-modal-title"
-                    className="relative pr-12 pl-3 text-[22px] font-semibold text-neutral-900 sm:text-3xl before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500"
+                    className="relative pr-12 pl-3 text-[22px] font-semibold text-neutral-900 sm:text-3xl before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80"
                   >
                     {name}
                   </h1>
-                  <p className="mt-1 text-sm text-neutral-600 sm:text-[15px]">{role}</p>
+                  <p className="mt-1 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600">{role}</p>
 
                   {/* Quick focus tags */}
                   <div className="mt-3 flex flex-wrap gap-2">
                     {['EU AI Act', 'ISO 42001', 'GDPR', 'Model security'].map((t) => (
                       <span
                         key={t}
-                        className="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50/60 px-2.5 py-1 text-xs font-medium text-indigo-700"
+                        className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50/60 px-2.5 py-1 text-xs font-medium text-emerald-700"
                       >
                         {t}
                       </span>
                     ))}
                   </div>
 
-                  {/* Snapshot */}
-                  <div className="mt-6 space-y-3 text-[15px] leading-relaxed text-neutral-800">
+                  {/* Snapshot — template-aligned text */}
+                  <div className="mt-6 space-y-3 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600">
                     <p>
-                      Senior <strong>AI Governance & GDPR specialist</strong> with a dual background as a <strong>Lawyer</strong> and <strong>Software Engineer</strong>.
-                      I turn the EU AI Act, ISO&nbsp;42001 and GDPR into <strong>operational advantage</strong>—controls that work in production and stand up to audit.
+                      Senior <span className="font-semibold">AI Governance & GDPR specialist</span> with a dual background as a{' '}
+                      <span className="font-semibold">Lawyer</span> and <span className="font-semibold">Software Engineer</span>. I turn the EU AI Act,
+                      ISO&nbsp;42001 and GDPR into <span className="font-semibold">operational advantage</span>—controls that work in production and stand up to audit.
                     </p>
-                    <p className="text-neutral-700">
-                      <strong>Specialization:</strong> Compliance strategy, model-risk governance, and secure ML pipelines for high-stakes environments.
+                    <p>
+                      <span className="font-semibold">Specialization:</span> Compliance strategy, model-risk governance, and secure ML pipelines for high-stakes environments.
                     </p>
                   </div>
                 </section>
@@ -160,59 +162,59 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
               <div className="p-6 sm:p-8">
                 <div className="mt-2 grid gap-6 md:grid-cols-2">
                   {/* RESULTS */}
-                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
-                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
                       Selected Results
                     </h3>
-                    <ul className="mt-3 space-y-3 text-[15px] text-neutral-900">
+                    <ul className="mt-3 space-y-3 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700">
                       <li>
-                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                          <strong>krisenchat — Senior AI Compliance Manager:</strong> led AI Act implementation, integrated ISO practices, and
-                          delivered a governance program credited with a <strong>~90% reduction in regulatory risk exposure</strong>.
+                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                          <span className="font-semibold">krisenchat — Senior AI Compliance Manager:</span> led AI Act implementation, integrated ISO practices, and
+                          delivered a governance program credited with a <span className="font-semibold">~90% reduction in regulatory risk exposure</span>.
                         </span>
                       </li>
                       <li>
-                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                          <strong>Zuse Institute Berlin (ZIB) — AI Compliance Framework Developer:</strong> built the Institute’s first <strong>AI & Data Governance Framework</strong>,
-                          created an <strong>MLOps monitoring framework</strong> for fairness/metrics, and engineered a <strong>neural network</strong> for a research project
-                          whose initial findings were <strong>featured in Nature</strong>; co-authoring papers on ML and the AI Act.
+                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                          <span className="font-semibold">Zuse Institute Berlin (ZIB) — AI Compliance Framework Developer:</span> built the Institute’s first <span className="font-semibold">AI &amp; Data Governance Framework</span>,
+                          created an <span className="font-semibold">MLOps monitoring framework</span> for fairness/metrics, and engineered a <span className="font-semibold">neural network</span> for a research project
+                          whose initial findings were <span className="font-semibold">featured in Nature</span>; co-authoring papers on ML and the AI Act.
                         </span>
                       </li>
                       <li>
-                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                          <strong>Charité – Universitätsmedizin Berlin:</strong> data science & ML for health tech; helped secure investment after accelerator pitch.
+                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                          <span className="font-semibold">Charité – Universitätsmedizin Berlin:</span> data science &amp; ML for health tech; helped secure investment after accelerator pitch.
                         </span>
                       </li>
                     </ul>
                   </div>
 
                   {/* WHAT I DELIVER */}
-                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
-                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
                       What I Deliver
                     </h3>
-                    <ul className="mt-3 grid gap-2 text-[15px] md:grid-cols-2">
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                        <strong>AI Act programs:</strong> risk classification, Annex IV technical docs, human oversight, post-market monitoring.
+                    <ul className="mt-3 grid gap-2 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700 md:grid-cols-2">
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                        <span className="font-semibold">AI Act programs:</span> risk classification, Annex IV technical docs, human oversight, post-market monitoring.
                       </li>
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                        <strong>GDPR for AI:</strong> DPIAs, data mapping, vendor governance (Art. 28), deletion & retention controls, privacy-by-design.
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                        <span className="font-semibold">GDPR for AI:</span> DPIAs, data mapping, vendor governance (Art. 28), deletion &amp; retention controls, privacy-by-design.
                       </li>
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                        <strong>ISO 42001 (AIMS):</strong> governance design, KPIs, accountable owners, and audit-ready evidence.
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                        <span className="font-semibold">ISO 42001 (AIMS):</span> governance design, KPIs, accountable owners, and audit-ready evidence.
                       </li>
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
-                        <strong>Model security:</strong> adversarial robustness, data-poisoning hygiene, and supply-chain controls for ML.
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                        <span className="font-semibold">Model security:</span> adversarial robustness, data-poisoning hygiene, and supply-chain controls for ML.
                       </li>
                     </ul>
                   </div>
 
                   {/* ROLES */}
-                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
-                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
                       Recent Roles
                     </h3>
-                    <div className="mt-3 grid gap-2 text-[15px] text-neutral-800">
+                    <div className="mt-3 grid gap-2 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700">
                       {[
                         ['Senior AI Compliance Manager', 'krisenchat (2025–present)'],
                         ['Compliance Manager', 'krisenchat (2024–2025)'],
@@ -222,21 +224,21 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                         ['Software Engineer (Working Student)', 'twigbit technologies (2022–2023)'],
                       ].map(([t, org]) => (
                         <p key={t}>
-                          <strong>{t}</strong>, {org}
+                          <span className="font-semibold">{t}</span>, {org}
                         </p>
                       ))}
                     </div>
                   </div>
 
                   {/* CREDENTIALS */}
-                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
-                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
                       Credentials
                     </h3>
-                    <div className="mt-3 grid gap-2 text-[15px] text-neutral-800">
-                      <p><strong>CODE University of Applied Sciences (2025)</strong> — Software Engineering (AI/ML, Security)</p>
-                      <p><strong>Administrative Law Specialization</strong> — Compliance & Governance</p>
-                      <p><strong>Law School - University of Sao Paulo (2010)</strong> — Bachelor of Law</p>
+                    <div className="mt-3 grid gap-2 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700">
+                      <p><span className="font-semibold">CODE University of Applied Sciences (2025)</span> — Software Engineering (AI/ML, Security)</p>
+                      <p><span className="font-semibold">Administrative Law Specialization</span> — Compliance &amp; Governance</p>
+                      <p><span className="font-semibold">Law School - University of Sao Paulo (2010)</span> — Bachelor of Law</p>
                       <p>DeepLearning.AI TensorFlow Developer Specialization; CNNs in TensorFlow (Coursera)</p>
                       <p>Languages: Portuguese, English, German</p>
                     </div>

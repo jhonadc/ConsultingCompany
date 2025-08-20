@@ -48,6 +48,8 @@ function Culture() {
           Our values guide every decision, shaping partnerships that last and governance that holds up in the real world.
         </p>
       </SectionIntro>
+
+
       <Container className="mt-16">
         <GridList>
           {items.map(({ title, desc, dot }) => (
@@ -56,7 +58,8 @@ function Culture() {
               invert
               title={
                 <span
-                  className={`relative pl-4 before:absolute before:left-0 before:top-1/2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full ${dot}`}
+                  className={`relative pl-4 before:absolute before:left-0 before:top-1/2 before:h-2 
+                    before:w-2 before:-translate-y-1/2 before:rounded-full ${dot}`}
                 >
                   {title}
                 </span>
@@ -149,9 +152,10 @@ export default async function About() {
 
   return (
     <>
-      {/* Header */}
+      {/* Header (2-column with subtle divider + template paragraph styles, lighter bold spans) */}
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          {/* micro accent bar */}
           <p className="relative pl-3 text-sm font-medium text-neutral-600 before:absolute before:left-0 before:top-1/2 before:h-2 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
             About us
           </p>
@@ -159,31 +163,58 @@ export default async function About() {
           <h1 className="mt-2 font-display font-semibold text-neutral-950 text-3xl lg:text-6xl">
             Regulation into advantage.<br className="hidden sm:block" />
             Compliance into trust.
+            {/* soft accent underline */}
+            <span className="mt-4 block h-px w-16 rounded bg-indigo-500/25" />
           </h1>
 
-          <div className="mt-6 max-w-3xl space-y-5 text-md lg:text-lg leading-relaxed text-justify">
-            <p>
-              Berlin is Europe’s startup capital and a center of regulatory change with the <strong>AI Act</strong>, <strong>GDPR</strong> and the <strong>Accessibility Act</strong>.
-            </p>
+          {/* Body split into two columns with a vertical divider on large screens */}
+          <div className="mt-8 lg:mt-10 lg:grid lg:grid-cols-12 lg:gap-10 text-justify">
+            {/* Left column */}
+            <div className="space-y-4 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600 lg:col-span-5">
+              <p>
+                Berlin is Europe’s startup capital and a center of regulatory change with the{' '}
+                <span className="font-semibold">AI Act</span>,{' '}
+                <span className="font-semibold">GDPR</span> and the{' '}
+                <span className="font-semibold">Accessibility Act</span>.
+              </p>
+              <p>
+                <span className="font-semibold">Generic tools carry privacy risks</span> and cannot meet the
+                responsibility new regulations demand. We built a Compliance Studio to work within your
+                structure and embed regulation into your daily operations.
+              </p>
+              <p>
+                <span className="font-semibold">We integrate with your teams and systems.</span>{' '}
+                We design governance with clear ownership, lean routines and audit-ready evidence.
+              </p>
+            </div>
 
-            <p>
-              <strong>Generic tools carry privacy risks and cannot meet the responsibility new regulations demand. We built a Compliance Studio to work within your structure and embed regulation into your daily operations.</strong>
-            </p>
+            {/* Vertical divider (hidden on mobile) */}
+            <div className="relative my-6 hidden lg:my-0 lg:block lg:col-span-2" aria-hidden="true">
+              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-neutral-200 rounded" />
+              {/* tiny accent tick */}
+              <span className="absolute left-1/2 -translate-x-1/2 top-6 block h-8 w-px rounded bg-indigo-500" />
+            </div>
 
-            <p>
-              <strong>We integrate with your teams and systems.</strong> We design governance with clear ownership, lean routines and audit-ready evidence.
-            </p>
-
-            <p>
-              Compliance is not only about avoiding fines. In Berlin’s AI and health-tech ecosystem it is a <strong>strategic advantage</strong> that accelerates deals, builds trust and attracts investors.
-            </p>
-
-            <p>
-              We combine <strong>legal expertise</strong>, <strong>engineering knowledge</strong> and <strong>security discipline</strong> to deliver solutions tailored to your risks and goals: <strong>a premium advisory for companies shaping Europe’s digital future.</strong>
-            </p>
+            {/* Right column */}
+            <div className="space-y-4 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600 lg:col-span-5">
+              <p>
+                Compliance is not only about avoiding fines. In Berlin’s AI and health-tech ecosystem it is a{' '}
+                <span className="font-semibold">strategic advantage</span> that accelerates deals, builds trust
+                and attracts investors.
+              </p>
+              <p>
+                We combine <span className="font-semibold">legal expertise</span>,{' '}
+                <span className="font-semibold">engineering knowledge</span> and{' '}
+                <span className="font-semibold">security discipline</span> to deliver solutions tailored to your
+                risks and goals: <span className="font-semibold">a premium advisory for companies shaping Europe’s digital future.</span>
+              </p>
+            </div>
           </div>
         </div>
       </Container>
+
+
+
 
       {/* Why AmeCari */}
       <Container className="mt-24 sm:mt-32 lg:mt-30">
@@ -197,7 +228,7 @@ export default async function About() {
 
         {/* Align grid with SectionIntro block on sm/md; expand on lg */}
         <div className="mt-20 mx-auto max-w-2xl md:max-w-7xl px-6 sm:px-8">
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 text-justify">
             {[
               {
                 k: 'Implementation over automation',

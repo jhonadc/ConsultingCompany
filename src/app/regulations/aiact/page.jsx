@@ -48,7 +48,7 @@ export function OurProcess() {
       <SectionIntro
         eyebrow="How we work"
         title="Turning complex EU rules into clear competitive advantage"
-        className="mt-24 sm:mt-32 lg:mt-40"
+        className="mt-24 sm:mt-10 lg:mt-40"
       >
         <p>
           Compliance should enable growth. We align legal, technical, and product teams
@@ -208,7 +208,7 @@ export function SpotlightTestimonial() {
 
 export default function AiActPage() {
   return (
-    <Container className="mt-24 sm:mt-32 lg:mt-20">
+    <Container className=" sm:mt-10 lg:mt-10">
       <BackButton />
 
       <div className="border-t-4 border-purple-500 pt-6">
@@ -231,7 +231,7 @@ export default function AiActPage() {
               Targeted, high-impact services to get you compliant fast.
             </p>
 
-            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
               {[
                 {
                   href: '/services/ai-literacy',
@@ -263,16 +263,16 @@ export default function AiActPage() {
                   href={href}
                   className={[
                     // base
-                    'group relative flex items-center justify-center text-center',
-                    'rounded-3xl ring-1 ring-neutral-950/10 shadow-sm',
+                    'group relative flex items-center justify-between sm:justify-center text-left sm:text-center',
+                    'rounded-3xl ring-1 ring-neutral-950/10 shadow-sm overflow-hidden',
                     'transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md',
-                    // size
-                    'aspect-[4/3] px-6',
+                    // compact mobile size; restore aspect on sm+
+                    'h-24 px-4 py-4 sm:h-auto sm:aspect-[4/3] sm:px-6',
                     // surface
                     'bg-white',
                     // subtle tint layer
                     'after:pointer-events-none after:absolute after:inset-0',
-                    `after:${tint} after:opacity-60 after:rounded-3xl`,
+                    `after:${tint} after:opacity-50 after:rounded-3xl`,
                     // curved left accent (follows rounded corners)
                     'border-l-2', bar,
                     // hover ring color
@@ -281,20 +281,21 @@ export default function AiActPage() {
                     'focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/10',
                   ].join(' ')}
                 >
-                  <span className="relative z-10">
-                    <span className="block font-display text-lg sm:text-xl font-semibold text-neutral-900">
+                  <span className="relative z-10 max-w-[75%] sm:max-w-none">
+                    <span className="block font-display text-[15px] sm:text-xl font-semibold text-neutral-900">
                       {label}
                     </span>
-                    <span className="mt-1 block text-sm text-neutral-600 opacity-90">Learn more</span>
+                    <span className="mt-0.5 block text-sm text-neutral-600 opacity-90 sm:mt-1">Learn more</span>
                   </span>
 
                   {/* color-matched outline arrow chip */}
                   <span
                     aria-hidden
                     className={[
-                      'absolute bottom-4 right-4 z-10 inline-flex h-8 w-8 items-center justify-center',
+                      'absolute bottom-3 right-3 z-10 inline-flex h-7 w-7 items-center justify-center',
                       'rounded-full border-2 bg-transparent',
                       'transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5',
+                      'sm:bottom-4 sm:right-4 sm:h-8 sm:w-8',
                       chip, // sets both border and arrow (via text color) to match the left bar
                     ].join(' ')}
                   >
@@ -307,85 +308,77 @@ export default function AiActPage() {
         </Container>
 
 
-
-
-        {/* CTA */}
-        <Container className="mt-28">
-          <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
-            <h2 className="font-display text-3xl font-semibold">Comply. Compete. Lead with AI you can trust.</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
-              We design AI Act compliance programmes that fit your organisation and generate
-              audit-ready proof you can stand behind.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
-            >
-              Talk to us
-            </Link>
-          </div>
-        </Container>
-        <OurProcess />
-
         {/* Obligations */}
-        <Container className="mt-20">
-          <Border />
-          <FadeIn className="mt-6 max-w-5xl">
-            <h2 className="font-display text-2xl mb-10 sm:text-3xl font-semibold text-neutral-950 text-left">
+        <Container id="obligations" className="mt-20">
+          <Border className="mt-2" />
+          <FadeIn className="mt-12 mx-auto max-w-6xl">
+            <h2 className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 mb-8
+                   before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2
+                   before:rounded before:bg-neutral-500/60">
               Obligations
             </h2>
+
             <ul className="space-y-8">
               <li>
                 <h3 className="font-display text-lg font-semibold text-neutral-950">
                   AI system classification
                 </h3>
-                <p className="text-neutral-600 text-sm">
+                <p className="text-neutral-600 text-base">
                   Identify whether your AI system is prohibited, high-risk, limited-risk, or
                   minimal-risk, applying the Annex III criteria and relevant exemptions.
                 </p>
-                <div className="h-1 w-16 bg-purple-700 mt-2"></div>
+                <div className="mt-2 h-px w-16 rounded bg-neutral-300">
+                  <span className="block h-px w-10 rounded bg-purple-600/70" />
+                </div>
               </li>
 
               <li>
                 <h3 className="font-display text-lg font-semibold text-neutral-950">
                   High-risk system compliance
                 </h3>
-                <p className="text-neutral-600 text-sm">
+                <p className="text-neutral-600 text-base">
                   Implement and document risk management, data governance, transparency,
                   human oversight, and post-market monitoring measures as per Annex IV.
                 </p>
-                <div className="h-1 w-16 bg-amber-500 mt-2"></div>
+                <div className="mt-2 h-px w-16 rounded bg-neutral-300">
+                  <span className="block h-px w-10 rounded bg-amber-500/80" />
+                </div>
               </li>
 
               <li>
                 <h3 className="font-display text-lg font-semibold text-neutral-950">
                   General-purpose AI duties
                 </h3>
-                <p className="text-neutral-600 text-sm">
+                <p className="text-neutral-600 text-base">
                   Meet transparency, technical documentation, and model evaluation requirements
                   for general-purpose AI and foundation models.
                 </p>
-                <div className="h-1 w-16 bg-indigo-600 mt-2"></div>
+                <div className="mt-2 h-px w-16 rounded bg-neutral-300">
+                  <span className="block h-px w-10 rounded bg-indigo-600/80" />
+                </div>
               </li>
 
               <li>
                 <h3 className="font-display text-lg font-semibold text-neutral-950">
                   Deployers’ responsibilities
                 </h3>
-                <p className="text-neutral-600 text-sm">
+                <p className="text-neutral-600 text-base">
                   Conduct conformity checks, maintain use logs, provide user instructions, and
                   monitor systems for compliance throughout their lifecycle.
                 </p>
-                <div className="h-1 w-16 bg-green-600 mt-2"></div>
+                <div className="mt-2 h-px w-16 rounded bg-neutral-300">
+                  <span className="block h-px w-10 rounded bg-emerald-600/80" />
+                </div>
               </li>
 
               <li>
-                <p className="text-neutral-600 font-bold text-md">And more, depending on role and risk tier</p>
+                <p className="text-neutral-700 font-medium text-base">
+                  And more, depending on role and risk tier
+                </p>
               </li>
             </ul>
           </FadeIn>
         </Container>
-
 
         {/* Why now */}
         <Container className="mt-20">
@@ -432,6 +425,27 @@ export default function AiActPage() {
             </div>
           </FadeIn>
         </Container>
+
+
+        {/* CTA */}
+        <Container className="mt-28">
+          <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
+            <h2 className="font-display text-3xl font-semibold">Comply. Compete. Lead with AI you can trust.</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
+              We design AI Act compliance programmes that fit your organisation and generate
+              audit-ready proof you can stand behind.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
+            >
+              Talk to us
+            </Link>
+          </div>
+        </Container>
+        <OurProcess />
+
+
 
 
         <BookingForm />
