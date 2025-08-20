@@ -1,4 +1,3 @@
-
 import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -14,7 +13,23 @@ import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 
-function Section({ title, image, children }) {
+function Section({ title, image, children, accent = 'emerald' }) {
+  const accents = {
+    emerald: {
+      num: 'after:text-emerald-600',
+      bar: 'before:bg-emerald-500',
+    },
+    indigo: {
+      num: 'after:text-indigo-600',
+      bar: 'before:bg-indigo-500',
+    },
+    amber: {
+      num: 'after:text-amber-600',
+      bar: 'before:bg-amber-500',
+    },
+  }
+  const { num, bar } = accents[accent] ?? accents.emerald
+
   return (
     <Container className="group/section [counter-increment:section]">
       <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
@@ -29,13 +44,18 @@ function Section({ title, image, children }) {
         </div>
         <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first">
           <FadeIn>
+            {/* Section counter with subtle accent */}
             <div
-              className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950 after:content-[counter(section,decimal-leading-zero)]"
+              className={`font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:content-[counter(section,decimal-leading-zero)] ${num}`}
               aria-hidden="true"
             />
-            <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+            {/* Title with micro accent bar */}
+            <h2
+              className={`mt-2 font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl relative pl-3 before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded ${bar}`}
+            >
               {title}
             </h2>
+
             <div className="mt-6">{children}</div>
           </FadeIn>
         </div>
@@ -46,7 +66,7 @@ function Section({ title, image, children }) {
 
 function Discover() {
   return (
-    <Section title="Assess" image={{ src: imageWhiteboard }}>
+    <Section title="Assess" image={{ src: imageWhiteboard }} accent="emerald">
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           We begin with a structured assessment to understand your{' '}
@@ -61,7 +81,9 @@ function Discover() {
         </p>
       </div>
 
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+      <h3
+        className="mt-12 font-display text-base font-semibold text-neutral-950 relative pl-3 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500"
+      >
         Included in this phase
       </h3>
       <TagList className="mt-4">
@@ -78,7 +100,7 @@ function Discover() {
 
 function Build() {
   return (
-    <Section title="Implement" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Implement" image={{ src: imageLaptop, shape: 1 }} accent="indigo">
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Using the roadmap, we implement the controls and documentation that matter: AI policy, risk management and human oversight, data protection by design, vendor governance, and clear approval workflows.
@@ -93,7 +115,7 @@ function Build() {
 
       <Blockquote
         author={{ name: 'General Counsel', role: 'Growth-stage SaaS' }}
-        className="mt-12"
+        className="mt-12 border-l-2 border-indigo-500 pl-4"
       >
         Clear milestones, zero surprises, and audit-ready documents our external auditors actually used.
       </Blockquote>
@@ -103,7 +125,7 @@ function Build() {
 
 function Deliver() {
   return (
-    <Section title="Sustain" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Sustain" image={{ src: imageMeeting, shape: 2 }} accent="amber">
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Before go-live we validate controls, align owners, and finalize operating procedures and KPIs. The goal is durability: compliance that holds under real-world pressure.
@@ -117,7 +139,9 @@ function Deliver() {
         </p>
       </div>
 
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+      <h3
+        className="mt-12 font-display text-base font-semibold text-neutral-950 relative pl-3 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-amber-500"
+      >
         Included in this phase
       </h3>
       <List className="mt-8">
@@ -136,6 +160,45 @@ function Deliver() {
 }
 
 function Values() {
+  const items = [
+    {
+      title: 'Meticulous',
+      desc:
+        'Audit-ready records, clear rationale, and end-to-end traceability across decisions, models, and data.',
+      dot: 'before:bg-emerald-500',
+    },
+    {
+      title: 'Efficient',
+      desc:
+        'Time-boxed sprints, right-sized deliverables, and reusable assets that lower the total cost of compliance.',
+      dot: 'before:bg-indigo-500',
+    },
+    {
+      title: 'Adaptable',
+      desc:
+        'Frameworks that fit your sector, size, and risk profile — never one-size-fits-all.',
+      dot: 'before:bg-amber-500',
+    },
+    {
+      title: 'Honest',
+      desc:
+        'Direct advice, transparent trade-offs, and clear no-go calls when risks outweigh rewards.',
+      dot: 'before:bg-emerald-500',
+    },
+    {
+      title: 'Loyal',
+      desc:
+        'Partnership mindset: we safeguard your reputation and help teams operate confidently under scrutiny.',
+      dot: 'before:bg-indigo-500',
+    },
+    {
+      title: 'Innovative',
+      desc:
+        'We track regulatory change, adversarial trends, and new standards to keep your program future-proof.',
+      dot: 'before:bg-amber-500',
+    },
+  ]
+
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-50">
@@ -145,10 +208,7 @@ function Values() {
         />
       </div>
 
-      <SectionIntro
-        eyebrow="Our values"
-        title="Pragmatic, rigorous, human"
-      >
+      <SectionIntro eyebrow="Our values" title="Pragmatic, rigorous, human">
         <p>
           We combine legal precision with engineering pragmatism. Vendor-neutral, evidence-based, and focused on outcomes your business can measure — not paperwork for its own sake.
         </p>
@@ -156,29 +216,26 @@ function Values() {
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            Audit-ready records, clear rationale, and end-to-end traceability across decisions, models, and data.
-          </GridListItem>
-          <GridListItem title="Efficient">
-            Time-boxed sprints, right-sized deliverables, and reusable assets that lower the total cost of compliance.
-          </GridListItem>
-          <GridListItem title="Adaptable">
-            Frameworks that fit your sector, size, and risk profile — never one-size-fits-all.
-          </GridListItem>
-          <GridListItem title="Honest">
-            Direct advice, transparent trade-offs, and clear no-go calls when risks outweigh rewards.
-          </GridListItem>
-          <GridListItem title="Loyal">
-            Partnership mindset: we safeguard your reputation and help teams operate confidently under scrutiny.
-          </GridListItem>
-          <GridListItem title="Innovative">
-            We track regulatory change, adversarial trends, and new standards to keep your program future-proof.
-          </GridListItem>
+          {items.map(({ title, desc, dot }) => (
+            <GridListItem
+              key={title}
+              title={
+                <span
+                  className={`relative pl-4 before:absolute before:left-0 before:top-1/2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full ${dot}`}
+                >
+                  {title}
+                </span>
+              }
+            >
+              {desc}
+            </GridListItem>
+          ))}
         </GridList>
       </Container>
     </div>
   )
 }
+
 
 export const metadata = {
   title: 'Our Process',
@@ -207,4 +264,3 @@ export default function Process() {
     </>
   )
 }
-

@@ -26,19 +26,21 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
       {/* Card (click to open) */}
       <button
         onClick={() => setOpen(true)}
-        className="group relative block w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800"
+        className="group relative block w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 ring-1 ring-neutral-950/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800"
         aria-label={`${name} — open profile`}
       >
         <Image
           alt={name}
           src={image}
-          className="h-96 w-full object-cover object-top [filter:grayscale(80%)_brightness(108%)_contrast(92%)] transition-transform duration-300 group-hover:scale-[1.02]"
+          className="h-80 w-full object-cover object-top [filter:grayscale(80%)_brightness(108%)_contrast(92%)] transition-transform duration-300 group-hover:scale-[1.02] sm:h-96"
           priority
           style={{ objectPosition: 'center 15%' }} // ensure face shows
         />
         <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black to-black/0 to-40% p-6">
-          <p className="font-display text-base/6 font-semibold tracking-wide text-white">{name}</p>
-          <p className="mt-2 text-sm text-white">{role}</p>
+          <p className="relative pl-3 font-display text-base/6 font-semibold tracking-wide text-white before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+            {name}
+          </p>
+          <p className="mt-2 text-sm text-white/90">{role}</p>
         </div>
       </button>
 
@@ -51,16 +53,15 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
           aria-labelledby="jc-modal-title"
           onClick={() => setOpen(false)}
         >
-          {/* top/bottom spacing + center */}
           <div className="flex min-h-screen items-start justify-center overflow-y-auto py-8 px-4 sm:py-12 sm:px-6">
-            {/* Panel (WHOLE thing scrolls) */}
+            {/* Panel (scrolls internally) */}
             <div
               ref={panelRef}
               tabIndex={-1}
               className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white shadow-2xl ring-1 ring-black/10"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Fixed close button on panel */}
+              {/* Close button */}
               <button
                 onClick={() => setOpen(false)}
                 className="absolute right-3 top-3 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 bg-white/90 text-neutral-800 shadow-sm hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900/20"
@@ -72,11 +73,11 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                 </svg>
               </button>
 
-              {/* CONTENT: image and body now scroll together inside panel */}
-              <div className="flex flex-col sm:flex-row">
-                {/* LEFT: portrait + actions */}
-                <aside className="w-full flex-shrink-0 border-b border-neutral-200 p-6 sm:w-[320px] sm:border-b-0 sm:border-r sm:p-8">
-                  <div className="h-[340px] w-full overflow-hidden rounded-2xl bg-neutral-100">
+              {/* ===== TOP SUMMARY ROW (equal heights) ===== */}
+              <div className="grid gap-0 sm:grid-cols-3">
+                {/* LEFT: portrait + actions (shares row height with right) */}
+                <aside className="col-span-1 flex h-full flex-col border-b border-neutral-200 p-6 sm:border-b-0 sm:border-r sm:p-8">
+                  <div className="min-h-[240px] flex-1 overflow-hidden rounded-2xl bg-neutral-100 ring-1 ring-neutral-950/10">
                     <Image
                       alt={name}
                       src={image}
@@ -85,12 +86,20 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                       style={{ objectPosition: 'center 12%' }} // crop higher for face
                     />
                   </div>
+
+                  {/* Contact actions */}
                   <div className="mt-4 grid gap-2">
                     <a
                       href="mailto:jhonathanaugusto@gmail.com"
                       className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800"
                     >
                       Email
+                      <span
+                        aria-hidden
+                        className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white/70 text-white"
+                      >
+                        ➔
+                      </span>
                     </a>
                     {linkedinUrl && (
                       <a
@@ -100,19 +109,41 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                         className="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-50"
                       >
                         LinkedIn
+                        <span
+                          aria-hidden
+                          className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-neutral-300 text-neutral-900"
+                        >
+                          ↗
+                        </span>
                       </a>
                     )}
                   </div>
                 </aside>
 
-                {/* RIGHT: content (no own scroll; panel handles it) */}
-                <section className="relative flex-1 p-6 sm:p-10">
-                  <h1 id="jc-modal-title" className="pr-12 text-[22px] font-semibold text-neutral-900 sm:text-3xl">
+                {/* RIGHT: summary text (shares row height with left) */}
+                <section className="col-span-1 sm:col-span-2 h-full p-6 sm:p-8">
+                  {/* Name + role with micro accent bar */}
+                  <h1
+                    id="jc-modal-title"
+                    className="relative pr-12 pl-3 text-[22px] font-semibold text-neutral-900 sm:text-3xl before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500"
+                  >
                     {name}
                   </h1>
                   <p className="mt-1 text-sm text-neutral-600 sm:text-[15px]">{role}</p>
 
-                  {/* SNAPSHOT */}
+                  {/* Quick focus tags */}
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {['EU AI Act', 'ISO 42001', 'GDPR', 'Model security'].map((t) => (
+                      <span
+                        key={t}
+                        className="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50/60 px-2.5 py-1 text-xs font-medium text-indigo-700"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Snapshot */}
                   <div className="mt-6 space-y-3 text-[15px] leading-relaxed text-neutral-800">
                     <p>
                       Senior <strong>AI Governance & GDPR specialist</strong> with a dual background as a <strong>Lawyer</strong> and <strong>Software Engineer</strong>.
@@ -122,89 +153,133 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                       <strong>Specialization:</strong> Compliance strategy, model-risk governance, and secure ML pipelines for high-stakes environments.
                     </p>
                   </div>
+                </section>
+              </div>
 
+              {/* ===== UNDERNEATH: airy two-column content ===== */}
+              <div className="p-6 sm:p-8">
+                <div className="mt-2 grid gap-6 md:grid-cols-2">
                   {/* RESULTS */}
-                  <div className="mt-8">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-700">Selected Results</h3>
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                      Selected Results
+                    </h3>
                     <ul className="mt-3 space-y-3 text-[15px] text-neutral-900">
                       <li>
-                        <strong>krisenchat — Senior AI Compliance Manager:</strong> led AI Act implementation, integrated ISO practices, and
-                        delivered a governance program credited with a <strong>~90% reduction in regulatory risk exposure</strong>.
+                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                          <strong>krisenchat — Senior AI Compliance Manager:</strong> led AI Act implementation, integrated ISO practices, and
+                          delivered a governance program credited with a <strong>~90% reduction in regulatory risk exposure</strong>.
+                        </span>
                       </li>
                       <li>
-                        <strong>Zuse Institute Berlin (ZIB) — AI Compliance Framework Developer:</strong> built the Institute’s first <strong>AI & Data Governance Framework</strong>,
-                        created an <strong>MLOps monitoring framework</strong> for fairness/metrics, and engineered a <strong>neural network</strong> for a research project
-                        whose initial findings were <strong>featured in Nature</strong>; co-authoring papers on ML and the AI Act.
+                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                          <strong>Zuse Institute Berlin (ZIB) — AI Compliance Framework Developer:</strong> built the Institute’s first <strong>AI & Data Governance Framework</strong>,
+                          created an <strong>MLOps monitoring framework</strong> for fairness/metrics, and engineered a <strong>neural network</strong> for a research project
+                          whose initial findings were <strong>featured in Nature</strong>; co-authoring papers on ML and the AI Act.
+                        </span>
                       </li>
                       <li>
-                        <strong>Charité – Universitätsmedizin Berlin:</strong> data science & ML for health tech; helped secure investment after accelerator pitch.
+                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                          <strong>Charité – Universitätsmedizin Berlin:</strong> data science & ML for health tech; helped secure investment after accelerator pitch.
+                        </span>
                       </li>
                     </ul>
                   </div>
 
                   {/* WHAT I DELIVER */}
-                  <div className="mt-8">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-700">What I Deliver</h3>
-                    <ul className="mt-3 grid gap-3 text-[15px]">
-                      <li><strong>AI Act programs:</strong> risk classification, Annex IV technical docs, human oversight, post-market monitoring.</li>
-                      <li><strong>GDPR for AI:</strong> DPIAs, data mapping, vendor governance (Art. 28), deletion & retention controls, privacy-by-design.</li>
-                      <li><strong>ISO 42001 (AIMS):</strong> governance design, KPIs, accountable owners, and audit-ready evidence.</li>
-                      <li><strong>Model security:</strong> adversarial robustness, data-poisoning hygiene, and supply-chain controls for ML.</li>
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                      What I Deliver
+                    </h3>
+                    <ul className="mt-3 grid gap-2 text-[15px] md:grid-cols-2">
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                        <strong>AI Act programs:</strong> risk classification, Annex IV technical docs, human oversight, post-market monitoring.
+                      </li>
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                        <strong>GDPR for AI:</strong> DPIAs, data mapping, vendor governance (Art. 28), deletion & retention controls, privacy-by-design.
+                      </li>
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                        <strong>ISO 42001 (AIMS):</strong> governance design, KPIs, accountable owners, and audit-ready evidence.
+                      </li>
+                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-indigo-500">
+                        <strong>Model security:</strong> adversarial robustness, data-poisoning hygiene, and supply-chain controls for ML.
+                      </li>
                     </ul>
                   </div>
 
                   {/* ROLES */}
-                  <div className="mt-8">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-700">Recent Roles</h3>
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                      Recent Roles
+                    </h3>
                     <div className="mt-3 grid gap-2 text-[15px] text-neutral-800">
-                      <p><strong>Senior AI Compliance Manager</strong>, krisenchat (2025–present)</p>
-                      <p><strong>Compliance Manager</strong>, krisenchat (2024–2025)</p>
-                      <p><strong>AI Compliance Framework Developer / AI Researcher</strong>, Zuse Institute Berlin (2024–present)</p>
-                      <p><strong>Software Engineering (Freelance)</strong>, Charité – Universitätsmedizin Berlin (2023)</p>
-                      <p><strong>Data Analyst & Full-stack (Freelance)</strong>, Bettencourt Financial Group (2023–2024)</p>
-                      <p><strong>Software Engineer (Working Student)</strong>, twigbit technologies (2022–2023)</p>
+                      {[
+                        ['Senior AI Compliance Manager', 'krisenchat (2025–present)'],
+                        ['Compliance Manager', 'krisenchat (2024–2025)'],
+                        ['AI Compliance Framework Developer / AI Researcher', 'Zuse Institute Berlin (2024–present)'],
+                        ['Software Engineering (Freelance)', 'Charité – Universitätsmedizin Berlin (2023)'],
+                        ['Data Analyst & Full-stack (Freelance)', 'Bettencourt Financial Group (2023–2024)'],
+                        ['Software Engineer (Working Student)', 'twigbit technologies (2022–2023)'],
+                      ].map(([t, org]) => (
+                        <p key={t}>
+                          <strong>{t}</strong>, {org}
+                        </p>
+                      ))}
                     </div>
                   </div>
 
                   {/* CREDENTIALS */}
-                  <div className="mt-8">
-                    <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-700">Credentials</h3>
+                  <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
+                    <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-indigo-500">
+                      Credentials
+                    </h3>
                     <div className="mt-3 grid gap-2 text-[15px] text-neutral-800">
-                      <p><strong>CODE University of Applied Sciences (2025) </strong> — Software Engineering (AI/ML, Security)</p>
+                      <p><strong>CODE University of Applied Sciences (2025)</strong> — Software Engineering (AI/ML, Security)</p>
                       <p><strong>Administrative Law Specialization</strong> — Compliance & Governance</p>
-                      <p><strong>Law School - University of Sao Paulo (2010) </strong> — Bachelor of Law</p>
+                      <p><strong>Law School - University of Sao Paulo (2010)</strong> — Bachelor of Law</p>
                       <p>DeepLearning.AI TensorFlow Developer Specialization; CNNs in TensorFlow (Coursera)</p>
                       <p>Languages: Portuguese, English, German</p>
                     </div>
                   </div>
+                </div>
 
-                  {/* CTA */}
-
-                  <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                {/* CTA */}
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="https://calendly.com/jhonathanaugusto/20min"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white hover:bg-neutral-800"
+                  >
+                    Book a 20-min meeting
+                    <span
+                      aria-hidden
+                      className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white/70 text-white"
+                    >
+                      ➔
+                    </span>
+                  </a>
+                  {linkedinUrl && (
                     <a
-                      href="https://calendly.com/jhonathanaugusto/20min"
+                      href={linkedinUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white hover:bg-neutral-800"
+                      className="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-50"
                     >
-                      Book a 20-min meeting
-                    </a>
-                    {linkedinUrl && (
-                      <a
-                        href={linkedinUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-50"
+                      Connect on LinkedIn
+                      <span
+                        aria-hidden
+                        className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-neutral-300 text-neutral-900"
                       >
-                        Connect on LinkedIn
-                      </a>
-                    )}
-                  </div>
+                        ↗
+                      </span>
+                    </a>
+                  )}
+                </div>
 
-                  <p className="mt-6 text-xs text-neutral-500">
-                    Close with outside click, press <kbd className="rounded border px-1">Esc</kbd>, or tap ×.
-                  </p>
-                </section>
+                <p className="mt-6 text-xs text-neutral-500">
+                  Close with outside click, press <kbd className="rounded border px-1">Esc</kbd>, or tap ×.
+                </p>
               </div>
             </div>
           </div>
