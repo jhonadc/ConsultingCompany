@@ -13,9 +13,9 @@ export default function RegulationsFactStrip({ facts }) {
                             <dt className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">
                                 {title}
                             </dt>
-                            <dd className="text-sm font-semibold text-neutral-900">{value}</dd>
+                            <dd className="text-md font-semibold text-neutral-900">{value}</dd>
                             {description && (
-                                <p className="text-xs text-neutral-500">{description}</p>
+                                <p className="sm:text-sm text-neutral-500">{description}</p>
                             )}
                         </div>
                     </div>
