@@ -221,38 +221,94 @@ export default function AiActPage() {
         </SectionIntro>
         <RegulationsFactStrip facts={facts} />
 
-        {/* What we offer — 3-col grid with hero nav style */}
-        <Container className="mt-24">
-          <FadeIn className="mt-6 mx-auto max-w-6xl">
-            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
+        {/* What we offer — understated tinted cards with curved left accent + color-matched arrow chip */}
+        <Container className="mt-10">
+          <FadeIn className="mt-5 mx-auto max-w-6xl">
+            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950">
               What we offer
             </h2>
             <p className="mt-3 text-md text-neutral-600">
               Targeted, high-impact services to get you compliant fast.
             </p>
 
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
               {[
-                { href: '/services/ai-literacy', label: 'AI Literacy Training', border: 'border-purple-500' },
-                { href: '/services/highriskcheck', label: 'Am I high-risk?', border: 'border-amber-500' },
-                { href: '/services/ai-use-policy', label: 'AI Use Policy', border: 'border-green-500' },
-              ].map((link) => (
+                {
+                  href: '/services/ai-literacy',
+                  label: 'AI Literacy Training',
+                  tint: 'bg-purple-50',
+                  ring: 'hover:ring-purple-200',
+                  chip: 'text-purple-500 border-purple-500',
+                  bar: 'border-purple-500',
+                },
+                {
+                  href: '/services/highriskcheck',
+                  label: 'Am I high-risk?',
+                  tint: 'bg-amber-50',
+                  ring: 'hover:ring-amber-200',
+                  chip: 'text-amber-500 border-amber-500',
+                  bar: 'border-amber-500',
+                },
+                {
+                  href: '/services/ai-use-policy',
+                  label: 'AI Use Policy',
+                  tint: 'bg-emerald-50',
+                  ring: 'hover:ring-emerald-200',
+                  chip: 'text-emerald-500 border-emerald-500',
+                  bar: 'border-emerald-500',
+                },
+              ].map(({ href, label, tint, ring, chip, bar }) => (
                 <a
-                  key={link.href}
-                  href={link.href}
-                  className={`group inline-flex items-center justify-between
-                    w-full rounded-full border ${link.border}
-                    bg-white/80 px-5 py-4 text-md sm:text-[15px] text-neutral-700
-                    shadow-sm backdrop-blur-sm transition-all duration-200
-                    hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
+                  key={href}
+                  href={href}
+                  className={[
+                    // base
+                    'group relative flex items-center justify-center text-center',
+                    'rounded-3xl ring-1 ring-neutral-950/10 shadow-sm',
+                    'transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md',
+                    // size
+                    'aspect-[4/3] px-6',
+                    // surface
+                    'bg-white',
+                    // subtle tint layer
+                    'after:pointer-events-none after:absolute after:inset-0',
+                    `after:${tint} after:opacity-60 after:rounded-3xl`,
+                    // curved left accent (follows rounded corners)
+                    'border-l-2', bar,
+                    // hover ring color
+                    ring,
+                    // focus
+                    'focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/10',
+                  ].join(' ')}
                 >
-                  <span>{link.label}</span>
-                  <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
+                  <span className="relative z-10">
+                    <span className="block font-display text-lg sm:text-xl font-semibold text-neutral-900">
+                      {label}
+                    </span>
+                    <span className="mt-1 block text-sm text-neutral-600 opacity-90">Learn more</span>
+                  </span>
+
+                  {/* color-matched outline arrow chip */}
+                  <span
+                    aria-hidden
+                    className={[
+                      'absolute bottom-4 right-4 z-10 inline-flex h-8 w-8 items-center justify-center',
+                      'rounded-full border-2 bg-transparent',
+                      'transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5',
+                      chip, // sets both border and arrow (via text color) to match the left bar
+                    ].join(' ')}
+                  >
+                    ➔
+                  </span>
                 </a>
               ))}
             </div>
           </FadeIn>
         </Container>
+
+
+
+
         {/* CTA */}
         <Container className="mt-28">
           <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
@@ -329,6 +385,8 @@ export default function AiActPage() {
             </ul>
           </FadeIn>
         </Container>
+
+
         {/* Why now */}
         <Container className="mt-20">
           <FadeIn className="mx-auto max-w-6xl">
@@ -349,15 +407,33 @@ export default function AiActPage() {
                   k: 'Avoid severe penalties',
                   v: 'Non-compliance risks significant fines and market exclusion.',
                 },
-              ].map(({ k, v }) => (
-                <div key={k} className="rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm text-left">
-                  <p className="text-sm font-semibold text-neutral-900">{k}</p>
-                  <p className="mt-1 text-sm text-neutral-700">{v}</p>
-                </div>
-              ))}
+              ].map(({ k, v }, idx) => {
+                const colors = [
+                  { border: 'border-emerald-500', dot: 'before:bg-emerald-500', ring: 'hover:ring-emerald-200' },
+                  { border: 'border-indigo-500', dot: 'before:bg-indigo-500', ring: 'hover:ring-indigo-200' },
+                  { border: 'border-amber-500', dot: 'before:bg-amber-500', ring: 'hover:ring-amber-200' },
+                ]
+                const { border, dot, ring } = colors[idx % colors.length]
+
+                return (
+                  <div
+                    key={k}
+                    className={`rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm text-left border-l-2 ${border} ${ring} transition`}
+                  >
+                    <p
+                      className={`relative pl-3 text-sm font-semibold text-neutral-900 before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded ${dot}`}
+                    >
+                      {k}
+                    </p>
+                    <p className="mt-1 text-sm text-neutral-700">{v}</p>
+                  </div>
+                )
+              })}
             </div>
           </FadeIn>
         </Container>
+
+
         <BookingForm />
 
 

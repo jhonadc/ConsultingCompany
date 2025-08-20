@@ -24,8 +24,24 @@ export const metadata = {
 export default function AiUsePolicyPage() {
   return (
     <>
+      <Container className="mt-15">
+        <FadeIn className="mx-auto max-w-6xl">
+          <a
+            href="/regulations/aiact" /* change if your AI Act route differs */
+            className="group inline-flex items-center gap-2 rounded-full border-2 border-indigo-400 px-4 py-2 text-sm  text-indigo-700 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200"
+          >
+            <span
+              aria-hidden
+              className="inline-flex h-6 w-6 items-center justify-center rounded-full border-2 border-current text-current transition-transform duration-200 group-hover:-translate-x-0.5"
+            >
+              ←
+            </span>
+            <span>Back to AI Act</span>
+          </a>
+        </FadeIn>
+      </Container>
       {/* HERO (compact, no buttons) */}
-      <Container className="mt-12 sm:mt-16 lg:mt-20">
+      <Container className="mt-5 sm:mt-8 lg:mt-10">
         <div className="relative overflow-hidden rounded-4xl bg-neutral-950 px-6 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20 text-white">
           <FadeIn className="max-w-3xl">
             <h1 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight">
