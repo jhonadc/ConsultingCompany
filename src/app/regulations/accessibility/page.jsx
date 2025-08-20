@@ -9,7 +9,7 @@ import { Border } from '@/components/Border'
 import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 export const metadata = {
-    title: 'EU Accessibility Act — Amecari Compliance',
+    title: 'EU Accessibility Act — Comforma Compliance',
     description:
         'Directive (EU) 2019/882 — mandatory accessibility requirements for products and services in the EU from 28 June 2025. Design, implementation, and evidence for compliance.',
 }

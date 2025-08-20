@@ -75,7 +75,7 @@ export function Footer() {
       {/* ROW 2: © centered */}
       <div className="mt-6 mb-14">
         <p className="text-center text-sm text-neutral-700">
-          © Amecari – Regulatory and Governance Advisory. Berlin, {new Date().getFullYear()}
+          © Comforma – Regulatory and Governance Advisory. Berlin, {new Date().getFullYear()}
         </p>
       </div>
 

@@ -142,7 +142,7 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'About Us – AmeCari Compliance Studio',
+  title: 'About Us – Comforma Compliance Studio',
   description:
     'A premium consulting boutique for AI governance and GDPR in Germany. We translate regulation into measurable controls, audit-ready files, and management decisions.',
 }
@@ -216,9 +216,9 @@ export default async function About() {
 
 
 
-      {/* Why AmeCari */}
+      {/* Why Comforma */}
       <Container className="mt-24 sm:mt-32 lg:mt-30">
-        <SectionIntro eyebrow="Why AmeCari" title="Partnership, not paperwork.">
+        <SectionIntro eyebrow="Why Comforma" title="Partnership, not paperwork.">
           <p className="max-w-3xl">
             Many firms auto-generate documents. We don’t. We design controls that run in your
             products and teams—embedding ownership, routines, and evidence, so compliance supports

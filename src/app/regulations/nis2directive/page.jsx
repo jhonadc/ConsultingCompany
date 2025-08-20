@@ -7,7 +7,7 @@ import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
 
 export const metadata = {
-    title: 'NIS2 — AmeCari Compliance',
+    title: 'NIS2 — Comforma Compliance',
     description:
         'EU NIS2 Directive (2022/2555) — applicable via national laws since Oct 2024. Governance, risk, incident reporting, and supply-chain security made operational.',
 }

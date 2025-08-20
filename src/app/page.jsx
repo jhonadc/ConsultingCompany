@@ -617,7 +617,8 @@ export default async function Home() {
           </h2>
 
           <p className="mt-6 text-xl text-neutral-600">
-            We shape compliance frameworks around your unique business structure blending legal precision with engineering expertise to keep you ahead of EU regulations while protecting growth, reputation, and competitive edge.
+            We create compliance solutions that help your business enter and grow in Europe with confidence. Combining legal expertise and engineering know-how,
+            we simplify EU regulations so you can focus on expanding your market and building trust.
           </p>
         </FadeIn>
 
@@ -668,7 +669,7 @@ export default async function Home() {
         }}
         logoClassName="w-24 h-auto" // ✅ only if Testimonial supports it
       >
-        Amecari Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
+        Comforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
         The results are outstanding and we managed to launch in Europe!
       </Testimonial>
       <Container className="mt-28">

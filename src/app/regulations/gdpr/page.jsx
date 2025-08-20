@@ -9,7 +9,7 @@ import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 
 
 export const metadata = {
-  title: 'GDPR — AmeCari Compliance',
+  title: 'GDPR — Comforma Compliance',
   description:
     'EU’s General Data Protection Regulation — in force since 25 May 2018. Tailored governance, controls, and evidence that stand up to audits.',
 }

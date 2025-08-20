@@ -8,13 +8,13 @@ import { Suspense } from 'react' // ✅ add this
 
 export const metadata = {
   title: {
-    template: '%s – Amecari Advisory',
-    default:
-      'Amecari Regulatory & Governance Advisory,  Tailored EU compliance solutions in Berlin',
+    template: '%s – Comforma Advisory',
+    default: 'Comforma Advisory – EU Compliance & AI Act Experts',
   },
   description:
-    'We shape compliance to your business needs. Supporting european and international companies to meet EU regulations including the AI Act, GDPR, LGPD, Accessibility Act, and more.',
+    'Expert legal and engineering guidance for EU regulations. We help European and international companies meet the AI Act, GDPR, and other compliance requirements with precision and trust.',
 }
+
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID

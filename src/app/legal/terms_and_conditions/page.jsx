@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                 <section>
                     <h2 className="font-display text-xl font-semibold text-neutral-950">Controller</h2>
                     <p className="mt-3 text-neutral-700">
-                        <strong>Jhonathan Campos</strong>, trading as <strong>AmeCari - Compliance Studio”</strong><br />
+                        <strong>Jhonathan Campos</strong>, trading as <strong>Comforma - Compliance Studio”</strong><br />
                         Berlin, Germany<br />
                         Email: <a href="mailto:jhonathanaugusto@gmail.com" className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900">contact@yourdomain.com</a>
                     </p>
