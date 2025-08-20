@@ -23,22 +23,6 @@ export const metadata = {
 export default function HighRiskAssessmentPage() {
   return (
     <>
-      <Container className="mt-15">
-        <FadeIn className="mx-auto max-w-6xl">
-          <a
-            href="/regulations/aiact" /* change if your AI Act route differs */
-            className="group inline-flex items-center gap-2 rounded-full border-2 border-indigo-400 px-4 py-2 text-sm  text-indigo-700 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200"
-          >
-            <span
-              aria-hidden
-              className="inline-flex h-6 w-6 items-center justify-center rounded-full border-2 border-current text-current transition-transform duration-200 group-hover:-translate-x-0.5"
-            >
-              ←
-            </span>
-            <span>Back to AI Act</span>
-          </a>
-        </FadeIn>
-      </Container>
       {/* HERO (compact, no buttons) */}
       <Container className="mt-5 sm:mt-8 lg:mt-10">
         <div className="relative overflow-hidden rounded-4xl bg-neutral-950 px-6 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20 text-white">
@@ -299,6 +283,20 @@ export default function HighRiskAssessmentPage() {
       </Container>
 
       <BookingForm />
+
+      <Container className="mt-15">
+        <FadeIn className="mx-auto max-w-6xl">
+          <div className="flex justify-end">
+            <a
+              href="/regulations/aiact"
+              className="group inline-flex items-center gap-2 rounded-full border-2 border-gray-700 px-4 py-2 text-sm text-gray-700 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-200"
+            >
+              <span aria-hidden className="inline-flex h-6 w-6 items-center justify-center rounded-full border-2 border-current text-current transition-transform duration-200 group-hover:-translate-x-0.5">←</span>
+              <span>Back to AI Act</span>
+            </a>
+          </div>
+        </FadeIn>
+      </Container>
     </>
   )
 }

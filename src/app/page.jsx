@@ -280,80 +280,144 @@ function ProofOfValue() {
           </div>
         </div>
 
-        {/* Impact quadrants */}
-        <div className="mt-20 sm:mt-24 grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {/* 1. Penalty risk */}
-          <div className="rounded-3xl border-0.9 border-rose-600 bg-white p-6 md:p-8 ring-1 ring-rose-200 shadow-sm transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-lg hover:ring-rose-300">
+        {/* Impact — syllabus-style accordions on mobile, grid on desktop */}
+        {/* Mobile: EXACT syllabus pattern */}
+        <div className="mt-12 md:hidden space-y-4">
+          {[
+            {
+              title: 'Penalty risk & cost avoidance',
+              desc:
+                'Fines scale with revenue (GDPR up to 4% of global turnover; EU AI Act up to 7% or capped sums). You avoid expensive surprises by putting the right controls and proofs in place before anyone asks.',
+              bullets: [
+                'What we do: DPIAs, lawful basis design, AI risk & oversight, technical files, approvals, and a living evidence trail.',
+              ],
+              color: { border: 'border-rose-500', dot: 'before:bg-rose-500', ring: 'group-open:ring-rose-500/15' },
+            },
+            {
+              title: 'Deal acceleration & enterprise trust',
+              desc:
+                'Security and privacy questionnaires stop being blockers. You answer procurement once—with clear controls, mapped data flows, and contracts your customers recognize.',
+              bullets: ['What you get: faster redline cycles, fewer escalations, and smoother InfoSec reviews.'],
+              color: { border: 'border-amber-500', dot: 'before:bg-amber-500', ring: 'group-open:ring-amber-500/15' },
+            },
+            {
+              title: 'Launch confidence',
+              desc:
+                'Features ship without last-minute rollbacks. Risks are known, owners are assigned, and mitigations are part of the sprint—so go/no-go is a decision, not a fire drill.',
+              bullets: ['What we do: privacy by design checklists, model/feature approvals, and clear decision logs.'],
+              color: { border: 'border-indigo-500', dot: 'before:bg-indigo-500', ring: 'group-open:ring-indigo-500/15' },
+            },
+            {
+              title: 'Audit-ready documentation',
+              desc:
+                'You keep evidence that regulators and auditors actually use: Annex IV technical documentation, risk logs, change history, and approvals linked to releases.',
+              bullets: ['Outcome: less time explaining, more time building.'],
+              color: { border: 'border-emerald-500', dot: 'before:bg-emerald-500', ring: 'group-open:ring-emerald-500/15' },
+            },
+            {
+              title: 'Vendor & data-flow resilience',
+              desc:
+                'Third-party risk and data transfers are designed, not patched. Contracts, SCCs, TIAs, and service configurations align with how your stack actually works.',
+              bullets: ['Result: fewer production surprises and cleaner customer commitments.'],
+              color: { border: 'border-sky-500', dot: 'before:bg-sky-500', ring: 'group-open:ring-sky-500/15' },
+            },
+            {
+              title: 'Embedded partner: law × code',
+              desc:
+                'You work with one boutique that exchanges directly with engineers and stakeholders. We translate regulator language into backlog items your team can ship.',
+              bullets: ['Why it matters: less friction, faster outcomes, and decisions your leadership can defend.'],
+              color: { border: 'border-neutral-600', dot: 'before:bg-neutral-600', ring: 'group-open:ring-neutral-600/15' },
+            },
+          ].map(({ title, desc, bullets, color }) => (
+            <details
+              key={title}
+              className={`group rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm open:ring-neutral-900/10 ${color.ring} border-l-2 ${color.border}`}
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between">
+                <span
+                  className={`relative pl-3 font-medium text-neutral-900 before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded ${color.dot}`}
+                >
+                  {title}
+                </span>
+                <svg
+                  className="h-5 w-5 text-neutral-400 transition-transform group-open:rotate-180"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.17l3.71-2.94a.75.75 0 11.92 1.18l-4.17 3.3a.75.75 0 01-.92 0l-4.17-3.3a.75.75 0 01-.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </summary>
+
+              <div className="mt-3 grid gap-3 text-md text-neutral-700 md:grid-cols-2">
+                <p>{desc}</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  {bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              </div>
+            </details>
+          ))}
+        </div>
+
+        {/* Desktop / tablet: original grid cards */}
+        <div className="mt-12 hidden md:grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-3xl bg-white p-6 md:p-8 ring-1 ring-rose-200 shadow-sm border-l-2 border-rose-500">
             <h3 className="font-display text-2xl font-semibold text-neutral-950">Penalty risk &amp; cost avoidance</h3>
             <p className="mt-4 text-neutral-600">
-              Fines scale with revenue (GDPR up to 4% of global turnover; EU AI Act up to 7% or capped sums).
-              You avoid expensive surprises by putting the right controls and proofs in place <em>before</em> anyone asks.
+              Fines scale with revenue (GDPR up to 4% of global turnover; EU AI Act up to 7% or capped sums). You avoid expensive surprises by putting the right controls and proofs in place <em>before</em> anyone asks.
             </p>
             <p className="mt-3 text-neutral-600">
               What we do: DPIAs, lawful basis design, AI risk &amp; oversight, technical files, approvals, and a living evidence trail.
             </p>
           </div>
 
-          {/* 2. Deal acceleration */}
-          <div className="rounded-3xl border-0.9 border-amber-500 bg-white p-6 md:p-8 ring-1 ring-amber-200 shadow-sm transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-lg hover:ring-amber-300">
+          <div className="rounded-3xl bg-white p-6 md:p-8 ring-1 ring-amber-200 shadow-sm border-l-2 border-amber-500">
             <h3 className="font-display text-2xl font-semibold text-neutral-950">Deal acceleration &amp; enterprise trust</h3>
             <p className="mt-4 text-neutral-600">
-              Security and privacy questionnaires stop being blockers. You answer procurement once—with clear controls,
-              mapped data flows, and contracts your customers recognize.
+              Security and privacy questionnaires stop being blockers. You answer procurement once—with clear controls, mapped data flows, and contracts your customers recognize.
             </p>
-            <p className="mt-3 text-neutral-600">
-              What you get: faster redline cycles, fewer escalations, and smoother InfoSec reviews.
-            </p>
+            <p className="mt-3 text-neutral-600">What you get: faster redline cycles, fewer escalations, and smoother InfoSec reviews.</p>
           </div>
 
-          {/* 3. Launch confidence */}
-          <div className="rounded-3xl border-0.9 border-indigo-600 bg-white p-6 md:p-8 ring-1 ring-indigo-200 shadow-sm transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-lg hover:ring-indigo-300">
+          <div className="rounded-3xl bg-white p-6 md:p-8 ring-1 ring-indigo-200 shadow-sm border-l-2 border-indigo-500">
             <h3 className="font-display text-2xl font-semibold text-neutral-950">Launch confidence</h3>
             <p className="mt-4 text-neutral-600">
-              Features ship without last-minute rollbacks. Risks are known, owners are assigned, and mitigations are part
-              of the sprint—so go/no-go is a decision, not a fire drill.
+              Features ship without last-minute rollbacks. Risks are known, owners are assigned, and mitigations are part of the sprint—so go/no-go is a decision, not a fire drill.
             </p>
-            <p className="mt-3 text-neutral-600">
-              What we do: privacy by design checklists, model/feature approvals, and clear decision logs.
-            </p>
+            <p className="mt-3 text-neutral-600">What we do: privacy by design checklists, model/feature approvals, and clear decision logs.</p>
           </div>
 
-          {/* 4. Audit-ready docs */}
-          <div className="rounded-3xl border-0.9 border-emerald-600 bg-white p-6 md:p-8 ring-1 ring-emerald-200 shadow-sm transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-lg hover:ring-emerald-300">
+          <div className="rounded-3xl bg-white p-6 md:p-8 ring-1 ring-emerald-200 shadow-sm border-l-2 border-emerald-500">
             <h3 className="font-display text-2xl font-semibold text-neutral-950">Audit-ready documentation</h3>
             <p className="mt-4 text-neutral-600">
-              You keep evidence that regulators and auditors actually use: Annex IV technical documentation, risk logs,
-              change history, and approvals linked to releases.
+              You keep evidence that regulators and auditors actually use: Annex IV technical documentation, risk logs, change history, and approvals linked to releases.
             </p>
-            <p className="mt-3 text-neutral-600">
-              Outcome: less time explaining, more time building.
-            </p>
+            <p className="mt-3 text-neutral-600">Outcome: less time explaining, more time building.</p>
           </div>
 
-          {/* 5. Vendor & data resilience */}
-          <div className="rounded-3xl border-0.9 border-sky-600 bg-white p-6 md:p-8 ring-1 ring-sky-200 shadow-sm transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-lg hover:ring-sky-300">
+          <div className="rounded-3xl bg-white p-6 md:p-8 ring-1 ring-sky-200 shadow-sm border-l-2 border-sky-500">
             <h3 className="font-display text-2xl font-semibold text-neutral-950">Vendor &amp; data-flow resilience</h3>
             <p className="mt-4 text-neutral-600">
-              Third-party risk and data transfers are designed, not patched. Contracts, SCCs, TIAs, and service
-              configurations align with how your stack actually works.
+              Third-party risk and data transfers are designed, not patched. Contracts, SCCs, TIAs, and service configurations align with how your stack actually works.
             </p>
-            <p className="mt-3 text-neutral-600">
-              Result: fewer production surprises and cleaner customer commitments.
-            </p>
+            <p className="mt-3 text-neutral-600">Result: fewer production surprises and cleaner customer commitments.</p>
           </div>
 
-          {/* 6. Embedded partner (law × code) */}
-          <div className="rounded-3xl border-0.9 border-neutral-700 bg-white p-6 md:p-8 ring-1 ring-neutral-200 shadow-sm transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-lg hover:ring-neutral-300">
+          <div className="rounded-3xl bg-white p-6 md:p-8 ring-1 ring-neutral-200 shadow-sm border-l-2 border-neutral-600">
             <h3 className="font-display text-2xl font-semibold text-neutral-950">Embedded partner: law × code</h3>
             <p className="mt-4 text-neutral-600">
-              You work with one boutique that exchanges directly with engineers and stakeholders. We translate regulator
-              language into backlog items your team can ship.
+              You work with one boutique that exchanges directly with engineers and stakeholders. We translate regulator language into backlog items your team can ship.
             </p>
-            <p className="mt-3 text-neutral-600">
-              Why it matters: less friction, faster outcomes, and decisions your leadership can defend.
-            </p>
+            <p className="mt-3 text-neutral-600">Why it matters: less friction, faster outcomes, and decisions your leadership can defend.</p>
           </div>
         </div>
+
       </Container>
     </section>
   )
@@ -565,7 +629,7 @@ export default async function Home() {
         >
           {[
             { href: '/services/ai-literacy', label: 'AI Literacy Training', border: 'border-purple-500' },
-            { href: '/services/highriskcheck', label: 'Am I high-risk?', border: 'border-amber-500' },
+            { href: '/services/highriskcheck', label: 'Is it High Risk?', border: 'border-amber-500' },
             { href: '/services/ai-use-policy', label: 'AI Use Policy', border: 'border-green-500' },
           ].map((link) => (
             <a
