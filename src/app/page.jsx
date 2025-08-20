@@ -592,14 +592,9 @@ export function SpotlightTestimonial() {
   )
 }
 
-
-
-
-
-
 export const metadata = {
   description:
-    'We are a Berlin-based compliance studio working at the intersection of law and technology.',
+    'We are a Berlin-based Compliance Studio working at the intersection of Law and Technology.',
 }
 
 export default async function Home() {
@@ -613,14 +608,16 @@ export default async function Home() {
             EU Regulatory and Governance Advisory.
           </h1>
           <h2 className="font-display text-3xl sm:text-5xl font-medium tracking-tight text-balance text-neutral-950 mt-2">
-            Berlin’s boutique studio for compliance.
+            <span className="italic">Not</span> a software tool. It is real expertise: Berlin’s boutique studio for compliance.
           </h2>
 
           <p className="mt-6 text-xl text-neutral-600">
-            We create compliance solutions that help your business enter and grow in Europe with confidence. Combining legal expertise and engineering know-how,
-            we simplify EU regulations so you can focus on expanding your market and building trust.
+            Led by one German-educated expert who is both lawyer and AI engineer, we design regulatory frameworks that let you grow in Europe with confidence. As your partners, we transform complex EU rules into clear and actionable steps, helping you avoid fines, accelerate enterprise deals, and launch new AI features with confidence.
           </p>
         </FadeIn>
+
+
+
 
         {/* Right-side quick links */}
         <nav
@@ -653,7 +650,21 @@ export default async function Home() {
 
       <ProofOfValue />
       <SpotlightTestimonial />
-      <BookingForm />
+
+      <Container className="mt-28">
+        <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
+          <h2 className="font-display text-3xl font-semibold">Avoid fines. Protect trust. Keep your business running.</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
+            We create legal-technical foundations that let you grow in Europe with confidence.
+          </p>
+          <Link
+            href="/contact"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
+          >
+            Talk to us
+          </Link>
+        </div>
+      </Container>
       <OurProcess />
       <Clients />
 
@@ -672,20 +683,9 @@ export default async function Home() {
         Comforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice.
         The results are outstanding and we managed to launch in Europe!
       </Testimonial>
-      <Container className="mt-28">
-        <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
-          <h2 className="font-display text-3xl font-semibold">Avoid fines. Protect trust. Keep your business running.</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
-            We design GDPR controls that fit your organisation and generate evidence you can stand behind.
-          </p>
-          <Link
-            href="/contact"
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
-          >
-            Talk to us
-          </Link>
-        </div>
-      </Container>
+      <BookingForm />
+
+
     </>
   )
 }
