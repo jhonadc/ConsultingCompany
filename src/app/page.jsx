@@ -602,7 +602,7 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-14 sm:mt-8 md:mt-56 relative">
+      <Container className="mt-24 sm:mt-16 md:mt-56 relative">
         <FadeIn className="max-w-4xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl leading-tight">
             EU Regulatory and Governance Advisory.
@@ -611,10 +611,17 @@ export default async function Home() {
             <span className="italic">Not</span> a software tool. It is real expertise: Berlin’s boutique studio for compliance.
           </h2>
 
-          <p className="mt-6 sm:text-md md:text-lg text-neutral-600">
+          {/* Desktop / Tablet paragraph */}
+          <p className="hidden sm:block mt-6 text-xl text-neutral-600">
             Led by one German-educated expert who is both lawyer and AI engineer, we design regulatory frameworks that let you grow in Europe with confidence. As your partners, we transform complex EU rules into clear and actionable steps, helping you avoid fines, accelerate enterprise deals, and launch new AI features with confidence.
           </p>
+
+          {/* Mobile paragraph */}
+          <p className="block sm:hidden mt-6 text-xl text-neutral-600">
+            Led by a German-educated lawyer and AI engineer, we help you avoid fines, win enterprise deals, and launch AI features with confidence in Europe.
+          </p>
         </FadeIn>
+
 
 
 
