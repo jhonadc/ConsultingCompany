@@ -20,7 +20,6 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 
-
 const RootLayoutContext = createContext(null)
 
 function XIcon(props) {
@@ -36,6 +35,16 @@ function MenuIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path d="M2 6h20v2H2zM2 16h20v2H2z" />
+    </svg>
+  )
+}
+
+/* FIXED: proper stroked envelope icon (no black square) */
+function EnvelopeIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" {...props}>
+      <rect x="3" y="6.5" width="18" height="11" rx="1.5" stroke="currentColor" />
+      <path d="M3 7l9 7 9-7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
 }
@@ -59,11 +68,19 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
-            className="h-8 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
+          {/* MOBILE: symbol + name, with one word bold */}
+          <div
+            className={clsx(
+              'sm:hidden flex items-center gap-2 text-base tracking-tight',
+              invert ? 'text-white' : 'text-neutral-950'
+            )}
+          >
+            <Logomark className="h-6 w-6" invert={invert} filled={logoHovered} />
+            <span className="font-bold">Comforma</span>{' '}
+            <span className="font-medium">Compliance</span>
+          </div>
+
+          {/* DESKTOP: keep existing logo */}
           <Logo
             className="hidden h-8 sm:block"
             invert={invert}
@@ -71,9 +88,26 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
-            Contact us
-          </Button>
+          {/* DESKTOP: button stays; ensure hidden on mobile even if Button ignores className */}
+          <div className="hidden sm:block">
+            <Button href="/contact" invert={invert}>
+              Contact us
+            </Button>
+          </div>
+
+          {/* MOBILE: icon-only contact link */}
+          <Link
+            href="/contact"
+            aria-label="Contact us"
+            className={clsx(
+              'sm:hidden group -m-2.5 rounded-full p-2.5 transition',
+              invert ? 'hover:bg-white/10 text-white hover:text-neutral-200'
+                : 'hover:bg-neutral-950/10 text-neutral-950 hover:text-neutral-700',
+            )}
+          >
+            <EnvelopeIcon className="h-6 w-6" />
+          </Link>
+
           <button
             ref={toggleRef}
             type="button"
@@ -100,6 +134,8 @@ function Header({
     </Container>
   )
 }
+
+/* ...everything below remains unchanged... */
 
 function NavigationRow({ children }) {
   return (
@@ -129,7 +165,6 @@ function Navigation() {
       <NavigationRow>
         <NavigationItem href="/regulations">Regulations</NavigationItem>
         <NavigationItem href="/process">How We Work</NavigationItem>
-
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/about">About Us</NavigationItem>
@@ -161,10 +196,7 @@ function RootLayoutInner({ children }) {
     }
 
     window.addEventListener('click', onClick)
-
-    return () => {
-      window.removeEventListener('click', onClick)
-    }
+    return () => window.removeEventListener('click', onClick)
   }, [])
 
   return (
@@ -226,7 +258,6 @@ function RootLayoutInner({ children }) {
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
-
                 </div>
               </Container>
             </div>
@@ -248,9 +279,7 @@ function RootLayoutInner({ children }) {
             yOffset={-96}
             interactive
           />
-
           <main className="w-full flex-auto">{children}</main>
-
           <Footer />
         </motion.div>
       </motion.div>
