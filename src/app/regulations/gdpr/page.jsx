@@ -135,97 +135,113 @@ export default function GdprPage() {
           </FadeIn>
         </Container>
 
-        {/* What we offer — first row (full width, 2 cards), then 3-per row.
-            Alignment fix: stretch cards and pin CTA to bottom with flex */}
+        {/* What we offer */}
         <Container className="mt-24">
           <FadeIn className="mt-6 mx-auto max-w-6xl">
-            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
+            <h2
+              className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left
+                 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
+                 before:rounded before:bg-blue-500/60"
+            >
               What we offer
             </h2>
 
-            {/* NOTE under header */}
             <p className="mt-3 text-md text-neutral-600">
-              **Programmes are tailored end-to-end and may depend on earlier phases
-              (e.g., deletion protocols require prior identification of personal-data flows and systems).
-
+              Targeted, high-impact services that embed privacy-by-design and produce audit-ready evidence.
             </p>
 
             <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-6 items-stretch">
-              {/* Row 1: two wide cards */}
               {[
                 {
                   title: 'External Data Protection Officer (DPO)',
                   desc:
                     'We act as your independent DPO: advise management, monitor compliance, train staff, oversee DPIAs, liaise with authorities, and report risks with practical remediation paths.',
                   cta: 'Speak with a DPO',
+                  span: 'lg:col-span-3',
+                  border: 'border-l-2 border-pink-500',
+                  ring: 'hover:ring-pink-200',
                 },
                 {
                   title: 'EU Market Entry & Client Readiness',
                   desc:
                     'Make your business contract-ready for EU clients: lawful bases, privacy notices, transfer assessments, vendor clauses, and evidence packs that pass procurement and due-diligence reviews.',
                   cta: 'Plan your EU entry',
+                  span: 'lg:col-span-3',
+                  border: 'border-l-2 border-amber-500',
+                  ring: 'hover:ring-amber-200',
                 },
-              ].map(({ title, desc, cta }) => (
-                <div key={title} className="group relative lg:col-span-3">
-                  <div className="absolute inset-0 rounded-3xl bg-white ring-1 ring-neutral-950/10 shadow-sm transition-transform group-hover:-translate-y-0.5 group-hover:scale-[1.01]" />
-                  <div className="relative z-10 h-full rounded-[calc(1.5rem+1px)] p-7 flex flex-col">
-                    <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
-                    <p className="mt-2 text-sm text-neutral-700">{desc}</p>
-                    <div className="mt-auto pt-5">
-                      <Link href="/contact" className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white hover:scale-105">
-                        {cta}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              ))}
-
-              {/* Remaining cards: three per row on lg */}
-              {[
                 {
                   title: 'Records of Processing (RoPA) Programme',
                   desc:
-                    'We establish your Article-30 Records of Processing Activities — what you process, why, with whom, where, retention, and security measures — and set a lightweight routine to keep it current.',
+                    'We establish your Article-30 Records of Processing Activities—what you process, why, with whom, where, retention, and security measures—and set a lightweight routine to keep it current.',
                   cta: 'Discuss your RoPA setup',
+                  span: 'lg:col-span-2',
+                  border: 'border-l-2 border-emerald-500',
+                  ring: 'hover:ring-emerald-200',
                 },
                 {
                   title: 'DPIA — Company-Specific Assessment',
                   desc:
                     'A thorough, personalised DPIA for high-risk processing: scope, stakeholder interviews, risk analysis tailored to your systems and business model, mitigation design, and sign-off documentation.',
                   cta: 'Plan your DPIA',
+                  span: 'lg:col-span-2',
+                  border: 'border-l-2 border-sky-500',
+                  ring: 'hover:ring-sky-200',
                 },
                 {
                   title: 'Incident & Breach Readiness',
                   desc:
                     'Design and embed a 72-hour response playbook with roles, decision trees, and notification templates. We train teams and set up the evidence you’ll need if an incident occurs.',
                   cta: 'Strengthen readiness',
+                  span: 'lg:col-span-2',
+                  border: 'border-l-2 border-violet-500',
+                  ring: 'hover:ring-violet-200',
                 },
                 {
                   title: 'Retention & Deletion Operating Model',
                   desc:
                     'Define lawful retention by data category, implement deletion routines in systems, and set up audit logs to prove execution.',
                   cta: 'Design your model',
+                  span: 'lg:col-span-2',
+                  border: 'border-l-2 border-cyan-500',
+                  ring: 'hover:ring-cyan-200',
                 },
                 {
                   title: 'Processor & Vendor Oversight',
                   desc:
                     'Practical onboarding and periodic review of processors: requirement baselines, Article-28 clauses, transfer assessments, and an oversight cadence that fits your vendor landscape.',
                   cta: 'Build vendor oversight',
+                  span: 'lg:col-span-2',
+                  border: 'border-l-2 border-rose-500',
+                  ring: 'hover:ring-rose-200',
                 },
                 {
                   title: 'GDPR for AI Systems',
                   desc:
                     'Align AI features and workflows with GDPR: controller/processor role mapping, lawful bases, transparency to users, RoPA updates, DPIA triggers, and acceptable-use guidance for teams.',
                   cta: 'Align AI with GDPR',
+                  span: 'lg:col-span-2',
+                  border: 'border-l-2 border-indigo-500',
+                  ring: 'hover:ring-indigo-200',
                 },
-              ].map(({ title, desc, cta }) => (
-                <div key={title} className="group relative lg:col-span-2">
-                  <div className="absolute inset-0 rounded-3xl bg-white ring-1 ring-neutral-950/10 shadow-sm transition-transform group-hover:-translate-y-0.5 group-hover:scale-[1.01]" />
-                  <div className="relative z-10 h-full rounded-[calc(1.5rem+1px)] p-7 flex flex-col">
+              ].map(({ title, desc, cta, span, border, ring }) => (
+                <div key={title} className={span}>
+                  <div
+                    className={[
+                      'rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm flex h-full flex-col',
+                      'transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md',
+                      'focus-within:ring-2',
+                      ring,
+                      border,
+                    ].join(' ')}
+                  >
                     <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
                     <p className="mt-2 text-sm text-neutral-700">{desc}</p>
                     <div className="mt-auto pt-5">
-                      <Link href="/contact" className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white hover:scale-105">
+                      <Link
+                        href="/contact"
+                        className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
+                      >
                         {cta}
                       </Link>
                     </div>
@@ -236,10 +252,14 @@ export default function GdprPage() {
           </FadeIn>
         </Container>
 
-        {/* Why now (Urgency) */}
+        {/* Why now */}
         <Container className="mt-20">
           <FadeIn className="mx-auto max-w-6xl">
-            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
+            <h2
+              className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left
+                 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
+                 before:rounded before:bg-blue-500/60"
+            >
               Why now
             </h2>
             <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-3">
@@ -247,18 +267,43 @@ export default function GdprPage() {
                 {
                   k: 'Active enforcement',
                   v: 'Supervisory authorities continue to open investigations, issue orders, and levy fines; clients increasingly require evidence of controls.',
+                  border: 'border-l-2 border-amber-500',
+                  dot: 'before:bg-amber-500',
+                  ring: 'hover:ring-amber-200',
                 },
                 {
                   k: 'Pre-launch duties',
                   v: 'High-risk processing requires DPIA before deployment; this must be scheduled and evidenced to avoid delays and non-compliance.',
+                  border: 'border-l-2 border-pink-500',
+                  dot: 'before:bg-pink-500',
+                  ring: 'hover:ring-pink-200',
                 },
                 {
                   k: 'Transfers scrutiny',
                   v: 'Standard Contractual Clauses require documented transfer assessments and safeguards; partners ask for proof during due diligence.',
+                  border: 'border-l-2 border-emerald-500',
+                  dot: 'before:bg-emerald-500',
+                  ring: 'hover:ring-emerald-200',
                 },
-              ].map(({ k, v }) => (
-                <div key={k} className="rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm text-left">
-                  <p className="text-sm font-semibold text-neutral-900">{k}</p>
+              ].map(({ k, v, border, dot, ring }) => (
+                <div
+                  key={k}
+                  className={[
+                    'rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm text-left',
+                    'transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md',
+                    border,
+                    ring,
+                  ].join(' ')}
+                >
+                  <p
+                    className={[
+                      'relative pl-3 text-sm font-semibold text-neutral-900',
+                      'before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded',
+                      dot,
+                    ].join(' ')}
+                  >
+                    {k}
+                  </p>
                   <p className="mt-1 text-sm text-neutral-700">{v}</p>
                 </div>
               ))}
@@ -266,38 +311,38 @@ export default function GdprPage() {
           </FadeIn>
         </Container>
 
-        {/* How we work + process link */}
+        {/* How we work */}
         <Container className="mt-24">
           <Border />
-          <FadeIn className="mt-6 mx-auto max-w-6xl">
-            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
+          <FadeIn className="mt-10 mx-auto max-w-6xl">
+            <h2
+              className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left
+                 before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
+                 before:rounded before:bg-blue-500/60"
+            >
               How we work
             </h2>
             <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-4">
               {[
-                {
-                  t: 'Diagnose',
-                  d: 'Focused discovery across product features, data flows, and vendors to baseline actual practice.',
-                },
-                {
-                  t: 'Design',
-                  d: 'Co-create bespoke controls and workflows (minimisation, DPIA cadence, vendor intake, breach playbooks) aligned to your reality.',
-                },
-                {
-                  t: 'Implement & Evidence',
-                  d: 'Embed changes with your teams and produce evidence packs that stand up in audits and client reviews.',
-                },
-                {
-                  t: 'Assure',
-                  d: 'Quarterly tune-ups: RoPA updates, transfer reassessments, spot checks, and change logs that prove control over time.',
-                },
-              ].map(({ t, d }) => (
-                <div key={t} className="group relative">
-                  <div className="absolute inset-0 rounded-3xl bg-white ring-1 ring-neutral-950/10 shadow-sm transition-transform group-hover:-translate-y-0.5 group-hover:scale-[1.01]" />
-                  <div className="relative z-10 h-full rounded-[calc(1.5rem+1px)] p-7 text-left">
-                    <h3 className="text-lg font-semibold text-neutral-900">{t}</h3>
-                    <p className="mt-2 text-sm text-neutral-700">{d}</p>
-                  </div>
+                { t: 'Diagnose', d: 'Focused discovery across product features, data flows, and vendors to baseline actual practice.', accent: 'before:bg-cyan-500' },
+                { t: 'Design', d: 'Co-create bespoke controls and workflows (minimisation, DPIA cadence, vendor intake, breach playbooks) aligned to your reality.', accent: 'before:bg-violet-500' },
+                { t: 'Implement & Evidence', d: 'Embed changes with your teams and produce evidence packs that stand up in audits and client reviews.', accent: 'before:bg-rose-500' },
+                { t: 'Assure', d: 'Quarterly tune-ups: RoPA updates, transfer reassessments, spot checks, and change logs that prove control over time.', accent: 'before:bg-amber-500' },
+              ].map(({ t, d, accent }) => (
+                <div
+                  key={t}
+                  className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <h3
+                    className={[
+                      'relative pl-3 text-lg font-semibold text-neutral-900',
+                      'before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded',
+                      accent,
+                    ].join(' ')}
+                  >
+                    {t}
+                  </h3>
+                  <p className="mt-2 text-sm text-neutral-700">{d}</p>
                 </div>
               ))}
             </div>
@@ -311,6 +356,8 @@ export default function GdprPage() {
             </div>
           </FadeIn>
         </Container>
+
+
 
 
 
