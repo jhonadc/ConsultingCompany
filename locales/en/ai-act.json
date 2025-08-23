@@ -1,0 +1,128 @@
+{
+    "metadata": {
+        "title": "EU AI Act — Comforma Compliance",
+        "description": "Regulation (EU) — mandatory requirements for AI systems in the EU. Training, governance, and readiness checks for compliance."
+    },
+    "common": {
+        "learnMore": "Learn more",
+        "viewDetailedProcess": "View detailed process →",
+        "linkedin": "LinkedIn"
+    },
+    "header": {
+        "title": "EU AI Act",
+        "subtitle": "The world’s first AI regulation, setting rules for the design, development, and deployment of AI systems across the EU."
+    },
+    "facts": [
+        {
+            "title": "In application",
+            "value": "Phased 2024–2026",
+            "description": "High-risk requirements from mid-2026"
+        },
+        {
+            "title": "Who this affects",
+            "value": "Providers, deployers, importers, distributors",
+            "description": "Includes GPAI/foundation models & transparency duties"
+        },
+        {
+            "title": "Enforcement & penalties",
+            "value": "Up to €35M or 7% global turnover",
+            "description": "Varies by infringement type and role"
+        }
+    ],
+    "offer": {
+        "title": "What we offer",
+        "subtitle": "Targeted, high-impact services to get you compliant fast.",
+        "cards": [
+            {
+                "href": "/services/ai-literacy",
+                "label": "AI Literacy Training"
+            },
+            {
+                "href": "/services/highriskcheck",
+                "label": "Am I high-risk?"
+            },
+            {
+                "href": "/services/ai-use-policy",
+                "label": "AI Use Policy"
+            }
+        ]
+    },
+    "obligations": {
+        "title": "Obligations",
+        "items": [
+            {
+                "title": "AI system classification",
+                "text": "Identify whether your AI system is prohibited, high-risk, limited-risk, or minimal-risk, applying the Annex III criteria and relevant exemptions."
+            },
+            {
+                "title": "High-risk system compliance",
+                "text": "Implement and document risk management, data governance, transparency, human oversight, and post-market monitoring measures as per Annex IV."
+            },
+            {
+                "title": "General-purpose AI duties",
+                "text": "Meet transparency, technical documentation, and model evaluation requirements for general-purpose AI and foundation models."
+            },
+            {
+                "title": "Deployers’ responsibilities",
+                "text": "Conduct conformity checks, maintain use logs, provide user instructions, and monitor systems for compliance throughout their lifecycle."
+            },
+            {
+                "title": "More",
+                "text": "And more, depending on role and risk tier"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Why now",
+        "items": [
+            {
+                "k": "Early preparation advantage",
+                "v": "Build compliance into your roadmap now to avoid costly rework later."
+            },
+            {
+                "k": "Market trust",
+                "v": "Clients and partners will expect AI Act compliance as a baseline."
+            },
+            {
+                "k": "Avoid severe penalties",
+                "v": "Non-compliance risks significant fines and market exclusion."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Comply. Compete. Lead with AI you can trust.",
+        "body": "We design AI Act compliance programmes that fit your organisation and generate audit-ready proof you can stand behind.",
+        "button": "Talk to us",
+        "buttonHref": "/contact"
+    },
+    "ourProcess": {
+        "eyebrow": "How we work",
+        "title": "Turning complex EU rules into clear competitive advantage",
+        "intro": "Compliance should enable growth. We align legal, technical, and product teams to reduce risk and unlock speed",
+        "steps": [
+            {
+                "title": "Assess",
+                "text": "We map business model, risk appetite, data flows, and AI use cases to pinpoint obligations (AI Act, GDPR, sector rules) and surface quick wins vs. critical gaps. You get a concise findings brief and a prioritised plan with effort/impact/timelines."
+            },
+            {
+                "title": "Implement",
+                "text": "We co-create the controls that matter: AI policy, risk & human oversight, privacy by design, vendor governance, and approvals—plus an ISO/IEC 42001-aligned AI Management System, Annex IV technical documentation, DPIAs, and RoPA where needed."
+            },
+            {
+                "title": "Sustain",
+                "text": "Before go-live we validate controls, align owners, and set KPIs. We run tabletop exercises, verify human-in-the-loop, and check transfer/vendor safeguards end-to-end. Handover includes an audit-ready pack and a pragmatic maintenance cadence."
+            }
+        ],
+        "viewProcess": "View detailed process →",
+        "viewProcessHref": "/process"
+    },
+    "spotlight": {
+        "bio": "AI Governance Specialist with a unique dual background as a Lawyer and Software Engineer. My mission is to empower companies and research institutions worldwide to confidently navigate the complex landscape of regulatory compliance.\n\nWith deep expertise in the AI Act, GDPR, ePrivacy Directive, ISO 42001, and Medical Device Regulation, I create compliance frameworks that not only meet legal requirements but also drive innovation and growth.\n\nMy multidisciplinary approach allows me to translate complex regulations into actionable strategies, design and implement compliance programs that mitigate risks, and ensure organizations remain compliant and competitive—while fostering seamless collaboration between legal and technical teams.",
+        "name": "Jhonathan Campos",
+        "role": "Founder — AI Governance Specialist, Lawyer & Software Engineer",
+        "linkedinLabel": "LinkedIn"
+    },
+    "partnership": {
+        "note": "We are partnering with leaders in xAI to deliver a complete AI Act applicability and readiness programme. Details will be announced here as soon as they are ready."
+    }
+}

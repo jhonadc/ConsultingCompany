@@ -1,0 +1,128 @@
+{
+    "metadata": {
+        "title": "Lei de IA da UE — Comforma Compliance",
+        "description": "Regulamento (UE) — requisitos obrigatórios para sistemas de IA na UE. Treinamento, governança e verificações de prontidão para conformidade."
+    },
+    "common": {
+        "learnMore": "Saiba mais",
+        "viewDetailedProcess": "Ver processo detalhado →",
+        "linkedin": "LinkedIn"
+    },
+    "header": {
+        "title": "Lei de IA da UE",
+        "subtitle": "A primeira regulação de IA do mundo, definindo regras para desenho, desenvolvimento e implementação de sistemas de IA em toda a União Europeia."
+    },
+    "facts": [
+        {
+            "title": "Em aplicação",
+            "value": "Fases 2024–2026",
+            "description": "Requisitos de alto risco a partir de meados de 2026"
+        },
+        {
+            "title": "Quem é impactado",
+            "value": "Provedores, implementadores, importadores, distribuidores",
+            "description": "Inclui GPAI/modelos fundacionais e deveres de transparência"
+        },
+        {
+            "title": "Fiscalização e penalidades",
+            "value": "Até €35M ou 7% do faturamento global",
+            "description": "Varia por tipo de infração e papel na cadeia"
+        }
+    ],
+    "offer": {
+        "title": "O que oferecemos",
+        "subtitle": "Serviços focados e de alto impacto para tornar você conforme rapidamente.",
+        "cards": [
+            {
+                "href": "/services/ai-literacy",
+                "label": "Treinamento em IA (AI Literacy)"
+            },
+            {
+                "href": "/services/highriskcheck",
+                "label": "Meu sistema é de alto risco?"
+            },
+            {
+                "href": "/services/ai-use-policy",
+                "label": "Política de Uso de IA"
+            }
+        ]
+    },
+    "obligations": {
+        "title": "Obrigações",
+        "items": [
+            {
+                "title": "Classificação do sistema de IA",
+                "text": "Identifique se o seu sistema é proibido, de alto risco, risco limitado ou risco mínimo, aplicando os critérios do Anexo III e as isenções relevantes."
+            },
+            {
+                "title": "Conformidade para sistemas de alto risco",
+                "text": "Implemente e documente gestão de riscos, governança de dados, transparência, supervisão humana e monitoramento pós-mercado conforme o Anexo IV."
+            },
+            {
+                "title": "Deveres para IA de propósito geral",
+                "text": "Atenda requisitos de transparência, documentação técnica e avaliação de modelos para IA de propósito geral e modelos fundacionais."
+            },
+            {
+                "title": "Responsabilidades do implementador",
+                "text": "Realize verificações de conformidade, mantenha logs de uso, forneça instruções ao usuário e monitore os sistemas ao longo do ciclo de vida."
+            },
+            {
+                "title": "Mais",
+                "text": "E mais, conforme seu papel e nível de risco"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Por que agora",
+        "items": [
+            {
+                "k": "Vantagem da preparação antecipada",
+                "v": "Incorpore conformidade no roadmap para evitar retrabalho caro depois."
+            },
+            {
+                "k": "Confiança de mercado",
+                "v": "Clientes e parceiros esperarão conformidade com a Lei de IA como base."
+            },
+            {
+                "k": "Evite penalidades severas",
+                "v": "A não conformidade traz risco de multas significativas e exclusão do mercado."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Conforme. Competitivo. Liderando com IA confiável.",
+        "body": "Projetamos programas de conformidade com a Lei de IA que se encaixam na sua organização e geram evidências auditáveis nas quais você pode confiar.",
+        "button": "Fale conosco",
+        "buttonHref": "/contact"
+    },
+    "ourProcess": {
+        "eyebrow": "Como trabalhamos",
+        "title": "Transformando regras complexas da UE em vantagem competitiva",
+        "intro": "Conformidade deve habilitar crescimento. Alinhamos times jurídico, técnico e de produto para reduzir risco e liberar velocidade",
+        "steps": [
+            {
+                "title": "Diagnosticar",
+                "text": "Mapeamos modelo de negócio, apetite de risco, fluxos de dados e casos de uso de IA para identificar obrigações (Lei de IA, GDPR, regras setoriais) e destacar ganhos rápidos versus lacunas críticas. Você recebe um brief conciso de achados e um plano priorizado com esforço/impacto/cronogramas."
+            },
+            {
+                "title": "Implementar",
+                "text": "Co-criamos os controles que importam: política de IA, gestão de risco e supervisão humana, privacidade by design, governança de terceiros e aprovações — além de um Sistema de Gestão de IA alinhado à ISO/IEC 42001, documentação técnica do Anexo IV, DPIAs e RoPA quando necessário."
+            },
+            {
+                "title": "Sustentar",
+                "text": "Antes do go-live, validamos controles, alinhamos responsáveis e definimos KPIs. Conduzimos exercícios de tabletop, verificamos o humano-no-loop e checamos salvaguardas de transferência/fornecedores fim a fim. A entrega inclui um pacote pronto para auditoria e uma cadência pragmática de manutenção."
+            }
+        ],
+        "viewProcess": "Ver processo detalhado →",
+        "viewProcessHref": "/process"
+    },
+    "spotlight": {
+        "bio": "Especialista em Governança de IA com formação dupla em Direito e Engenharia de Software. Minha missão é capacitar empresas e instituições de pesquisa no mundo todo a navegar com confiança o cenário complexo da conformidade regulatória.\n\nCom experiência profunda na Lei de IA, GDPR, Diretiva ePrivacy, ISO 42001 e Regulamento de Dispositivos Médicos, crio estruturas de conformidade que não apenas atendem aos requisitos legais, mas também impulsionam inovação e crescimento.\n\nMinha abordagem multidisciplinar traduz normas complexas em estratégias acionáveis, projeta e implementa programas de conformidade que mitigam riscos e garantem que as organizações permaneçam conformes e competitivas — promovendo colaboração fluida entre equipes jurídicas e técnicas.",
+        "name": "Jhonathan Campos",
+        "role": "Fundador — Especialista em Governança de IA, Advogado & Engenheiro de Software",
+        "linkedinLabel": "LinkedIn"
+    },
+    "partnership": {
+        "note": "Estamos firmando parceria com líderes em xAI para entregar um programa completo de aplicabilidade e prontidão à Lei de IA. Detalhes serão anunciados aqui assim que estiverem prontos."
+    }
+}

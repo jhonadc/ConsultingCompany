@@ -1,0 +1,128 @@
+{
+    "metadata": {
+        "title": "EU KI-Verordnung — Comforma Compliance",
+        "description": "Verordnung (EU) — verpflichtende Anforderungen für KI-Systeme in der EU. Schulung, Governance und Readiness-Checks für Compliance."
+    },
+    "common": {
+        "learnMore": "Mehr erfahren",
+        "viewDetailedProcess": "Detaillierten Prozess ansehen →",
+        "linkedin": "LinkedIn"
+    },
+    "header": {
+        "title": "EU KI-Verordnung",
+        "subtitle": "Die weltweit erste KI-Regulierung, die Regeln für die Gestaltung, Entwicklung und den Einsatz von KI-Systemen in der gesamten EU festlegt."
+    },
+    "facts": [
+        {
+            "title": "In Anwendung",
+            "value": "Phasen 2024–2026",
+            "description": "Anforderungen für Hochrisiko-Systeme ab Mitte 2026"
+        },
+        {
+            "title": "Wen betrifft das",
+            "value": "Anbieter, Verwender, Importeure, Händler",
+            "description": "Beinhaltet GPAI/Foundation Models & Transparenzpflichten"
+        },
+        {
+            "title": "Durchsetzung & Strafen",
+            "value": "Bis zu 35 Mio. € oder 7 % des weltweiten Umsatzes",
+            "description": "Abhängig von Art des Verstoßes und Rolle"
+        }
+    ],
+    "offer": {
+        "title": "Was wir anbieten",
+        "subtitle": "Gezielte, wirkungsstarke Dienstleistungen, um Sie schnell konform zu machen.",
+        "cards": [
+            {
+                "href": "/services/ai-literacy",
+                "label": "KI-Kompetenzschulung"
+            },
+            {
+                "href": "/services/highriskcheck",
+                "label": "Ist mein System Hochrisiko?"
+            },
+            {
+                "href": "/services/ai-use-policy",
+                "label": "KI-Nutzungsrichtlinie"
+            }
+        ]
+    },
+    "obligations": {
+        "title": "Verpflichtungen",
+        "items": [
+            {
+                "title": "Klassifizierung von KI-Systemen",
+                "text": "Bestimmen Sie, ob Ihr KI-System verboten, Hochrisiko, begrenztes Risiko oder minimales Risiko ist, basierend auf den Kriterien von Anhang III und relevanten Ausnahmen."
+            },
+            {
+                "title": "Compliance für Hochrisiko-Systeme",
+                "text": "Implementieren und dokumentieren Sie Risikomanagement, Daten-Governance, Transparenz, menschliche Aufsicht und Marktüberwachung gemäß Anhang IV."
+            },
+            {
+                "title": "Pflichten für allgemeine KI",
+                "text": "Erfüllen Sie Anforderungen an Transparenz, technische Dokumentation und Modellevaluierung für General Purpose AI und Foundation Models."
+            },
+            {
+                "title": "Verantwortung der Verwender",
+                "text": "Führen Sie Konformitätsprüfungen durch, führen Sie Nutzungsprotokolle, stellen Sie Benutzeranleitungen bereit und überwachen Sie Systeme während des gesamten Lebenszyklus."
+            },
+            {
+                "title": "Mehr",
+                "text": "Und mehr, je nach Rolle und Risikostufe"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Warum jetzt",
+        "items": [
+            {
+                "k": "Vorteil der frühen Vorbereitung",
+                "v": "Integrieren Sie Compliance jetzt in Ihre Roadmap, um teure Nacharbeiten später zu vermeiden."
+            },
+            {
+                "k": "Marktvertrauen",
+                "v": "Kunden und Partner werden die Einhaltung der KI-Verordnung als Mindeststandard erwarten."
+            },
+            {
+                "k": "Schwere Strafen vermeiden",
+                "v": "Nicht-Compliance birgt das Risiko erheblicher Geldbußen und Marktausschluss."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Einhaltung. Wettbewerb. Führen mit vertrauenswürdiger KI.",
+        "body": "Wir entwerfen Compliance-Programme zur EU-KI-Verordnung, die zu Ihrer Organisation passen und prüfungsreife Nachweise liefern, auf die Sie sich verlassen können.",
+        "button": "Kontaktieren Sie uns",
+        "buttonHref": "/contact"
+    },
+    "ourProcess": {
+        "eyebrow": "Wie wir arbeiten",
+        "title": "Komplexe EU-Regeln in klaren Wettbewerbsvorteil verwandeln",
+        "intro": "Compliance sollte Wachstum ermöglichen. Wir bringen Rechts-, Technik- und Produktteams zusammen, um Risiken zu reduzieren und Geschwindigkeit zu erhöhen.",
+        "steps": [
+            {
+                "title": "Bewerten",
+                "text": "Wir analysieren Geschäftsmodell, Risikobereitschaft, Datenflüsse und KI-Anwendungsfälle, um Verpflichtungen (KI-Verordnung, DSGVO, branchenspezifische Regeln) zu identifizieren und schnelle Gewinne im Vergleich zu kritischen Lücken aufzuzeigen. Sie erhalten einen kompakten Ergebnisbericht und einen priorisierten Plan mit Aufwand/Wirkung/Zeitleisten."
+            },
+            {
+                "title": "Umsetzen",
+                "text": "Wir erstellen gemeinsam die entscheidenden Kontrollen: KI-Policy, Risikomanagement & menschliche Aufsicht, Privacy by Design, Lieferantengovernance und Freigaben — plus ein an ISO/IEC 42001 ausgerichtetes KI-Managementsystem, technische Dokumentation nach Anhang IV, DPIAs und RoPA, falls erforderlich."
+            },
+            {
+                "title": "Sichern",
+                "text": "Vor dem Go-Live validieren wir Kontrollen, stimmen Verantwortlichkeiten ab und setzen KPIs. Wir führen Tabletop-Übungen durch, prüfen Human-in-the-Loop und kontrollieren Schutzmaßnahmen bei Übertragung/Lieferanten Ende-zu-Ende. Die Übergabe umfasst ein prüfungsreifes Paket und eine pragmatische Wartungsroutine."
+            }
+        ],
+        "viewProcess": "Detaillierten Prozess ansehen →",
+        "viewProcessHref": "/process"
+    },
+    "spotlight": {
+        "bio": "Spezialist für KI-Governance mit einzigartigem Doppelhintergrund als Jurist und Software-Ingenieur. Meine Mission ist es, Unternehmen und Forschungseinrichtungen weltweit zu befähigen, die komplexe Landschaft der regulatorischen Compliance sicher zu navigieren.\n\nMit tiefem Fachwissen in der KI-Verordnung, DSGVO, ePrivacy-Richtlinie, ISO 42001 und der Medizinprodukteverordnung entwickle ich Compliance-Frameworks, die nicht nur gesetzliche Anforderungen erfüllen, sondern auch Innovation und Wachstum fördern.\n\nMein interdisziplinärer Ansatz ermöglicht es mir, komplexe Vorschriften in umsetzbare Strategien zu übersetzen, Compliance-Programme zu entwerfen und umzusetzen, die Risiken mindern und sicherstellen, dass Organisationen konform und wettbewerbsfähig bleiben — und gleichzeitig eine reibungslose Zusammenarbeit zwischen Rechts- und Technikteams fördern.",
+        "name": "Jhonathan Campos",
+        "role": "Gründer — Spezialist für KI-Governance, Jurist & Software-Ingenieur",
+        "linkedinLabel": "LinkedIn"
+    },
+    "partnership": {
+        "note": "Wir arbeiten mit führenden Unternehmen im Bereich xAI zusammen, um ein vollständiges Programm zur Anwendbarkeit und Readiness der KI-Verordnung bereitzustellen. Details werden hier bekannt gegeben, sobald sie verfügbar sind."
+    }
+}
