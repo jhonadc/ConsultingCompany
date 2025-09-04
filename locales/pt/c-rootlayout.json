@@ -1,0 +1,15 @@
+{
+    "header": {
+        "homeAria": "Início",
+        "contactCta": "Fale conosco",
+        "contactAria": "Fale conosco",
+        "toggleNavAria": "Alternar navegação",
+        "ourOffices": "Nossos escritórios"
+    },
+    "nav": {
+        "regulations": "Regulamentos",
+        "process": "Como Trabalhamos",
+        "about": "Sobre Nós",
+        "contact": "Fale Conosco"
+    }
+}

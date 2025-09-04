@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "regulations": "Regulations",
+        "process": "How We Work",
+        "about": "About Us",
+        "blog": "Blog",
+        "contact": "Get in Touch"
+    },
+    "legal": {
+        "imprint": "Imprint",
+        "privacy": "Privacy"
+    }
+}

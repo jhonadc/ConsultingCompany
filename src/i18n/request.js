@@ -24,6 +24,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         team,
         contact,
         booking,
+        cRootlayout,
+        cFooter,
     ] = await Promise.all([
         import(`../../locales/${locale}/common.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/ai-act.json`).then((m) => m.default).catch(() => ({})),
@@ -40,6 +42,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../locales/${locale}/team.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/contact.json`).then(m => m.default).catch(() => ({})), // ⬅️ novo
         import(`../../locales/${locale}/booking.json`).then(m => m.default).catch(() => ({})), // ⬅️ novo
+        import(`../../locales/${locale}/c-rootlayout.json`).then((m) => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/c-footer.json`).then((m) => m.default).catch(() => ({})) // ✅
 
 
     ])
@@ -62,6 +66,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...team,
             ...contact,
             ...booking,
+            'c-rootlayout': cRootlayout,
+            'c-footer': cFooter,
         }
     }
 })

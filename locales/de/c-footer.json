@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "regulations": "Regelungen",
+        "process": "So arbeiten wir",
+        "about": "Über uns",
+        "blog": "Blog",
+        "contact": "Kontakt aufnehmen"
+    },
+    "legal": {
+        "imprint": "Impressum",
+        "privacy": "Datenschutz"
+    }
+}

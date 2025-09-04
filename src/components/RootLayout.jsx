@@ -1,3 +1,4 @@
+// src/components/RootLayout.jsx
 'use client'
 
 import {
@@ -11,6 +12,7 @@ import {
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -41,7 +43,6 @@ function MenuIcon(props) {
   )
 }
 
-/* FIXED: proper stroked envelope icon (no black square) */
 function EnvelopeIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" {...props}>
@@ -51,26 +52,20 @@ function EnvelopeIcon(props) {
   )
 }
 
-function Header({
-  panelId,
-  icon: Icon,
-  expanded,
-  onToggle,
-  toggleRef,
-  invert = false,
-}) {
-  let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)
+function Header({ panelId, icon: Icon, expanded, onToggle, toggleRef, invert = false }) {
+  const { logoHovered, setLogoHovered } = useContext(RootLayoutContext)
+  const t = useTranslations('c-rootlayout')
 
   return (
     <Container>
       <div className="flex items-center justify-between">
         <LocaleLink
           href="/"
-          aria-label="Home"
+          aria-label={t('header.homeAria')}
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          {/* MOBILE: symbol + name, with one word bold */}
+          {/* MOBILE */}
           <div
             className={clsx(
               'sm:hidden flex items-center gap-2 text-base tracking-tight',
@@ -82,38 +77,30 @@ function Header({
             <span className="font-medium">Compliance</span>
           </div>
 
-          {/* DESKTOP: keep existing logo */}
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
+          {/* DESKTOP */}
+          <Logo className="hidden h-8 sm:block" invert={invert} filled={logoHovered} />
         </LocaleLink>
 
         <div className="flex items-center gap-x-4 sm:gap-x-8">
-          {/* Language Switcher in navbar */}
           <div className={clsx(invert ? 'text-white' : 'text-neutral-950')}>
-            <LanguageSwitcher />
+            <LanguageSwitcher invert={invert} />
           </div>
 
-          {/* DESKTOP: primary CTA */}
           <div className="hidden sm:block">
-            {/* If your <Button> supports href, wrap with LocaleLink for locale-aware routing */}
             <LocaleLink href="/contact" className="inline-block">
               <Button asChild invert={invert}>
-                {/* asChild lets Button render the child anchor without double anchors */}
-                <span>Contact us</span>
+                <span>{t('header.contactCta')}</span>
               </Button>
             </LocaleLink>
           </div>
 
-          {/* MOBILE: icon-only contact link */}
           <LocaleLink
             href="/contact"
-            aria-label="Contact us"
+            aria-label={t('header.contactAria')}
             className={clsx(
               'sm:hidden group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-white/10 text-white hover:text-neutral-200'
+              invert
+                ? 'hover:bg-white/10 text-white hover:text-neutral-200'
                 : 'hover:bg-neutral-950/10 text-neutral-950 hover:text-neutral-700',
             )}
           >
@@ -130,7 +117,7 @@ function Header({
               'group -m-2.5 rounded-full p-2.5 transition',
               invert ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10',
             )}
-            aria-label="Toggle navigation"
+            aria-label={t('header.toggleNavAria')}
           >
             <Icon
               className={clsx(
@@ -170,22 +157,23 @@ function NavigationItem({ href, children }) {
 }
 
 function Navigation() {
+  const t = useTranslations('c-rootlayout')
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/regulations">Regulations</NavigationItem>
-        <NavigationItem href="/process">How We Work</NavigationItem>
+        <NavigationItem href="/regulations">{t('nav.regulations')}</NavigationItem>
+        <NavigationItem href="/process">{t('nav.process')}</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/about">About Us</NavigationItem>
-        <NavigationItem href="/contact">Get in Touch</NavigationItem>
+        <NavigationItem href="/about">{t('nav.about')}</NavigationItem>
+        <NavigationItem href="/contact">{t('nav.contact')}</NavigationItem>
       </NavigationRow>
-
     </nav>
   )
 }
 
 function RootLayoutInner({ children }) {
+  const t = useTranslations('c-rootlayout')
   let panelId = useId()
   let [expanded, setExpanded] = useState(false)
   let openRef = useRef(null)
@@ -195,14 +183,10 @@ function RootLayoutInner({ children }) {
 
   useEffect(() => {
     function onClick(event) {
-      if (
-        event.target instanceof HTMLElement &&
-        event.target.closest('a')?.href === window.location.href
-      ) {
+      if (event.target instanceof HTMLElement && event.target.closest('a')?.href === window.location.href) {
         setExpanded(false)
       }
     }
-
     window.addEventListener('click', onClick)
     return () => window.removeEventListener('click', onClick)
   }, [])
@@ -210,25 +194,15 @@ function RootLayoutInner({ children }) {
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
-        <div
-          className="absolute top-2 right-0 left-0 z-40 pt-14"
-          aria-hidden={expanded ? 'true' : undefined}
-          inert={expanded ? '' : undefined}
-        >
-          <Header
-            panelId={panelId}
-            icon={MenuIcon}
-            toggleRef={openRef}
-            expanded={expanded}
-            onToggle={() => {
-              setExpanded((expanded) => !expanded)
-              window.setTimeout(() =>
-                closeRef.current?.focus({ preventScroll: true }),
-              )
-            }}
-          />
+        {/* top nav */}
+        <div className="absolute top-2 right-0 left-0 z-40 pt-14" aria-hidden={expanded ? 'true' : undefined} inert={expanded ? '' : undefined}>
+          <Header panelId={panelId} icon={MenuIcon} toggleRef={openRef} expanded={expanded} invert={expanded} onToggle={() => {
+            setExpanded((expanded) => !expanded)
+            window.setTimeout(() => closeRef.current?.focus({ preventScroll: true }))
+          }} />
         </div>
 
+        {/* slideout */}
         <motion.div
           layout
           id={panelId}
@@ -239,32 +213,18 @@ function RootLayoutInner({ children }) {
         >
           <motion.div layout className="bg-neutral-800">
             <div ref={navRef} className="bg-neutral-950 pt-14 pb-16">
-              <Header
-                invert
-                panelId={panelId}
-                icon={XIcon}
-                toggleRef={closeRef}
-                expanded={expanded}
-                onToggle={() => {
-                  setExpanded((expanded) => !expanded)
-                  window.setTimeout(() =>
-                    openRef.current?.focus({ preventScroll: true }),
-                  )
-                }}
-              />
+              <Header invert panelId={panelId} icon={XIcon} toggleRef={closeRef} expanded={expanded} onToggle={() => {
+                setExpanded((expanded) => !expanded)
+                window.setTimeout(() => openRef.current?.focus({ preventScroll: true }))
+              }} />
             </div>
             <Navigation />
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
                   <div>
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
-                    </h2>
-                    <Offices
-                      invert
-                      className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-                    />
+                    <h2 className="font-display text-base font-semibold text-white">{t('header.ourOffices')}</h2>
+                    <Offices invert className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2" />
                   </div>
                 </div>
               </Container>
@@ -273,15 +233,8 @@ function RootLayoutInner({ children }) {
         </motion.div>
       </header>
 
-      <motion.div
-        layout
-        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-x-hidden bg-white pt-14"
-      >
-        <motion.div
-          layout
-          className="relative isolate flex w-full flex-col pt-9"
-        >
+      <motion.div layout style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }} className="relative flex flex-auto overflow-x-hidden bg-white pt-14">
+        <motion.div layout className="relative isolate flex w-full flex-col pt-9">
           <GridPattern
             className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"
             yOffset={-96}

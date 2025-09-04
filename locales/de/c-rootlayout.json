@@ -1,0 +1,15 @@
+{
+    "header": {
+        "homeAria": "Startseite",
+        "contactCta": "Kontakt",
+        "contactAria": "Kontakt",
+        "toggleNavAria": "Navigation umschalten",
+        "ourOffices": "Unsere Büros"
+    },
+    "nav": {
+        "regulations": "Regelungen",
+        "process": "So arbeiten wir",
+        "about": "Über uns",
+        "contact": "Kontakt aufnehmen"
+    }
+}

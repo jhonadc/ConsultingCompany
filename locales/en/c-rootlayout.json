@@ -1,0 +1,15 @@
+{
+    "header": {
+        "homeAria": "Home",
+        "contactCta": "Contact us",
+        "contactAria": "Contact us",
+        "toggleNavAria": "Toggle navigation",
+        "ourOffices": "Our offices"
+    },
+    "nav": {
+        "regulations": "Regulations",
+        "process": "How We Work",
+        "about": "About Us",
+        "contact": "Get in Touch"
+    }
+}

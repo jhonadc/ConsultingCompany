@@ -1,18 +1,23 @@
 // src/components/Footer.jsx
+'use client'
+
 import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
-
-const navItems = [
-  { title: 'Regulations', href: '/regulations' },
-  { title: 'How We Work', href: '/process' },
-  { title: 'About Us', href: '/about' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'Get in Touch', href: '/contact' },
-]
+import { useTranslations } from 'next-intl'
 
 function Navigation() {
+  const t = useTranslations('c-footer')
+
+  const navItems = [
+    { title: t('nav.regulations'), href: '/regulations' },
+    { title: t('nav.process'), href: '/process' },
+    { title: t('nav.about'), href: '/about' },
+    { title: t('nav.blog'), href: '/blog' },
+    { title: t('nav.contact'), href: '/contact' },
+  ]
+
   return (
     <nav aria-label="Footer">
       <ul
@@ -35,10 +40,11 @@ function Navigation() {
 }
 
 export function Footer() {
+  const t = useTranslations('c-footer')
+
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
-
-      {/* ROW 1: logo (1fr) | nav (2fr) | legal (1fr) */}
+      {/* ROW 1: logo | nav | legal */}
       <div className="grid grid-cols-1 items-center gap-6 border-t border-neutral-950/10 pt-8 sm:pt-10 lg:grid-cols-[1fr_2fr_1fr]">
         {/* Left: Logo */}
         <div className="flex justify-center lg:justify-start">
@@ -59,26 +65,25 @@ export function Footer() {
               href="/legal/imprint"
               className="hover:text-neutral-800 hover:underline underline-offset-4"
             >
-              Imprint
+              {t('legal.imprint')}
             </Link>
             <span aria-hidden>•</span>
             <Link
               href="/legal/privacy"
               className="hover:text-neutral-800 hover:underline underline-offset-4"
             >
-              Privacy
+              {t('legal.privacy')}
             </Link>
           </div>
         </div>
       </div>
 
-      {/* ROW 2: © centered */}
+      {/* ROW 2: © */}
       <div className="mt-6 mb-14">
         <p className="text-center text-sm text-neutral-700">
           © Comforma – Regulatory and Governance Advisory. Berlin, {new Date().getFullYear()}
         </p>
       </div>
-
     </Container>
   )
 }
