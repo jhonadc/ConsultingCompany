@@ -1,0 +1,112 @@
+{
+    "hero": {
+        "title": "Treinamento de Letramento em IA",
+        "tagline": "Atenda ao Artigo 4º do AI Act em apenas 4 horas",
+        "body": "O Artigo 4º torna o letramento em IA uma obrigação legal para quem projeta, implanta ou supervisiona IA. Este treinamento sob medida dá ao seu time as habilidades para usar IA com segurança e eficácia, reduz riscos de não conformidade e gera prova documentada para auditorias. Ministrado em inglês, em qualquer lugar da Alemanha ou Europa."
+    },
+    "delivery": {
+        "title": "Duração e formato",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Padrão",
+                "value": "Meio dia (4 horas)",
+                "description": "Formato focado e eficiente para cumprir o Artigo 4º."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Formato",
+                "value": "Presencial ou remoto",
+                "description": "Em qualquer lugar da Alemanha/UE ou por vídeo seguro."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Entregáveis",
+                "value": "Certificado de Conclusão + Sumário",
+                "description": "Documentação pronta para auditorias."
+            }
+        ]
+    },
+    "why": {
+        "eyebrow": "Por que este treinamento",
+        "title": "De obrigação a vantagem operacional",
+        "body": "Seu time vai entender IA, conhecer as regras aplicáveis e estar pronto para usá-la com responsabilidade. O treinamento cumpre as exigências legais, aumenta a confiança interna e fornece evidências apresentáveis em qualquer revisão.",
+        "features": [
+            {
+                "name": "Direito × Engenharia",
+                "desc": "Conduzido por advogado e engenheiro de software, com diretrizes claras e acionáveis."
+            },
+            {
+                "name": "Personalizado",
+                "desc": "Exemplos adaptados ao seu setor, sistemas e perfil de risco."
+            },
+            {
+                "name": "Obrigação → Ação",
+                "desc": "Alinhado ao Artigo 4º do AI Act, com evidências apresentáveis."
+            },
+            {
+                "name": "Prático",
+                "desc": "Regras de fazer/não fazer para tarefas e decisões diárias com IA."
+            },
+            {
+                "name": "Por função",
+                "desc": "Executivos, tecnologia e compliance recebem o que precisam para agir."
+            },
+            {
+                "name": "Pronto para auditoria",
+                "desc": "Lista de presença e sumário do treinamento prontos para auditorias."
+            }
+        ]
+    },
+    "syllabus": {
+        "title": "Programa (4 horas)",
+        "modules": [
+            {
+                "title": "Módulo 1 – O que é IA e como aparece no trabalho (60 min)",
+                "desc": "O que é IA, como funciona e onde sua equipe a encontra nas atividades diárias.",
+                "bullets": [
+                    "IA vs. automação com exemplos reais",
+                    "Como a IA já está nos seus produtos e serviços",
+                    "Oportunidades e riscos comuns"
+                ]
+            },
+            {
+                "title": "Módulo 2 – Seu papel: provedor, implementador ou usuário (45 min)",
+                "desc": "Entenda se sua organização cria ou apenas usa IA e por que isso importa.",
+                "bullets": [
+                    "Definições: provedor vs. implementador vs. usuário",
+                    "Responsabilidades de cada papel",
+                    "Como o papel define a accountability"
+                ]
+            },
+            {
+                "title": "Módulo 3 – Consciência de risco e sinais de alerta (45 min)",
+                "desc": "Como reconhecer níveis de risco em sistemas de IA e quando escalar.",
+                "bullets": [
+                    "Tipos de risco e sinais precoces",
+                    "Viés, alucinação, dependência excessiva",
+                    "Regras rápidas para uso seguro no dia a dia"
+                ]
+            },
+            {
+                "title": "Módulo 4 – Diretrizes internas e caminhos de escalonamento (60 min + Q&A)",
+                "desc": "O que sua organização permite, como escalar problemas e como documentamos.",
+                "bullets": [
+                    "Ferramentas permitidas e políticas de uso de dados",
+                    "Quem contatar quando algo parecer errado",
+                    "Como registrar acesso e presença no treinamento"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Obrigatório por lei. Estratégico por escolha.",
+        "body": "Ministrado por advogado e engenheiro de software. Personalizado para seu domínio, sistemas e risco. Disponível em qualquer lugar da Alemanha ou Europa.",
+        "button": "Agendar treinamento de Letramento em IA",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Voltar ao AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

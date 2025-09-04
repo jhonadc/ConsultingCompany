@@ -1,0 +1,163 @@
+{
+    "header": {
+        "title": "LGPD",
+        "subtitle": "Brazil’s General Data Protection Law: Privacy for personal data."
+    },
+    "facts": [
+        {
+            "color": "#2563eb",
+            "title": "Enforced",
+            "value": "18 September 2020",
+            "description": "Admin sanctions since 1 Aug 2021"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Who this affects",
+            "value": "Organisations processing personal data in Brazil",
+            "description": "Also those offering goods/services to people in Brazil or collecting data in Brazil—regardless of location."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Penalty ceiling",
+            "value": "Up to 2% of Brazilian revenue",
+            "description": "Capped at R$50M per infraction"
+        }
+    ],
+    "obligations": {
+        "title": "Obligations",
+        "items": [
+            {
+                "title": "Implement Security Measures",
+                "text": "Adopt and maintain technical and organisational measures proportionate to your risks to protect personal data in daily operations (Art. 46)."
+            },
+            {
+                "title": "Keep Records of Processing Operations",
+                "text": "Maintain a formal register of processing operations—purpose, data categories, recipients, retention, and safeguards—available to the ANPD upon request (Art. 37)."
+            },
+            {
+                "title": "Prepare Data Protection Impact Reports (RIPD)",
+                "text": "Produce a RIPD for high-risk processing when required by the ANPD or per guidance (e.g., legitimate-interest scenarios), documenting risks and mitigations (Arts. 10 §3, 38)."
+            },
+            {
+                "title": "Govern Operators (Processors)",
+                "text": "Define controller instructions, use compliant contracts, and oversee operators and sub-operators to ensure adherence (Art. 39)."
+            },
+            {
+                "title": "Appoint a DPO (Encarregado)",
+                "text": "Designate a DPO (unless exempted by ANPD rules), provide a public contact channel, and handle rights requests within LGPD timelines (Art. 41; Art. 18)."
+            },
+            {
+                "title": "Purpose Limitation & Necessity",
+                "text": "Process only what is necessary for specific, legitimate purposes; embed minimisation into systems and workflows (Art. 6, items I & III)."
+            }
+        ]
+    },
+    "offer": {
+        "title": "What we offer",
+        "subtitle": "Programmes are tailored end-to-end and may depend on earlier phases (e.g., deletion protocols require prior identification of personal-data flows and systems).",
+        "cards": [
+            {
+                "title": "External DPO (Encarregado)",
+                "desc": "We act as your DPO: advise management, monitor compliance, train staff, oversee RIPDs, liaise with the ANPD, and report risks with practical remediation paths.",
+                "cta": "Speak with a DPO",
+                "href": "/services/lgpd-dpo",
+                "span": "lg:col-span-3"
+            },
+            {
+                "title": "Brazil Market Entry & Client Readiness",
+                "desc": "Be contract-ready for Brazilian customers: lawful bases, privacy notices, transfer mechanisms, operator clauses, and evidence packs that pass procurement and due diligence.",
+                "cta": "Plan your Brazil entry",
+                "href": "/services/brazil-market-entry",
+                "span": "lg:col-span-3"
+            },
+            {
+                "title": "Records of Processing (Art. 37)",
+                "desc": "We establish your register of processing operations—what you process, why, with whom, where, retention, and safeguards—and set a lightweight routine to keep it current.",
+                "cta": "Set up records",
+                "href": "/services/lgpd-ropa",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "RIPD — Company-Specific Impact Report",
+                "desc": "A thorough, personalised RIPD for high-risk processing: scope, stakeholder interviews, risk analysis tailored to your systems and business model, mitigation design, and sign-off documentation.",
+                "cta": "Plan your RIPD",
+                "href": "/services/ripd",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Incident & Breach Readiness",
+                "desc": "Design and embed a 72-hour response playbook with roles, decision trees, and notification templates (ANPD and data subjects). We train teams and set up the evidence you’ll need if an incident occurs.",
+                "cta": "Strengthen readiness",
+                "href": "/services/lgpd-incident",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Retention & Deletion Operating Model",
+                "desc": "Define lawful retention by data category, implement deletion routines in systems, and set up audit logs to prove execution.",
+                "cta": "Design your model",
+                "href": "/services/retention-deletion",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Operator (Processor) Oversight",
+                "desc": "Practical onboarding and periodic review of operators: requirement baselines, contractual clauses, transfer mechanisms, and an oversight cadence that fits your vendor landscape.",
+                "cta": "Build operator oversight",
+                "href": "/services/operator-oversight",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "LGPD for AI Systems",
+                "desc": "Align AI features and workflows with LGPD: controller/operator role mapping, legal bases, transparency to users, records updates, RIPD triggers, and acceptable-use guidance for teams.",
+                "cta": "Align AI with LGPD",
+                "href": "/services/lgpd-ai",
+                "span": "lg:col-span-2"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Why now",
+        "items": [
+            {
+                "k": "Active enforcement",
+                "v": "The ANPD is issuing guidance, opening procedures, and can impose fines, public notices, and processing restrictions."
+            },
+            {
+                "k": "Pre-launch duties",
+                "v": "High-risk processing may require a RIPD and controls before go-live. Planning these steps avoids delays and non-compliance."
+            },
+            {
+                "k": "Transfers scrutiny",
+                "v": "International transfers require valid mechanisms (adequacy, clauses, or seals). Clients increasingly ask for proof during due diligence."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "How we work",
+        "steps": [
+            {
+                "t": "Diagnose",
+                "d": "Focused discovery across product features, data flows, and vendors to baseline actual practice."
+            },
+            {
+                "t": "Design",
+                "d": "Co-create bespoke controls and workflows (minimisation, RIPD cadence, operator intake, breach playbooks) aligned to your reality."
+            },
+            {
+                "t": "Implement & Evidence",
+                "d": "Embed changes with your teams and produce evidence packs that stand up in audits and client reviews."
+            },
+            {
+                "t": "Assure",
+                "d": "Quarterly tune-ups: records updates, transfer reassessments, spot checks, and change logs that prove control over time."
+            }
+        ],
+        "processLinkLabel": "See our full compliance process",
+        "processLinkHref": "/process"
+    },
+    "cta": {
+        "title": "Avoid fines. Protect trust. Keep your business running.",
+        "body": "We design LGPD controls that fit your organisation and generate evidence you can stand behind.",
+        "button": "Talk to us",
+        "buttonHref": "/contact"
+    }
+}

@@ -1,0 +1,179 @@
+{
+    "header": {
+        "title": "DSGVO",
+        "subtitle": "Die Datenschutz-Grundverordnung der EU: Privatsphäre für personenbezogene Daten."
+    },
+    "facts": [
+        {
+            "color": "#2563eb",
+            "title": "In Kraft",
+            "value": "25. Mai 2018",
+            "description": "Gilt in der gesamten EU"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Betroffene",
+            "value": "Organisationen, die personenbezogene Daten in der EU verarbeiten",
+            "description": "Auch Unternehmen außerhalb der EU, die Waren/Dienstleistungen in der EU anbieten oder das Verhalten von Personen in der EU beobachten."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Bußgeldrahmen",
+            "value": "Bis zu 20 Mio. € oder 4 % des weltweiten Jahresumsatzes",
+            "description": "Bei schweren Verstößen"
+        }
+    ],
+    "obligations": {
+        "title": "Pflichten",
+        "items": [
+            {
+                "title": "Risikoorientierte Maßnahmen umsetzen",
+                "text": "Technische und organisatorische Schutzmaßnahmen risikogerecht implementieren und wirksam betreiben."
+            },
+            {
+                "title": "Verzeichnis von Verarbeitungstätigkeiten (VVT)",
+                "text": "Zwecke, Datenkategorien, Empfänger, Aufbewahrungsfristen und Sicherheitsmaßnahmen nach Art. 30 DSGVO dokumentieren."
+            },
+            {
+                "title": "Datenschutz-Folgenabschätzungen (DSFA)",
+                "text": "Vor Aufnahme einer Hochrisiko-Verarbeitung DSFAs durchführen und dokumentieren; Risiken vor dem Go-Live mindern."
+            },
+            {
+                "title": "Auftragsverarbeiter- & Lieferanten-Governance",
+                "text": "Verträge nach Art. 28, Leistungsüberwachung und Aufsicht über (Unter-)Auftragsverarbeiter sicherstellen."
+            },
+            {
+                "title": "Privacy by Design & Default",
+                "text": "Schutz der Privatsphäre von Anfang an in Systeme, Prozesse und Produkte integrieren."
+            },
+            {
+                "title": "Rechenschaftspflicht nachweisen",
+                "text": "Nachweise zur Einhaltung und zur laufenden Kontrolle bereithalten, um jederzeit Konformität belegen zu können."
+            }
+        ]
+    },
+    "offer": {
+        "title": "Unser Angebot",
+        "subtitle": "Gezielte, wirkungsstarke Leistungen mit Privacy by Design und auditfesten Nachweisen.",
+        "cards": [
+            {
+                "title": "Externer Datenschutzbeauftragter (DSB)",
+                "desc": "Unabhängige Beratung der Leitung, Compliance-Monitoring, Schulungen, DSFAs, Kontakt zu Behörden und praxisnahe Risikoberichte.",
+                "cta": "Mit einem DSB sprechen",
+                "href": "/services/gdpr-dpo",
+                "span": "lg:col-span-3",
+                "border": "border-l-2 border-pink-500",
+                "ring": "hover:ring-pink-200"
+            },
+            {
+                "title": "EU-Markteintritt & Kunden-Readiness",
+                "desc": "Vertragsreife für EU-Kunden: Rechtsgrundlagen, Datenschutzhinweise, Transfer-Assessments, Lieferantenklauseln und belastbare Nachweis-Pakete.",
+                "cta": "EU-Einstieg planen",
+                "href": "/services/eu-market-entry",
+                "span": "lg:col-span-3",
+                "border": "border-l-2 border-amber-500",
+                "ring": "hover:ring-amber-200"
+            },
+            {
+                "title": "VVT-Programm (Art. 30)",
+                "desc": "Wir etablieren Ihr Verzeichnis: Was, warum, mit wem, wo, Aufbewahrung und Sicherheit – plus schlanke Routine zur Pflege.",
+                "cta": "VVT-Setup besprechen",
+                "href": "/services/ropa",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-emerald-500",
+                "ring": "hover:ring-emerald-200"
+            },
+            {
+                "title": "DSFA — Individuelle Bewertung",
+                "desc": "Umfassende DSFA für Hochrisiko-Verarbeitungen: Scope, Interviews, risikobasierte Analyse, Mitigations-Design und Abnahme-Doku.",
+                "cta": "DSFA planen",
+                "href": "/services/dpia",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-sky-500",
+                "ring": "hover:ring-sky-200"
+            },
+            {
+                "title": "Incident- & Breach-Readiness",
+                "desc": "72-Stunden-Playbook mit Rollen, Entscheidungsbäumen und Melde-Vorlagen; Training und Evidenz-Setup für den Ernstfall.",
+                "cta": "Readiness stärken",
+                "href": "/services/incident-readiness",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-violet-500",
+                "ring": "hover:ring-violet-200"
+            },
+            {
+                "title": "Aufbewahrung & Löschung",
+                "desc": "Rechtmäßige Aufbewahrung je Datenkategorie, Löschroutinen in Systemen und Audit-Logs zur Nachweisführung.",
+                "cta": "Modell entwerfen",
+                "href": "/services/retention-deletion",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-cyan-500",
+                "ring": "hover:ring-cyan-200"
+            },
+            {
+                "title": "Steuerung von Auftragsverarbeitern",
+                "desc": "Pragmatisches Onboarding und Wiederkehrprüfungen: Mindestanforderungen, Art. 28-Klauseln, Transfer-Checks und passende Prüf-Kadenz.",
+                "cta": "Lieferanten-Oversight aufbauen",
+                "href": "/services/vendor-oversight",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-rose-500",
+                "ring": "hover:ring-rose-200"
+            },
+            {
+                "title": "DSGVO für KI-Systeme",
+                "desc": "Ausrichtung von KI-Funktionen auf die DSGVO: Rollenklärung, Rechtsgrundlagen, Transparenz, VVT-Updates, DSFA-Trigger und Nutzungsleitlinien.",
+                "cta": "KI mit DSGVO ausrichten",
+                "href": "/services/gdpr-for-ai",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-indigo-500",
+                "ring": "hover:ring-indigo-200"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Warum jetzt",
+        "items": [
+            {
+                "k": "Aktive Durchsetzung",
+                "v": "Behörden ermitteln, erlassen Anordnungen und verhängen Bußgelder; Kunden verlangen Kontroll-Nachweise."
+            },
+            {
+                "k": "Pflichten vor dem Go-Live",
+                "v": "Bei Hochrisiko-Verarbeitung ist eine DSFA vor Inbetriebnahme erforderlich – rechtzeitig planen und belegen."
+            },
+            {
+                "k": "Schwerpunkt Datentransfers",
+                "v": "Standardvertragsklauseln erfordern dokumentierte Transfer-Prüfungen und Schutzmaßnahmen; evidenzbasiert für Due-Diligence."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "Unsere Arbeitsweise",
+        "steps": [
+            {
+                "t": "Diagnose",
+                "d": "Fokussierte Bestandsaufnahme zu Produkt, Datenflüssen und Anbietern – realistische Ausgangslage."
+            },
+            {
+                "t": "Design",
+                "d": "Gemeinsam maßgeschneiderte Kontrollen & Abläufe (Minimierung, DSFA-Taktung, Lieferanten-Intake, Incident-Playbooks)."
+            },
+            {
+                "t": "Umsetzen & Nachweisen",
+                "d": "Änderungen mit Teams verankern und auditfeste Evidenzpakete erstellen."
+            },
+            {
+                "t": "Sichern",
+                "d": "Quartalsweise Nachsteuerung: VVT-Pflege, Transfer-Re-Assessments, Stichproben, Change-Logs."
+            }
+        ],
+        "processLinkLabel": "Unseren gesamten Compliance-Prozess ansehen",
+        "processLinkHref": "/process"
+    },
+    "cta": {
+        "title": "Bußgelder vermeiden. Vertrauen schützen. Betrieb sichern.",
+        "body": "Wir gestalten DSGVO-Kontrollen passend zu Ihrer Organisation und liefern belastbare Nachweise.",
+        "button": "Kontakt aufnehmen",
+        "buttonHref": "/contact"
+    }
+}

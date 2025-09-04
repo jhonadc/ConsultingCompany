@@ -34,15 +34,15 @@
         "subtitle": "Serviços focados e de alto impacto para tornar você conforme rapidamente.",
         "cards": [
             {
-                "href": "/services/ai-literacy",
+                "href": "/aiservices/ailiteracy",
                 "label": "Treinamento em IA (AI Literacy)"
             },
             {
-                "href": "/services/highriskcheck",
+                "href": "/aiservices/highrisk",
                 "label": "Meu sistema é de alto risco?"
             },
             {
-                "href": "/services/ai-use-policy",
+                "href": "/aiservices/ai-use-policy",
                 "label": "Política de Uso de IA"
             }
         ]

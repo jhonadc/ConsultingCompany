@@ -53,7 +53,7 @@ export default function Layout({ children }) {
           `}
         </Script>
 
-        <Shell>{children}</Shell>
+        {children}
       </body>
     </html>
   )

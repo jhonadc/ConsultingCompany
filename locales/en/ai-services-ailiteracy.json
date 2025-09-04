@@ -1,0 +1,112 @@
+{
+    "hero": {
+        "title": "AI Literacy Training",
+        "tagline": "Meet EU AI Act Article 4 requirements in just 4 hours",
+        "body": "Article 4 makes AI literacy a legal obligation for anyone designing, deploying, or overseeing AI. This tailored training gives your team the skills to use AI safely and effectively, avoids compliance risks, and provides documented proof for audits. Delivered in English, anywhere in Germany or Europe."
+    },
+    "delivery": {
+        "title": "Duration & delivery",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Standard",
+                "value": "Half day (4 hours)",
+                "description": "Focused, efficient format to meet Article 4."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Format",
+                "value": "Onsite or remote",
+                "description": "Anywhere in Germany/EU, or secure video."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Deliverables",
+                "value": "Completion Certificate + Summary",
+                "description": "Compliance-ready documentation for audits."
+            }
+        ]
+    },
+    "why": {
+        "eyebrow": "Why this training",
+        "title": "From obligation to operating advantage",
+        "body": "Your teams will understand AI, know the rules that apply, and be ready to use it responsibly. This training meets legal requirements, builds internal confidence, and provides evidence you can show in any review.",
+        "features": [
+            {
+                "name": "Law × Engineering",
+                "desc": "Led by a lawyer and software engineer for clear, actionable guidance."
+            },
+            {
+                "name": "Personalised",
+                "desc": "Examples matched to your sector, systems, and risk profile."
+            },
+            {
+                "name": "Obligation → Action",
+                "desc": "Aligned with EU AI Act Article 4 with evidence you can present."
+            },
+            {
+                "name": "Practical",
+                "desc": "Do / don’t rules for everyday AI-assisted tasks and decisions."
+            },
+            {
+                "name": "Role-specific",
+                "desc": "Executives, tech, and compliance each get what they need to act."
+            },
+            {
+                "name": "Proof-ready",
+                "desc": "Attendance log and compliance-ready training summary for audits."
+            }
+        ]
+    },
+    "syllabus": {
+        "title": "Syllabus (4 hours)",
+        "modules": [
+            {
+                "title": "Module 1 - What AI is and how it appears in our work (60 min)",
+                "desc": "What AI is, how it works, and where your teams encounter it in daily tasks.",
+                "bullets": [
+                    "AI vs automation with realistic examples",
+                    "How AI is already used in your tools or services",
+                    "Opportunities and common risks"
+                ]
+            },
+            {
+                "title": "Module 2 - Your role: provider, deployer, or user (45 min)",
+                "desc": "Understanding whether your organization creates or just uses AI and why it matters.",
+                "bullets": [
+                    "Definitions: provider vs deployer vs user",
+                    "What responsibilities come with each role",
+                    "How your role shapes accountability"
+                ]
+            },
+            {
+                "title": "Module 3 - Risk awareness and safe cues (45 min)",
+                "desc": "How to recognize risk levels in AI systems and know when to escalate.",
+                "bullets": [
+                    "Types of risk and early warning signals",
+                    "Bias, hallucination, over reliance",
+                    "Quick rules for safe daily use"
+                ]
+            },
+            {
+                "title": "Module 4 - Tailored guidance and escalation paths (60 min + Q&A)",
+                "desc": "What your organization allows, how to escalate issues, and how we document it.",
+                "bullets": [
+                    "Permitted tools and data use policies",
+                    "Who to contact when something seems off",
+                    "How to log training access and attendance"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Mandatory by law. Strategic by choice.",
+        "body": "Delivered by a lawyer and software engineer. Personalised to your domain, systems, and risk. Available anywhere in Germany or Europe.",
+        "button": "Book AI Literacy Training",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Back to AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

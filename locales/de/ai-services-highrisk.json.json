@@ -1,0 +1,139 @@
+{
+    "hero": {
+        "title": "Bewertung von Hochrisiko-KI-Systemen",
+        "tagline": "Ihr erster Schritt zur vollständigen EU-AI-Act-Compliance",
+        "body": "Jedes KI-System muss klassifiziert werden. Wir liefern für jedes Modell oder System eine klare, belastbare Risikobewertung – plus konkrete nächste Schritte, falls es als Hochrisiko einzustufen ist –, damit Sie Fehlklassifizierungen, Verzögerungen und Bußgelder vermeiden."
+    },
+    "whyMatters": {
+        "title": "Warum das wichtig ist",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Klassifizierung ist verpflichtend",
+                "value": "Vom AI Act vorgeschrieben",
+                "description": "Jedes System muss bewertet werden; die Einstufung bestimmt alle nachgelagerten Pflichten."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Fehlklassifizierung ist teuer",
+                "value": "Verzögerungen & Reibung im Einkauf",
+                "description": "Falsche Einstufung führt zu falschen Kontrollen und ggf. zum Marktrückzug."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Sanktionsrisiko",
+                "value": "Vollzugsrisiken vermeiden",
+                "description": "Früh die richtige Entscheidung und belastbare Evidenz sichern, um umsatzbezogene Bußgelder zu vermeiden."
+            }
+        ]
+    },
+    "why": {
+        "eyebrow": "Warum diese Bewertung",
+        "title": "Warum Conforma Studio",
+        "body": "Geleitet von einem Juristen und Software-Ingenieur – mit Unterlagen, die Sie Einkauf, Auditoren und Aufsichtsbehörden vorlegen können.",
+        "features": [
+            {
+                "name": "Recht × Engineering",
+                "desc": "Wir verknüpfen regulatorische Definitionen mit realer Architektur, Datenflüssen und Modellverhalten."
+            },
+            {
+                "name": "Belastbare Ergebnisse",
+                "desc": "Klares Vorgehen, Annex-Verweise und Evidenzlinks, die Sie vorzeigen können."
+            },
+            {
+                "name": "Präzision",
+                "desc": "Grenzfälle werden adressiert. Graubereiche und Re-Klassifizierungsrisiken werden früh markiert."
+            },
+            {
+                "name": "Geschwindigkeit",
+                "desc": "Fokussiertes Intake, schnelle Iteration, finales Dokument bereit für Einkauf und Compliance."
+            },
+            {
+                "name": "Roadmap",
+                "desc": "Ein praxisnaher Maßnahmenplan zu Dokumentation, Risikomanagement, Tests und notified-body-Pfad."
+            }
+        ]
+    },
+    "deliverables": {
+        "eyebrow": "Was Sie erhalten",
+        "title": "Eine professionelle, behördentaugliche Bewertung",
+        "body": "Belastbare Einstufung mit Rechtsgrundlage, technischer Begründung und Evidenzlinks – bereit für Ihre technische Dokumentation und Antworten an Einkauf, Auditoren und Behörden.",
+        "items": [
+            {
+                "name": "Entscheidung zur Risikostufe",
+                "desc": "Klare Einstufung im Einklang mit Geltungsbereich und Definitionen des AI Act."
+            },
+            {
+                "name": "Annex-Mapping",
+                "desc": "Nachvollziehbare Zuordnung zu den Hochrisiko-Kategorien des Annex III."
+            },
+            {
+                "name": "Grenzfall-Analyse",
+                "desc": "Markiert Re-Klassifizierungs- und Abhängigkeitsrisiken."
+            },
+            {
+                "name": "Evidenzliste",
+                "desc": "Geprüfte Inputs, Annahmen und Referenzen, die Sie vorzeigen können."
+            },
+            {
+                "name": "Aktionsplan",
+                "desc": "Bei Hochrisiko: Schrittweiser Pflichtenplan mit Verantwortlichen."
+            },
+            {
+                "name": "Time to Value",
+                "desc": "Schnelle Durchlaufzeit vom Kick-off bis zum unterschriebenen Deliverable."
+            }
+        ]
+    },
+    "process": {
+        "title": "So funktioniert es",
+        "steps": [
+            {
+                "title": "Schritt 1 — Kick-off & Scoping (30–45 Min.)",
+                "desc": "Wir erfassen Zweck, Nutzer, Daten, Modelltyp, Integrationen, Deployment und bediente Märkte.",
+                "bullets": [
+                    "Rollen: Anbieter, Verwender, Nutzer, Importeur",
+                    "Bestimmungsgemäßer Zweck und Nutzungskontext",
+                    "Überblick zu Architektur und Datenflüssen"
+                ]
+            },
+            {
+                "title": "Schritt 2 — Juristisch-technische Analyse",
+                "desc": "Abgleich Ihrer Fakten mit Geltungsbereich des AI Act und Annex-III-Kategorien; Bewertung von Grenzfällen.",
+                "bullets": [
+                    "Screening von Geltungsbereich & Ausschlüssen",
+                    "Tests zu Annex-III-Kategorien",
+                    "Hinweise auf Re-Klassifizierungsrisiken"
+                ]
+            },
+            {
+                "title": "Schritt 3 — Bewertungsdokument (Entwurf → Final)",
+                "desc": "Sie erhalten das vollständige Dokument mit Begründung und Auswirkungen auf Pflichten.",
+                "bullets": [
+                    "Entscheidung zur Risikostufe & Begründung",
+                    "Liste der Evidenzen & Annahmen",
+                    "Review-Sitzung und Überarbeitungen"
+                ]
+            },
+            {
+                "title": "Schritt 4 — Nächste Schritte bei Hochrisiko",
+                "desc": "Priorisierte Roadmap, ausgerichtet an den Pflichten des Acts und Ihrem Delivery-Plan.",
+                "bullets": [
+                    "Technische Dokumentation (Annex IV)",
+                    "Risikomanagement, Tests, Post-Market",
+                    "Notified Body & Konformitätspfad"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Vermeiden Sie den Millioneneuro-Fehler.",
+        "body": "Erhalten Sie eine belastbare Einstufung und eine praktische Roadmap, falls Ihr System Hochrisiko ist. Von Jurist und Software-Ingenieur erstellt, bereit für Einkauf und Aufsicht.",
+        "button": "Bewertung anfordern",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Zurück zum AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

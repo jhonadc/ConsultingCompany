@@ -1,0 +1,112 @@
+{
+    "hero": {
+        "title": "KI-Kompetenz-Training",
+        "tagline": "Erfüllen Sie die Anforderungen des EU-AI-Acts (Art. 4) in nur 4 Stunden",
+        "body": "Artikel 4 macht KI-Kompetenz zur rechtlichen Pflicht für alle, die KI entwickeln, einsetzen oder beaufsichtigen. Dieses maßgeschneiderte Training vermittelt Ihrem Team sicheres und wirksames Arbeiten mit KI, reduziert Compliance-Risiken und liefert dokumentierte Nachweise für Audits. Auf Englisch, überall in Deutschland oder Europa."
+    },
+    "delivery": {
+        "title": "Dauer & Durchführung",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Standard",
+                "value": "Halbtags (4 Stunden)",
+                "description": "Fokussiertes, effizientes Format zur Erfüllung von Art. 4."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Format",
+                "value": "Vor Ort oder remote",
+                "description": "Überall in Deutschland/EU oder per gesicherter Videokonferenz."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Deliverables",
+                "value": "Teilnahmezertifikat + Zusammenfassung",
+                "description": "Audit-taugliche Dokumentation für Nachweise."
+            }
+        ]
+    },
+    "why": {
+        "eyebrow": "Warum dieses Training",
+        "title": "Von der Pflicht zum operativen Vorteil",
+        "body": "Ihre Teams verstehen KI, kennen die einschlägigen Regeln und können sie verantwortungsvoll einsetzen. Das Training erfüllt gesetzliche Anforderungen, stärkt das Vertrauen intern und liefert belastbare Evidenz für jede Prüfung.",
+        "features": [
+            {
+                "name": "Recht × Engineering",
+                "desc": "Geleitet von Jurist und Software-Ingenieur – klar und umsetzbar."
+            },
+            {
+                "name": "Personalisiert",
+                "desc": "Beispiele passend zu Ihrem Sektor, Ihren Systemen und Risiken."
+            },
+            {
+                "name": "Pflicht → Aktion",
+                "desc": "Im Einklang mit Artikel 4 des AI Acts, mit vorzeigbaren Nachweisen."
+            },
+            {
+                "name": "Praktisch",
+                "desc": "Do/Don't-Regeln für alltägliche KI-unterstützte Aufgaben und Entscheidungen."
+            },
+            {
+                "name": "Rollenbasiert",
+                "desc": "Management, Technik und Compliance erhalten das jeweils Nötige."
+            },
+            {
+                "name": "Audit-bereit",
+                "desc": "Teilnehmerliste und Trainingszusammenfassung für Audits."
+            }
+        ]
+    },
+    "syllabus": {
+        "title": "Lehrplan (4 Stunden)",
+        "modules": [
+            {
+                "title": "Modul 1 – Was KI ist und wo sie in der Arbeit auftaucht (60 Min.)",
+                "desc": "Was KI ist, wie sie funktioniert und wo Teams ihr im Alltag begegnen.",
+                "bullets": [
+                    "KI vs. Automatisierung mit realistischen Beispielen",
+                    "Wie KI bereits in Ihren Tools/Services steckt",
+                    "Chancen und typische Risiken"
+                ]
+            },
+            {
+                "title": "Modul 2 – Ihre Rolle: Anbieter, Verwender oder Nutzer (45 Min.)",
+                "desc": "Ob Ihre Organisation KI baut oder nur nutzt – und warum das zählt.",
+                "bullets": [
+                    "Definitionen: Anbieter vs. Verwender vs. Nutzer",
+                    "Welche Pflichten jede Rolle mit sich bringt",
+                    "Wie die Rolle die Verantwortlichkeit prägt"
+                ]
+            },
+            {
+                "title": "Modul 3 – Risiko-Wachsamkeit und sichere Signale (45 Min.)",
+                "desc": "Risikostufen erkennen und wissen, wann man eskalieren muss.",
+                "bullets": [
+                    "Risikotypen und Frühindikatoren",
+                    "Bias, Halluzination, Übervertrauen",
+                    "Schnellregeln für sicheren Alltagseinsatz"
+                ]
+            },
+            {
+                "title": "Modul 4 – Interne Leitlinien & Eskalationswege (60 Min. + Q&A)",
+                "desc": "Was erlaubt ist, wie man eskaliert und wie wir dokumentieren.",
+                "bullets": [
+                    "Erlaubte Tools und Datenrichtlinien",
+                    "Ansprechpartner bei Auffälligkeiten",
+                    "So protokollieren wir Zugang und Teilnahme"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Gesetzlich verpflichtend. Strategisch klug.",
+        "body": "Durchgeführt von Jurist und Software-Ingenieur. Auf Ihren Bereich, Ihre Systeme und Ihr Risiko zugeschnitten. Überall in Deutschland oder Europa verfügbar.",
+        "button": "KI-Kompetenz-Training buchen",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Zurück zum AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

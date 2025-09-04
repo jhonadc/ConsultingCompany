@@ -1,0 +1,163 @@
+{
+    "header": {
+        "title": "LGPD",
+        "subtitle": "Brasiliens Datenschutzgesetz (LGPD): Privatsphäre für personenbezogene Daten."
+    },
+    "facts": [
+        {
+            "color": "#2563eb",
+            "title": "In Kraft",
+            "value": "18. September 2020",
+            "description": "Sanktionen seit 1. August 2021"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Betroffene",
+            "value": "Organisationen, die personenbezogene Daten in Brasilien verarbeiten",
+            "description": "Auch Unternehmen, die Waren/Dienstleistungen in Brasilien anbieten oder dort Daten erheben."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Bußgeldrahmen",
+            "value": "Bis zu 2 % des Umsatzes in Brasilien",
+            "description": "Maximal 50 Mio. R$ pro Verstoß"
+        }
+    ],
+    "obligations": {
+        "title": "Pflichten",
+        "items": [
+            {
+                "title": "Sicherheitsmaßnahmen umsetzen",
+                "text": "Technische und organisatorische Maßnahmen entsprechend den Risiken ergreifen (Art. 46)."
+            },
+            {
+                "title": "Verzeichnisse führen",
+                "text": "Formelles Register der Verarbeitungsvorgänge – Zweck, Kategorien, Empfänger, Aufbewahrung, Schutzmaßnahmen – für die ANPD verfügbar (Art. 37)."
+            },
+            {
+                "title": "RIPD erstellen",
+                "text": "Bericht für risikoreiche Verarbeitung, wenn von der ANPD verlangt, mit Risikoanalyse und Maßnahmen (Art. 10 §3, 38)."
+            },
+            {
+                "title": "Auftragsverarbeiter steuern",
+                "text": "Weisungen definieren, Verträge nutzen, Auftragsverarbeiter überwachen (Art. 39)."
+            },
+            {
+                "title": "DPO (Encarregado) benennen",
+                "text": "DPO bestimmen (Ausnahmen möglich), öffentlichen Kontakt bereitstellen, Betroffenenrechte fristgerecht beantworten (Art. 41; Art. 18)."
+            },
+            {
+                "title": "Zweckbindung & Notwendigkeit",
+                "text": "Nur notwendige Daten für legitime Zwecke verarbeiten, Minimierung verankern (Art. 6 I & III)."
+            }
+        ]
+    },
+    "offer": {
+        "title": "Was wir anbieten",
+        "subtitle": "Programme sind maßgeschneidert und bauen ggf. auf früheren Phasen auf (z. B. Löschprotokolle erfordern vorherige Datenflüsse).",
+        "cards": [
+            {
+                "title": "Externer DPO (Encarregado)",
+                "desc": "Wir agieren als Ihr DPO: beraten, überwachen, schulen, RIPDs begleiten, mit der ANPD kommunizieren und Risiken melden.",
+                "cta": "Mit einem DPO sprechen",
+                "href": "/services/lgpd-dpo",
+                "span": "lg:col-span-3"
+            },
+            {
+                "title": "Markteintritt Brasilien",
+                "desc": "Vertragssicherheit für Kunden in Brasilien: Rechtsgrundlagen, Datenschutzhinweise, Transfermechanismen, Klauseln, Nachweise.",
+                "cta": "Markteintritt planen",
+                "href": "/services/brazil-market-entry",
+                "span": "lg:col-span-3"
+            },
+            {
+                "title": "Verarbeitungsverzeichnis (Art. 37)",
+                "desc": "Wir erstellen Ihr Verzeichnis: was, warum, mit wem, wo, Aufbewahrung, Schutzmaßnahmen – mit Routine zur Aktualisierung.",
+                "cta": "Verzeichnis einrichten",
+                "href": "/services/lgpd-ropa",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "RIPD — Risikoanalyse",
+                "desc": "Detaillierter Bericht für Hochrisiko: Umfang, Interviews, Risikoanalyse, Maßnahmen, Dokumentation.",
+                "cta": "RIPD planen",
+                "href": "/services/ripd",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Incident & Breach Readiness",
+                "desc": "72h-Playbook mit Rollen, Entscheidungswegen und Vorlagen (ANPD & Betroffene). Schulung und Nachweise.",
+                "cta": "Bereitschaft stärken",
+                "href": "/services/lgpd-incident",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Lösch- & Aufbewahrungsmodell",
+                "desc": "Rechtmäßige Aufbewahrungsfristen, Löschroutinen, Auditlogs.",
+                "cta": "Modell gestalten",
+                "href": "/services/retention-deletion",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Auftragsverarbeiter-Überwachung",
+                "desc": "Onboarding und regelmäßige Prüfungen: Anforderungen, Vertragsklauseln, Transfers, Überwachung.",
+                "cta": "Überwachung aufbauen",
+                "href": "/services/operator-oversight",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "LGPD für KI-Systeme",
+                "desc": "KI mit LGPD abstimmen: Rollen, Rechtsgrundlagen, Transparenz, Verzeichnisse, RIPD, Richtlinien.",
+                "cta": "KI anpassen",
+                "href": "/services/lgpd-ai",
+                "span": "lg:col-span-2"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Warum jetzt",
+        "items": [
+            {
+                "k": "Aktive Durchsetzung",
+                "v": "Die ANPD gibt Leitlinien heraus, eröffnet Verfahren und kann Strafen verhängen."
+            },
+            {
+                "k": "Pflichten vor Einführung",
+                "v": "Hochrisikoverarbeitung kann RIPD und Kontrollen vor Go-Live erfordern."
+            },
+            {
+                "k": "Übertragungen",
+                "v": "Internationale Übermittlungen erfordern gültige Mechanismen; Nachweise werden verlangt."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "Wie wir arbeiten",
+        "steps": [
+            {
+                "t": "Diagnose",
+                "d": "Analyse von Produkten, Datenflüssen und Anbietern."
+            },
+            {
+                "t": "Design",
+                "d": "Gemeinsame Gestaltung individueller Kontrollen (Minimierung, RIPD, Operator Intake, Incident Playbooks)."
+            },
+            {
+                "t": "Implementieren & Nachweisen",
+                "d": "Änderungen umsetzen und Nachweise erstellen."
+            },
+            {
+                "t": "Sichern",
+                "d": "Quartalsweise Updates: Verzeichnisse, Transfers, Prüfungen, Logs."
+            }
+        ],
+        "processLinkLabel": "Siehe unseren vollständigen Prozess",
+        "processLinkHref": "/process"
+    },
+    "cta": {
+        "title": "Strafen vermeiden. Vertrauen sichern. Betrieb aufrechterhalten.",
+        "body": "Wir entwickeln LGPD-Kontrollen für Ihre Organisation und liefern belastbare Nachweise.",
+        "button": "Kontakt aufnehmen",
+        "buttonHref": "/contact"
+    }
+}

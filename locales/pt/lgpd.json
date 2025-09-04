@@ -1,0 +1,163 @@
+{
+    "header": {
+        "title": "LGPD",
+        "subtitle": "Lei Geral de Proteção de Dados do Brasil: privacidade para dados pessoais."
+    },
+    "facts": [
+        {
+            "color": "#2563eb",
+            "title": "Em vigor",
+            "value": "18 de setembro de 2020",
+            "description": "Sanções administrativas desde 1º de agosto de 2021"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Quem abrange",
+            "value": "Organizações que tratam dados pessoais no Brasil",
+            "description": "Inclui também empresas estrangeiras que oferecem bens/serviços a pessoas no Brasil ou coletam dados no país."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Teto de penalidade",
+            "value": "Até 2% do faturamento no Brasil",
+            "description": "Limitado a R$50 milhões por infração"
+        }
+    ],
+    "obligations": {
+        "title": "Obrigações",
+        "items": [
+            {
+                "title": "Implementar Medidas de Segurança",
+                "text": "Adotar medidas técnicas e organizacionais proporcionais aos riscos para proteger dados pessoais (Art. 46)."
+            },
+            {
+                "title": "Manter Registros das Operações",
+                "text": "Manter registro formal das operações de tratamento — finalidades, categorias, destinatários, prazos e salvaguardas — disponível à ANPD (Art. 37)."
+            },
+            {
+                "title": "Elaborar Relatórios de Impacto (RIPD)",
+                "text": "Produzir RIPD para tratamentos de alto risco quando exigido pela ANPD, documentando riscos e mitigação (Arts. 10 §3º, 38)."
+            },
+            {
+                "title": "Governança de Operadores",
+                "text": "Definir instruções do controlador, contratos adequados e supervisão de operadores e suboperadores (Art. 39)."
+            },
+            {
+                "title": "Nomear Encarregado (DPO)",
+                "text": "Designar um DPO, oferecer canal público e atender direitos no prazo legal (Art. 41; Art. 18)."
+            },
+            {
+                "title": "Finalidade & Necessidade",
+                "text": "Tratar apenas o necessário para finalidades legítimas, aplicando minimização em sistemas e fluxos (Art. 6, I e III)."
+            }
+        ]
+    },
+    "offer": {
+        "title": "O que oferecemos",
+        "subtitle": "Programas personalizados fim a fim, podendo depender de fases anteriores (ex.: protocolos de exclusão requerem mapeamento prévio dos fluxos de dados pessoais).",
+        "cards": [
+            {
+                "title": "DPO Externo (Encarregado)",
+                "desc": "Atuamos como seu DPO: orientamos gestão, monitoramos conformidade, treinamos equipe, supervisionamos RIPDs, comunicamos com a ANPD e reportamos riscos.",
+                "cta": "Fale com um DPO",
+                "href": "/services/lgpd-dpo",
+                "span": "lg:col-span-3"
+            },
+            {
+                "title": "Entrada no Mercado Brasileiro",
+                "desc": "Prepare-se para clientes no Brasil: bases legais, avisos de privacidade, mecanismos de transferência, cláusulas contratuais e pacotes de evidências.",
+                "cta": "Planejar entrada no Brasil",
+                "href": "/services/brazil-market-entry",
+                "span": "lg:col-span-3"
+            },
+            {
+                "title": "Registros de Operações (Art. 37)",
+                "desc": "Estabelecemos seu registro de operações: o quê, por quê, com quem, onde, retenção e salvaguardas — e rotina de atualização.",
+                "cta": "Implementar registros",
+                "href": "/services/lgpd-ropa",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "RIPD — Relatório de Impacto",
+                "desc": "Relatório detalhado para alto risco: escopo, entrevistas, análise de risco, mitigação e documentação final.",
+                "cta": "Planejar RIPD",
+                "href": "/services/ripd",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Prontidão para Incidentes",
+                "desc": "Playbook de resposta em 72h (ANPD e titulares), com papéis, fluxos e modelos. Treinamos equipes e criamos evidências necessárias.",
+                "cta": "Fortalecer prontidão",
+                "href": "/services/lgpd-incident",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Modelo de Retenção & Exclusão",
+                "desc": "Definimos prazos, rotinas de exclusão e registros de auditoria para comprovar execução.",
+                "cta": "Desenhar modelo",
+                "href": "/services/retention-deletion",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "Supervisão de Operadores",
+                "desc": "Onboarding e revisões periódicas de operadores: requisitos, cláusulas contratuais, transferências e cadência de supervisão.",
+                "cta": "Criar supervisão",
+                "href": "/services/operator-oversight",
+                "span": "lg:col-span-2"
+            },
+            {
+                "title": "LGPD para Sistemas de IA",
+                "desc": "Alinhe IA à LGPD: papéis, bases legais, transparência, registros, RIPD e diretrizes de uso.",
+                "cta": "Alinhar IA à LGPD",
+                "href": "/services/lgpd-ai",
+                "span": "lg:col-span-2"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Por que agora",
+        "items": [
+            {
+                "k": "Fiscalização ativa",
+                "v": "A ANPD está emitindo guias, instaurando processos e pode aplicar multas e restrições."
+            },
+            {
+                "k": "Deveres pré-lançamento",
+                "v": "Tratamentos de alto risco podem exigir RIPD e controles antes do go-live."
+            },
+            {
+                "k": "Transferências internacionais",
+                "v": "Necessitam mecanismos válidos; clientes pedem provas em due diligence."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "Como trabalhamos",
+        "steps": [
+            {
+                "t": "Diagnosticar",
+                "d": "Descoberta focada em produtos, fluxos de dados e fornecedores."
+            },
+            {
+                "t": "Desenhar",
+                "d": "Co-criar controles e fluxos sob medida (minimização, cadência de RIPD, intake de operadores, playbooks de incidentes)."
+            },
+            {
+                "t": "Implementar & Evidenciar",
+                "d": "Incorporar mudanças com equipes e gerar evidências para auditorias."
+            },
+            {
+                "t": "Assegurar",
+                "d": "Revisões trimestrais: atualizar registros, transferências, spot checks e logs."
+            }
+        ],
+        "processLinkLabel": "Veja nosso processo completo",
+        "processLinkHref": "/process"
+    },
+    "cta": {
+        "title": "Evite multas. Proteja a confiança. Mantenha o negócio.",
+        "body": "Projetamos controles LGPD sob medida e fornecemos evidências confiáveis.",
+        "button": "Fale conosco",
+        "buttonHref": "/contact"
+    }
+}

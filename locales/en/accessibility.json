@@ -1,0 +1,152 @@
+{
+    "header": {
+        "title": "EU Accessibility Act",
+        "subtitle": "EU-wide rules to ensure products and services are accessible to persons with disabilities."
+    },
+    "facts": [
+        {
+            "color": "#a855f7",
+            "title": "In application",
+            "value": "From 28 June 2025",
+            "description": "Transposed into national law"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Who this affects",
+            "value": "Manufacturers, importers, distributors",
+            "description": "Plus service providers in ICT, e-commerce, banking, ticketing, media, and transport sectors — both public and private."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Enforcement & penalties",
+            "value": "Fines set by each Member State",
+            "description": "Typically aligned with consumer protection regimes"
+        }
+    ],
+    "obligations": {
+        "title": "Obligations",
+        "items": [
+            {
+                "title": "Meet core accessibility requirements",
+                "text": "Ensure products and services are perceivable, operable and understandable for persons with disabilities, following harmonised EN standards where available.",
+                "barClass": "bg-emerald-700"
+            },
+            {
+                "title": "Design & development integration",
+                "text": "Embed accessibility in design, testing, and procurement processes, ensuring accessibility features are considered from concept to release.",
+                "barClass": "bg-amber-500"
+            },
+            {
+                "title": "Information & instructions",
+                "text": "Provide product and service information, usage instructions, and support channels in accessible formats (digital and physical).",
+                "barClass": "bg-indigo-600"
+            },
+            {
+                "title": "Digital service compliance",
+                "text": "Websites, apps, e-commerce platforms, and self-service terminals must comply with Web Content Accessibility Guidelines (WCAG) 2.1 AA.",
+                "barClass": "bg-pink-600"
+            },
+            {
+                "title": "Procurement & supply chain oversight",
+                "text": "Contractually require accessibility compliance from suppliers and ensure third-party products integrate without barriers.",
+                "barClass": "bg-cyan-600"
+            },
+            {
+                "title": "Documentation & conformity assessment",
+                "text": "Maintain technical documentation, declarations of conformity, and evidence to prove compliance to authorities and clients.",
+                "barClass": "bg-yellow-600"
+            }
+        ],
+        "more": "And more"
+    },
+    "offer": {
+        "title": "What we offer",
+        "subtitle": "Programmes are tailored end-to-end and may depend on earlier phases (e.g., digital audits require prior asset inventory).",
+        "cards": [
+            {
+                "title": "Accessibility Compliance Lead",
+                "desc": "We act as your dedicated compliance partner: oversee accessibility strategy, train teams, review designs, and liaise with regulators and clients.",
+                "cta": "Speak with an expert"
+            },
+            {
+                "title": "EU Market Access Readiness",
+                "desc": "Prepare products and services for EU market entry: assess against EAA requirements, close compliance gaps, and produce conformity documentation.",
+                "cta": "Plan your EU launch"
+            },
+            {
+                "title": "Accessibility Gap Assessment",
+                "desc": "Fast evaluation of your websites, apps, and digital platforms against EAA requirements with a practical remediation plan.",
+                "cta": "Start your gap check"
+            },
+            {
+                "title": "WCAG 2.1 AA Compliance Sprint",
+                "desc": "Quickly bring websites, apps, and e-commerce into WCAG 2.1 AA compliance with design, code, and content fixes.",
+                "cta": "Fix accessibility now"
+            },
+            {
+                "title": "Accessible Digital Documentation",
+                "desc": "Prepare user guides, customer support flows, and digital communications in accessible formats.",
+                "cta": "Get accessible docs"
+            },
+            {
+                "title": "Accessible Procurement Toolkit",
+                "desc": "Integrate accessibility into procurement for digital services: RFP templates, contractual clauses, and supplier checks.",
+                "cta": "Align your suppliers"
+            },
+            {
+                "title": "Conformity File & Declaration Setup",
+                "desc": "Create the required accessibility statement, technical file, and Declarations of Conformity to satisfy EAA enforcement.",
+                "cta": "Prepare your file"
+            },
+            {
+                "title": "Ongoing Accessibility Monitoring",
+                "desc": "Set up automated and manual monitoring for websites, apps, and e-commerce to ensure continuous EAA compliance.",
+                "cta": "Stay compliant"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Why now",
+        "items": [
+            {
+                "k": "Mandatory from June 2025",
+                "v": "Non-compliance risks fines, product withdrawal, or loss of market access."
+            },
+            {
+                "k": "Procurement advantage",
+                "v": "Public and private buyers increasingly require proof of accessibility compliance."
+            },
+            {
+                "k": "Brand & customer trust",
+                "v": "Accessible products and services expand your market reach and reduce complaints."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "How we work",
+        "steps": [
+            {
+                "t": "Diagnose",
+                "d": "Focused audit of products, services, and digital assets to baseline accessibility status."
+            },
+            {
+                "t": "Design",
+                "d": "Co-create accessible designs, procurement clauses, and compliance workflows."
+            },
+            {
+                "t": "Implement & Evidence",
+                "d": "Deliver fixes, train teams, and produce evidence packs for clients and authorities."
+            },
+            {
+                "t": "Assure",
+                "d": "Periodic re-checks to ensure accessibility compliance is maintained over time."
+            }
+        ],
+        "processLinkLabel": "See our full compliance process"
+    },
+    "cta": {
+        "title": "Comply. Include. Expand your market.",
+        "body": "We design Accessibility Act compliance programmes that fit your organisation and generate proof you can stand behind.",
+        "button": "Talk to us"
+    }
+}

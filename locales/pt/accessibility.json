@@ -1,0 +1,152 @@
+{
+    "header": {
+        "title": "Regulamento de Acessibilidade da UE",
+        "subtitle": "Regras em toda a UE para garantir que produtos e serviços sejam acessíveis a pessoas com deficiência."
+    },
+    "facts": [
+        {
+            "color": "#a855f7",
+            "title": "Em aplicação",
+            "value": "A partir de 28 de junho de 2025",
+            "description": "Transposto para o direito nacional"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Quem abrange",
+            "value": "Fabricantes, importadores, distribuidores",
+            "description": "Além de prestadores de serviços em TIC, e-commerce, bancos, bilhetagem, mídia e transporte — públicos e privados."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Fiscalização & penalidades",
+            "value": "Multas definidas por cada Estado-Membro",
+            "description": "Normalmente alinhadas a regimes de proteção do consumidor"
+        }
+    ],
+    "obligations": {
+        "title": "Obrigações",
+        "items": [
+            {
+                "title": "Atender aos requisitos essenciais de acessibilidade",
+                "text": "Garantir que produtos e serviços sejam perceptíveis, operáveis e compreensíveis para pessoas com deficiência, seguindo normas EN harmonizadas quando disponíveis.",
+                "barClass": "bg-emerald-700"
+            },
+            {
+                "title": "Integração no design & desenvolvimento",
+                "text": "Incorporar acessibilidade em design, testes e compras, considerando recursos acessíveis do conceito ao lançamento.",
+                "barClass": "bg-amber-500"
+            },
+            {
+                "title": "Informações & instruções",
+                "text": "Fornecer informações, instruções de uso e canais de suporte em formatos acessíveis (digitais e físicos).",
+                "barClass": "bg-indigo-600"
+            },
+            {
+                "title": "Conformidade de serviços digitais",
+                "text": "Sites, apps, e-commerce e terminais de autoatendimento devem cumprir as Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1 AA.",
+                "barClass": "bg-pink-600"
+            },
+            {
+                "title": "Compras & cadeia de fornecimento",
+                "text": "Exigir contratualmente conformidade de acessibilidade de fornecedores e garantir integração sem barreiras de produtos de terceiros.",
+                "barClass": "bg-cyan-600"
+            },
+            {
+                "title": "Documentação & avaliação da conformidade",
+                "text": "Manter documentação técnica, declarações de conformidade e evidências para comprovar conformidade a autoridades e clientes.",
+                "barClass": "bg-yellow-600"
+            }
+        ],
+        "more": "E mais"
+    },
+    "offer": {
+        "title": "O que oferecemos",
+        "subtitle": "Programas personalizados de ponta a ponta e que podem depender de fases anteriores (ex.: auditorias digitais requerem inventário prévio).",
+        "cards": [
+            {
+                "title": "Liderança em Conformidade de Acessibilidade",
+                "desc": "Atuamos como parceiro dedicado: estratégia, treinamento, revisão de designs e interlocução com reguladores e clientes.",
+                "cta": "Fale com um especialista"
+            },
+            {
+                "title": "Prontidão para Acesso ao Mercado da UE",
+                "desc": "Prepare produtos e serviços para a UE: avaliação frente ao EAA, fechamento de lacunas e documentação de conformidade.",
+                "cta": "Planejar seu lançamento na UE"
+            },
+            {
+                "title": "Avaliação de Lacunas de Acessibilidade",
+                "desc": "Avaliação rápida de sites, apps e plataformas digitais frente ao EAA, com plano prático de correção.",
+                "cta": "Começar a avaliação"
+            },
+            {
+                "title": "Sprint de Conformidade WCAG 2.1 AA",
+                "desc": "Leve sites, apps e e-commerce à conformidade WCAG 2.1 AA com ajustes de design, código e conteúdo.",
+                "cta": "Corrigir acessibilidade agora"
+            },
+            {
+                "title": "Documentação Digital Acessível",
+                "desc": "Produção de manuais, fluxos de suporte e comunicações digitais em formatos acessíveis.",
+                "cta": "Obter docs acessíveis"
+            },
+            {
+                "title": "Kit de Aquisições Acessíveis",
+                "desc": "Incorpore acessibilidade nas compras de serviços digitais: modelos de RFP, cláusulas contratuais e checagens de fornecedores.",
+                "cta": "Alinhar seus fornecedores"
+            },
+            {
+                "title": "Arquivo de Conformidade & Declaração",
+                "desc": "Criar a declaração de acessibilidade, dossiê técnico e Declarações de Conformidade exigidas.",
+                "cta": "Preparar o dossiê"
+            },
+            {
+                "title": "Monitoramento Contínuo de Acessibilidade",
+                "desc": "Configurar monitoramento automático e manual para manter a conformidade com o EAA.",
+                "cta": "Manter conformidade"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Por que agora",
+        "items": [
+            {
+                "k": "Obrigatório a partir de junho de 2025",
+                "v": "Risco de multas, retirada de produto ou perda de acesso ao mercado."
+            },
+            {
+                "k": "Vantagem em compras públicas/privadas",
+                "v": "Compradores exigem prova de conformidade em acessibilidade."
+            },
+            {
+                "k": "Marca & confiança do cliente",
+                "v": "Produtos e serviços acessíveis ampliam alcance e reduzem reclamações."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "Como trabalhamos",
+        "steps": [
+            {
+                "t": "Diagnosticar",
+                "d": "Auditoria focada de produtos, serviços e ativos digitais para estabelecer a linha de base."
+            },
+            {
+                "t": "Desenhar",
+                "d": "Co-criar designs acessíveis, cláusulas de compras e fluxos de conformidade."
+            },
+            {
+                "t": "Implementar & Evidenciar",
+                "d": "Entregar correções, treinar equipes e produzir evidências para clientes e autoridades."
+            },
+            {
+                "t": "Assegurar",
+                "d": "Revisões periódicas para manter a conformidade ao longo do tempo."
+            }
+        ],
+        "processLinkLabel": "Veja nosso processo completo"
+    },
+    "cta": {
+        "title": "Conformize. Inclua. Amplie seu mercado.",
+        "body": "Desenhamos programas de conformidade com o Ato de Acessibilidade que se encaixam na sua organização e geram provas sólidas.",
+        "button": "Fale conosco"
+    }
+}

@@ -1,0 +1,179 @@
+{
+    "header": {
+        "title": "GDPR",
+        "subtitle": "EU’s General Data Protection Regulation: Privacy for personal data."
+    },
+    "facts": [
+        {
+            "color": "#2563eb",
+            "title": "Enforced",
+            "value": "25 May 2018",
+            "description": "Applicable across the EU"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Who this affects",
+            "value": "Organisations processing personal data in the EU",
+            "description": "Also non-EU companies offering goods/services to people in the EU or monitoring their behaviour."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Penalty ceiling",
+            "value": "Up to €20M or 4% global turnover",
+            "description": "For severe infringements"
+        }
+    ],
+    "obligations": {
+        "title": "Obligations",
+        "items": [
+            {
+                "title": "Implement Risk-Appropriate Measures",
+                "text": "Apply and maintain technical and organisational safeguards proportionate to your processing risks, ensuring they operate effectively in practice."
+            },
+            {
+                "title": "Maintain Records of Processing Activities (RoPA)",
+                "text": "Keep a formal register of processing purposes, data categories, recipients, retention periods, and security measures, as required by GDPR Article 30."
+            },
+            {
+                "title": "Conduct Data Protection Impact Assessments (DPIAs)",
+                "text": "Carry out and document DPIAs before launching any high-risk processing, ensuring risk mitigation is designed and implemented before go-live."
+            },
+            {
+                "title": "Ensure Processor & Vendor Governance",
+                "text": "Use compliant contracts, monitor processor performance, and maintain oversight of processors and sub-processors as required by GDPR Article 28."
+            },
+            {
+                "title": "Embed Privacy by Design & Default",
+                "text": "Integrate privacy safeguards into systems, processes, and products from the start, ensuring compliance is part of the design process."
+            },
+            {
+                "title": "Demonstrate Accountability",
+                "text": "Keep evidence of compliance and ongoing monitoring so you can prove adherence to the law at any time."
+            }
+        ]
+    },
+    "offer": {
+        "title": "What we offer",
+        "subtitle": "Targeted, high-impact services that embed privacy-by-design and produce audit-ready evidence.",
+        "cards": [
+            {
+                "title": "External Data Protection Officer (DPO)",
+                "desc": "We act as your independent DPO: advise management, monitor compliance, train staff, oversee DPIAs, liaise with authorities, and report risks with practical remediation paths.",
+                "cta": "Speak with a DPO",
+                "href": "/services/gdpr-dpo",
+                "span": "lg:col-span-3",
+                "border": "border-l-2 border-pink-500",
+                "ring": "hover:ring-pink-200"
+            },
+            {
+                "title": "EU Market Entry & Client Readiness",
+                "desc": "Make your business contract-ready for EU clients: lawful bases, privacy notices, transfer assessments, vendor clauses, and evidence packs that pass procurement and due-diligence reviews.",
+                "cta": "Plan your EU entry",
+                "href": "/services/eu-market-entry",
+                "span": "lg:col-span-3",
+                "border": "border-l-2 border-amber-500",
+                "ring": "hover:ring-amber-200"
+            },
+            {
+                "title": "Records of Processing (RoPA) Programme",
+                "desc": "We establish your Article-30 Records of Processing Activities—what you process, why, with whom, where, retention, and security measures—and set a lightweight routine to keep it current.",
+                "cta": "Discuss your RoPA setup",
+                "href": "/services/ropa",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-emerald-500",
+                "ring": "hover:ring-emerald-200"
+            },
+            {
+                "title": "DPIA — Company-Specific Assessment",
+                "desc": "A thorough, personalised DPIA for high-risk processing: scope, stakeholder interviews, risk analysis tailored to your systems and business model, mitigation design, and sign-off documentation.",
+                "cta": "Plan your DPIA",
+                "href": "/services/dpia",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-sky-500",
+                "ring": "hover:ring-sky-200"
+            },
+            {
+                "title": "Incident & Breach Readiness",
+                "desc": "Design and embed a 72-hour response playbook with roles, decision trees, and notification templates. We train teams and set up the evidence you’ll need if an incident occurs.",
+                "cta": "Strengthen readiness",
+                "href": "/services/incident-readiness",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-violet-500",
+                "ring": "hover:ring-violet-200"
+            },
+            {
+                "title": "Retention & Deletion Operating Model",
+                "desc": "Define lawful retention by data category, implement deletion routines in systems, and set up audit logs to prove execution.",
+                "cta": "Design your model",
+                "href": "/services/retention-deletion",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-cyan-500",
+                "ring": "hover:ring-cyan-200"
+            },
+            {
+                "title": "Processor & Vendor Oversight",
+                "desc": "Practical onboarding and periodic review of processors: requirement baselines, Article-28 clauses, transfer assessments, and an oversight cadence that fits your vendor landscape.",
+                "cta": "Build vendor oversight",
+                "href": "/services/vendor-oversight",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-rose-500",
+                "ring": "hover:ring-rose-200"
+            },
+            {
+                "title": "GDPR for AI Systems",
+                "desc": "Align AI features and workflows with GDPR: controller/processor role mapping, lawful bases, transparency to users, RoPA updates, DPIA triggers, and acceptable-use guidance for teams.",
+                "cta": "Align AI with GDPR",
+                "href": "/services/gdpr-for-ai",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-indigo-500",
+                "ring": "hover:ring-indigo-200"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Why now",
+        "items": [
+            {
+                "k": "Active enforcement",
+                "v": "Supervisory authorities continue to open investigations, issue orders, and levy fines; clients increasingly require evidence of controls."
+            },
+            {
+                "k": "Pre-launch duties",
+                "v": "High-risk processing requires DPIA before deployment; this must be scheduled and evidenced to avoid delays and non-compliance."
+            },
+            {
+                "k": "Transfers scrutiny",
+                "v": "Standard Contractual Clauses require documented transfer assessments and safeguards; partners ask for proof during due diligence."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "How we work",
+        "steps": [
+            {
+                "t": "Diagnose",
+                "d": "Focused discovery across product features, data flows, and vendors to baseline actual practice."
+            },
+            {
+                "t": "Design",
+                "d": "Co-create bespoke controls and workflows (minimisation, DPIA cadence, vendor intake, breach playbooks) aligned to your reality."
+            },
+            {
+                "t": "Implement & Evidence",
+                "d": "Embed changes with your teams and produce evidence packs that stand up in audits and client reviews."
+            },
+            {
+                "t": "Assure",
+                "d": "Quarterly tune-ups: RoPA updates, transfer reassessments, spot checks, and change logs that prove control over time."
+            }
+        ],
+        "processLinkLabel": "See our full compliance process",
+        "processLinkHref": "/process"
+    },
+    "cta": {
+        "title": "Avoid fines. Protect trust. Keep your business running.",
+        "body": "We design GDPR controls that fit your organisation and generate evidence you can stand behind.",
+        "button": "Talk to us",
+        "buttonHref": "/contact"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "header": {
+        "eyebrow": "Über uns",
+        "title": "Regulierung als Vorteil. Compliance als Vertrauensbasis."
+    },
+    "body": {
+        "left": "<strong>Berlin ist Europas Start-up-Hauptstadt</strong> und ein Zentrum regulatorischer Veränderung mit AI Act, DSGVO und Barrierefreiheits-Gesetz. <strong>Generische Tools bergen Datenschutzrisiken</strong> und erfüllen die Verantwortlichkeit neuer Vorgaben nicht. Wir haben ein Compliance-Studio aufgebaut, das in Ihrer Struktur arbeitet und Regulierung in den Alltag integriert. <strong>Wir arbeiten nahtlos mit Ihren Teams und Systemen.</strong> Wir gestalten Governance mit klarer Zuständigkeit, schlanken Routinen und prüffähigen Nachweisen.",
+        "right": "Compliance bedeutet mehr als Bußgelder zu vermeiden. Im Berliner Ökosystem für KI und Health-Tech ist sie ein <strong>strategischer Vorteil</strong>, der Abschlüsse beschleunigt, Vertrauen aufbaut und Investoren anzieht. Wir verbinden <strong>juristische Exzellenz</strong>, <strong>Engineering-Know-how</strong> und <strong>Sicherheitsdisziplin</strong>, um Lösungen zu liefern, die zu Ihren Risiken und Zielen passen: <strong>eine Premium-Beratung für Unternehmen, die Europas digitale Zukunft gestalten.</strong>"
+    },
+    "why": {
+        "eyebrow": "Warum Comforma",
+        "title": "Partnerschaft statt Papierkrieg.",
+        "intro": "Viele Anbieter generieren Vorlagen automatisch. Wir nicht. Wir entwerfen Kontrollen, die in Ihren Produkten und Teams laufen — mit Ownership, Routinen und Nachweisen, damit Compliance Wachstum, Sicherheit und Vertrauen stärkt.",
+        "items": [
+            {
+                "k": "Umsetzung statt Automatisierung",
+                "v": "Keine Leerformeln. Wir bauen Freigaben, Risikologs, DPIA-Takt und Lieferanten-Onboarding, die in Ihrem Stack wirklich funktionieren.",
+                "dot": "before:bg-purple-500",
+                "accent": "bg-purple-600"
+            },
+            {
+                "k": "Kultur statt Checklisten",
+                "v": "Schulungen, klare Verantwortliche und einfache Routinen machen Regeln zur Gewohnheit — so bleibt Compliance bei Veränderungen stabil.",
+                "dot": "before:bg-blue-500",
+                "accent": "bg-blue-600"
+            },
+            {
+                "k": "Wachstum & Sicherheit zusammen",
+                "v": "Transparente Nachweise und klare Kontrollen beschleunigen Enterprise-Deals und senken Vollzugs- und Ausfallrisiken.",
+                "dot": "before:bg-emerald-500",
+                "accent": "bg-emerald-600"
+            },
+            {
+                "k": "Verantwortbar & belastbar",
+                "v": "Jeder Schritt ist auf Gesetz und Standards (AI Act, DSGVO, ISO 42001) gemappt — mit nachvollziehbaren Entscheidungen und Belegen.",
+                "dot": "before:bg-amber-500",
+                "accent": "bg-amber-600"
+            },
+            {
+                "k": "Anbieterunabhängig",
+                "v": "Keine Kickbacks oder Tool-Provisionen. Wir empfehlen, was zu Ihrem Risiko passt — nicht zu einer Verkaufsquote.",
+                "dot": "before:bg-rose-500",
+                "accent": "bg-rose-600"
+            },
+            {
+                "k": "Partner für die Langstrecke",
+                "v": "Wir bleiben in der Verantwortung: regelmäßige Tune-ups, Change-Logs und Evidence-Packs, die Audits und Due Diligence standhalten.",
+                "dot": "before:bg-sky-500",
+                "accent": "bg-sky-600"
+            }
+        ]
+    },
+    "culture": {
+        "eyebrow": "Unsere Werte",
+        "title": "Integrität, Vertrauen und Menschenwürde im Kern.",
+        "intro": "Compliance ist mehr als Regeln. Es geht darum, wie Unternehmen Vertrauen gewinnen, Menschen schützen und unabhängig handeln. Unsere Werte leiten Entscheidungen, tragen langfristige Partnerschaften und sorgen für belastbare Governance.",
+        "items": [
+            {
+                "title": "Integrität und Unabhängigkeit",
+                "desc": "Wir sagen die Wahrheit — in einfachen wie in schwierigen Momenten. Klient:innen verdienen Rat ohne Verkaufsziele, Vermittlungsgebühren oder versteckte Agenden.",
+                "dot": "before:bg-emerald-400"
+            },
+            {
+                "title": "Treuhänderisches Vertrauen",
+                "desc": "Compliance schützt Vertrauen. Daten, Kundschaft und Reputation behandeln wir als Vermögenswerte in unserer Obhut — nicht als Prozess-Input.",
+                "dot": "before:bg-indigo-400"
+            },
+            {
+                "title": "Menschenwürde",
+                "desc": "Regulierung schützt Menschen. Datenschutz, Barrierefreiheit und Fairness sind keine Features — sondern Haltungsfragen.",
+                "dot": "before:bg-amber-400"
+            },
+            {
+                "title": "Klarheit vor Komplexität",
+                "desc": "Klare Sprache und einfache Kontrollen schlagen Jargon. Führung soll Risiko, Entscheidung und Evidenz auf einen Blick erkennen.",
+                "dot": "before:bg-emerald-400"
+            },
+            {
+                "title": "Verantwortung mit Evidenz",
+                "desc": "Gute Governance hinterlässt Spuren. Jede Zusage braucht Ownership, Zeitpunkt und einen prüfbaren Nachweis.",
+                "dot": "before:bg-indigo-400"
+            },
+            {
+                "title": "Partnerschaft auf Dauer",
+                "desc": "Wir wollen Teil Ihres Teams sein. Kultur — nicht Checklisten — hält Compliance auch in Wachstum und Wandel stabil.",
+                "dot": "before:bg-amber-400"
+            }
+        ]
+    },
+    "team": {
+        "leadership": "Leitung",
+        "role": "Founder & Principal — AI Governance, GDPR & Security"
+    }
+}

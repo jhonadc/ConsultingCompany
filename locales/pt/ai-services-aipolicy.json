@@ -1,0 +1,148 @@
+{
+    "hero": {
+        "title": "Política de Uso de IA para GPAI",
+        "tagline": "Do risco regulatório ao ativo empresarial",
+        "body": "Na Europa, as expectativas para IA de propósito geral são claras. O AI Act da UE e o Código de Boas Práticas para GPAI exigem que as empresas governem o uso de IA. A Política de Uso de IA é a base: um documento juridicamente alinhado e tecnicamente embasado que define limites, papéis e controles para IA na sua empresa."
+    },
+    "whyNeed": {
+        "title": "Por que você precisa disso",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Obrigatório por implicação",
+                "value": "Governança interna esperada pelo AI Act",
+                "description": "O AI Act espera supervisão, transparência, mitigação de risco e papéis claros. Uma política documentada é como você cumpre e prova essas expectativas."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Habilitador de negócios",
+                "value": "Acelera compras e reduz objeções",
+                "description": "Clientes pedem evidências de uso responsável de IA. Uma política assinada mostra que seus controles são claros e aplicáveis."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Contenção de risco",
+                "value": "Protege dados, PI e postura de compliance",
+                "description": "Evite mau uso de dados confidenciais, vieses em saídas, violações setoriais e riscos de sanção sob o AI Act e a GDPR."
+            }
+        ]
+    },
+    "deliverables": {
+        "eyebrow": "O que você recebe",
+        "title": "Uma política que habilita inovação com conformidade",
+        "body": "Clareza para equipes, segurança para clientes e uma posição defensável perante auditores e reguladores. Um investimento mínimo que retorna em vendas mais rápidas, menos escalonamentos e uso de IA mais seguro.",
+        "items": [
+            {
+                "name": "Escopo e definições",
+                "desc": "O que conta como IA e onde se aplica na organização."
+            },
+            {
+                "name": "Ferramentas e contextos permitidos",
+                "desc": "Quais ferramentas de IA são permitidas, por equipe e caso de uso."
+            },
+            {
+                "name": "Transparência e atribuição",
+                "desc": "Quando informar o uso de IA e como fazê-lo de forma clara."
+            },
+            {
+                "name": "Supervisão humana e escalonamento",
+                "desc": "Checagens antes do uso, sinais de alerta e contatos ágeis."
+            },
+            {
+                "name": "Dados, PI e confidencialidade",
+                "desc": "Regras para prompts, dados protegidos e tratamento de saídas."
+            },
+            {
+                "name": "Monitoramento e atualizações",
+                "desc": "Cadência de revisão, trilhas de treinamento e gestão de mudanças."
+            }
+        ]
+    },
+    "whyConforma": {
+        "eyebrow": "Por que a Conforma",
+        "title": "Por que a Conforma Studio",
+        "body": "Documentos sob medida que alinham expectativas legais com a realidade técnica e evidências apresentáveis.",
+        "features": [
+            {
+                "name": "Direito × Engenharia",
+                "desc": "Traduzimos a linguagem regulatória em controles aderentes às suas arquiteturas, fluxos de dados e times."
+            },
+            {
+                "name": "Resultados defensáveis",
+                "desc": "Escopo, papéis, regras de transparência, supervisão humana, caminhos de escalonamento e evidências que você pode mostrar."
+            },
+            {
+                "name": "Precisão",
+                "desc": "Sob medida para setor, risco, stack e contratos. Um documento que funciona na prática."
+            },
+            {
+                "name": "Enablement",
+                "desc": "Guardrails aceleram a adoção e reduzem a ansiedade regulatória em produto e dados."
+            },
+            {
+                "name": "Integração",
+                "desc": "Links para registros de treinamento, incidentes e riscos, facilitando auditorias."
+            }
+        ]
+    },
+    "outline": {
+        "title": "Estrutura da política",
+        "sections": [
+            {
+                "title": "1. Escopo e objetivos",
+                "desc": "Aplica-se a empregados, contratados e fornecedores. Define GPAI e os sistemas em escopo em produtos e uso interno.",
+                "bullets": [
+                    "Definições e referências",
+                    "Sistemas/processos em escopo",
+                    "O que fica fora do escopo"
+                ]
+            },
+            {
+                "title": "2. Papéis e responsabilidades",
+                "desc": "Accountability para provedores, implementadores e usuários; RACI para aprovações, monitoramento e incidentes.",
+                "bullets": [
+                    "Dono do modelo, do produto e de compliance",
+                    "Autoridades de aprovação",
+                    "Pontos de contato e SLAs"
+                ]
+            },
+            {
+                "title": "3. Uso permitido e controles",
+                "desc": "Ferramentas, datasets e tarefas permitidas por equipe; usos proibidos; regras de dados para prompts e saídas.",
+                "bullets": [
+                    "Allowlist de ferramentas e condições",
+                    "Tratamento de dados confidenciais",
+                    "Usos proibidos e restritos"
+                ]
+            },
+            {
+                "title": "4. Transparência e supervisão humana",
+                "desc": "Avisos ao usuário, regras de atribuição de conteúdo e etapas de revisão antes de usos de alto impacto.",
+                "bullets": [
+                    "Gatilhos e linguagem de disclosure",
+                    "Atribuição para conteúdo assistido por IA",
+                    "Checklists de supervisão"
+                ]
+            },
+            {
+                "title": "5. Monitoramento, treinamento e atualizações",
+                "desc": "Cadência de revisão, controle de mudanças e links para treinamentos e registros de risco.",
+                "bullets": [
+                    "Revisões periódicas e sign-offs",
+                    "Evidências de treinamento",
+                    "Integração com gestão de riscos"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Investimento mínimo, ativo de alto retorno",
+        "body": "O custo de não ter uma Política de Uso de IA aparece em atrasos, multas e oportunidades perdidas. O custo de ter uma é modesto — especialmente quando acelera vendas, reduz exposição, facilita a adoção e fortalece sua marca.",
+        "button": "Solicitar sua política",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Voltar ao AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

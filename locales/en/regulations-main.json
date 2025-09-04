@@ -1,0 +1,29 @@
+{
+    "regulationsIndex": {
+        "eyebrow": "Regulations",
+        "title": "EU Rules We Specialize In",
+        "intro": "Dive into each regulation to see our methodology, tooling, and tailored guidance.",
+        "list": [
+            {
+                "title": "AI Act",
+                "slug": "ai-act",
+                "description": "Europe’s framework for trustworthy and compliant AI systems."
+            },
+            {
+                "title": "GDPR",
+                "slug": "gdpr",
+                "description": "The EU’s General Data Protection Regulation governing personal data."
+            },
+            {
+                "title": "LGPD",
+                "slug": "lgpd",
+                "description": "Brazil’s data protection law establishing principles and rights."
+            },
+            {
+                "title": "EU Accessibility Act",
+                "slug": "accessibility",
+                "description": "Rules ensuring products and services are accessible to all users."
+            }
+        ]
+    }
+}

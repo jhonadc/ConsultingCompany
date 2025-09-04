@@ -1,0 +1,91 @@
+{
+    "pageIntro": {
+        "eyebrow": "Nosso processo",
+        "title": "Como trabalhamos",
+        "subtitle": "A conformidade deve impulsionar o crescimento. Nosso processo alinha equipes jurídicas, técnicas e de produto para reduzir riscos e acelerar entregas — sem burocracia."
+    },
+    "discover": {
+        "title": "Diagnosticar",
+        "p1": "Começamos com uma avaliação estruturada para entender seu modelo de negócio, apetite de risco e planos de crescimento. Juntos mapeamos processos e fluxos de dados para identificar onde a conformidade pode habilitar o produto — e não travá-lo.",
+        "p2": "Em sessões focadas com stakeholders, inventariamos casos de uso de IA e processamento de dados, identificamos obrigações aplicáveis (AI Act, GDPR, ePrivacy e regras setoriais) e levantamos ganhos rápidos junto a lacunas críticas.",
+        "p3": "Você recebe um resumo claro das conclusões e um plano de implementação priorizado, com estimativas de esforço, impacto e prazos.",
+        "included": "Incluído nesta fase",
+        "tags": [
+            "Entrevistas com stakeholders",
+            "Inventário de sistemas e dados",
+            "Mapeamento regulatório (AI Act, GDPR)",
+            "Triagem de riscos e escopo de DPIA",
+            "Análise de lacunas",
+            "Roteiro priorizado"
+        ]
+    },
+    "build": {
+        "title": "Implementar",
+        "p1": "Com base no roteiro, implementamos os controles e a documentação essenciais: política de IA, gestão de riscos e supervisão humana, proteção de dados desde a concepção, governança de fornecedores e fluxos claros de aprovação.",
+        "p2": "Estabelecemos um Sistema de Gestão de IA leve (alinhado à ISO/IEC 42001), produzimos a documentação técnica e o dossiê de gestão de riscos (Anexo IV) e preparamos DPIAs e registros de tratamento, quando aplicável. O trabalho ocorre em sprints curtos, com check-ins semanais e progresso visível.",
+        "p3": "Sua equipe mantém a titularidade — co-criamos modelos, automatizamos sempre que possível e integramos o processo nas ferramentas existentes, para que ele escale com você.",
+        "quote": {
+            "author": "Diretor Jurídico",
+            "role": "SaaS em fase de crescimento",
+            "text": "Marcos claros, zero surpresas e documentos prontos para auditoria que nossos auditores externos realmente usaram."
+        }
+    },
+    "deliver": {
+        "title": "Sustentar",
+        "p1": "Antes do go-live validamos controles, alinhamos responsáveis e finalizamos procedimentos operacionais e KPIs. O objetivo é durabilidade: conformidade que resista à pressão do mundo real.",
+        "p2": "Conduzimos simulações de incidentes, verificamos a supervisão humana e avaliamos salvaguardas de fornecedores e transferências de dados de ponta a ponta.",
+        "p3": "Na entrega, você recebe um pacote pronto para auditoria e um plano de manutenção pragmático, com cadências e checklists, além de opções de suporte contínuo.",
+        "included": "Incluído nesta fase",
+        "list": [
+            {
+                "title": "Validação e garantia",
+                "text": "Testes de controle, revisão documental e verificação de rastreabilidade, com evidências indexadas para auditorias."
+            },
+            {
+                "title": "Infraestrutura de governança",
+                "text": "Registros, políticas, treinamentos, fluxos de tickets e modelos versionados integrados às suas ferramentas."
+            },
+            {
+                "title": "Suporte",
+                "text": "Atualizações contínuas para mudanças regulatórias, revisões ad hoc e apoio sob demanda em auditorias e diligências de clientes."
+            }
+        ]
+    },
+    "values": {
+        "eyebrow": "Nossos valores",
+        "title": "Pragmáticos, rigorosos, humanos",
+        "subtitle": "Combinamos precisão jurídica com pragmatismo de engenharia. Independentes de fornecedores, baseados em evidências e focados em resultados que sua empresa pode medir — não em papelada desnecessária.",
+        "items": [
+            {
+                "title": "Meticulosos",
+                "desc": "Registros prontos para auditoria, racionalidade clara e rastreabilidade de ponta a ponta em decisões, modelos e dados.",
+                "dot": "before:bg-emerald-500"
+            },
+            {
+                "title": "Eficientes",
+                "desc": "Sprints com tempo definido, entregáveis proporcionais e ativos reutilizáveis que reduzem o custo total da conformidade.",
+                "dot": "before:bg-indigo-500"
+            },
+            {
+                "title": "Adaptáveis",
+                "desc": "Estruturas que se ajustam ao setor, porte e perfil de risco — nunca uma abordagem única.",
+                "dot": "before:bg-amber-500"
+            },
+            {
+                "title": "Honestos",
+                "desc": "Conselhos diretos, trade-offs transparentes e decisões claras de não avançar quando os riscos superam os benefícios.",
+                "dot": "before:bg-emerald-500"
+            },
+            {
+                "title": "Leais",
+                "desc": "Mentalidade de parceria: protegemos sua reputação e ajudamos as equipes a operar com confiança sob escrutínio.",
+                "dot": "before:bg-indigo-500"
+            },
+            {
+                "title": "Inovadores",
+                "desc": "Monitoramos mudanças regulatórias, tendências adversariais e novos padrões para manter seu programa preparado para o futuro.",
+                "dot": "before:bg-amber-500"
+            }
+        ]
+    }
+}

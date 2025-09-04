@@ -1,0 +1,148 @@
+{
+    "hero": {
+        "title": "AI Use Policy for General-Purpose AI",
+        "tagline": "From regulatory risk to enterprise asset",
+        "body": "In Europe, expectations for general-purpose AI are clear. The EU AI Act and the General-Purpose AI Code of Practice require companies to govern how AI is used. An AI Use Policy is the foundation: a legally aligned, technically informed document that sets boundaries, roles, and controls for AI in your company."
+    },
+    "whyNeed": {
+        "title": "Why you need it",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Mandatory by implication",
+                "value": "Internal governance expected by the AI Act",
+                "description": "The AI Act expects oversight, transparency, risk mitigation, and clear roles. A documented policy is how you meet and prove these expectations."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Enterprise deal enabler",
+                "value": "Shorten procurement & reduce objections",
+                "description": "Buyers ask for evidence of responsible AI. A signed policy shows your controls are clear and enforceable."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Risk containment",
+                "value": "Protect data, IP, and compliance posture",
+                "description": "Prevent misuse of confidential data, biased outputs, sector rule breaches, and enforcement risk under the AI Act and GDPR."
+            }
+        ]
+    },
+    "deliverables": {
+        "eyebrow": "What you get",
+        "title": "A policy that enables compliant innovation",
+        "body": "Clarity for teams, assurance for customers, and a defensible position for auditors and regulators. A minimum investment that returns in faster sales cycles, fewer escalations, and safer AI use.",
+        "items": [
+            {
+                "name": "Scope & definitions",
+                "desc": "What counts as AI and where it applies across your org."
+            },
+            {
+                "name": "Permitted tools & contexts",
+                "desc": "Which AI tools are allowed, by team and use case."
+            },
+            {
+                "name": "Transparency & attribution",
+                "desc": "When to tell people AI is used and how to do it clearly."
+            },
+            {
+                "name": "Human oversight & escalation",
+                "desc": "Checks before use, red flags, and who to contact fast."
+            },
+            {
+                "name": "Data, IP & confidentiality",
+                "desc": "Rules for prompts, protected data, and output handling."
+            },
+            {
+                "name": "Monitoring & updates",
+                "desc": "Review cadence, training links, and change control."
+            }
+        ]
+    },
+    "whyConforma": {
+        "eyebrow": "Why Conforma",
+        "title": "Why Conforma Studio",
+        "body": "Boutique documents that align legal expectations with technical reality and evidence you can show.",
+        "features": [
+            {
+                "name": "Law × Engineering",
+                "desc": "We translate regulatory language into controls that match your architectures, data flows, and teams."
+            },
+            {
+                "name": "Defensible outcomes",
+                "desc": "Clear scope, roles, transparency rules, human oversight, escalation paths, and evidence links you can show."
+            },
+            {
+                "name": "Precision",
+                "desc": "Tailored to sector, risk profile, stack, and contracts. A document that works in practice."
+            },
+            {
+                "name": "Enablement",
+                "desc": "Guardrails speed adoption and remove regulatory anxiety for product and data teams."
+            },
+            {
+                "name": "Integration",
+                "desc": "Links to training logs, incident handling, and risk registers so audits are straightforward."
+            }
+        ]
+    },
+    "outline": {
+        "title": "Policy outline",
+        "sections": [
+            {
+                "title": "1. Scope and objectives",
+                "desc": "Applies to employees, contractors, and vendors. Defines GPAI and the systems in scope across products and internal use.",
+                "bullets": [
+                    "Definitions and references",
+                    "In-scope systems and processes",
+                    "Out-of-scope clarifications"
+                ]
+            },
+            {
+                "title": "2. Roles and responsibilities",
+                "desc": "Accountability for providers, deployers, and users; RACI for approvals, monitoring, and incident handling.",
+                "bullets": [
+                    "Model owner, product owner, compliance owner",
+                    "Approval authorities",
+                    "Contact points and SLAs"
+                ]
+            },
+            {
+                "title": "3. Permitted use and controls",
+                "desc": "Allowed tools, datasets, and tasks by team; prohibited uses; data handling rules for prompts and outputs.",
+                "bullets": [
+                    "Tool allowlist and conditions",
+                    "Confidential data handling",
+                    "Prohibited and restricted uses"
+                ]
+            },
+            {
+                "title": "4. Transparency and human oversight",
+                "desc": "User-facing disclosures, content attribution rules, and review steps before high-impact use.",
+                "bullets": [
+                    "Disclosure triggers and language",
+                    "Attribution for AI-assisted content",
+                    "Oversight checklists"
+                ]
+            },
+            {
+                "title": "5. Monitoring, training, and updates",
+                "desc": "Review cadence, policy change control, and links to training logs and risk registers.",
+                "bullets": [
+                    "Periodic reviews and sign-offs",
+                    "Training evidence",
+                    "Integration with risk management"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "A minimum investment, a high-return asset",
+        "body": "The cost of not having an AI Use Policy is measured in delays, fines, and lost opportunities. The cost of having one is modest, especially when it enables faster sales cycles, reduced exposure, smoother adoption, and a trustworthy AI-enabled brand.",
+        "button": "Request your policy",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Back to AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

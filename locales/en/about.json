@@ -1,0 +1,94 @@
+{
+    "header": {
+        "eyebrow": "About us",
+        "title": "Regulation into advantage. Compliance into trust."
+    },
+    "body": {
+        "left": "<strong>Berlin is Europe’s startup capital</strong> and a center of regulatory change with the AI Act, GDPR and the Accessibility Act. <strong>Generic tools carry privacy risks</strong> and cannot meet the responsibility new regulations demand. We built a Compliance Studio to work within your structure and embed regulation into daily operations. <strong>We integrate with your teams and systems.</strong> We design governance with clear ownership, lean routines and audit-ready evidence.",
+        "right": "Compliance is not only about avoiding fines. In Berlin’s AI and health-tech ecosystem it is a <strong>strategic advantage</strong> that accelerates deals, builds trust and attracts investors. We combine <strong>legal expertise</strong>, <strong>engineering knowledge</strong> and <strong>security discipline</strong> to deliver solutions tailored to your risks and goals: <strong>a premium advisory for companies shaping Europe’s digital future.</strong>"
+    },
+    "why": {
+        "eyebrow": "Why Comforma",
+        "title": "Partnership, not paperwork.",
+        "intro": "Many firms auto-generate documents. We don’t. We design controls that run in your products and teams — embedding ownership, routines, and evidence, so compliance supports growth, security, and trust.",
+        "items": [
+            {
+                "k": "Implementation over automation",
+                "v": "No boilerplate. We build approvals, risk logs, DPIA cadence, and vendor intake that actually operate in your stack.",
+                "dot": "before:bg-purple-500",
+                "accent": "bg-purple-600"
+            },
+            {
+                "k": "Culture, not checklists",
+                "v": "Training, clear owners, and simple routines turn rules into habit — so compliance survives org changes.",
+                "dot": "before:bg-blue-500",
+                "accent": "bg-blue-600"
+            },
+            {
+                "k": "Growth & security together",
+                "v": "Evidence and control clarity accelerate enterprise deals while reducing enforcement and outage risk.",
+                "dot": "before:bg-emerald-500",
+                "accent": "bg-emerald-600"
+            },
+            {
+                "k": "Accountable & defensible",
+                "v": "Every action maps to law and standard (AI Act, GDPR, ISO 42001) with traceable decisions and proof.",
+                "dot": "before:bg-amber-500",
+                "accent": "bg-amber-600"
+            },
+            {
+                "k": "Vendor-neutral",
+                "v": "No kickbacks or tooling commissions. We recommend what fits your risk, not a sales quota.",
+                "dot": "before:bg-rose-500",
+                "accent": "bg-rose-600"
+            },
+            {
+                "k": "Long-term partner",
+                "v": "We stay on the hook: tune-ups, change logs, and evidence packs that hold up in audits and diligence.",
+                "dot": "before:bg-sky-500",
+                "accent": "bg-sky-600"
+            }
+        ]
+    },
+    "culture": {
+        "eyebrow": "Our values",
+        "title": "Integrity, trust, and human dignity at the core.",
+        "intro": "We believe compliance is more than rules. It is about how companies earn trust, protect people, and act with independence. Our values guide every decision, shaping partnerships that last and governance that holds up in the real world.",
+        "items": [
+            {
+                "title": "Integrity and Independence",
+                "desc": "We tell the truth when it is easy and when it is hard. Clients deserve advice free from sales targets, referral fees, and hidden agendas.",
+                "dot": "before:bg-emerald-400"
+            },
+            {
+                "title": "Stewardship of Trust",
+                "desc": "Compliance protects trust. We treat your data, your customers, and your reputation as assets held in our care, not as inputs to process.",
+                "dot": "before:bg-indigo-400"
+            },
+            {
+                "title": "Human Dignity",
+                "desc": "Regulation exists to protect people. Privacy, accessibility, and fairness are not features — they are commitments to how a company behaves.",
+                "dot": "before:bg-amber-400"
+            },
+            {
+                "title": "Clarity over Complexity",
+                "desc": "Clear language and simple controls beat jargon. Leaders should see the risk, the decision, and the evidence at a glance.",
+                "dot": "before:bg-emerald-400"
+            },
+            {
+                "title": "Accountability with Evidence",
+                "desc": "Good governance leaves a trail. Every promise must be backed by who owns it, when it happens, and how it can be proven.",
+                "dot": "before:bg-indigo-400"
+            },
+            {
+                "title": "Partnership for the Long Term",
+                "desc": "We aim to be part of your team. Culture, not checklists, keeps companies compliant through growth and change.",
+                "dot": "before:bg-amber-400"
+            }
+        ]
+    },
+    "team": {
+        "leadership": "Leadership",
+        "role": "Founder & Principal — AI Governance, GDPR & Security"
+    }
+}

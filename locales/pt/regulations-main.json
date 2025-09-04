@@ -1,0 +1,29 @@
+{
+    "regulationsIndex": {
+        "eyebrow": "Regulamentos",
+        "title": "Regras da UE em que somos especialistas",
+        "intro": "Explore cada regulamento para conhecer nossa metodologia, ferramentas e orientações sob medida.",
+        "list": [
+            {
+                "title": "AI Act",
+                "slug": "ai-act",
+                "description": "Estrutura da Europa para sistemas de IA confiáveis e em conformidade."
+            },
+            {
+                "title": "GDPR",
+                "slug": "gdpr",
+                "description": "O Regulamento Geral sobre a Proteção de Dados da UE, que rege os dados pessoais."
+            },
+            {
+                "title": "LGPD",
+                "slug": "lgpd",
+                "description": "Lei brasileira de proteção de dados que estabelece princípios e direitos."
+            },
+            {
+                "title": "Lei Europeia de Acessibilidade",
+                "slug": "accessibility",
+                "description": "Regras que garantem que produtos e serviços sejam acessíveis a todos os usuários."
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "regulationsIndex": {
+        "eyebrow": "Regelwerke",
+        "title": "EU-Vorgaben, auf die wir spezialisiert sind",
+        "intro": "Entdecken Sie zu jedem Regelwerk unsere Methodik, Tools und passgenaue Beratung.",
+        "list": [
+            {
+                "title": "AI Act",
+                "slug": "ai-act",
+                "description": "EU-Rahmenwerk für vertrauenswürdige und konforme KI-Systeme."
+            },
+            {
+                "title": "GDPR",
+                "slug": "gdpr",
+                "description": "EU-Datenschutzgrundverordnung für den Umgang mit personenbezogenen Daten."
+            },
+            {
+                "title": "LGPD",
+                "slug": "lgpd",
+                "description": "Brasiliens Datenschutzgesetz mit Prinzipien und Rechten."
+            },
+            {
+                "title": "EU-Barrierefreiheitsgesetz",
+                "slug": "accessibility",
+                "description": "Regeln für barrierefreie Produkte und Dienstleistungen in der EU."
+            }
+        ]
+    }
+}

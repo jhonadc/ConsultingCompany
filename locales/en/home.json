@@ -1,0 +1,158 @@
+{
+    "hero": {
+        "title": "EU Regulatory and Governance Advisory.",
+        "notItalic": "Not",
+        "subtitleRest": "a software tool. It is real expertise: Berlin’s boutique studio for compliance.",
+        "bodyDesktop": "Led by one German-educated expert who is both lawyer and AI engineer, we design regulatory frameworks that let you grow in Europe with confidence. As your partners, we transform complex EU rules into clear and actionable steps, helping you avoid fines, accelerate enterprise deals, and launch new AI features with confidence.",
+        "bodyMobile": "Led by a German-educated lawyer and AI engineer, we help you avoid fines, win enterprise deals, and launch AI features with confidence in Europe."
+    },
+    "quickLinks": [
+        {
+            "href": "/aiservices/ailiteracy",
+            "label": "AI Literacy Training",
+            "border": "border-purple-500"
+        },
+        {
+            "href": "/aiservices/highrisk",
+            "label": "Is it High Risk?",
+            "border": "border-amber-500"
+        },
+        {
+            "href": "/aiservices/ai-use-policy",
+            "label": "AI Use Policy",
+            "border": "border-green-500"
+        }
+    ],
+    "regulations": {
+        "eyebrow": "Regulations",
+        "title": "EU Rules We Specialize In",
+        "intro": "From data privacy to AI oversight, explore our expertise across key EU regulations.",
+        "list": [
+            {
+                "title": "AI Act",
+                "slug": "ai-act",
+                "description": "EU framework setting strict rules for trustworthy and compliant artificial intelligence systems."
+            },
+            {
+                "title": "GDPR",
+                "slug": "gdpr",
+                "description": "EU data protection law defining rights, obligations, and enforcement for personal data processing."
+            },
+            {
+                "title": "LGPD",
+                "slug": "lgpd",
+                "description": "Brazil’s data protection law establishing principles, rights, and governance for personal data."
+            },
+            {
+                "title": "EU Accessibility Act",
+                "slug": "accessibility",
+                "description": "EU rules ensuring that products and services are accessible to all users, including those with disabilities."
+            }
+        ]
+    },
+    "clients": {
+        "title": "We've worked with hundreds of amazing people"
+    },
+    "proof": {
+        "title": "Your success is our business.",
+        "body": "Compliance isn’t paperwork—it’s how you protect runway, accelerate enterprise deals, and ship with confidence. You get a boutique that speaks law and code, turns rules into tickets, and leaves you with evidence that stands up to scrutiny.",
+        "cta": "See how the process works",
+        "ctaAria": "See how the process works",
+        "points": [
+            {
+                "title": "Penalty risk & cost avoidance",
+                "desc": "Fines scale with revenue (GDPR up to 4% of global turnover; EU AI Act up to 7% or capped sums). You avoid expensive surprises by putting the right controls and proofs in place before anyone asks.",
+                "paragraph2": "What we do: DPIAs, lawful basis design, AI risk & oversight, technical files, approvals, and a living evidence trail.",
+                "color": {
+                    "border": "border-rose-500",
+                    "dot": "before:bg-rose-500",
+                    "ring": "group-open:ring-rose-500/15"
+                }
+            },
+            {
+                "title": "Deal acceleration & enterprise trust",
+                "desc": "Security and privacy questionnaires stop being blockers. You answer procurement once—with clear controls, mapped data flows, and contracts your customers recognize.",
+                "paragraph2": "What you get: faster redline cycles, fewer escalations, and smoother InfoSec reviews.",
+                "color": {
+                    "border": "border-amber-500",
+                    "dot": "before:bg-amber-500",
+                    "ring": "group-open:ring-amber-500/15"
+                }
+            },
+            {
+                "title": "Launch confidence",
+                "desc": "Features ship without last-minute rollbacks. Risks are known, owners are assigned, and mitigations are part of the sprint—so go/no-go is a decision, not a fire drill.",
+                "paragraph2": "What we do: privacy by design checklists, model/feature approvals, and clear decision logs.",
+                "color": {
+                    "border": "border-indigo-500",
+                    "dot": "before:bg-indigo-500",
+                    "ring": "group-open:ring-indigo-500/15"
+                }
+            },
+            {
+                "title": "Audit-ready documentation",
+                "desc": "You keep evidence that regulators and auditors actually use: Annex IV technical documentation, risk logs, change history, and approvals linked to releases.",
+                "paragraph2": "Outcome: less time explaining, more time building.",
+                "color": {
+                    "border": "border-emerald-500",
+                    "dot": "before:bg-emerald-500",
+                    "ring": "group-open:ring-emerald-500/15"
+                }
+            },
+            {
+                "title": "Vendor & data-flow resilience",
+                "desc": "Third-party risk and data transfers are designed, not patched. Contracts, SCCs, TIAs, and service configurations align with how your stack actually works.",
+                "paragraph2": "Result: fewer production surprises and cleaner customer commitments.",
+                "color": {
+                    "border": "border-sky-500",
+                    "dot": "before:bg-sky-500",
+                    "ring": "group-open:ring-sky-500/15"
+                }
+            },
+            {
+                "title": "Embedded partner: law × code",
+                "desc": "You work with one boutique that exchanges directly with engineers and stakeholders. We translate regulator language into backlog items your team can ship.",
+                "paragraph2": "Why it matters: less friction, faster outcomes, and decisions your leadership can defend.",
+                "color": {
+                    "border": "border-neutral-600",
+                    "dot": "before:bg-neutral-600",
+                    "ring": "group-open:ring-neutral-600/15"
+                }
+            }
+        ]
+    },
+    "spotlight": {
+        "name": "Jhonathan Campos",
+        "role": "Founder — AI Governance Specialist, Lawyer & Software Engineer",
+        "bio": "AI Governance Specialist with a unique dual background as a Lawyer and Software Engineer. My mission is to empower companies and research institutions worldwide to confidently navigate the complex landscape of regulatory compliance.\n\nWith deep expertise in the AI Act, GDPR, ePrivacy Directive, ISO 42001, and Medical Device Regulation, I create compliance frameworks that not only meet legal requirements but also drive innovation and growth.\n\nMy multidisciplinary approach allows me to translate complex regulations into actionable strategies, design and implement compliance programs that mitigate risks, and ensure organizations remain compliant and competitive—while fostering seamless collaboration between legal and technical teams.",
+        "linkedin": "LinkedIn"
+    },
+    "cta": {
+        "title": "Avoid fines. Protect trust. Keep your business running.",
+        "body": "We create legal-technical foundations that let you grow in Europe with confidence.",
+        "button": "Talk to us"
+    },
+    "ourProcess": {
+        "eyebrow": "How we work",
+        "title": "Turning complex EU rules into clear competitive advantage",
+        "intro": "Compliance should enable growth. We align legal, technical, and product teams to reduce risk and unlock speed",
+        "viewProcess": "View detailed process",
+        "steps": {
+            "assess": {
+                "title": "Assess",
+                "text": "We map business model, risk appetite, data flows, and AI use cases to pinpoint obligations (AI Act, GDPR, sector rules) and surface quick wins vs. critical gaps. You get a concise findings brief and a prioritised plan with effort/impact/timelines."
+            },
+            "implement": {
+                "title": "Implement",
+                "text": "We co-create the controls that matter: AI policy, risk & human oversight, privacy by design, vendor governance, and approvals—plus an ISO/IEC 42001-aligned AI Management System, Annex IV technical documentation, DPIAs, and RoPA where needed."
+            },
+            "sustain": {
+                "title": "Sustain",
+                "text": "Before go-live we validate controls, align owners, and set KPIs. We run tabletop exercises, verify human-in-the-loop, and check transfer/vendor safeguards end-to-end. Handover includes an audit-ready pack and a pragmatic maintenance cadence."
+            }
+        }
+    },
+    "testimonial": {
+        "quote": "Comforma Studio went above and beyond our expectations, Jhonathan got personally in touch with us and follow the project very closely, making us feel very confident and sure we made the best choice. The results are outstanding and we managed to launch in Europe!"
+    }
+}

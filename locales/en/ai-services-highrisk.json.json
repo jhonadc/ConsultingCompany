@@ -1,0 +1,139 @@
+{
+    "hero": {
+        "title": "High-Risk AI System Assessment",
+        "tagline": "Your first step to full EU AI Act compliance",
+        "body": "Every AI system must be classified. We deliver a clear, defensible risk assessment for each model or system—plus concrete next steps if it is high-risk—so you avoid misclassification, delays, and fines."
+    },
+    "whyMatters": {
+        "title": "Why this matters",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Classification is mandatory",
+                "value": "Required by the AI Act",
+                "description": "Every system must be assessed; classification dictates all downstream obligations."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Misclassification is expensive",
+                "value": "Delays & procurement friction",
+                "description": "Wrong tier leads to wrong controls and potential market withdrawal."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Penalty exposure",
+                "value": "Avoid enforcement risk",
+                "description": "Get the decision and evidence right early to avoid revenue-scaled fines."
+            }
+        ]
+    },
+    "why": {
+        "eyebrow": "Why this assessment",
+        "title": "Why Conforma Studio",
+        "body": "Led by a lawyer and software engineer, with documentation you can show to procurement, auditors, and regulators.",
+        "features": [
+            {
+                "name": "Law × Engineering",
+                "desc": "We match regulatory definitions to real architectures, data flows, and model behavior."
+            },
+            {
+                "name": "Defensible outcomes",
+                "desc": "Clear reasoning, Annex references, and evidence links you can show."
+            },
+            {
+                "name": "Precision",
+                "desc": "Borderline cases handled. We flag gray areas and reclassification risks early."
+            },
+            {
+                "name": "Speed",
+                "desc": "Focused intake, fast iteration, final document ready for procurement and compliance."
+            },
+            {
+                "name": "Roadmap",
+                "desc": "A practical action plan covering documentation, risk management, testing, and notified-body path."
+            }
+        ]
+    },
+    "deliverables": {
+        "eyebrow": "What you get",
+        "title": "A professional, regulator-ready assessment",
+        "body": "A defensible classification with the legal basis, technical rationale, and evidence links—ready to live in your technical file and to answer procurement, auditors, and regulators.",
+        "items": [
+            {
+                "name": "Risk tier decision",
+                "desc": "Clear classification aligned to AI Act scope and definitions."
+            },
+            {
+                "name": "Annex mapping",
+                "desc": "Traceable mapping against Annex III high-risk categories."
+            },
+            {
+                "name": "Borderline analysis",
+                "desc": "Flags reclassification hazards and dependency risks."
+            },
+            {
+                "name": "Evidence list",
+                "desc": "Inputs reviewed, assumptions, and references you can show."
+            },
+            {
+                "name": "Action plan",
+                "desc": "If high-risk, stepwise obligations and owners."
+            },
+            {
+                "name": "Time to value",
+                "desc": "Fast turnaround from kickoff to signed deliverable."
+            }
+        ]
+    },
+    "process": {
+        "title": "How it works",
+        "steps": [
+            {
+                "title": "Step 1 — Kickoff and scoping (30–45 min)",
+                "desc": "We map purpose, users, data, model type, integrations, deployment, and markets served.",
+                "bullets": [
+                    "Roles: provider, deployer, user, importer",
+                    "Intended purpose and context of use",
+                    "Architecture and data flow overview"
+                ]
+            },
+            {
+                "title": "Step 2 — Legal–technical analysis",
+                "desc": "We test your facts against AI Act scope and Annex III categories; we assess borderline cases.",
+                "bullets": [
+                    "Scope & exclusions screening",
+                    "Annex III category tests",
+                    "Reclassification risk flags"
+                ]
+            },
+            {
+                "title": "Step 3 — Assessment document (draft → final)",
+                "desc": "You receive the full write-up with rationale and implications for obligations.",
+                "bullets": [
+                    "Risk tier decision and reasoning",
+                    "Evidence and assumptions list",
+                    "Review session and edits"
+                ]
+            },
+            {
+                "title": "Step 4 — Next steps if high-risk",
+                "desc": "A prioritized roadmap aligned to the Act’s obligations and your delivery plan.",
+                "bullets": [
+                    "Technical documentation (Annex IV)",
+                    "Risk management, testing, post-market",
+                    "Notified body & conformity path"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Avoid the million-euro mistake.",
+        "body": "Get a defensible classification and a practical roadmap if your system is high-risk. Built by a lawyer and software engineer, ready for procurement and regulators.",
+        "button": "Request assessment",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Back to AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

@@ -1,0 +1,148 @@
+{
+    "hero": {
+        "title": "Richtlinie zur KI-Nutzung (GPAI)",
+        "tagline": "Vom Regulierungsrisiko zum Unternehmenswert",
+        "body": "In Europa sind die Erwartungen an KI mit allgemeinem Zweck klar. Der EU-AI-Act und der Verhaltenskodex für GPAI verlangen, dass Unternehmen die Nutzung von KI steuern. Eine KI-Nutzungsrichtlinie ist die Basis: rechtlich abgestimmt, technisch fundiert und mit klaren Grenzen, Rollen und Kontrollen."
+    },
+    "whyNeed": {
+        "title": "Warum Sie sie brauchen",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Quasi verpflichtend",
+                "value": "Interne Governance gemäß AI Act erwartet",
+                "description": "Der AI Act erwartet Aufsicht, Transparenz, Risikominderung und klare Rollen. Eine dokumentierte Richtlinie zeigt, dass diese Erwartungen erfüllt werden."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Beschleuniger für Deals",
+                "value": "Kürzere Beschaffung & weniger Einwände",
+                "description": "Käufer verlangen Nachweise für verantwortungsvolle KI. Eine unterzeichnete Richtlinie belegt klare, durchsetzbare Kontrollen."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Risikobegrenzung",
+                "value": "Schützt Daten, IP und Compliance-Position",
+                "description": "Vermeidet Missbrauch vertraulicher Daten, verzerrte Ausgaben, Branchenverstöße und Durchsetzungsrisiken unter AI Act und DSGVO."
+            }
+        ]
+    },
+    "deliverables": {
+        "eyebrow": "Was Sie erhalten",
+        "title": "Eine Richtlinie, die regelkonforme Innovation ermöglicht",
+        "body": "Klarheit für Teams, Sicherheit für Kunden und eine belastbare Position gegenüber Auditoren und Regulatoren. Ein kleiner Aufwand mit großer Wirkung: schnellere Vertriebszyklen, weniger Eskalationen und sicherere KI-Nutzung.",
+        "items": [
+            {
+                "name": "Geltungsbereich & Definitionen",
+                "desc": "Was als KI gilt und wo sie in Ihrer Organisation Anwendung findet."
+            },
+            {
+                "name": "Zulässige Tools & Kontexte",
+                "desc": "Welche KI-Tools erlaubt sind – je Team und Use Case."
+            },
+            {
+                "name": "Transparenz & Attribution",
+                "desc": "Wann und wie die KI-Nutzung offengelegt wird."
+            },
+            {
+                "name": "Menschliche Aufsicht & Eskalation",
+                "desc": "Prüfungen vor Einsatz, Warnsignale und schnelle Kontaktwege."
+            },
+            {
+                "name": "Daten, IP & Vertraulichkeit",
+                "desc": "Regeln für Prompts, geschützte Daten und den Umgang mit Ausgaben."
+            },
+            {
+                "name": "Monitoring & Updates",
+                "desc": "Review-Kadenz, Trainingsnachweise und Change Control."
+            }
+        ]
+    },
+    "whyConforma": {
+        "eyebrow": "Warum Conforma",
+        "title": "Warum Conforma Studio",
+        "body": "Maßgeschneiderte Dokumente, die rechtliche Erwartungen mit technischer Realität und belastbaren Nachweisen verbinden.",
+        "features": [
+            {
+                "name": "Recht × Engineering",
+                "desc": "Wir übersetzen regulatorische Sprache in Kontrollen, die zu Ihren Architekturen, Datenflüssen und Teams passen."
+            },
+            {
+                "name": "Belastbare Ergebnisse",
+                "desc": "Klarer Scope, Rollen, Transparenzregeln, menschliche Aufsicht, Eskalationswege und Evidenz, die Sie vorzeigen können."
+            },
+            {
+                "name": "Präzision",
+                "desc": "Zugeschnitten auf Branche, Risikoprofil, Stack und Verträge. Ein Dokument, das in der Praxis funktioniert."
+            },
+            {
+                "name": "Enablement",
+                "desc": "Leitplanken beschleunigen die Einführung und nehmen Produkt- und Datenteams regulatorische Sorge."
+            },
+            {
+                "name": "Integration",
+                "desc": "Verknüpfungen zu Trainingslogs, Incident-Handling und Risikoregister für einfache Audits."
+            }
+        ]
+    },
+    "outline": {
+        "title": "Richtlinienstruktur",
+        "sections": [
+            {
+                "title": "1. Geltungsbereich und Ziele",
+                "desc": "Gilt für Mitarbeitende, Dienstleister und Lieferanten. Definiert GPAI und die Systeme im Scope – in Produkten und intern.",
+                "bullets": [
+                    "Definitionen und Referenzen",
+                    "Systeme/Prozesse im Scope",
+                    "Abgrenzungen (out-of-scope)"
+                ]
+            },
+            {
+                "title": "2. Rollen und Verantwortlichkeiten",
+                "desc": "Verantwortung für Anbieter, Verwender und Nutzer; RACI für Freigaben, Monitoring und Incidents.",
+                "bullets": [
+                    "Model Owner, Product Owner, Compliance Owner",
+                    "Freigabeinstanzen",
+                    "Kontaktpunkte und SLAs"
+                ]
+            },
+            {
+                "title": "3. Zulässige Nutzung & Kontrollen",
+                "desc": "Erlaubte Tools, Datensätze und Aufgaben je Team; verbotene Nutzungen; Datenregeln für Prompts und Ausgaben.",
+                "bullets": [
+                    "Tool-Allowlist und Bedingungen",
+                    "Umgang mit vertraulichen Daten",
+                    "Verbotene & eingeschränkte Nutzungen"
+                ]
+            },
+            {
+                "title": "4. Transparenz & menschliche Aufsicht",
+                "desc": "Nutzerhinweise, Attributionsregeln und Prüfschritte vor hochwirksamer Nutzung.",
+                "bullets": [
+                    "Auslöser & Formulierungen",
+                    "Attribution bei KI-unterstützten Inhalten",
+                    "Checklisten für Aufsicht"
+                ]
+            },
+            {
+                "title": "5. Monitoring, Training & Updates",
+                "desc": "Review-Rhythmus, Change Control und Verknüpfungen zu Trainings- und Risikoregistrierung.",
+                "bullets": [
+                    "Regelmäßige Reviews & Sign-offs",
+                    "Trainingsnachweise",
+                    "Integration ins Risikomanagement"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Geringer Aufwand, großer Hebel",
+        "body": "Die Kosten ohne KI-Nutzungsrichtlinie zeigen sich in Verzögerungen, Bußgeldern und entgangenen Chancen. Mit Richtlinie sind sie überschaubar – und zahlen sich durch schnellere Sales, weniger Exponierung, reibungslosere Einführung und eine vertrauenswürdige Marke aus.",
+        "button": "Richtlinie anfordern",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Zurück zum AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

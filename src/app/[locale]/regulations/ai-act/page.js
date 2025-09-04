@@ -1,10 +1,10 @@
+// src/app/[locale]/regulations/ai-act/page.jsx
 'use client'
 
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useMessages } from 'next-intl'
 
-import LanguageSwitcher from '@/components/LanguageSwitcher'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -14,6 +14,7 @@ import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 import { BookingForm } from '@/components/BookingForm'
 import { StylizedImage } from '@/components/StylizedImage'
 import { ColorDivider } from '@/components/ColorDivider'
+import LocaleLink from '@/components/LocaleLink'
 
 import imageLaptop from '@/images/laptop.jpg'
 import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
@@ -82,15 +83,15 @@ function OurProcess() {
                             </li>
                         ))}
 
-                        {/* Link processo detalhado */}
+                        {/* Link processo detalhado (INTERNAL → LocaleLink) */}
                         <li className="pt-2">
-                            <Link
+                            <LocaleLink
                                 href={t('ourProcess.viewProcessHref')}
                                 className="inline-flex items-center gap-1 text-md font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
                                 aria-label={t('ourProcess.viewProcess')}
                             >
                                 {t('ourProcess.viewProcess')}
-                            </Link>
+                            </LocaleLink>
                         </li>
                     </ul>
                 </div>
@@ -124,6 +125,7 @@ function SpotlightTestimonial() {
                                     <p className="mt-1 text-sm text-neutral-400">{t('spotlight.role')}</p>
                                 </div>
 
+                                {/* EXTERNAL link stays as Next/Link */}
                                 <Link
                                     href="https://www.linkedin.com/in/jhonathanadc"
                                     target="_blank"
@@ -164,10 +166,6 @@ export default function AiActPage() {
 
     return (
         <Container className="sm:mt-10 lg:mt-10">
-            {/* Switch de idioma */}
-            <div className="flex justify-end mb-4">
-                <LanguageSwitcher />
-            </div>
 
             <BackButton />
 
@@ -177,10 +175,10 @@ export default function AiActPage() {
                     <p className="text-md">{t('header.subtitle')}</p>
                 </SectionIntro>
 
-                {/* Regulations strip (com cores certas) */}
+                {/* Regulations strip */}
                 {facts.length > 0 && <RegulationsFactStrip facts={facts} />}
 
-                {/* What we offer – com tint/bar/ring/chip por card */}
+                {/* What we offer – cards now route with LocaleLink */}
                 {(t('offer.title', { default: '' }) || offerCards.length > 0) && (
                     <Container className="mt-10">
                         <FadeIn className="mt-5 mx-auto max-w-6xl">
@@ -194,7 +192,7 @@ export default function AiActPage() {
                                     {offerCards.map(({ href, label }, idx) => {
                                         const { tint, ring, chip, bar } = OFFER_PALETTE[idx % OFFER_PALETTE.length]
                                         return (
-                                            <a
+                                            <LocaleLink
                                                 key={href}
                                                 href={href}
                                                 className={[
@@ -239,7 +237,7 @@ export default function AiActPage() {
                                                 >
                                                     ➔
                                                 </span>
-                                            </a>
+                                            </LocaleLink>
                                         )
                                     })}
                                 </div>
@@ -276,7 +274,7 @@ export default function AiActPage() {
                     </Container>
                 )}
 
-                {/* Why now – com cores por item (emerald, indigo, amber) */}
+                {/* Why now */}
                 {(t('whyNow.title', { default: '' }) || whyItems.length > 0) && (
                     <Container className="mt-20">
                         <FadeIn className="mx-auto max-w-6xl">
@@ -307,7 +305,7 @@ export default function AiActPage() {
                     </Container>
                 )}
 
-                {/* CTA (mantive mt-18 conforme seu arquivo original) */}
+                {/* CTA (INTERNAL → LocaleLink) */}
                 {(t('cta.title', { default: '' }) || t('cta.body', { default: '' })) && (
                     <Container className="mt-18">
                         <div className="rounded-4xl bg-neutral-950 px-6 py-10 text-white sm:px-10 sm:py-10 lg:px-12 text-center">
@@ -316,12 +314,12 @@ export default function AiActPage() {
                                 <p className="mx-auto mt-4 max-w-2xl text-neutral-300">{t('cta.body')}</p>
                             )}
                             {t('cta.button', { default: '' }) && (
-                                <Link
+                                <LocaleLink
                                     href={t('cta.buttonHref', { default: '/contact' })}
                                     className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
                                 >
                                     {t('cta.button')}
-                                </Link>
+                                </LocaleLink>
                             )}
                         </div>
                     </Container>

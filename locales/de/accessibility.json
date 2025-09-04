@@ -1,0 +1,152 @@
+{
+    "header": {
+        "title": "Barrierefreiheits-Gesetz der EU",
+        "subtitle": "EU-weite Regeln, damit Produkte und Dienstleistungen für Menschen mit Behinderungen zugänglich sind."
+    },
+    "facts": [
+        {
+            "color": "#a855f7",
+            "title": "Anwendung",
+            "value": "Ab 28. Juni 2025",
+            "description": "In nationales Recht umgesetzt"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Betroffene",
+            "value": "Hersteller, Importeure, Händler",
+            "description": "Zudem Diensteanbieter in IKT, E-Commerce, Banking, Ticketing, Medien und Verkehr – öffentlich und privat."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Durchsetzung & Sanktionen",
+            "value": "Bußgelder je Mitgliedstaat",
+            "description": "Meist angelehnt an Verbraucherschutz-Regime"
+        }
+    ],
+    "obligations": {
+        "title": "Pflichten",
+        "items": [
+            {
+                "title": "Zentrale Barrierefreiheits-anforderungen erfüllen",
+                "text": "Produkte und Dienste wahrnehmbar, bedienbar und verständlich gestalten – nach harmonisierten EN-Normen, soweit verfügbar.",
+                "barClass": "bg-emerald-700"
+            },
+            {
+                "title": "Integration in Design & Entwicklung",
+                "text": "Barrierefreiheit in Design, Tests und Beschaffung verankern – vom Konzept bis zum Release.",
+                "barClass": "bg-amber-500"
+            },
+            {
+                "title": "Informationen & Anleitungen",
+                "text": "Produkt-/Dienstinfos, Nutzungsanleitungen und Supportkanäle in zugänglichen Formaten bereitstellen (digital & physisch).",
+                "barClass": "bg-indigo-600"
+            },
+            {
+                "title": "Konformität digitaler Dienste",
+                "text": "Websites, Apps, E-Commerce und SB-Terminals müssen WCAG 2.1 AA erfüllen.",
+                "barClass": "bg-pink-600"
+            },
+            {
+                "title": "Beschaffung & Lieferkette",
+                "text": "Barrierefreiheit vertraglich verlangen und Drittprodukte barrierefrei integrieren.",
+                "barClass": "bg-cyan-600"
+            },
+            {
+                "title": "Dokumentation & Konformitätsbewertung",
+                "text": "Technische Dokumentation, Konformitätserklärungen und Nachweise für Behörden und Kunden vorhalten.",
+                "barClass": "bg-yellow-600"
+            }
+        ],
+        "more": "Und mehr"
+    },
+    "offer": {
+        "title": "Unser Angebot",
+        "subtitle": "End-to-end maßgeschneiderte Programme; teils abhängig von Vorphasen (z. B. benötigen Digital-Audits einen Asset-Inventar).",
+        "cards": [
+            {
+                "title": "Leitung Barrierefreiheits-Compliance",
+                "desc": "Wir übernehmen Strategie, Schulung, Design-Reviews und die Kommunikation mit Aufsichtsbehörden und Kunden.",
+                "cta": "Mit Expert:in sprechen"
+            },
+            {
+                "title": "EU-Marktzugang-Readiness",
+                "desc": "Produkte & Services für den EU-Markt vorbereiten: EAA-Abgleich, Lückenschluss, Konformitätsunterlagen.",
+                "cta": "EU-Launch planen"
+            },
+            {
+                "title": "Accessibility-Gap-Assessment",
+                "desc": "Schnelle Bewertung von Websites, Apps und Plattformen gegen EAA mit umsetzbarem Maßnahmenplan.",
+                "cta": "Gap-Check starten"
+            },
+            {
+                "title": "WCAG-2.1-AA-Sprint",
+                "desc": "Websites, Apps und Shops zügig auf WCAG 2.1 AA bringen – Design, Code und Content.",
+                "cta": "Jetzt barrierefrei machen"
+            },
+            {
+                "title": "Zugängliche digitale Dokumente",
+                "desc": "Nutzerhandbücher, Support-Flows und Kommunikation in zugänglichen Formaten.",
+                "cta": "Dokumente erstellen"
+            },
+            {
+                "title": "Beschaffungs-Toolkit Barrierefreiheit",
+                "desc": "Ausschreibungen, Vertragsklauseln und Lieferantenprüfungen für digitale Dienste.",
+                "cta": "Lieferanten ausrichten"
+            },
+            {
+                "title": "Konformitätsakte & Erklärung",
+                "desc": "Barrierefreiheits-Erklärung, Technische Akte und Konformitätserklärungen erstellen.",
+                "cta": "Akte vorbereiten"
+            },
+            {
+                "title": "Laufendes Accessibility-Monitoring",
+                "desc": "Automatisches und manuelles Monitoring für dauerhafte EAA-Konformität.",
+                "cta": "Konform bleiben"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Warum jetzt",
+        "items": [
+            {
+                "k": "Pflicht ab Juni 2025",
+                "v": "Risiko von Bußgeldern, Produktrücknahme oder Marktverlust."
+            },
+            {
+                "k": "Vorteil in Beschaffungen",
+                "v": "Öffentliche und private Einkäufer fordern Nachweise zur Barrierefreiheit."
+            },
+            {
+                "k": "Marke & Vertrauen",
+                "v": "Zugängliche Angebote erweitern Reichweite und reduzieren Beschwerden."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "Unsere Arbeitsweise",
+        "steps": [
+            {
+                "t": "Diagnose",
+                "d": "Fokussiertes Audit von Produkten, Diensten und digitalen Assets."
+            },
+            {
+                "t": "Design",
+                "d": "Gemeinsam barrierefreie Designs, Beschaffungsklauseln und Compliance-Workflows entwickeln."
+            },
+            {
+                "t": "Umsetzen & Nachweisen",
+                "d": "Maßnahmen umsetzen, Teams schulen, Nachweispakete erstellen."
+            },
+            {
+                "t": "Absichern",
+                "d": "Regelmäßige Re-Checks zur dauerhaften Konformität."
+            }
+        ],
+        "processLinkLabel": "Unseren vollständigen Prozess ansehen"
+    },
+    "cta": {
+        "title": "Erfüllen. Einbinden. Märkte erweitern.",
+        "body": "Wir entwickeln EAA-Compliance-Programme, die zu Ihrer Organisation passen und belastbare Nachweise liefern.",
+        "button": "Kontakt aufnehmen"
+    }
+}

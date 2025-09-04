@@ -8,10 +8,9 @@ import {
   useRef,
   useState,
 } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -19,6 +18,9 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
+
+import LanguageSwitcher from '@/components/LanguageSwitcher'
+import LocaleLink from '@/components/LocaleLink'
 
 const RootLayoutContext = createContext(null)
 
@@ -62,7 +64,7 @@ function Header({
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link
+        <LocaleLink
           href="/"
           aria-label="Home"
           onMouseEnter={() => setLogoHovered(true)}
@@ -86,17 +88,27 @@ function Header({
             invert={invert}
             filled={logoHovered}
           />
-        </Link>
-        <div className="flex items-center gap-x-8">
-          {/* DESKTOP: button stays; ensure hidden on mobile even if Button ignores className */}
+        </LocaleLink>
+
+        <div className="flex items-center gap-x-4 sm:gap-x-8">
+          {/* Language Switcher in navbar */}
+          <div className={clsx(invert ? 'text-white' : 'text-neutral-950')}>
+            <LanguageSwitcher />
+          </div>
+
+          {/* DESKTOP: primary CTA */}
           <div className="hidden sm:block">
-            <Button href="/contact" invert={invert}>
-              Contact us
-            </Button>
+            {/* If your <Button> supports href, wrap with LocaleLink for locale-aware routing */}
+            <LocaleLink href="/contact" className="inline-block">
+              <Button asChild invert={invert}>
+                {/* asChild lets Button render the child anchor without double anchors */}
+                <span>Contact us</span>
+              </Button>
+            </LocaleLink>
           </div>
 
           {/* MOBILE: icon-only contact link */}
-          <Link
+          <LocaleLink
             href="/contact"
             aria-label="Contact us"
             className={clsx(
@@ -106,7 +118,7 @@ function Header({
             )}
           >
             <EnvelopeIcon className="h-6 w-6" />
-          </Link>
+          </LocaleLink>
 
           <button
             ref={toggleRef}
@@ -135,8 +147,6 @@ function Header({
   )
 }
 
-/* ...everything below remains unchanged... */
-
 function NavigationRow({ children }) {
   return (
     <div className="even:mt-px sm:bg-neutral-950">
@@ -149,13 +159,13 @@ function NavigationRow({ children }) {
 
 function NavigationItem({ href, children }) {
   return (
-    <Link
+    <LocaleLink
       href={href}
       className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
     >
       {children}
       <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
-    </Link>
+    </LocaleLink>
   )
 }
 

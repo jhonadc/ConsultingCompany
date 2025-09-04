@@ -1,15 +1,21 @@
 // src/app/[locale]/layout.jsx
 import { NextIntlClientProvider } from 'next-intl'
-import { setRequestLocale, getMessages } from 'next-intl/server'
+import { getMessages, setRequestLocale } from 'next-intl/server'
 
-// ⚠️ No <html>, no <Shell>, no Footer here.
-// This wrapper only provides i18n to pages under /[locale]/...
+// Import your big client-side RootLayout (the one with Header, Navigation, Footer, etc.)
+import { RootLayout as AppShell } from '@/components/RootLayout'
+
+// This layout is a Server Component
 export default async function LocaleLayout({ children, params: { locale } }) {
-    setRequestLocale(locale)                 // ensure correct locale for this request
-    const messages = await getMessages()     // resolved via src/i18n/request.js
+    // Ensure locale is locked for this request
+    setRequestLocale(locale)
+
+    // Load all messages for this locale (configured in next-intl)
+    const messages = await getMessages()
+
     return (
         <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
+            <AppShell>{children}</AppShell>
         </NextIntlClientProvider>
     )
 }

@@ -1,13 +1,12 @@
-// src/components/BackButton.jsx
-import Link from 'next/link'
+import LocaleLink from '@/components/LocaleLink'
 
-export function BackButton({ href = '/regulations', label = '← Back to Regulations' }) {
+export function BackButton() {
   return (
-    <Link
-      href={href}
-      className="inline-block mb-4 text-sm text-neutral-600 hover:underline"
+    <LocaleLink
+      href="/regulations"
+      className="inline-flex items-center text-sm font-medium text-neutral-600 hover:text-neutral-900"
     >
-      {label}
-    </Link>
+      ← Back to regulations
+    </LocaleLink>
   )
 }

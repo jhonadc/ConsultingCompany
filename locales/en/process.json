@@ -1,0 +1,91 @@
+{
+    "pageIntro": {
+        "eyebrow": "Our process",
+        "title": "How we work",
+        "subtitle": "Compliance should enable growth. Our process aligns legal, technical, and product teams to reduce risk and unlock speed — without bureaucracy."
+    },
+    "discover": {
+        "title": "Assess",
+        "p1": "We begin with a structured assessment to understand your business model, risk appetite, and growth plans. Together we map processes and data flows to see where compliance can enable the product — not slow it down.",
+        "p2": "Through focused stakeholder sessions we inventory AI use cases and data processing, identify applicable obligations (AI Act, GDPR, ePrivacy, and sector rules), and surface quick wins alongside critical gaps.",
+        "p3": "You receive a concise findings brief and a prioritized implementation plan with effort, impact, and timeline estimates.",
+        "included": "Included in this phase",
+        "tags": [
+            "Stakeholder interviews",
+            "System & data inventory",
+            "Regulatory mapping (AI Act, GDPR)",
+            "Risk screening & DPIA scoping",
+            "Gap analysis",
+            "Prioritized roadmap"
+        ]
+    },
+    "build": {
+        "title": "Implement",
+        "p1": "Using the roadmap, we implement the controls and documentation that matter: AI policy, risk management and human oversight, data protection by design, vendor governance, and clear approval workflows.",
+        "p2": "We set up a lightweight AI Management System (ISO/IEC 42001–aligned), produce the technical documentation and risk-management file (Annex IV), and prepare DPIAs and records of processing where relevant. Work runs in short sprints with weekly check-ins and visible progress.",
+        "p3": "Your team keeps ownership — we co-create templates, automate where possible, and embed the process into your existing tools so it scales with you.",
+        "quote": {
+            "author": "General Counsel",
+            "role": "Growth-stage SaaS",
+            "text": "Clear milestones, zero surprises, and audit-ready documents our external auditors actually used."
+        }
+    },
+    "deliver": {
+        "title": "Sustain",
+        "p1": "Before go-live we validate controls, align owners, and finalize operating procedures and KPIs. The goal is durability: compliance that holds under real-world pressure.",
+        "p2": "We run incident tabletop exercises, verify human-in-the-loop oversight, and check vendor and data-transfer safeguards end-to-end.",
+        "p3": "At handover you receive an audit-ready package and a pragmatic maintenance plan with cadences and checklists, plus options for ongoing support.",
+        "included": "Included in this phase",
+        "list": [
+            {
+                "title": "Validation & assurance",
+                "text": "Control testing, documentation review, and traceability checks with evidence indexed for audits."
+            },
+            {
+                "title": "Governance infrastructure",
+                "text": "Registers, policies, training, ticketing workflows, and versioned templates wired into your tools."
+            },
+            {
+                "title": "Support",
+                "text": "Ongoing updates for regulatory change, ad-hoc reviews, and on-call help during audits and client diligence."
+            }
+        ]
+    },
+    "values": {
+        "eyebrow": "Our values",
+        "title": "Pragmatic, rigorous, human",
+        "subtitle": "We combine legal precision with engineering pragmatism. Vendor-neutral, evidence-based, and focused on outcomes your business can measure — not paperwork for its own sake.",
+        "items": [
+            {
+                "title": "Meticulous",
+                "desc": "Audit-ready records, clear rationale, and end-to-end traceability across decisions, models, and data.",
+                "dot": "before:bg-emerald-500"
+            },
+            {
+                "title": "Efficient",
+                "desc": "Time-boxed sprints, right-sized deliverables, and reusable assets that lower the total cost of compliance.",
+                "dot": "before:bg-indigo-500"
+            },
+            {
+                "title": "Adaptable",
+                "desc": "Frameworks that fit your sector, size, and risk profile — never one-size-fits-all.",
+                "dot": "before:bg-amber-500"
+            },
+            {
+                "title": "Honest",
+                "desc": "Direct advice, transparent trade-offs, and clear no-go calls when risks outweigh rewards.",
+                "dot": "before:bg-emerald-500"
+            },
+            {
+                "title": "Loyal",
+                "desc": "Partnership mindset: we safeguard your reputation and help teams operate confidently under scrutiny.",
+                "dot": "before:bg-indigo-500"
+            },
+            {
+                "title": "Innovative",
+                "desc": "We track regulatory change, adversarial trends, and new standards to keep your program future-proof.",
+                "dot": "before:bg-amber-500"
+            }
+        ]
+    }
+}

@@ -1,0 +1,179 @@
+{
+    "header": {
+        "title": "GDPR (RGPD)",
+        "subtitle": "Regulamento Geral de Proteção de Dados da UE: privacidade para dados pessoais."
+    },
+    "facts": [
+        {
+            "color": "#2563eb",
+            "title": "Em vigor",
+            "value": "25 de maio de 2018",
+            "description": "Aplicável em toda a UE"
+        },
+        {
+            "color": "#f59e0b",
+            "title": "Quem abrange",
+            "value": "Organizações que processam dados pessoais na UE",
+            "description": "Também empresas fora da UE que oferecem bens/serviços para pessoas na UE ou monitoram o seu comportamento."
+        },
+        {
+            "color": "#e11d48",
+            "title": "Teto de penalidade",
+            "value": "Até €20 milhões ou 4% do faturamento global",
+            "description": "Para infrações graves"
+        }
+    ],
+    "obligations": {
+        "title": "Obrigações",
+        "items": [
+            {
+                "title": "Implementar Medidas Proporcionais ao Risco",
+                "text": "Aplicar e manter salvaguardas técnicas e organizacionais proporcionais aos riscos do tratamento, garantindo eficácia na prática."
+            },
+            {
+                "title": "Manter Registros das Atividades de Tratamento (RoPA)",
+                "text": "Manter um registro formal de finalidades, categorias de dados, destinatários, prazos de retenção e medidas de segurança, conforme o Artigo 30 do RGPD."
+            },
+            {
+                "title": "Realizar Avaliações de Impacto (DPIA)",
+                "text": "Realizar e documentar DPIAs antes de iniciar qualquer tratamento de alto risco, garantindo mitigação antes da entrada em produção."
+            },
+            {
+                "title": "Garantir Governança de Processadores & Fornecedores",
+                "text": "Usar contratos conformes, monitorar desempenho e manter supervisão de processadores e sub-processadores, conforme o Artigo 28 do RGPD."
+            },
+            {
+                "title": "Privacidade por Concepção & Padrão",
+                "text": "Integrar salvaguardas de privacidade em sistemas, processos e produtos desde o início, incorporando conformidade no design."
+            },
+            {
+                "title": "Demonstrar Prestação de Contas",
+                "text": "Manter evidências de conformidade e monitoramento contínuo para comprovar aderência à lei a qualquer momento."
+            }
+        ]
+    },
+    "offer": {
+        "title": "O que oferecemos",
+        "subtitle": "Serviços focados e de alto impacto que incorporam privacidade por concepção e geram evidências prontas para auditoria.",
+        "cards": [
+            {
+                "title": "Encarregado de Proteção de Dados (DPO) Externo",
+                "desc": "Atuamos como seu DPO independente: aconselhamos a gestão, monitoramos conformidade, treinamos equipes, supervisionamos DPIAs, dialogamos com autoridades e reportamos riscos com planos práticos.",
+                "cta": "Fale com um DPO",
+                "href": "/services/gdpr-dpo",
+                "span": "lg:col-span-3",
+                "border": "border-l-2 border-pink-500",
+                "ring": "hover:ring-pink-200"
+            },
+            {
+                "title": "Entrada na UE & Prontidão para Clientes",
+                "desc": "Deixe seu negócio pronto para contratos na UE: bases legais, avisos de privacidade, avaliações de transferência, cláusulas de fornecedores e dossiês de evidências para due diligence.",
+                "cta": "Planejar entrada na UE",
+                "href": "/services/eu-market-entry",
+                "span": "lg:col-span-3",
+                "border": "border-l-2 border-amber-500",
+                "ring": "hover:ring-amber-200"
+            },
+            {
+                "title": "Programa de Registros (RoPA)",
+                "desc": "Estabelecemos seus Registros do Artigo 30 — o que você trata, por quê, com quem, onde, retenção e segurança — e um ritual leve para mantê-los atualizados.",
+                "cta": "Discutir seu RoPA",
+                "href": "/services/ropa",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-emerald-500",
+                "ring": "hover:ring-emerald-200"
+            },
+            {
+                "title": "DPIA — Avaliação Específica",
+                "desc": "DPIA minuciosa para tratamento de alto risco: escopo, entrevistas, análise de risco alinhada ao seu negócio, desenho de mitigação e documentação de aprovação.",
+                "cta": "Planejar sua DPIA",
+                "href": "/services/dpia",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-sky-500",
+                "ring": "hover:ring-sky-200"
+            },
+            {
+                "title": "Preparação para Incidentes & Vazamentos",
+                "desc": "Playbook de resposta em 72 horas com papéis, fluxos de decisão e modelos de notificação. Treinamos equipes e configuramos as evidências necessárias.",
+                "cta": "Fortalecer preparação",
+                "href": "/services/incident-readiness",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-violet-500",
+                "ring": "hover:ring-violet-200"
+            },
+            {
+                "title": "Modelo de Retenção & Exclusão",
+                "desc": "Definimos retenções por categoria de dados, implementamos rotinas de exclusão e registros de auditoria para comprovar execução.",
+                "cta": "Desenhar seu modelo",
+                "href": "/services/retention-deletion",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-cyan-500",
+                "ring": "hover:ring-cyan-200"
+            },
+            {
+                "title": "Supervisão de Processadores & Fornecedores",
+                "desc": "Onboarding prático e revisões periódicas: requisitos base, cláusulas do Art. 28, avaliações de transferência e uma cadência de supervisão adequada.",
+                "cta": "Implantar supervisão",
+                "href": "/services/vendor-oversight",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-rose-500",
+                "ring": "hover:ring-rose-200"
+            },
+            {
+                "title": "RGPD para Sistemas de IA",
+                "desc": "Alinhe funcionalidades de IA ao RGPD: mapeamento de papéis, bases legais, transparência, atualização de RoPA, gatilhos de DPIA e diretrizes de uso.",
+                "cta": "Alinhar IA ao RGPD",
+                "href": "/services/gdpr-for-ai",
+                "span": "lg:col-span-2",
+                "border": "border-l-2 border-indigo-500",
+                "ring": "hover:ring-indigo-200"
+            }
+        ]
+    },
+    "whyNow": {
+        "title": "Por que agora",
+        "items": [
+            {
+                "k": "Fiscalização ativa",
+                "v": "Autoridades seguem abrindo investigações, emitindo ordens e multas; clientes exigem evidências de controles."
+            },
+            {
+                "k": "Deveres pré-lançamento",
+                "v": "Tratamentos de alto risco exigem DPIA antes da implantação; precisa ser programada e evidenciada para evitar atrasos e não conformidades."
+            },
+            {
+                "k": "Escrutínio sobre transferências",
+                "v": "Cláusulas-padrão exigem avaliações e salvaguardas documentadas; parceiros pedem provas em due diligence."
+            }
+        ]
+    },
+    "howWeWork": {
+        "title": "Como trabalhamos",
+        "steps": [
+            {
+                "t": "Diagnosticar",
+                "d": "Descoberta focada em recursos, fluxos de dados e fornecedores para estabelecer a prática real."
+            },
+            {
+                "t": "Desenhar",
+                "d": "Co-criar controles e fluxos sob medida (minimização, cadência de DPIA, intake de fornecedores, playbooks de incidentes)."
+            },
+            {
+                "t": "Implantar & Evidenciar",
+                "d": "Incorporar mudanças com as equipes e produzir dossiês que sustentem auditorias e revisões de clientes."
+            },
+            {
+                "t": "Assegurar",
+                "d": "Ajustes trimestrais: atualizar RoPA, reavaliar transferências, spot checks e trilhas de mudança para provar controle ao longo do tempo."
+            }
+        ],
+        "processLinkLabel": "Veja nosso processo completo de conformidade",
+        "processLinkHref": "/process"
+    },
+    "cta": {
+        "title": "Evite multas. Proteja a confiança. Mantenha o negócio.",
+        "body": "Desenhamos controles de RGPD que se encaixam na sua organização e geram evidências confiáveis.",
+        "button": "Fale conosco",
+        "buttonHref": "/contact"
+    }
+}
