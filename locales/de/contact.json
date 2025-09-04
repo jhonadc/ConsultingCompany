@@ -1,0 +1,40 @@
+{
+    "contact": {
+        "header": {
+            "eyebrow": "Kontakt",
+            "title": "Lassen Sie uns zusammenarbeiten",
+            "subtitle": "Wir freuen uns auf Ihre Nachricht."
+        },
+        "form": {
+            "title": "Anfragen",
+            "fields": {
+                "name": "Name",
+                "email": "E-Mail",
+                "company": "Unternehmen",
+                "phone": "Telefon",
+                "message": "Nachricht"
+            },
+            "cta": {
+                "primary": "Lassen Sie uns zusammenarbeiten",
+                "sending": "Wird gesendet…"
+            },
+            "requiredNote": "Pflichtfelder",
+            "privacy": {
+                "before": "Ihre Angaben verwenden wir ausschließlich zur Beantwortung Ihrer Anfrage und verarbeiten sie gemäß unserer",
+                "link": "Datenschutzerklärung"
+            },
+            "status": {
+                "success": "Danke! Wir melden uns in Kürze.",
+                "error": "Entschuldigung, es ist ein Fehler aufgetreten. Bitte schreiben Sie uns direkt an {email}."
+            }
+        },
+        "details": {
+            "title": "Unser Büro",
+            "desc": "Sie bevorzugen ein persönliches Gespräch? Kein Problem! Schreiben Sie uns, wir treffen uns gerne im Büro oder irgendwo in Berlin.",
+            "emailUs": "Schreiben Sie uns",
+            "channels": {
+                "general": "Allgemein"
+            }
+        }
+    }
+}

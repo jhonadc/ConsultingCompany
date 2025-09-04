@@ -1,0 +1,30 @@
+{
+    "booking": {
+        "header": {
+            "eyebrow": "Booking",
+            "title": "Request your session",
+            "intro": "Share your goals with us and discover how we can guide you through complex compliance requirements."
+        },
+        "fields": {
+            "fullName": "Full name",
+            "workEmail": "Work email"
+        },
+        "placeholders": {
+            "company": "Company",
+            "phone": "123 456 789",
+            "context": "Context, goals, preferred dates"
+        },
+        "privacy": {
+            "before": "By submitting this form, you consent to the processing of your personal data for the purpose of handling your request, in accordance with our",
+            "link": "Privacy Notice"
+        },
+        "cta": {
+            "primary": "Send request",
+            "sending": "Sending…"
+        },
+        "status": {
+            "success": "Thanks! We will get back to you shortly.",
+            "error": "Sorry, something went wrong. Please email us directly."
+        }
+    }
+}

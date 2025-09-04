@@ -1,11 +1,26 @@
+// src/components/JhonathanCard.jsx
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import { useLocale, useMessages, useTranslations } from 'next-intl'
 
 export function JhonathanCard({ name, role, image, linkedinUrl }) {
   const [open, setOpen] = useState(false)
   const panelRef = useRef(null)
+
+  // i18n
+  const t = useTranslations()           // flat message tree
+  const messages = useMessages() || {}  // to read arrays/objects
+  const m = messages.jcard || {}
+  const locale = useLocale()
+
+  const tags = m.tags || []
+  const results = m.sections?.results?.items || []
+  const deliverables = m.sections?.deliver?.items || []
+  const roles = m.sections?.roles?.items || []
+  const credentials = m.sections?.credentials?.items || []
+  const snapshot = m.snapshot || [] // paragraphs
 
   // Lock background scroll + Esc to close
   useEffect(() => {
@@ -27,7 +42,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
       <button
         onClick={() => setOpen(true)}
         className="group relative block w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 ring-1 ring-neutral-950/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800"
-        aria-label={`${name} — open profile`}
+        aria-label={t('jcard.aria.openProfile', { name })}
       >
         <Image
           alt={name}
@@ -65,7 +80,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
               <button
                 onClick={() => setOpen(false)}
                 className="absolute right-3 top-3 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 bg-white/90 text-neutral-800 shadow-sm hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900/20"
-                aria-label="Close"
+                aria-label={t('jcard.actions.close')}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
@@ -94,7 +109,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                       href="mailto:jhonathanaugusto@gmail.com"
                       className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800"
                     >
-                      Email
+                      {t('jcard.actions.email')}
                       <span
                         aria-hidden
                         className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white/70 text-white"
@@ -102,7 +117,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                         ➔
                       </span>
                     </a>
-                    {/* Optional LinkedIn — keep muted if re-enabled
+
                     {linkedinUrl && (
                       <a
                         href={linkedinUrl}
@@ -110,7 +125,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                         rel="noreferrer"
                         className="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-50"
                       >
-                        LinkedIn
+                        {t('jcard.actions.linkedin')}
                         <span
                           aria-hidden
                           className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-neutral-300 text-neutral-900"
@@ -118,7 +133,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                           ↗
                         </span>
                       </a>
-                    )} */}
+                    )}
                   </div>
                 </aside>
 
@@ -134,26 +149,21 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
 
                   {/* Quick focus tags */}
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {['EU AI Act', 'ISO 42001', 'GDPR', 'Model security'].map((t) => (
+                    {tags.map((tag) => (
                       <span
-                        key={t}
+                        key={tag}
                         className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50/60 px-2.5 py-1 text-xs font-medium text-emerald-700"
                       >
-                        {t}
+                        {tag}
                       </span>
                     ))}
                   </div>
 
-                  {/* Snapshot — template-aligned text */}
+                  {/* Snapshot */}
                   <div className="mt-6 space-y-3 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-600">
-                    <p>
-                      Senior <span className="font-semibold">AI Governance & GDPR specialist</span> with a dual background as a{' '}
-                      <span className="font-semibold">Lawyer</span> and <span className="font-semibold">Software Engineer</span>. I turn the EU AI Act,
-                      ISO&nbsp;42001 and GDPR into <span className="font-semibold">operational advantage</span>—controls that work in production and stand up to audit.
-                    </p>
-                    <p>
-                      <span className="font-semibold">Specialization:</span> Compliance strategy, model-risk governance, and secure ML pipelines for high-stakes environments.
-                    </p>
+                    {snapshot.map((p, i) => (
+                      <p key={i}>{p}</p>
+                    ))}
                   </div>
                 </section>
               </div>
@@ -164,67 +174,45 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                   {/* RESULTS */}
                   <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
                     <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
-                      Selected Results
+                      {t('jcard.sections.results.title')}
                     </h3>
                     <ul className="mt-3 space-y-3 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700">
-                      <li>
-                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                          <span className="font-semibold">krisenchat — Senior AI Compliance Manager:</span> led AI Act implementation, integrated ISO practices, and
-                          delivered a governance program credited with a <span className="font-semibold">~90% reduction in regulatory risk exposure</span>.
-                        </span>
-                      </li>
-                      <li>
-                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                          <span className="font-semibold">Zuse Institute Berlin (ZIB) — AI Compliance Framework Developer:</span> built the Institute’s first <span className="font-semibold">AI &amp; Data Governance Framework</span>,
-                          created an <span className="font-semibold">MLOps monitoring framework</span> for fairness/metrics, and engineered a <span className="font-semibold">neural network</span> for a research project
-                          whose initial findings were <span className="font-semibold">featured in Nature</span>; co-authoring papers on ML and the AI Act.
-                        </span>
-                      </li>
-                      <li>
-                        <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                          <span className="font-semibold">Charité – Universitätsmedizin Berlin:</span> data science &amp; ML for health tech; helped secure investment after accelerator pitch.
-                        </span>
-                      </li>
+                      {results.map((item, i) => (
+                        <li key={i}>
+                          <span className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
+                            <span className="font-semibold">{item.title}</span>{' '}{item.desc}
+                          </span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
                   {/* WHAT I DELIVER */}
                   <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
                     <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
-                      What I Deliver
+                      {t('jcard.sections.deliver.title')}
                     </h3>
                     <ul className="mt-3 grid gap-2 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700 md:grid-cols-2">
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                        <span className="font-semibold">AI Act programs:</span> risk classification, Annex IV technical docs, human oversight, post-market monitoring.
-                      </li>
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                        <span className="font-semibold">GDPR for AI:</span> DPIAs, data mapping, vendor governance (Art. 28), deletion &amp; retention controls, privacy-by-design.
-                      </li>
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                        <span className="font-semibold">ISO 42001 (AIMS):</span> governance design, KPIs, accountable owners, and audit-ready evidence.
-                      </li>
-                      <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80">
-                        <span className="font-semibold">Model security:</span> adversarial robustness, data-poisoning hygiene, and supply-chain controls for ML.
-                      </li>
+                      {deliverables.map((line, i) => (
+                        <li
+                          key={i}
+                          className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-emerald-500/80"
+                        >
+                          {line}
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
                   {/* ROLES */}
                   <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
                     <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
-                      Recent Roles
+                      {t('jcard.sections.roles.title')}
                     </h3>
                     <div className="mt-3 grid gap-2 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700">
-                      {[
-                        ['Senior AI Compliance Manager', 'krisenchat (2025–present)'],
-                        ['Compliance Manager', 'krisenchat (2024–2025)'],
-                        ['AI Compliance Framework Developer / AI Researcher', 'Zuse Institute Berlin (2024–present)'],
-                        ['Software Engineering (Freelance)', 'Charité – Universitätsmedizin Berlin (2023)'],
-                        ['Data Analyst & Full-stack (Freelance)', 'Bettencourt Financial Group (2023–2024)'],
-                        ['Software Engineer (Working Student)', 'twigbit technologies (2022–2023)'],
-                      ].map(([t, org]) => (
-                        <p key={t}>
-                          <span className="font-semibold">{t}</span>, {org}
+                      {roles.map(([title, org], i) => (
+                        <p key={i}>
+                          <span className="font-semibold">{title}</span>, {org}
                         </p>
                       ))}
                     </div>
@@ -233,14 +221,12 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                   {/* CREDENTIALS */}
                   <div className="rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500/30">
                     <h3 className="relative pl-3 text-sm font-semibold uppercase tracking-wide text-neutral-700 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500/80">
-                      Credentials
+                      {t('jcard.sections.credentials.title')}
                     </h3>
                     <div className="mt-3 grid gap-2 text-base sm:text-lg leading-7 sm:leading-8 text-neutral-700">
-                      <p><span className="font-semibold">CODE University of Applied Sciences (2025)</span> — Software Engineering (AI/ML, Security)</p>
-                      <p><span className="font-semibold">Administrative Law Specialization</span> — Compliance &amp; Governance</p>
-                      <p><span className="font-semibold">Law School - University of Sao Paulo (2010)</span> — Bachelor of Law</p>
-                      <p>DeepLearning.AI TensorFlow Developer Specialization; CNNs in TensorFlow (Coursera)</p>
-                      <p>Languages: Portuguese, English, German</p>
+                      {credentials.map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -253,7 +239,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                     rel="noreferrer"
                     className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white hover:bg-neutral-800"
                   >
-                    Book a 20-min meeting
+                    {t('jcard.actions.book')}
                     <span
                       aria-hidden
                       className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white/70 text-white"
@@ -268,7 +254,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                       rel="noreferrer"
                       className="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-50"
                     >
-                      Connect on LinkedIn
+                      {t('jcard.actions.connect')}
                       <span
                         aria-hidden
                         className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-neutral-300 text-neutral-900"
@@ -280,7 +266,7 @@ export function JhonathanCard({ name, role, image, linkedinUrl }) {
                 </div>
 
                 <p className="mt-6 text-xs text-neutral-500">
-                  Close with outside click, press <kbd className="rounded border px-1">Esc</kbd>, or tap ×.
+                  {t('jcard.aria.hint')}
                 </p>
               </div>
             </div>

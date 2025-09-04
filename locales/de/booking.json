@@ -1,0 +1,30 @@
+{
+    "booking": {
+        "header": {
+            "eyebrow": "Buchung",
+            "title": "Sitzung anfragen",
+            "intro": "Teilen Sie uns Ihre Ziele mit und erfahren Sie, wie wir Sie durch komplexe Compliance-Anforderungen begleiten können."
+        },
+        "fields": {
+            "fullName": "Vollständiger Name",
+            "workEmail": "Geschäftliche E-Mail"
+        },
+        "placeholders": {
+            "company": "Unternehmen",
+            "phone": "123 456 789",
+            "context": "Kontext, Ziele, bevorzugte Termine"
+        },
+        "privacy": {
+            "before": "Mit dem Absenden dieses Formulars willigen Sie in die Verarbeitung Ihrer personenbezogenen Daten zum Zweck der Bearbeitung Ihrer Anfrage ein, gemäß unserer",
+            "link": "Datenschutzerklärung"
+        },
+        "cta": {
+            "primary": "Anfrage senden",
+            "sending": "Wird gesendet…"
+        },
+        "status": {
+            "success": "Vielen Dank! Wir melden uns in Kürze.",
+            "error": "Entschuldigung, es ist ein Fehler aufgetreten. Bitte schreiben Sie uns direkt per E-Mail."
+        }
+    }
+}

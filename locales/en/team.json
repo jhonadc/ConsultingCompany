@@ -1,0 +1,93 @@
+{
+    "jcard": {
+        "aria": {
+            "openProfile": "{name} — open profile",
+            "close": "Close",
+            "hint": "Close with outside click, press Esc, or tap ×."
+        },
+        "actions": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "book": "Book a 20-min meeting",
+            "connect": "Connect on LinkedIn",
+            "close": "Close"
+        },
+        "tags": [
+            "EU AI Act",
+            "ISO 42001",
+            "GDPR",
+            "Model security"
+        ],
+        "snapshot": [
+            "Senior AI Governance & GDPR specialist with a dual background as a Lawyer and Software Engineer. I turn the EU AI Act, ISO 42001 and GDPR into operational advantage—controls that work in production and stand up to audit.",
+            "Specialization: Compliance strategy, model-risk governance, and secure ML pipelines for high-stakes environments."
+        ],
+        "sections": {
+            "results": {
+                "title": "Selected Results",
+                "items": [
+                    {
+                        "title": "krisenchat — Senior AI Compliance Manager:",
+                        "desc": "led AI Act implementation, integrated ISO practices, and delivered a governance program credited with a ~90% reduction in regulatory risk exposure."
+                    },
+                    {
+                        "title": "Zuse Institute Berlin (ZIB) — AI Compliance Framework Developer:",
+                        "desc": "built the Institute’s first AI & Data Governance Framework, created an MLOps monitoring framework for fairness/metrics, and engineered a neural network for a research project whose initial findings were featured in Nature; co-authoring papers on ML and the AI Act."
+                    },
+                    {
+                        "title": "Charité – Universitätsmedizin Berlin:",
+                        "desc": "data science & ML for health tech; helped secure investment after accelerator pitch."
+                    }
+                ]
+            },
+            "deliver": {
+                "title": "What I Deliver",
+                "items": [
+                    "AI Act programs: risk classification, Annex IV technical docs, human oversight, post-market monitoring.",
+                    "GDPR for AI: DPIAs, data mapping, vendor governance (Art. 28), deletion & retention controls, privacy-by-design.",
+                    "ISO 42001 (AIMS): governance design, KPIs, accountable owners, and audit-ready evidence.",
+                    "Model security: adversarial robustness, data-poisoning hygiene, and supply-chain controls for ML."
+                ]
+            },
+            "roles": {
+                "title": "Recent Roles",
+                "items": [
+                    [
+                        "Senior AI Compliance Manager",
+                        "krisenchat (2025–present)"
+                    ],
+                    [
+                        "Compliance Manager",
+                        "krisenchat (2024–2025)"
+                    ],
+                    [
+                        "AI Compliance Framework Developer / AI Researcher",
+                        "Zuse Institute Berlin (2024–present)"
+                    ],
+                    [
+                        "Software Engineering (Freelance)",
+                        "Charité – Universitätsmedizin Berlin (2023)"
+                    ],
+                    [
+                        "Data Analyst & Full-stack (Freelance)",
+                        "Bettencourt Financial Group (2023–2024)"
+                    ],
+                    [
+                        "Software Engineer (Working Student)",
+                        "twigbit technologies (2022–2023)"
+                    ]
+                ]
+            },
+            "credentials": {
+                "title": "Credentials",
+                "items": [
+                    "CODE University of Applied Sciences (2025) — Software Engineering (AI/ML, Security)",
+                    "Administrative Law Specialization — Compliance & Governance",
+                    "Law School - University of São Paulo (2010) — Bachelor of Law",
+                    "DeepLearning.AI TensorFlow Developer Specialization; CNNs in TensorFlow (Coursera)",
+                    "Languages: Portuguese, English, German"
+                ]
+            }
+        }
+    }
+}

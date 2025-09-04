@@ -1,0 +1,40 @@
+{
+    "contact": {
+        "header": {
+            "eyebrow": "Contact us",
+            "title": "Let’s work together",
+            "subtitle": "We can’t wait to hear from you."
+        },
+        "form": {
+            "title": "Work inquiries",
+            "fields": {
+                "name": "Name",
+                "email": "Email",
+                "company": "Company",
+                "phone": "Phone",
+                "message": "Message"
+            },
+            "cta": {
+                "primary": "Let’s work together",
+                "sending": "Sending…"
+            },
+            "requiredNote": "required fields",
+            "privacy": {
+                "before": "Your details will be used only to answer your enquiry and handled in line with our",
+                "link": "Privacy Notice"
+            },
+            "status": {
+                "success": "Thanks! We’ll reply shortly.",
+                "error": "Sorry, something went wrong. Please email us directly at {email}."
+            }
+        },
+        "details": {
+            "title": "Our office",
+            "desc": "Prefer doing things in person? No problem! Send us a message and we can meet at our office or anywhere in Berlin.",
+            "emailUs": "Email us",
+            "channels": {
+                "general": "General"
+            }
+        }
+    }
+}

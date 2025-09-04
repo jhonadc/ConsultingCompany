@@ -1,0 +1,40 @@
+{
+    "contact": {
+        "header": {
+            "eyebrow": "Fale conosco",
+            "title": "Vamos trabalhar juntos",
+            "subtitle": "Estamos ansiosos para ouvir você."
+        },
+        "form": {
+            "title": "Solicitações de trabalho",
+            "fields": {
+                "name": "Nome",
+                "email": "E-mail",
+                "company": "Empresa",
+                "phone": "Telefone",
+                "message": "Mensagem"
+            },
+            "cta": {
+                "primary": "Vamos trabalhar juntos",
+                "sending": "Enviando…"
+            },
+            "requiredNote": "campos obrigatórios",
+            "privacy": {
+                "before": "Seus dados serão usados apenas para responder à sua solicitação e tratados conforme o nosso",
+                "link": "Aviso de Privacidade"
+            },
+            "status": {
+                "success": "Obrigado! Responderemos em breve.",
+                "error": "Desculpe, algo deu errado. Envie um e-mail diretamente para {email}."
+            }
+        },
+        "details": {
+            "title": "Nosso escritório",
+            "desc": "Prefere resolver pessoalmente? Sem problema! Envie uma mensagem e podemos nos encontrar no escritório ou em qualquer lugar de Berlim.",
+            "emailUs": "Envie um e-mail",
+            "channels": {
+                "general": "Geral"
+            }
+        }
+    }
+}

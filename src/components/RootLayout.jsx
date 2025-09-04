@@ -178,11 +178,9 @@ function Navigation() {
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/about">About Us</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
         <NavigationItem href="/contact">Get in Touch</NavigationItem>
       </NavigationRow>
+
     </nav>
   )
 }

@@ -21,6 +21,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
         accessibility,
         process,
         about,
+        team,
+        contact,
+        booking,
     ] = await Promise.all([
         import(`../../locales/${locale}/common.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/ai-act.json`).then((m) => m.default).catch(() => ({})),
@@ -34,6 +37,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../locales/${locale}/accessibility.json`).then((m) => m.default).catch(() => ({})),  // ✅ new
         import(`../../locales/${locale}/process.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/about.json`).then((m) => m.default).catch(() => ({})), // ✅ new// ✅ new
+        import(`../../locales/${locale}/team.json`).then((m) => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/contact.json`).then(m => m.default).catch(() => ({})), // ⬅️ novo
+        import(`../../locales/${locale}/booking.json`).then(m => m.default).catch(() => ({})), // ⬅️ novo
+
+
     ])
 
     return {
@@ -51,6 +59,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
             accessibility,
             process,
             about,
+            ...team,
+            ...contact,
+            ...booking,
         }
     }
 })

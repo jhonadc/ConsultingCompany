@@ -1,0 +1,30 @@
+{
+    "booking": {
+        "header": {
+            "eyebrow": "Reserva",
+            "title": "Solicite sua sessão",
+            "intro": "Compartilhe seus objetivos conosco e descubra como podemos guiá-lo por requisitos complexos de compliance."
+        },
+        "fields": {
+            "fullName": "Nome completo",
+            "workEmail": "E-mail corporativo"
+        },
+        "placeholders": {
+            "company": "Empresa",
+            "phone": "123 456 789",
+            "context": "Contexto, objetivos, datas preferidas"
+        },
+        "privacy": {
+            "before": "Ao enviar este formulário, você consente com o tratamento dos seus dados pessoais para fins de atendimento da solicitação, de acordo com o nosso",
+            "link": "Aviso de Privacidade"
+        },
+        "cta": {
+            "primary": "Enviar solicitação",
+            "sending": "Enviando…"
+        },
+        "status": {
+            "success": "Obrigado! Entraremos em contato em breve.",
+            "error": "Desculpe, ocorreu um erro. Por favor, envie-nos um e-mail diretamente."
+        }
+    }
+}
