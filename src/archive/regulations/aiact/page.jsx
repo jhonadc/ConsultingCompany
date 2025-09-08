@@ -16,7 +16,7 @@ import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'EU AI Act — Comforma Compliance',
+  title: 'EU AI Act — Oversight Governance Studio',
   description:
     'Regulation (EU) — mandatory requirements for AI systems in the EU. Training, governance, and readiness checks for compliance.',
 }

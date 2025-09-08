@@ -36,8 +36,8 @@ export default function ImprintPage() {
                             jhonathanasiaugusto@gmail.com
                         </a><br />
                         Website:{' '}
-                        <a href="https://comformacompliance.com" className="underline hover:text-neutral-950">
-                            comformacompliance.com
+                        <a href="https://www.oversightgovernance.com" className="underline hover:text-neutral-950">
+                            oversightgovernance.com
                         </a>
                     </p>
                 </div>

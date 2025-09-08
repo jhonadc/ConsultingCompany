@@ -1,4 +1,3 @@
-// src/components/RootLayout.jsx
 'use client'
 
 import {
@@ -18,11 +17,13 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import LocaleLink from '@/components/LocaleLink'
+
+// New logo components
+import { OversightMark, OversightWordmark } from '@/components/OversightLogo'
 
 const RootLayoutContext = createContext(null)
 
@@ -65,20 +66,31 @@ function Header({ panelId, icon: Icon, expanded, onToggle, toggleRef, invert = f
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          {/* MOBILE */}
+          {/* MOBILE (48px logo, text-lg, gap-1, color flips with invert) */}
           <div
             className={clsx(
-              'sm:hidden flex items-center gap-2 text-base tracking-tight',
+              'sm:hidden flex items-center gap-1 text-lg tracking-tight',
               invert ? 'text-white' : 'text-neutral-950'
             )}
           >
-            <Logomark className="h-6 w-6" invert={invert} filled={logoHovered} />
-            <span className="font-bold">Comforma</span>{' '}
-            <span className="font-medium">Compliance</span>
+            <OversightMark
+              key={logoHovered ? 'hovered' : 'idle'}  // replay animation on hover
+              size={48}
+              invert={invert}
+            />
+            <span className="font-bold leading-none">Oversight</span>{' '}
+            <span className="font-medium leading-none">Governance</span>
           </div>
 
-          {/* DESKTOP */}
-          <Logo className="hidden h-8 sm:block" invert={invert} filled={logoHovered} />
+          {/* DESKTOP wordmark (66px logo, text-xl inside component, gap-1, auto color) */}
+          <div className="hidden sm:block">
+            <OversightWordmark
+              key={logoHovered ? 'hovered' : 'idle'} // replay animation on hover
+              invert={invert}
+              markSize={66}
+              replayKey={logoHovered ? 'hovered' : 'idle'}
+            />
+          </div>
         </LocaleLink>
 
         <div className="flex items-center gap-x-4 sm:gap-x-8">
@@ -195,11 +207,22 @@ function RootLayoutInner({ children }) {
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
         {/* top nav */}
-        <div className="absolute top-2 right-0 left-0 z-40 pt-14" aria-hidden={expanded ? 'true' : undefined} inert={expanded ? '' : undefined}>
-          <Header panelId={panelId} icon={MenuIcon} toggleRef={openRef} expanded={expanded} invert={expanded} onToggle={() => {
-            setExpanded((expanded) => !expanded)
-            window.setTimeout(() => closeRef.current?.focus({ preventScroll: true }))
-          }} />
+        <div
+          className="absolute top-2 right-0 left-0 z-40 pt-14"
+          aria-hidden={expanded ? 'true' : undefined}
+          inert={expanded ? '' : undefined}
+        >
+          <Header
+            panelId={panelId}
+            icon={MenuIcon}
+            toggleRef={openRef}
+            expanded={expanded}
+            invert={expanded}
+            onToggle={() => {
+              setExpanded((prev) => !prev)
+              window.setTimeout(() => closeRef.current?.focus({ preventScroll: true }))
+            }}
+          />
         </div>
 
         {/* slideout */}
@@ -213,10 +236,17 @@ function RootLayoutInner({ children }) {
         >
           <motion.div layout className="bg-neutral-800">
             <div ref={navRef} className="bg-neutral-950 pt-14 pb-16">
-              <Header invert panelId={panelId} icon={XIcon} toggleRef={closeRef} expanded={expanded} onToggle={() => {
-                setExpanded((expanded) => !expanded)
-                window.setTimeout(() => openRef.current?.focus({ preventScroll: true }))
-              }} />
+              <Header
+                invert
+                panelId={panelId}
+                icon={XIcon}
+                toggleRef={closeRef}
+                expanded={expanded}
+                onToggle={() => {
+                  setExpanded((prev) => !prev)
+                  window.setTimeout(() => openRef.current?.focus({ preventScroll: true }))
+                }}
+              />
             </div>
             <Navigation />
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
@@ -233,7 +263,11 @@ function RootLayoutInner({ children }) {
         </motion.div>
       </header>
 
-      <motion.div layout style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }} className="relative flex flex-auto overflow-x-hidden bg-white pt-14">
+      <motion.div
+        layout
+        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
+        className="relative flex flex-auto overflow-x-hidden bg-white pt-14"
+      >
         <motion.div layout className="relative isolate flex w-full flex-col pt-9">
           <GridPattern
             className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"

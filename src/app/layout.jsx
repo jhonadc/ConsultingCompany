@@ -8,8 +8,8 @@ import { Suspense } from 'react' // ✅ add this
 
 export const metadata = {
   title: {
-    template: '%s – Comforma Advisory',
-    default: 'Comforma Advisory – EU Compliance & AI Act Experts',
+    template: '%s – Oversight Governance',
+    default: 'Oversight Governance Studio – EU Compliance & AI Act Experts',
   },
   description:
     'Expert legal and engineering guidance for EU regulations. We help European and international companies meet the AI Act, GDPR, and other compliance requirements with precision and trust.',

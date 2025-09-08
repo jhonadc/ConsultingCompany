@@ -1,11 +1,11 @@
-// src/components/Footer.jsx
 'use client'
 
 import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
+import { OversightWordmark } from '@/components/OversightLogo'
 import { useTranslations } from 'next-intl'
+import { useState } from 'react'             // ✅ add this
 
 function Navigation() {
   const t = useTranslations('c-footer')
@@ -41,6 +41,7 @@ function Navigation() {
 
 export function Footer() {
   const t = useTranslations('c-footer')
+  const [hover, setHover] = useState(false)    // ✅ local hover state
 
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
@@ -48,8 +49,18 @@ export function Footer() {
       <div className="grid grid-cols-1 items-center gap-6 border-t border-neutral-950/10 pt-8 sm:pt-10 lg:grid-cols-[1fr_2fr_1fr]">
         {/* Left: Logo */}
         <div className="flex justify-center lg:justify-start">
-          <Link href="/" aria-label="Home" className="shrink-0">
-            <Logo className="h-8" fillOnHover />
+          <Link
+            href="/"
+            aria-label="Home"
+            className="shrink-0"
+            onMouseEnter={() => setHover(true)}      // ✅ trigger replay on hover
+            onMouseLeave={() => setHover(false)}     // ✅ reset on leave
+          >
+            <OversightWordmark
+              markSize={48}
+              replayKey={hover ? 'hovered' : 'idle'} // ✅ force remount of the mark
+              key={hover ? 'hovered' : 'idle'}        // ✅ (belt & suspenders)
+            />
           </Link>
         </div>
 
@@ -81,7 +92,7 @@ export function Footer() {
       {/* ROW 2: © */}
       <div className="mt-6 mb-14">
         <p className="text-center text-sm text-neutral-700">
-          © Comforma – Regulatory and Governance Advisory. Berlin, {new Date().getFullYear()}
+          © Oversight – Regulatory and Governance Advisory. Berlin, {new Date().getFullYear()}
         </p>
       </div>
     </Container>
