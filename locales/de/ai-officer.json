@@ -1,5 +1,14 @@
 {
     "aiOfficer": {
+        "meta": {
+            "title": "AI Officer & AI Governance",
+            "description": "Praktische KI-Governance nach EU AI Act, DSGVO und Security-Kontrollen. Richtlinien, Risikologs und Audits werden operativ umgesetzt.",
+            "ogTitle": "AI Officer für den EU AI Act",
+            "ogDescription": "Nachweisbare KI-Steuerung mit prüfbereiter Dokumentation.",
+            "twitterTitle": "AI Officer & AI Governance",
+            "twitterDescription": "Praktische Kontrollen, Evidenzen und Berichte.",
+            "ogImage": "/og/ai-officer.png"
+        },
         "hero": {
             "eyebrow": "EU-AI-Act • Recht & Technik • Governance in der Praxis",
             "title": "AI Officer: Services für KI-Compliance",

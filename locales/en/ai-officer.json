@@ -1,5 +1,14 @@
 {
     "aiOfficer": {
+        "meta": {
+            "title": "AI Officer & AI Governance",
+            "description": "Hands-on AI governance aligned with the EU AI Act, GDPR, and security controls. We operationalize policies, risk logs, and audits.",
+            "ogTitle": "AI Officer for the EU AI Act",
+            "ogDescription": "Accountable AI governance with documentation ready for authorities and clients.",
+            "twitterTitle": "AI Officer & AI Governance",
+            "twitterDescription": "Practical controls, evidence, and reporting.",
+            "ogImage": ""
+        },
         "hero": {
             "eyebrow": "EU AI Act • Lawyer-Engineer • Governance in Practice",
             "title": "AI Officer Services for Practical Compliance",

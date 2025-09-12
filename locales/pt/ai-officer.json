@@ -1,5 +1,14 @@
 {
     "aiOfficer": {
+        "meta": {
+            "title": "AI Officer & Governança de IA",
+            "description": "Governança de IA na prática, alinhada ao AI Act da UE, à LGPD/GDPR e a controles de segurança. Políticas, registro de riscos e auditorias que funcionam no dia a dia.",
+            "ogTitle": "AI Officer para o AI Act da UE",
+            "ogDescription": "Governança de IA com documentação pronta para autoridades e clientes.",
+            "twitterTitle": "AI Officer & Governança de IA",
+            "twitterDescription": "Controles práticos, evidências e relatórios.",
+            "ogImage": "/og/ai-officer.png"
+        },
         "hero": {
             "eyebrow": "AI Act da União Europeia • Direito e Engenharia • Governança na prática",
             "title": "AI Officer: serviços para governança em IA",
