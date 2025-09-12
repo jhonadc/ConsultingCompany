@@ -244,7 +244,7 @@ export default function GdprDpoPage() {
 
                         <h2 className="mt-4 text-lg sm:text-xl text-neutral-700 leading-relaxed">
                             <span className="font-semibold">Avoid €20M+ GDPR fines.</span> Get immediate compliance with our
-                            <span className="font-semibold"> EU-certified DPO services</span> — whether you're based in Europe or anywhere in the world processing EU data.
+                            <span className="font-semibold"> EU-certified DPO services</span> — whether you are based in Europe or anywhere in the world processing EU data.
                         </h2>
 
                         <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -568,7 +568,7 @@ export default function GdprDpoPage() {
                         Protect Your Business from GDPR Risks
                     </h2>
                     <p className="mx-auto mt-4 max-w-3xl text-lg text-neutral-300">
-                        Don't wait for a regulatory inquiry or data breach. Get immediate access to EU-certified DPO expertise
+                        Do not wait for a regulatory inquiry or data breach. Get immediate access to EU-certified DPO expertise
                         and comprehensive compliance protection. Available worldwide for any organization processing European data.
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
