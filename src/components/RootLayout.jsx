@@ -75,7 +75,7 @@ function Header({ panelId, icon: Icon, expanded, onToggle, toggleRef, invert = f
           >
             <OversightMark
               key={logoHovered ? 'hovered' : 'idle'}  // replay animation on hover
-              size={48}
+              size={36}
               invert={invert}
             />
             <span className="font-bold leading-none">Oversight</span>{' '}

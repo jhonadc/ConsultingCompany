@@ -234,7 +234,7 @@ export default function AiActPage() {
             <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
               {[
                 {
-                  href: '/services/ai-literacy',
+                  href: '/services/ai-services/ai-literacy',
                   label: 'AI Literacy Training',
                   tint: 'bg-purple-50',
                   ring: 'hover:ring-purple-200',
@@ -242,7 +242,7 @@ export default function AiActPage() {
                   bar: 'border-purple-500',
                 },
                 {
-                  href: '/services/highriskcheck',
+                  href: '/services/ai-services/highriskcheck',
                   label: 'Am I high-risk?',
                   tint: 'bg-amber-50',
                   ring: 'hover:ring-amber-200',
@@ -250,7 +250,7 @@ export default function AiActPage() {
                   bar: 'border-amber-500',
                 },
                 {
-                  href: '/services/ai-use-policy',
+                  href: '/services/ai-services/ai-use-policy',
                   label: 'AI Use Policy',
                   tint: 'bg-emerald-50',
                   ring: 'hover:ring-emerald-200',

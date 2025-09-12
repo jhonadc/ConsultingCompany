@@ -8,7 +8,7 @@ export default function HeroClient() {
     {
       key: 'ai-literacy',
       label: 'AI Literacy',
-      href: '/services#ai-literacy',
+      href: '/services/ai-services#ai-literacy',
       title: 'AI Literacy that changes behavior',
       body:
         'Upskill product, legal, and engineering with concise, role-based training. Safer velocity, fewer escalations, and decisions leadership can defend.',
@@ -16,7 +16,7 @@ export default function HeroClient() {
     {
       key: 'high-risk',
       label: 'Am I high-risk?',
-      href: '/services#high-risk',
+      href: '/services/ai-servicess#high-risk',
       title: 'AI Act classification, fast',
       body:
         'Map use cases and data to the AI Act early. You get a clear risk tier, mitigations, and Annex IV evidence regulators expect.',
@@ -24,7 +24,7 @@ export default function HeroClient() {
     {
       key: 'ai-policy',
       label: 'AI Use Policy',
-      href: '/services#ai-use-policy',
+      href: '/services/ai-services#ai-use-policy',
       title: 'Clear guardrails, zero friction',
       body:
         'Practical guardrails teams actually follow: approved tools, human oversight, vendor checks, and change control wired into your workflow.',
@@ -61,11 +61,10 @@ export default function HeroClient() {
                   role="tab"
                   aria-selected={active === t.key}
                   onClick={() => setActive(t.key)}
-                  className={`rounded-full px-3 py-1 transition-colors ${
-                    active === t.key
-                      ? 'bg-white text-neutral-900 ring-1 ring-neutral-300'
-                      : 'text-neutral-600 hover:bg-neutral-50'
-                  }`}
+                  className={`rounded-full px-3 py-1 transition-colors ${active === t.key
+                    ? 'bg-white text-neutral-900 ring-1 ring-neutral-300'
+                    : 'text-neutral-600 hover:bg-neutral-50'
+                    }`}
                 >
                   {t.label}
                 </button>

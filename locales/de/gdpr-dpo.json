@@ -1,0 +1,188 @@
+{
+    "gdprDpo": {
+        "meta": {
+            "title": "Externer DSB für brasilianische Unternehmen — Oversight Governance Studio",
+            "description": "Externer Datenschutzbeauftragter (EU) für brasilianische Unternehmen. Jurist (USP — Largo de São Francisco) und Software-Ingenieur in Berlin. DSGVO in der Praxis, vertrags- und prüfungsreife Nachweise."
+        },
+        "hero": {
+            "eyebrow": "Für brasilianische Unternehmen mit Kundschaft in der EU",
+            "title": "Externer EU-Datenschutzbeauftragter für brasilianische Unternehmen.",
+            "subtitle": {
+                "0": {
+                    "before": "Tätig als ",
+                    "bold": "externer DSB in der EU",
+                    "after": " mit Sitz in Berlin —"
+                },
+                "1": {
+                    "bold1": "Jurist (USP — Largo de São Francisco)",
+                    "mid": " und",
+                    "bold2": " Software-Ingenieur",
+                    "after": ". Wir verbinden Recht und Technik, um"
+                },
+                "2": {
+                    "bold": " die DSGVO operativ umzusetzen",
+                    "after": ", Verträge zu beschleunigen und Due-Diligence-Prüfungen zu bestehen."
+                }
+            },
+            "primaryCta": "Gespräch buchen",
+            "secondaryCta": "So funktioniert’s →"
+        },
+        "quickProof": {
+            "items": [
+                {
+                    "title": "Seltene Doppelqualifikation",
+                    "desc": "Rechtswissenschaft (USP — Largo de São Francisco) + Software-Engineering. Übersetze Regulierung in Backlog und technische Nachweise."
+                },
+                {
+                    "title": "In der EU ansässig",
+                    "desc": "Berlin-Zeitzone und Erfahrung vor Ort mit Kund:innen, Behörden und europäischen Auditor:innen."
+                },
+                {
+                    "title": "Verträge, die Deals ermöglichen",
+                    "desc": "Richtlinien, Verzeichnisse (RoPA), DSFA, SCCs/TIAs und Klauseln, die Beschaffungs- und Sicherheitsprüfungen bestehen."
+                },
+                {
+                    "title": "Portugiesisch, Englisch, Deutsch",
+                    "desc": "Drei Sprachen für Verhandlungen mit Legal, Engineering und Security in der EU."
+                }
+            ]
+        },
+        "factsSection": {
+            "eyebrow": "DSGVO — EU-Verordnung",
+            "title": "Was sich für brasilianische Anbieter mit EU-Kundschaft ändert",
+            "intro": {
+                "0": {
+                    "before": "Wenn Sie Produkte/Dienstleistungen in der EU anbieten oder Verhalten überwachen, gilt die DSGVO. Ich agiere als Ihr externer DSB, um ",
+                    "bold1": "Kontrollen zu entwerfen",
+                    "mid": ", ",
+                    "bold2": "Teams zu schulen",
+                    "after": " und ",
+                    "bold3": "prüfungsfeste Nachweise zu liefern"
+                }
+            }
+        },
+        "facts": [
+            {
+                "title": "In Kraft",
+                "value": "25. Mai 2018",
+                "description": "Gilt in der gesamten Europäischen Union"
+            },
+            {
+                "title": "Wer betroffen ist",
+                "value": "Unternehmen mit Waren/Dienstleistungen in der EU",
+                "description": "Auch Nicht-EU-Unternehmen mit Zielgruppe in der EU"
+            },
+            {
+                "title": "Bußgelder",
+                "value": "Bis zu 20 Mio. € oder 4 % des weltweiten Umsatzes",
+                "description": "Bei schweren Verstößen (Art. 83)"
+            }
+        ],
+        "offer": {
+            "title": "Kernleistung — Externer DSB in der Europäischen Union",
+            "cards": [
+                {
+                    "title": "Leistungsumfang",
+                    "text": "Laufende Vertretung und Beratung: Risiken, Richtlinien, Rechtsgrundlagen-Bewertung, Privacy by Design, Betroffenenanfragen sowie Schnittstelle zu Kund:innen/Auditor:innen."
+                },
+                {
+                    "title": "Liefergegenstände",
+                    "list": [
+                        "Verarbeitungsverzeichnis (RoPA)",
+                        "Datenschutz-Folgenabschätzung (DSFA), falls erforderlich",
+                        "Richtlinien und Datenschutzhinweise",
+                        "Auftragsverarbeitung/Vendor-Governance (Art. 28)",
+                        "Internationale Übermittlungen (SCCs/TIAs)",
+                        "Incident-Playbook (72 Std.) und Nachweise"
+                    ]
+                },
+                {
+                    "title": "Ergebnisse",
+                    "list": [
+                        "Schnellere Verträge und kürzere Beschaffungszyklen",
+                        "Priorisierte Risiken mit klaren Verantwortlichen und Fristen",
+                        "Prüfungsreife Nachweise für Audits und Due Diligence",
+                        "Geschultes Team und schlanke Pflegeprozesse"
+                    ]
+                }
+            ],
+            "primaryCta": "Externe DSB-Leistung besprechen",
+            "secondaryCta": "Verwandte Services ansehen →"
+        },
+        "relatedServices": {
+            "title": "Services, die den externen DSB ergänzen",
+            "cards": [
+                {
+                    "title": "EU-Markteintritt & Kunden-Readiness",
+                    "desc": "Rechtsgrundlagen, Hinweise, Vertragsklauseln, Übermittlungen und ein evidenzbasiertes Paket für Procurement.",
+                    "cta": "EU-Einstieg planen"
+                },
+                {
+                    "title": "RoPA-Programm (Art. 30)",
+                    "desc": "Verzeichnisse auf Prozess/System-Ebene, Verantwortlichkeiten, Aufbewahrung und Sicherheitsmaßnahmen mit leichter Aktualisierungsroutine.",
+                    "cta": "Verzeichnisse organisieren"
+                },
+                {
+                    "title": "Maßgeschneiderte DSFA",
+                    "desc": "Scope, Interviews, Risikoanalyse, Minderung und Freigabedokumentation — vor dem Go-Live.",
+                    "cta": "DSFA planen"
+                },
+                {
+                    "title": "Internationale Übermittlungen",
+                    "desc": "SCCs/TIAs, Service-Konfiguration und Verträge entsprechend den realen Datenflüssen.",
+                    "cta": "Übermittlungen prüfen"
+                },
+                {
+                    "title": "Vendor-Governance (Art. 28)",
+                    "desc": "Onboarding und periodische Reviews mit praxisnaher Checkliste, anerkannten Klauseln und realistischer Kadenz.",
+                    "cta": "Vendors stärken"
+                },
+                {
+                    "title": "Schulungen & Kultur",
+                    "desc": "Workshops für Produkt, Engineering und Legal: Privacy by Design, 72-Std.-Incidents und belastbare Entscheidungen.",
+                    "cta": "Team schulen"
+                }
+            ]
+        },
+        "process": {
+            "eyebrow": "So arbeiten wir",
+            "title": "Vom Pflichtprogramm zum Wettbewerbsvorteil",
+            "intro": "Wir verbinden Recht, Engineering und Security, um Risiken zu senken, ohne das Produkt zu bremsen. Ergebnis: Geschwindigkeit mit echter Governance und prüfungsreifen Nachweisen.",
+            "steps": [
+                {
+                    "title": "Diagnostizieren",
+                    "desc": "Datenflüsse, Rechtsgrundlagen, Risiken und Vendor-Abhängigkeiten ermitteln. Sie erhalten einen priorisierten Plan mit Aufwand/Wirkung/Fristen."
+                },
+                {
+                    "title": "Umsetzen",
+                    "desc": "Wirksame Kontrollen: Richtlinien, RoPA, DSFA, Vendor-Governance, Übermittlungen, 72-Std.-Incidents, Privacy by Design und Trainings."
+                },
+                {
+                    "title": "Verankern",
+                    "desc": "Schlanke Routine: Verantwortliche, vierteljährliche Kadenz, Änderungsprotokolle und fortlaufende Nachweise für Audits und Kund:innen."
+                }
+            ],
+            "moreLink": "Gesamten Prozess ansehen →",
+            "moreAria": "Detaillierten Prozess ansehen"
+        },
+        "proofs": [
+            {
+                "k": "Prüfungsfeste Nachweise",
+                "v": "Unterlagen, die Auditor:innen wirklich nutzen: RoPA, DSFA, Risikoprotokolle, Entscheidungen und Freigaben pro Release."
+            },
+            {
+                "k": "Schnellere Deals",
+                "v": "Konsistente Antworten zu Security/Privacy, anerkannte Klauseln und klare Datenflüsse beschleunigen Procurement."
+            },
+            {
+                "k": "Weniger Risiko & Nacharbeit",
+                "v": "Vorgaben vor dem Launch fließen in den Produktzyklus ein und verhindern Verzögerungen sowie Last-Minute-Änderungen."
+            }
+        ],
+        "finalCta": {
+            "title": "Führen wir EU-Datenschutz mit Tempo und Sicherheit.",
+            "subtitle": "Externer europäischer DSB für Ihr brasilianisches Unternehmen — Recht + Engineering, vertrags- und prüfungsreif.",
+            "button": "Mit dem DSB sprechen"
+        }
+    }
+}

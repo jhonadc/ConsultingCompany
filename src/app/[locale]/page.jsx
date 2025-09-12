@@ -54,7 +54,7 @@ function Regulations({ data }) {
     const fallback = { border: 'border-neutral-300', hover: 'hover:ring-neutral-300' }
 
     return (
-        <section className="mt-24 sm:mt-32 lg:mt-80">
+        <section className="mt-20 sm:mt-24 lg:mt-46">
             <SectionIntro
                 eyebrow={eyebrow ? <LocaleLink href="/regulations" className="hover:underline">{eyebrow}</LocaleLink> : undefined}
                 title={title}
@@ -300,7 +300,7 @@ function Spotlight({ data }) {
                         </div>
 
                         <div className="text-neutral-100">
-                            <p className="mt-4 text-[17px] md:text-[18px] leading-light font-normal" style={{ whiteSpace: 'pre-line' }}>
+                            <p className="mt-4 text-[17px] md:text-[18px] leading-light text-justify font-normal" style={{ whiteSpace: 'pre-line' }}>
                                 {data?.bio}
                             </p>
 
@@ -350,8 +350,9 @@ export default function HomePage() {
 
     return (
         <>
+
             {/* Hero */}
-            <Container className="mt-24 sm:mt-16 md:mt-56 relative">
+            <Container className="mt-18 sm:mt-12 md:mt-46 relative">
                 <FadeIn className="max-w-4xl">
                     <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl leading-tight">
                         {hero.title}
@@ -376,24 +377,53 @@ export default function HomePage() {
                 <nav
                     aria-label="Quick links"
                     className="pointer-events-auto z-10 mt-8 flex flex-col gap-3 items-stretch sm:items-center
-                     lg:mt-0 lg:absolute lg:right-0 lg:top-8"
+              lg:mt-0 lg:absolute lg:right-0 lg:top-8"
                 >
                     {quickLinks.map((link) => (
                         <LocaleLink
                             key={link.href}
                             href={link.href}
                             className={`group inline-flex items-center justify-between
-                          w-full sm:w-72 lg:w-56 rounded-full border ${link.border}
-                          bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-neutral-700
-                          shadow-sm backdrop-blur-sm transition-all duration-200
-                          hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
+          w-full sm:w-50 lg:w-60 rounded-full border ${link.border}
+          bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-neutral-700
+          shadow-sm backdrop-blur-sm transition-all duration-200
+          hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5`}
                         >
                             <span>{link.label}</span>
                             <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
                         </LocaleLink>
                     ))}
+
+                    {/* Divider */}
+                    <div className="my-1 h-px w-full sm:w-600 lg:w-60 bg-neutral-200"></div>
+
+                    {/* Extra Links */}
+                    <LocaleLink
+                        href={"/regulations/gdpr-dpo"}
+                        className="group inline-flex items-center justify-between
+        w-full sm:w-50 lg:w-60 rounded-full border border-blue-400
+        bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-blue-700
+        shadow-sm backdrop-blur-sm transition-all duration-200
+        hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5"
+                    >
+                        <span>Data Protection Officer</span>
+                        <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
+                    </LocaleLink>
+
+                    <LocaleLink
+                        href="/services/ai-officer"
+                        className="group inline-flex items-center justify-between
+        w-full sm:w-50 lg:w-60 rounded-full border border-purple-400
+        bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-purple-700
+        shadow-sm backdrop-blur-sm transition-all duration-200
+        hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5"
+                    >
+                        <span>AI Officer</span>
+                        <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
+                    </LocaleLink>
                 </nav>
             </Container>
+
 
             <Regulations data={regulations} />
             <ProofOfValue data={proof} />

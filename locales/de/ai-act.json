@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "title": "EU KI-Verordnung — Comforma Compliance",
+        "title": "EU KI-Verordnung — Oversight Governance",
         "description": "Verordnung (EU) — verpflichtende Anforderungen für KI-Systeme in der EU. Schulung, Governance und Readiness-Checks für Compliance."
     },
     "common": {
@@ -34,15 +34,15 @@
         "subtitle": "Gezielte, wirkungsstarke Dienstleistungen, um Sie schnell konform zu machen.",
         "cards": [
             {
-                "href": "/aiservices/ailiteracy",
+                "href": "/services/ai-services/ailiteracy",
                 "label": "KI-Kompetenzschulung"
             },
             {
-                "href": "/aiservices/highrisk",
+                "href": "/services/ai-services/highrisk",
                 "label": "Ist mein System Hochrisiko?"
             },
             {
-                "href": "/aiservices/ai-use-policy",
+                "href": "/services/ai-services/ai-use-policy",
                 "label": "KI-Nutzungsrichtlinie"
             }
         ]

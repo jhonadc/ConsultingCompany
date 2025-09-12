@@ -131,7 +131,7 @@ export default function HighRiskAssessmentPage() {
                 </Container>
             )}
 
-            {/* WHY CONFORMA */}
+            {/* WHY Oversight */}
             {hasWhy && (
                 <Container className="mt-24 sm:mt-32">
                     <FadeIn>

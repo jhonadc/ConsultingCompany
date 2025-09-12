@@ -34,15 +34,15 @@
         "subtitle": "Targeted, high-impact services to get you compliant fast.",
         "cards": [
             {
-                "href": "/aiservices/ailiteracy",
+                "href": "/services/ai-services/ailiteracy",
                 "label": "AI Literacy Training"
             },
             {
-                "href": "/aiservices/highrisk",
+                "href": "/services/ai-services/highrisk",
                 "label": "Am I high-risk?"
             },
             {
-                "href": "/aiservices/ai-use-policy",
+                "href": "/services/ai-services/ai-use-policy",
                 "label": "AI Use Policy"
             }
         ]

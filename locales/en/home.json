@@ -8,17 +8,17 @@
     },
     "quickLinks": [
         {
-            "href": "/aiservices/ailiteracy",
+            "href": "/services/ai-services/ailiteracy",
             "label": "AI Literacy Training",
             "border": "border-purple-500"
         },
         {
-            "href": "/aiservices/highrisk",
+            "href": "/services/ai-services/highrisk",
             "label": "Is it High Risk?",
             "border": "border-amber-500"
         },
         {
-            "href": "/aiservices/ai-use-policy",
+            "href": "/services/ai-services/ai-use-policy",
             "label": "AI Use Policy",
             "border": "border-green-500"
         }

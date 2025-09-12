@@ -127,12 +127,12 @@ export default function GdprPage() {
                                                                 {cta}
                                                             </LocaleLink>
                                                         ) : (
-                                                            <Link
+                                                            <LocaleLink
                                                                 href="/contact"
                                                                 className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
                                                             >
                                                                 {cta}
-                                                            </Link>
+                                                            </LocaleLink>
                                                         )}
                                                     </div>
                                                 )}

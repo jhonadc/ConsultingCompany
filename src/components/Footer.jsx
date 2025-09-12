@@ -1,3 +1,4 @@
+// src/components/Footer.jsx
 'use client'
 
 import Link from 'next/link'
@@ -5,11 +6,13 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { OversightWordmark } from '@/components/OversightLogo'
 import { useTranslations } from 'next-intl'
-import { useState } from 'react'             // ✅ add this
+import { useState } from 'react'
+import LocaleLink from './LocaleLink'
 
 function Navigation() {
   const t = useTranslations('c-footer')
 
+  /** @type {{ title: string; href: string }[]} */
   const navItems = [
     { title: t('nav.regulations'), href: '/regulations' },
     { title: t('nav.process'), href: '/process' },
@@ -26,12 +29,12 @@ function Navigation() {
       >
         {navItems.map((item) => (
           <li key={item.href} className="shrink-0">
-            <Link
-              href={item.href}
+            <LocaleLink
+              href={item.href} // ✅ correct: use item.href, not item.contact
               className="transition hover:text-neutral-950 hover:underline underline-offset-4"
             >
-              {item.title}
-            </Link>
+              {item.title} {/* ✅ correct: use item.title */}
+            </LocaleLink>
           </li>
         ))}
       </ul>
@@ -41,7 +44,7 @@ function Navigation() {
 
 export function Footer() {
   const t = useTranslations('c-footer')
-  const [hover, setHover] = useState(false)    // ✅ local hover state
+  const [hover, setHover] = useState(false)
 
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
@@ -53,13 +56,13 @@ export function Footer() {
             href="/"
             aria-label="Home"
             className="shrink-0"
-            onMouseEnter={() => setHover(true)}      // ✅ trigger replay on hover
-            onMouseLeave={() => setHover(false)}     // ✅ reset on leave
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
           >
             <OversightWordmark
               markSize={48}
-              replayKey={hover ? 'hovered' : 'idle'} // ✅ force remount of the mark
-              key={hover ? 'hovered' : 'idle'}        // ✅ (belt & suspenders)
+              replayKey={hover ? 'hovered' : 'idle'}
+              key={hover ? 'hovered' : 'idle'}
             />
           </Link>
         </div>
@@ -72,19 +75,19 @@ export function Footer() {
         {/* Right: Imprint | Privacy */}
         <div className="flex justify-center lg:justify-end text-xs text-neutral-500">
           <div className="flex items-center gap-x-4">
-            <Link
-              href="/legal/imprint"
+            <LocaleLink
+              href="/legal/imprint" // ✅ locale-aware link
               className="hover:text-neutral-800 hover:underline underline-offset-4"
             >
               {t('legal.imprint')}
-            </Link>
+            </LocaleLink>
             <span aria-hidden>•</span>
-            <Link
-              href="/legal/privacy"
+            <LocaleLink
+              href="/legal/privacy" // ✅ locale-aware link
               className="hover:text-neutral-800 hover:underline underline-offset-4"
             >
               {t('legal.privacy')}
-            </Link>
+            </LocaleLink>
           </div>
         </div>
       </div>

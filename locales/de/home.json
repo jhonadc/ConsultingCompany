@@ -8,17 +8,17 @@
     },
     "quickLinks": [
         {
-            "href": "/aiservices/ailiteracy",
+            "href": "/services/ai-services/ailiteracy",
             "label": "AI-Literacy-Training",
             "border": "border-purple-500"
         },
         {
-            "href": "/aiservices/highrisk",
+            "href": "/services/ai-services/highrisk",
             "label": "Ist es Hochrisiko?",
             "border": "border-amber-500"
         },
         {
-            "href": "/aiservices/ai-use-policy",
+            "href": "/services/ai-services/ai-use-policy",
             "label": "AI-Nutzungsrichtlinie",
             "border": "border-green-500"
         }
@@ -153,6 +153,6 @@
         }
     },
     "testimonial": {
-        "quote": "Comforma Studio hat die Erwartungen übertroffen; Jhonathan war persönlich involviert und hat das Projekt eng begleitet — wir fühlten uns sicher, die beste Wahl getroffen zu haben. Die Ergebnisse sind hervorragend, und wir konnten in Europa launchen!"
+        "quote": "Oversight Studio hat die Erwartungen übertroffen; Jhonathan war persönlich involviert und hat das Projekt eng begleitet — wir fühlten uns sicher, die beste Wahl getroffen zu haben. Die Ergebnisse sind hervorragend, und wir konnten in Europa launchen!"
     }
 }

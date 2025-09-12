@@ -1,4 +1,3 @@
-// src/i18n/requests.js
 import { getRequestConfig } from 'next-intl/server'
 
 const SUPPORTED = ['en', 'pt', 'de']
@@ -26,6 +25,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         booking,
         cRootlayout,
         cFooter,
+        gdprDpo // ✅ new
     ] = await Promise.all([
         import(`../../locales/${locale}/common.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/ai-act.json`).then((m) => m.default).catch(() => ({})),
@@ -36,16 +36,15 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../locales/${locale}/regulations-main.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/gdpr.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/lgpd.json`).then((m) => m.default).catch(() => ({})),
-        import(`../../locales/${locale}/accessibility.json`).then((m) => m.default).catch(() => ({})),  // ✅ new
+        import(`../../locales/${locale}/accessibility.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/process.json`).then((m) => m.default).catch(() => ({})),
-        import(`../../locales/${locale}/about.json`).then((m) => m.default).catch(() => ({})), // ✅ new// ✅ new
+        import(`../../locales/${locale}/about.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/team.json`).then((m) => m.default).catch(() => ({})),
-        import(`../../locales/${locale}/contact.json`).then(m => m.default).catch(() => ({})), // ⬅️ novo
-        import(`../../locales/${locale}/booking.json`).then(m => m.default).catch(() => ({})), // ⬅️ novo
+        import(`../../locales/${locale}/contact.json`).then((m) => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/booking.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/c-rootlayout.json`).then((m) => m.default).catch(() => ({})),
-        import(`../../locales/${locale}/c-footer.json`).then((m) => m.default).catch(() => ({})) // ✅
-
-
+        import(`../../locales/${locale}/c-footer.json`).then((m) => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/gdpr-dpo.json`).then(m => m.default).catch(() => ({})) // 👈 NEW
     ])
 
     return {
@@ -68,6 +67,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...booking,
             'c-rootlayout': cRootlayout,
             'c-footer': cFooter,
+            ...gdprDpo // ✅ include under this namespace
         }
     }
 })

@@ -8,6 +8,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { BackButton } from '@/components/BackButton'
 import { Border } from '@/components/Border'
 import RegulationsFactStrip from '@/components/RegulationsFactStrip'
+import LocaleLink from '@/components/LocaleLink'
 
 const arr = (v) => (Array.isArray(v) ? v : [])
 
@@ -88,9 +89,9 @@ export default function AccessibilityPage() {
                                             <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
                                             <p className="mt-2 text-sm text-neutral-700">{desc}</p>
                                             <div className="mt-auto pt-5">
-                                                <Link href="/contact" className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white hover:scale-105">
+                                                <LocaleLink href="/contact" className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white hover:scale-105">
                                                     {cta}
-                                                </Link>
+                                                </LocaleLink>
                                             </div>
                                         </div>
                                     </div>
@@ -107,9 +108,9 @@ export default function AccessibilityPage() {
                                             <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
                                             <p className="mt-2 text-sm text-neutral-700">{desc}</p>
                                             <div className="mt-auto pt-5">
-                                                <Link href="/contact" className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white hover:scale-105">
+                                                <LocaleLink href="/contact" className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white hover:scale-105">
                                                     {cta}
-                                                </Link>
+                                                </LocaleLink>
                                             </div>
                                         </div>
                                     </div>
@@ -181,12 +182,12 @@ export default function AccessibilityPage() {
                             ))}
                         </div>
                         <div className="mt-4 text-left">
-                            <Link
+                            <LocaleLink
                                 href="/process"
                                 className="inline-block text-sm font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
                             >
                                 {t('howWeWork.processLinkLabel')}
-                            </Link>
+                            </LocaleLink>
                         </div>
                     </FadeIn>
                 </Container>
@@ -196,12 +197,12 @@ export default function AccessibilityPage() {
                     <div className="rounded-4xl bg-neutral-950 px-6 py-14 text-white sm:px-10 sm:py-16 lg:px-12 text-center">
                         <h2 className="font-display text-3xl font-semibold">{t('cta.title')}</h2>
                         <p className="mx-auto mt-4 max-w-2xl text-neutral-300">{t('cta.body')}</p>
-                        <Link
+                        <LocaleLink
                             href="/contact"
                             className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
                         >
                             {t('cta.button')}
-                        </Link>
+                        </LocaleLink>
                     </div>
                 </Container>
             </div>

@@ -108,7 +108,7 @@ export function OversightMark({
 export function OversightWordmark({
     invert = false,
     animated = true,
-    markSize = 32,
+    markSize = 26,
     className,
     replayKey, // optional: force remount for hover replay
 }) {

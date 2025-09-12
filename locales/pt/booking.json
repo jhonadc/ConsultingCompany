@@ -1,8 +1,8 @@
 {
     "booking": {
         "header": {
-            "eyebrow": "Reserva",
-            "title": "Solicite sua sessão",
+            "eyebrow": "Informações",
+            "title": "Entre em contato",
             "intro": "Compartilhe seus objetivos conosco e descubra como podemos guiá-lo por requisitos complexos de compliance."
         },
         "fields": {

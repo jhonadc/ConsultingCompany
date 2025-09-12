@@ -75,7 +75,7 @@ export default function LgpdPage() {
                                             <p className="mt-2 text-sm text-neutral-700">{desc}</p>
                                             <div className="mt-auto pt-5">
                                                 <LocaleLink
-                                                    href={href || '/contact'}
+                                                    href={href}
                                                     className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
                                                 >
                                                     {cta}
