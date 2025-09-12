@@ -254,6 +254,15 @@
             ]
         },
         "trust": {
+            "eyebrow": "Proof you can ship safely",
+            "title": "Integrated expertise that unblocks delivery",
+            "intro": "",
+            "colors": [
+                "border-emerald-500",
+                "border-indigo-500",
+                "border-amber-500",
+                "border-rose-500"
+            ],
             "items": [
                 {
                     "metric": "Integrated Expertise",

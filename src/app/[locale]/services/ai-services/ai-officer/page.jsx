@@ -24,7 +24,9 @@ export default function AiOfficerPage() {
     const requirements = arr(M.requirements?.items)
     const coreServices = arr(M.coreServices?.items)
     const ongoing = arr(M.ongoing?.items)
-    const specialized = arr(M.specialized?.items)
+
+    // AIMS (ISO/IEC 42001)
+    const aimsItems = arr(M.aims?.items)
     const steps = arr(M.steps?.items)
     const trust = arr(M.trust?.items)
 
@@ -46,7 +48,7 @@ export default function AiOfficerPage() {
         { border: 'border-orange-500', ring: 'hover:ring-orange-100' }
     ]
 
-    const specializedColors = [
+    const aimsColors = [
         { border: 'border-pink-500', ring: 'hover:ring-pink-100' },
         { border: 'border-blue-500', ring: 'hover:ring-blue-100' },
         { border: 'border-purple-500', ring: 'hover:ring-purple-100' },
@@ -99,27 +101,44 @@ export default function AiOfficerPage() {
 
             {/* REQUIREMENTS */}
             <Container id="requirements" className="mt-24">
-                <SectionIntro eyebrow={M.requirements?.eyebrow} title={M.requirements?.title}>
+                <SectionIntro
+                    eyebrow={M.requirements?.eyebrow}
+                    title={M.requirements?.title}
+                >
                     <p dangerouslySetInnerHTML={{ __html: M.requirements?.body ?? '' }} />
                 </SectionIntro>
 
-                <div className="mt-12 grid gap-8 lg:grid-cols-3">
+                {/* mesma altura e alinhamento entre colunas */}
+                <div className="mt-12 grid gap-8 lg:grid-cols-3 items-stretch">
                     {requirements.map((req, i) => {
                         const colors = requirementColors[i % requirementColors.length]
                         return (
                             <FadeIn key={i}>
-                                <div className={`rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border} hover:shadow-md transition-shadow`}>
-                                    <div className={`inline-flex rounded-lg p-2 ${colors.ring}`}>
-                                        <div className={`w-3 h-3 rounded-full ${colors.accent}`} />
+                                {/* card ocupa 100% da altura disponível */}
+                                <div
+                                    className={`h-full flex flex-col rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border} hover:shadow-md transition-shadow`}
+                                >
+                                    {/* bolinha e título na mesma linha, bolinha no topo */}
+                                    <div className="flex items-start gap-2">
+                                        <span className={`mt-1 inline-block w-3 h-3 rounded-full ${colors.accent} shrink-0`} />
+                                        <h3 className="text-xl font-semibold text-neutral-900 leading-tight">
+                                            {req.title}
+                                        </h3>
                                     </div>
-                                    <h3 className="mt-4 text-xl font-semibold text-neutral-900">{req.title}</h3>
-                                    <p className="mt-3 text-neutral-700">{req.description}</p>
+
+                                    {/* descrição cresce para equalizar alturas */}
+                                    <p className="mt-3 text-neutral-700 flex-1">
+                                        {req.description}
+                                    </p>
+
                                     <div className="mt-4">
-                                        <h4 className="text-sm font-semibold text-neutral-900 mb-2">{M.requirements?.examplesLabel}</h4>
-                                        <ul className="space-y-1">
-                                            {arr(req.examples).map((example, idx) => (
+                                        <h4 className="text-sm font-semibold text-neutral-900 mb-2">
+                                            {M.requirements?.examplesLabel}
+                                        </h4>
+                                        <ul className="space-y-2">
+                                            {req.examples.map((example, idx) => (
                                                 <li key={idx} className="flex items-start text-sm text-neutral-600">
-                                                    <div className={`w-1 h-1 rounded-full ${colors.accent} mt-2 mr-2 flex-shrink-0`} />
+                                                    <span className={`mt-2 mr-2 inline-block w-1 h-1 rounded-full ${colors.accent} shrink-0`} />
                                                     {example}
                                                 </li>
                                             ))}
@@ -142,6 +161,7 @@ export default function AiOfficerPage() {
                 </div>
             </Container>
 
+
             {/* FACTS */}
             <Container className="mt-20">
                 <SectionIntro eyebrow={M.factsIntro?.eyebrow} title={M.factsIntro?.title}>
@@ -161,21 +181,52 @@ export default function AiOfficerPage() {
                         const colors = coreServiceColors[i % coreServiceColors.length]
                         return (
                             <FadeIn key={i}>
-                                <div className={`rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border}`}>
-                                    <h3 className="text-2xl font-semibold text-neutral-900">{service.title}</h3>
-                                    <p className="mt-4 text-lg text-neutral-700">{service.description}</p>
-                                    <ul className="mt-6 space-y-2">
-                                        {arr(service.deliverables).map((d, idx) => (
-                                            <li key={idx} className="flex items-start text-sm text-neutral-600">
-                                                <div className={`w-1.5 h-1.5 rounded-full ${colors.accent} mt-1.5 mr-3`} />
-                                                {d}
-                                            </li>
-                                        ))}
-                                    </ul>
+                                <div
+                                    className={`rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border}`}
+                                >
+                                    <div className="lg:flex lg:items-start lg:gap-8">
+                                        <div className="lg:flex-1">
+                                            {/* quadradinho colorido + título */}
+                                            <div className="flex items-center gap-3">
+                                                <div className={`rounded-lg p-2 ${colors.icon}`}>
+                                                    <div className={`w-4 h-4 rounded ${colors.accent}`} />
+                                                </div>
+                                                <h3 className="text-2xl font-semibold text-neutral-900">
+                                                    {service.title}
+                                                </h3>
+                                            </div>
+
+                                            <p className="mt-4 text-lg text-neutral-700">
+                                                {service.description}
+                                            </p>
+
+                                            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                                                <div>
+                                                    <h4 className="font-semibold text-neutral-900 mb-3">
+                                                        {M.coreServices?.deliverablesLabel}
+                                                    </h4>
+                                                    <ul className="space-y-2">
+                                                        {service.deliverables.map((item, idx) => (
+                                                            <li
+                                                                key={idx}
+                                                                className="flex items-start text-sm text-neutral-600"
+                                                            >
+                                                                <div
+                                                                    className={`w-1.5 h-1.5 rounded-full ${colors.accent} mt-1.5 mr-3 flex-shrink-0`}
+                                                                />
+                                                                {item}
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </FadeIn>
                         )
                     })}
+
                 </div>
             </Container>
 
@@ -208,22 +259,22 @@ export default function AiOfficerPage() {
                 </div>
             </Container>
 
-            {/* SPECIALIZED */}
+            {/* AIMS (ISO/IEC 42001) */}
             <Container className="mt-24">
-                <SectionIntro eyebrow={M.specialized?.eyebrow} title={M.specialized?.title}>
-                    <p>{M.specialized?.intro}</p>
+                <SectionIntro eyebrow={M.aims?.eyebrow} title={M.aims?.title}>
+                    <p>{M.aims?.intro}</p>
                 </SectionIntro>
 
                 <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-                    {specialized.map((s, i) => {
-                        const colors = specializedColors[i % specializedColors.length]
+                    {aimsItems.map((s, i) => {
+                        const colors = aimsColors[i % aimsColors.length]
                         return (
                             <FadeIn key={i}>
                                 <div className={`rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border} ${colors.ring}`}>
                                     <h3 className="text-lg font-semibold text-neutral-900">{s.title}</h3>
                                     <p className="mt-2 text-sm text-neutral-700">{s.description}</p>
                                     <div className="mt-4">
-                                        <h4 className="text-xs font-semibold text-neutral-500 uppercase mb-2">{M.specialized?.regsLabel}</h4>
+                                        <h4 className="text-xs font-semibold text-neutral-500 uppercase mb-2">{M.aims?.regsLabel}</h4>
                                         <div className="flex flex-wrap gap-1">
                                             {arr(s.regulations).map((r, idx) => (
                                                 <span key={idx} className="inline-flex rounded-full bg-neutral-100 px-2 py-1 text-xs text-neutral-600">
@@ -279,16 +330,41 @@ export default function AiOfficerPage() {
 
             {/* TRUST */}
             <Container className="mt-24">
+                <SectionIntro
+                    eyebrow={M.trust?.eyebrow}
+                    title={M.trust?.title}
+                >
+                    {M.trust?.intro ? <p>{M.trust.intro}</p> : null}
+                </SectionIntro>
+
                 <Border />
                 <FadeInStagger className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                    {trust.map((t, i) => (
-                        <div key={i} className="rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500">
-                            <div className="text-2xl font-bold text-neutral-900 mb-2">{t.metric}</div>
-                            <p className="text-sm text-neutral-700">{t.description}</p>
-                        </div>
-                    ))}
+                    {trust.map((t, i) => {
+                        // cycle some nice accent colors; or override via JSON (see below)
+                        const palette = M.trust?.colors ?? [
+                            'border-emerald-500',
+                            'border-indigo-500',
+                            'border-amber-500',
+                            'border-rose-500'
+                        ]
+                        const borderClass = palette[i % palette.length]
+
+                        return (
+                            <div
+                                key={i}
+                                className={[
+                                    'rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm border-l-2',
+                                    borderClass,
+                                ].join(' ')}
+                            >
+                                <div className="text-2xl font-bold text-neutral-900 mb-2">{t.metric}</div>
+                                <p className="text-sm text-neutral-700">{t.description}</p>
+                            </div>
+                        )
+                    })}
                 </FadeInStagger>
             </Container>
+
 
             {/* FINAL CTA */}
             <Container className="mt-24">

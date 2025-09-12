@@ -1,273 +1,291 @@
 {
     "aiOfficer": {
         "hero": {
-            "eyebrow": "Lei da IA da UE • Chief AI Officer • Compliance Estratégico",
-            "title": "Serviços Executivos de AI Officer para Líderes de Mercado",
-            "highlight1": "Transforme complexidade regulatória em vantagem competitiva.",
-            "lead1": "Implante",
-            "highlight2": "liderança em governança de IA",
-            "lead2": "testada em batalha que acelera a inovação garantindo compliance à prova de balas desde o primeiro dia.",
-            "ctaPrimary": "Proteja Seu Futuro em IA"
+            "eyebrow": "AI Act da União Europeia • Direito e Engenharia • Governança na prática",
+            "title": "AI Officer: serviços para governança em IA",
+            "highlight1": "Transforme exigências regulatórias em governança estruturada.",
+            "lead1": "Nosso serviço de AI Officer une",
+            "highlight2": "visão jurídica e conhecimento técnico",
+            "lead2": "para que sua empresa cumpra obrigações, reduza riscos e desenvolva sistemas de IA confiáveis desde o início.",
+            "ctaPrimary": "Fale com um especialista em IA"
         },
         "heroStats": [
             {
-                "value": "€35M+",
-                "title": "Risco Médio de Multa",
-                "caption": "Custo de não conformidade",
+                "value": "152+",
+                "title": "Obrigações distintas",
+                "caption": "Entre artigos e anexos do AI Act",
                 "valueClass": "text-red-600"
             },
             {
-                "value": "180 Dias",
-                "title": "Janela de Implementação",
-                "caption": "Até aplicação total",
-                "valueClass": "text-amber-600"
-            },
-            {
-                "value": "Zero",
-                "title": "Tolerância a Lacunas",
-                "caption": "Expectativas regulatórias",
-                "valueClass": "text-emerald-600"
-            },
-            {
-                "value": "100%",
-                "title": "Garantia de Cobertura",
-                "caption": "Todas as obrigações da Lei da IA",
+                "value": "27",
+                "title": "Países da UE",
+                "caption": "Práticas de fiscalização diferentes",
                 "valueClass": "text-indigo-600"
+            },
+            {
+                "value": "€35M",
+                "title": "Multa máxima",
+                "caption": "Por descumprimento de obrigações",
+                "valueClass": "text-purple-600"
+            },
+            {
+                "value": "Fornecedores",
+                "title": "Due diligence",
+                "caption": "Revisão de contratos e uso de IA de terceiros",
+                "valueClass": "text-emerald-600"
             }
         ],
         "requirements": {
-            "eyebrow": "Liderança Estratégica em IA",
-            "title": "Quando você precisa de um AI Officer que entrega resultados",
-            "body": "A Lei da IA da UE exige <span class=\"font-semibold\">responsabilidade em nível executivo</span> para governança de IA. Líderes de mercado não apenas cumprem normas—eles transformam requisitos regulatórios em excelência operacional. Nossa função de AI Officer oferece a <span class=\"font-semibold\">liderança estratégica e execução tática</span> que transforma compliance de centro de custo em vantagem competitiva.",
-            "examplesLabel": "Áreas de Foco Estratégico:",
-            "helper": "Pronto para transformar compliance da Lei da IA em vantagem competitiva?",
-            "cta": "Agendar Revisão Estratégica",
+            "eyebrow": "Por que ter um AI Officer",
+            "title": "Quando a governança dedicada se torna essencial",
+            "body": "O AI Act traz <span class=\"font-semibold\">obrigações complexas</span> que envolvem direito, tecnologia e operação. Ter um AI Officer garante que exista uma <span class=\"font-semibold\">pessoa responsável por interpretar, implementar e comunicar</span> essas obrigações — evitando riscos jurídicos e falhas de última hora.",
+            "examplesLabel": "Cenários comuns:",
+            "helper": "Sua empresa tem clareza sobre quem responde pela IA?",
+            "cta": "Obter suporte especializado",
             "items": [
                 {
-                    "title": "Empresas de IA em Crescimento",
-                    "description": "Empresas de IA de alto crescimento precisam de governança que escale com ambição—robusta para reguladores, ágil para velocidade de inovação.",
+                    "title": "Fornecedores de IA de alto risco",
+                    "description": "Quem desenvolve sistemas listados no Anexo III precisa de gestão de riscos, documentação completa e interface com autoridades.",
                     "examples": [
-                        "Provedores de modelos fundamentais escalando para enterprise",
-                        "Startups AI-first preparando para Série B+",
-                        "Campeões europeus de IA mirando mercados globais",
-                        "Empresas de deep-tech com aplicações regulatoriamente sensíveis"
+                        "Sistemas de biometria e reconhecimento facial",
+                        "Componentes de segurança em transporte e energia",
+                        "Ferramentas médicas de diagnóstico",
+                        "Plataformas de recrutamento ou avaliação educacional"
                     ]
                 },
                 {
-                    "title": "Transformação Empresarial em IA",
-                    "description": "Empresas Fortune 500 implantando IA em escala requerem governança nível enterprise com visibilidade e responsabilidade no nível do conselho.",
+                    "title": "Desenvolvedores de modelos de uso geral (GPAI)",
+                    "description": "Modelos de base e fundacionais precisam lidar com requisitos de transparência, avaliação de risco sistêmico e governança de dados.",
                     "examples": [
-                        "Serviços financeiros com gestão de risco de modelos",
-                        "Organizações de saúde implantando IA clínica",
-                        "Manufatura com sistemas autônomos",
-                        "Operadores de infraestrutura crítica"
+                        "Grandes modelos de linguagem (LLMs)",
+                        "Modelos multimodais com uso amplo",
+                        "APIs de IA generativa para clientes",
+                        "Serviços de ajuste e fine-tuning com responsabilidade derivada"
                     ]
                 },
                 {
-                    "title": "Implantações de IA de Alto Risco",
-                    "description": "Sistemas de IA críticos onde erros regulatórios ameaçam continuidade dos negócios e posição no mercado.",
+                    "title": "Empresas que usam ou integram IA",
+                    "description": "Quem adota IA em processos de negócio precisa garantir supervisão humana, monitorar performance e ter contratos robustos com fornecedores.",
                     "examples": [
-                        "Indústrias regulamentadas com implicações de segurança",
-                        "Procurement e implantação de IA no setor público",
-                        "Serviços de IA transfronteiriços exigindo compliance multi-jurisdicional",
-                        "Cenários de M&A requerendo postura limpa de compliance em IA"
+                        "Bancos utilizando IA para análise de crédito",
+                        "Hospitais com sistemas de apoio a diagnósticos",
+                        "Órgãos públicos oferecendo serviços digitais com IA",
+                        "Empresas integrando recursos de IA em softwares corporativos"
                     ]
                 }
             ]
         },
         "factsIntro": {
-            "eyebrow": "Realidade Executiva",
-            "title": "Por que governança premium em IA é inegociável",
-            "body": "A Lei da IA não é apenas mais uma regulamentação—é uma mudança fundamental em direção à <span class=\"font-semibold\">responsabilidade do produto para sistemas de IA</span>. Organizações líderes reconhecem que governança de IA de classe mundial não é overhead—é a fundação para <span class=\"font-semibold\">vantagem sustentável em IA</span> e confiança institucional."
+            "eyebrow": "A realidade da conformidade",
+            "title": "Estar em conformidade com o AI Act é um processo contínuo",
+            "body": "O AI Act não é algo que se resolve em um projeto pontual. Ele exige <span class=\"font-semibold\">gestão permanente</span>. O AI Officer estrutura esse processo: documenta obrigações, avalia fornecedores, cuida de direitos de uso de dados e modelos, e garante que conformidade faça parte da rotina da empresa."
         },
         "facts": [
             {
                 "color": "#dc2626",
-                "title": "Multas Regulatórias",
-                "value": "Até €35M",
-                "description": "Ou 7% do faturamento global—o que for maior"
+                "title": "Sistemas de alto risco",
+                "value": "Anexo III",
+                "description": "Casos específicos com obrigações completas de documentação e supervisão"
             },
             {
                 "color": "#2563eb",
-                "title": "Risco de Acesso ao Mercado",
-                "value": "UE inteira",
-                "description": "Sistemas de IA não conformes enfrentam exclusão imediata do mercado"
+                "title": "Avaliação de conformidade",
+                "value": "Obrigatória",
+                "description": "Avaliação externa para marcação CE de sistemas de alto risco"
             },
             {
                 "color": "#059669",
-                "title": "Vantagem Competitiva",
-                "value": "First-mover",
-                "description": "Governança premium cria diferenciação sustentável"
+                "title": "Risco de fornecedores",
+                "value": "Crítico",
+                "description": "Contratos com provedores de IA precisam prever responsabilidades e direitos"
             }
         ],
         "coreServices": {
-            "eyebrow": "Governança Executiva de IA",
-            "title": "Função estratégica de AI Officer que gera resultados de negócio",
-            "intro": "Não apenas implementamos compliance—arquitetamos sistemas de governança de IA que aceleram inovação, reduzem riscos operacionais e criam valor mensurável para o negócio.",
-            "deliverablesLabel": "Entregas Estratégicas:",
+            "eyebrow": "Serviços principais",
+            "title": "O que um AI Officer entrega na prática",
+            "intro": "O AI Officer cobre todo o ciclo: interpretação jurídica, adaptação técnica e interlocução com autoridades.",
+            "deliverablesLabel": "Principais entregas:",
             "items": [
                 {
-                    "title": "Estratégia de Governança de IA e Modelo Operacional",
-                    "description": "Estratégia de IA em nível executivo que alinha requisitos regulatórios com objetivos de negócio, posicionamento competitivo e trajetória de crescimento.",
+                    "title": "Gestão de riscos e governança",
+                    "description": "Frameworks completos de gestão e definição de responsabilidades para IA.",
                     "deliverables": [
-                        "Charter de governança de IA e roadmap estratégico prontos para o conselho",
-                        "Framework de apetite ao risco de IA alinhado com estratégia de negócio",
-                        "Modelo operacional com responsabilidades claras e direitos de decisão",
-                        "KPIs e métricas de governança vinculadas a resultados de negócio"
+                        "Classificação e inventário de sistemas",
+                        "Plano de gestão de riscos de IA",
+                        "Papéis de governança e fluxos de escalonamento",
+                        "Integração com compliance já existente"
                     ]
                 },
                 {
-                    "title": "Gestão de Risco e Qualidade Nível Enterprise",
-                    "description": "Arquitetura sofisticada de gestão de riscos que escala da agilidade de startup ao rigor enterprise sem comprometer a velocidade de inovação.",
+                    "title": "Documentação e análise de fornecedores",
+                    "description": "Preparação de documentação auditável e due diligence de ferramentas externas.",
                     "deliverables": [
-                        "Metodologia dinâmica de avaliação de riscos com gatilhos automatizados",
-                        "Sistema de gestão de qualidade integrado com DevOps/MLOps",
-                        "Monitoramento contínuo e alertas para deriva regulatória",
-                        "Dashboards executivos com postura de compliance em tempo real"
+                        "Pacotes de documentação técnica",
+                        "Revisão de APIs e serviços de terceiros",
+                        "Análise contratual e de responsabilidade civil",
+                        "Checagem de direitos autorais e licenças de uso"
                     ]
                 },
                 {
-                    "title": "Inteligência Regulatória e Relações com Autoridades",
-                    "description": "Estratégia regulatória proativa que antecipa mudanças, gerencia relacionamentos com autoridades e posiciona sua organização como líder de pensamento.",
+                    "title": "Supervisão e conformidade desde o início",
+                    "description": "Desenho de mecanismos de supervisão e práticas de compliance já no desenvolvimento.",
                     "deliverables": [
-                        "Scanning do horizonte regulatório e avaliação de impacto",
-                        "Estratégia de engajamento com autoridades e gestão de relacionamentos",
-                        "Participação na indústria e posicionamento de liderança de pensamento",
-                        "Protocolos de comunicação de crise e resposta a incidentes"
+                        "Protocolos de supervisão humana",
+                        "Métodos de monitoramento de viés",
+                        "Mecanismos de transparência para usuários",
+                        "Checkpoints de conformidade no ciclo de produto"
                     ]
                 }
             ]
         },
         "ongoing": {
-            "eyebrow": "Excelência Contínua",
-            "title": "Governança de IA que evolui com seu negócio",
-            "intro": "Governança premium de IA requer refinamento contínuo, gestão proativa de riscos e adaptação estratégica à evolução regulatória.",
-            "featuresLabel": "Excelência Contínua:",
+            "eyebrow": "Suporte contínuo",
+            "title": "Mantendo a conformidade no dia a dia",
+            "intro": "A governança de IA não termina — ela acompanha mudanças de mercado, tecnologia e regulação.",
+            "featuresLabel": "Serviços inclusos:",
             "items": [
                 {
-                    "title": "Gestão Preditiva de Riscos",
-                    "description": "Mantenha-se à frente de questões antes que se tornem problemas.",
+                    "title": "Gestão de incidentes e interface com autoridades",
+                    "description": "Tratamento de incidentes relevantes e comunicação com reguladores.",
                     "features": [
-                        "Sistemas de detecção de riscos e alerta precoce alimentados por IA",
-                        "Modelagem preditiva de impacto regulatório",
-                        "Análise automatizada de lacunas de compliance e remediação"
+                        "Protocolos de resposta rápida",
+                        "Notificação a autoridades competentes",
+                        "Gestão de planos corretivos"
                     ]
                 },
                 {
-                    "title": "Engajamento Estratégico com Autoridades",
-                    "description": "Construa relacionamentos de confiança com reguladores e definidores de padrões.",
+                    "title": "Monitoramento de performance e fornecedores",
+                    "description": "Acompanhamento contínuo dos sistemas internos e de soluções contratadas.",
                     "features": [
-                        "Comunicação proativa e consulta com autoridades",
-                        "Participação e liderança em grupos de trabalho da indústria",
-                        "Input no desenvolvimento de políticas e sandboxing regulatório"
+                        "Medição de performance de IA em produção",
+                        "Avaliação recorrente de fornecedores",
+                        "Garantia de qualidade e governança de dados"
                     ]
                 },
                 {
-                    "title": "Laboratório de Inovação em Governança",
-                    "description": "Evolua continuamente suas capacidades de governança.",
+                    "title": "Acompanhamento regulatório",
+                    "description": "Monitoramento de novas regras, guias e padrões técnicos.",
                     "features": [
-                        "Avaliação de impacto de tecnologias emergentes",
-                        "Automação de governança e compliance assistida por IA",
-                        "Pesquisa de melhores práticas e inteligência competitiva"
+                        "Atualização sobre atos delegados",
+                        "Interpretação de novas exigências",
+                        "Análise de impacto em operações no Brasil e na UE"
                     ]
                 }
             ]
         },
-        "specialized": {
-            "eyebrow": "Liderança Setorial",
-            "title": "Expertise profunda onde mais importa",
-            "intro": "Governança premium de IA requer entendimento profundo de riscos específicos do setor, interconexões regulatórias e dinâmicas competitivas.",
-            "regsLabel": "Integração Regulatória",
+        "aims": {
+            "eyebrow": "Governança estruturada",
+            "title": "AIMS (AI Management System) como base da conformidade",
+            "intro": "A norma ISO/IEC 42001 exige que empresas implementem um Sistema de Gestão de IA (AIMS). É a espinha dorsal da conformidade com o AI Act: transforma obrigações abstratas em processos, responsabilidades e evidências.",
+            "regsLabel": "Elementos principais",
             "items": [
                 {
-                    "title": "Serviços Financeiros & Fintech",
-                    "description": "Navegue a interseção da Lei da IA, regulamentações bancárias e regras de conduta de mercado com precisão cirúrgica.",
+                    "title": "Estrutura de governança",
+                    "description": "Define papéis, responsabilidades e fluxos de decisão entre jurídico, tecnologia e gestão.",
                     "regulations": [
-                        "Diretrizes de IA EBA/ESMA",
-                        "Gestão de Risco de Modelos (MRM)",
-                        "Dever do Consumidor e Equidade"
+                        "Accountability clara",
+                        "Papéis de supervisão documentados",
+                        "Responsabilidade em nível de diretoria"
                     ]
                 },
                 {
-                    "title": "Saúde & Ciências da Vida",
-                    "description": "Alinhe governança de IA com regulamentações de dispositivos médicos e requisitos de segurança clínica.",
+                    "title": "Políticas e processos",
+                    "description": "Traduz as exigências do AI Act em políticas internas e procedimentos operacionais.",
                     "regulations": [
-                        "Integração MDR/IVDR",
-                        "Padrões de Evidência Clínica",
-                        "Protocolos de Segurança do Paciente"
+                        "Procedimentos de gestão de risco",
+                        "Governança de dados e modelos",
+                        "Protocolos de resposta a incidentes"
                     ]
                 },
                 {
-                    "title": "Infraestrutura Crítica & Defesa",
-                    "description": "Governança de IA com foco em segurança para sistemas onde falha não é uma opção.",
+                    "title": "Integração às operações",
+                    "description": "Incorpora controles de conformidade diretamente em compras, engenharia e liberação de sistemas.",
                     "regulations": [
-                        "Requisitos de Cibersegurança NIS2",
-                        "Obrigações de Entidades Críticas",
-                        "Considerações de Segurança Nacional"
+                        "Critérios de aprovação de releases",
+                        "Due diligence de fornecedores",
+                        "Gestão de mudanças"
+                    ]
+                },
+                {
+                    "title": "Evidências e melhoria contínua",
+                    "description": "Garante documentação auditável, monitoramento de performance e adaptação às mudanças regulatórias.",
+                    "regulations": [
+                        "Logs e relatórios técnicos",
+                        "Dashboards de acompanhamento",
+                        "Rastreamento de atualizações regulatórias"
                     ]
                 }
             ]
         },
         "steps": {
-            "eyebrow": "Implementação Estratégica",
-            "title": "De risco regulatório a vantagem competitiva em 90 dias",
-            "intro": "Nossa metodologia comprovada transforma compliance de IA de necessidade defensiva em capacidade ofensiva—rapidamente.",
-            "outputsLabel": "Resultados Estratégicos:",
-            "cta": "Iniciar Avaliação Estratégica →",
+            "eyebrow": "Como atuamos",
+            "title": "Implementação de governança em etapas",
+            "intro": "Aplicamos governança de IA em fases práticas que equilibram conformidade e operação.",
+            "outputsLabel": "Resultados:",
+            "cta": "Iniciar avaliação de governança →",
             "items": [
                 {
-                    "title": "Avaliação Estratégica & Quick Wins (30 dias)",
-                    "description": "Análise abrangente do panorama de IA com mitigação imediata de riscos e posicionamento competitivo.",
+                    "title": "Mapeamento e diagnóstico",
+                    "description": "Identificação de riscos, obrigações e fornecedores críticos.",
                     "deliverables": [
-                        "Avaliação executiva de maturidade em governança de IA",
-                        "Análise de lacunas regulatórias com plano priorizado de remediação",
-                        "Implementação de quick-wins para redução imediata de riscos"
+                        "Inventário de sistemas e fornecedores",
+                        "Classificação de riscos e gap analysis",
+                        "Desenho inicial da governança de IA"
                     ]
                 },
                 {
-                    "title": "Arquitetura de Governança & Implementação (60 dias)",
-                    "description": "Implante infraestrutura de governança de IA nível enterprise integrada com operações de negócio.",
+                    "title": "Implementação",
+                    "description": "Criação de documentação, protocolos de supervisão e rotinas de conformidade.",
                     "deliverables": [
-                        "Modelo operacional completo de governança e framework de políticas",
-                        "Sistemas automatizados de monitoramento e relatórios de compliance",
-                        "Programa de treinamento de pessoal e gestão de mudanças"
+                        "Pacotes de documentação técnica",
+                        "Protocolos de supervisão e monitoramento de viés",
+                        "Integração nos processos de desenvolvimento"
                     ]
                 },
                 {
-                    "title": "Excelência Operacional & Otimização (Contínuo)",
-                    "description": "Melhoria contínua e adaptação estratégica para manter liderança em governança.",
+                    "title": "Monitoramento e adaptação",
+                    "description": "Manutenção da governança com monitoramento contínuo e ajustes regulatórios.",
                     "deliverables": [
-                        "Otimização de performance e melhorias de eficiência",
-                        "Inteligência regulatória e adaptação estratégica",
-                        "Gestão de relacionamentos com autoridades e liderança de pensamento"
+                        "Sistemas de monitoramento e reporting",
+                        "Avaliação recorrente de fornecedores",
+                        "Protocolos de comunicação com autoridades"
                     ]
                 }
             ]
         },
         "trust": {
+            "eyebrow": "Prova de que sua empresa pode avançar com segurança",
+            "title": "Expertise integrada que gera confiança",
+            "intro": "",
+            "colors": [
+                "border-emerald-500",
+                "border-indigo-500",
+                "border-amber-500",
+                "border-rose-500"
+            ],
             "items": [
                 {
-                    "metric": "Zero Falhas de Compliance",
-                    "description": "Histórico perfeito em todos os engajamentos regulatórios e auditorias."
+                    "metric": "Expertise integrada",
+                    "description": "Análise jurídica e técnica unificadas em uma só função."
                 },
                 {
-                    "metric": "30% Mais Rápido Time-to-Market",
-                    "description": "Governança premium acelera em vez de impedir a inovação."
+                    "metric": "Supervisão de fornecedores",
+                    "description": "Ferramentas e serviços de IA de terceiros avaliados antes da contratação e uso."
                 },
                 {
-                    "metric": "€50M+ Mitigação de Riscos",
-                    "description": "Redução documentada de riscos regulatórios no portfólio de clientes."
+                    "metric": "Conformidade desde o início",
+                    "description": "Requisitos regulatórios incorporados ao desenvolvimento e à operação dos sistemas."
                 },
                 {
-                    "metric": "Confiança C-Suite",
-                    "description": "Governança pronta para conselho que executivos podem defender e promover."
+                    "metric": "Pronto para autoridades",
+                    "description": "Documentação e relatórios preparados conforme as exigências regulatórias."
                 }
             ]
         },
         "finalCta": {
-            "title": "Lidere a revolução da governança de IA",
-            "body": "Junte-se às fileiras de líderes em IA que veem excelência regulatória como vantagem competitiva. Implante governança de IA de classe mundial que acelera o crescimento garantindo compliance sem concessões.",
-            "ctaPrimary": "Agendar Briefing Executivo"
+            "title": "Coloque a governança de IA em prática",
+            "body": "Conte com um AI Officer que une direito e tecnologia — garantindo cumprimento das obrigações, gestão de riscos e conformidade integrada às operações.",
+            "ctaPrimary": "Agendar uma conversa"
         }
     }
 }
