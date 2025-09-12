@@ -394,33 +394,7 @@ export default function HomePage() {
                         </LocaleLink>
                     ))}
 
-                    {/* Divider */}
-                    <div className="my-1 h-px w-full sm:w-600 lg:w-60 bg-neutral-200"></div>
 
-                    {/* Extra Links */}
-                    <LocaleLink
-                        href={"/regulations/gdpr-dpo"}
-                        className="group inline-flex items-center justify-between
-        w-full sm:w-50 lg:w-60 rounded-full border border-blue-400
-        bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-blue-700
-        shadow-sm backdrop-blur-sm transition-all duration-200
-        hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5"
-                    >
-                        <span>Data Protection Officer</span>
-                        <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
-                    </LocaleLink>
-
-                    <LocaleLink
-                        href="/services/ai-officer"
-                        className="group inline-flex items-center justify-between
-        w-full sm:w-50 lg:w-60 rounded-full border border-purple-400
-        bg-white/80 px-5 py-3 text-sm sm:text-[15px] text-purple-700
-        shadow-sm backdrop-blur-sm transition-all duration-200
-        hover:scale-105 hover:font-semibold hover:shadow-md hover:-translate-y-0.5"
-                    >
-                        <span>AI Officer</span>
-                        <span aria-hidden className="ml-2 transition-transform group-hover:translate-x-1">➔</span>
-                    </LocaleLink>
                 </nav>
             </Container>
 

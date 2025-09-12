@@ -14,7 +14,6 @@ import { ColorDivider } from '@/components/ColorDivider'
 import { BookingForm } from '@/components/BookingForm'
 import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
 import imageLaptop from '@/images/laptop.jpg'
-import LocaleLink from '@/components/LocaleLink'
 
 export default function GdprDpoPage() {
     const messages = useMessages()
@@ -88,13 +87,18 @@ export default function GdprDpoPage() {
                     </h2>
 
                     <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                        <LocaleLink
+                        <Link
                             href="/contact"
                             className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
                         >
                             {M?.hero?.primaryCta ?? ''}
-                        </LocaleLink>
-
+                        </Link>
+                        <a
+                            href="#oferta"
+                            className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-6 py-3 text-sm text-neutral-700 hover:bg-neutral-50"
+                        >
+                            {M?.hero?.secondaryCta ?? ''}
+                        </a>
                     </div>
                 </FadeIn>
             </Container>
@@ -189,13 +193,18 @@ export default function GdprDpoPage() {
 
                     {/* Botões */}
                     <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                        <LocaleLink
+                        <Link
                             href="/contact"
                             className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
                         >
                             {M?.offer?.primaryCta ?? ''}
-                        </LocaleLink>
-
+                        </Link>
+                        <a
+                            href="#servicos"
+                            className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-6 py-3 text-sm text-neutral-700 hover:bg-neutral-50"
+                        >
+                            {M?.offer?.secondaryCta ?? ''}
+                        </a>
                     </div>
                 </FadeIn>
             </Container>
@@ -227,7 +236,14 @@ export default function GdprDpoPage() {
                                     >
                                         <h3 className="text-lg font-semibold text-neutral-900">{card.title ?? ''}</h3>
                                         <p className="mt-2 text-sm text-neutral-700">{card.desc ?? ''}</p>
-
+                                        <div className="mt-auto pt-5">
+                                            <Link
+                                                href="/contact"
+                                                className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
+                                            >
+                                                {card.cta ?? ''}
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             )
@@ -318,12 +334,12 @@ export default function GdprDpoPage() {
                     <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
                         {M?.finalCta?.subtitle ?? ''}
                     </p>
-                    <LocaleLink
+                    <Link
                         href="/contact"
                         className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
                     >
                         {M?.finalCta?.button ?? ''}
-                    </LocaleLink>
+                    </Link>
                 </div>
             </Container>
 

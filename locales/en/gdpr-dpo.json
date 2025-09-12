@@ -1,27 +1,27 @@
 {
     "gdprDpo": {
         "meta": {
-            "title": "European DPO for Brazilian Companies — Oversight Governance Studio",
-            "description": "European Data Protection Officer for Brazilian companies. Lawyer (USP — Largo de São Francisco) and Software Engineer based in Berlin. GDPR in practice, contracts ready for due diligence, and audit-proof evidence."
+            "title": "European DPO for U.S. Companies — Oversight Governance Studio",
+            "description": "External EU Data Protection Officer for U.S. companies. Lawyer and Software Engineer based in Berlin. GDPR done in practice for the U.S. market: procurement-ready contracts, audit-ready evidence, and seamless alignment with U.S. enterprise workflows."
         },
         "hero": {
-            "eyebrow": "For Brazilian companies serving customers in the EU",
-            "title": "European Data Protection Officer for Brazilian companies.",
+            "eyebrow": "For U.S. companies serving customers or processing data in the EU",
+            "title": "External European DPO for U.S. companies.",
             "subtitle": {
                 "0": {
                     "before": "Operating as an ",
-                    "bold": "external DPO in the EU",
+                    "bold": "external EU DPO",
                     "after": " from Berlin —"
                 },
                 "1": {
-                    "bold1": "lawyer (USP — Largo de São Francisco)",
+                    "bold1": "lawyer",
                     "mid": " and",
                     "bold2": " software engineer",
                     "after": ". We bridge legal and engineering to"
                 },
                 "2": {
                     "bold": " run GDPR in practice",
-                    "after": ", speed up contracts, and pass due diligence."
+                    "after": ", accelerate enterprise contracts, and pass due diligence."
                 }
             },
             "primaryCta": "Book a call",
@@ -30,29 +30,29 @@
         "quickProof": {
             "items": [
                 {
-                    "title": "Rare dual background",
-                    "desc": "Law (USP — Largo de São Francisco) + Software Engineering. I turn regulatory into backlog and technical evidence."
+                    "title": "Dual expertise, one partner",
+                    "desc": "Law + Software Engineering. We translate regulation into backlog items and technical, auditable evidence."
                 },
                 {
-                    "title": "EU-based",
-                    "desc": "Berlin timezone and on-the-ground experience with customers, authorities and European auditors."
+                    "title": "EU-based, U.S.-friendly",
+                    "desc": "Based in Berlin with overlapping working hours for East & West Coast. Hands-on experience with EU customers, authorities, and auditors."
                 },
                 {
-                    "title": "Contracts that unlock deals",
-                    "desc": "Policies, RoPA, DPIAs, SCCs/TIAs and clauses that pass procurement and enterprise security reviews."
+                    "title": "Contracts that move deals forward",
+                    "desc": "Policies, RoPA, DPIAs, SCCs/TIAs (and UK IDTA/addendum) that clear procurement and enterprise security reviews."
                 },
                 {
-                    "title": "Portuguese, English, German",
-                    "desc": "Three languages to negotiate with legal, engineering and security teams in the EU."
+                    "title": "English-first (DE/PT available)",
+                    "desc": "Work primarily in English; German and Portuguese available for stakeholders in the EU and LATAM."
                 }
             ]
         },
         "factsSection": {
             "eyebrow": "GDPR — European Regulation",
-            "title": "What changes for Brazil-based companies serving the EU",
+            "title": "What changes for U.S. companies serving the EU",
             "intro": {
                 "0": {
-                    "before": "If you offer products/services to people in the EU or monitor behavior, GDPR applies. I act as your external DPO to ",
+                    "before": "If you offer products/services to people in the EU or monitor behavior, the GDPR applies. We act as your external DPO to ",
                     "bold1": "design controls",
                     "mid": ", ",
                     "bold2": "train teams",
@@ -70,7 +70,7 @@
             {
                 "title": "Who must comply",
                 "value": "Companies offering goods/services in the EU",
-                "description": "Includes non-EU companies targeting EU residents"
+                "description": "Includes non-EU companies targeting or monitoring EU residents"
             },
             {
                 "title": "Fines",
@@ -83,26 +83,26 @@
             "cards": [
                 {
                     "title": "Scope",
-                    "text": "Ongoing representation and advice: risks, policies, legal basis assessment, privacy by design, data subject requests, and interface with clients/auditors."
+                    "text": "Ongoing representation and advice: risk management, policies, legal-basis assessment, privacy by design, data subject requests (DSRs), and liaison with clients/auditors."
                 },
                 {
                     "title": "Deliverables",
                     "list": [
                         "RoPA (Records of Processing Activities)",
-                        "DPIA (Impact Assessment) when applicable",
+                        "DPIA (Data Protection Impact Assessment), where applicable",
                         "Policies and privacy notices",
-                        "Vendor governance (Art. 28)",
-                        "International transfers (SCCs/TIAs)",
-                        "Incident playbook (72h) and evidence"
+                        "Vendor governance (Art. 28) and DPAs",
+                        "International transfers (SCCs/TIAs; UK IDTA/addendum)",
+                        "Incident playbook (72h) and evidence pack"
                     ]
                 },
                 {
                     "title": "Outcomes",
                     "list": [
-                        "Unlocked contracts and shorter procurement cycles",
+                        "Faster contracting and shorter procurement cycles",
                         "Prioritized risks with clear owners and timelines",
-                        "Audit-ready evidence for diligence",
-                        "Trained team and lightweight maintenance routine"
+                        "Audit-ready evidence for customer and regulator reviews",
+                        "Trained team and a lightweight, sustainable maintenance cadence"
                     ]
                 }
             ],
@@ -110,36 +110,36 @@
             "secondaryCta": "See related services →"
         },
         "relatedServices": {
-            "title": "Services connected to the External DPO",
+            "title": "Services aligned with the External DPO",
             "cards": [
                 {
                     "title": "EU market entry & client readiness",
-                    "desc": "Map legal bases, notices, contractual clauses, transfers and a procurement-ready evidence package.",
+                    "desc": "Map legal bases, notices, contractual clauses, transfers, and a procurement-ready evidence package.",
                     "cta": "Plan EU entry"
                 },
                 {
                     "title": "RoPA Program (Art. 30)",
-                    "desc": "Process/system-level records, responsibilities, retention and security measures with an easy update cadence.",
+                    "desc": "Process-/system-level records, responsibilities, retention, and security measures with a pragmatic update cadence.",
                     "cta": "Organize my records"
                 },
                 {
                     "title": "Tailored DPIA",
-                    "desc": "Scope, interviews, risk analysis, mitigation and approval documentation — before go-live.",
+                    "desc": "Scope, interviews, risk analysis, mitigation, and approval documentation — before go-live.",
                     "cta": "Plan my DPIA"
                 },
                 {
                     "title": "International transfers",
-                    "desc": "SCCs/TIAs, service configuration and contracts aligned to the real data flows.",
+                    "desc": "SCCs/TIAs, UK IDTA/addendum, service configuration, and contracts aligned to real data flows.",
                     "cta": "Review transfers"
                 },
                 {
                     "title": "Vendor governance (Art. 28)",
-                    "desc": "Onboarding and periodic reviews with a practical checklist, recognized clauses and realistic cadence.",
+                    "desc": "Onboarding and periodic reviews with a practical checklist, recognized clauses, and realistic cadence.",
                     "cta": "Strengthen vendors"
                 },
                 {
                     "title": "Training & culture",
-                    "desc": "Workshops for product, engineering and legal: privacy by design, 72h incidents and defensible decisions.",
+                    "desc": "Workshops for product, engineering, and legal: privacy by design, 72h incidents, and defensible decisions.",
                     "cta": "Train my team"
                 }
             ]
@@ -147,19 +147,19 @@
         "process": {
             "eyebrow": "How we work",
             "title": "From regulatory requirement to competitive advantage",
-            "intro": "We integrate legal, engineering and security to reduce risk without slowing product. The result is speed with real governance and audit-ready evidence.",
+            "intro": "We integrate legal, engineering, and security to reduce risk without slowing product. The result is speed with real governance and audit-ready evidence.",
             "steps": [
                 {
                     "title": "Diagnose",
-                    "desc": "Discover data flows, legal bases, risks and vendor dependencies. You get a prioritized plan with effort/impact/timelines."
+                    "desc": "Map data flows, legal bases, risks, and vendor dependencies. Receive a prioritized plan by effort/impact/timeline."
                 },
                 {
                     "title": "Implement",
-                    "desc": "Controls that work: policies, RoPA, DPIA, vendor governance, transfers, 72h incidents, privacy by design and trainings."
+                    "desc": "Controls that work: policies, RoPA, DPIA, vendor governance, transfers, 72h incidents, privacy by design, and training."
                 },
                 {
                     "title": "Sustain",
-                    "desc": "Lightweight routine: owners, quarterly cadence, change logs and continuous evidence for audits and clients."
+                    "desc": "Lightweight routine: owners, quarterly cadence, change logs, and continuous evidence for audits and customers."
                 }
             ],
             "moreLink": "See full process →",
@@ -168,20 +168,20 @@
         "proofs": [
             {
                 "k": "Audit-ready evidence",
-                "v": "Documents and records auditors actually use: RoPA, DPIA, risk logs, decisions and approvals tied to releases."
+                "v": "Documents and records auditors actually use: RoPA, DPIA, risk logs, decisions, and approvals linked to releases."
             },
             {
                 "k": "Faster deals",
-                "v": "Consistent security/privacy answers, recognized clauses and clear data flows accelerate procurement."
+                "v": "Consistent security/privacy responses, recognized clauses, and clear data flows accelerate procurement."
             },
             {
                 "k": "Less risk and rework",
-                "v": "Pre-launch requirements enter the product cycle, avoiding delays and last-minute changes."
+                "v": "Pre-launch requirements are built into the product cycle, preventing delays and last-minute changes."
             }
         ],
         "finalCta": {
-            "title": "Let’s lead EU privacy with speed and safety.",
-            "subtitle": "External European DPO for your Brazilian company — legal + engineering, contract-ready and audit-proof evidence.",
+            "title": "Lead EU privacy with speed and confidence.",
+            "subtitle": "Specialized in DPO services for the U.S. market — legal × engineering, contract-ready and audit-ready from day one.",
             "button": "Talk to the DPO"
         }
     }

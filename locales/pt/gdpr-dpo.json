@@ -24,8 +24,7 @@
                     "after": ", acelerar contratos e passar em due diligence."
                 }
             },
-            "primaryCta": "Agendar conversa",
-            "secondaryCta": "Ver como funciona →"
+            "primaryCta": "Agendar conversa"
         },
         "quickProof": {
             "items": [
@@ -38,8 +37,8 @@
                     "desc": "Residência em Berlim, fuso horário e experiência local para lidar com clientes, autoridades e auditores europeus."
                 },
                 {
-                    "title": "Contratos que destravam deals",
-                    "desc": "Políticas, RoPA, DPIA, SCCs/TIAs e cláusulas que passam em procurement e segurança de grandes clientes."
+                    "title": "Contratos que aceleram negociações",
+                    "desc": "Políticas, RoPA (Registros de Operações de Tratamento), DPIA (Avaliação de Impacto), SCCs/TIAs e cláusulas que passam em procurement e segurança de grandes clientes."
                 },
                 {
                     "title": "Port., Inglês e Alemão",
@@ -99,8 +98,8 @@
                 {
                     "title": "Resultados",
                     "list": [
-                        "Contratos destravados e ciclos de procurement mais curtos",
-                        "Riscos priorizados com donos e prazos claros",
+                        "Contratos aprovados e ciclos de procurement mais curtos",
+                        "Riscos priorizados com responsáveis e prazos claros",
                         "Evidência pronta para auditoria e due diligence",
                         "Time treinado e rotina leve de manutenção"
                     ]
@@ -139,7 +138,7 @@
                 },
                 {
                     "title": "Treinamento e cultura",
-                    "desc": "Workshops para produto, engenharia e jurídico: privacy by design, incidentes em 72h e decisões defensáveis.",
+                    "desc": "Workshops para times de produto, engenharia e jurídico: privacy by design, incidentes em 72h e decisões defensáveis.",
                     "cta": "Treinar meu time"
                 }
             ]
@@ -155,11 +154,11 @@
                 },
                 {
                     "title": "Implementar",
-                    "desc": "Controles que funcionam: políticas, RoPA, DPIA, governança de vendors, transferências, incidentes 72h, privacy by design e treinamentos."
+                    "desc": "Controles que funcionam: políticas, RoPA, DPIA, governança de vendors, transferências, incidentes em 72h, privacy by design e treinamentos."
                 },
                 {
                     "title": "Sustentar",
-                    "desc": "Rotina leve: owners, cadência trimestral, logs de mudanças e evidência contínua para auditorias e clientes."
+                    "desc": "Rotina leve: responsáveis definidos (owners), cadência trimestral, registros (logs) de mudanças e evidência contínua para auditorias e clientes."
                 }
             ],
             "moreLink": "Ver processo completo →",
@@ -171,7 +170,7 @@
                 "v": "Documentos e registros que auditores realmente usam: RoPA, DPIA, logs de risco, decisões e aprovações ligadas a releases."
             },
             {
-                "k": "Deals mais rápidos",
+                "k": "Negociações mais rápidas",
                 "v": "Respostas consistentes a segurança/privacidade, cláusulas reconhecidas e fluxos de dados claros aceleram procurement."
             },
             {

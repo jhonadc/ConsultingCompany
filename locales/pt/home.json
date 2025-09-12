@@ -8,19 +8,29 @@
     },
     "quickLinks": [
         {
-            "href": "/aiservices/ailiteracy",
+            "href": "/services/ai-services/ailiteracy",
             "label": "Treinamento em Alfabetização em IA",
             "border": "border-purple-500"
         },
         {
-            "href": "/aiservices/highrisk",
+            "href": "/services/ai-services/highrisk",
             "label": "Seu projeto é de alto risco?",
             "border": "border-amber-500"
         },
         {
-            "href": "/aiservices/ai-use-policy",
+            "href": "/services/ai-services/ai-use-policy",
             "label": "Política de Uso de IA",
             "border": "border-green-500"
+        },
+        {
+            "href": "/services/gdpr-services/gdpr-dpo",
+            "label": "AI Officer",
+            "border": "border-purple-400"
+        },
+        {
+            "href": "services/gdpr-services/gdpr-dpo",
+            "label": "Data Protection Officer",
+            "border": "border-blue-400"
         }
     ],
     "regulations": {

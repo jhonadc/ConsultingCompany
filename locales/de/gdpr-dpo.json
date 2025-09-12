@@ -1,12 +1,12 @@
 {
     "gdprDpo": {
         "meta": {
-            "title": "Externer DSB für brasilianische Unternehmen — Oversight Governance Studio",
-            "description": "Externer Datenschutzbeauftragter (EU) für brasilianische Unternehmen. Jurist (USP — Largo de São Francisco) und Software-Ingenieur in Berlin. DSGVO in der Praxis, vertrags- und prüfungsreife Nachweise."
+            "title": "Externer Datenschutzbeauftragter (DSB) — Oversight Governance Studio",
+            "description": "Externer Datenschutzbeauftragter für Unternehmen in Deutschland, der EU und weltweit. Jurist und Software-Ingenieur in Berlin. DSGVO in der Praxis, vertrags- und prüfungsreife Nachweise."
         },
         "hero": {
-            "eyebrow": "Für brasilianische Unternehmen mit Kundschaft in der EU",
-            "title": "Externer EU-Datenschutzbeauftragter für brasilianische Unternehmen.",
+            "eyebrow": "Für Unternehmen mit Kundschaft oder Datenverarbeitung in der EU",
+            "title": "Externer EU-Datenschutzbeauftragter (DSB) für Ihr Unternehmen.",
             "subtitle": {
                 "0": {
                     "before": "Tätig als ",
@@ -14,7 +14,7 @@
                     "after": " mit Sitz in Berlin —"
                 },
                 "1": {
-                    "bold1": "Jurist (USP — Largo de São Francisco)",
+                    "bold1": "Jurist",
                     "mid": " und",
                     "bold2": " Software-Ingenieur",
                     "after": ". Wir verbinden Recht und Technik, um"
@@ -31,7 +31,7 @@
             "items": [
                 {
                     "title": "Seltene Doppelqualifikation",
-                    "desc": "Rechtswissenschaft (USP — Largo de São Francisco) + Software-Engineering. Übersetze Regulierung in Backlog und technische Nachweise."
+                    "desc": "Rechtswissenschaft + Software-Engineering. Übersetze Regulierung in Backlog und technische Nachweise."
                 },
                 {
                     "title": "In der EU ansässig",
@@ -42,14 +42,14 @@
                     "desc": "Richtlinien, Verzeichnisse (RoPA), DSFA, SCCs/TIAs und Klauseln, die Beschaffungs- und Sicherheitsprüfungen bestehen."
                 },
                 {
-                    "title": "Portugiesisch, Englisch, Deutsch",
-                    "desc": "Drei Sprachen für Verhandlungen mit Legal, Engineering und Security in der EU."
+                    "title": "Mehrsprachig",
+                    "desc": "Deutsch, Englisch und weitere Sprachen für Verhandlungen mit Legal, Engineering und Security in der EU."
                 }
             ]
         },
         "factsSection": {
             "eyebrow": "DSGVO — EU-Verordnung",
-            "title": "Was sich für brasilianische Anbieter mit EU-Kundschaft ändert",
+            "title": "Was sich für Unternehmen mit EU-Kundschaft ändert",
             "intro": {
                 "0": {
                     "before": "Wenn Sie Produkte/Dienstleistungen in der EU anbieten oder Verhalten überwachen, gilt die DSGVO. Ich agiere als Ihr externer DSB, um ",
@@ -181,7 +181,7 @@
         ],
         "finalCta": {
             "title": "Führen wir EU-Datenschutz mit Tempo und Sicherheit.",
-            "subtitle": "Externer europäischer DSB für Ihr brasilianisches Unternehmen — Recht + Engineering, vertrags- und prüfungsreif.",
+            "subtitle": "Externer europäischer DSB für Unternehmen in Deutschland, der EU und weltweit — Recht + Engineering, vertrags- und prüfungsreif.",
             "button": "Mit dem DSB sprechen"
         }
     }
