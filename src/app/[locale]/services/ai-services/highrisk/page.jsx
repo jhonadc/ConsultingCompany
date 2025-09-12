@@ -99,7 +99,7 @@ export default function HighRiskAssessmentPage() {
         <>
             {/* HERO */}
             {hasHero && (
-                <Container className="mt-5 sm:mt-8 lg:mt-10">
+                <Container className="mt-5 sm:mt-8 lg:mt-25">
                     <div className="relative overflow-hidden rounded-4xl bg-neutral-950 px-6 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20 text-white">
                         <FadeIn className="max-w-3xl">
                             <h1 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight">
@@ -223,15 +223,26 @@ export default function HighRiskAssessmentPage() {
 
                                     return (
                                         <details
-                                            key={`${title} -${idx} `}
-                                            className={`group rounded - 2xl bg - white p - 5 ring - 1 ring - neutral - 950 / 10 shadow - sm open: ring - neutral - 900 / 10 ${ring} border - l - 2 ${border} `}
+                                            key={`${title}-${idx}`}
+                                            className={`group rounded-2xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm open:ring-neutral-900/10 ${ring} border-l-2 ${border}`}
                                         >
                                             <summary className="flex cursor-pointer list-none items-center justify-between">
-                                                <span className={`relative pl - 3 font - medium text - neutral - 900 before:absolute before: left - 0 before: top - 1 / 2 before: h - 4 before: w - 1 before: -translate - y - 1 / 2 before:rounded ${dot} `}>
+                                                <span
+                                                    className={`relative pl-3 font-medium text-neutral-900 before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded ${dot}`}
+                                                >
                                                     {title}
                                                 </span>
-                                                <svg className="h-5 w-5 text-neutral-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.17l3.71-2.94a.75.75 0 11.92 1.18l-4.17 3.3a.75.75 0 01-.92 0l-4.17-3.3a.75.75 0 01-.02-1.06z" clipRule="evenodd" />
+                                                <svg
+                                                    className="h-5 w-5 text-neutral-400 transition-transform group-open:rotate-180"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    aria-hidden="true"
+                                                >
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.17l3.71-2.94a.75.75 0 11.92 1.18l-4.17 3.3a.75.75 0 01-.92 0l-4.17-3.3a.75.75 0 01-.02-1.06z"
+                                                        clipRule="evenodd"
+                                                    />
                                                 </svg>
                                             </summary>
 
@@ -251,6 +262,7 @@ export default function HighRiskAssessmentPage() {
                     </FadeIn>
                 </Container>
             )}
+
 
             {/* CTA */}
             {hasCta && (

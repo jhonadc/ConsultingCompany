@@ -4,91 +4,91 @@
         "title": "Regulação como vantagem. Conformidade como confiança."
     },
     "body": {
-        "left": "<strong>Berlim é a capital de startups da Europa</strong> e um centro de mudança regulatória com o AI Act, a GDPR e a Lei de Acessibilidade. <strong>Ferramentas genéricas trazem riscos de privacidade</strong> e não atendem ao nível de responsabilidade exigido pelos novos regulamentos. Criámos um Compliance Studio para trabalhar dentro da sua estrutura e incorporar a regulação nas operações do dia a dia. <strong>Integramo-nos com as suas equipas e sistemas.</strong> Desenhamos governança com responsabilidades claras, rotinas enxutas e evidências prontas para auditoria.",
-        "right": "Conformidade não é apenas evitar multas. No ecossistema de IA e health-tech de Berlim é uma <strong>vantagem estratégica</strong> que acelera negócios, cria confiança e atrai investidores. Combinamos <strong>especialização jurídica</strong>, <strong>conhecimento de engenharia</strong> e <strong>disciplina de segurança</strong> para entregar soluções alinhadas aos seus riscos e objetivos: <strong>uma assessoria premium para empresas que moldam o futuro digital da Europa.</strong>"
+        "left": "<strong>Berlim é a capital de startups da Europa</strong> e um centro de transformação regulatória com o AI Act, o GDPR e a Lei de Acessibilidade. <strong>Ferramentas genéricas trazem riscos de privacidade</strong> e não alcançam o nível de responsabilidade exigido pelos novos regulamentos. Criamos um Governance Studio para atuar dentro da sua estrutura e incorporar a regulação às operações do dia a dia. <strong>Integramo-nos com sua equipe e sistemas.</strong> Desenhamos governança com responsabilidades claras, rotinas enxutas e evidências prontas para auditoria.",
+        "right": "Conformidade não é apenas evitar multas. No ecossistema de IA e healthtech de Berlim, ela é uma <strong>vantagem estratégica</strong> que acelera negócios, gera confiança e atrai investidores. Combinamos <strong>especialização jurídica</strong>, <strong>conhecimento em engenharia</strong> e <strong>disciplina de segurança</strong> para entregar soluções alinhadas aos seus riscos e objetivos: <strong>uma assessoria premium para empresas que moldam o futuro digital da Europa.</strong>"
     },
     "why": {
         "eyebrow": "Por que a Oversight Governance Studio?",
         "title": "Parceria, não papelada.",
-        "intro": "Muitas firmas geram documentos automaticamente. Nós não. Desenhamos controlos que funcionam nos seus produtos e equipas — incorporando responsabilidade, rotinas e evidências, para que a conformidade apoie crescimento, segurança e confiança.",
+        "intro": "Muitas firmas apenas geram documentos automaticamente. Nós não. Estruturamos controles que funcionam em seus produtos e equipes — incorporando responsabilidade, rotinas e evidências, para que a conformidade apoie crescimento, segurança e confiança.",
         "items": [
             {
                 "k": "Implementação em vez de automatização",
-                "v": "Sem modelos vazios. Construímos aprovações, registos de risco, cadência de DPIA e intake de fornecedores que realmente operam no seu stack.",
+                "v": "Sem modelos vazios. Construímos aprovações, registros de risco, cadência de DPIA e intake de fornecedores que realmente funcionam no seu ambiente.",
                 "dot": "before:bg-purple-500",
                 "accent": "bg-purple-600"
             },
             {
                 "k": "Cultura, não checklists",
-                "v": "Formação, responsáveis claros e rotinas simples transformam regras em hábito — para que a conformidade resista a mudanças organizacionais.",
+                "v": "Treinamento, responsáveis definidos e rotinas simples transformam regras em hábito — garantindo que a conformidade resista a mudanças organizacionais.",
                 "dot": "before:bg-blue-500",
                 "accent": "bg-blue-600"
             },
             {
                 "k": "Crescimento e segurança juntos",
-                "v": "Evidência e clareza de controlos aceleram contratos enterprise enquanto reduzem risco de fiscalização e incidentes.",
+                "v": "Evidência e clareza de controles aceleram contratos enterprise enquanto reduzem riscos de fiscalização e incidentes.",
                 "dot": "before:bg-emerald-500",
                 "accent": "bg-emerald-600"
             },
             {
                 "k": "Responsável e defensável",
-                "v": "Cada ação mapeada à lei e normas (AI Act, GDPR, ISO 42001) com decisões rastreáveis e prova.",
+                "v": "Cada ação vinculada à lei e normas (AI Act, GDPR, ISO 42001), com decisões rastreáveis e comprovação documental.",
                 "dot": "before:bg-amber-500",
                 "accent": "bg-amber-600"
             },
             {
                 "k": "Independência de fornecedores",
-                "v": "Sem comissões ou kickbacks de ferramentas. Recomendamos o que se ajusta ao seu risco, não a uma quota de vendas.",
+                "v": "Sem comissões ou incentivos ocultos de ferramentas. Recomendamos o que se ajusta ao seu risco, não a uma meta de vendas.",
                 "dot": "before:bg-rose-500",
                 "accent": "bg-rose-600"
             },
             {
                 "k": "Parceiro de longo prazo",
-                "v": "Ficamos responsáveis: afinações periódicas, change logs e pacotes de evidência que resistem a auditorias e diligências.",
+                "v": "Assumimos responsabilidade: revisões periódicas, change logs e pacotes de evidência que resistem a auditorias e diligências.",
                 "dot": "before:bg-sky-500",
                 "accent": "bg-sky-600"
             }
         ]
     },
     "culture": {
-        "eyebrow": "Os nossos valores",
+        "eyebrow": "Nossos valores",
         "title": "Integridade, confiança e dignidade humana no centro.",
-        "intro": "A conformidade é mais do que regras. É sobre como as empresas conquistam confiança, protegem pessoas e atuam com independência. Os nossos valores orientam cada decisão, sustentam parcerias duradouras e uma governança que funciona no mundo real.",
+        "intro": "Conformidade é mais do que regras. Trata-se de como as empresas conquistam confiança, protegem pessoas e atuam com independência. Nossos valores orientam cada decisão, sustentam parcerias duradouras e garantem uma governança que funciona no mundo real.",
         "items": [
             {
-                "title": "Integridade e Independência",
-                "desc": "Dizemos a verdade quando é fácil e quando é difícil. Os clientes merecem conselhos sem metas comerciais, comissões ou agendas ocultas.",
+                "title": "Integridade e independência",
+                "desc": "Dizemos a verdade quando é fácil e quando é difícil. Os clientes merecem aconselhamento sem metas comerciais, comissões ou interesses ocultos.",
                 "dot": "before:bg-emerald-400"
             },
             {
-                "title": "Zelo pela Confiança",
-                "desc": "Conformidade protege confiança. Tratamos os seus dados, clientes e reputação como ativos sob nossa guarda, não como meras entradas de processo.",
+                "title": "Zelo pela confiança",
+                "desc": "Conformidade protege confiança. Tratamos seus dados, clientes e reputação como ativos sob nossa guarda, não como meros registros de processo.",
                 "dot": "before:bg-indigo-400"
             },
             {
-                "title": "Dignidade Humana",
-                "desc": "A regulação existe para proteger pessoas. Privacidade, acessibilidade e justiça não são funcionalidades — são compromissos de conduta empresarial.",
+                "title": "Dignidade humana",
+                "desc": "A regulação existe para proteger pessoas. Privacidade, acessibilidade e justiça não são funcionalidades — são compromissos éticos de conduta empresarial.",
                 "dot": "before:bg-amber-400"
             },
             {
-                "title": "Clareza acima da Complexidade",
-                "desc": "Linguagem clara e controlos simples superam jargão. A liderança deve ver risco, decisão e evidência num relance.",
+                "title": "Clareza acima da complexidade",
+                "desc": "Linguagem clara e controles simples superam jargão. A liderança deve visualizar risco, decisão e evidência de forma imediata.",
                 "dot": "before:bg-emerald-400"
             },
             {
-                "title": "Responsabilização com Evidência",
-                "desc": "Boa governança deixa rastro. Cada compromisso precisa de responsável, momento e forma de prova.",
+                "title": "Responsabilização com evidência",
+                "desc": "Boa governança deixa rastro. Cada compromisso precisa de responsável, prazo e forma de comprovação.",
                 "dot": "before:bg-indigo-400"
             },
             {
-                "title": "Parceria de Longo Prazo",
-                "desc": "Queremos fazer parte da sua equipa. É a cultura — não listas de verificação — que mantém a conformidade durante o crescimento e a mudança.",
+                "title": "Parceria de longo prazo",
+                "desc": "Queremos ser parte da sua equipe. É a cultura — não listas de verificação — que sustenta a conformidade durante o crescimento e a mudança.",
                 "dot": "before:bg-amber-400"
             }
         ]
     },
     "team": {
         "leadership": "Liderança",
-        "role": "Founder & Principal — AI Governance, GDPR & Security"
+        "role": "Fundador & Principal — Governança de IA, GDPR e Segurança"
     }
 }

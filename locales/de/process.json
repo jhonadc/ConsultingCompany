@@ -2,13 +2,13 @@
     "pageIntro": {
         "eyebrow": "Unser Prozess",
         "title": "Wie wir arbeiten",
-        "subtitle": "Compliance sollte Wachstum ermöglichen. Unser Prozess verbindet Rechts-, Technik- und Produktteams, um Risiken zu reduzieren und Geschwindigkeit freizusetzen — ohne Bürokratie."
+        "subtitle": "Compliance soll Wachstum ermöglichen. Unser Prozess verbindet Rechts-, Technik- und Produktteams, senkt Risiken und erhöht Tempo — ohne unnötige Bürokratie."
     },
     "discover": {
         "title": "Analysieren",
-        "p1": "Wir beginnen mit einer strukturierten Bewertung, um Ihr Geschäftsmodell, Ihre Risikobereitschaft und Ihre Wachstumspläne zu verstehen. Gemeinsam kartieren wir Prozesse und Datenflüsse, um zu erkennen, wo Compliance das Produkt unterstützt — und nicht ausbremst.",
-        "p2": "In fokussierten Sitzungen mit Stakeholdern erfassen wir KI-Anwendungsfälle und Datenverarbeitungen, identifizieren einschlägige Pflichten (AI Act, DSGVO, ePrivacy und branchenspezifische Regeln) und heben schnelle Erfolge sowie kritische Lücken hervor.",
-        "p3": "Sie erhalten einen prägnanten Ergebnisbericht und einen priorisierten Umsetzungsplan mit Schätzungen zu Aufwand, Wirkung und Zeitrahmen.",
+        "p1": "Wir beginnen mit einer strukturierten Analyse, um Ihr Geschäftsmodell, Ihr Risikoprofil und Ihre Wachstumspläne zu verstehen. Gemeinsam erfassen wir Prozesse und Datenflüsse, um zu erkennen, wo Compliance das Produkt stärkt — und nicht bremst.",
+        "p2": "In fokussierten Workshops mit Stakeholdern identifizieren wir KI-Anwendungsfälle und Datenverarbeitungen, prüfen einschlägige Pflichten (AI Act, DSGVO, ePrivacy und branchenspezifische Vorgaben) und heben schnelle Erfolge sowie kritische Lücken hervor.",
+        "p3": "Sie erhalten einen klaren Ergebnisbericht und einen priorisierten Umsetzungsplan mit Schätzungen zu Aufwand, Wirkung und Zeitplan.",
         "included": "In dieser Phase enthalten",
         "tags": [
             "Stakeholder-Interviews",
@@ -21,9 +21,9 @@
     },
     "build": {
         "title": "Umsetzen",
-        "p1": "Auf Basis der Roadmap implementieren wir die wesentlichen Kontrollen und Dokumentationen: KI-Policy, Risikomanagement und menschliche Aufsicht, Datenschutz durch Technikgestaltung, Lieferantengovernance und klare Freigabeprozesse.",
-        "p2": "Wir richten ein leichtgewichtiges KI-Managementsystem ein (ausgerichtet an ISO/IEC 42001), erstellen die technische Dokumentation und die Risikodatei (Anhang IV) und bereiten, wo relevant, DPIAs und Verarbeitungsverzeichnisse vor. Die Arbeit erfolgt in kurzen Sprints mit wöchentlichen Check-ins und sichtbarem Fortschritt.",
-        "p3": "Ihr Team behält die Verantwortung — wir entwickeln Vorlagen gemeinsam, automatisieren, wo es möglich ist, und binden den Prozess in Ihre bestehenden Tools ein, damit er mitwächst.",
+        "p1": "Auf Basis der Roadmap implementieren wir die zentralen Kontrollen und Dokumentationen: KI-Policy, Risikomanagement und menschliche Aufsicht, Datenschutz durch Technikgestaltung, Lieferantengovernance und klare Freigaben.",
+        "p2": "Wir etablieren ein schlankes KI-Managementsystem (orientiert an ISO/IEC 42001), erstellen die technische Dokumentation und die Risikodatei (Anhang IV) und bereiten, wo erforderlich, DPIAs und Verarbeitungsverzeichnisse vor. Die Arbeit erfolgt in kurzen Sprints mit wöchentlichen Check-ins und sichtbarem Fortschritt.",
+        "p3": "Ihr Team bleibt in der Verantwortung — wir entwickeln Vorlagen gemeinsam, automatisieren wo möglich und integrieren den Prozess in Ihre bestehenden Tools, damit er mitwächst.",
         "quote": {
             "author": "General Counsel",
             "role": "SaaS im Wachstum",
@@ -32,9 +32,9 @@
     },
     "deliver": {
         "title": "Verankern",
-        "p1": "Vor dem Go-live validieren wir Kontrollen, stimmen Verantwortlichkeiten ab und finalisieren Betriebsverfahren und KPIs. Ziel ist Beständigkeit: Compliance, die auch unter realem Druck hält.",
-        "p2": "Wir führen Incident-Übungen durch, prüfen Human-in-the-Loop-Kontrollen und kontrollieren Lieferanten- und Datentransfers umfassend.",
-        "p3": "Zum Abschluss erhalten Sie ein auditfertiges Paket und einen pragmatischen Wartungsplan mit Zyklen und Checklisten sowie Optionen für laufende Unterstützung.",
+        "p1": "Vor dem Go-live validieren wir Kontrollen, klären Verantwortlichkeiten und finalisieren Betriebsprozesse und KPIs. Ziel ist Dauerhaftigkeit: Compliance, die auch unter realem Druck Bestand hat.",
+        "p2": "Wir führen Incident-Simulationen durch, prüfen Human-in-the-Loop-Kontrollen und evaluieren Lieferanten- und Datentransfers umfassend.",
+        "p3": "Zum Abschluss erhalten Sie ein auditfähiges Paket und einen pragmatischen Wartungsplan mit Zyklen und Checklisten sowie Optionen für laufende Unterstützung.",
         "included": "In dieser Phase enthalten",
         "list": [
             {
@@ -43,47 +43,47 @@
             },
             {
                 "title": "Governance-Infrastruktur",
-                "text": "Register, Richtlinien, Schulungen, Ticket-Workflows und versionierte Vorlagen, eingebettet in Ihre Tools."
+                "text": "Register, Richtlinien, Schulungen, Ticket-Workflows und versionierte Vorlagen, integriert in Ihre Tools."
             },
             {
                 "title": "Support",
-                "text": "Laufende Updates bei regulatorischen Änderungen, Ad-hoc-Reviews und Unterstützung auf Abruf bei Audits und Due Diligence."
+                "text": "Kontinuierliche Updates bei regulatorischen Entwicklungen, Ad-hoc-Reviews und Unterstützung auf Abruf bei Audits und Due Diligence."
             }
         ]
     },
     "values": {
         "eyebrow": "Unsere Werte",
         "title": "Pragmatisch, präzise, menschlich",
-        "subtitle": "Wir verbinden juristische Präzision mit technischem Pragmatismus. Anbieterunabhängig, evidenzbasiert und auf Ergebnisse ausgerichtet, die Ihr Unternehmen messen kann — nicht auf Papierarbeit um ihrer selbst willen.",
+        "subtitle": "Wir verbinden juristische Präzision mit technischem Pragmatismus. Anbieterunabhängig, evidenzbasiert und auf messbare Ergebnisse ausgerichtet — nicht auf Papierarbeit um der Papierarbeit willen.",
         "items": [
             {
                 "title": "Sorgfältig",
-                "desc": "Prüfungsreife Aufzeichnungen, klare Begründungen und durchgängige Nachvollziehbarkeit bei Entscheidungen, Modellen und Daten.",
+                "desc": "Prüfungsreife Aufzeichnungen, klare Begründungen und lückenlose Nachvollziehbarkeit bei Entscheidungen, Modellen und Daten.",
                 "dot": "before:bg-emerald-500"
             },
             {
                 "title": "Effizient",
-                "desc": "Zeitlich begrenzte Sprints, angemessene Deliverables und wiederverwendbare Assets, die die Gesamtkosten der Compliance senken.",
+                "desc": "Zeitlich klar definierte Sprints, angemessene Deliverables und wiederverwendbare Assets, die die Gesamtkosten der Compliance senken.",
                 "dot": "before:bg-indigo-500"
             },
             {
                 "title": "Anpassungsfähig",
-                "desc": "Rahmenwerke, die zu Ihrem Sektor, Ihrer Größe und Ihrem Risikoprofil passen — niemals One-Size-Fits-All.",
+                "desc": "Rahmenwerke, die zu Ihrem Sektor, Ihrer Unternehmensgröße und Ihrem Risikoprofil passen — niemals One-Size-Fits-All.",
                 "dot": "before:bg-amber-500"
             },
             {
                 "title": "Ehrlich",
-                "desc": "Direkte Beratung, transparente Abwägungen und klare Stoppsignale, wenn Risiken den Nutzen überwiegen.",
+                "desc": "Direkte Beratung, transparente Abwägungen und klare Stoppsignale, wenn Risiken den Nutzen übersteigen.",
                 "dot": "before:bg-emerald-500"
             },
             {
                 "title": "Loyal",
-                "desc": "Partnerschaftsmentalität: Wir schützen Ihren Ruf und unterstützen Teams, die unter Beobachtung souverän handeln müssen.",
+                "desc": "Partnerschaftsmentalität: Wir schützen Ihren Ruf und befähigen Teams, unter Beobachtung souverän zu handeln.",
                 "dot": "before:bg-indigo-500"
             },
             {
                 "title": "Innovativ",
-                "desc": "Wir verfolgen regulatorische Änderungen, Bedrohungstrends und neue Standards, um Ihr Programm zukunftssicher zu machen.",
+                "desc": "Wir verfolgen regulatorische Entwicklungen, neue Bedrohungstrends und Standards, um Ihr Programm zukunftssicher zu machen.",
                 "dot": "before:bg-amber-500"
             }
         ]

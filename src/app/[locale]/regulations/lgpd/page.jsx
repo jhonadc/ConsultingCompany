@@ -11,7 +11,19 @@ import LocaleLink from '@/components/LocaleLink'
 
 const arr = (v) => (Array.isArray(v) ? v : [])
 
+const OFFER_COLORS = [
+    { border: 'border-l-2 border-amber-500', ring: 'hover:ring-amber-200' },
+    { border: 'border-l-2 border-pink-500', ring: 'hover:ring-pink-200' },
+    { border: 'border-l-2 border-emerald-500', ring: 'hover:ring-emerald-200' },
+]
 
+// Match GDPR page color schemas
+const WHY_COLORS = [
+    { border: 'border-amber-500', dot: 'before:bg-amber-500', ring: 'hover:ring-amber-200' },
+    { border: 'border-pink-500', dot: 'before:bg-pink-500', ring: 'hover:ring-pink-200' },
+    { border: 'border-emerald-500', dot: 'before:bg-emerald-500', ring: 'hover:ring-emerald-200' },
+]
+const HOW_ACCENTS = ['before:bg-cyan-500', 'before:bg-violet-500', 'before:bg-rose-500', 'before:bg-amber-500']
 
 export default function LgpdPage() {
     const t = useTranslations('lgpd')
@@ -48,7 +60,9 @@ export default function LgpdPage() {
                                     <li key={idx}>
                                         <h3 className="font-display text-lg font-semibold text-neutral-950">{item?.title}</h3>
                                         <p className="text-neutral-600 text-sm">{item?.text}</p>
-                                        <div className="h-1 w-16 bg-neutral-500 mt-2"></div>
+                                        <div className="h-1 w-16 bg-neutral-300 mt-2">
+                                            <span className="block h-1 w-10 rounded bg-blue-600" />
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
@@ -60,30 +74,39 @@ export default function LgpdPage() {
                 {(t('offer.title', { default: '' }) || offerCards.length > 0) && (
                     <Container className="mt-24">
                         <FadeIn className="mt-6 mx-auto max-w-6xl">
-                            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
-                                {t('offer.title')}
-                            </h2>
+                            {t('offer.title', { default: '' }) && (
+                                <h2
+                                    className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left
+                  before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
+                  before:rounded before:bg-blue-500/60"
+                                >
+                                    {t('offer.title')}
+                                </h2>
+                            )}
                             {t('offer.subtitle', { default: '' }) && (
                                 <p className="mt-3 text-md text-neutral-600">{t('offer.subtitle')}</p>
                             )}
 
                             <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-6 items-stretch">
-                                {offerCards.map(({ title, desc, cta, href, span }, idx) => (
-                                    <div key={idx} className={span || 'lg:col-span-2'}>
-                                        <div className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm flex h-full flex-col transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md">
-                                            <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
-                                            <p className="mt-2 text-sm text-neutral-700">{desc}</p>
-                                            <div className="mt-auto pt-5">
-                                                <LocaleLink
-                                                    href={href}
-                                                    className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
-                                                >
-                                                    {cta}
-                                                </LocaleLink>
+                                {offerCards.map(({ title, desc, cta, href, span, border, ring }, idx) => {
+                                    const fallback = OFFER_COLORS[idx % OFFER_COLORS.length]
+                                    return (
+                                        <div key={idx} className={span || 'lg:col-span-2'}>
+                                            <div
+                                                className={[
+                                                    'rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm flex h-full flex-col',
+                                                    'transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md',
+                                                    'focus-within:ring-2 hover:mouse',
+                                                    ring || fallback.ring,
+                                                    border || fallback.border,
+                                                ].join(' ')}
+                                            >
+                                                <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
+                                                <p className="mt-2 text-sm text-neutral-700">{desc}</p>
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    )
+                                })}
                             </div>
                         </FadeIn>
                     </Container>
@@ -93,16 +116,41 @@ export default function LgpdPage() {
                 {(t('whyNow.title', { default: '' }) || whyItems.length > 0) && (
                     <Container className="mt-20">
                         <FadeIn className="mx-auto max-w-6xl">
-                            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
-                                {t('whyNow.title')}
-                            </h2>
+                            {t('whyNow.title', { default: '' }) && (
+                                <h2
+                                    className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left
+                  before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
+                  before:rounded before:bg-blue-500/60"
+                                >
+                                    {t('whyNow.title')}
+                                </h2>
+                            )}
                             <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-3">
-                                {whyItems.map(({ k, v }, idx) => (
-                                    <div key={idx} className="rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm text-left">
-                                        <p className="text-sm font-semibold text-neutral-900">{k}</p>
-                                        <p className="mt-1 text-sm text-neutral-700">{v}</p>
-                                    </div>
-                                ))}
+                                {whyItems.map(({ k, v }, idx) => {
+                                    const { border, dot, ring } = WHY_COLORS[idx % WHY_COLORS.length]
+                                    return (
+                                        <div
+                                            key={idx}
+                                            className={[
+                                                'rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm text-left',
+                                                'transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md',
+                                                border,
+                                                ring,
+                                            ].join(' ')}
+                                        >
+                                            <p
+                                                className={[
+                                                    'relative pl-3 text-sm font-semibold text-neutral-900',
+                                                    'before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded',
+                                                    dot,
+                                                ].join(' ')}
+                                            >
+                                                {k}
+                                            </p>
+                                            <p className="mt-1 text-sm text-neutral-700">{v}</p>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </FadeIn>
                     </Container>
@@ -113,13 +161,28 @@ export default function LgpdPage() {
                     <Container className="mt-24">
                         <Border />
                         <FadeIn className="mt-6 mx-auto max-w-6xl">
-                            <h2 className="font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left">
+                            <h2
+                                className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950 text-left
+                before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
+                before:rounded before:bg-blue-500/60"
+                            >
                                 {t('howWeWork.title')}
                             </h2>
                             <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-4">
                                 {steps.map(({ t: stepTitle, d }, idx) => (
-                                    <div key={idx} className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm">
-                                        <h3 className="text-lg font-semibold text-neutral-900">{stepTitle}</h3>
+                                    <div
+                                        key={idx}
+                                        className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md"
+                                    >
+                                        <h3
+                                            className={[
+                                                'relative pl-3 text-lg font-semibold text-neutral-900',
+                                                'before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded',
+                                                HOW_ACCENTS[idx % HOW_ACCENTS.length],
+                                            ].join(' ')}
+                                        >
+                                            {stepTitle}
+                                        </h3>
                                         <p className="mt-2 text-sm text-neutral-700">{d}</p>
                                     </div>
                                 ))}

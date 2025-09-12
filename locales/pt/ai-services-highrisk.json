@@ -1,0 +1,139 @@
+{
+    "hero": {
+        "title": "Avaliação de Sistemas de IA de Alto Risco",
+        "tagline": "O primeiro passo para a conformidade integral com o AI Act da União Europeia",
+        "body": "Todo sistema de IA precisa ser classificado. Entregamos uma avaliação de risco clara e juridicamente defensável para cada modelo ou sistema — com próximos passos concretos caso seja de alto risco — evitando classificações incorretas, atrasos e sanções."
+    },
+    "whyMatters": {
+        "title": "Por que isso é relevante",
+        "facts": [
+            {
+                "color": "#10B981",
+                "title": "Classificação obrigatória",
+                "value": "Exigência legal do AI Act",
+                "description": "Todo sistema deve ser avaliado; a classificação define todas as obrigações subsequentes."
+            },
+            {
+                "color": "#6366F1",
+                "title": "Enquadramento incorreto custa caro",
+                "value": "Atrasos e barreiras em processos de compra",
+                "description": "O nível errado leva a controles inadequados e até à retirada do mercado."
+            },
+            {
+                "color": "#F59E0B",
+                "title": "Exposição a sanções",
+                "value": "Evite riscos de fiscalização",
+                "description": "Tome a decisão correta e documente as evidências desde cedo para evitar multas proporcionais ao faturamento."
+            }
+        ]
+    },
+    "why": {
+        "eyebrow": "Por que realizar esta avaliação",
+        "title": "Por que com a Oversight Governance?",
+        "body": "Conduzido por advogado e engenheiro de software, com documentação que pode ser apresentada a áreas de compras, auditores e autoridades regulatórias.",
+        "features": [
+            {
+                "name": "Direito + Engenharia",
+                "desc": "Conectamos definições regulatórias à arquitetura técnica, fluxos de dados e comportamento do modelo."
+            },
+            {
+                "name": "Resultados defensáveis",
+                "desc": "Análise clara, com referências a anexos e vínculos de evidências passíveis de comprovação."
+            },
+            {
+                "name": "Precisão",
+                "desc": "Casos limítrofes tratados com cautela. Sinalizamos áreas cinzentas e riscos de reclassificação logo no início."
+            },
+            {
+                "name": "Agilidade",
+                "desc": "Coleta de informações focada, iteração rápida e relatório final pronto para compras e compliance."
+            },
+            {
+                "name": "Roteiro",
+                "desc": "Plano de ação objetivo cobrindo documentação, gestão de riscos, testes e caminho junto a organismo notificado."
+            }
+        ]
+    },
+    "deliverables": {
+        "eyebrow": "O que está incluído",
+        "title": "Uma avaliação profissional, auditável e pronta para reguladores",
+        "body": "Classificação juridicamente defensável, com base legal, fundamentação técnica e vínculos de evidências — pronta para compor o dossiê técnico e responder a auditorias, áreas de compras e reguladores.",
+        "items": [
+            {
+                "name": "Decisão sobre nível de risco",
+                "desc": "Classificação clara, alinhada ao escopo e às definições do AI Act."
+            },
+            {
+                "name": "Mapeamento de anexos",
+                "desc": "Rastreabilidade em relação às categorias de alto risco do Anexo III."
+            },
+            {
+                "name": "Análise de casos limítrofes",
+                "desc": "Sinalização de riscos de reclassificação e dependências relevantes."
+            },
+            {
+                "name": "Lista de evidências",
+                "desc": "Entradas analisadas, premissas e referências que podem ser apresentadas."
+            },
+            {
+                "name": "Plano de ação",
+                "desc": "Se identificado como alto risco, obrigações detalhadas por etapas e responsáveis."
+            },
+            {
+                "name": "Tempo de entrega",
+                "desc": "Ciclo rápido do kickoff ao entregável final assinado."
+            }
+        ]
+    },
+    "process": {
+        "title": "Como funciona",
+        "steps": [
+            {
+                "title": "Etapa 1 — Kickoff e definição de escopo (30–45 min)",
+                "desc": "Mapeamos finalidade, usuários, dados, tipo de modelo, integrações, implantação e mercados atendidos.",
+                "bullets": [
+                    "Papéis: provedor, implementador, usuário, importador",
+                    "Finalidade pretendida e contexto de uso",
+                    "Visão de arquitetura e fluxo de dados"
+                ]
+            },
+            {
+                "title": "Etapa 2 — Análise jurídico-técnica",
+                "desc": "Confrontamos os fatos com o escopo do AI Act e as categorias do Anexo III; avaliamos casos limítrofes.",
+                "bullets": [
+                    "Triagem de escopo e exclusões",
+                    "Testes de enquadramento no Anexo III",
+                    "Sinais de risco de reclassificação"
+                ]
+            },
+            {
+                "title": "Etapa 3 — Documento de avaliação (rascunho → final)",
+                "desc": "Entrega de relatório completo com fundamentação e implicações de obrigações.",
+                "bullets": [
+                    "Decisão sobre nível de risco e justificativa",
+                    "Lista de evidências e premissas",
+                    "Sessão de revisão e ajustes finais"
+                ]
+            },
+            {
+                "title": "Etapa 4 — Próximos passos em caso de alto risco",
+                "desc": "Roteiro priorizado, alinhado às obrigações do regulamento e ao seu plano de entrega.",
+                "bullets": [
+                    "Documentação técnica (Anexo IV)",
+                    "Gestão de riscos, testes, monitoramento pós-mercado",
+                    "Interação com organismo notificado e caminho de conformidade"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Evite erros que custam milhões de euros",
+        "body": "Garanta uma classificação defensável e um roteiro prático caso seu sistema seja de alto risco. Trabalho conduzido por advogado e engenheiro de software, pronto para compras e reguladores.",
+        "button": "Solicitar avaliação",
+        "href": "/contact"
+    },
+    "back": {
+        "label": "Voltar ao AI Act",
+        "href": "/regulations/ai-act"
+    }
+}

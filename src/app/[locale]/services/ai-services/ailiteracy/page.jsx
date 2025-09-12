@@ -66,7 +66,7 @@ export default function AiLiteracyPage() {
     return (
         <>
             {/* HERO (unchanged styles) */}
-            <Container className="mt-5 sm:mt-8 lg:mt-10">
+            <Container className="mt-5 sm:mt-8 lg:mt-25">
                 <div className="relative overflow-hidden rounded-4xl bg-neutral-950 px-6 py-12 sm:px-10 sm:py-16 lg:px-12 lg:py-20 text-white">
                     <FadeIn className="max-w-3xl">
                         <h1 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight">

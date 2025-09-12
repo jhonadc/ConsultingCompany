@@ -109,33 +109,14 @@ export default function GdprPage() {
                                                 className={[
                                                     'rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm flex h-full flex-col',
                                                     'transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md',
-                                                    'focus-within:ring-2',
+                                                    'focus-within:ring-2 hover:mouse',
                                                     ring || 'hover:ring-blue-200',
                                                     border || 'border-l-2 border-blue-500',
                                                 ].join(' ')}
                                             >
                                                 <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
                                                 <p className="mt-2 text-sm text-neutral-700">{desc}</p>
-                                                {cta && (
-                                                    <div className="mt-auto pt-5">
-                                                        {/* Internal links use LocaleLink; fallback to /contact if not provided */}
-                                                        {href ? (
-                                                            <LocaleLink
-                                                                href={href}
-                                                                className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
-                                                            >
-                                                                {cta}
-                                                            </LocaleLink>
-                                                        ) : (
-                                                            <LocaleLink
-                                                                href="/contact"
-                                                                className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
-                                                            >
-                                                                {cta}
-                                                            </LocaleLink>
-                                                        )}
-                                                    </div>
-                                                )}
+
                                             </div>
                                         </div>
                                     ))}

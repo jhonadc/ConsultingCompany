@@ -1,20 +1,20 @@
 {
     "hero": {
-        "title": "Consultoria em Regulação e Governança na UE.",
-        "notItalic": "Não",
-        "subtitleRest": "somos uma ferramenta. Somos expertise real: o estúdio boutique de compliance de Berlim.",
-        "bodyDesktop": "Liderado por um especialista formado na Alemanha que é advogado e engenheiro de IA, desenhamos estruturas regulatórias que permitem crescer na Europa com confiança. Transformamos regras complexas da UE em passos claros e acionáveis, ajudando você a evitar multas, acelerar vendas enterprise e lançar recursos de IA com segurança.",
-        "bodyMobile": "Com um advogado e engenheiro de IA formado na Alemanha, ajudamos você a evitar multas, fechar contratos enterprise e lançar IA com confiança na Europa."
+        "title": "AI Officer e Encarregado de Dados para sua empresa",
+        "notItalic": "Direto da União Europeia,",
+        "subtitleRest": "levamos expertise real em regulação e governança: o estúdio boutique de compliance de Berlim.",
+        "bodyDesktop": "Oferecemos soluções jurídicas e técnicas para garantir conformidade com AI Act, GDPR e LGPD. Atuamos como AI Officer e Encarregado de Dados, ajudando sua empresa a operar corretamente na Europa e no Brasil. Evite multas, conquiste confiança dos clientes e lance IA com segurança.",
+        "bodyMobile": "AI Officer e Encarregado de Dados para sua empresa. Soluções em AI Act, GDPR e LGPD que dão segurança para crescer na Europa."
     },
     "quickLinks": [
         {
             "href": "/aiservices/ailiteracy",
-            "label": "Treinamento de Literacia em IA",
+            "label": "Treinamento em Alfabetização em IA",
             "border": "border-purple-500"
         },
         {
             "href": "/aiservices/highrisk",
-            "label": "É alto risco?",
+            "label": "Seu projeto é de alto risco?",
             "border": "border-amber-500"
         },
         {
@@ -25,44 +25,44 @@
     ],
     "regulations": {
         "eyebrow": "Regulamentações",
-        "title": "Regras da UE em que somos especialistas",
-        "intro": "Da privacidade de dados à governança de IA, explore nossa expertise nas principais normas europeias.",
+        "title": "As normas da UE em que somos especialistas",
+        "intro": "Da proteção de dados à governança de IA, conheça nossa experiência nas principais leis europeias.",
         "list": [
             {
                 "title": "AI Act",
                 "slug": "ai-act",
-                "description": "Marco da UE que estabelece regras rígidas para sistemas de IA confiáveis e conformes."
+                "description": "Regulamento europeu que define regras rigorosas para sistemas de IA confiáveis e em conformidade."
             },
             {
                 "title": "GDPR",
                 "slug": "gdpr",
-                "description": "Lei europeia de proteção de dados que define direitos, obrigações e fiscalização do tratamento de dados pessoais."
+                "description": "Lei de proteção de dados da União Europeia que estabelece direitos, deveres e regras de fiscalização sobre o uso de dados pessoais."
             },
             {
                 "title": "LGPD",
                 "slug": "lgpd",
-                "description": "Lei brasileira de proteção de dados que estabelece princípios, direitos e governança de dados pessoais."
+                "description": "Lei brasileira de proteção de dados que traz princípios, direitos e normas para o tratamento de dados pessoais."
             },
             {
-                "title": "EU Accessibility Act",
+                "title": "Ato Europeu de Acessibilidade",
                 "slug": "accessibility",
-                "description": "Regras da UE para que produtos e serviços sejam acessíveis a todas as pessoas, incluindo pessoas com deficiência."
+                "description": "Norma da UE que exige que produtos e serviços sejam acessíveis a todas as pessoas, inclusive pessoas com deficiência."
             }
         ]
     },
     "clients": {
-        "title": "Trabalhamos com centenas de pessoas incríveis"
+        "title": "Já apoiamos dezenas de empresas e profissionais de destaque"
     },
     "proof": {
-        "title": "O seu sucesso é o nosso negócio.",
-        "body": "Compliance não é papelada — é como você protege o caixa, acelera vendas enterprise e lança com confiança. Somos um boutique que fala lei e código, transforma regras em tarefas e deixa evidências que resistem a auditorias.",
-        "cta": "Veja como funciona o processo",
-        "ctaAria": "Veja como funciona o processo",
+        "title": "O seu sucesso é o nosso propósito",
+        "body": "Compliance não é burocracia: é a forma de proteger investimentos, acelerar negócios e lançar produtos com segurança. Somos uma boutique que une direito e tecnologia, transforma exigências legais em oportunidades e prepara documentação sólida para qualquer auditoria.",
+        "cta": "Veja como conduzimos o processo",
+        "ctaAria": "Veja como conduzimos o processo",
         "points": [
             {
-                "title": "Risco de multa & custo evitado",
-                "desc": "Multas escalam com a receita (GDPR até 4% do faturamento global; AI Act até 7% ou valores fixos). Evite surpresas caras com controles e evidências certos antes de qualquer cobrança.",
-                "paragraph2": "O que fazemos: DPIAs, desenho de base legal, risco & supervisão em IA, dossiês técnicos, aprovações e trilha de evidências viva.",
+                "title": "Multas evitadas e custos reduzidos",
+                "desc": "As penalidades crescem conforme a receita (GDPR até 4% do faturamento global; AI Act até 7% ou valores fixos). Antecipe-se com os controles e evidências certos antes de qualquer notificação.",
+                "paragraph2": "O que fazemos: DPIAs, definição de bases legais, gestão de risco em IA, dossiês técnicos, aprovações e trilhas de evidências atualizadas.",
                 "color": {
                     "border": "border-rose-500",
                     "dot": "before:bg-rose-500",
@@ -70,9 +70,9 @@
                 }
             },
             {
-                "title": "Aceleração de deals & confiança enterprise",
-                "desc": "Questionários de segurança e privacidade deixam de travar. Você responde compras uma vez — com controles claros, fluxos de dados mapeados e contratos reconhecidos pelos clientes.",
-                "paragraph2": "Resultado: ciclos de revisão mais rápidos, menos escalonamentos e avaliações de segurança mais suaves.",
+                "title": "Agilidade nos negócios e confiança dos clientes",
+                "desc": "Questionários de segurança e privacidade deixam de ser barreira. Você responde de forma padronizada, com controles claros, fluxos de dados mapeados e contratos que seus clientes reconhecem.",
+                "paragraph2": "Resultado: revisões mais rápidas, menos escalonamentos e processos de compra mais fluidos.",
                 "color": {
                     "border": "border-amber-500",
                     "dot": "before:bg-amber-500",
@@ -80,9 +80,9 @@
                 }
             },
             {
-                "title": "Confiança no lançamento",
-                "desc": "Recursos vão a produção sem reveses de última hora. Riscos conhecidos, responsáveis definidos e mitigação no sprint — o go/no-go vira decisão, não incêndio.",
-                "paragraph2": "O que fazemos: checklists de privacy by design, aprovações de modelo/feature e registros de decisão claros.",
+                "title": "Segurança nos lançamentos",
+                "desc": "Novos recursos chegam à produção sem sustos de última hora. Riscos mapeados, responsáveis definidos e mitigação feita no sprint — a decisão de go/no-go passa a ser estratégica, não emergencial.",
+                "paragraph2": "O que fazemos: checklists de privacy by design, aprovações de modelos e registros claros de decisão.",
                 "color": {
                     "border": "border-indigo-500",
                     "dot": "before:bg-indigo-500",
@@ -90,9 +90,9 @@
                 }
             },
             {
-                "title": "Documentação pronta para auditoria",
-                "desc": "Evidências que reguladores e auditores realmente usam: documentação técnica do Anexo IV, logs de risco, histórico de mudanças e aprovações ligadas aos releases.",
-                "paragraph2": "Menos tempo explicando, mais tempo construindo.",
+                "title": "Documentação preparada para auditoria",
+                "desc": "Produzimos evidências que auditores realmente utilizam: documentação técnica exigida pelo Anexo IV, registros de risco, histórico de mudanças e aprovações vinculadas aos releases.",
+                "paragraph2": "Você gasta menos tempo explicando e mais tempo construindo.",
                 "color": {
                     "border": "border-emerald-500",
                     "dot": "before:bg-emerald-500",
@@ -100,9 +100,9 @@
                 }
             },
             {
-                "title": "Resiliência de fornecedores & fluxos de dados",
-                "desc": "Risco de terceiros e transferências de dados são projetados, não remendados. Contratos, SCCs, TIAs e configurações condizem com o seu stack real.",
-                "paragraph2": "Resultado: menos surpresas em produção e compromissos mais limpos com clientes.",
+                "title": "Gestão de fornecedores e fluxos de dados",
+                "desc": "O risco de terceiros e de transferências internacionais é previsto desde o início. Contratos, SCCs, TIAs e configurações são feitos para refletir seu stack real.",
+                "paragraph2": "Resultado: menos surpresas em produção e compromissos mais claros com clientes.",
                 "color": {
                     "border": "border-sky-500",
                     "dot": "before:bg-sky-500",
@@ -110,9 +110,9 @@
                 }
             },
             {
-                "title": "Parceiro embedado: lei × código",
-                "desc": "Você trabalha com um boutique que fala com engenheiros e stakeholders. Traduzimos linguagem regulatória em backlog que a equipe entrega.",
-                "paragraph2": "Menos atrito, resultados mais rápidos e decisões que a liderança sustenta.",
+                "title": "Parceiro integrado: direito × tecnologia",
+                "desc": "Você trabalha com uma boutique que conversa com engenheiros e gestores. Traduzimos a linguagem regulatória em backlog que sua equipe consegue entregar.",
+                "paragraph2": "Menos atrito, mais velocidade e decisões que a liderança sustenta.",
                 "color": {
                     "border": "border-neutral-600",
                     "dot": "before:bg-neutral-600",
@@ -123,36 +123,36 @@
     },
     "spotlight": {
         "name": "Jhonathan Campos",
-        "role": "Fundador — Especialista em Governança de IA, Advogado & Engenheiro de Software",
-        "bio": "Especialista em Governança de IA com formação dupla em Direito e Engenharia de Software. Minha missão é capacitar empresas e instituições de pesquisa no mundo todo a navegar com confiança o cenário complexo de conformidade regulatória.\n\nCom expertise em AI Act, GDPR, Diretiva ePrivacy, ISO 42001 e Regulamento de Dispositivos Médicos, crio estruturas de conformidade que atendem às leis e impulsionam inovação e crescimento.\n\nMinha abordagem multidisciplinar traduz regulações complexas em estratégias acionáveis, desenha e implementa programas de compliance que mitigam riscos e garantem competitividade — promovendo colaboração fluida entre times jurídicos e técnicos.",
+        "role": "Fundador — Especialista em Governança de IA, Advogado e Engenheiro de Software",
+        "bio": "Sou especialista em Governança de IA, com formação em Direito (USP - Largo de São Francisco) e Engenharia de Software (Formado na Alemanha). Minha missão é ajudar empresas e instituições de pesquisa em todo o mundo a navegar com segurança o cenário de conformidade regulatória.\n\nCom experiência prática em AI Act, GDPR, Diretiva ePrivacy, ISO 42001 e Regulamento de Dispositivos Médicos, construo estruturas de compliance que não só atendem às normas, mas também impulsionam inovação e crescimento.\n\nMinha abordagem multidisciplinar transforma regulações complexas em estratégias viáveis, implementa programas de compliance que reduzem riscos e aumentam a competitividade — promovendo colaboração fluida entre equipes jurídicas e técnicas.",
         "linkedin": "LinkedIn"
     },
     "cta": {
-        "title": "Evite multas. Proteja a confiança. Mantenha seu negócio ativo.",
-        "body": "Criamos bases jurídico-técnicas que permitem crescer na Europa com segurança.",
-        "button": "Fale com a gente"
+        "title": "Evite multas. Conquiste confiança. Garanta a continuidade do seu negócio.",
+        "body": "Criamos fundamentos jurídico-técnicos que permitem sua empresa crescer na Europa de forma segura.",
+        "button": "Fale conosco"
     },
     "ourProcess": {
         "eyebrow": "Como trabalhamos",
-        "title": "Transformando regras complexas da UE em vantagem competitiva",
-        "intro": "Compliance deve habilitar crescimento. Alinhamos jurídico, técnico e produto para reduzir risco e liberar velocidade.",
-        "viewProcess": "Ver processo detalhado",
+        "title": "Transformamos regras complexas da UE em vantagem competitiva",
+        "intro": "Compliance deve gerar crescimento. Alinhamos jurídico, técnico e produto para reduzir riscos e aumentar velocidade.",
+        "viewProcess": "Ver processo completo",
         "steps": {
             "assess": {
                 "title": "Diagnosticar",
-                "text": "Mapeamos modelo de negócio, apetite de risco, fluxos de dados e casos de uso para identificar obrigações (AI Act, GDPR, setoriais) e priorizar ganhos rápidos vs. lacunas críticas."
+                "text": "Mapeamos seu modelo de negócio, apetite de risco, fluxos de dados e casos de uso para identificar obrigações (AI Act, GDPR e setoriais) e priorizar ganhos rápidos e lacunas críticas."
             },
             "implement": {
                 "title": "Implementar",
-                "text": "Cocriamos os controles certos: política de IA, risco & supervisão humana, privacy by design, governança de vendors e aprovações — além de SGIA alinhado à ISO/IEC 42001, documentação técnica (Anexo IV), DPIAs e RoPA conforme necessário."
+                "text": "Construímos juntos os controles adequados: política de IA, gestão de risco e supervisão humana, privacy by design, governança de fornecedores e aprovações — além de SGIA alinhado à ISO/IEC 42001, documentação técnica (Anexo IV), DPIAs e RoPA sempre que necessário."
             },
             "sustain": {
                 "title": "Sustentar",
-                "text": "Antes do go-live validamos controles, alinhamos responsáveis e definimos KPIs. Exercícios de mesa, checagem de human-in-the-loop e salvaguardas de transferência/vendors. Entrega inclui pacote audit-ready e cadência de manutenção pragmática."
+                "text": "Antes do go-live validamos controles, alinhamos responsáveis e definimos KPIs. Realizamos exercícios de mesa, verificações de human-in-the-loop e salvaguardas de transferência/fornecedores. A entrega inclui pacote pronto para auditoria e plano de manutenção realista."
             }
         }
     },
     "testimonial": {
-        "quote": "A Oversight Governance Studio superou nossas expectativas; o Jhonathan se envolveu pessoalmente e acompanhou o projeto de perto, dando total confiança de que fizemos a melhor escolha. Os resultados são excelentes e conseguimos lançar na Europa!"
+        "quote": "A Oversight Governance Studio superou nossas expectativas. O Jhonathan se envolveu pessoalmente e acompanhou o projeto de perto, transmitindo total confiança de que fizemos a melhor escolha. Os resultados foram excelentes e conseguimos lançar na Europa!"
     }
 }

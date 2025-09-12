@@ -103,7 +103,7 @@ function Regulations({ data }) {
                                         {reg.title}
                                     </h4>
                                     <div className="flex-1 flex items-center">
-                                        <p className="text-sm text-neutral-600 line-clamp-3">
+                                        <p className="text-md text-neutral-600 line-clamp-3">
                                             {reg.description}
                                         </p>
                                     </div>

@@ -3,12 +3,12 @@
         "aria": {
             "openProfile": "{name} — abrir perfil",
             "close": "Fechar",
-            "hint": "Feche clicando fora, pressione Esc ou toque em ×."
+            "hint": "Feche clicando fora, pressione Esc ou no botão ×."
         },
         "actions": {
             "email": "E-mail",
             "linkedin": "LinkedIn",
-            "book": "Agendar reunião de 20 min",
+            "book": "Agendar reunião de 20 minutos",
             "connect": "Conectar no LinkedIn",
             "close": "Fechar"
         },
@@ -16,37 +16,37 @@
             "Lei Europeia de IA",
             "ISO 42001",
             "LGPD",
-            "Segurança de modelos"
+            "Segurança de Modelos"
         ],
         "snapshot": [
-            "Especialista sênior em Governança de IA e LGPD, com formação dupla em Direito e Engenharia de Software. Transformo a Lei Europeia de IA, a ISO 42001 e a LGPD em vantagem operacional — controles que funcionam em produção e resistem a auditorias.",
-            "Especialização: estratégia de compliance, governança de risco de modelos e pipelines de ML seguros para contextos críticos."
+            "Especialista sênior em Governança de IA e Proteção de Dados (LGPD), com formação em Direito (USP) e Engenharia de Software (Alemanha). Transformo a Lei Europeia de IA, a ISO 42001 e a LGPD em vantagem operacional — controles aplicáveis em produção e preparados para auditorias.",
+            "Áreas de atuação: estratégia de compliance, governança de riscos de modelos e pipelines de ML seguros para contextos críticos."
         ],
         "sections": {
             "results": {
                 "title": "Resultados Selecionados",
                 "items": [
                     {
-                        "title": "krisenchat — Senior AI Compliance Manager:",
-                        "desc": "liderou a implementação da Lei de IA, integrou práticas ISO e entregou um programa de governança creditado com ~90% de redução de exposição a risco regulatório."
+                        "title": "krisenchat — Senior AI Compliance Manager",
+                        "desc": "Liderou a implementação da Lei de IA, integrou práticas ISO e entregou um programa de governança que reduziu em ~90% a exposição a risco regulatório."
                     },
                     {
-                        "title": "Zuse Institute Berlin (ZIB) — Desenvolvedor do Framework de Compliance em IA:",
-                        "desc": "construiu o primeiro Framework de Governança de IA e Dados do instituto, criou um framework de monitoramento MLOps para métricas/justiça e desenvolveu uma rede neural para projeto de pesquisa com achados iniciais destacados na Nature; coautor em artigos sobre ML e a Lei de IA."
+                        "title": "Zuse Institute Berlin (ZIB) — Desenvolvedor de Framework de Compliance em IA",
+                        "desc": "Construiu o primeiro framework de governança de IA e dados do instituto, criou sistema de monitoramento MLOps para métricas/justiça e desenvolveu uma rede neural para projeto de pesquisa com resultados preliminares destacados na Nature; coautor em artigos sobre ML e a Lei de IA."
                     },
                     {
-                        "title": "Charité – Universitätsmedizin Berlin:",
-                        "desc": "ciência de dados e ML para health tech; apoiou captação após pitch em aceleradora."
+                        "title": "Charité – Universitätsmedizin Berlin",
+                        "desc": "Ciência de dados e ML aplicados à healthtech; apoiou captação de recursos após pitch em aceleradora."
                     }
                 ]
             },
             "deliver": {
-                "title": "O que Entrego",
+                "title": "O que entrego",
                 "items": [
-                    "Programas da Lei de IA: classificação de risco, documentação técnica (Anexo IV), supervisão humana e monitoramento pós-mercado.",
-                    "LGPD para IA: DPIAs, mapeamento de dados, gestão de fornecedores (Art. 28), exclusão & retenção, privacidade desde a concepção.",
-                    "ISO 42001 (AIMS): desenho de governança, KPIs, responsáveis e evidências prontas para auditoria.",
-                    "Segurança de modelos: robustez contra ataques, higiene contra envenenamento de dados e controles de cadeia de suprimentos em ML."
+                    "Programas do AI Act: classificação de risco, documentação técnica (Anexo IV), supervisão humana e monitoramento pós-mercado.",
+                    "LGPD aplicada à IA: DPIAs, mapeamento de dados, gestão de fornecedores (art. 28), exclusão e retenção, privacidade by design.",
+                    "ISO 42001 (AIMS): desenho de governança, KPIs, responsáveis e evidências auditáveis.",
+                    "Segurança de modelos: robustez contra ataques, prevenção de envenenamento de dados e controles de supply chain em ML."
                 ]
             },
             "roles": {
@@ -69,7 +69,7 @@
                         "Charité – Universitätsmedizin Berlin (2023)"
                     ],
                     [
-                        "Analista de Dados & Full-stack (Freelancer)",
+                        "Analista de Dados & Full-Stack (Freelancer)",
                         "Bettencourt Financial Group (2023–2024)"
                     ],
                     [
@@ -81,8 +81,8 @@
             "credentials": {
                 "title": "Credenciais",
                 "items": [
-                    "CODE University of Applied Sciences (2025) — Engenharia de Software (IA/ML, Segurança)",
-                    "Especialização em Direito Administrativo — Compliance & Governança",
+                    "CODE University of Applied Sciences (2025) — Bacharelado em Engenharia de Software (IA/ML, Segurança)",
+                    "Pós-graduação em Direito Administrativo — Compliance & Governança",
                     "Faculdade de Direito — Universidade de São Paulo (2010) — Bacharel em Direito",
                     "DeepLearning.AI TensorFlow Developer Specialization; CNNs em TensorFlow (Coursera)",
                     "Idiomas: Português, Inglês, Alemão"
