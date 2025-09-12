@@ -1,188 +1,297 @@
 {
     "gdprDpo": {
-        "meta": {
-            "title": "Externer Datenschutzbeauftragter (DSB) — Oversight Governance Studio",
-            "description": "Externer Datenschutzbeauftragter für Unternehmen in Deutschland, der EU und weltweit. Jurist und Software-Ingenieur in Berlin. DSGVO in der Praxis, vertrags- und prüfungsreife Nachweise."
-        },
         "hero": {
-            "eyebrow": "Für Unternehmen mit Kundschaft oder Datenverarbeitung in der EU",
-            "title": "Externer EU-Datenschutzbeauftragter (DSB) für Ihr Unternehmen.",
-            "subtitle": {
-                "0": {
-                    "before": "Tätig als ",
-                    "bold": "externer DSB in der EU",
-                    "after": " mit Sitz in Berlin —"
-                },
-                "1": {
-                    "bold1": "Jurist",
-                    "mid": " und",
-                    "bold2": " Software-Ingenieur",
-                    "after": ". Wir verbinden Recht und Technik, um"
-                },
-                "2": {
-                    "bold": " die DSGVO operativ umzusetzen",
-                    "after": ", Verträge zu beschleunigen und Due-Diligence-Prüfungen zu bestehen."
-                }
-            },
-            "primaryCta": "Gespräch buchen",
-            "secondaryCta": "So funktioniert’s →"
+            "eyebrow": "GDPR-Compliance • Datenschutzbeauftragte/r (DPO) • Weltweite Abdeckung",
+            "title": "Europäische DSB/DPO-Services",
+            "highlight1": "Vermeiden Sie GDPR-Bußgelder von über 20 Mio. €.",
+            "lead1": "Erreichen Sie sofortige Compliance mit unseren",
+            "highlight2": "DPO-Leistungen in der EU",
+            "lead2": "– ob Ihr Unternehmen in Europa sitzt oder außerhalb EU-Daten verarbeitet.",
+            "ctaPrimary": "Jetzt compliant werden"
         },
-        "quickProof": {
+        "heroStats": [
+            {
+                "value": "1,46 Mrd. €",
+                "title": "Höchstes GDPR-Bußgeld",
+                "caption": "Meta (2023)",
+                "valueClass": "text-emerald-600"
+            },
+            {
+                "value": "195+",
+                "title": "Betroffene Länder",
+                "caption": "Weltweite Reichweite des GDPR",
+                "valueClass": "text-indigo-600"
+            },
+            {
+                "value": "72h",
+                "title": "Meldung von Vorfällen",
+                "caption": "Maximale Frist",
+                "valueClass": "text-amber-600"
+            },
+            {
+                "value": "200 Tsd. €+",
+                "title": "Kosten interner DPO",
+                "caption": "Jährlicher Durchschnitt",
+                "valueClass": "text-rose-600"
+            }
+        ],
+        "requirements": {
+            "eyebrow": "Pflicht zur Benennung eines DPO",
+            "title": "Wer benötigt eine/n Datenschutzbeauftragte/n?",
+            "body": "<span class=\"font-semibold\">Art. 37 GDPR</span> verpflichtet bestimmte Organisationen zur Benennung eines DPO. Über die Pflicht hinaus liefert der DPO <span class=\"font-semibold\">wesentliches Risikomanagement</span> für jedes Unternehmen, das personenbezogene Daten von EU-Betroffenen verarbeitet.",
+            "examplesLabel": "Beispiele:",
+            "helper": "Unsicher, ob Sie einen DPO brauchen?",
+            "cta": "Kontakt aufnehmen",
             "items": [
                 {
-                    "title": "Seltene Doppelqualifikation",
-                    "desc": "Rechtswissenschaft + Software-Engineering. Übersetze Regulierung in Backlog und technische Nachweise."
+                    "title": "Unternehmen mit Sitz in der EU",
+                    "description": "Organisationen mit Niederlassungen, Tochtergesellschaften oder regelmäßigen Tätigkeiten in der EU.",
+                    "examples": [
+                        "Lokale Unternehmen mit Kunden­datenverarbeitung",
+                        "Unternehmen mit EU-Beschäftigten",
+                        "Organisationen mit EU-Kundschaft"
+                    ]
                 },
                 {
-                    "title": "In der EU ansässig",
-                    "desc": "Berlin-Zeitzone und Erfahrung vor Ort mit Kund:innen, Behörden und europäischen Auditor:innen."
+                    "title": "Nicht-EU-Unternehmen mit EU-Daten",
+                    "description": "Anbieter außerhalb der EU, die Waren/Dienstleistungen für EU-Betroffene anbieten oder deren Verhalten beobachten.",
+                    "examples": [
+                        "US-SaaS mit EU-Nutzenden",
+                        "E-Commerce mit EU-Kunden",
+                        "Marketing-Agenturen mit EU-Tracking"
+                    ]
                 },
                 {
-                    "title": "Verträge, die Deals ermöglichen",
-                    "desc": "Richtlinien, Verzeichnisse (RoPA), DSFA, SCCs/TIAs und Klauseln, die Beschaffungs- und Sicherheitsprüfungen bestehen."
-                },
-                {
-                    "title": "Mehrsprachig",
-                    "desc": "Deutsch, Englisch und weitere Sprachen für Verhandlungen mit Legal, Engineering und Security in der EU."
+                    "title": "Organisationen mit hohem Risiko",
+                    "description": "Großangelegte Verarbeitung, systematische Überwachung oder besondere Kategorien personenbezogener Daten.",
+                    "examples": [
+                        "Gesundheits- und Pharmabranche",
+                        "Finanzdienstleister und FinTech",
+                        "HR- und Recruiting-Unternehmen",
+                        "Marketing und Werbung"
+                    ]
                 }
             ]
         },
-        "factsSection": {
-            "eyebrow": "DSGVO — EU-Verordnung",
-            "title": "Was sich für Unternehmen mit EU-Kundschaft ändert",
-            "intro": {
-                "0": {
-                    "before": "Wenn Sie Produkte/Dienstleistungen in der EU anbieten oder Verhalten überwachen, gilt die DSGVO. Ich agiere als Ihr externer DSB, um ",
-                    "bold1": "Kontrollen zu entwerfen",
-                    "mid": ", ",
-                    "bold2": "Teams zu schulen",
-                    "after": " und ",
-                    "bold3": "prüfungsfeste Nachweise zu liefern"
-                }
-            }
+        "factsIntro": {
+            "eyebrow": "Compliance-Lage",
+            "title": "Warum Datenschutz wichtiger ist als je zuvor",
+            "body": "Die Durchsetzung des GDPR hat deutlich angezogen. <span class=\"font-semibold\">Rekordbußgelder</span> und <span class=\"font-semibold\">zunehmende Aufsicht</span> machen professionelle DPO-Leistungen essenziell für <span class=\"font-semibold\">Risikomanagement und Business-Kontinuität</span>."
         },
         "facts": [
             {
-                "title": "In Kraft",
-                "value": "25. Mai 2018",
-                "description": "Gilt in der gesamten Europäischen Union"
+                "color": "#e11d48",
+                "title": "Maximales GDPR-Bußgeld",
+                "value": "1,46 Mrd. €",
+                "description": "Höchstes Einzelbußgeld (Meta, 2023)"
             },
             {
-                "title": "Wer betroffen ist",
-                "value": "Unternehmen mit Waren/Dienstleistungen in der EU",
-                "description": "Auch Nicht-EU-Unternehmen mit Zielgruppe in der EU"
+                "color": "#2563eb",
+                "title": "Globale Reichweite",
+                "value": "195+",
+                "description": "Länder mit relevanten GDPR-Pflichten"
             },
             {
-                "title": "Bußgelder",
-                "value": "Bis zu 20 Mio. € oder 4 % des weltweiten Umsatzes",
-                "description": "Bei schweren Verstößen (Art. 83)"
+                "color": "#f59e0b",
+                "title": "Jährliche Compliance-Kosten",
+                "value": "320 Tsd. €+",
+                "description": "Durchschnitt für internen DPO + Compliance-Team"
             }
         ],
-        "offer": {
-            "title": "Kernleistung — Externer DSB in der Europäischen Union",
-            "cards": [
+        "coreServices": {
+            "eyebrow": "Kernleistungen",
+            "title": "Wesentliche Datenschutz-Services",
+            "intro": "Wir decken alle Pflichtanforderungen des GDPR und zentrale Schutzbedarfe des Geschäfts ab.",
+            "deliverablesLabel": "Wesentliche Deliverables:",
+            "timelineLabel": "Zeitplan",
+            "items": [
                 {
-                    "title": "Leistungsumfang",
-                    "text": "Laufende Vertretung und Beratung: Risiken, Richtlinien, Rechtsgrundlagen-Bewertung, Privacy by Design, Betroffenenanfragen sowie Schnittstelle zu Kund:innen/Auditor:innen."
+                    "title": "GDPR-Compliance-Check & Gap-Analyse",
+                    "description": "Umfassender Abgleich Ihrer Datenschutzpraxis mit den GDPR-Vorgaben.",
+                    "deliverables": [
+                        "Datenlandkarte und Inventar",
+                        "Review von Policies und Verfahren",
+                        "Report zu Compliance-Lücken",
+                        "Priorisierte Remediations-Roadmap",
+                        "Risikobewertung und Minderungsstrategien"
+                    ],
+                    "urgency": "Essentiell für alle Organisationen",
+                    "timeframe": "2–8 Wochen"
                 },
                 {
-                    "title": "Liefergegenstände",
-                    "list": [
-                        "Verarbeitungsverzeichnis (RoPA)",
-                        "Datenschutz-Folgenabschätzung (DSFA), falls erforderlich",
-                        "Richtlinien und Datenschutzhinweise",
-                        "Auftragsverarbeitung/Vendor-Governance (Art. 28)",
-                        "Internationale Übermittlungen (SCCs/TIAs)",
-                        "Incident-Playbook (72 Std.) und Nachweise"
-                    ]
+                    "title": "Datenschutz-Folgenabschätzung (DPIA)",
+                    "description": "Obligatorisch bei Hochrisiko-Verarbeitungen; reduziert Datenschutz- und Compliance-Risiken.",
+                    "deliverables": [
+                        "Risikoprüfung für neue Vorhaben",
+                        "Empfehlungen zur Datenminimierung",
+                        "Sicherheitsmaßnahmen-Spezifikation",
+                        "Koordination der Stakeholder-Konsultation",
+                        "Konsultation der Aufsicht, falls erforderlich"
+                    ],
+                    "urgency": "Erforderlich vor Hochrisiko-Verarbeitung",
+                    "timeframe": "1–4 Wochen pro DPIA"
                 },
                 {
-                    "title": "Ergebnisse",
-                    "list": [
-                        "Schnellere Verträge und kürzere Beschaffungszyklen",
-                        "Priorisierte Risiken mit klaren Verantwortlichen und Fristen",
-                        "Prüfungsreife Nachweise für Audits und Due Diligence",
-                        "Geschultes Team und schlanke Pflegeprozesse"
-                    ]
-                }
-            ],
-            "primaryCta": "Externe DSB-Leistung besprechen",
-            "secondaryCta": "Verwandte Services ansehen →"
-        },
-        "relatedServices": {
-            "title": "Services, die den externen DSB ergänzen",
-            "cards": [
-                {
-                    "title": "EU-Markteintritt & Kunden-Readiness",
-                    "desc": "Rechtsgrundlagen, Hinweise, Vertragsklauseln, Übermittlungen und ein evidenzbasiertes Paket für Procurement.",
-                    "cta": "EU-Einstieg planen"
-                },
-                {
-                    "title": "RoPA-Programm (Art. 30)",
-                    "desc": "Verzeichnisse auf Prozess/System-Ebene, Verantwortlichkeiten, Aufbewahrung und Sicherheitsmaßnahmen mit leichter Aktualisierungsroutine.",
-                    "cta": "Verzeichnisse organisieren"
-                },
-                {
-                    "title": "Maßgeschneiderte DSFA",
-                    "desc": "Scope, Interviews, Risikoanalyse, Minderung und Freigabedokumentation — vor dem Go-Live.",
-                    "cta": "DSFA planen"
-                },
-                {
-                    "title": "Internationale Übermittlungen",
-                    "desc": "SCCs/TIAs, Service-Konfiguration und Verträge entsprechend den realen Datenflüssen.",
-                    "cta": "Übermittlungen prüfen"
-                },
-                {
-                    "title": "Vendor-Governance (Art. 28)",
-                    "desc": "Onboarding und periodische Reviews mit praxisnaher Checkliste, anerkannten Klauseln und realistischer Kadenz.",
-                    "cta": "Vendors stärken"
-                },
-                {
-                    "title": "Schulungen & Kultur",
-                    "desc": "Workshops für Produkt, Engineering und Legal: Privacy by Design, 72-Std.-Incidents und belastbare Entscheidungen.",
-                    "cta": "Team schulen"
+                    "title": "24/7 Incident-Response",
+                    "description": "Sofortige Expert:innen-Reaktion, um Pflichten einzuhalten und Sanktionen zu minimieren.",
+                    "deliverables": [
+                        "Erstbewertung des Vorfalls",
+                        "Meldung an die Aufsicht binnen 72 Stunden",
+                        "Benachrichtigung betroffener Personen",
+                        "Korrespondenz mit der Behörde",
+                        "Post-Incident-Remediation-Plan"
+                    ],
+                    "urgency": "Kritisch innerhalb von 72 Stunden",
+                    "timeframe": "Sofortige Reaktion"
                 }
             ]
         },
-        "process": {
-            "eyebrow": "So arbeiten wir",
-            "title": "Vom Pflichtprogramm zum Wettbewerbsvorteil",
-            "intro": "Wir verbinden Recht, Engineering und Security, um Risiken zu senken, ohne das Produkt zu bremsen. Ergebnis: Geschwindigkeit mit echter Governance und prüfungsreifen Nachweisen.",
-            "steps": [
+        "ongoing": {
+            "eyebrow": "Laufende Betreuung",
+            "title": "Kontinuierliches Datenschutz-Management",
+            "intro": "Nach dem Initial-Setup halten wir das Schutzniveau aufrecht und passen es an regulatorische Änderungen an.",
+            "featuresLabel": "Enthaltene Leistungen:",
+            "items": [
                 {
-                    "title": "Diagnostizieren",
-                    "desc": "Datenflüsse, Rechtsgrundlagen, Risiken und Vendor-Abhängigkeiten ermitteln. Sie erhalten einen priorisierten Plan mit Aufwand/Wirkung/Fristen."
+                    "title": "Ausgelagerte/r DPO",
+                    "description": "Vollständige DPO-Funktion gemäß Art. 37–39 GDPR.",
+                    "features": [
+                        "Ansprechpartner:in für Aufsichtsbehörden",
+                        "Umgang mit Betroffenenrechten (Art. 15–22)",
+                        "Beratung und Schulung des Teams",
+                        "Compliance-Monitoring und Reporting",
+                        "Durchführung von Privacy-Trainings"
+                    ]
                 },
                 {
-                    "title": "Umsetzen",
-                    "desc": "Wirksame Kontrollen: Richtlinien, RoPA, DSFA, Vendor-Governance, Übermittlungen, 72-Std.-Incidents, Privacy by Design und Trainings."
+                    "title": "Datenübermittlungen in Drittländer",
+                    "description": "Sichere Gestaltung internationaler Datentransfers.",
+                    "features": [
+                        "Prüfung von Angemessenheitsbeschlüssen",
+                        "Implementierung von Standardvertragsklauseln (SCC)",
+                        "Erstellung von TIAs (Transfer Impact Assessments)",
+                        "Entwicklung von Binding Corporate Rules (BCR)",
+                        "Review von Auftragsverarbeitungsverträgen (DPA)"
+                    ]
                 },
                 {
-                    "title": "Verankern",
-                    "desc": "Schlanke Routine: Verantwortliche, vierteljährliche Kadenz, Änderungsprotokolle und fortlaufende Nachweise für Audits und Kund:innen."
+                    "title": "Schnittstelle zur Aufsicht",
+                    "description": "Professionelle Kommunikation mit europäischen Datenschutzbehörden.",
+                    "features": [
+                        "Korrespondenz mit der Aufsicht",
+                        "Beantwortung von behördlichen Anfragen",
+                        "Steuerung von Konsultationsverfahren",
+                        "Audit-Vorbereitung und Begleitung",
+                        "Widersprüche und Verteidigung im Vollzug"
+                    ]
                 }
-            ],
-            "moreLink": "Gesamten Prozess ansehen →",
-            "moreAria": "Detaillierten Prozess ansehen"
+            ]
         },
-        "proofs": [
-            {
-                "k": "Prüfungsfeste Nachweise",
-                "v": "Unterlagen, die Auditor:innen wirklich nutzen: RoPA, DSFA, Risikoprotokolle, Entscheidungen und Freigaben pro Release."
-            },
-            {
-                "k": "Schnellere Deals",
-                "v": "Konsistente Antworten zu Security/Privacy, anerkannte Klauseln und klare Datenflüsse beschleunigen Procurement."
-            },
-            {
-                "k": "Weniger Risiko & Nacharbeit",
-                "v": "Vorgaben vor dem Launch fließen in den Produktzyklus ein und verhindern Verzögerungen sowie Last-Minute-Änderungen."
-            }
-        ],
+        "specialized": {
+            "eyebrow": "Branchenerfahrung",
+            "title": "Spezialisierte Compliance nach Sektor",
+            "intro": "Tiefes Branchenwissen für komplexe Regulierungsumfelder.",
+            "regsLabel": "Weitere Regelungen",
+            "items": [
+                {
+                    "title": "Gesundheit & Life Sciences",
+                    "description": "GDPR-Compliance für Gesundheitsdaten, klinische Studien und Pharma-Forschung.",
+                    "regulations": [
+                        "Medizinprodukteverordnung (MDR)",
+                        "Verordnung über klinische Prüfungen (CTR)",
+                        "Pharmakovigilanz-Vorgaben"
+                    ]
+                },
+                {
+                    "title": "Technologie & KI-Unternehmen",
+                    "description": "State-of-the-Art-Privatsphäre für KI, Machine Learning und automatisierte Entscheidungen.",
+                    "regulations": [
+                        "EU-AI-Act-Compliance",
+                        "Algorithmische Transparenz",
+                        "Regeln zu automatisiertem Profiling"
+                    ]
+                },
+                {
+                    "title": "Marketing & Werbung",
+                    "description": "Cookie-Compliance, Behavior-Tracking und Marketing-Automation unter dem GDPR.",
+                    "regulations": [
+                        "ePrivacy-Richtlinie",
+                        "Cookie-Einwilligung",
+                        "Standards für digitale Werbung"
+                    ]
+                }
+            ]
+        },
+        "steps": {
+            "eyebrow": "Implementierungsprozess",
+            "title": "In 3 Phasen von Risiko zu Compliance",
+            "intro": "Bewährte Methodik für schnelle Compliance und nachhaltige Datenschutz-Praxis.",
+            "outputsLabel": "Zentrale Ergebnisse:",
+            "cta": "Assessment jetzt starten →",
+            "items": [
+                {
+                    "title": "Schnell-Assessment",
+                    "description": "Sofortige Bewertung des Status quo und kritischer Risikofelder.",
+                    "deliverables": [
+                        "Risikobericht",
+                        "Sofortmaßnahmen-Liste",
+                        "Notfall-Response-Plan"
+                    ]
+                },
+                {
+                    "title": "Strategische Umsetzung",
+                    "description": "Systematische Einführung von Maßnahmen, Policies und Verfahren – passend zu Ihrem Geschäft.",
+                    "deliverables": [
+                        "Aktualisierte Privacy-Policies",
+                        "Schulungsprogramme",
+                        "Implementierte technische Schutzmaßnahmen"
+                    ]
+                },
+                {
+                    "title": "Kontinuierlicher Schutz & Monitoring",
+                    "description": "Laufendes Compliance-Monitoring, Reg-Updates und proaktives Risikomanagement.",
+                    "deliverables": [
+                        "Monatliche Reports",
+                        "Regulatorische Update-Alerts",
+                        "Fortlaufende Risikobewertung"
+                    ]
+                }
+            ]
+        },
+        "trust": {
+            "items": [
+                {
+                    "metric": "Geschützte Organisationen",
+                    "description": "Von Start-ups bis Fortune-500 – erfolgreich in vielen Ländern."
+                },
+                {
+                    "metric": "0 € GDPR-Sanktionen",
+                    "description": "Keine Bußgelder für Kund:innen unter unserer DPO-Betreuung."
+                },
+                {
+                    "metric": "<12 Stunden Reaktionszeit",
+                    "description": "Notfall-Response und kritische Themen binnen eines halben Werktags."
+                },
+                {
+                    "metric": "27 EU-Jurisdiktionen",
+                    "description": "Erfahrung in allen EU-Mitgliedstaaten und zentralen Rahmenwerken."
+                }
+            ]
+        },
         "finalCta": {
-            "title": "Führen wir EU-Datenschutz mit Tempo und Sicherheit.",
-            "subtitle": "Externer europäischer DSB für Unternehmen in Deutschland, der EU und weltweit — Recht + Engineering, vertrags- und prüfungsreif.",
-            "button": "Mit dem DSB sprechen"
+            "title": "Schützen Sie Ihr Unternehmen vor GDPR-Risiken",
+            "body": "Warten Sie nicht auf eine Anfrage der Aufsicht oder einen Sicherheitsvorfall. Erhalten Sie sofort Zugang zu EU-zertifizierter DPO-Expertise und umfassendem Compliance-Schutz – weltweit verfügbar.",
+            "ctaPrimary": "Kontakt",
+            "badges": [
+                {
+                    "text": "24/7 Incident-Response",
+                    "dotClass": "bg-emerald-500"
+                },
+                {
+                    "text": "Alle EU-Mitgliedstaaten",
+                    "dotClass": "bg-indigo-500"
+                }
+            ]
         }
     }
 }

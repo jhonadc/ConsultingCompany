@@ -1,7 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-import Link from 'next/link'
 import { useMessages } from 'next-intl'
 
 import { Container } from '@/components/Container'
@@ -12,338 +10,300 @@ import RegulationsFactStrip from '@/components/RegulationsFactStrip'
 import { StylizedImage } from '@/components/StylizedImage'
 import { ColorDivider } from '@/components/ColorDivider'
 import { BookingForm } from '@/components/BookingForm'
-import JhonathanPhoto from '@/images/JhonathanPhoto.jpg'
+import LocaleLink from '@/components/LocaleLink'
 import imageLaptop from '@/images/laptop.jpg'
 
-export default function GdprDpoPage() {
+const arr = (v) => (Array.isArray(v) ? v : [])
+
+export default function AiOfficerPage() {
     const messages = useMessages()
-    const M = messages?.gdprDpo ?? {}
+    const M = messages?.aiOfficer ?? {}
 
-    // Arrays from JSON (with safe fallbacks)
-    const facts = (Array.isArray(M.facts) ? M.facts : []).map((f, i) => ({
-        color: ['#2563eb', '#f59e0b', '#e11d48'][i] || '#2563eb',
-        title: f.title ?? '',
-        value: f.value ?? '',
-        description: f.description ?? ''
-    }))
+    const hero = M.hero ?? {}
+    const facts = arr(M.facts)
+    const requirements = arr(M.requirements?.items)
+    const coreServices = arr(M.coreServices?.items)
+    const ongoing = arr(M.ongoing?.items)
+    const specialized = arr(M.specialized?.items)
+    const steps = arr(M.steps?.items)
+    const trust = arr(M.trust?.items)
 
-    const quickProof = Array.isArray(M.quickProof?.items) ? M.quickProof.items : []
-    const related = Array.isArray(M.relatedServices?.cards) ? M.relatedServices.cards : []
-    const processSteps = Array.isArray(M.process?.steps) ? M.process.steps : []
-    const proofs = Array.isArray(M.proofs) ? M.proofs : []
-
-    // Purely visual colors (stay in code)
-    const quickProofColors = [
-        'before:bg-emerald-500',
-        'before:bg-indigo-500',
-        'before:bg-amber-500',
-        'before:bg-rose-500',
+    const requirementColors = [
+        { border: 'border-emerald-500', accent: 'bg-emerald-500', ring: 'ring-emerald-100' },
+        { border: 'border-indigo-500', accent: 'bg-indigo-500', ring: 'ring-indigo-100' },
+        { border: 'border-amber-500', accent: 'bg-amber-500', ring: 'ring-amber-100' }
     ]
 
-    const relatedColors = [
-        { border: 'border-pink-500', ring: 'hover:ring-pink-200', span: 'lg:col-span-3' },
-        { border: 'border-sky-500', ring: 'hover:ring-sky-200', span: 'lg:col-span-3' },
-        { border: 'border-amber-500', ring: 'hover:ring-amber-200', span: 'lg:col-span-2' },
-        { border: 'border-emerald-500', ring: 'hover:ring-emerald-200', span: 'lg:col-span-2' },
-        { border: 'border-violet-500', ring: 'hover:ring-violet-200', span: 'lg:col-span-2' },
-        { border: 'border-rose-500', ring: 'hover:ring-rose-200', span: 'lg:col-span-2' },
+    const coreServiceColors = [
+        { border: 'border-rose-500', accent: 'bg-rose-600', icon: 'bg-rose-100', text: 'text-rose-600' },
+        { border: 'border-indigo-500', accent: 'bg-indigo-600', icon: 'bg-indigo-100', text: 'text-indigo-600' },
+        { border: 'border-emerald-500', accent: 'bg-emerald-600', icon: 'bg-emerald-100', text: 'text-emerald-600' }
     ]
 
-    const processColors = [
-        { primary: 'bg-emerald-700', secondary: 'bg-emerald-200', width: 'w-16' },
-        { primary: 'bg-indigo-600', secondary: 'bg-indigo-200', width: undefined },
-        { primary: 'bg-amber-600', secondary: 'bg-amber-200', width: undefined },
+    const ongoingColors = [
+        { border: 'border-violet-500', ring: 'hover:ring-violet-100' },
+        { border: 'border-sky-500', ring: 'hover:ring-sky-100' },
+        { border: 'border-orange-500', ring: 'hover:ring-orange-100' }
     ]
 
-    const proofCardBorders = [
-        'border-emerald-500',
-        'border-amber-500',
-        'border-indigo-500',
+    const specializedColors = [
+        { border: 'border-pink-500', ring: 'hover:ring-pink-100' },
+        { border: 'border-blue-500', ring: 'hover:ring-blue-100' },
+        { border: 'border-purple-500', ring: 'hover:ring-purple-100' },
+        { border: 'border-teal-500', ring: 'hover:ring-teal-100' }
     ]
 
     return (
         <main>
             {/* HERO */}
             <Container className="mt-24 sm:mt-28 lg:mt-40">
-                <FadeIn className="max-w-5xl">
-                    <p className="relative pl-3 text-sm font-medium text-neutral-600 before:absolute before:left-0 before:top-1/2 before:h-2 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500">
-                        {M?.hero?.eyebrow ?? ''}
-                    </p>
+                <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+                    <FadeIn>
+                        <p className="relative pl-3 text-sm font-medium text-neutral-600 before:absolute before:left-0 before:top-1/2 before:h-2 before:w-1 before:-translate-y-1/2 before:rounded before:bg-emerald-500">
+                            {hero.eyebrow}
+                        </p>
 
-                    <h1 className="mt-3 font-display text-4xl sm:text-6xl font-semibold tracking-tight text-neutral-950 text-balance">
-                        {M?.hero?.title ?? ''}
-                    </h1>
+                        <h1 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-neutral-950 text-balance">
+                            {hero.title}
+                        </h1>
 
-                    <h2 className="mt-4 text-xl sm:text-2xl text-neutral-700 leading-relaxed">
-                        {M?.hero?.subtitle?.[0]?.before ?? ''}
-                        <span className="font-semibold">{M?.hero?.subtitle?.[0]?.bold ?? ''}</span>
-                        {M?.hero?.subtitle?.[0]?.after ?? ''}
-                        <span className="font-semibold"> {M?.hero?.subtitle?.[1]?.bold1 ?? ''}</span>
-                        {M?.hero?.subtitle?.[1]?.mid ?? ''}
-                        <span className="font-semibold"> {M?.hero?.subtitle?.[1]?.bold2 ?? ''}</span>
-                        {M?.hero?.subtitle?.[1]?.after ?? ''}
-                        <span className="font-semibold"> {M?.hero?.subtitle?.[2]?.bold ?? ''}</span>
-                        {M?.hero?.subtitle?.[2]?.after ?? ''}
-                    </h2>
+                        <h2 className="mt-4 text-lg sm:text-xl text-neutral-700 leading-relaxed">
+                            <span className="font-semibold">{hero.highlight1}</span> {hero.lead1}{' '}
+                            <span className="font-semibold">{hero.highlight2}</span> {hero.lead2}
+                        </h2>
 
-                    <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
-                        >
-                            {M?.hero?.primaryCta ?? ''}
-                        </Link>
-                        <a
-                            href="#oferta"
-                            className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-6 py-3 text-sm text-neutral-700 hover:bg-neutral-50"
-                        >
-                            {M?.hero?.secondaryCta ?? ''}
-                        </a>
-                    </div>
-                </FadeIn>
-            </Container>
-
-            {/* FOTO + PROVA RÁPIDA */}
-            <Container className="mt-14 sm:mt-16">
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
-                    <FadeIn className="lg:col-span-4">
-                        <div className="overflow-hidden rounded-2xl bg-neutral-100 ring-1 ring-neutral-950/10">
-                            <Image src={JhonathanPhoto} alt="Jhonathan Campos" className="w-full h-auto object-cover" priority />
+                        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                            <LocaleLink
+                                href="/contact"
+                                className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-8 py-4 text-base font-semibold text-white shadow-sm transition hover:scale-105"
+                            >
+                                {hero.ctaPrimary}
+                            </LocaleLink>
                         </div>
                     </FadeIn>
-                    <FadeIn className="lg:col-span-8">
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {quickProof.map((item, i) => (
-                                <li key={i} className="rounded-3xl bg-white p-5 ring-1 ring-neutral-950/10 shadow-sm">
-                                    <h3
-                                        className={[
-                                            'relative pl-4 font-display text-base font-semibold text-neutral-950',
-                                            'before:absolute before:left-0 before:top-1/2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full',
-                                            quickProofColors[i] || quickProofColors[0],
-                                        ].join(' ')}
-                                    >
-                                        {item.title ?? ''}
-                                    </h3>
-                                    <p className="mt-2 text-sm text-neutral-700">{item.desc ?? ''}</p>
-                                </li>
+
+                    {/* Key Statistics Grid */}
+                    <FadeIn>
+                        <div className="grid grid-cols-2 gap-6">
+                            {arr(M.heroStats).map((card, i) => (
+                                <div key={i} className="rounded-2xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm">
+                                    <div className={`text-3xl font-bold ${card.valueClass}`}>{card.value}</div>
+                                    <div className="text-sm font-medium text-neutral-900 mt-1">{card.title}</div>
+                                    <div className="text-xs text-neutral-600 mt-1">{card.caption}</div>
+                                </div>
                             ))}
-                        </ul>
+                        </div>
                     </FadeIn>
                 </div>
             </Container>
 
-            {/* FATOS GDPR */}
-            <Container className="mt-16">
-                <SectionIntro eyebrow={M?.factsSection?.eyebrow ?? ''} title={M?.factsSection?.title ?? ''}>
-                    <p>
-                        {M?.factsSection?.intro?.[0]?.before ?? ''}
-                        <span className="font-semibold">{M?.factsSection?.intro?.[0]?.bold1 ?? ''}</span>
-                        {M?.factsSection?.intro?.[0]?.mid ?? ''}
-                        <span className="font-semibold">{M?.factsSection?.intro?.[0]?.bold2 ?? ''}</span>
-                        {M?.factsSection?.intro?.[0]?.after ?? ''}
-                        <span className="font-semibold">{M?.factsSection?.intro?.[0]?.bold3 ?? ''}</span>.
-                    </p>
+            {/* REQUIREMENTS */}
+            <Container id="requirements" className="mt-24">
+                <SectionIntro eyebrow={M.requirements?.eyebrow} title={M.requirements?.title}>
+                    <p dangerouslySetInnerHTML={{ __html: M.requirements?.body ?? '' }} />
+                </SectionIntro>
+
+                <div className="mt-12 grid gap-8 lg:grid-cols-3">
+                    {requirements.map((req, i) => {
+                        const colors = requirementColors[i % requirementColors.length]
+                        return (
+                            <FadeIn key={i}>
+                                <div className={`rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border} hover:shadow-md transition-shadow`}>
+                                    <div className={`inline-flex rounded-lg p-2 ${colors.ring}`}>
+                                        <div className={`w-3 h-3 rounded-full ${colors.accent}`} />
+                                    </div>
+                                    <h3 className="mt-4 text-xl font-semibold text-neutral-900">{req.title}</h3>
+                                    <p className="mt-3 text-neutral-700">{req.description}</p>
+                                    <div className="mt-4">
+                                        <h4 className="text-sm font-semibold text-neutral-900 mb-2">{M.requirements?.examplesLabel}</h4>
+                                        <ul className="space-y-1">
+                                            {arr(req.examples).map((example, idx) => (
+                                                <li key={idx} className="flex items-start text-sm text-neutral-600">
+                                                    <div className={`w-1 h-1 rounded-full ${colors.accent} mt-2 mr-2 flex-shrink-0`} />
+                                                    {example}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </FadeIn>
+                        )
+                    })}
+                </div>
+
+                <div className="mt-8 text-center">
+                    <p className="text-neutral-600 mb-4">{M.requirements?.helper}</p>
+                    <LocaleLink
+                        href="/contact"
+                        className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
+                    >
+                        {M.requirements?.cta}
+                    </LocaleLink>
+                </div>
+            </Container>
+
+            {/* FACTS */}
+            <Container className="mt-20">
+                <SectionIntro eyebrow={M.factsIntro?.eyebrow} title={M.factsIntro?.title}>
+                    <p dangerouslySetInnerHTML={{ __html: M.factsIntro?.body ?? '' }} />
                 </SectionIntro>
                 <RegulationsFactStrip facts={facts} />
             </Container>
 
-            {/* OFERTA PRINCIPAL */}
-            <Container id="oferta" className="mt-20">
-                <FadeIn className="mx-auto max-w-6xl">
-                    <h2
-                        className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950
-                       before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
-                       before:rounded before:bg-emerald-500/70"
-                    >
-                        {M?.offer?.title ?? ''}
-                    </h2>
+            {/* CORE SERVICES */}
+            <Container className="mt-24">
+                <SectionIntro eyebrow={M.coreServices?.eyebrow} title={M.coreServices?.title}>
+                    <p>{M.coreServices?.intro}</p>
+                </SectionIntro>
 
-                    <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-                        {/* Card 0 */}
-                        <div className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500">
-                            <h3 className="text-lg font-semibold text-neutral-900">{M?.offer?.cards?.[0]?.title ?? ''}</h3>
-                            <p className="mt-2 text-sm text-neutral-700">{M?.offer?.cards?.[0]?.text ?? ''}</p>
-                            <div className="mt-4 h-px w-full bg-neutral-200 relative">
-                                <span className="absolute top-0 left-0 h-px w-16 bg-emerald-600" />
-                            </div>
-                        </div>
-
-                        {/* Card 1 */}
-                        <div className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-indigo-500">
-                            <h3 className="text-lg font-semibold text-neutral-900">{M?.offer?.cards?.[1]?.title ?? ''}</h3>
-                            <ul className="mt-2 list-disc pl-5 text-sm text-neutral-700 space-y-1">
-                                {(M?.offer?.cards?.[1]?.list ?? []).map((li, i) => <li key={i}>{li}</li>)}
-                            </ul>
-                            <div className="mt-4 h-px w-full bg-neutral-200 relative">
-                                <span className="absolute top-0 left-0 h-px w-16 bg-indigo-600" />
-                            </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-amber-500">
-                            <h3 className="text-lg font-semibold text-neutral-900">{M?.offer?.cards?.[2]?.title ?? ''}</h3>
-                            <ul className="mt-2 list-disc pl-5 text-sm text-neutral-700 space-y-1">
-                                {(M?.offer?.cards?.[2]?.list ?? []).map((li, i) => <li key={i}>{li}</li>)}
-                            </ul>
-                            <div className="mt-4 h-px w-full bg-neutral-200 relative">
-                                <span className="absolute top-0 left-0 h-px w-16 bg-amber-600" />
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Botões */}
-                    <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
-                        >
-                            {M?.offer?.primaryCta ?? ''}
-                        </Link>
-                        <a
-                            href="#servicos"
-                            className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-6 py-3 text-sm text-neutral-700 hover:bg-neutral-50"
-                        >
-                            {M?.offer?.secondaryCta ?? ''}
-                        </a>
-                    </div>
-                </FadeIn>
-            </Container>
-
-            {/* SERVIÇOS RELACIONADOS */}
-            <Container id="servicos" className="mt-20">
-                <FadeIn className="mx-auto max-w-6xl">
-                    <h2
-                        className="relative pl-3 font-display text-2xl sm:text-3xl font-semibold text-neutral-950
-                       before:absolute before:left-0 before:top-1/2 before:h-5 before:w-1 before:-translate-y-1/2
-                       before:rounded before:bg-indigo-500/70"
-                    >
-                        {M?.relatedServices?.title ?? ''}
-                    </h2>
-
-                    <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-6">
-                        {(related).map((card, i) => {
-                            const c = relatedColors[i] || relatedColors[0]
-                            return (
-                                <div key={i} className={`group ${c.span}`}>
-                                    <div
-                                        className={[
-                                            'rounded-3xl bg-white p-7 ring-1 ring-neutral-950/10 shadow-sm flex h-full flex-col',
-                                            'transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md',
-                                            'border-l-2',
-                                            c.border,
-                                            c.ring,
-                                        ].join(' ')}
-                                    >
-                                        <h3 className="text-lg font-semibold text-neutral-900">{card.title ?? ''}</h3>
-                                        <p className="mt-2 text-sm text-neutral-700">{card.desc ?? ''}</p>
-                                        <div className="mt-auto pt-5">
-                                            <Link
-                                                href="/contact"
-                                                className="inline-flex rounded-full bg-neutral-950 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105"
-                                            >
-                                                {card.cta ?? ''}
-                                            </Link>
-                                        </div>
-                                    </div>
+                <div className="mt-12 space-y-8">
+                    {coreServices.map((service, i) => {
+                        const colors = coreServiceColors[i % coreServiceColors.length]
+                        return (
+                            <FadeIn key={i}>
+                                <div className={`rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border}`}>
+                                    <h3 className="text-2xl font-semibold text-neutral-900">{service.title}</h3>
+                                    <p className="mt-4 text-lg text-neutral-700">{service.description}</p>
+                                    <ul className="mt-6 space-y-2">
+                                        {arr(service.deliverables).map((d, idx) => (
+                                            <li key={idx} className="flex items-start text-sm text-neutral-600">
+                                                <div className={`w-1.5 h-1.5 rounded-full ${colors.accent} mt-1.5 mr-3`} />
+                                                {d}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
-                            )
-                        })}
-                    </div>
-                </FadeIn>
-            </Container>
-
-            {/* PROCESSO */}
-            <SectionIntro
-                eyebrow={M?.process?.eyebrow ?? ''}
-                title={M?.process?.title ?? ''}
-                className="mt-24 sm:mt-32 lg:mt-40"
-            >
-                <p>{M?.process?.intro ?? ''}</p>
-            </SectionIntro>
-
-            <Container className="mt-16">
-                <div className="lg:flex lg:items-center lg:justify-end">
-                    {/* imagem */}
-                    <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-                        <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-                            <StylizedImage
-                                src={imageLaptop}
-                                sizes="(min-width: 1024px) 41rem, 31rem"
-                                className="justify-center lg:justify-end"
-                            />
-                        </FadeIn>
-                    </div>
-                    {/* lista */}
-                    <ul role="list" className="mt-16 space-y-12 lg:mt-0 lg:w-1/2 lg:pl-4">
-                        {processSteps.map((step, i) => (
-                            <li key={i}>
-                                <h3 className="font-display text-lg font-semibold text-neutral-900">{step.title ?? ''}</h3>
-                                <p className="mt-2 text-neutral-600">{step.desc ?? ''}</p>
-                                <ColorDivider
-                                    primaryClass={processColors[i]?.primary}
-                                    secondaryClass={processColors[i]?.secondary}
-                                    primaryWidth={processColors[i]?.width}
-                                />
-                            </li>
-                        ))}
-                        <li className="pt-2">
-                            <Link
-                                href="/process"
-                                className="inline-flex items-center gap-1 text-md font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
-                                aria-label={M?.process?.moreAria ?? ''}
-                            >
-                                {M?.process?.moreLink ?? ''}
-                            </Link>
-                        </li>
-                    </ul>
+                            </FadeIn>
+                        )
+                    })}
                 </div>
             </Container>
 
-            {/* SEÇÃO PROVAS / POR QUE COMPRAR */}
+            {/* ONGOING */}
+            <Container className="mt-24">
+                <SectionIntro eyebrow={M.ongoing?.eyebrow} title={M.ongoing?.title}>
+                    <p>{M.ongoing?.intro}</p>
+                </SectionIntro>
+
+                <div className="mt-12 grid gap-8 lg:grid-cols-3">
+                    {ongoing.map((service, i) => {
+                        const colors = ongoingColors[i % ongoingColors.length]
+                        return (
+                            <FadeIn key={i}>
+                                <div className={`rounded-3xl bg-white p-8 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border} ${colors.ring}`}>
+                                    <h3 className="text-xl font-semibold text-neutral-900">{service.title}</h3>
+                                    <p className="mt-3 text-neutral-700">{service.description}</p>
+                                    <ul className="mt-6 space-y-2">
+                                        {arr(service.features).map((f, idx) => (
+                                            <li key={idx} className="flex items-start text-sm text-neutral-600">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 mr-3" />
+                                                {f}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </FadeIn>
+                        )
+                    })}
+                </div>
+            </Container>
+
+            {/* SPECIALIZED */}
+            <Container className="mt-24">
+                <SectionIntro eyebrow={M.specialized?.eyebrow} title={M.specialized?.title}>
+                    <p>{M.specialized?.intro}</p>
+                </SectionIntro>
+
+                <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+                    {specialized.map((s, i) => {
+                        const colors = specializedColors[i % specializedColors.length]
+                        return (
+                            <FadeIn key={i}>
+                                <div className={`rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm border-l-4 ${colors.border} ${colors.ring}`}>
+                                    <h3 className="text-lg font-semibold text-neutral-900">{s.title}</h3>
+                                    <p className="mt-2 text-sm text-neutral-700">{s.description}</p>
+                                    <div className="mt-4">
+                                        <h4 className="text-xs font-semibold text-neutral-500 uppercase mb-2">{M.specialized?.regsLabel}</h4>
+                                        <div className="flex flex-wrap gap-1">
+                                            {arr(s.regulations).map((r, idx) => (
+                                                <span key={idx} className="inline-flex rounded-full bg-neutral-100 px-2 py-1 text-xs text-neutral-600">
+                                                    {r}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </FadeIn>
+                        )
+                    })}
+                </div>
+            </Container>
+
+            {/* STEPS */}
+            <SectionIntro eyebrow={M.steps?.eyebrow} title={M.steps?.title} className="mt-24 sm:mt-32 lg:mt-40">
+                <p>{M.steps?.intro}</p>
+            </SectionIntro>
+
+            <Container className="mt-16">
+                <div className="lg:flex lg:items-center">
+                    <div className="lg:w-1/2 lg:pr-12">
+                        <FadeIn>
+                            <StylizedImage src={imageLaptop} sizes="(min-width: 1024px) 41rem, 31rem" />
+                        </FadeIn>
+                    </div>
+                    <div className="mt-16 lg:mt-0 lg:w-1/2">
+                        {steps.map((step, i) => (
+                            <div key={i} className="mb-12">
+                                <h3 className="font-display text-xl font-semibold text-neutral-900">{step.title}</h3>
+                                <p className="mt-2 text-neutral-600">{step.description}</p>
+                                <ul className="mt-3 space-y-1">
+                                    {arr(step.deliverables).map((d, idx) => (
+                                        <li key={idx} className="text-sm text-neutral-600 flex items-center">
+                                            <div className="w-1 h-1 bg-neutral-400 rounded-full mr-2" />
+                                            {d}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <ColorDivider primaryClass="bg-emerald-700" secondaryClass="bg-emerald-200" />
+                            </div>
+                        ))}
+                        <LocaleLink
+                            href="/contact"
+                            className="inline-flex items-center gap-1 text-lg font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
+                        >
+                            {M.steps?.cta}
+                        </LocaleLink>
+                    </div>
+                </div>
+            </Container>
+
+            {/* TRUST */}
             <Container className="mt-24">
                 <Border />
-                <FadeInStagger className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {proofs.map((p, i) => (
-                        <div
-                            key={i}
-                            className={[
-                                'rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm border-l-2',
-                                proofCardBorders[i] || proofCardBorders[0],
-                            ].join(' ')}
-                        >
-                            <p
-                                className={[
-                                    'relative pl-3 text-sm font-semibold text-neutral-900',
-                                    'before:absolute before:left-0 before:top-1/2 before:h-4 before:w-1 before:-translate-y-1/2 before:rounded',
-                                ].join(' ')}
-                            >
-                                {p.k ?? ''}
-                            </p>
-                            <p className="mt-1 text-sm text-neutral-700">{p.v ?? ''}</p>
+                <FadeInStagger className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    {trust.map((t, i) => (
+                        <div key={i} className="rounded-3xl bg-white p-6 ring-1 ring-neutral-950/10 shadow-sm border-l-2 border-emerald-500">
+                            <div className="text-2xl font-bold text-neutral-900 mb-2">{t.metric}</div>
+                            <p className="text-sm text-neutral-700">{t.description}</p>
                         </div>
                     ))}
                 </FadeInStagger>
             </Container>
 
-            {/* CHAMADA FINAL */}
+            {/* FINAL CTA */}
             <Container className="mt-24">
-                <div className="rounded-4xl bg-neutral-950 px-6 py-12 text-white sm:px-10 sm:py-14 lg:px-12 text-center">
-                    <h2 className="font-display text-3xl font-semibold">
-                        {M?.finalCta?.title ?? ''}
-                    </h2>
-                    <p className="mx-auto mt-4 max-w-2xl text-neutral-300">
-                        {M?.finalCta?.subtitle ?? ''}
-                    </p>
-                    <Link
+                <div className="rounded-4xl bg-neutral-950 px-6 py-12 text-white text-center">
+                    <h2 className="font-display text-3xl sm:text-4xl font-semibold">{M.finalCta?.title}</h2>
+                    <p className="mx-auto mt-4 max-w-3xl text-lg text-neutral-300">{M.finalCta?.body}</p>
+                    <LocaleLink
                         href="/contact"
-                        className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:scale-105"
+                        className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-neutral-900 shadow-sm hover:scale-105"
                     >
-                        {M?.finalCta?.button ?? ''}
-                    </Link>
+                        {M.finalCta?.ctaPrimary}
+                    </LocaleLink>
                 </div>
             </Container>
 
-            {/* FORM DE AGENDAMENTO */}
             <BookingForm />
         </main>
     )

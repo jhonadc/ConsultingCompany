@@ -25,7 +25,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         booking,
         cRootlayout,
         cFooter,
-        gdprDpo // ✅ new
+        gdprDpo,
+        aiOfficer,
     ] = await Promise.all([
         import(`../../locales/${locale}/common.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/ai-act.json`).then((m) => m.default).catch(() => ({})),
@@ -44,7 +45,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../locales/${locale}/booking.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/c-rootlayout.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/c-footer.json`).then((m) => m.default).catch(() => ({})),
-        import(`../../locales/${locale}/gdpr-dpo.json`).then(m => m.default).catch(() => ({})) // 👈 NEW
+        import(`../../locales/${locale}/gdpr-dpo.json`).then(m => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/ai-officer.json`).then(m => m.default).catch(() => ({})) // ✅ new
+
     ])
 
     return {
@@ -67,7 +70,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...booking,
             'c-rootlayout': cRootlayout,
             'c-footer': cFooter,
-            ...gdprDpo // ✅ include under this namespace
+            ...gdprDpo,
+            ...aiOfficer,
+
         }
     }
 })

@@ -23,12 +23,12 @@
             "border": "border-green-500"
         },
         {
-            "href": "/services/gdpr-services/gdpr-dpo",
+            "href": "/services/ai-services/ai-officer",
             "label": "AI Officer",
             "border": "border-purple-400"
         },
         {
-            "href": "services/gdpr-services/gdpr-dpo",
+            "href": "/services/gdpr-services/gdpr-dpo",
             "label": "Data Protection Officer",
             "border": "border-blue-400"
         }

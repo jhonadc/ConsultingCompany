@@ -1,0 +1,282 @@
+{
+    "aiOfficer": {
+        "hero": {
+            "eyebrow": "EU AI Act • Lawyer-Engineer • Governance in Practice",
+            "title": "AI Officer Services for Practical Compliance",
+            "highlight1": "Turn regulation into structured governance.",
+            "lead1": "Our AI Officer service combines",
+            "highlight2": "legal expertise and engineering depth",
+            "lead2": "to help your organisation manage AI risks, document obligations, and build trustworthy systems by design.",
+            "ctaPrimary": "Talk to an AI Compliance Expert"
+        },
+        "heroStats": [
+            {
+                "value": "152+",
+                "title": "Distinct Obligations",
+                "caption": "Across AI Act articles and annexes",
+                "valueClass": "text-red-600"
+            },
+            {
+                "value": "27",
+                "title": "EU Jurisdictions",
+                "caption": "Different supervisory practices",
+                "valueClass": "text-indigo-600"
+            },
+            {
+                "value": "€35M",
+                "title": "Maximum Penalties",
+                "caption": "For breaches of core duties",
+                "valueClass": "text-purple-600"
+            },
+            {
+                "value": "Vendors",
+                "title": "Due Diligence",
+                "caption": "Third-party AI & tools review",
+                "valueClass": "text-emerald-600"
+            }
+        ],
+        "requirements": {
+            "eyebrow": "Why an AI Officer matters",
+            "title": "When dedicated governance expertise is essential",
+            "body": "The AI Act imposes <span class=\"font-semibold\">layered requirements</span> that cut across law, technology, and operations. An AI Officer ensures your company has a <span class=\"font-semibold\">professional accountable for interpretation, implementation, and communication</span>—helping to avoid fragmented responsibility and late-stage compliance surprises.",
+            "examplesLabel": "Typical Situations:",
+            "helper": "Need a single point of expertise?",
+            "cta": "Get AI Governance Support",
+            "items": [
+                {
+                    "title": "High-Risk AI System Providers",
+                    "description": "Developers of Annex III systems need structured risk management, documentation, and authority-facing processes.",
+                    "examples": [
+                        "Biometric identification and access control",
+                        "Safety-related components in transport or energy",
+                        "Healthcare diagnostic support systems",
+                        "HR recruitment and educational AI tools"
+                    ]
+                },
+                {
+                    "title": "General-Purpose AI / Foundation Model Developers",
+                    "description": "Providers of large models face transparency, systemic risk, and data governance expectations.",
+                    "examples": [
+                        "Large language model developers",
+                        "Multimodal foundation models",
+                        "API providers offering generative AI services",
+                        "Adaptation or fine-tuning service providers"
+                    ]
+                },
+                {
+                    "title": "AI Deployers & Integrators",
+                    "description": "Businesses using AI must ensure human oversight, monitor system performance, and contract responsibly with vendors.",
+                    "examples": [
+                        "Banks using AI for credit scoring",
+                        "Hospitals deploying AI diagnostics",
+                        "Public sector agencies using AI for services",
+                        "Enterprises integrating AI features into workflows"
+                    ]
+                }
+            ]
+        },
+        "factsIntro": {
+            "eyebrow": "The Compliance Reality",
+            "title": "AI Act compliance is ongoing governance",
+            "body": "The AI Act is not a one-off project—it requires <span class=\"font-semibold\">continuous governance</span>. An AI Officer provides structure: documenting obligations, reviewing third-party tools, addressing IP and licensing, and ensuring compliance is integrated into everyday development and operations."
+        },
+        "facts": [
+            {
+                "color": "#dc2626",
+                "title": "High-Risk Systems",
+                "value": "Annex III",
+                "description": "Specific use cases requiring full documentation and oversight"
+            },
+            {
+                "color": "#2563eb",
+                "title": "Conformity Assessment",
+                "value": "Mandatory",
+                "description": "External evaluation for CE marking of high-risk systems"
+            },
+            {
+                "color": "#059669",
+                "title": "Vendor Risk",
+                "value": "Critical",
+                "description": "Third-party AI contracts must be reviewed for liability and rights"
+            }
+        ],
+        "coreServices": {
+            "eyebrow": "Core Services",
+            "title": "What an AI Officer brings to your organisation",
+            "intro": "Our AI Officer service covers the full spectrum of duties—legal interpretation, technical implementation, and communication with regulators.",
+            "deliverablesLabel": "Key Deliverables:",
+            "items": [
+                {
+                    "title": "Risk & Governance Systems",
+                    "description": "End-to-end risk frameworks and accountability structures for AI systems.",
+                    "deliverables": [
+                        "Risk classification and system inventory",
+                        "AI risk management framework",
+                        "Governance roles and escalation paths",
+                        "Integration with existing compliance systems"
+                    ]
+                },
+                {
+                    "title": "Documentation & Vendor Review",
+                    "description": "Audit-ready documentation and due diligence for external providers.",
+                    "deliverables": [
+                        "Technical documentation and logs",
+                        "Review of vendor AI tools and APIs",
+                        "Contractual and liability analysis",
+                        "Intellectual property and licensing checks"
+                    ]
+                },
+                {
+                    "title": "Oversight & Compliance by Design",
+                    "description": "Design of oversight mechanisms and compliance routines embedded in development.",
+                    "deliverables": [
+                        "Human oversight and fallback procedures",
+                        "Bias detection and monitoring guidance",
+                        "Transparency and user information mechanisms",
+                        "Compliance checkpoints integrated into workflows"
+                    ]
+                }
+            ]
+        },
+        "ongoing": {
+            "eyebrow": "Ongoing Support",
+            "title": "Keeping compliance alive",
+            "intro": "AI governance is never finished—our role continues as regulations, models, and risks evolve.",
+            "featuresLabel": "Included Services:",
+            "items": [
+                {
+                    "title": "Incident & Authority Interface",
+                    "description": "Handling incidents and communications with regulators.",
+                    "features": [
+                        "Serious incident response planning",
+                        "Authority notifications and correspondence",
+                        "Corrective action management"
+                    ]
+                },
+                {
+                    "title": "Performance & Vendor Monitoring",
+                    "description": "Continuous review of systems and external dependencies.",
+                    "features": [
+                        "Monitoring of AI system behaviour",
+                        "Vendor compliance checks",
+                        "Data governance and quality assurance"
+                    ]
+                },
+                {
+                    "title": "Regulatory Tracking",
+                    "description": "Stay aligned with evolving AI Act standards and guidance.",
+                    "features": [
+                        "Updates on delegated acts and technical standards",
+                        "Interpretation of new obligations",
+                        "Cross-border regulatory analysis"
+                    ]
+                }
+            ]
+        },
+        "aims": {
+            "eyebrow": "Structured Governance",
+            "title": "AI Management System (AIMS) as Compliance Foundation",
+            "intro": "ISO/IEC 42001 requires organisations to establish an AI Management System (AIMS). This is the backbone of AI Act compliance—turning abstract obligations into structured processes, responsibilities, and evidence trails.",
+            "regsLabel": "Key Elements",
+            "items": [
+                {
+                    "title": "Governance Framework",
+                    "description": "Define roles, responsibilities, and escalation paths across legal, technical, and business functions.",
+                    "regulations": [
+                        "Clear accountability lines",
+                        "Documented oversight roles",
+                        "Board-level responsibility"
+                    ]
+                },
+                {
+                    "title": "Policy & Process Architecture",
+                    "description": "Translate AI Act obligations into actionable policies and standard operating procedures.",
+                    "regulations": [
+                        "Risk management SOPs",
+                        "Data & model governance",
+                        "Incident handling processes"
+                    ]
+                },
+                {
+                    "title": "Integration with Operations",
+                    "description": "Embed compliance controls directly into engineering, procurement, and product release workflows.",
+                    "regulations": [
+                        "Release criteria & approval gates",
+                        "Vendor due diligence protocols",
+                        "Change management integration"
+                    ]
+                },
+                {
+                    "title": "Evidence & Continuous Improvement",
+                    "description": "Maintain audit-ready documentation, monitor performance, and adapt to evolving regulation.",
+                    "regulations": [
+                        "Technical documentation & logs",
+                        "Performance monitoring dashboards",
+                        "Regulatory update tracking"
+                    ]
+                }
+            ]
+        },
+        "steps": {
+            "eyebrow": "How We Work",
+            "title": "Step-by-step governance implementation",
+            "intro": "We embed AI Act governance through practical steps that balance compliance and operations.",
+            "outputsLabel": "Outputs:",
+            "cta": "Start Your Governance Assessment →",
+            "items": [
+                {
+                    "title": "Assessment & Mapping",
+                    "description": "Identify obligations, risks, and vendor dependencies.",
+                    "deliverables": [
+                        "System and vendor inventory",
+                        "Risk classification and gap analysis",
+                        "Governance framework outline"
+                    ]
+                },
+                {
+                    "title": "Implementation & Integration",
+                    "description": "Create documentation, oversight, and compliance routines.",
+                    "deliverables": [
+                        "Technical documentation packages",
+                        "Oversight and bias monitoring protocols",
+                        "Integration with development workflows"
+                    ]
+                },
+                {
+                    "title": "Monitoring & Adaptation",
+                    "description": "Keep governance alive with monitoring and regulatory updates.",
+                    "deliverables": [
+                        "Monitoring and reporting systems",
+                        "Vendor compliance updates",
+                        "Authority communication protocols"
+                    ]
+                }
+            ]
+        },
+        "trust": {
+            "items": [
+                {
+                    "metric": "Integrated Expertise",
+                    "description": "Legal and technical analysis combined in one function."
+                },
+                {
+                    "metric": "Vendor Oversight",
+                    "description": "Third-party AI tools reviewed before deployment."
+                },
+                {
+                    "metric": "Compliance by Design",
+                    "description": "Controls embedded into real engineering workflows."
+                },
+                {
+                    "metric": "Authority-Ready",
+                    "description": "Documentation and reporting aligned with regulator expectations."
+                }
+            ]
+        },
+        "finalCta": {
+            "title": "Put AI governance into action",
+            "body": "Work with an AI Officer who bridges law and engineering—ensuring obligations are understood, risks are managed, and compliance is built into your organisation’s operations.",
+            "ctaPrimary": "Book Expert Guidance"
+        }
+    }
+}

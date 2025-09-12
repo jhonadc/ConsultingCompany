@@ -1,187 +1,297 @@
 {
     "gdprDpo": {
-        "meta": {
-            "title": "DPO Europeu para Empresas Brasileiras — Oversight Governance Studio",
-            "description": "Data Protection Officer na Europa para empresas brasileiras. Advogado (USP — Largo de São Francisco) e Engenheiro de Software em Berlim. GDPR na prática, contratos prontos para due diligence e evidências de conformidade."
-        },
         "hero": {
-            "eyebrow": "Para empresas brasileiras com clientes na União Europeia",
-            "title": "Data Protection Officer na Europa para empresas brasileiras.",
-            "subtitle": {
-                "0": {
-                    "before": "Atuação como ",
-                    "bold": "DPO externo na UE",
-                    "after": " com base em Berlim —"
-                },
-                "1": {
-                    "bold1": "advogado formado na USP (Largo de São Francisco)",
-                    "mid": " e",
-                    "bold2": " engenheiro de software",
-                    "after": ". Conectamos jurídico e tecnologia para"
-                },
-                "2": {
-                    "bold": " operar GDPR na prática",
-                    "after": ", acelerar contratos e passar em due diligence."
-                }
-            },
-            "primaryCta": "Agendar conversa"
+            "eyebrow": "Conformidade GDPR • Encarregado de Dados (DPO) • Cobertura Global",
+            "title": "Serviços Europeus de Encarregado de Proteção de Dados",
+            "highlight1": "Evite multas de €20M+ sob o GDPR.",
+            "lead1": "Garanta conformidade imediata com nossos",
+            "highlight2": "serviços de DPO na UE",
+            "lead2": "— esteja sua empresa na Europa ou em qualquer lugar do mundo tratando dados de residentes da UE.",
+            "ctaPrimary": "Ficar em conformidade"
         },
-        "quickProof": {
+        "heroStats": [
+            {
+                "value": "€1,46 bi",
+                "title": "Maior multa GDPR",
+                "caption": "Meta (2023)",
+                "valueClass": "text-emerald-600"
+            },
+            {
+                "value": "195+",
+                "title": "Países afetados",
+                "caption": "Alcance global do GDPR",
+                "valueClass": "text-indigo-600"
+            },
+            {
+                "value": "72h",
+                "title": "Comunicação de incidente",
+                "caption": "Prazo máximo",
+                "valueClass": "text-amber-600"
+            },
+            {
+                "value": "€200 mil+",
+                "title": "Custo de DPO interno",
+                "caption": "Média anual",
+                "valueClass": "text-rose-600"
+            }
+        ],
+        "requirements": {
+            "eyebrow": "Quando é obrigatório nomear DPO",
+            "title": "Quem precisa de um Encarregado de Proteção de Dados?",
+            "body": "<span class=\"font-semibold\">O Artigo 37 do GDPR</span> exige a nomeação de DPO em casos específicos. Além da exigência legal, o DPO oferece <span class=\"font-semibold\">gestão essencial de riscos</span> para qualquer organização que trate dados pessoais de europeus.",
+            "examplesLabel": "Exemplos:",
+            "helper": "Em dúvida se sua organização precisa de DPO?",
+            "cta": "Fale com a gente",
             "items": [
                 {
-                    "title": "Dupla formação rara",
-                    "desc": "Direito (USP — Largo de São Francisco) + Engenharia de Software. Traduzo regulatório em backlog e evidência técnica."
+                    "title": "Empresas sediadas na UE",
+                    "description": "Qualquer organização com escritórios, subsidiárias ou operações regulares na União Europeia.",
+                    "examples": [
+                        "Negócios locais que tratam dados de clientes",
+                        "Empresas com empregados na UE",
+                        "Organizações com clientes na UE"
+                    ]
                 },
                 {
-                    "title": "Base na União Europeia",
-                    "desc": "Residência em Berlim, fuso horário e experiência local para lidar com clientes, autoridades e auditores europeus."
+                    "title": "Empresas globais que tratam dados da UE",
+                    "description": "Organizações fora da UE que oferecem bens/serviços a residentes da UE ou monitoram seu comportamento.",
+                    "examples": [
+                        "SaaS dos EUA com usuários na UE",
+                        "E-commerce que atende clientes da UE",
+                        "Agências de marketing que rastreiam visitantes da UE"
+                    ]
                 },
                 {
-                    "title": "Contratos que aceleram negociações",
-                    "desc": "Políticas, RoPA (Registros de Operações de Tratamento), DPIA (Avaliação de Impacto), SCCs/TIAs e cláusulas que passam em procurement e segurança de grandes clientes."
-                },
-                {
-                    "title": "Port., Inglês e Alemão",
-                    "desc": "Três idiomas para negociar com jurídico, engenharia e segurança dos seus parceiros na UE."
+                    "title": "Organizações com tratamento de alto risco",
+                    "description": "Empresas com tratamento em larga escala, monitoramento sistemático ou dados de categorias especiais.",
+                    "examples": [
+                        "Saúde e farmacêuticas",
+                        "Serviços financeiros e fintech",
+                        "RH e recrutamento",
+                        "Marketing e publicidade"
+                    ]
                 }
             ]
         },
-        "factsSection": {
-            "eyebrow": "GDPR — Regulamento Europeu",
-            "title": "O que muda para empresas do Brasil que atendem a UE",
-            "intro": {
-                "0": {
-                    "before": "Se você oferta produtos/serviços a pessoas na UE ou monitora comportamento, o GDPR se aplica. Atuo como seu DPO externo para ",
-                    "bold1": "desenhar controles",
-                    "mid": ", ",
-                    "bold2": "treinar times",
-                    "after": " e ",
-                    "bold3": "gerar prova auditável"
-                }
-            }
+        "factsIntro": {
+            "eyebrow": "O cenário de conformidade",
+            "title": "Por que proteção de dados importa mais do que nunca",
+            "body": "A aplicação do GDPR intensificou-se. <span class=\"font-semibold\">Multas recordes</span> e <span class=\"font-semibold\">maior escrutínio regulatório</span> tornam os serviços profissionais de DPO essenciais para <span class=\"font-semibold\">gestão de riscos e continuidade do negócio</span>."
         },
         "facts": [
             {
-                "title": "Em vigor",
-                "value": "25 mai 2018",
-                "description": "Aplicável em toda a União Europeia"
+                "color": "#e11d48",
+                "title": "Multa máxima sob o GDPR",
+                "value": "€1,46 bi",
+                "description": "Maior multa individual aplicada (Meta, 2023)"
             },
             {
-                "title": "Quem precisa",
-                "value": "Empresas que oferecem bens/serviços na UE",
-                "description": "Inclui empresas fora da UE com atividades voltadas a residentes da UE"
+                "color": "#2563eb",
+                "title": "Alcance global",
+                "value": "195+",
+                "description": "Países impactados por requisitos do GDPR"
             },
             {
-                "title": "Multas",
-                "value": "Até €20M ou 4% do faturamento global",
-                "description": "Para infrações graves (art. 83)"
+                "color": "#f59e0b",
+                "title": "Custo anual de conformidade",
+                "value": "€320 mil+",
+                "description": "Custo médio de DPO interno + equipe de compliance"
             }
         ],
-        "offer": {
-            "title": "Serviço principal — DPO Externo na União Europeia",
-            "cards": [
+        "coreServices": {
+            "eyebrow": "Serviços principais",
+            "title": "Serviços essenciais de proteção de dados",
+            "intro": "Cobrimos todos os requisitos obrigatórios do GDPR e as necessidades críticas de proteção para o negócio.",
+            "deliverablesLabel": "Entregáveis-chave:",
+            "timelineLabel": "Cronograma",
+            "items": [
                 {
-                    "title": "Escopo",
-                    "text": "Representação e aconselhamento contínuo: riscos, políticas, avaliação de bases legais, privacy by design, atendimento a titulares e interface com clientes/auditores."
+                    "title": "Avaliação de Conformidade GDPR & Gap Analysis",
+                    "description": "Avaliação completa das práticas atuais de proteção de dados frente às exigências do GDPR.",
+                    "deliverables": [
+                        "Mapeamento e inventário de dados",
+                        "Revisão de políticas e procedimentos",
+                        "Relatório de lacunas de conformidade",
+                        "Roteiro priorizado de remediação",
+                        "Avaliação de riscos e estratégias de mitigação"
+                    ],
+                    "urgency": "Essencial para todas as organizações",
+                    "timeframe": "2–8 semanas"
                 },
                 {
-                    "title": "Entregáveis",
-                    "list": [
-                        "RoPA (Registros de Operações de Tratamento)",
-                        "DPIA (Avaliação de Impacto) quando aplicável",
-                        "Políticas e avisos de privacidade",
-                        "Governança de fornecedores (Art. 28)",
-                        "Transferências internacionais (SCCs/TIAs)",
-                        "Playbook de incidentes (72h) e evidências"
-                    ]
+                    "title": "Avaliações de Impacto à Proteção de Dados (DPIA)",
+                    "description": "Avaliações obrigatórias para tratamentos de alto risco, garantindo conformidade e redução de riscos.",
+                    "deliverables": [
+                        "Avaliação de risco para novos projetos",
+                        "Recomendações de minimização de dados",
+                        "Especificações de medidas de segurança",
+                        "Coordenação de consulta com partes interessadas",
+                        "Consulta à autoridade quando necessário"
+                    ],
+                    "urgency": "Obrigatória antes do tratamento de alto risco",
+                    "timeframe": "1–4 semanas por avaliação"
                 },
                 {
-                    "title": "Resultados",
-                    "list": [
-                        "Contratos aprovados e ciclos de procurement mais curtos",
-                        "Riscos priorizados com responsáveis e prazos claros",
-                        "Evidência pronta para auditoria e due diligence",
-                        "Time treinado e rotina leve de manutenção"
-                    ]
-                }
-            ],
-            "primaryCta": "Falar sobre DPO externo",
-            "secondaryCta": "Ver serviços relacionados →"
-        },
-        "relatedServices": {
-            "title": "Serviços que se conectam ao DPO Externo",
-            "cards": [
-                {
-                    "title": "Entrada na UE & readiness para clientes",
-                    "desc": "Mapeamento de bases legais, avisos, cláusulas contratuais, transferências e pacote de evidências para procurement.",
-                    "cta": "Planejar entrada na UE"
-                },
-                {
-                    "title": "Programa RoPA (Art. 30)",
-                    "desc": "Registros de tratamento por processo/sistema, responsabilidades, retenção e medidas de segurança com rotina leve de atualização.",
-                    "cta": "Organizar meus registros"
-                },
-                {
-                    "title": "DPIA sob medida",
-                    "desc": "Escopo, entrevistas, análise de risco, mitigação e documentação de aprovação — antes do go-live.",
-                    "cta": "Planejar minha DPIA"
-                },
-                {
-                    "title": "Transferências internacionais",
-                    "desc": "SCCs/TIAs, configuração de serviços e contratos alinhados ao fluxo real de dados.",
-                    "cta": "Revisar transferências"
-                },
-                {
-                    "title": "Governança de fornecedores (Art. 28)",
-                    "desc": "Onboarding e revisão periódica com checklist prático, cláusulas reconhecidas e cadência realista.",
-                    "cta": "Fortalecer vendors"
-                },
-                {
-                    "title": "Treinamento e cultura",
-                    "desc": "Workshops para times de produto, engenharia e jurídico: privacy by design, incidentes em 72h e decisões defensáveis.",
-                    "cta": "Treinar meu time"
+                    "title": "Resposta a incidentes 24/7",
+                    "description": "Resposta imediata por especialistas para garantir conformidade e reduzir penalidades.",
+                    "deliverables": [
+                        "Avaliação emergencial do incidente",
+                        "Notificação à autoridade em até 72 horas",
+                        "Gestão de comunicação aos titulares",
+                        "Tratativas com a autoridade",
+                        "Plano de remediação pós-incidente"
+                    ],
+                    "urgency": "Crítico nas primeiras 72 horas",
+                    "timeframe": "Resposta imediata"
                 }
             ]
         },
-        "process": {
-            "eyebrow": "Como trabalhamos",
-            "title": "De requisito regulatório a vantagem competitiva",
-            "intro": "Integramos jurídico, engenharia e segurança para reduzir risco sem travar o produto. O resultado é velocidade com governança real e evidência pronta.",
-            "steps": [
+        "ongoing": {
+            "eyebrow": "Suporte contínuo",
+            "title": "Gestão contínua de proteção de dados",
+            "intro": "Após a conformidade inicial, mantemos a proteção e acompanhamos mudanças regulatórias.",
+            "featuresLabel": "Incluso:",
+            "items": [
                 {
-                    "title": "Diagnosticar",
-                    "desc": "Descobrimos fluxos de dados, bases legais, riscos e dependências de fornecedores. Você recebe um plano priorizado com esforço/impacto/prazos."
+                    "title": "DPO terceirizado",
+                    "description": "Função completa de DPO conforme os Artigos 37–39 do GDPR.",
+                    "features": [
+                        "Ponto de contato com a autoridade",
+                        "Atendimento a direitos dos titulares (Artigos 15–22)",
+                        "Consultoria e orientação ao time",
+                        "Monitoramento e relatórios de conformidade",
+                        "Treinamentos de privacidade"
+                    ]
                 },
                 {
-                    "title": "Implementar",
-                    "desc": "Controles que funcionam: políticas, RoPA, DPIA, governança de vendors, transferências, incidentes em 72h, privacy by design e treinamentos."
+                    "title": "Transferências internacionais de dados",
+                    "description": "Navegação especializada pelos requisitos e mecanismos de transferência internacional.",
+                    "features": [
+                        "Avaliação de decisões de adequação",
+                        "Implementação de Cláusulas Contratuais Padrão (SCCs)",
+                        "Elaboração de TIA (Transfer Impact Assessment)",
+                        "Desenvolvimento de Regras Corporativas Vinculantes (BCR)",
+                        "Revisão de Acordos de Processamento (DPA)"
+                    ]
                 },
                 {
-                    "title": "Sustentar",
-                    "desc": "Rotina leve: responsáveis definidos (owners), cadência trimestral, registros (logs) de mudanças e evidência contínua para auditorias e clientes."
+                    "title": "Interface regulatória",
+                    "description": "Atuação profissional junto às autoridades de proteção de dados nos Estados-Membros.",
+                    "features": [
+                        "Correspondência com a autoridade",
+                        "Resposta a questionamentos regulatórios",
+                        "Gestão de consultas",
+                        "Preparação para auditorias",
+                        "Defesa em medidas de execução"
+                    ]
                 }
-            ],
-            "moreLink": "Ver processo completo →",
-            "moreAria": "Ver processo detalhado"
+            ]
         },
-        "proofs": [
-            {
-                "k": "Evidência auditável",
-                "v": "Documentos e registros que auditores realmente usam: RoPA, DPIA, logs de risco, decisões e aprovações ligadas a releases."
-            },
-            {
-                "k": "Negociações mais rápidas",
-                "v": "Respostas consistentes a segurança/privacidade, cláusulas reconhecidas e fluxos de dados claros aceleram procurement."
-            },
-            {
-                "k": "Menos risco e retrabalho",
-                "v": "Exigências de pré-lançamento entram no ciclo de produto, evitando atrasos e mudanças de última hora."
-            }
-        ],
+        "specialized": {
+            "eyebrow": "Expertise por setor",
+            "title": "Conformidade especializada por indústria",
+            "intro": "Conhecimento setorial profundo para ambientes regulatórios complexos.",
+            "regsLabel": "Regulações correlatas",
+            "items": [
+                {
+                    "title": "Saúde e Ciências da Vida",
+                    "description": "GDPR para dados médicos, ensaios clínicos e pesquisa farmacêutica.",
+                    "regulations": [
+                        "Regulamento de Dispositivos Médicos (MDR)",
+                        "Regulamento de Ensaios Clínicos (CTR)",
+                        "Regras de farmacovigilância"
+                    ]
+                },
+                {
+                    "title": "Tecnologia e Empresas de IA",
+                    "description": "Conformidade de ponta para IA, ML e decisões automatizadas.",
+                    "regulations": [
+                        "Conformidade com o AI Act",
+                        "Transparência algorítmica",
+                        "Regras de perfilamento automatizado"
+                    ]
+                },
+                {
+                    "title": "Marketing e Publicidade",
+                    "description": "Cookies, rastreamento comportamental e automação de marketing sob o GDPR.",
+                    "regulations": [
+                        "Diretiva ePrivacy",
+                        "Requisitos de consentimento de cookies",
+                        "Padrões de publicidade digital"
+                    ]
+                }
+            ]
+        },
+        "steps": {
+            "eyebrow": "Processo de implementação",
+            "title": "Do risco à conformidade em 3 fases",
+            "intro": "Metodologia que entrega conformidade rápida e práticas sustentáveis de proteção de dados.",
+            "outputsLabel": "Entregas principais:",
+            "cta": "Começar avaliação hoje →",
+            "items": [
+                {
+                    "title": "Avaliação rápida",
+                    "description": "Diagnóstico imediato e identificação de áreas críticas que exigem atenção urgente.",
+                    "deliverables": [
+                        "Relatório de riscos",
+                        "Plano imediato de ações",
+                        "Plano de resposta emergencial"
+                    ]
+                },
+                {
+                    "title": "Implementação estratégica",
+                    "description": "Implantação de medidas, políticas e procedimentos sob medida.",
+                    "deliverables": [
+                        "Políticas de privacidade atualizadas",
+                        "Programas de treinamento",
+                        "Implementação de salvaguardas técnicas"
+                    ]
+                },
+                {
+                    "title": "Proteção e monitoramento contínuos",
+                    "description": "Acompanhamento de conformidade, atualizações regulatórias e gestão proativa de riscos.",
+                    "deliverables": [
+                        "Relatórios mensais",
+                        "Alertas de mudanças regulatórias",
+                        "Avaliação contínua de riscos"
+                    ]
+                }
+            ]
+        },
+        "trust": {
+            "items": [
+                {
+                    "metric": "Organizações protegidas",
+                    "description": "Atendimento a startups e grandes empresas em diversos países."
+                },
+                {
+                    "metric": "€0 em penalidades GDPR",
+                    "description": "Histórico sem multas para clientes sob nossa gestão de DPO."
+                },
+                {
+                    "metric": "<12 horas de resposta",
+                    "description": "Resposta a incidentes e temas críticos em meia jornada de trabalho."
+                },
+                {
+                    "metric": "27 jurisdições da UE",
+                    "description": "Experiência em todos os Estados-Membros e principais marcos regulatórios."
+                }
+            ]
+        },
         "finalCta": {
-            "title": "Vamos liderar a privacidade na UE com segurança e velocidade.",
-            "subtitle": "DPO externo europeu para sua empresa brasileira — jurídico + engenharia, contratos prontos e evidência que passa em auditoria.",
-            "button": "Falar com o DPO"
+            "title": "Proteja seu negócio de riscos GDPR",
+            "body": "Não espere uma investigação regulatória ou incidente de segurança. Tenha acesso imediato a expertise de DPO certificado na UE e proteção completa de conformidade. Disponível globalmente.",
+            "ctaPrimary": "Fale conosco",
+            "badges": [
+                {
+                    "text": "Resposta a incidentes 24/7",
+                    "dotClass": "bg-emerald-500"
+                },
+                {
+                    "text": "Todos os países da UE",
+                    "dotClass": "bg-indigo-500"
+                }
+            ]
         }
     }
 }

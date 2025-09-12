@@ -1,0 +1,273 @@
+{
+    "aiOfficer": {
+        "hero": {
+            "eyebrow": "EU-KI-Gesetz • Chief AI Officer • Strategische Compliance",
+            "title": "Executive AI Officer Services für Marktführer",
+            "highlight1": "Regulatorische Komplexität in Wettbewerbsvorteile verwandeln.",
+            "lead1": "Setzen Sie kampferprobte",
+            "highlight2": "KI-Governance-Führung",
+            "lead2": "ein, die Innovation beschleunigt und gleichzeitig von Tag eins an kugelsichere Compliance gewährleistet.",
+            "ctaPrimary": "Ihre KI-Zukunft Sichern"
+        },
+        "heroStats": [
+            {
+                "value": "€35M+",
+                "title": "Durchschnittliches Bußgeldrisiko",
+                "caption": "Kosten der Nicht-Compliance",
+                "valueClass": "text-red-600"
+            },
+            {
+                "value": "180 Tage",
+                "title": "Umsetzungsfenster",
+                "caption": "Bis zur vollständigen Durchsetzung",
+                "valueClass": "text-amber-600"
+            },
+            {
+                "value": "Null",
+                "title": "Toleranz für Lücken",
+                "caption": "Behördliche Erwartungen",
+                "valueClass": "text-emerald-600"
+            },
+            {
+                "value": "100%",
+                "title": "Abdeckungsgarantie",
+                "caption": "Alle KI-Gesetz-Verpflichtungen",
+                "valueClass": "text-indigo-600"
+            }
+        ],
+        "requirements": {
+            "eyebrow": "Strategische KI-Führung",
+            "title": "Wann Sie einen AI Officer benötigen, der Ergebnisse liefert",
+            "body": "Das EU-KI-Gesetz verlangt <span class=\"font-semibold\">Verantwortlichkeit auf Führungsebene</span> für KI-Governance. Marktführer erfüllen nicht nur Vorschriften—sie verwandeln regulatorische Anforderungen in operative Exzellenz. Unsere AI Officer-Funktion bietet die <span class=\"font-semibold\">strategische Führung und taktische Umsetzung</span>, die Compliance von einem Kostenfaktor in einen Wettbewerbsgraben verwandelt.",
+            "examplesLabel": "Strategische Schwerpunktbereiche:",
+            "helper": "Bereit, KI-Gesetz-Compliance in Wettbewerbsvorteile zu verwandeln?",
+            "cta": "Strategische Bewertung Planen",
+            "items": [
+                {
+                    "title": "Wachsende KI-Unternehmen",
+                    "description": "Schnell wachsende KI-Firmen benötigen Governance, die mit dem Ehrgeiz skaliert—robust genug für Regulatoren, agil genug für Innovationsgeschwindigkeit.",
+                    "examples": [
+                        "Foundation-Model-Anbieter, die auf Enterprise skalieren",
+                        "KI-first Startups in Vorbereitung auf Serie B+",
+                        "Europäische KI-Champions mit Blick auf globale Märkte",
+                        "Deep-Tech-Unternehmen mit regulatorisch sensiblen Anwendungen"
+                    ]
+                },
+                {
+                    "title": "Enterprise-KI-Transformation",
+                    "description": "Fortune-500-Unternehmen, die KI in großem Maßstab einsetzen, benötigen Enterprise-Grade-Governance mit Sichtbarkeit und Verantwortlichkeit auf Vorstandsebene.",
+                    "examples": [
+                        "Finanzdienstleister mit Modellrisikomanagement",
+                        "Gesundheitsorganisationen mit klinischer KI-Implementierung",
+                        "Fertigung mit autonomen Systemen",
+                        "Betreiber kritischer Infrastrukturen"
+                    ]
+                },
+                {
+                    "title": "Hochriskante KI-Implementierungen",
+                    "description": "Geschäftskritische KI-Systeme, bei denen regulatorische Fehltritte die Geschäftskontinuität und Marktposition bedrohen.",
+                    "examples": [
+                        "Regulierte Industrien mit Sicherheitsimplikationen",
+                        "Öffentliche KI-Beschaffung und -Implementierung",
+                        "Grenzüberschreitende KI-Services mit Multi-Jurisdiktions-Compliance",
+                        "M&A-Szenarien mit sauberer KI-Compliance-Haltung"
+                    ]
+                }
+            ]
+        },
+        "factsIntro": {
+            "eyebrow": "Executive Reality Check",
+            "title": "Warum Premium-KI-Governance nicht verhandelbar ist",
+            "body": "Das KI-Gesetz ist nicht nur eine weitere Regulierung—es ist ein fundamentaler Wandel hin zur <span class=\"font-semibold\">Produkthaftung für KI-Systeme</span>. Führende Organisationen erkennen, dass weltklasse KI-Governance kein Overhead ist—sie ist das Fundament für <span class=\"font-semibold\">nachhaltigen KI-Vorteil</span> und institutionelles Vertrauen."
+        },
+        "facts": [
+            {
+                "color": "#dc2626",
+                "title": "Regulatorische Strafen",
+                "value": "Bis zu €35M",
+                "description": "Oder 7% des weltweiten Umsatzes—was höher ist"
+            },
+            {
+                "color": "#2563eb",
+                "title": "Marktzugangsrisiko",
+                "value": "EU-weit",
+                "description": "Nicht-konforme KI-Systeme droht sofortiger Marktausschluss"
+            },
+            {
+                "color": "#059669",
+                "title": "Wettbewerbsgraben",
+                "value": "First-mover",
+                "description": "Premium-Governance schafft nachhaltige Differenzierung"
+            }
+        ],
+        "coreServices": {
+            "eyebrow": "Executive KI-Governance",
+            "title": "Strategische AI Officer-Funktion, die Geschäftsergebnisse treibt",
+            "intro": "Wir implementieren nicht nur Compliance—wir entwerfen KI-Governance-Systeme, die Innovation beschleunigen, operative Risiken reduzieren und messbaren Geschäftswert schaffen.",
+            "deliverablesLabel": "Strategische Lieferergebnisse:",
+            "items": [
+                {
+                    "title": "KI-Governance-Strategie & Betriebsmodell",
+                    "description": "KI-Strategie auf Führungsebene, die regulatorische Anforderungen mit Geschäftszielen, Wettbewerbspositionierung und Wachstumstrajektorie abstimmt.",
+                    "deliverables": [
+                        "Vorstandsreife KI-Governance-Charter und strategische Roadmap",
+                        "KI-Risikoappetit-Framework abgestimmt mit Geschäftsstrategie",
+                        "Betriebsmodell mit klaren Verantwortlichkeiten und Entscheidungsrechten",
+                        "KPIs und Governance-Metriken verknüpft mit Geschäftsergebnissen"
+                    ]
+                },
+                {
+                    "title": "Enterprise-Grade Risiko- & Qualitätsmanagement",
+                    "description": "Sophisticated Risikomanagement-Architektur, die von Startup-Agilität zu Enterprise-Rigor skaliert, ohne Innovationsgeschwindigkeit zu kompromittieren.",
+                    "deliverables": [
+                        "Dynamische Risikobewertungsmethodik mit automatisierten Triggern",
+                        "Qualitätsmanagementsystem integriert mit DevOps/MLOps",
+                        "Kontinuierliches Monitoring und Alerting für regulatorische Drift",
+                        "Executive Dashboards mit Echtzeit-Compliance-Haltung"
+                    ]
+                },
+                {
+                    "title": "Regulatorische Intelligenz & Behördenbeziehungen",
+                    "description": "Proaktive regulatorische Strategie, die Änderungen antizipiert, Behördenbeziehungen managt und Ihre Organisation als Vordenker positioniert.",
+                    "deliverables": [
+                        "Regulatorisches Horizon-Scanning und Impaktbewertung",
+                        "Behörden-Engagement-Strategie und Beziehungsmanagement",
+                        "Industriebeteiligung und Thought-Leadership-Positionierung",
+                        "Krisenkommunikation und Incident-Response-Protokolle"
+                    ]
+                }
+            ]
+        },
+        "ongoing": {
+            "eyebrow": "Kontinuierliche Exzellenz",
+            "title": "KI-Governance, die mit Ihrem Geschäft evolviert",
+            "intro": "Premium-KI-Governance erfordert kontinuierliche Verfeinerung, proaktives Risikomanagement und strategische Anpassung an regulatorische Evolution.",
+            "featuresLabel": "Laufende Exzellenz:",
+            "items": [
+                {
+                    "title": "Predictive Risk Management",
+                    "description": "Bleiben Sie Problemen voraus, bevor sie entstehen.",
+                    "features": [
+                        "KI-powered Risikoerkennung und Frühwarnsysteme",
+                        "Predictive regulatorische Impaktmodellierung",
+                        "Automatisierte Compliance-Gap-Analyse und Remediation"
+                    ]
+                },
+                {
+                    "title": "Strategisches Behörden-Engagement",
+                    "description": "Bauen Sie vertrauensvolle Beziehungen zu Regulatoren und Standard-Setzern auf.",
+                    "features": [
+                        "Proaktive Behördenkommunikation und -beratung",
+                        "Industrielle Arbeitsgruppen-Teilnahme und -Führung",
+                        "Policy-Entwicklungs-Input und regulatorisches Sandboxing"
+                    ]
+                },
+                {
+                    "title": "Governance Innovation Lab",
+                    "description": "Entwickeln Sie Ihre Governance-Fähigkeiten kontinuierlich weiter.",
+                    "features": [
+                        "Emerging Technology Impact Assessment",
+                        "Governance-Automatisierung und KI-assistierte Compliance",
+                        "Best-Practice-Forschung und Wettbewerbsintelligenz"
+                    ]
+                }
+            ]
+        },
+        "specialized": {
+            "eyebrow": "Sektorale Führerschaft",
+            "title": "Tiefgreifende Expertise wo es am meisten zählt",
+            "intro": "Premium-KI-Governance erfordert tiefes Verständnis sektorspezifischer Risiken, regulatorischer Vernetzungen und Wettbewerbsdynamiken.",
+            "regsLabel": "Regulatorische Integration",
+            "items": [
+                {
+                    "title": "Finanzdienstleistungen & Fintech",
+                    "description": "Navigieren Sie die Schnittstelle von KI-Gesetz, Bankenregulierung und Marktverhaltenregeln mit chirurgischer Präzision.",
+                    "regulations": [
+                        "EBA/ESMA KI-Leitlinien",
+                        "Modellrisikomanagement (MRM)",
+                        "Consumer Duty & Fairness"
+                    ]
+                },
+                {
+                    "title": "Gesundheitswesen & Life Sciences",
+                    "description": "Richten Sie KI-Governance mit Medizinprodukte-Regulierung und klinischen Sicherheitsanforderungen aus.",
+                    "regulations": [
+                        "MDR/IVDR Integration",
+                        "Klinische Evidenz-Standards",
+                        "Patientensicherheits-Protokolle"
+                    ]
+                },
+                {
+                    "title": "Kritische Infrastruktur & Verteidigung",
+                    "description": "Sicherheitsfokussierte KI-Governance für Systeme, bei denen Versagen keine Option ist.",
+                    "regulations": [
+                        "NIS2 Cybersicherheits-Anforderungen",
+                        "Kritische Entitäts-Verpflichtungen",
+                        "Nationale Sicherheitsüberlegungen"
+                    ]
+                }
+            ]
+        },
+        "steps": {
+            "eyebrow": "Strategische Umsetzung",
+            "title": "Von regulatorischem Risiko zu Wettbewerbsvorteil in 90 Tagen",
+            "intro": "Unsere bewährte Methodik transformiert KI-Compliance von defensiver Notwendigkeit zu offensiver Fähigkeit—schnell.",
+            "outputsLabel": "Strategische Outputs:",
+            "cta": "Strategische Bewertung Beginnen →",
+            "items": [
+                {
+                    "title": "Strategische Bewertung & Quick Wins (30 Tage)",
+                    "description": "Umfassende KI-Landschaftsanalyse mit sofortiger Risikominderung und Wettbewerbspositionierung.",
+                    "deliverables": [
+                        "Executive KI-Governance-Reifegrad-Bewertung",
+                        "Regulatorische Gap-Analyse mit priorisiertem Sanierungsplan",
+                        "Quick-Win-Implementierung für sofortige Risikoreduktion"
+                    ]
+                },
+                {
+                    "title": "Governance-Architektur & Implementierung (60 Tage)",
+                    "description": "Setzen Sie Enterprise-Grade KI-Governance-Infrastruktur ein, integriert mit Geschäftsoperationen.",
+                    "deliverables": [
+                        "Vollständiges Governance-Betriebsmodell und Policy-Framework",
+                        "Automatisierte Compliance-Monitoring- und Reporting-Systeme",
+                        "Mitarbeiterschulung und Change-Management-Programm"
+                    ]
+                },
+                {
+                    "title": "Operative Exzellenz & Optimierung (Laufend)",
+                    "description": "Kontinuierliche Verbesserung und strategische Anpassung zur Aufrechterhaltung der Governance-Führerschaft.",
+                    "deliverables": [
+                        "Performance-Optimierung und Effizienzverbesserungen",
+                        "Regulatorische Intelligenz und strategische Anpassung",
+                        "Behördenbeziehungsmanagement und Thought Leadership"
+                    ]
+                }
+            ]
+        },
+        "trust": {
+            "items": [
+                {
+                    "metric": "Null Compliance-Ausfälle",
+                    "description": "Perfekte Erfolgsbilanz bei allen regulatorischen Engagements und Audits."
+                },
+                {
+                    "metric": "30% Schnellere Time-to-Market",
+                    "description": "Premium-Governance beschleunigt statt behindert Innovation."
+                },
+                {
+                    "metric": "€50M+ Risikominderung",
+                    "description": "Dokumentierte regulatorische Risikoreduktion im Kundenportfolio."
+                },
+                {
+                    "metric": "C-Suite Vertrauen",
+                    "description": "Vorstandsreife Governance, die Führungskräfte verteidigen und fördern können."
+                }
+            ]
+        },
+        "finalCta": {
+            "title": "Führen Sie die KI-Governance-Revolution an",
+            "body": "Schließen Sie sich den Reihen der KI-Führer an, die regulatorische Exzellenz als Wettbewerbsvorteil sehen. Setzen Sie weltklasse KI-Governance ein, die Wachstum beschleunigt und gleichzeitig kompromisslose Compliance gewährleistet.",
+            "ctaPrimary": "Executive Briefing Planen"
+        }
+    }
+}
