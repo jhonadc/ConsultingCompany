@@ -1,16 +1,21 @@
 // src/app/[locale]/layout.jsx
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
-
-// Import your big client-side RootLayout (the one with Header, Navigation, Footer, etc.)
+import { locales } from '@/i18n/config'          // ✅ add this
 import { RootLayout as AppShell } from '@/components/RootLayout'
 
-// This layout is a Server Component
-export default async function LocaleLayout({ children, params: { locale } }) {
-    // Ensure locale is locked for this request
-    setRequestLocale(locale)
+// ✅ Tell Next to output static HTML for this whole subtree
+export const dynamic = 'force-static'
+export const dynamicParams = false
+export const revalidate = false                  // build-time only (no ISR)
 
-    // Load all messages for this locale (configured in next-intl)
+// ✅ Pre-generate /en, /pt, /de
+export function generateStaticParams() {
+    return locales.map((locale) => ({ locale }))
+}
+
+export default async function LocaleLayout({ children, params: { locale } }) {
+    setRequestLocale(locale)
     const messages = await getMessages()
 
     return (
