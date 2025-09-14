@@ -11,7 +11,7 @@ const CANONICAL_ROUTES = [
     '/regulations/ai-act',
     '/regulations/lgpd',
     '/regulations/accessibility',        // ✅ fixed spelling
-    '/services/ai-services/ai-literacy',
+    '/services/ai-services/ailiteracy',
     '/services/ai-services/ai-policy',
     '/services/ai-services/high-risk',
     '/services/ai-services/ai-officer',
