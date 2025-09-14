@@ -1,4 +1,14 @@
 {
+    "processMeta": {
+        "title": "So arbeiten wir: Assess • Implement • Sustain",
+        "description": "Unser pragmatischer, auditfähiger Compliance-Prozess: Risiken bewerten, Kontrollen & Dokumentation umsetzen und die Leistung nachhaltig absichern.",
+        "ogTitle": "Unsere Arbeitsweise — Pragmatismus & Auditfähigkeit",
+        "ogDescription": "Stakeholder-Mapping, Regulierungsscoping, Kontrollen, ISO/IEC 42001-Alignment, Annex-IV-Dokumentation, DPIA/RoPA, Nachweispakete und laufende Assurance.",
+        "twitterTitle": "Unser Prozess: Assess → Implement → Sustain",
+        "twitterDescription": "Schnelle, belastbare Compliance: Roadmaps, Kontrollen, Dokumentation und KPIs in Ihren Tools verankert.",
+        "ogImage": "/og/process.png",
+        "keywords": "Compliance-Prozess, AI-Act-Programm, DSGVO-Programm, ISO/IEC 42001, Annex IV Dokumentation, DPIA, RoPA, Risikomanagement, menschliche Aufsicht, Lieferantensteuerung, Nachweispakete, Audit Readiness"
+    },
     "pageIntro": {
         "eyebrow": "Unser Prozess",
         "title": "Wie wir arbeiten",

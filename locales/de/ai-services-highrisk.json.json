@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "High-Risk-Bewertung für KI-Systeme (EU AI Act)",
+        "description": "Verteidigungsfähige Einstufung, Annex-III-Zuordnung und ein Praxis-Fahrplan bei High-Risk – schnellere Beschaffung, weniger Eskalationen, prüffähige Nachweise.",
+        "ogTitle": "High-Risk-Bewertung für KI-Systeme",
+        "ogDescription": "Treffsichere Einstufung mit Scope-Tests, Annex-III-Mapping, Grenzfall-Analyse und nächsten Schritten zur vollen Compliance.",
+        "twitterTitle": "High-Risk-Bewertung für KI-Systeme",
+        "twitterDescription": "Regulator-ready: klare Entscheidung mit Annex-Referenzen und praxisnahem Maßnahmenplan bei High-Risk.",
+        "ogImage": "/og/ai-highrisk.png",
+        "keywords": "High-Risk KI, EU AI Act Bewertung, Annex III Mapping, KI-Klassifizierung, KI-Compliance, KI-Risikomanagement, Notified Body, Konformitätsbewertung, Technical File, Beschaffung"
+    },
     "hero": {
         "title": "Bewertung von Hochrisiko-KI-Systemen",
         "tagline": "Ihr erster Schritt zur vollständigen EU-AI-Act-Compliance",

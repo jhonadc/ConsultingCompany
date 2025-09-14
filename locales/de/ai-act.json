@@ -1,7 +1,13 @@
 {
-    "metadata": {
-        "title": "EU KI-Verordnung — Oversight Governance",
-        "description": "Verordnung (EU) — verpflichtende Anforderungen für KI-Systeme in der EU. Schulung, Governance und Readiness-Checks für Compliance."
+    "aiActMeta": {
+        "title": "EU AI Act: Anforderungen, Vorbereitung & Compliance",
+        "description": "Den EU AI Act verstehen und zügig umsetzen: Klassifizierung, Pflichten für Hochrisiko-Systeme, GPAI-Transparenz, Governance, Dokumentation und prüffähige Nachweise.",
+        "ogTitle": "EU AI Act — Anforderungen & Umsetzung",
+        "ogDescription": "Stufenweise Anwendung 2024–2026. Wir unterstützen bei Klassifizierung, Hochrisiko-Pflichten und GPAI-Transparenz/Dokumentation.",
+        "twitterTitle": "EU AI Act: Anforderungen & Compliance",
+        "twitterDescription": "Klassifizierung, Hochrisiko-Kontrollen, GPAI-Pflichten, Governance & Readiness — korrekt und schnell.",
+        "ogImage": "/og/ai-act.png",
+        "keywords": "EU AI Act, KI-Regulierung, KI-Compliance, Hochrisiko-KI, Anhang III, Anhang IV, General-Purpose-AI, Foundation Models, Transparenz, menschliche Aufsicht, Risikomanagement, Konformitätsbewertung, technische Dokumentation"
     },
     "common": {
         "learnMore": "Mehr erfahren",

@@ -1,4 +1,14 @@
 {
+    "lgpdMeta": {
+        "title": "LGPD: Anforderungen, Vorbereitung & Compliance (Brasilien)",
+        "description": "Verstehen Sie die brasilianische Datenschutz-Grundverordnung (LGPD) und erreichen Sie schnell die Compliance: Sicherheitsmaßnahmen, Verarbeitungsverzeichnisse, Datenschutz-Folgenabschätzungen (RIPD), Governance von Auftragsverarbeitern, DSB, Incident-Response und internationale Datentransfers.",
+        "ogTitle": "LGPD — Was sie verlangt & wie man sie erfüllt",
+        "ogDescription": "Seit 2020 in Kraft. Wir operationalisieren RIPD, Verarbeitungsverzeichnisse, Auftragsverarbeiter-Governance, DSB, 72-Stunden-Playbooks und Transfermechanismen.",
+        "twitterTitle": "LGPD: Anforderungen & Compliance",
+        "twitterDescription": "Risikoadäquate Kontrollen, Verarbeitungsverzeichnisse, RIPD, DSB, Incident-Response und internationale Datentransfers — korrekt umgesetzt.",
+        "ogImage": "/og/lgpd.png",
+        "keywords": "LGPD, Brasilien Datenschutzgesetz, Datenschutz, RIPD, Datenschutz-Folgenabschätzung, Verarbeitungsverzeichnis, Auftragsverarbeiter, Datenschutzbeauftragter, Datentransfer, internationale Datenübermittlung, Compliance"
+    },
     "header": {
         "title": "LGPD",
         "subtitle": "Brasiliens Datenschutzgesetz (LGPD): Privatsphäre für personenbezogene Daten."

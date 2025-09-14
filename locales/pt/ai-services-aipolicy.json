@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "Política de Uso de IA para GPAI (AI Act da UE, LGPD/GDPR)",
+        "description": "Transforme risco regulatório em ativo empresarial: uma Política de Uso de IA clara e aplicável para GenAI/LLMs alinhada ao AI Act da UE e à LGPD/GDPR — escopo, papéis, transparência, supervisão, dados/IP e monitoramento.",
+        "ogTitle": "Política de Uso de IA para GPAI",
+        "ogDescription": "Guardrails documentados para adoção segura e conforme de GenAI — ciclos de venda mais rápidos, menos escalonamentos e evidências auditáveis.",
+        "twitterTitle": "Política de Uso de IA para GPAI",
+        "twitterDescription": "Regras claras para GenAI/LLMs: escopo, papéis, transparência, supervisão, dados/IP, monitoramento — alinhadas ao AI Act da UE e à LGPD/GDPR.",
+        "ogImage": "/og/ai-policy.png",
+        "keywords": "política de uso de IA, IA de propósito geral, política de GenAI, governança de LLMs, AI Act da UE, LGPD, GDPR, transparência, supervisão humana, gestão de riscos de IA, compliance de IA"
+    },
     "hero": {
         "title": "Política de Uso de IA para GPAI",
         "tagline": "Do risco regulatório ao ativo empresarial",

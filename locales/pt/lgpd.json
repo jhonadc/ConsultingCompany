@@ -1,4 +1,14 @@
 {
+    "lgpdMeta": {
+        "title": "LGPD: Requisitos, Preparação & Compliance (Brasil)",
+        "description": "Entenda a LGPD e fique em conformidade rapidamente: medidas de segurança, registros, RIPD (relatório de impacto), governança de operadores, DPO, resposta a incidentes e transferências internacionais.",
+        "ogTitle": "LGPD — O que exige e como cumprir",
+        "ogDescription": "Em vigor desde 2020. Operacionalizamos RIPD, registros, governança de operadores, DPO, playbooks de 72h e mecanismos de transferência.",
+        "twitterTitle": "LGPD: Requisitos & Conformidade",
+        "twitterDescription": "Controles proporcionais ao risco, registros, RIPD, DPO, prontidão para incidentes e transferências internacionais — do jeito certo, com rapidez.",
+        "ogImage": "/og/lgpd.png",
+        "keywords": "LGPD, lei brasileira de proteção de dados, privacidade no Brasil, RIPD, relatório de impacto, registros de operações, DPO encarregado, ANPD, transferências internacionais, cláusulas contratuais, selos, governança de operadores, resposta a incidentes, privacy by design"
+    },
     "header": {
         "title": "LGPD",
         "subtitle": "Lei Geral de Proteção de Dados do Brasil: privacidade para dados pessoais."

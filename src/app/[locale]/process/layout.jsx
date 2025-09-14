@@ -1,4 +1,3 @@
-// src/app/[locale]/services/ai-services/ai-officer/layout.jsx
 // Server layout: DO NOT add 'use client'
 import { getMessages } from 'next-intl/server'
 import { locales, defaultLocale } from '@/i18n/config'
@@ -9,37 +8,31 @@ export const revalidate = false
 export async function generateMetadata({ params }) {
     const locale = locales.includes(params?.locale) ? params.locale : defaultLocale
 
-    // Load all messages for this locale
+    // Load messages and pick this page's meta
     const all = await getMessages({ locale })
-
-    // ✅ Robust meta lookup (namespaced → flat → legacy)
+    // ✅ Robust lookup: namespaced first, then flat, then legacy
     const meta =
-        all?.aiOfficer?.aiOfficerMeta ??      // messages.aiOfficer.aiOfficerMeta
-        all?.aiOfficer?.meta ??               // messages.aiOfficer.meta
-        all?.['ai-officer']?.aiOfficerMeta ?? // messages['ai-officer'].aiOfficerMeta
-        all?.['ai-officer']?.meta ??          // messages['ai-officer'].meta
-        all?.aiOfficerMeta ??                 // flat
-        all?.meta ??                          // legacy
+        all?.process?.processMeta ??  // e.g. locales/{locale}/process.json -> { "processMeta": { ... } }
+        all?.process?.meta ??         // if you kept it as "meta" inside process.json
+        all?.processMeta ??           // flat spread
+        all?.meta ??                  // legacy
         {}
 
-    const site = process.env.NEXT_PUBLIC_SITE_URL || 'https://comforma.eu'
-    const pagePath = `/${locale}/services/ai-services/ai-officer`
+    const site = 'https://www.oversightgovernance.com'
+    const pagePath = `/${locale}/process`
     const absUrl = new URL(pagePath, site).toString()
 
-    // SEO fallbacks
-    const title = meta.title ?? 'AI Officer & AI Governance'
-    const description =
-        meta.description ??
-        'Operational AI governance aligned with the EU AI Act, GDPR, and security controls.'
+    // SEO-safe fallbacks
+    const title = meta.title ?? 'How We Work: Assess • Implement • Sustain'
+    const description = meta.description ?? 'Our pragmatic, audit-ready compliance process: assess risks, implement controls and documentation, and sustain performance with measurable outcomes.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle
     const twDesc = meta.twitterDescription ?? ogDesc
-
-    const ogImageRel = meta.ogImage ?? '/og/ai-officer.png'
+    const ogImageRel = meta.ogImage ?? '/og/process.png'
     const ogImageAbs = new URL(ogImageRel, site).toString()
 
-    // keywords: accept "a, b, c" OR ["a","b","c"]
+    // keywords: accept "a, b, c" string OR ["a","b","c"] array
     let keywords = []
     if (typeof meta.keywords === 'string') {
         keywords = meta.keywords.split(',').map(s => s.trim()).filter(Boolean)
@@ -48,10 +41,8 @@ export async function generateMetadata({ params }) {
     }
 
     // hreflang alternates (+ x-default)
-    const languages = Object.fromEntries(
-        locales.map(l => [l, `/${l}/services/ai-services/ai-officer`])
-    )
-    languages['x-default'] = `/${defaultLocale}/services/ai-services/ai-officer`
+    const languages = Object.fromEntries(locales.map(l => [l, `/${l}/process`]))
+    languages['x-default'] = `/${defaultLocale}/process`
 
     return {
         metadataBase: new URL(site),
@@ -78,6 +69,6 @@ export async function generateMetadata({ params }) {
     }
 }
 
-export default function AiOfficerLayout({ children }) {
+export default function ProcessLayout({ children }) {
     return children
 }

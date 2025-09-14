@@ -1,4 +1,4 @@
-// src/app/[locale]/services/ai-services/ai-officer/layout.jsx
+// src/app/[locale]/regulations/lgpd/layout.jsx
 // Server layout: DO NOT add 'use client'
 import { getMessages } from 'next-intl/server'
 import { locales, defaultLocale } from '@/i18n/config'
@@ -9,34 +9,30 @@ export const revalidate = false
 export async function generateMetadata({ params }) {
     const locale = locales.includes(params?.locale) ? params.locale : defaultLocale
 
-    // Load all messages for this locale
+    // Load messages for the active locale
     const all = await getMessages({ locale })
 
-    // ✅ Robust meta lookup (namespaced → flat → legacy)
+    // ✅ Look in the namespaced object first, then flat, then legacy fallback
     const meta =
-        all?.aiOfficer?.aiOfficerMeta ??      // messages.aiOfficer.aiOfficerMeta
-        all?.aiOfficer?.meta ??               // messages.aiOfficer.meta
-        all?.['ai-officer']?.aiOfficerMeta ?? // messages['ai-officer'].aiOfficerMeta
-        all?.['ai-officer']?.meta ??          // messages['ai-officer'].meta
-        all?.aiOfficerMeta ??                 // flat
-        all?.meta ??                          // legacy
+        all?.lgpd?.lgpdMeta ??  // ← most common with namespaced JSON
+        all?.lgpdMeta ??        // ← flat, if you previously spread it
+        all?.meta ??            // ← legacy top-level
         {}
 
-    const site = process.env.NEXT_PUBLIC_SITE_URL || 'https://comforma.eu'
-    const pagePath = `/${locale}/services/ai-services/ai-officer`
+    const site = 'https://www.oversightgovernance.com'
+    const pagePath = `/${locale}/regulations/lgpd`
     const absUrl = new URL(pagePath, site).toString()
 
     // SEO fallbacks
-    const title = meta.title ?? 'AI Officer & AI Governance'
+    const title = meta.title ?? 'LGPD: Requirements & Compliance (Brazil)'
     const description =
         meta.description ??
-        'Operational AI governance aligned with the EU AI Act, GDPR, and security controls.'
+        'What LGPD requires and how to comply: RIPD (DPIA), records, operator governance, DPO, incident response and international transfers.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle
     const twDesc = meta.twitterDescription ?? ogDesc
-
-    const ogImageRel = meta.ogImage ?? '/og/ai-officer.png'
+    const ogImageRel = meta.ogImage ?? '/og/lgpd.png'
     const ogImageAbs = new URL(ogImageRel, site).toString()
 
     // keywords: accept "a, b, c" OR ["a","b","c"]
@@ -48,10 +44,8 @@ export async function generateMetadata({ params }) {
     }
 
     // hreflang alternates (+ x-default)
-    const languages = Object.fromEntries(
-        locales.map(l => [l, `/${l}/services/ai-services/ai-officer`])
-    )
-    languages['x-default'] = `/${defaultLocale}/services/ai-services/ai-officer`
+    const languages = Object.fromEntries(locales.map(l => [l, `/${l}/regulations/lgpd`]))
+    languages['x-default'] = `/${defaultLocale}/regulations/lgpd`
 
     return {
         metadataBase: new URL(site),
@@ -66,18 +60,18 @@ export async function generateMetadata({ params }) {
             title: ogTitle,
             description: ogDesc,
             locale,
-            images: [{ url: ogImageAbs, width: 1200, height: 630, alt: ogTitle }]
+            images: [{ url: ogImageAbs, width: 1200, height: 630, alt: ogTitle }],
         },
         twitter: {
             card: 'summary_large_image',
             title: twTitle,
             description: twDesc,
-            images: [ogImageAbs]
+            images: [ogImageAbs],
         },
-        robots: { index: true, follow: true }
+        robots: { index: true, follow: true },
     }
 }
 
-export default function AiOfficerLayout({ children }) {
+export default function LgpdLayout({ children }) {
     return children
 }

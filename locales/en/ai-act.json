@@ -1,7 +1,13 @@
 {
-    "metadata": {
-        "title": "EU AI Act — Oversight Governance",
-        "description": "Regulation (EU) — mandatory requirements for AI systems in the EU. Training, governance, and readiness checks for compliance."
+    "aiActMeta": {
+        "title": "EU AI Act: Requirements, Readiness & Compliance",
+        "description": "Understand the EU AI Act and get compliant fast: classification, high-risk obligations, GPAI duties, governance, documentation and audit-ready evidence.",
+        "ogTitle": "EU AI Act — What It Requires & How to Comply",
+        "ogDescription": "Phased application 2024–2026. We help you classify systems, meet high-risk obligations, and prepare GPAI transparency & documentation.",
+        "twitterTitle": "EU AI Act: Requirements & Compliance",
+        "twitterDescription": "Classification, high-risk controls, GPAI duties, governance & readiness support—done right, fast.",
+        "ogImage": "/og/ai-act.png",
+        "keywords": "EU AI Act, AI regulation, AI compliance, high-risk AI, Annex III, Annex IV, general-purpose AI, foundation models, transparency, human oversight, risk management, conformity assessment, technical documentation"
     },
     "common": {
         "learnMore": "Learn more",

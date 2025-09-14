@@ -1,4 +1,14 @@
 {
+    "gdprMeta": {
+        "title": "DSGVO: Anforderungen, Vorbereitung & Compliance",
+        "description": "Die DSGVO richtig umsetzen: DPIA, Verzeichnis von Verarbeitungstätigkeiten (RoPA), Auftragsverarbeitung, Privacy by Design, 72-Stunden-Meldung und prüffähige Nachweise.",
+        "ogTitle": "DSGVO — Anforderungen & Umsetzung",
+        "ogDescription": "Seit 2018 in Kraft. Wir operationalisieren DPIA, RoPA, Vendor-Oversight, Privacy by Design und Incident-Readiness.",
+        "twitterTitle": "DSGVO: Anforderungen & Compliance",
+        "twitterDescription": "Risikoadäquate Kontrollen, DPIA, RoPA, Auftragsverarbeitung, Meldung von Vorfällen und auditfähige Nachweise.",
+        "ogImage": "/og/gdpr.png",
+        "keywords": "DSGVO, Datenschutz, DPIA, Verzeichnis von Verarbeitungstätigkeiten, Art. 30, Art. 28, Datenschutzvorfall 72 Stunden, SCCs, TIA, BCR, Privacy by Design, Lieferantenmanagement, Datentransfers, Accountability"
+    },
     "header": {
         "title": "DSGVO",
         "subtitle": "Die Datenschutz-Grundverordnung der EU: Privatsphäre für personenbezogene Daten."

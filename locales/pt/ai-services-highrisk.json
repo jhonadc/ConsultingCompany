@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "Avaliação de Sistema de IA de Alto Risco (AI Act da UE)",
+        "description": "Classificação defensável, mapeamento do Anexo III e um roteiro prático se for alto risco — compras mais rápidas, menos escalonamentos e evidências auditáveis.",
+        "ogTitle": "Avaliação de IA de Alto Risco",
+        "ogDescription": "Decisão correta com base legal: testes de escopo, mapeamento do Anexo III, análise de borderline e próximos passos para conformidade total.",
+        "twitterTitle": "Avaliação de IA de Alto Risco",
+        "twitterDescription": "Pronto para reguladores: classificação clara com referências ao Anexo e plano de ação prático se for alto risco.",
+        "ogImage": "/og/ai-highrisk.png",
+        "keywords": "IA de alto risco, avaliação AI Act UE, mapeamento Anexo III, classificação de IA, compliance de IA, gestão de riscos de IA, organismo notificado, avaliação de conformidade, dossiê técnico, prontidão para compras"
+    },
     "hero": {
         "title": "Avaliação de Sistemas de IA de Alto Risco",
         "tagline": "O primeiro passo para a conformidade integral com o AI Act da União Europeia",

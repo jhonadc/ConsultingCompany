@@ -1,5 +1,15 @@
 {
     "gdprDpo": {
+        "meta": {
+            "title": "Serviços de DPO Europeu | Conformidade GDPR",
+            "description": "DPO certificado na UE para empresas globais: avaliações GDPR, DPIAs, resposta a incidentes em 72h, transferências internacionais e interface regulatória — evite multas milionárias.",
+            "ogTitle": "Serviços de DPO Europeu (GDPR)",
+            "ogDescription": "DPO terceirizado conforme os Artigos 37–39 da GDPR: assessment, DPIA, notificação em 72h, SCCs/TIAs/BCRs e contato com autoridades.",
+            "twitterTitle": "Serviços de DPO | Conformidade GDPR",
+            "twitterDescription": "Suporte imediato à GDPR: DPO terceirizado, DPIAs, notificação de incidentes, transferências internacionais e auditorias.",
+            "ogImage": "/og/gdpr-dpo.png",
+            "keywords": "serviços de DPO, conformidade GDPR, Artigo 37 da GDPR, DPO terceirizado, DPIA, incidente de dados 72h, SCCs, TIA, BCR, análise de DPA, contato com autoridade supervisora, proteção de dados UE"
+        },
         "hero": {
             "eyebrow": "Conformidade GDPR • Encarregado de Dados (DPO) • Cobertura Global",
             "title": "Serviços Europeus de Encarregado de Proteção de Dados",

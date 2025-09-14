@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "High-Risk AI System Assessment (EU AI Act)",
+        "description": "Defensible classification, Annex III mapping, and a practical roadmap if high-risk—faster procurement, fewer escalations, and audit-ready evidence.",
+        "ogTitle": "High-Risk AI System Assessment",
+        "ogDescription": "Get the tier decision and evidence right: scope tests, Annex III mapping, borderline analysis, and next steps for full compliance.",
+        "twitterTitle": "High-Risk AI System Assessment",
+        "twitterDescription": "Clear, regulator-ready classification with Annex references and a practical action plan if high-risk.",
+        "ogImage": "/og/ai-highrisk.png",
+        "keywords": "high-risk AI, EU AI Act assessment, Annex III mapping, AI classification, AI compliance, AI risk management, notified body, conformity assessment, technical file, procurement readiness"
+    },
     "hero": {
         "title": "High-Risk AI System Assessment",
         "tagline": "Your first step to full EU AI Act compliance",

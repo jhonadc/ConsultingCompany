@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "AI Literacy para Times (AI Act da UE, LGPD/GDPR)",
+        "description": "Treinamento prático de AI Literacy para times de produto, dados e operações. Uso seguro e conforme de GenAI/LLMs alinhado ao AI Act da UE e à LGPD/GDPR — políticas, controles de risco, coaching de prompts e evidências auditáveis.",
+        "ogTitle": "Treinamento de AI Literacy para Times",
+        "ogDescription": "Adoção segura e conforme de GenAI/LLMs com políticas, controles de risco e prática mensurável.",
+        "twitterTitle": "AI Literacy para Times",
+        "twitterDescription": "Uso prático e conforme de GenAI/LLMs alinhado ao AI Act da UE e à LGPD/GDPR.",
+        "ogImage": "/og/ai-literacy.png",
+        "keywords": "AI Literacy, treinamento GenAI, governança de LLMs, AI Act da UE, LGPD, GDPR, IA responsável, engenharia de prompts, gestão de riscos de IA, política de IA"
+    },
     "hero": {
         "title": "Treinamento em Letramento de IA",
         "tagline": "Cumpra o Artigo 4º do AI Act em apenas 4 horas",

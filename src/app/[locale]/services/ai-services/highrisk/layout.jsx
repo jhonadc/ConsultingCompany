@@ -1,4 +1,3 @@
-// src/app/[locale]/services/ai-services/ai-officer/layout.jsx
 // Server layout: DO NOT add 'use client'
 import { getMessages } from 'next-intl/server'
 import { locales, defaultLocale } from '@/i18n/config'
@@ -8,38 +7,25 @@ export const revalidate = false
 
 export async function generateMetadata({ params }) {
     const locale = locales.includes(params?.locale) ? params.locale : defaultLocale
+    const all = await getMessages({ locale })   // ✅ pass locale explicitly
+    const M = all?.highRisk ?? {}
+    const meta = M?.meta ?? {}
 
-    // Load all messages for this locale
-    const all = await getMessages({ locale })
-
-    // ✅ Robust meta lookup (namespaced → flat → legacy)
-    const meta =
-        all?.aiOfficer?.aiOfficerMeta ??      // messages.aiOfficer.aiOfficerMeta
-        all?.aiOfficer?.meta ??               // messages.aiOfficer.meta
-        all?.['ai-officer']?.aiOfficerMeta ?? // messages['ai-officer'].aiOfficerMeta
-        all?.['ai-officer']?.meta ??          // messages['ai-officer'].meta
-        all?.aiOfficerMeta ??                 // flat
-        all?.meta ??                          // legacy
-        {}
-
-    const site = process.env.NEXT_PUBLIC_SITE_URL || 'https://comforma.eu'
-    const pagePath = `/${locale}/services/ai-services/ai-officer`
+    const site = 'https://www.oversightgovernance.com' // ✅ correct domain
+    const pagePath = `/${locale}/services/ai-services/highrisk`
     const absUrl = new URL(pagePath, site).toString()
 
-    // SEO fallbacks
-    const title = meta.title ?? 'AI Officer & AI Governance'
-    const description =
-        meta.description ??
-        'Operational AI governance aligned with the EU AI Act, GDPR, and security controls.'
+    // Robust fallbacks
+    const title = meta.title ?? 'High-Risk AI System Assessment (EU AI Act)'
+    const description = meta.description ?? 'Defensible classification, Annex III mapping, and a practical roadmap if high-risk—faster procurement, fewer escalations, and audit-ready evidence.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle
     const twDesc = meta.twitterDescription ?? ogDesc
-
-    const ogImageRel = meta.ogImage ?? '/og/ai-officer.png'
+    const ogImageRel = meta.ogImage ?? '/og/ai-highrisk.png'
     const ogImageAbs = new URL(ogImageRel, site).toString()
 
-    // keywords: accept "a, b, c" OR ["a","b","c"]
+    // keywords: accept "a, b, c" string or ["a","b","c"] array
     let keywords = []
     if (typeof meta.keywords === 'string') {
         keywords = meta.keywords.split(',').map(s => s.trim()).filter(Boolean)
@@ -47,11 +33,11 @@ export async function generateMetadata({ params }) {
         keywords = meta.keywords.map(s => String(s).trim()).filter(Boolean)
     }
 
-    // hreflang alternates (+ x-default)
+    // hreflang alternates + x-default
     const languages = Object.fromEntries(
-        locales.map(l => [l, `/${l}/services/ai-services/ai-officer`])
+        locales.map(l => [l, `/${l}/services/ai-services/highrisk`])
     )
-    languages['x-default'] = `/${defaultLocale}/services/ai-services/ai-officer`
+    languages['x-default'] = `/${defaultLocale}/services/ai-services/highrisk`
 
     return {
         metadataBase: new URL(site),
@@ -78,6 +64,6 @@ export async function generateMetadata({ params }) {
     }
 }
 
-export default function AiOfficerLayout({ children }) {
+export default function HighRiskLayout({ children }) {
     return children
 }

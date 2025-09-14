@@ -1,4 +1,14 @@
 {
+    "eaaMeta": {
+        "title": "EU Accessibility Act (EAA): Anforderungen, Vorbereitung & Compliance",
+        "description": "Den EAA umsetzen: WCAG 2.1 AA für digitale Dienste, Ausrichtung an EN 301 549, Lieferantenklauseln, Dokumentation und Konformitätsbewertung.",
+        "ogTitle": "EU Accessibility Act — Anforderungen & Umsetzung",
+        "ogDescription": "Verbindlich ab 28. Juni 2025. Wir integrieren Barrierefreiheit in Design, Entwicklung, Beschaffung und Nachweispakete.",
+        "twitterTitle": "EU Accessibility Act: Anforderungen & Compliance",
+        "twitterDescription": "WCAG 2.1 AA, EN 301 549, barrierefreie Informationen & Support, Lieferantensteuerung, Konformitätsakte und Erklärung.",
+        "ogImage": "/og/eaa.png",
+        "keywords": "EU Accessibility Act, EAA, Barrierefreiheit, WCAG 2.1 AA, EN 301 549, barrierefreies Design, Beschaffung, Accessibility Statement, Konformitätserklärung, IKT-Barrierefreiheit, Self-Service-Terminals, E-Commerce-Barrierefreiheit"
+    },
     "header": {
         "title": "Barrierefreiheits-Gesetz der EU",
         "subtitle": "EU-weite Regeln, damit Produkte und Dienstleistungen für Menschen mit Behinderungen zugänglich sind."

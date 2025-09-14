@@ -1,5 +1,15 @@
 {
     "gdprDpo": {
+        "meta": {
+            "title": "Europäische DPO-Services | DSGVO-Compliance",
+            "description": "EU-zertifizierter Datenschutzbeauftragter für globale Unternehmen: DSGVO-Assessments, DPIAs, 72h-Breach-Response, internationale Datentransfers, Behördenkommunikation – vermeiden Sie Millionenstrafen.",
+            "ogTitle": "Europäische DPO-Services (Datenschutzbeauftragter)",
+            "ogDescription": "Externer DSB gemäß DSGVO Art. 37–39: Assessment, DPIA, 72h-Meldung, SCCs/TIAs/BCRs und Kontakt zu Aufsichtsbehörden.",
+            "twitterTitle": "DPO-Services | DSGVO-Compliance",
+            "twitterDescription": "Soforthilfe für DSGVO-Compliance: externer DSB, DPIAs, Meldung von Datenschutzvorfällen, internationale Transfers und Audits.",
+            "ogImage": "/og/gdpr-dpo.png",
+            "keywords": "DPO Services, DSGVO Compliance, DSGVO Artikel 37, externer Datenschutzbeauftragter, DPIA, Datenschutzverletzung 72h, SCCs, TIA, BCR, AV-Vertrag Prüfung, Aufsichtsbehörde, EU Datenschutz"
+        },
         "hero": {
             "eyebrow": "GDPR-Compliance • Datenschutzbeauftragte/r (DPO) • Weltweite Abdeckung",
             "title": "Europäische DSB/DPO-Services",

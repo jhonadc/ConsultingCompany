@@ -1,4 +1,14 @@
 {
+    "gdprMeta": {
+        "title": "GDPR: Requisitos, Preparação & Compliance",
+        "description": "Entenda a GDPR e fique em conformidade rapidamente: DPIA, RoPA, governança de operadores/fornecedores, privacy by design, resposta a incidentes em 72h e evidências auditáveis.",
+        "ogTitle": "GDPR — O que exige e como cumprir",
+        "ogDescription": "Em vigor desde 2018. Ajudamos a operacionalizar DPIA, RoPA, vendor oversight, privacy by design e prontidão para incidentes.",
+        "twitterTitle": "GDPR: Requisitos & Conformidade",
+        "twitterDescription": "Controles proporcionais ao risco, DPIA, RoPA, governança de operadores, resposta a incidentes e evidências auditáveis.",
+        "ogImage": "/og/gdpr.png",
+        "keywords": "GDPR, proteção de dados, lei de privacidade da UE, DPIA, RoPA, Artigo 30, Artigo 28, incidente 72 horas, SCCs, TIA, BCR, privacy by design, gestão de fornecedores, transferências internacionais, accountability"
+    },
     "header": {
         "title": "GDPR (RGPD)",
         "subtitle": "Regulamento Geral de Proteção de Dados da União Europeia: a base da privacidade moderna."

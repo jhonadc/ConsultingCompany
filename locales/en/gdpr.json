@@ -1,4 +1,14 @@
 {
+    "gdprMeta": {
+        "title": "GDPR: Requirements, Readiness & Compliance",
+        "description": "Understand GDPR and get compliant fast: DPIAs, RoPA, processor/vendor governance, privacy by design, 72-hour breach response and audit-ready evidence.",
+        "ogTitle": "GDPR — What It Requires & How to Comply",
+        "ogDescription": "Active since 2018. We help you operationalize DPIAs, RoPA, vendor oversight, privacy by design and incident readiness.",
+        "twitterTitle": "GDPR: Requirements & Compliance",
+        "twitterDescription": "Risk-appropriate controls, DPIAs, RoPA, vendor governance, breach response and audit-ready evidence.",
+        "ogImage": "/og/gdpr.png",
+        "keywords": "GDPR, EU privacy law, data protection, DPIA, RoPA, Article 30, Article 28, data breach 72 hours, SCCs, TIA, BCR, privacy by design, vendor management, data transfers, accountability"
+    },
     "header": {
         "title": "GDPR",
         "subtitle": "EU’s General Data Protection Regulation: Privacy for personal data."

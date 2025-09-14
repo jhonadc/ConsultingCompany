@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "Richtlinie zur KI-Nutzung für General-Purpose-AI (EU AI Act, DSGVO)",
+        "description": "Regulatorisches Risiko in ein Unternehmens-Asset verwandeln: eine klare, durchsetzbare KI-Nutzungsrichtlinie für GenAI/LLMs nach EU AI Act und DSGVO – Geltungsbereich, Rollen, Transparenz, Aufsicht, Daten/IP, Monitoring.",
+        "ogTitle": "KI-Nutzungsrichtlinie für General-Purpose-AI",
+        "ogDescription": "Dokumentierte Leitplanken für sichere, konforme GenAI-Einführung – schnellere Sales-Zyklen, weniger Eskalationen, prüffähige Nachweise.",
+        "twitterTitle": "KI-Nutzungsrichtlinie für General-Purpose-AI",
+        "twitterDescription": "Klare Regeln für GenAI/LLMs: Scope, Rollen, Transparenz, Aufsicht, Daten/IP, Monitoring – im Einklang mit EU AI Act & DSGVO.",
+        "ogImage": "/og/ai-policy.png",
+        "keywords": "KI-Nutzungsrichtlinie, General-Purpose-AI, GenAI Policy, LLM Governance, EU AI Act, DSGVO, Transparenz, menschliche Aufsicht, KI-Risikomanagement, KI-Compliance, Enterprise-Policy"
+    },
     "hero": {
         "title": "Richtlinie zur KI-Nutzung (GPAI)",
         "tagline": "Vom Regulierungsrisiko zum Unternehmenswert",

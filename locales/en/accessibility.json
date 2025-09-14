@@ -1,4 +1,14 @@
 {
+    "eaaMeta": {
+        "title": "EU Accessibility Act (EAA): Requirements, Readiness & Compliance",
+        "description": "Understand and implement the EU Accessibility Act: WCAG 2.1 AA for digital services, EN 301 549 alignment, supplier clauses, documentation and conformity assessment.",
+        "ogTitle": "EU Accessibility Act — What It Requires & How to Comply",
+        "ogDescription": "Mandatory from 28 June 2025. We help you integrate accessibility in design, development, procurement and evidence packs.",
+        "twitterTitle": "EU Accessibility Act: Requirements & Compliance",
+        "twitterDescription": "WCAG 2.1 AA, EN 301 549, accessible information & support, supplier oversight, conformity file and declaration.",
+        "ogImage": "/og/eaa.png",
+        "keywords": "EU Accessibility Act, EAA, accessibility compliance, WCAG 2.1 AA, EN 301 549, accessible design, procurement accessibility, accessibility statement, declaration of conformity, ICT accessibility, self-service terminals, e-commerce accessibility"
+    },
     "header": {
         "title": "EU Accessibility Act",
         "subtitle": "EU-wide rules to ensure products and services are accessible to persons with disabilities."

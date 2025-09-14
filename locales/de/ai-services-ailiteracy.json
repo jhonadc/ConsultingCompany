@@ -1,4 +1,14 @@
 {
+    "meta": {
+        "title": "AI-Literacy Training für Teams (EU AI Act, DSGVO)",
+        "description": "Praxisnahe AI-Literacy für Produkt-, Daten- und Operationsteams. Sichere, rechtskonforme GenAI/LLM-Nutzung nach EU AI Act und DSGVO – Richtlinien, Risikokontrollen, Prompt-Coaching, prüffähige Nachweise.",
+        "ogTitle": "AI-Literacy Training für Teams",
+        "ogDescription": "Sichere, konforme GenAI/LLM-Einführung mit Policy, Risikokontrollen und messbarer Praxis.",
+        "twitterTitle": "AI-Literacy Training für Teams",
+        "twitterDescription": "Praktische, DSGVO-konforme GenAI/LLM-Nutzung im Einklang mit dem EU AI Act.",
+        "ogImage": "/og/ai-literacy.png",
+        "keywords": "AI Literacy, GenAI Schulung, LLM Governance, EU AI Act, DSGVO, Responsible AI, Prompt Engineering, AI Risikomanagement, AI Governance Training, AI Richtlinien"
+    },
     "hero": {
         "title": "KI-Kompetenz-Training",
         "tagline": "Erfüllen Sie die Anforderungen des EU-AI-Acts (Art. 4) in nur 4 Stunden",

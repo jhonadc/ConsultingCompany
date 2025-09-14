@@ -1,4 +1,14 @@
 {
+    "processMeta": {
+        "title": "How We Work: Assess • Implement • Sustain",
+        "description": "Our pragmatic, audit-ready compliance process: assess risks, implement controls & documentation, and sustain performance with measurable outcomes.",
+        "ogTitle": "How We Work — Pragmatic, Audit-Ready Compliance",
+        "ogDescription": "Stakeholder mapping, regulatory scoping, controls, ISO/IEC 42001 alignment, Annex IV documentation, DPIAs/RoPA, evidence packs and ongoing assurance.",
+        "twitterTitle": "Our Process: Assess → Implement → Sustain",
+        "twitterDescription": "Faster, defensible compliance: roadmaps, controls, documentation and KPIs embedded in your tools.",
+        "ogImage": "/og/process.png",
+        "keywords": "compliance process, AI Act program, GDPR program, ISO/IEC 42001, Annex IV documentation, DPIA, RoPA, risk management, human oversight, vendor governance, evidence packs, audit readiness"
+    },
     "pageIntro": {
         "eyebrow": "Our process",
         "title": "How we work",

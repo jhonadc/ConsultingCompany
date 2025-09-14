@@ -1,5 +1,15 @@
 {
     "gdprDpo": {
+        "meta": {
+            "title": "European Data Protection Officer (DPO) Services | GDPR Compliance",
+            "description": "EU-certified DPO for global companies: GDPR assessments, DPIAs, 72h breach response, cross-border transfers, regulatory liaison—avoid multimillion-euro fines.",
+            "ogTitle": "European Data Protection Officer (DPO) Services",
+            "ogDescription": "Outsourced DPO aligned with GDPR Articles 37–39: assessment, DPIA, 72h breach response, SCCs/TIAs/BCRs, and authority liaison.",
+            "twitterTitle": "European DPO Services | GDPR Compliance",
+            "twitterDescription": "Immediate GDPR compliance support: outsourced DPO, DPIAs, breach notification, cross-border transfers, and audits.",
+            "ogImage": "/og/gdpr-dpo.png",
+            "keywords": "DPO services, GDPR compliance, GDPR Article 37, outsourced DPO, DPIA, data breach 72h, SCCs, TIA, BCR, DPA review, supervisory authority liaison, EU data protection officer, cross-border transfers"
+        },
         "hero": {
             "eyebrow": "GDPR Compliance • Data Protection Officer • Global Coverage",
             "title": "European Data Protection Officer Services",

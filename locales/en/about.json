@@ -1,4 +1,14 @@
 {
+    "aboutMeta": {
+        "title": "About — Oversight Governance Studio",
+        "description": "Who we are and how we work: turning regulation into advantage and compliance into trust.",
+        "ogTitle": "About Oversight Governance Studio",
+        "ogDescription": "Partnership, not paperwork. Legal + engineering + security working inside your stack.",
+        "twitterTitle": "About — Oversight Governance Studio",
+        "twitterDescription": "Turning regulation into advantage and compliance into trust.",
+        "ogImage": "/og/about.png",
+        "keywords": "about, compliance studio, AI governance, GDPR, AI Act, Berlin"
+    },
     "header": {
         "eyebrow": "About us",
         "title": "Regulation into advantage. Compliance into trust."
