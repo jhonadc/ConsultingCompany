@@ -1,28 +1,38 @@
 {
+    "meta": {
+        "title": "AI Act, GDPR, LGPD & Accessibility Compliance",
+        "description": "Compliance across the EU AI Act, GDPR, LGPD and Accessibility Act. Oversight Governance Studio delivers policies, controls and audit-ready evidence.",
+        "ogTitle": "AI Act, GDPR, LGPD & Accessibility",
+        "ogDescription": "Tailored compliance for AI Act, GDPR, LGPD and Accessibility Act — policies, documentation and evidence by Oversight Governance Studio.",
+        "twitterTitle": "EU & Global Regulations",
+        "twitterDescription": "AI Act, GDPR, LGPD and Accessibility compliance — Oversight Governance Studio.",
+        "ogImage": "/og/regulations.png",
+        "keywords": "EU AI Act, GDPR, LGPD, Accessibility Act, compliance, AI regulation, data protection, accessibility compliance, risk management, governance, oversight"
+    },
     "regulationsIndex": {
         "eyebrow": "Regulations",
-        "title": "EU Rules We Specialize In",
-        "intro": "Dive into each regulation to see our methodology, tooling, and tailored guidance.",
+        "title": "EU and Global Regulations We Specialize In",
+        "intro": "Discover our methodology, tools and tailored advisory for each regulation.",
         "list": [
             {
                 "title": "AI Act",
                 "slug": "ai-act",
-                "description": "Europe’s framework for trustworthy and compliant AI systems."
+                "description": "EU framework for trustworthy and compliant AI systems."
             },
             {
                 "title": "GDPR",
                 "slug": "gdpr",
-                "description": "The EU’s General Data Protection Regulation governing personal data."
+                "description": "EU data protection law for handling personal data."
             },
             {
                 "title": "LGPD",
                 "slug": "lgpd",
-                "description": "Brazil’s data protection law establishing principles and rights."
+                "description": "Brazil’s data protection law with rights and principles."
             },
             {
-                "title": "EU Accessibility Act",
+                "title": "Accessibility Act",
                 "slug": "accessibility",
-                "description": "Rules ensuring products and services are accessible to all users."
+                "description": "Rules for accessible products and services in the EU."
             }
         ]
     }

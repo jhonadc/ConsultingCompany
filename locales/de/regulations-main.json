@@ -1,8 +1,18 @@
 {
+    "meta": {
+        "title": "AI Act, DSGVO, LGPD & EAA Compliance",
+        "description": "Compliance für EU AI Act, DSGVO, LGPD und Barrierefreiheitsgesetz. Oversight Governance Studio liefert Richtlinien, Kontrollen und prüffähige Nachweise.",
+        "ogTitle": "AI Act, DSGVO, LGPD & EAA",
+        "ogDescription": "Compliance für AI Act, DSGVO, LGPD und EAA — Richtlinien, Dokumentation und Nachweise mit Oversight Governance Studio.",
+        "twitterTitle": "EU & Internationale Regelwerke",
+        "twitterDescription": "AI Act, DSGVO, LGPD und EAA Compliance — Oversight Governance Studio.",
+        "ogImage": "/og/regulations.png",
+        "keywords": "EU AI Act, DSGVO, LGPD, EAA, KI-Regulierung, Datenschutz, Barrierefreiheit, Compliance, Risikomanagement, Governance, Nachweise"
+    },
     "regulationsIndex": {
         "eyebrow": "Regelwerke",
         "title": "EU-Vorgaben, auf die wir spezialisiert sind",
-        "intro": "Entdecken Sie zu jedem Regelwerk unsere Methodik, Tools und passgenaue Beratung.",
+        "intro": "Entdecken Sie zu jedem Regelwerk unsere Methodik, Tools und Beratung.",
         "list": [
             {
                 "title": "AI Act",
@@ -10,9 +20,9 @@
                 "description": "EU-Rahmenwerk für vertrauenswürdige und konforme KI-Systeme."
             },
             {
-                "title": "GDPR",
+                "title": "DSGVO",
                 "slug": "gdpr",
-                "description": "EU-Datenschutzgrundverordnung für den Umgang mit personenbezogenen Daten."
+                "description": "Datenschutzgrundverordnung für den Umgang mit personenbezogenen Daten."
             },
             {
                 "title": "LGPD",

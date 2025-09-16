@@ -1,28 +1,38 @@
 {
+    "meta": {
+        "title": "AI Act, GDPR, LGPD & Acessibilidade",
+        "description": "Conformidade com o AI Act da UE, GDPR, LGPD e Lei de Acessibilidade. O Oversight Governance Studio entrega políticas, controles e evidências auditáveis.",
+        "ogTitle": "AI Act, GDPR, LGPD & Acessibilidade",
+        "ogDescription": "Compliance para AI Act, GDPR, LGPD e Acessibilidade — políticas, documentação e evidências com o Oversight Governance Studio.",
+        "twitterTitle": "Regulamentos Globais de Conformidade",
+        "twitterDescription": "AI Act, GDPR, LGPD e Acessibilidade — Oversight Governance Studio.",
+        "ogImage": "/og/regulations.png",
+        "keywords": "AI Act, GDPR, LGPD, Acessibilidade, conformidade, regulação de IA, proteção de dados, compliance de acessibilidade, gestão de riscos, governança, auditoria"
+    },
     "regulationsIndex": {
         "eyebrow": "Regulamentos",
-        "title": "Regras da UE em que somos especialistas",
-        "intro": "Explore cada regulamento para conhecer nossa metodologia, ferramentas e orientações sob medida.",
+        "title": "Regulações da UE e Globais em que Somos Especializados",
+        "intro": "Descubra nossa metodologia, ferramentas e consultoria sob medida para cada regulação.",
         "list": [
             {
                 "title": "AI Act",
                 "slug": "ai-act",
-                "description": "Estrutura da Europa para sistemas de IA confiáveis e em conformidade."
+                "description": "Marco regulatório da UE para sistemas de IA confiáveis e em conformidade."
             },
             {
                 "title": "GDPR",
                 "slug": "gdpr",
-                "description": "O Regulamento Geral sobre a Proteção de Dados da UE, que rege os dados pessoais."
+                "description": "Regulamento Europeu de Proteção de Dados para o tratamento de dados pessoais."
             },
             {
                 "title": "LGPD",
                 "slug": "lgpd",
-                "description": "Lei brasileira de proteção de dados que estabelece princípios e direitos."
+                "description": "Lei brasileira de proteção de dados com princípios e direitos."
             },
             {
-                "title": "Lei Europeia de Acessibilidade",
+                "title": "Lei de Acessibilidade",
                 "slug": "accessibility",
-                "description": "Regras que garantem que produtos e serviços sejam acessíveis a todos os usuários."
+                "description": "Regras da UE para produtos e serviços acessíveis."
             }
         ]
     }
