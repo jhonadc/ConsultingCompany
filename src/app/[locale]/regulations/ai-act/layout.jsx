@@ -17,7 +17,9 @@ export async function generateMetadata({ params }) {
     const absUrl = new URL(pagePath, site).toString()
 
     const title = meta.title ?? 'EU AI Act: Requirements & Compliance'
-    const description = meta.description ?? 'What the EU AI Act requires and how to comply. Classification, high-risk obligations, GPAI duties, governance, and readiness support.'
+    const description =
+        meta.description ??
+        'EU AI Act compliance explained: classification, high-risk duties, GPAI rules, governance, and readiness support for companies in the EU market.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

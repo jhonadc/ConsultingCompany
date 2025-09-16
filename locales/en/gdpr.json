@@ -1,11 +1,11 @@
 {
     "gdprMeta": {
-        "title": "GDPR: Requirements, Readiness & Compliance",
-        "description": "Understand GDPR and get compliant fast: DPIAs, RoPA, processor/vendor governance, privacy by design, 72-hour breach response and audit-ready evidence.",
+        "title": "GDPR: Requirements, Readiness & Compliance – Oversight Governance",
+        "description": "Understand GDPR and achieve compliance fast: DPIAs, RoPA, vendor governance, privacy by design and 72h breach response. Oversight Governance Studio ensures audit-ready evidence.",
         "ogTitle": "GDPR — What It Requires & How to Comply",
-        "ogDescription": "Active since 2018. We help you operationalize DPIAs, RoPA, vendor oversight, privacy by design and incident readiness.",
+        "ogDescription": "Since 2018: DPIAs, RoPA, vendor oversight, privacy by design and incident readiness – delivered by Oversight Governance Studio.",
         "twitterTitle": "GDPR: Requirements & Compliance",
-        "twitterDescription": "Risk-appropriate controls, DPIAs, RoPA, vendor governance, breach response and audit-ready evidence.",
+        "twitterDescription": "Risk-appropriate controls, DPIAs, RoPA, breach response and audit-ready evidence – Oversight Governance Studio.",
         "ogImage": "/og/gdpr.png",
         "keywords": "GDPR, EU privacy law, data protection, DPIA, RoPA, Article 30, Article 28, data breach 72 hours, SCCs, TIA, BCR, privacy by design, vendor management, data transfers, accountability"
     },
@@ -70,7 +70,7 @@
                 "title": "External Data Protection Officer (DPO)",
                 "desc": "We act as your independent DPO: advise management, monitor compliance, train staff, oversee DPIAs, liaise with authorities, and report risks with practical remediation paths.",
                 "cta": "Speak with a DPO",
-                "href": "/services/gdpr-dpo",
+                "href": "/services/gdpr-services/gdpr-dpo",
                 "span": "lg:col-span-3",
                 "border": "border-l-2 border-pink-500",
                 "ring": "hover:ring-pink-200"

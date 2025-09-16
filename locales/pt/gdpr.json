@@ -1,11 +1,11 @@
 {
     "gdprMeta": {
-        "title": "GDPR: Requisitos, Preparação & Compliance",
-        "description": "Entenda a GDPR e fique em conformidade rapidamente: DPIA, RoPA, governança de operadores/fornecedores, privacy by design, resposta a incidentes em 72h e evidências auditáveis.",
+        "title": "GDPR: Requisitos, Preparação & Compliance – Oversight Governance",
+        "description": "Entenda a GDPR e alcance conformidade rapidamente: DPIA, RoPA, governança de fornecedores, privacy by design e resposta a incidentes em 72h. Oversight Governance Studio entrega evidências auditáveis.",
         "ogTitle": "GDPR — O que exige e como cumprir",
-        "ogDescription": "Em vigor desde 2018. Ajudamos a operacionalizar DPIA, RoPA, vendor oversight, privacy by design e prontidão para incidentes.",
+        "ogDescription": "Desde 2018 em vigor: DPIA, RoPA, vendor oversight, privacy by design e prontidão para incidentes – com Oversight Governance Studio.",
         "twitterTitle": "GDPR: Requisitos & Conformidade",
-        "twitterDescription": "Controles proporcionais ao risco, DPIA, RoPA, governança de operadores, resposta a incidentes e evidências auditáveis.",
+        "twitterDescription": "Controles proporcionais ao risco, DPIA, RoPA e resposta a incidentes – fornecidos pelo Oversight Governance Studio.",
         "ogImage": "/og/gdpr.png",
         "keywords": "GDPR, proteção de dados, lei de privacidade da UE, DPIA, RoPA, Artigo 30, Artigo 28, incidente 72 horas, SCCs, TIA, BCR, privacy by design, gestão de fornecedores, transferências internacionais, accountability"
     },
@@ -70,7 +70,7 @@
                 "title": "DPO Externo (Encarregado de Dados)",
                 "desc": "Atuamos como seu DPO independente: orientamos a gestão, monitoramos conformidade, treinamos equipes, supervisionamos DPIAs, dialogamos com autoridades e reportamos riscos com planos práticos.",
                 "cta": "Falar com um DPO",
-                "href": "/services/gdpr-dpo",
+                "href": "/services/gdpr-services/gdpr-dpo",
                 "span": "lg:col-span-3",
                 "border": "border-l-2 border-pink-500",
                 "ring": "hover:ring-pink-200"

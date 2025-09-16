@@ -17,7 +17,9 @@ export async function generateMetadata({ params }) {
 
     // Robust fallbacks
     const title = meta.title ?? 'High-Risk AI System Assessment (EU AI Act)'
-    const description = meta.description ?? 'Defensible classification, Annex III mapping, and a practical roadmap if high-risk—faster procurement, fewer escalations, and audit-ready evidence.'
+    const description =
+        meta.description ??
+        'Expert assessment of high-risk AI under the EU AI Act. Annex III mapping, classification, and a clear compliance roadmap with audit-ready evidence.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

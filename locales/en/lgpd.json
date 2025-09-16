@@ -1,11 +1,11 @@
 {
     "lgpdMeta": {
-        "title": "LGPD: Requirements, Readiness & Compliance (Brazil)",
-        "description": "Understand Brazil’s LGPD and get compliant fast: security measures, records, RIPD (impact report), operator governance, DPO, incident response, transfers, and audit-ready evidence.",
+        "title": "LGPD: Requirements & Compliance (Brazil) – Oversight Governance",
+        "description": "Understand Brazil’s LGPD and achieve compliance fast: security measures, records, RIPD, operator governance, DPO, incident response and transfers. Oversight Governance Studio ensures audit-ready evidence.",
         "ogTitle": "LGPD — What It Requires & How to Comply",
-        "ogDescription": "In force since 2020. We operationalize RIPD, records, operator oversight, DPO, 72h-style incident playbooks, and transfer mechanisms.",
+        "ogDescription": "In force since 2020: RIPD, records, operator oversight, DPO and 72h playbooks – delivered by Oversight Governance Studio.",
         "twitterTitle": "LGPD: Requirements & Compliance",
-        "twitterDescription": "Risk-appropriate controls, records, RIPD, DPO, incident readiness, and international transfer mechanisms—done right, fast.",
+        "twitterDescription": "Controls, RIPD, DPO, incident readiness and transfers – from Oversight Governance Studio.",
         "ogImage": "/og/lgpd.png",
         "keywords": "LGPD, Brazil data protection law, Brazilian privacy law, RIPD, impact report, records of processing, DPO encarregado, ANPD, international data transfers, SCC-like clauses, seals, operator governance, incident response, privacy by design"
     },

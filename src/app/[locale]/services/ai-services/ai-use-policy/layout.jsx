@@ -18,8 +18,10 @@ export async function generateMetadata({ params }) {
     const absUrl = new URL(pagePath, site).toString()
 
     // Fallbacks SEO
-    const title = meta.title ?? 'AI Use Policy for General-Purpose AI (EU AI Act, GDPR)'
-    const description = meta.description ?? 'Clear, enforceable rules for GenAI/LLMs aligned with the EU AI Act and GDPR: scope, roles, transparency, human oversight, data/IP, and monitoring.'
+    const title = meta.title ?? 'AI Use Policy for GenAI & LLMs (EU AI Act, GDPR)'
+    const description =
+        meta.description ??
+        'Practical AI use policies for GenAI and LLMs. Define roles, transparency, oversight, and compliance with the EU AI Act and GDPR for safe adoption.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

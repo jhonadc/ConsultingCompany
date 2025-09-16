@@ -22,8 +22,10 @@ export async function generateMetadata({ params }) {
     const pagePath = `/${locale}/regulations/accessibility`
     const absUrl = new URL(pagePath, site).toString()
 
-    const title = meta.title ?? 'EU Accessibility Act (EAA): Requirements & Compliance'
-    const description = meta.description ?? 'What the EU Accessibility Act requires and how to comply: WCAG 2.1 AA for digital services, EN 301 549 alignment, documentation and conformity assessment.'
+    const title = meta.title ?? 'EU Accessibility Act: Requirements & Compliance'
+    const description =
+        meta.description ??
+        'EU Accessibility Act compliance: WCAG 2.1 AA, EN 301 549 standards, documentation, and conformity assessments for digital services and products.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

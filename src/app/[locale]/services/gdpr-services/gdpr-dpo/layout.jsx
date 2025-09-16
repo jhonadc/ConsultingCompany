@@ -12,12 +12,15 @@ export async function generateMetadata({ params }) {
     const meta = M?.meta ?? {}
 
     const site = 'https://www.oversightgovernance.com' // correct domain
-    const pagePath = `/${locale}/services/gdpr-dpo`     // <— adjust if your slug differs
+    const pagePath = `/${locale}/services/gdpr-services/gdpr-dpo`     // <— adjust if your slug differs
     const absUrl = new URL(pagePath, site).toString()
 
     // Robust fallbacks
-    const title = meta.title ?? 'European Data Protection Officer (DPO) Services | GDPR Compliance'
-    const description = meta.description ?? 'EU-certified DPO for global companies: GDPR assessments, DPIAs, 72h breach response, cross-border transfers, regulatory liaison—avoid multimillion-euro fines.'
+    const title =
+        meta.title ?? 'EU Data Protection Officer (DPO) Services | GDPR'
+    const description =
+        meta.description ??
+        'EU DPO services for GDPR compliance: DPIAs, breach response, cross-border transfers, and regulatory liaison. Avoid fines and build trust.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle
@@ -34,8 +37,8 @@ export async function generateMetadata({ params }) {
     }
 
     // hreflang alternates (+ x-default)
-    const languages = Object.fromEntries(locales.map(l => [l, `/${l}/services/gdpr-dpo`]))
-    languages['x-default'] = `/${defaultLocale}/services/gdpr-dpo`
+    const languages = Object.fromEntries(locales.map(l => [l, `/${l}/services/gdpr-services/gdpr-dpo`]))
+    languages['x-default'] = `/${defaultLocale}/services/gdpr-services/gdpr-dpo`
 
     return {
         metadataBase: new URL(site),

@@ -1,11 +1,11 @@
 {
     "lgpdMeta": {
-        "title": "LGPD: Anforderungen, Vorbereitung & Compliance (Brasilien)",
-        "description": "Verstehen Sie die brasilianische Datenschutz-Grundverordnung (LGPD) und erreichen Sie schnell die Compliance: Sicherheitsmaßnahmen, Verarbeitungsverzeichnisse, Datenschutz-Folgenabschätzungen (RIPD), Governance von Auftragsverarbeitern, DSB, Incident-Response und internationale Datentransfers.",
+        "title": "LGPD: Anforderungen & Compliance (Brasilien) – Oversight Governance",
+        "description": "Die brasilianische LGPD richtig umsetzen: Sicherheitsmaßnahmen, Verarbeitungsverzeichnisse, RIPD, DSB, Incident-Response und internationale Transfers. Oversight Governance Studio liefert prüffähige Nachweise.",
         "ogTitle": "LGPD — Was sie verlangt & wie man sie erfüllt",
-        "ogDescription": "Seit 2020 in Kraft. Wir operationalisieren RIPD, Verarbeitungsverzeichnisse, Auftragsverarbeiter-Governance, DSB, 72-Stunden-Playbooks und Transfermechanismen.",
+        "ogDescription": "Seit 2020 in Kraft: RIPD, Verzeichnisse, Auftragsverarbeiter-Governance und 72h-Playbooks – umgesetzt mit Oversight Governance Studio.",
         "twitterTitle": "LGPD: Anforderungen & Compliance",
-        "twitterDescription": "Risikoadäquate Kontrollen, Verarbeitungsverzeichnisse, RIPD, DSB, Incident-Response und internationale Datentransfers — korrekt umgesetzt.",
+        "twitterDescription": "Kontrollen, Verarbeitungsverzeichnisse, RIPD, DSB und Transfers – von Oversight Governance Studio.",
         "ogImage": "/og/lgpd.png",
         "keywords": "LGPD, Brasilien Datenschutzgesetz, Datenschutz, RIPD, Datenschutz-Folgenabschätzung, Verarbeitungsverzeichnis, Auftragsverarbeiter, Datenschutzbeauftragter, Datentransfer, internationale Datenübermittlung, Compliance"
     },

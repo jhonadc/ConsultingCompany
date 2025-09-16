@@ -1,12 +1,12 @@
 {
     "aiOfficer": {
         "meta": {
-            "title": "AI Officer & Governança de IA",
-            "description": "Governança de IA na prática, alinhada ao AI Act da UE, à LGPD/GDPR e a controles de segurança. Políticas, registro de riscos e auditorias que funcionam no dia a dia.",
+            "title": "AI Officer & Governança de IA – Oversight Governance",
+            "description": "Governança de IA prática, alinhada ao AI Act da UE, LGPD/GDPR e controles de segurança. Oversight Governance Studio implementa políticas, registros de risco e auditorias prontas para fiscalização.",
             "ogTitle": "AI Officer para o AI Act da UE",
-            "ogDescription": "Governança de IA com documentação pronta para autoridades e clientes.",
+            "ogDescription": "Governança de IA com documentação pronta para autoridades e clientes – do Oversight Governance Studio.",
             "twitterTitle": "AI Officer & Governança de IA",
-            "twitterDescription": "Controles práticos, evidências e relatórios.",
+            "twitterDescription": "Controles práticos, evidências e relatórios – Oversight Governance Studio.",
             "ogImage": "/og/ai-officer.png"
         },
         "hero": {

@@ -27,10 +27,10 @@ export async function generateMetadata({ params }) {
     const absUrl = new URL(pagePath, site).toString()
 
     // SEO fallbacks
-    const title = meta.title ?? 'AI Officer & AI Governance'
+    const title = meta.title ?? 'AI Officer & AI Governance (EU AI Act, GDPR)'
     const description =
         meta.description ??
-        'Operational AI governance aligned with the EU AI Act, GDPR, and security controls.'
+        'AI governance aligned with the EU AI Act and GDPR. Build controls, reduce risks, and stay audit-ready with clear oversight structures.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

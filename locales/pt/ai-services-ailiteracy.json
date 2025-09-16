@@ -1,11 +1,11 @@
 {
     "meta": {
-        "title": "AI Literacy para Times (AI Act da UE, LGPD/GDPR)",
-        "description": "Treinamento prático de AI Literacy para times de produto, dados e operações. Uso seguro e conforme de GenAI/LLMs alinhado ao AI Act da UE e à LGPD/GDPR — políticas, controles de risco, coaching de prompts e evidências auditáveis.",
+        "title": "AI Literacy para Times (AI Act UE, LGPD/GDPR) – Oversight Governance",
+        "description": "Treinamento prático de AI Literacy para times de produto, dados e operações. Oversight Governance Studio garante uso seguro e conforme de GenAI/LLMs com políticas, controles de risco, coaching de prompts e evidências auditáveis.",
         "ogTitle": "Treinamento de AI Literacy para Times",
-        "ogDescription": "Adoção segura e conforme de GenAI/LLMs com políticas, controles de risco e prática mensurável.",
+        "ogDescription": "Adoção segura e conforme de GenAI/LLMs com políticas, controles de risco e prática – do Oversight Governance Studio.",
         "twitterTitle": "AI Literacy para Times",
-        "twitterDescription": "Uso prático e conforme de GenAI/LLMs alinhado ao AI Act da UE e à LGPD/GDPR.",
+        "twitterDescription": "Uso prático e conforme de GenAI/LLMs alinhado ao AI Act da UE e à LGPD/GDPR – Oversight Governance Studio.",
         "ogImage": "/og/ai-literacy.png",
         "keywords": "AI Literacy, treinamento GenAI, governança de LLMs, AI Act da UE, LGPD, GDPR, IA responsável, engenharia de prompts, gestão de riscos de IA, política de IA"
     },

@@ -1,13 +1,13 @@
 {
     "aiOfficer": {
         "meta": {
-            "title": "AI Officer & AI Governance",
-            "description": "Hands-on AI governance aligned with the EU AI Act, GDPR, and security controls. We operationalize policies, risk logs, and audits.",
+            "title": "AI Officer & AI Governance – Oversight Governance",
+            "description": "Hands-on AI governance aligned with the EU AI Act, GDPR and security controls. Oversight Governance Studio operationalizes policies, risk logs and audits with audit-ready evidence.",
             "ogTitle": "AI Officer for the EU AI Act",
-            "ogDescription": "Accountable AI governance with documentation ready for authorities and clients.",
+            "ogDescription": "Accountable AI governance with regulator-ready documentation – delivered by Oversight Governance Studio.",
             "twitterTitle": "AI Officer & AI Governance",
-            "twitterDescription": "Practical controls, evidence, and reporting.",
-            "ogImage": ""
+            "twitterDescription": "Practical controls, evidence and reporting – Oversight Governance Studio.",
+            "ogImage": "/og/ai-officer.png"
         },
         "hero": {
             "eyebrow": "EU AI Act • Lawyer-Engineer • Governance in Practice",

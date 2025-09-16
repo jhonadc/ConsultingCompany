@@ -17,7 +17,9 @@ export async function generateMetadata({ params }) {
 
     // Fallbacks SEO otimizados
     const title = meta.title ?? 'AI Literacy Training for Teams (EU AI Act, GDPR)'
-    const description = meta.description ?? 'Hands-on AI literacy for product, data and ops teams. Safe, compliant GenAI & LLM use aligned with the EU AI Act and GDPR—policies, risk controls, prompt coaching, audit-ready evidence.'
+    const description =
+        meta.description ??
+        'Hands-on AI literacy training for product, data and ops teams. Enable safe and compliant GenAI use with policies, risk controls, and audit-ready skills.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

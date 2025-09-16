@@ -1,12 +1,12 @@
 {
     "aiOfficer": {
         "meta": {
-            "title": "AI Officer & AI Governance",
-            "description": "Praktische KI-Governance nach EU AI Act, DSGVO und Security-Kontrollen. Richtlinien, Risikologs und Audits werden operativ umgesetzt.",
+            "title": "AI Officer & KI-Governance – Oversight Governance",
+            "description": "Praktische KI-Governance nach EU AI Act, DSGVO und Security-Kontrollen. Oversight Governance Studio setzt Richtlinien, Risikologs und Audits operativ um – prüffähig und praxisnah.",
             "ogTitle": "AI Officer für den EU AI Act",
-            "ogDescription": "Nachweisbare KI-Steuerung mit prüfbereiter Dokumentation.",
-            "twitterTitle": "AI Officer & AI Governance",
-            "twitterDescription": "Praktische Kontrollen, Evidenzen und Berichte.",
+            "ogDescription": "Nachweisbare KI-Steuerung mit regulatorbereiter Dokumentation – von Oversight Governance Studio.",
+            "twitterTitle": "AI Officer & KI-Governance",
+            "twitterDescription": "Praktische Kontrollen, Evidenzen und Berichte – Oversight Governance Studio.",
             "ogImage": "/og/ai-officer.png"
         },
         "hero": {

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
     const title = meta.title ?? 'LGPD: Requirements & Compliance (Brazil)'
     const description =
         meta.description ??
-        'What LGPD requires and how to comply: RIPD (DPIA), records, operator governance, DPO, incident response and international transfers.'
+        'LGPD compliance guide: RIPD (DPIA), records, operator governance, DPO, incident response, and rules for secure international data transfers.'
     const ogTitle = meta.ogTitle ?? title
     const ogDesc = meta.ogDescription ?? description
     const twTitle = meta.twitterTitle ?? ogTitle

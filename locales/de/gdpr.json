@@ -1,11 +1,11 @@
 {
     "gdprMeta": {
-        "title": "DSGVO: Anforderungen, Vorbereitung & Compliance",
-        "description": "Die DSGVO richtig umsetzen: DPIA, Verzeichnis von Verarbeitungstätigkeiten (RoPA), Auftragsverarbeitung, Privacy by Design, 72-Stunden-Meldung und prüffähige Nachweise.",
+        "title": "DSGVO: Anforderungen, Vorbereitung & Compliance – Oversight Governance",
+        "description": "Die DSGVO richtig umsetzen: DPIA, RoPA, Auftragsverarbeitung, Privacy by Design und 72h-Meldungen. Oversight Governance Studio liefert prüffähige Nachweise und regulatorische Sicherheit.",
         "ogTitle": "DSGVO — Anforderungen & Umsetzung",
-        "ogDescription": "Seit 2018 in Kraft. Wir operationalisieren DPIA, RoPA, Vendor-Oversight, Privacy by Design und Incident-Readiness.",
+        "ogDescription": "Seit 2018 in Kraft. DPIA, RoPA, Vendor-Oversight und Incident-Readiness – umgesetzt mit Oversight Governance Studio.",
         "twitterTitle": "DSGVO: Anforderungen & Compliance",
-        "twitterDescription": "Risikoadäquate Kontrollen, DPIA, RoPA, Auftragsverarbeitung, Meldung von Vorfällen und auditfähige Nachweise.",
+        "twitterDescription": "Risikoadäquate Kontrollen, DPIA, RoPA, Vorfallmeldungen – bereitgestellt von Oversight Governance Studio.",
         "ogImage": "/og/gdpr.png",
         "keywords": "DSGVO, Datenschutz, DPIA, Verzeichnis von Verarbeitungstätigkeiten, Art. 30, Art. 28, Datenschutzvorfall 72 Stunden, SCCs, TIA, BCR, Privacy by Design, Lieferantenmanagement, Datentransfers, Accountability"
     },
@@ -70,7 +70,7 @@
                 "title": "Externer Datenschutzbeauftragter (DSB)",
                 "desc": "Unabhängige Beratung der Leitung, Compliance-Monitoring, Schulungen, DSFAs, Kontakt zu Behörden und praxisnahe Risikoberichte.",
                 "cta": "Mit einem DSB sprechen",
-                "href": "/services/gdpr-dpo",
+                "href": "/services/gdpr-services/gdpr-dpo",
                 "span": "lg:col-span-3",
                 "border": "border-l-2 border-pink-500",
                 "ring": "hover:ring-pink-200"
