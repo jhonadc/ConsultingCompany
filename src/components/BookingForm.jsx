@@ -1,4 +1,4 @@
-// src/components/BookingForm.jsx  (ou onde você usa)
+// src/components/BookingForm.jsx
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
@@ -27,9 +27,9 @@ function detectCountryISO() {
 
 export function BookingForm({
   id = 'booking',
-  eyebrow,       // ⬅️ sem default: usa tradução
-  title,         // ⬅️ sem default: usa tradução
-  intro,         // ⬅️ sem default: usa tradução
+  eyebrow,
+  title,
+  intro,
   service = 'general',
 }) {
   const t = useTranslations('booking')
@@ -54,6 +54,7 @@ export function BookingForm({
 
   async function handleSubmit(e) {
     e.preventDefault()
+    if (status.sending) return
     setStatus({ sending: true, ok: null, msg: '' })
 
     const formEl = e.currentTarget
@@ -77,8 +78,22 @@ export function BookingForm({
       formEl.reset()
       setCountryISO(detectCountryISO())
 
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'conversion', { 'send_to': 'AW-627199583/1aBBCMzU9IgbEN-ciasC' })
+      // ---- GA4: conversão no sucesso (NOME DO EVENTO = generate_lead) ----
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          send_to: 'G-L4B1B0NQH2',     // garante roteamento para seu GA4
+          debug_mode: true,            // ajuda a aparecer no DebugView
+          form_id: formEl.id || 'booking',
+          form_name: formEl.getAttribute('aria-label') || 'Booking',
+          service,
+          locale,
+          page_location: window.location.href,
+          page_title: document.title,
+          value: 1,
+        })
+
+        // ---- OPCIONAL (NÃO use se importar conversão do GA4 no Google Ads) ----
+        // window.gtag('event', 'conversion', { send_to: 'AW-627199583/1aBBCMzU9IgbEN-ciasC' })
       }
     } catch (err) {
       console.error(err)
@@ -92,7 +107,12 @@ export function BookingForm({
         <p className="mx-auto max-w-3xl">{introText}</p>
       </SectionIntro>
 
-      <form onSubmit={handleSubmit} className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6">
+      <form
+        id="booking"
+        aria-label="Booking"
+        onSubmit={handleSubmit}
+        className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6"
+      >
         <input type="hidden" name="service" value={service} />
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -100,13 +120,25 @@ export function BookingForm({
             <label htmlFor="name">
               {t('fields.fullName')} <span className="text-red-600">*</span>
             </label>
-            <input id="name" type="text" name="name" required className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+            />
           </div>
           <div className="grid gap-2">
             <label htmlFor="email">
               {t('fields.workEmail')} <span className="text-red-600">*</span>
             </label>
-            <input id="email" type="email" name="email" required className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10" />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              className="rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+            />
           </div>
         </div>
 
@@ -158,7 +190,26 @@ export function BookingForm({
           </Link>.
         </p>
 
-        <button type="submit" disabled={status.sending} className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white disabled:opacity-60">
+        <button
+          type="submit"
+          disabled={status.sending}
+          onClick={() => {
+            // Funil (tentativa) — não marque como conversão
+            if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+              window.gtag('event', 'lead_click', {
+                send_to: 'G-L4B1B0NQH2',
+                debug_mode: true,
+                form_id: 'booking',
+                form_name: 'Booking',
+                service,
+                locale,
+                page_location: window.location.href,
+                page_title: document.title,
+              })
+            }
+          }}
+          className="rounded-full bg-neutral-900 px-8 py-3 text-sm text-white disabled:opacity-60"
+        >
           {status.sending ? t('cta.sending') : t('cta.primary')}
         </button>
 
