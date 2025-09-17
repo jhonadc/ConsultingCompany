@@ -17,7 +17,7 @@ function Navigation() {
     { title: t('nav.regulations'), href: '/regulations' },
     { title: t('nav.process'), href: '/process' },
     { title: t('nav.about'), href: '/about' },
-    { title: t('nav.contact'), href: '/contact' },
+    { title: t('nav.contact'), href: '/contact' }
   ]
 
   return (
@@ -29,10 +29,10 @@ function Navigation() {
         {navItems.map((item) => (
           <li key={item.href} className="shrink-0">
             <LocaleLink
-              href={item.href} // ✅ correct: use item.href, not item.contact
+              href={item.href}
               className="transition hover:text-neutral-950 hover:underline underline-offset-4"
             >
-              {item.title} {/* ✅ correct: use item.title */}
+              {item.title}
             </LocaleLink>
           </li>
         ))}
@@ -71,22 +71,31 @@ export function Footer() {
           <Navigation />
         </div>
 
-        {/* Right: Imprint | Privacy */}
+        {/* Right: Imprint | Privacy | Cookie settings */}
         <div className="flex justify-center lg:justify-end text-xs text-neutral-500">
-          <div className="flex items-center gap-x-4">
+          <div className="flex flex-col items-center gap-y-2 sm:flex-row sm:gap-x-4">
             <LocaleLink
-              href="/legal/imprint" // ✅ locale-aware link
+              href="/legal/imprint"
               className="hover:text-neutral-800 hover:underline underline-offset-4"
             >
               {t('legal.imprint')}
             </LocaleLink>
-            <span aria-hidden>•</span>
+            <span aria-hidden className="hidden sm:inline">•</span>
             <LocaleLink
-              href="/legal/privacy" // ✅ locale-aware link
+              href="/legal/privacy"
               className="hover:text-neutral-800 hover:underline underline-offset-4"
             >
               {t('legal.privacy')}
             </LocaleLink>
+            <span aria-hidden className="hidden sm:inline">•</span>
+            {/* ✅ Cookie settings button */}
+            <button
+              type="button"
+              onClick={() => window.Cookiebot && window.Cookiebot.renew()}
+              className="hover:text-neutral-800 hover:underline underline-offset-4"
+            >
+              {t('legal.cookies')}
+            </button>
           </div>
         </div>
       </div>

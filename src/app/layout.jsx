@@ -1,9 +1,10 @@
+// src/app/layout.jsx
 import '@/styles/tailwind.css'
 import Script from 'next/script'
 import GATracker from './ga-tracker'
 import { Analytics } from '@vercel/analytics/next'
 import { Suspense } from 'react'
-import { getLocale } from 'next-intl/server' // ✅ robust: reads active locale from URL/middleware
+import { getLocale } from 'next-intl/server'
 
 export const metadata = {
   title: {
@@ -16,10 +17,10 @@ export const metadata = {
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID
+const COOKIEBOT_ID = process.env.NEXT_PUBLIC_COOKIEBOT_ID // <-- put this in .env.local
 
-// ✅ Make root layout async so we can await getLocale()
 export default async function Layout({ children }) {
-  const activeLocale = await getLocale() // 'en' | 'de' | 'pt' | 'pt-BR', etc.
+  const activeLocale = await getLocale()
 
   return (
     <html lang={activeLocale} className="h-full bg-neutral-950 text-base antialiased">
@@ -31,7 +32,18 @@ export default async function Layout({ children }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+
+        {/* Cookiebot MUST load before any Google tags */}
+        <Script
+          id="cookiebot"
+          strategy="beforeInteractive"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid={COOKIEBOT_ID ?? ''}
+          data-blockingmode="auto"
+          async
+        />
       </head>
+
       <body className="flex min-h-full flex-col">
         {/* Track client-side route changes (must be inside Suspense) */}
         <Suspense fallback={null}>
@@ -41,11 +53,14 @@ export default async function Layout({ children }) {
         <Analytics />
 
         {/* Google tag (gtag.js) – loaded once */}
-        <Script
-          id="ga-loader"
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        />
+        {GA_ID && (
+          <Script
+            id="ga-loader"
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          />
+        )}
+
         <Script id="ga-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
