@@ -1,4 +1,4 @@
-// app/[locale]/contact/page.jsx  (ou onde fica sua página)
+// app/[locale]/contact/page.jsx
 'use client'
 
 import { useId, useState } from 'react'
@@ -11,6 +11,16 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
+
+// helper seguro: só dispara se gtag existir; debug_mode só em dev
+function track(eventName, params = {}) {
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', eventName, {
+            ...(process.env.NODE_ENV !== 'production' ? { debug_mode: true } : {}),
+            ...params,
+        })
+    }
+}
 
 function TextInput({ label, required = false, type = 'text', name, ...props }) {
     const id = useId()
@@ -39,10 +49,12 @@ function TextInput({ label, required = false, type = 'text', name, ...props }) {
 
 function ContactForm() {
     const t = useTranslations('contact.form')
+    const locale = useLocale()
     const [status, setStatus] = useState({ sending: false, ok: null, msg: '' })
 
     async function onSubmit(e) {
         e.preventDefault()
+        if (status.sending) return
         setStatus({ sending: true, ok: null, msg: '' })
 
         const formEl = e.currentTarget
@@ -63,6 +75,17 @@ function ContactForm() {
 
             setStatus({ sending: false, ok: true, msg: t('status.success') })
             formEl.reset()
+
+            // ✅ Conversão no sucesso
+            track('generate_lead', {
+                form_id: formEl.id || 'contact-form',
+                form_name: formEl.getAttribute('aria-label') || 'Contact Form',
+                service: 'general',
+                locale,
+                page_location: typeof window !== 'undefined' ? window.location.href : '',
+                page_title: typeof document !== 'undefined' ? document.title : '',
+                value: 1,
+            })
         } catch (err) {
             console.error(err)
             setStatus({
@@ -75,7 +98,7 @@ function ContactForm() {
 
     return (
         <FadeIn className="lg:order-last">
-            <form onSubmit={onSubmit}>
+            <form id="contact-form" aria-label="Contact Form" onSubmit={onSubmit}>
                 <h2 className="font-display text-base font-semibold text-neutral-950">
                     {t('title')}
                 </h2>
@@ -97,7 +120,22 @@ function ContactForm() {
                 {/* Honeypot */}
                 <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" />
 
-                <Button type="submit" className="mt-10" disabled={status.sending}>
+                <Button
+                    type="submit"
+                    className="mt-10"
+                    disabled={status.sending}
+                    onClick={() => {
+                        // 🔹 Tentativa (topo de funil) — não marque como conversão
+                        track('lead_click', {
+                            form_id: 'contact-form',
+                            form_name: 'Contact Form',
+                            service: 'general',
+                            locale,
+                            page_location: typeof window !== 'undefined' ? window.location.href : '',
+                            page_title: typeof document !== 'undefined' ? document.title : '',
+                        })
+                    }}
+                >
                     {status.sending ? t('cta.sending') : t('cta.primary')}
                 </Button>
 
