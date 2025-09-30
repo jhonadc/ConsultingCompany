@@ -1,0 +1,82 @@
+{
+    "header": {
+        "title": "Datenschutzerklärung",
+        "subtitle": "Diese Erklärung erklärt, wie personenbezogene Daten verarbeitet werden, wenn Sie unsere Website nutzen oder uns kontaktieren. Wir verwenden Cookiebot-Einverständnisverwaltung zur Einhaltung der Datenschutzbestimmungen."
+    },
+    "controller": {
+        "title": "Verantwortlicher",
+        "name": "Jhonathan Campos",
+        "trading": "Handelnd als Oversight - Governance Studio",
+        "location": "Berlin, Deutschland",
+        "email": "jhonathanaugusto@gmail.com",
+        "note": "Bis zur Gründung einer separaten juristischen Person ist die oben genannte natürliche Person unter dem Handelsnamen \"Oversight - Governance Studio\" verantwortlich."
+    },
+    "collection": {
+        "title": "Welche Daten wir sammeln",
+        "intro": "Wir verarbeiten nur personenbezogene Daten, die Sie aktiv über das Kontaktformular oder per E-Mail bereitstellen:",
+        "items": {
+            "name": "Ihr Name",
+            "email": "Ihre E-Mail-Adresse",
+            "message": "Der Inhalt Ihrer Nachricht"
+        }
+    },
+    "cookies": {
+        "title": "Cookie-Verwaltung und Analysen",
+        "intro": "Wir verwenden Cookiebot (von Usercentrics A/S, Dänemark) als Consent Management Platform zur DSGVO-konformen Kontrolle von Cookies und Trackern auf unserer Website.",
+        "analyticsTitle": "Analyse-Dienste",
+        "analytics": "Mit Ihrer Einwilligung nutzen wir Google Analytics und Google Tag Manager über die Google Consent Mode Integration. Diese Dienste verarbeiten nur dann Daten, wenn Sie explizit in Statistik- und Marketing-Cookies einwilligen.",
+        "consentTitle": "Einwilligungsverwaltung",
+        "consent": "Ihre Einverständnispräferenzen werden sicher gespeichert, solange wir uns auf Ihre Einwilligung für die Verarbeitung stützen. Sie können Ihre Einwilligung jederzeit über die Cookie-Einstellungen ändern oder widerrufen."
+    },
+    "purposes": {
+        "title": "Zwecke und Rechtsgrundlagen",
+        "contactTitle": "Verarbeitung von Kontaktdaten",
+        "contactDesc": "Wir verarbeiten Ihre Daten ausschließlich zur Beantwortung Ihrer Anfrage und Verwaltung der entsprechenden Korrespondenz. Rechtsgrundlage:",
+        "contactBasis1": "Art. 6(1)(b) DSGVO",
+        "contactOr": "(vorvertragliche Maßnahmen) oder",
+        "contactBasis2": "Art. 6(1)(f) DSGVO (berechtigtes Interesse)",
+        "analyticsTitle": "Verarbeitung von Analysedaten",
+        "analyticsDesc": "Bei Ihrer Einwilligung verarbeiten wir Daten zum Verständnis der Website-Performance und des Nutzerverhaltens. Rechtsgrundlage:",
+        "analyticsBasis": "Art. 6(1)(a) DSGVO (Einwilligung)",
+        "analyticsWithout": "Ohne Einwilligung werden nur anonyme aggregierte Daten verarbeitet unter",
+        "analyticsLegitimate": "Art. 6(1)(f) DSGVO (berechtigtes Interesse)"
+    },
+    "processors": {
+        "title": "Dienstleister (Auftragsverarbeiter)",
+        "intro": "Wir nutzen folgende Dienstleister unter DSGVO-konformen Datenverarbeitungsbedingungen:",
+        "cookiebotName": "Cookiebot by Usercentrics A/S (Dänemark)",
+        "cookiebotDesc": "Consent Management Platform, die Cookies scannt, kontrolliert und Einverständnispräferenzen speichert (Daten in der EU gespeichert).",
+        "vercelName": "Vercel Inc.",
+        "vercelDesc": "Website-Hosting und -Bereitstellung (technischer Betrieb).",
+        "brevoName": "Brevo (Sendinblue SAS)",
+        "brevoDesc": "SMTP-Relay für Kontaktformular-Übermittlungen (E-Mail-Versandplattform mit Sitz in Paris, Frankreich).",
+        "googleName": "Google Ireland Limited / Google LLC",
+        "googleDesc": "Analytics und Tag Manager Services (nur bei Einwilligung zu Statistik-/Marketing-Cookies; funktioniert über Google Consent Mode).",
+        "transferTitle": "Internationale Übertragungen:",
+        "note": "Wenn Daten in die Vereinigten Staaten übertragen werden (z.B. Google LLC, Vercel), beruhen die Übertragungen auf dem EU-US Data Privacy Framework und/oder den Standardvertragsklauseln der Europäischen Kommission, je nach Anwendbarkeit."
+    },
+    "retention": {
+        "title": "Speicherdauer",
+        "contactTitle": "Kontaktanfragen",
+        "contact": "Wir bewahren Kontaktdaten nur so lange auf, wie es zur Bearbeitung Ihrer Anfrage erforderlich ist und um gesetzlichen Aufbewahrungspflichten (z.B. deutsches Handels- und Steuerrecht) nachzukommen.",
+        "consentTitle": "Einverständniserklärungen",
+        "consent": "Gespeichert solange wir uns auf Ihre Einwilligung für die Verarbeitung stützen, um die Einhaltung der Datenschutzbestimmungen zu belegen."
+    },
+    "rights": {
+        "title": "Ihre Rechte",
+        "content": "Sie haben die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO). Sie können Ihre Cookie-Einwilligung jederzeit ändern. Sie haben auch das Recht, eine Beschwerde bei einer Aufsichtsbehörde einzureichen.",
+        "authorityTitle": "Zuständige Behörde in Berlin:",
+        "authorityName": "Berliner Beauftragte für Datenschutz und Informationsfreiheit",
+        "authorityAddress": "Alt-Moabit 59–61, 10555 Berlin",
+        "authorityWebsite": "datenschutz-berlin.de"
+    },
+    "security": {
+        "title": "Sicherheit",
+        "content": "Wir verwenden TLS/SSL-Verschlüsselung für den Transport und sichere E-Mail-Übertragung über Brevo SMTP. Cookiebot verarbeitet Einverständnisdaten in sicheren EU-basierten Rechenzentren. Der Zugang zu allen Systemen ist nur auf autorisiertes Personal beschränkt."
+    },
+    "changes": {
+        "title": "Änderungen dieser Erklärung",
+        "content": "Wir können diese Erklärung aktualisieren, um Änderungen in unserer Verarbeitung widerzuspiegeln. Die neueste Version ist immer auf dieser Seite verfügbar.",
+        "updated": "Zuletzt aktualisiert"
+    }
+}

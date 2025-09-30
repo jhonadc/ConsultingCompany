@@ -1,0 +1,82 @@
+{
+    "header": {
+        "title": "Aviso de Privacidade",
+        "subtitle": "Este aviso explica como os dados pessoais são processados quando você usa nosso site ou entra em contato conosco. Usamos o gerenciamento de consentimento Cookiebot para garantir conformidade com as regulamentações de proteção de dados."
+    },
+    "controller": {
+        "title": "Controlador",
+        "name": "Jhonathan Campos",
+        "trading": "Operando como Oversight - Governance Studio",
+        "location": "Berlim, Alemanha",
+        "email": "jhonathanaugusto@gmail.com",
+        "note": "Até a incorporação de uma entidade jurídica separada, o controlador é a pessoa física acima operando sob o nome comercial \"Oversight - Governance Studio\"."
+    },
+    "collection": {
+        "title": "Quais dados coletamos",
+        "intro": "Processamos apenas dados pessoais que você fornece ativamente via formulário de contato ou e-mail:",
+        "items": {
+            "name": "Seu nome",
+            "email": "Seu endereço de e-mail",
+            "message": "O conteúdo da sua mensagem"
+        }
+    },
+    "cookies": {
+        "title": "Gerenciamento de cookies e análises",
+        "intro": "Usamos Cookiebot (da Usercentrics A/S, Dinamarca) como plataforma de gerenciamento de consentimento para controlar cookies e rastreadores em nosso site em conformidade com os requisitos do RGPD.",
+        "analyticsTitle": "Serviços de Análise",
+        "analytics": "Com seu consentimento, usamos Google Analytics e Google Tag Manager através da integração Google Consent Mode. Esses serviços só processam dados quando você consente explicitamente com cookies de estatísticas e marketing.",
+        "consentTitle": "Gerenciamento de Consentimento",
+        "consent": "Suas preferências de consentimento são armazenadas com segurança enquanto nos baseamos no seu consentimento para processamento. Você pode alterar ou retirar seu consentimento a qualquer momento usando as configurações de cookies."
+    },
+    "purposes": {
+        "title": "Finalidades e bases legais",
+        "contactTitle": "Processamento de Dados de Contato",
+        "contactDesc": "Processamos seus dados exclusivamente para responder à sua consulta e gerenciar a correspondência relacionada. Base legal:",
+        "contactBasis1": "Art. 6(1)(b) RGPD",
+        "contactOr": "(etapas anteriores a um contrato) ou",
+        "contactBasis2": "Art. 6(1)(f) RGPD (interesse legítimo)",
+        "analyticsTitle": "Processamento de Dados de Análise",
+        "analyticsDesc": "Quando você consente, processamos dados para entender o desempenho do site e comportamento do usuário. Base legal:",
+        "analyticsBasis": "Art. 6(1)(a) RGPD (consentimento)",
+        "analyticsWithout": "Sem consentimento, apenas dados agregados anônimos são processados sob",
+        "analyticsLegitimate": "Art. 6(1)(f) RGPD (interesse legítimo)"
+    },
+    "processors": {
+        "title": "Prestadores de serviço (processadores)",
+        "intro": "Usamos os seguintes prestadores de serviço sob termos de processamento de dados compatíveis com RGPD:",
+        "cookiebotName": "Cookiebot by Usercentrics A/S (Dinamarca)",
+        "cookiebotDesc": "Plataforma de gerenciamento de consentimento que escaneia, controla cookies e armazena preferências de consentimento (dados armazenados na UE).",
+        "vercelName": "Vercel Inc.",
+        "vercelDesc": "Hospedagem e entrega do site (operação técnica).",
+        "brevoName": "Brevo (Sendinblue SAS)",
+        "brevoDesc": "Relay SMTP para envios do formulário de contato (plataforma de entrega de e-mail baseada em Paris, França).",
+        "googleName": "Google Ireland Limited / Google LLC",
+        "googleDesc": "Serviços de Analytics e Tag Manager (apenas quando você consente com cookies de estatísticas/marketing; opera através do Google Consent Mode).",
+        "transferTitle": "Transferências Internacionais:",
+        "note": "Onde os dados são transferidos para os Estados Unidos (por exemplo, Google LLC, Vercel), as transferências dependem do EU–US Data Privacy Framework e/ou das Cláusulas Contratuais Padrão da Comissão Europeia, conforme aplicável."
+    },
+    "retention": {
+        "title": "Duração do armazenamento",
+        "contactTitle": "Consultas de Contato",
+        "contact": "Retemos dados de contato apenas pelo tempo necessário para processar sua solicitação e cumprir com os deveres de retenção estatutários (por exemplo, lei comercial e tributária alemã).",
+        "consentTitle": "Registros de Consentimento",
+        "consent": "Armazenados enquanto nos baseamos no seu consentimento para processamento, para demonstrar conformidade com as regulamentações de proteção de dados."
+    },
+    "rights": {
+        "title": "Seus direitos",
+        "content": "Você tem os direitos de acesso, retificação, apagamento, restrição, portabilidade e objeção (Arts. 15–21 RGPD). Você pode alterar seu consentimento de cookies a qualquer momento. Você também tem o direito de apresentar uma reclamação junto a uma autoridade supervisora.",
+        "authorityTitle": "Autoridade competente em Berlim:",
+        "authorityName": "Berliner Beauftragte für Datenschutz und Informationsfreiheit",
+        "authorityAddress": "Alt-Moabit 59–61, 10555 Berlim",
+        "authorityWebsite": "datenschutz-berlin.de"
+    },
+    "security": {
+        "title": "Segurança",
+        "content": "Usamos criptografia TLS/SSL para transporte e transmissão segura de e-mail via Brevo SMTP. Cookiebot processa dados de consentimento em centros de dados seguros baseados na UE. O acesso a todos os sistemas é restrito apenas ao pessoal autorizado."
+    },
+    "changes": {
+        "title": "Alterações neste aviso",
+        "content": "Podemos atualizar este aviso para refletir mudanças em nosso processamento. A versão mais recente está sempre disponível nesta página.",
+        "updated": "Última atualização"
+    }
+}

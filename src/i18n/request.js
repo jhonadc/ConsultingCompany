@@ -27,6 +27,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         cFooter,
         gdprDpo,
         aiOfficer,
+        imprint,
+        privacy,
     ] = await Promise.all([
         import(`../../locales/${locale}/common.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/ai-act.json`).then((m) => m.default).catch(() => ({})),
@@ -46,8 +48,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../locales/${locale}/c-rootlayout.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/c-footer.json`).then((m) => m.default).catch(() => ({})),
         import(`../../locales/${locale}/gdpr-dpo.json`).then(m => m.default).catch(() => ({})),
-        import(`../../locales/${locale}/ai-officer.json`).then(m => m.default).catch(() => ({})) // ✅ new
-
+        import(`../../locales/${locale}/ai-officer.json`).then(m => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/imprint.json`).then(m => m.default).catch(() => ({})),
+        import(`../../locales/${locale}/privacy.json`).then(m => m.default).catch(() => ({})),
     ])
 
     return {
@@ -72,7 +75,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
             'c-footer': cFooter,
             ...gdprDpo,
             ...aiOfficer,
-
+            imprint,
+            privacy,
         }
     }
 })

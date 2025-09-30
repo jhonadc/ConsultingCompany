@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 'use client'
 
 import Link from 'next/link'
@@ -88,7 +87,6 @@ export function Footer() {
               {t('legal.privacy')}
             </LocaleLink>
             <span aria-hidden className="hidden sm:inline">•</span>
-            {/* ✅ Cookie settings button */}
             <button
               type="button"
               onClick={() => window.Cookiebot && window.Cookiebot.renew()}

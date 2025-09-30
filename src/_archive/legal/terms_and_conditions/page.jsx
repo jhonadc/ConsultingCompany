@@ -1,130 +1,168 @@
-// src/app/legal/privacy/page.jsx
+'use client'
+
 import { Container } from '@/components/Container'
 import { SectionIntro } from '@/components/SectionIntro'
 import { FadeIn } from '@/components/FadeIn'
-
-export const metadata = {
-    title: 'Privacy Notice — Compliance Studio',
-    description:
-        'GDPR privacy notice for the Compliance Studio website. No cookies, no analytics. Contact data processed only to handle enquiries.',
-}
+import { useTranslations } from 'next-intl'
 
 export default function PrivacyPage() {
+    const t = useTranslations('privacy')
+
     return (
         <Container className="mt-24 sm:mt-32 lg:mt-40">
-            <SectionIntro title="Privacy Notice">
+            <SectionIntro title={t('header.title')}>
                 <p className="text-md">
-                    This notice explains how personal data is processed when you use our website or contact us.
-                    We do not use cookies, analytics, tracking pixels, or advertising scripts.
+                    {t('header.subtitle')}
                 </p>
             </SectionIntro>
 
             <FadeIn className="mx-auto mt-10 max-w-3xl space-y-10">
                 {/* Controller */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Controller</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('controller.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        <strong>Jhonathan Campos</strong>, trading as <strong>Oversight - Governance Studio”</strong><br />
-                        Berlin, Germany<br />
-                        Email: <a href="mailto:jhonathanaugusto@gmail.com" className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900">contact@yourdomain.com</a>
+                        {t.rich('controller.details', {
+                            br: () => <br />,
+                            strong: (chunks) => <strong>{chunks}</strong>,
+                            email: (chunks) => (
+                                <a href="mailto:jhonathanaugusto@gmail.com" className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900">
+                                    {chunks}
+                                </a>
+                            )
+                        })}
                     </p>
-                    <p className="mt-3 text-neutral-700">
-                        Until incorporation of a separate legal entity, the controller is the natural person above operating under the trade name “Compliance Studio”.
+                    <p className="mt-3 text-md text-neutral-700">
+                        {t('controller.note')}
                     </p>
                 </section>
 
                 {/* What we collect */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">What data we collect</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('collection.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We only process personal data that you actively provide via the contact form or email:
+                        {t('collection.intro')}
                     </p>
                     <ul className="mt-3 list-disc pl-5 text-neutral-700">
-                        <li>Your name</li>
-                        <li>Your email address</li>
-                        <li>The content of your message</li>
+                        <li>{t('collection.items.name')}</li>
+                        <li>{t('collection.items.email')}</li>
+                        <li>{t('collection.items.message')}</li>
                     </ul>
+                </section>
+
+                {/* Cookie Management */}
+                <section>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('cookies.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We do <strong>not</strong> use cookies or analytics on this website.
+                        {t.rich('cookies.intro', {
+                            strong: (chunks) => <strong>{chunks}</strong>
+                        })}
+                    </p>
+                    <p className="mt-3 text-md text-neutral-700">
+                        {t('cookies.analytics')}
+                    </p>
+                    <p className="mt-3 text-md  text-neutral-700">
+                        {t('cookies.consent')}
                     </p>
                 </section>
 
                 {/* Purposes & legal bases */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Purposes and legal bases</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('purposes.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We process your data solely to respond to your enquiry and manage related correspondence.
-                        The legal basis is{' '}
-                        <span className="whitespace-nowrap">Art. 6(1)(b) GDPR</span> (steps prior to a contract)
-                        or <span className="whitespace-nowrap">Art. 6(1)(f) GDPR</span> (legitimate interest in handling enquiries).
+                        {t.rich('purposes.contact', {
+                            span: (chunks) => <span className="whitespace-nowrap">{chunks}</span>
+                        })}
+                    </p>
+                    <p className="mt-3 text-neutral-700">
+                        {t.rich('purposes.analytics', {
+                            span: (chunks) => <span className="whitespace-nowrap">{chunks}</span>
+                        })}
                     </p>
                 </section>
 
                 {/* Processors */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Service providers (processors)</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('processors.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We use the following service providers under GDPR-compliant data processing terms:
+                        {t('processors.intro')}
                     </p>
                     <ul className="mt-3 space-y-2 text-neutral-700">
                         <li>
-                            <strong>Vercel Inc.</strong> — website hosting and delivery (technical operation).
+                            {t.rich('processors.cookiebot', {
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
                         </li>
                         <li>
-                            <strong>Brevo (Sendinblue SAS)</strong> — SMTP relay for contact form submissions (email delivery platform based in Paris, France).
+                            {t.rich('processors.vercel', {
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
                         </li>
                         <li>
-                            <strong>Google Workspace — Google Ireland Limited</strong> (with Google LLC, USA as relevant) — mailbox to receive and reply to your messages.
+                            {t.rich('processors.brevo', {
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
+                        </li>
+                        <li>
+                            {t.rich('processors.google', {
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
                         </li>
                     </ul>
                     <p className="mt-3 text-neutral-700">
-                        Where data is transferred to the United States (e.g., Google LLC), transfers rely on the EU–US Data Privacy Framework and/or the European Commission’s Standard Contractual Clauses, as applicable.
+                        {t('processors.note')}
                     </p>
                 </section>
 
                 {/* Retention */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Storage duration</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('retention.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We retain contact enquiries only as long as necessary to process your request and to comply with statutory retention duties (e.g., German commercial and tax law).
+                        {t('retention.contact')}
+                    </p>
+                    <p className="mt-3 text-neutral-700">
+                        {t('retention.consent')}
                     </p>
                 </section>
 
                 {/* Rights */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Your rights</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('rights.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        You have the rights of access, rectification, erasure, restriction, portability, and objection (Arts. 15–21 GDPR). You also have the right to lodge a complaint with a supervisory authority.
+                        {t('rights.content')}
                     </p>
                     <p className="mt-3 text-neutral-700">
-                        Competent authority in Berlin: <strong>Berliner Beauftragte für Datenschutz und Informationsfreiheit</strong>,
-                        Alt-Moabit 59–61, 10555 Berlin — <a
-                            href="https://www.datenschutz-berlin.de"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
-                        >
-                            datenschutz-berlin.de
-                        </a>.
+                        {t.rich('rights.authority', {
+                            strong: (chunks) => <strong>{chunks}</strong>,
+                            link: (chunks) => (
+                                <a
+                                    href="https://www.datenschutz-berlin.de"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
+                                >
+                                    {chunks}
+                                </a>
+                            )
+                        })}
                     </p>
                 </section>
 
                 {/* Security */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Security</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('security.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We use TLS/SSL encryption for transport and secure email transmission via Brevo SMTP. Access to mailboxes is restricted to authorised personnel only.
+                        {t('security.content')}
                     </p>
                 </section>
 
                 {/* Changes */}
                 <section>
-                    <h2 className="font-display text-xl font-semibold text-neutral-950">Changes to this notice</h2>
+                    <h2 className="font-display text-xl font-semibold text-neutral-950">{t('changes.title')}</h2>
                     <p className="mt-3 text-neutral-700">
-                        We may update this notice to reflect changes in our processing. The latest version is always available on this page.
+                        {t('changes.content')}
                     </p>
-                    <p className="mt-3 text-neutral-500 text-sm">
-                        Last updated: {new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}
+                    <p className="mt-3 text-neutral-500 text-md">
+                        {t('changes.updated')}: {new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}
                     </p>
                 </section>
             </FadeIn>
