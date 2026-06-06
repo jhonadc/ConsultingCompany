@@ -148,7 +148,7 @@ function Header({ panelId, icon: Icon, expanded, onToggle, toggleRef, invert = f
 
 function NavigationRow({ children }) {
   return (
-    <div className="even:mt-px sm:bg-neutral-950">
+    <div className="mt-px first:mt-0 sm:bg-neutral-950">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -178,7 +178,11 @@ function Navigation() {
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/about">{t('nav.about')}</NavigationItem>
+        <NavigationItem href="/blog">{t('nav.blog')}</NavigationItem>
+      </NavigationRow>
+      <NavigationRow>
         <NavigationItem href="/contact">{t('nav.contact')}</NavigationItem>
+        <div aria-hidden className="hidden sm:block" />
       </NavigationRow>
     </nav>
   )

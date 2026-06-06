@@ -16,6 +16,7 @@ function Navigation() {
     { title: t('nav.regulations'), href: '/regulations' },
     { title: t('nav.process'), href: '/process' },
     { title: t('nav.about'), href: '/about' },
+    { title: t('nav.blog'), href: '/blog' },
     { title: t('nav.contact'), href: '/contact' }
   ]
 

@@ -1,17 +1,21 @@
 import glob from 'fast-glob'
 
-async function loadEntries(directory, metaName) {
+async function loadEntries(directory, metaName, options = {}) {
+  const contentDir = options.contentDir ?? directory
+  const routeBase = options.routeBase ?? `/${directory}`
+  const contentPattern = options.contentPattern ?? '**/page.mdx'
+
   return (
     await Promise.all(
-      (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
+      (await glob(contentPattern, { cwd: `src/app/${contentDir}` })).map(
         async (filename) => {
-          let metadata = (await import(`../app/${directory}/${filename}`))[
+          let metadata = (await import(`../app/${contentDir}/${filename}`))[
             metaName
           ]
           return {
             ...metadata,
             metadata,
-            href: `/${directory}/${filename.replace(/\/page\.mdx$/, '')}`,
+            href: `${routeBase}/${filename.replace(/\/(?:page|content)\.mdx$/, '')}`,
           }
         },
       ),
@@ -20,7 +24,11 @@ async function loadEntries(directory, metaName) {
 }
 
 export function loadArticles() {
-  return loadEntries('blog', 'article')
+  return loadEntries('blog', 'article', {
+    contentDir: '[locale]/blog',
+    routeBase: '/blog',
+    contentPattern: '**/content.mdx',
+  })
 }
 
 export function loadCaseStudies() {
