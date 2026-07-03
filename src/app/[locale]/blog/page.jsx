@@ -4,11 +4,33 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { loadArticles } from '@/lib/mdx'
+import { languageAlternates } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Blog',
-  description:
-    'Insights, updates, and practical guidance on compliance, AI governance, and regulations.',
+const blogMetadata = {
+  en: {
+    title: 'Blog',
+    description:
+      'Insights, updates, and practical guidance on compliance, AI governance, and regulations.',
+  },
+  pt: {
+    title: 'Blog',
+    description:
+      'Análises, atualizações e orientações práticas sobre compliance, governança de IA e regulação.',
+  },
+  de: {
+    title: 'Blog',
+    description:
+      'Analysen, Updates und praktische Orientierung zu Compliance, KI-Governance und Regulierung.',
+  },
+}
+
+export function generateMetadata({ params }) {
+  const metadata = blogMetadata[params.locale] ?? blogMetadata.en
+
+  return {
+    ...metadata,
+    alternates: languageAlternates('/blog'),
+  }
 }
 
 export default async function Blog({ params }) {

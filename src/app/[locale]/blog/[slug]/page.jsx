@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import glob from 'fast-glob'
 
 import BlogArticleWrapper from '@/app/blog/wrapper'
+import { languageAlternates } from '@/lib/seo'
 
 async function loadArticle(slug, locale) {
   if (!/^[a-z0-9-]+$/.test(slug)) {
@@ -44,7 +45,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const entry = await loadArticle(params.slug, params.locale)
 
-  return entry?.metadata ?? {}
+  if (!entry) return {}
+
+  return {
+    ...entry.metadata,
+    alternates: languageAlternates(`/blog/${params.slug}`),
+  }
 }
 
 export default async function BlogPost({ params }) {
