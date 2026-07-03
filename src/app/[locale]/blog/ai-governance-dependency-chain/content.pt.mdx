@@ -1,0 +1,155 @@
+import imageJhonathanCampos from '@/images/JhonathanPhoto.jpg'
+import dependencyChainImage from './ai-governance-dependency-chain.png'
+
+export const article = {
+  date: '2026-07-03',
+  title: 'A governança de IA entrou na cadeia de dependências',
+  description:
+    'Uma análise prática sobre por que a governança de IA agora alcança resiliência cibernética, fornecedores, infraestrutura, caminhos de recuperação e evidências operacionais.',
+  author: {
+    name: 'Jhonathan Campos',
+    role: 'Founder',
+    image: { src: imageJhonathanCampos },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+<Typography className="[&_p]:text-justify">
+
+<div className="my-10 max-sm:-mx-6">
+  <img
+    src={dependencyChainImage.src}
+    alt="Documentos técnicos em camadas e uma placa de circuito representando a governança de IA na cadeia de dependências"
+    className="w-full rounded-4xl object-cover"
+  />
+</div>
+
+**Seções:** [Sinais de junho](#sinais-de-junho) · [Governança no nível do modelo](#governanca-no-nivel-do-modelo) · [Risco cibernético](#risco-cibernetico) · [Infraestrutura](#infraestrutura) · [Regulação europeia](#regulacao-europeia) · [Frameworks](#frameworks) · [Inventários de IA](#inventarios-de-ia) · [Resiliência de IA](#resiliencia-de-ia) · [Evidências](#evidencias) · [Convergência](#convergencia) · [Teste final](#teste-final) · [Fontes](#fontes)
+
+<a id="sinais-de-junho" />
+
+## Os sinais de junho situam a governança de IA no contexto da resiliência cibernética e da infraestrutura estratégica
+
+Em 22 de junho de 2026, as agências de cibersegurança do Five Eyes emitiram uma declaração que deve ser lida como um alerta sobre as condições operacionais em torno da IA. As agências descreveram um ambiente cibernético no qual a IA está aumentando a velocidade, a escala e a complexidade das ameaças, e no qual a IA de fronteira pode alterar capacidades ofensivas e defensivas em questão de meses, não de anos. Elas também colocaram a resposta no nível da liderança, porque a resiliência cibernética agora afeta a continuidade dos negócios, a confiança do mercado e o valor de longo prazo.
+
+A assinatura da Declaração Pax Silica pela Comissão Europeia, em nome da União Europeia, em 25 de junho de 2026, pertence à mesma discussão, embora o documento esteja em outra frente institucional. A Comissão vinculou a capacidade em IA a cadeias de suprimentos de semicondutores seguras e resilientes, à coordenação com aliados e parceiros confiáveis, a oportunidades de negócio europeias, ao progresso tecnológico e à segurança econômica. A IA aparece ao usuário como software, mas o próprio enquadramento da Comissão confirma que a infraestrutura subjacente se tornou estratégica.
+
+O elo entre esses dois desenvolvimentos é a cadeia de dependências que sustenta os sistemas de IA. O alerta do Five Eyes diz respeito ao uso hostil da IA em operações cibernéticas. O Pax Silica diz respeito à infraestrutura que torna a IA possível. Juntos, eles sustentam uma afirmação mais restrita e mais defensável: a governança de IA está se afastando de uma governança limitada ao modelo e se voltando para os sistemas, fornecedores e caminhos de recuperação que permitem que o modelo opere.
+
+<a id="governanca-no-nivel-do-modelo" />
+
+## A governança no nível do modelo deixa risco operacional demais fora do escopo
+
+A primeira onda de governança de IA foi moldada pelo modelo. As equipes de conformidade aprenderam a perguntar o que o sistema faz, quais dados utiliza, se o resultado é explicável, se um ser humano pode intervir, se as pessoas afetadas recebem as informações necessárias e se o sistema é proibido, de alto risco, sujeito a obrigações de transparência, abrangido por deveres aplicáveis a modelos de IA de finalidade geral ou situado fora dos níveis mais rigorosos do Regulamento de IA da UE. Esse trabalho continua necessário, embora os sinais recentes de cibersegurança e infraestrutura mostrem que a governança no nível do modelo deixa muitos riscos operacionais sem tratamento.
+
+Um programa sério de governança de IA precisa agora perguntar quem fornece o modelo, quais serviços de nuvem o sustentam, quais fontes de dados o alimentam, qual camada de retrieval lhe fornece contexto, qual sistema de identidade controla o acesso, quais fornecedores podem alterar o sistema de fora da organização e quais logs mostrarão o que aconteceu quando algo falhar. Essas perguntas são consequência operacional da construção de sistemas de IA sobre modelos de terceiros, infraestrutura externa e premissas de cibersegurança que mudam rapidamente.
+
+Uma ferramenta de IA em produção raramente é um único objeto em termos operacionais, já que normalmente combina um modelo, uma camada de dados, uma camada de integração, um contrato com fornecedor e um processo de negócio. O usuário vê uma única interface, e a equipe responsável precisa compreender a cadeia por trás dela. Por isso, a governança da pilha de IA é uma estrutura mais útil do que a governança do modelo isolado. Ela abrange o comportamento visível do sistema, incluindo precisão, robustez, manipulação por prompts e controles de saída. Também abrange os dados e a infraestrutura que moldam esse comportamento, especialmente sistemas de retrieval, direitos de acesso, serviços de nuvem, controles de identidade e relações com fornecedores. Quando sistemas de IA passam a sustentar processos reais de negócio, resposta a incidentes e planejamento de continuidade também entram no mesmo arquivo de governança.
+
+<a id="risco-cibernetico" />
+
+## A IA reduz o tempo disponível para compreender e responder ao risco cibernético
+
+A declaração do Five Eyes muda o ritmo da discussão, porque a governança cibernética tradicional frequentemente pressupõe que uma organização tem tempo para identificar uma vulnerabilidade, avaliar a exposição, aplicar patches no sistema afetado, informar a liderança e ajustar controles. As agências afirmam que a IA reduz barreiras para agentes mal-intencionados, aumenta a velocidade e a complexidade dos ataques e encurta o intervalo entre a descoberta de uma vulnerabilidade e sua exploração. As ações recomendadas incluem reduzir a superfície de ataque, acelerar a aplicação de patches, tratar sistemas legados, fortalecer controles de identidade e acesso, preparar-se para incidentes, aplicar práticas de segurança desde o projeto e segurança por padrão, e contar com defesa em profundidade.
+
+A mesma pressão surge dentro dos próprios sistemas de IA, onde problemas comuns de segurança de aplicação operam dentro de uma arquitetura mais instável. O comportamento pode ser moldado por prompts, embeddings, contexto de retrieval, dados de treinamento, atualizações de modelo e integrações com ferramentas. Um modelo pode ser manipulado pelo mesmo canal de linguagem que deveria utilizar. Um sistema de retrieval pode expor material confidencial por meio de uma resposta que pareça normal para o usuário. Um agente habilitado por ferramentas pode executar uma ação porque a fronteira entre instrução, contexto e autoridade foi mal desenhada.
+
+O trabalho da OWASP de 2025 sobre riscos em aplicações de LLM e IA generativa oferece uma linguagem prática para esse problema. Sua lista de 2025 abrange riscos como prompt injection, divulgação de informações sensíveis, exposição da cadeia de suprimentos, envenenamento de dados e modelos, autonomia excessiva, vulnerabilidades em vetores e embeddings, desinformação e consumo irrestrito. Esses são riscos de produção que equipes de segurança, produto e governança precisam testar antes da implantação e monitorar depois.
+
+O MITRE ATLAS acrescenta a camada adversarial ao tratar ataques a sistemas habilitados por IA como um problema de segurança com táticas e técnicas próprias. A descrição oficial do ATLAS o apresenta como uma base de conhecimento sobre táticas e técnicas adversárias contra sistemas de IA, enquanto o relatório SAFE-AI do MITRE descreve o ATLAS como baseado em observações de ataques reais, exercícios de red team em IA e pesquisa de segurança. Uma equipe de governança que não consegue descrever como um sistema de IA pode ser atacado não pode afirmar com credibilidade que o sistema está adequadamente governado.
+
+A IA defensiva cria o mesmo problema de governança por outro ângulo, já que as agências do Five Eyes também orientam defensores a usar IA para detectar vulnerabilidades mais cedo, melhorar a qualidade do software, monitorar comportamentos incomuns e responder mais rapidamente a incidentes. Uma ferramenta de segurança que utiliza IA ainda precisa de controles de acesso, logs, regras de escalonamento, monitoramento de precisão e supervisão de mudanças feitas por fornecedores. Caso contrário, a organização passa a depender de um sistema que não delimitou adequadamente.
+
+<a id="infraestrutura" />
+
+## A resiliência da IA depende de infraestrutura que empresas muitas vezes não mapeiam com precisão suficiente
+
+O Pax Silica amplia a análise porque torna visível a realidade física da IA. A Comissão vinculou IA a cadeias de suprimentos de semicondutores e segurança econômica porque capacidades avançadas em IA dependem de infraestrutura que fica fora do próprio modelo. O anúncio não cria obrigações diretas de governança de IA no nível das empresas. Sua importância para este artigo está em sua força indicativa: ele mostra que a Comissão trata capacidade em IA, resiliência de semicondutores e segurança econômica como questões conectadas.
+
+O mesmo ponto de infraestrutura se aplica no nível empresarial. Muitas organizações adotam IA por meio de APIs externas, plataformas de nuvem em hiperescala, fornecedores de foundation models, bases vetoriais e ferramentas de monitoramento operadas por terceiros. A adoção é rápida porque outra entidade já construiu a pilha. A questão de resiliência é se a organização compreende de que passou a depender.
+
+Um fornecedor de modelo pode alterar seus termos, modificar logs, mudar o comportamento do modelo, restringir acesso, alterar locais de processamento ou sofrer uma interrupção. Um provedor de nuvem pode ter um incidente regional. Um subcontratado pode entrar na cadeia de tratamento sem avaliação adequada. Um componente de código aberto pode se tornar vulnerável. Uma base de retrieval pode expor documentos além do contexto pretendido. Uma escassez de chips, restrição de exportação ou perturbação geopolítica pode afetar disponibilidade e custo no nível da infraestrutura. Uma política de IA não resolve esses problemas, porque a questão está na arquitetura, nos contratos e no planejamento de recuperação.
+
+A pergunta prática para serviços críticos habilitados por IA é se a organização possui uma estratégia de saída, um modo de contingência e uma tolerância documentada a interrupções. Conselhos e diretorias não precisam compreender a fabricação de semicondutores em detalhe técnico. Precisam saber se serviços críticos dependem de um grupo restrito de fornecedores, regiões, modelos ou tecnologias com opções fracas de recuperação.
+
+<a id="regulacao-europeia" />
+
+## A regulação europeia está criando expectativas sobrepostas em torno de segurança, capacidade de recuperação e evidências
+
+A regulação europeia já aponta nessa direção, embora os regimes jurídicos permaneçam separados. O Regulamento de IA da UE incorpora a cibersegurança à conformidade de sistemas de IA de alto risco. O artigo 15 do Regulamento (UE) 2024/1689 exige que sistemas de IA de alto risco alcancem níveis adequados de precisão, robustez e cibersegurança ao longo de todo o seu ciclo de vida. Ele também se refere a vulnerabilidades específicas de IA, incluindo ataques que manipulam dados de treinamento, componentes pré-treinados, entradas projetadas para causar erros no modelo, ataques à confidencialidade e falhas do modelo.
+
+A NIS2 aborda o mesmo problema pelo lado da cibersegurança, pois estabelece uma estrutura para a cibersegurança em 18 setores críticos, introduz requisitos de gestão de risco e comunicação de incidentes para mais entidades, e leva a responsabilidade da administração para o nível de direção. Sua relevância para a governança de IA está no fato de que sistemas de IA operam cada vez mais dentro de ambientes digitais que a NIS2 busca tornar mais seguros.
+
+O Cyber Resilience Act acrescenta a camada de produtos. A Comissão afirma que o CRA entrou em vigor em 10 de dezembro de 2024, que as obrigações de notificação se aplicam a partir de 11 de setembro de 2026 e que as obrigações principais se aplicam a partir de 11 de dezembro de 2027. Sua estrutura estende a cibersegurança ao longo do ciclo de vida para produtos com elementos digitais, o que é relevante quando sistemas de IA estão incorporados a produtos ou dependem de componentes de produto que carregam suas próprias obrigações de segurança.
+
+A DORA segue a mesma lógica no setor financeiro. O Regulamento (UE) 2022/2554 é um regulamento do setor financeiro, e o próprio resumo da UE o descreve como um conjunto de regras uniformes sobre a segurança de redes e sistemas de informação de entidades financeiras, como bancos, seguradoras e empresas de investimento. Ele exige que essas entidades resistam, respondam e se recuperem de interrupções e ameaças relacionadas a TIC. Seu escopo não se estende a todos os sistemas de IA, mas sua estrutura mostra como o direito da UE trata a dependência de TIC quando a resiliência operacional passa a ser regulada.
+
+Essas leis têm escopos, gatilhos jurídicos e caminhos de supervisão diferentes. Sua sobreposição prática está no desenho seguro, no monitoramento do ciclo de vida, na prontidão para incidentes, no controle de fornecedores, na capacidade de recuperação e nas evidências. Quando um sistema de IA dá suporte a um processo crítico de negócio, a organização precisa de um arquivo de governança capaz de lidar com risco de IA, risco cibernético, risco de fornecedores e risco de continuidade sem obrigar cada equipe a trabalhar com um mapa diferente.
+
+<a id="frameworks" />
+
+## Frameworks devem responder a questões operacionais, não decorar o arquivo de governança
+
+Frameworks só são úteis quando respondem a uma questão operacional concreta. O NIST Cybersecurity Framework 2.0 ajuda a conectar a segurança da IA ao risco cibernético corporativo porque suas funções centrais são Governar, Identificar, Proteger, Detectar, Responder e Recuperar, e o NIST afirma que a estrutura busca ajudar organizações a operacionalizar a gestão de riscos de cibersegurança. O NIST AI Risk Management Framework ajuda a mapear e medir o risco de IA ao longo do ciclo de vida do sistema por meio das funções Governar, Mapear, Medir e Gerenciar, sendo que Governar se aplica aos processos de gestão de risco de IA como um todo, enquanto as demais funções se aplicam em contextos específicos do sistema.
+
+A ISO/IEC 42001 integra a governança de IA a uma estrutura de sistema de gestão, pois a ISO a descreve como uma norma que especifica requisitos e orientações para estabelecer, implementar, manter e melhorar continuamente um sistema de gestão de IA. A ISO/IEC 27001 mantém os controles de IA conectados à segurança da informação, pois a ISO a descreve como uma norma para estabelecer, implementar, manter e melhorar continuamente um sistema de gestão da segurança da informação.
+
+Os frameworks técnicos preenchem lacunas que sistemas de gestão deixam em aberto. A OWASP fornece linguagem no nível da aplicação para vulnerabilidades em LLMs e IA generativa. O MITRE ATLAS apoia a modelagem de ameaças adversariais para sistemas habilitados por IA. A estrutura multicamadas da ENISA foi projetada expressamente para orientar autoridades nacionais competentes e partes interessadas em IA na proteção de sistemas, operações e processos de IA. A orientação do NCSC para desenvolvimento seguro de IA se aplica a fornecedores de sistemas de IA, inclusive aqueles construídos com ferramentas externas ou APIs, e afirma que a implementação deve ajudar a construir sistemas de IA que funcionem conforme pretendido, permaneçam disponíveis quando necessário e não revelem dados sensíveis a pessoas não autorizadas.
+
+O objetivo é usar o instrumento adequado onde o risco exige.
+
+<a id="inventarios-de-ia" />
+
+## Inventários de IA só se tornam úteis quando mapeiam as dependências por trás do sistema
+
+O centro operacional dessa mudança é o inventário. Muitos programas de governança de IA começam com um inventário de ativos de IA, o que é necessário quando organizações ainda não sabem quais sistemas estão sendo utilizados. Esse inventário se torna superficial quando se limita ao nome do sistema, ao responsável da área de negócio, ao caso de uso e à categoria de risco. O próximo passo é um inventário de dependências de IA, que é o método de governança que proponho, e não um requisito expressamente mencionado no Regulamento de IA da UE, na NIS2, no CRA ou na DORA.
+
+Um inventário de dependências pergunta o que deve permanecer disponível, seguro, lícito e recuperável para que o sistema de IA continue funcionando. No nível do modelo, deve registrar o fornecedor, a versão do modelo, a política de mudanças e a opção de fallback. No nível dos dados, deve registrar sistemas de origem, prompts, embeddings, índices de retrieval, dados pessoais, dados sensíveis, retenção e linhagem. No nível da infraestrutura e dos fornecedores, deve registrar serviços de nuvem, controles de identidade, logs, monitoramento, subcontratados, direitos de auditoria, obrigações de notificação de incidentes, portabilidade e direitos de saída. No nível operacional, deve registrar o processo de negócio, a intervenção humana, o modo de operação degradada, as expectativas de recuperação e a pessoa que aceita o risco residual.
+
+Um chatbot de atendimento ao cliente mostra por que isso importa. Ele pode depender de um fornecedor de foundation model, um ambiente de nuvem, uma base de retrieval, dados do histórico do cliente, controles de autenticação, filtros de conteúdo, regras de escalonamento, infraestrutura de logs e um contrato com fornecedor. Se a camada de retrieval vaza documentos, a questão é privacidade e segurança. Se um prompt manipula o sistema para acionar uma ferramenta, a questão é controle de acesso e governança de produto. Se o fornecedor do modelo sofre uma interrupção, a questão é continuidade. Se o fornecedor altera os termos de tratamento de dados, a questão é compras, proteção de dados e conformidade. Tratar toda a cadeia como risco genérico de IA é impreciso demais, e separá-la em arquivos desconexos deixa a organização sem uma visão defensável do sistema.
+
+<a id="resiliencia-de-ia" />
+
+## Um modelo sério de resiliência de IA deve cobrir modelagem de ameaças, análise de fornecedores, testes e fallback
+
+Um modelo operacional sério deve exigir modelagem de ameaças específica para IA antes da implantação, especialmente quando os sistemas se conectam a dados internos, usuários externos ou ferramentas operacionais. As análises de fornecedores devem examinar segurança do modelo, tratamento de dados, subcontratados, direitos de auditoria, portabilidade e saída. Os testes devem incluir prompt injection, divulgação de informações sensíveis, autonomia excessiva, vazamento em retrieval e falha de dependência. Playbooks de incidentes devem cobrir comprometimento do modelo, alterações no modelo feitas pelo fornecedor, vazamento de dados por retrieval, uso indevido de acesso a ferramentas, queda crítica de desempenho e interrupção do fornecedor.
+
+O mesmo modelo operacional precisa de planejamento de fallback, pois um sistema de IA que sustenta um processo crítico deve ter um modo degradado definido. A organização deve saber se o processo pode continuar sem o sistema, quem assume a operação, quais controles manuais são reativados, se outro fornecedor pode ser utilizado, quais dados precisariam ser transferidos e qual nível de interrupção a empresa consegue tolerar. Nesse ponto, a governança de IA se traduz, em termos concretos, em resiliência operacional.
+
+<a id="evidencias" />
+
+## Uma governança defensável depende de evidências que possam ser inspecionadas por áreas jurídicas, técnicas e de liderança
+
+A parte mais subestimada da governança de IA é a comprovação. Uma política registra a intenção, mas um arquivo de governança defensável contém o registro de classificação, o mapa de dependências, as evidências de testes e o material de preparação que mostram como a organização chegou às suas decisões. Para resiliência de IA, esse arquivo deve mostrar a finalidade do sistema, a alocação de funções, os gatilhos jurídicos aplicáveis, as dependências de modelos e fornecedores, os testes de segurança, os testes de prompt injection, os controles de acesso a dados, o monitoramento, a gestão de mudanças, os playbooks de incidentes, os planos de continuidade e a aceitação do risco residual.
+
+Esse ônus de evidência aproxima privacidade, cibersegurança e resiliência operacional na prática. A equipe de privacidade precisa da linhagem de dados e da base jurídica. A equipe de segurança precisa de logs, controles de acesso e registros de testes. A área de compras precisa de compromissos dos fornecedores e direitos de saída. A área de produto precisa de limites de implantação e caminhos de escalonamento. Conselho e diretoria precisam do risco residual e do progresso das medidas corretivas. Uma autoridade reguladora pode solicitar registros de classificação, testes e supervisão. O próprio sistema gera essas perguntas, de modo que as evidências não podem ser construídas em silos depois do fato.
+
+O trabalho mais sólido de governança de IA será o conjunto de registros que mostra o que a organização sabia, o que testou, o que aceitou, o que mitigou e quem aprovou o risco residual. É também para esse ponto que o mercado está se movendo. Organizações ainda precisarão de políticas, treinamentos e comitês de governança, mas esses instrumentos só terão importância se produzirem evidências capazes de resistir ao escrutínio jurídico, técnico e de liderança.
+
+<a id="convergencia" />
+
+## A convergência só funciona quando cada disciplina mantém seu método e seu limite
+
+Essa convergência deve permanecer precisa. Governança de IA, cibersegurança, privacidade, compras e resiliência operacional têm fontes jurídicas, métodos, culturas profissionais e limites de ação diferentes. Tratá-las como uma única função vaga de risco enfraqueceria a governança. O ponto prático é mais específico: essas disciplinas agora compartilham infraestrutura, evidências e caminhos de escalonamento suficientes para que gerenciá-las isoladamente crie pontos cegos.
+
+A profundidade necessária varia conforme o caso de uso. Uma ferramenta interna de resumo de baixo risco não precisa da mesma arquitetura de resiliência que um sistema de IA utilizado em operações de cibersegurança, saúde, crédito, emprego, educação, serviços públicos ou infraestrutura crítica. Um modelo baseado em risco continua essencial, porque a proporcionalidade impede que a governança se torne mera formalidade documental. A disciplina está em decidir onde a cadeia de dependências é mais importante, documentar esse julgamento e revisá-lo quando o sistema, o fornecedor, a fonte de dados, a integração ou o uso de negócio mudarem.
+
+<a id="teste-final" />
+
+## O teste final é se a organização compreende os sistemas dos quais depende
+
+O alerta do Five Eyes e a Declaração Pax Silica pertencem à mesma discussão porque descrevem dois lados da mesma mudança estrutural. A IA está alterando a velocidade e a escala do risco cibernético, enquanto a própria capacidade em IA depende de uma infraestrutura concentrada, física, geopolítica e frágil.
+
+A próxima fase da governança de IA será avaliada menos pela existência de uma política de IA e mais pela capacidade da organização de comprovar que seus sistemas de IA são seguros, recuperáveis e governáveis ao longo de toda a cadeia de dependências. A governança de IA está se tornando um teste sobre se a organização compreende os sistemas dos quais começa a depender. O modelo continua sendo o objeto visível, mas o trabalho defensável está nos registros, fornecedores, controles e caminhos de recuperação que ficam abaixo dele.
+
+<a id="fontes" />
+
+## Fontes
+
+A base factual e jurídica desta versão provém da declaração das agências de cibersegurança do Five Eyes, do anúncio “Pax Silica” da Comissão Europeia, do Regulamento (UE) 2024/1689, dos materiais da Comissão Europeia sobre a NIS2 e o Cyber Resilience Act, do Regulamento (UE) 2022/2554 e do resumo da UE sobre a DORA, do NIST CSF 2.0, do NIST AI RMF 1.0, da ISO/IEC 42001, da ISO/IEC 27001, do OWASP GenAI Security Project LLM Top 10 2025, do MITRE ATLAS, da estrutura multicamadas da ENISA para boas práticas de cibersegurança em IA e das orientações do NCSC para o desenvolvimento seguro de sistemas de IA.
+
+</Typography>
