@@ -5,9 +5,11 @@ import { MDXComponents } from '@/components/MDXComponents'
 import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
+import { getLocale } from 'next-intl/server'
 
 export default async function BlogArticleWrapper({ article, children }) {
-  let allArticles = await loadArticles()
+  const locale = await getLocale()
+  let allArticles = await loadArticles(locale)
   let moreArticles = allArticles
     .filter(({ metadata }) => metadata !== article)
     .slice(0, 2)

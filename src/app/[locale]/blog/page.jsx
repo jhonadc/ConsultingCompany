@@ -11,8 +11,8 @@ export const metadata = {
     'Insights, updates, and practical guidance on compliance, AI governance, and regulations.',
 }
 
-export default async function Blog() {
-  const articles = await loadArticles()
+export default async function Blog({ params }) {
+  const articles = await loadArticles(params.locale)
 
   return (
     <>

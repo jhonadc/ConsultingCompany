@@ -1,0 +1,155 @@
+import imageJhonathanCampos from '@/images/JhonathanPhoto.jpg'
+import dependencyChainImage from './ai-governance-dependency-chain.png'
+
+export const article = {
+  date: '2026-07-03',
+  title: 'KI-Governance ist in die Abhängigkeitskette gerückt',
+  description:
+    'Eine praktische Analyse dazu, warum KI-Governance heute Cyberresilienz, Lieferanten, Infrastruktur, Wiederherstellungspfade und operative Nachweise erfassen muss.',
+  author: {
+    name: 'Jhonathan Campos',
+    role: 'Founder',
+    image: { src: imageJhonathanCampos },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+<Typography className="[&_p]:text-justify">
+
+<div className="my-10 max-sm:-mx-6">
+  <img
+    src={dependencyChainImage.src}
+    alt="Geschichtete technische Dokumente und eine Leiterplatte als Darstellung von KI-Governance entlang der Abhängigkeitskette"
+    className="w-full rounded-4xl object-cover"
+  />
+</div>
+
+**Abschnitte:** [Die Signale vom Juni](#die-signale-vom-juni) · [Modellbezogene Governance](#modellbezogene-governance) · [Cyberrisiken](#cyberrisiken) · [Infrastrukturabhängigkeiten](#infrastrukturabhaengigkeiten) · [Europäische Regulierung](#europaeische-regulierung) · [Rahmenwerke](#rahmenwerke) · [KI-Bestandsaufnahmen](#ki-bestandsaufnahmen) · [KI-Resilienzmodell](#ki-resilienzmodell) · [Nachweise](#nachweise) · [Konvergenz](#konvergenz) · [Entscheidender Test](#entscheidender-test) · [Quellen](#quellen)
+
+<a id="die-signale-vom-juni" />
+
+## Die Signale vom Juni rücken KI-Governance in den Kontext von Cyberresilienz und strategischer Infrastruktur
+
+Am 22. Juni 2026 gaben die Cybersicherheitsbehörden der „Five Eyes“ eine Erklärung ab, die als Warnung zu den Rahmenbedingungen rund um KI gelesen werden sollte. Die Behörden beschrieben ein Cyberumfeld, in dem KI die Geschwindigkeit, das Ausmaß und die Komplexität von Bedrohungen erhöht und in dem Frontier-KI offensive und defensive Fähigkeiten innerhalb von Monaten statt Jahren verändern kann. Sie verorteten die Reaktion zudem auf Führungsebene, da Cyberresilienz mittlerweile Geschäftskontinuität, Marktvertrauen und langfristigen Wert beeinflusst.
+
+Die Unterzeichnung der „Pax Silica“-Erklärung durch die Europäische Kommission im Namen der Europäischen Union am 25. Juni 2026 gehört in dieselbe Diskussion, auch wenn das Dokument in einem anderen institutionellen Dossier angesiedelt ist. Die Kommission verband KI-Fähigkeiten mit sicheren und resilienten Halbleiter-Lieferketten, der Koordination mit vertrauenswürdigen Verbündeten und Partnern, europäischen Geschäftsmöglichkeiten, technologischem Fortschritt und wirtschaftlicher Sicherheit. Für Nutzerinnen und Nutzer erscheint KI als Software, doch die Darstellung der Kommission selbst bestätigt, dass die darunterliegende Infrastruktur strategische Bedeutung erlangt hat.
+
+Die Verbindung zwischen diesen beiden Entwicklungen ist die Abhängigkeitskette, die KI-Systemen zugrunde liegt. Die Warnung der „Five Eyes“ betrifft den feindlichen Einsatz von KI in Cyberoperationen. „Pax Silica“ betrifft die Infrastruktur, die KI erst möglich macht. Zusammen stützen sie eine engere und besser begründbare These: KI-Governance bewegt sich weg von einer rein modellbezogenen Steuerung hin zu den Systemen, Lieferanten und Wiederherstellungspfaden, die den Betrieb des Modells ermöglichen.
+
+<a id="modellbezogene-governance" />
+
+## Modellbezogene Governance lässt zu viele operative Risiken außerhalb der Akte
+
+Die erste Welle der KI-Governance wurde vom Modell geprägt. Compliance-Teams lernten zu fragen, was das System tut, welche Daten es verwendet, ob die Ausgabe erklärbar ist, ob ein Mensch eingreifen kann, ob betroffene Personen die erforderlichen Informationen erhalten und ob das System verboten, als Hochrisiko-KI-System einzustufen, Transparenzpflichten unterworfen, von Pflichten für KI-Modelle mit allgemeinem Verwendungszweck erfasst oder außerhalb der strengeren Stufen der KI-Verordnung liegt. Diese Arbeit bleibt notwendig, obwohl jüngste Signale aus den Bereichen Cyber und Infrastruktur zeigen, dass modellbezogene Governance zu viele operative Risiken unberücksichtigt lässt.
+
+Ein seriöses KI-Governance-Programm muss nun fragen, wer das Modell bereitstellt, welche Cloud-Dienste es unterstützen, welche Datenquellen es speisen, welche Retrieval-Schicht ihm Kontext liefert, welches Identitätssystem den Zugriff kontrolliert, welche Anbieter das System von außerhalb der Organisation verändern können und welche Logs zeigen, was passiert ist, wenn etwas fehlschlägt. Diese Fragen sind eine operative Konsequenz des Aufbaus von KI-Systemen auf der Grundlage von Drittmodellen, externer Infrastruktur und sich schnell ändernden Annahmen im Bereich der Cybersicherheit.
+
+Ein eingesetztes KI-Tool ist aus betrieblicher Sicht selten ein einzelnes Objekt, da es in der Regel ein Modell, eine Datenschicht, eine Integrationsschicht, einen Anbietervertrag und einen Geschäftsprozess umfasst. Der Nutzer sieht eine einzige Schnittstelle, und das verantwortliche Team muss die dahinterliegende Kette verstehen. Deshalb ist die Governance des KI-Stacks ein nützlicherer Rahmen als reine Modell-Governance. Sie umfasst das sichtbare Verhalten des Systems, einschließlich Genauigkeit, Robustheit, Manipulation über Prompts und Ausgabekontrollen. Sie umfasst auch die Daten und die Infrastruktur, die dieses Verhalten prägen, insbesondere Retrieval-Systeme, Zugriffsrechte, Cloud-Dienste, Identitätskontrollen und Lieferantenbeziehungen. Sobald KI-Systeme reale Geschäftsprozesse unterstützen, gehören auch Reaktion auf Vorfälle und Kontinuitätsplanung in denselben Governance-Rahmen.
+
+<a id="cyberrisiken" />
+
+## KI verkürzt die Zeit, die Organisationen haben, um Cyberrisiken zu verstehen und darauf zu reagieren
+
+Die Erklärung der „Five Eyes“ verändert das Tempo der Diskussion, da traditionelle Cyber-Governance oft davon ausgeht, dass eine Organisation Zeit hat, eine Schwachstelle zu identifizieren, das Risiko einzuschätzen, das betroffene System zu patchen, die Führungsebene zu informieren und die Kontrollen anzupassen. Die Behörden stellen fest, dass KI die Hürden für böswillige Akteure senkt, die Geschwindigkeit und Komplexität von Angriffen erhöht und das Zeitfenster zwischen der Entdeckung einer Schwachstelle und deren Ausnutzung verkürzt. Zu den empfohlenen Maßnahmen gehören die Verringerung der Angriffsfläche, die Beschleunigung von Patching-Maßnahmen, die Behandlung von Altsystemen, die Stärkung von Identitäts- und Zugriffskontrollen, die Vorbereitung auf Vorfälle, die Anwendung von Secure-by-Design- und Secure-by-Default-Praktiken sowie der Einsatz mehrschichtiger Verteidigung.
+
+Der gleiche Druck entsteht auch innerhalb der KI-Systeme selbst, wo gewöhnliche Probleme der Anwendungssicherheit in einer instabileren Architektur liegen. Das Verhalten kann durch Prompts, Embeddings, Retrieval-Kontext, Trainingsdaten, Modellaktualisierungen und Tool-Integrationen beeinflusst werden. Ein Modell kann über denselben Sprachkanal manipuliert werden, den es eigentlich nutzen soll. Ein Retrieval-System kann vertrauliches Material durch eine Antwort preisgeben, die für den Nutzer normal erscheint. Ein durch ein Tool gesteuerter Agent kann eine Aktion ausführen, weil die Grenze zwischen Anweisung, Kontext und Befugnis schlecht definiert wurde.
+
+Die OWASP-Arbeit aus dem Jahr 2025 zu Risiken bei LLM- und generativen KI-Anwendungen formuliert dieses Problem konkret. Die Liste für 2025 umfasst Risiken wie Prompt Injection, Offenlegung sensibler Informationen, Gefährdung der Lieferkette, Daten- und Modellvergiftung, übermäßige Handlungsautonomie, Schwachstellen bei Vektoren und Embeddings, Fehlinformationen sowie unbegrenzten Verbrauch. Dies sind Produktionsrisiken, die Sicherheits-, Produkt- und Governance-Teams vor der Bereitstellung testen und anschließend überwachen müssen.
+
+MITRE ATLAS fügt die Ebene der Angreifer hinzu, indem es Angriffe auf KI-gestützte Systeme als Sicherheitsproblem mit entsprechenden Taktiken und Techniken behandelt. Die offizielle ATLAS-Beschreibung stellt das System als Wissensdatenbank für Taktiken und Techniken von Angreifern gegen KI-Systeme dar, während der SAFE-AI-Bericht MITRE ATLAS als auf realen Angriffsbeobachtungen, KI-Red-Team-Demonstrationen und Sicherheitsforschung basierend beschreibt. Ein Governance-Team, das nicht beschreiben kann, wie ein KI-System angegriffen werden kann, kann nicht glaubhaft behaupten, dass das System angemessen gesteuert wird.
+
+Defensive KI schafft das gleiche Governance-Problem aus einer anderen Perspektive, da die „Five Eyes“-Behörden Verteidigern ebenfalls raten, KI einzusetzen, um Schwachstellen früher zu erkennen, die Softwarequalität zu verbessern, ungewöhnliches Verhalten zu überwachen und schneller auf Vorfälle zu reagieren. Ein Sicherheitstool, das KI nutzt, benötigt weiterhin Zugriffskontrollen, Protokollierung, Eskalationsregeln, Genauigkeitsüberwachung und Kontrolle von Anbieteränderungen. Andernfalls verlässt sich die Organisation auf ein System, das sie nicht ordnungsgemäß abgegrenzt hat.
+
+<a id="infrastrukturabhaengigkeiten" />
+
+## Die Resilienz der KI hängt von Infrastruktur ab, die Unternehmen oft nicht präzise genug abbilden
+
+Pax Silica erweitert die Analyse, da es die physische Realität von KI sichtbar macht. Die Kommission hat KI mit Halbleiter-Lieferketten und wirtschaftlicher Sicherheit verknüpft, da fortschrittliche KI-Fähigkeiten von einer Infrastruktur außerhalb des Modells selbst abhängen. Die Ankündigung schafft keine direkten KI-Governance-Pflichten auf Unternehmensebene. Ihre Bedeutung für diesen Artikel liegt in der Belegkraft: Sie zeigt, dass die Kommission KI-Fähigkeiten, Halbleiter-Resilienz und wirtschaftliche Sicherheit als miteinander verbundene Fragen behandelt.
+
+Der gleiche Infrastrukturaspekt gilt auch auf Unternehmensebene. Viele Organisationen setzen KI über externe APIs, Hyperscale-Cloud-Plattformen, Anbieter von Foundation-Modellen, Vektordatenbanken und Überwachungstools ein, die von Dritten betrieben werden. Die Einführung erfolgt schnell, da jemand anderes den Stack bereits aufgebaut hat. Die Frage der Resilienz lautet: Versteht die Organisation, wovon sie abhängig geworden ist?
+
+Ein Modellanbieter kann seine Geschäftsbedingungen ändern, die Protokollierung anpassen, das Modellverhalten modifizieren, den Zugriff einschränken, Verarbeitungsstandorte wechseln oder einen Ausfall erleiden. Bei einem Cloud-Anbieter kann es zu einem regionalen Vorfall kommen. Ein Subunternehmer kann ohne ordnungsgemäße Prüfung in die Verarbeitungskette aufgenommen werden. Eine Open-Source-Komponente kann anfällig werden. Eine Retrieval-Datenbank kann Dokumente außerhalb des beabsichtigten Kontexts offenlegen. Ein Chipmangel, Exportbeschränkungen oder geopolitische Störungen können die Verfügbarkeit und die Kosten auf Infrastrukturebene beeinträchtigen. Eine KI-Richtlinie löst diese Probleme nicht, da die Ursache in Architektur, Verträgen und Wiederherstellungsplanung liegt.
+
+Die praktische Frage für kritische KI-gestützte Dienste lautet, ob die Organisation über eine Ausstiegsstrategie, einen Fallback-Modus und eine dokumentierte Toleranz für Störungen verfügt. Leitungsgremien müssen die Halbleiterfertigung nicht bis ins technische Detail verstehen. Sie müssen wissen, ob kritische Dienste von einer kleinen Gruppe von Anbietern, Regionen, Modellen oder Technologien mit schwachen Wiederherstellungsmöglichkeiten abhängig sind.
+
+<a id="europaeische-regulierung" />
+
+## Die europäische Regulierung schafft sich überschneidende Erwartungen in Bezug auf Sicherheit, Wiederherstellbarkeit und Nachweisführung
+
+Die europäische Regulierung weist bereits in diese Richtung, auch wenn die Rechtsregime weiterhin getrennt bleiben. Die EU-KI-Verordnung bezieht Cybersicherheit in die KI-Compliance für Hochrisiko-KI-Systeme ein. Artikel 15 der Verordnung (EU) 2024/1689 verlangt, dass Hochrisiko-KI-Systeme während ihres gesamten Lebenszyklus ein angemessenes Maß an Genauigkeit, Robustheit und Cybersicherheit erreichen. Er bezieht sich zudem auf KI-spezifische Schwachstellen, darunter Angriffe, die Trainingsdaten manipulieren, vortrainierte Komponenten, Eingaben, die darauf abzielen, Modellfehler zu verursachen, Vertraulichkeitsangriffe und Modellfehler.
+
+NIS2 nähert sich demselben Problem aus der Perspektive der Cybersicherheit, da es einen Rahmen für die Cybersicherheit in 18 kritischen Sektoren schafft, Anforderungen an Risikomanagement und Berichterstattung für weitere Einrichtungen einführt und Managementverantwortung auf Leitungs- und Geschäftsführungsebene verankert. Seine Relevanz für KI-Governance liegt darin, dass KI-Systeme zunehmend in digitalen Umgebungen betrieben werden, die durch NIS2 sicherer gemacht werden sollen.
+
+Der Cyber Resilience Act ergänzt dies um die Produktebene. Die Kommission gibt an, dass der CRA am 10. Dezember 2024 in Kraft getreten ist, dass Meldepflichten ab dem 11. September 2026 gelten und dass die Hauptpflichten ab dem 11. Dezember 2027 gelten. Seine Struktur überträgt Lebenszyklus-Cybersicherheit auf Produkte mit digitalen Elementen, was dann von Bedeutung ist, wenn KI-Systeme in Produkte eingebettet sind oder von Produktkomponenten abhängen, die eigene Sicherheitspflichten mit sich bringen.
+
+DORA folgt derselben Logik im Bereich der Finanzdienstleistungen. Die Verordnung (EU) 2022/2554 ist eine Verordnung für den Finanzsektor, und in der Zusammenfassung der EU selbst wird sie als Festlegung einheitlicher Vorschriften für die Sicherheit von Netzwerk- und Informationssystemen von Finanzunternehmen wie Banken, Versicherern und Wertpapierfirmen beschrieben. Sie verpflichtet diese Unternehmen, IKT-bedingten Störungen und Bedrohungen standzuhalten, darauf zu reagieren und sich davon zu erholen. Ihr Geltungsbereich erstreckt sich nicht allgemein auf alle KI-Systeme, doch ihre Struktur verdeutlicht, wie das EU-Recht mit der Abhängigkeit von IKT umgeht, wenn operative Resilienz reguliert wird.
+
+Diese Gesetze haben unterschiedliche Geltungsbereiche, rechtliche Anknüpfungspunkte und Aufsichtswege. Ihre praktischen Überschneidungen liegen in den Bereichen sicheres Design, Überwachung des Lebenszyklus, Bereitschaft für Vorfälle, Lieferantenkontrolle, Wiederherstellbarkeit und Nachweisführung. Wenn ein KI-System einen kritischen Geschäftsprozess unterstützt, benötigt die Organisation ein Governance-Konzept, das KI-Risiken, Cyberrisiken, Lieferantenrisiken und Kontinuitätsrisiken abdeckt, ohne dass jedes Team nach einem anderen Schema arbeiten muss.
+
+<a id="rahmenwerke" />
+
+## Rahmenwerke sollten operative Fragen beantworten, anstatt die Governance-Akte nur zu schmücken
+
+Rahmenwerke sind nur dann nützlich, wenn sie eine konkrete operative Frage beantworten. Das NIST Cybersecurity Framework 2.0 hilft dabei, KI-Sicherheit mit dem Cyberrisiko des Unternehmens zu verknüpfen, da seine Kernfunktionen „Govern“, „Identify“, „Protect“, „Detect“, „Respond“ und „Recover“ lauten, und das NIST erklärt, dass das Rahmenwerk Organisationen dabei helfen soll, Cybersicherheits-Risikomanagement zu operationalisieren. Das AI Risk Management Framework des NIST hilft dabei, KI-Risiken über den gesamten Systemlebenszyklus hinweg durch die Funktionen „Govern“, „Map“, „Measure“ und „Manage“ abzubilden und zu messen, wobei „Govern“ für alle KI-Risikomanagementprozesse gilt und die anderen Funktionen in systemspezifischen Kontexten zur Anwendung kommen.
+
+ISO/IEC 42001 bindet KI-Governance in eine Managementsystemstruktur ein, da die ISO diese Norm als Festlegung von Anforderungen und Leitlinien für die Einrichtung, Umsetzung, Aufrechterhaltung und kontinuierliche Verbesserung eines KI-Managementsystems beschreibt. ISO/IEC 27001 verbindet KI-Kontrollen weiterhin mit Informationssicherheit, da die ISO diese Norm als Standard für die Einrichtung, Umsetzung, Aufrechterhaltung und kontinuierliche Verbesserung eines Informationssicherheits-Managementsystems beschreibt.
+
+Die technischen Rahmenwerke schließen Lücken, die Managementsysteme offen lassen. OWASP bietet eine auf Anwendungsebene abgestimmte Sprache für Schwachstellen bei LLM und generativer KI. MITRE ATLAS unterstützt die Modellierung adversarischer Bedrohungen für KI-gestützte Systeme. Das mehrschichtige Rahmenwerk der ENISA wurde ausdrücklich entwickelt, um nationale zuständige Behörden und KI-Akteure bei der Sicherung von KI-Systemen, -Abläufen und -Prozessen anzuleiten. Die Leitlinien des NCSC zur sicheren KI-Entwicklung gelten für Anbieter von KI-Systemen, einschließlich solcher, die auf externen Tools oder APIs basieren, und legen fest, dass die Umsetzung dazu beitragen soll, KI-Systeme zu entwickeln, die wie vorgesehen funktionieren, bei Bedarf verfügbar bleiben und keine sensiblen Daten an Unbefugte preisgeben.
+
+Es geht darum, das richtige Instrument dort einzusetzen, wo das Risiko es erfordert.
+
+<a id="ki-bestandsaufnahmen" />
+
+## KI-Bestandsaufnahmen sind nur dann nützlich, wenn sie die Abhängigkeiten hinter dem System abbilden
+
+Das operative Zentrum dieses Wandels ist die Bestandsaufnahme. Viele KI-Governance-Programme beginnen mit einer Bestandsaufnahme der KI-Assets, was notwendig ist, wenn Organisationen noch nicht wissen, welche Systeme verwendet werden. Diese Bestandsaufnahme bleibt oberflächlich, wenn sie sich auf den Systemnamen, den Geschäftsverantwortlichen, den Anwendungsfall und die Risikokategorie beschränkt. Der nächste Schritt ist ein KI-Abhängigkeitsinventar. Dies ist die von mir vorgeschlagene Governance-Methode und keine ausdrücklich genannte Anforderung in der KI-Verordnung, in NIS2, im CRA oder in DORA.
+
+Ein Abhängigkeitsinventar fragt danach, was verfügbar, sicher, rechtmäßig und wiederherstellbar bleiben muss, damit das KI-System weiter funktioniert. Auf Modellebene sollte es den Anbieter, die Modellversion, die Änderungsrichtlinie und die Fallback-Option erfassen. Auf Datenebene sollten Quellsysteme, Prompts, Embeddings, Retrieval-Indizes, personenbezogene Daten, sensible Daten, Aufbewahrungsfristen und Datenherkunft erfasst werden. Auf Infrastruktur- und Lieferantenebene sollten Cloud-Dienste, Identitätskontrollen, Protokollierung, Überwachung, Unterauftragnehmer, Prüfungsrechte, Meldepflichten bei Vorfällen, Portabilität und Ausstiegsrechte erfasst werden. Auf der Betriebsebene sollten der Geschäftsprozess, die manuelle Übernahme, der degradierte Betriebsmodus, die Erwartungen an die Wiederherstellung sowie die Person, die das Restrisiko akzeptiert, erfasst werden.
+
+Ein Kundenservice-Chatbot verdeutlicht, warum dies wichtig ist. Er kann von einem Anbieter eines Foundation-Modells, einer Cloud-Umgebung, einer Retrieval-Datenbank, Kundendaten aus der Historie, Authentifizierungskontrollen, Inhaltsfiltern, Eskalationsregeln, einer Protokollierungsinfrastruktur und einem Lieferantenvertrag abhängig sein. Wenn die Retrieval-Schicht Dokumente preisgibt, handelt es sich um ein Datenschutz- und Sicherheitsproblem. Wenn ein Prompt das System dazu manipuliert, ein Tool aufzurufen, geht es um Zugriffskontrolle und Produkt-Governance. Wenn beim Modellanbieter ein Ausfall auftritt, geht es um Geschäftskontinuität. Wenn der Anbieter die Verarbeitungsbedingungen ändert, geht es um Beschaffung, Datenschutz und Compliance. Die gesamte Kette als generisches KI-Risiko zu behandeln, ist zu ungenau, und eine Aufteilung in unzusammenhängende Teile lässt der Organisation keinen fundierten Überblick über das System.
+
+<a id="ki-resilienzmodell" />
+
+## Ein seriöses KI-Resilienzmodell muss Bedrohungsmodellierung, Lieferantenüberprüfung, Tests und Fallback-Strategien abdecken
+
+Ein seriöses Betriebsmodell sollte vor der Bereitstellung eine KI-spezifische Bedrohungsmodellierung vorschreiben, insbesondere wenn Systeme mit internen Daten, externen Nutzern oder betrieblichen Tools verbunden sind. Bei Lieferantenüberprüfungen sollten Modellsicherheit, Datenumgang, Subunternehmer, Prüfungsrechte, Portabilität und Ausstiegsmöglichkeiten untersucht werden. Tests sollten Prompt Injection, Offenlegung sensibler Informationen, übermäßige Eigenmächtigkeit, Retrieval-Leakage und das Versagen von Abhängigkeiten umfassen. Incident-Playbooks sollten Modellkompromittierungen, modellseitige Änderungen durch den Anbieter, Datenlecks durch Retrieval, den Missbrauch von Tool-Zugriffen, Leistungseinbrüche und Ausfälle des Anbieters abdecken.
+
+Dasselbe Betriebsmodell benötigt eine Fallback-Planung, da ein KI-System, das einen kritischen Prozess unterstützt, über einen definierten degradierten Betriebsmodus verfügen muss. Die Organisation sollte wissen, ob der Prozess ohne das System fortgesetzt werden kann, wer die Aufgaben übernimmt, welche manuellen Kontrollen wieder zum Einsatz kommen, ob ein anderer Anbieter genutzt werden kann, welche Daten verlagert werden müssten und welches Ausmaß an Betriebsstörungen das Unternehmen tolerieren kann. An diesem Punkt wird KI-Governance konkret zu operativer Resilienz.
+
+<a id="nachweise" />
+
+## Eine vertretbare Governance hängt von Nachweisen ab, die juristische, technische und leitende Stellen prüfen können
+
+Der am meisten unterschätzte Aspekt der KI-Governance ist der Nachweis. Eine Richtlinie hält die Absicht fest, aber eine vertretbare Governance-Akte enthält die Klassifizierungsunterlagen, die Abhängigkeitskarte, Testnachweise und Bereitschaftsmaterialien, die zeigen, wie die Organisation zu ihren Entscheidungen gelangt ist. Im Hinblick auf KI-Resilienz sollte diese Akte den Systemzweck, die Rollenverteilung, einschlägige rechtliche Pflichten, Modell- und Lieferantenabhängigkeiten, Sicherheitstests, Prompt-Injection-Tests, Datenzugriffskontrollen, Überwachung, Änderungsmanagement, Incident-Playbooks, Kontinuitätspläne und die Akzeptanz von Restrisiken aufzeigen.
+
+Bei dieser Nachweispflicht rücken Datenschutz, Cybersicherheit und operative Resilienz in der Praxis eng zusammen. Das Datenschutzteam benötigt Datenherkunft und Rechtsgrundlagen. Das Sicherheitsteam benötigt Protokolle, Zugriffskontrollen und Testaufzeichnungen. Die Beschaffungsabteilung benötigt Zusagen der Lieferanten und Ausstiegsrechte. Die Produktentwicklung benötigt Einsatzgrenzen und Eskalationswege. Vorstand oder Geschäftsführung benötigen Informationen zu Restrisiken und zum Fortschritt bei der Behebung. Eine Aufsichtsbehörde kann Aufzeichnungen zur Klassifizierung, zu Tests und zur Überwachung anfordern. Da all diese Fragen aus demselben System hervorgehen, können die Nachweise nicht nachträglich isoliert in Silos erstellt werden.
+
+Die wirksamste KI-Governance besteht in einer Reihe von Aufzeichnungen, die zeigen, was die Organisation wusste, was sie getestet hat, was sie akzeptiert hat, welche Maßnahmen sie zur Risikominderung ergriffen hat und wer das Restrisiko genehmigt hat. In diese Richtung bewegt sich auch der Markt. Organisationen werden weiterhin Richtlinien, Schulungen und Governance-Ausschüsse benötigen, doch diese Instrumente sind nur dann von Bedeutung, wenn sie Nachweise liefern, die einer rechtlichen, technischen und leitungsbezogenen Prüfung standhalten.
+
+<a id="konvergenz" />
+
+## Konvergenz funktioniert nur, wenn jede Disziplin ihre Methode und ihre Schwellenwerte beibehält
+
+Diese Konvergenz sollte präzise bleiben. KI-Governance, Cybersicherheit, Datenschutz, Beschaffung und operative Resilienz haben unterschiedliche Rechtsgrundlagen, Methoden, Fachkulturen und Schwellenwerte für Maßnahmen. Sie als eine einzige vage Risikofunktion zu behandeln, würde die Governance schwächen. Der praktische Aspekt ist enger gefasst: Diese Disziplinen teilen sich mittlerweile so viel Infrastruktur, Nachweise und Eskalationswege, dass eine isolierte Verwaltung zu blinden Flecken führt.
+
+Die erforderliche Tiefe ändert sich je nach Anwendungsfall. Ein internes Zusammenfassungswerkzeug mit geringem Risiko benötigt nicht dieselbe Resilienzarchitektur wie ein KI-System, das in den Bereichen Cybersicherheit, Gesundheitswesen, Kreditwesen, Beschäftigung, Bildung, öffentliche Dienste oder kritische Infrastruktur eingesetzt wird. Ein risikobasiertes Modell bleibt unerlässlich, denn nur durch Verhältnismäßigkeit wird verhindert, dass Governance zu einer bloßen Dokumentationsübung wird. Die eigentliche Arbeit besteht darin, zu entscheiden, wo die Abhängigkeitskette am wichtigsten ist, diese Einschätzung zu dokumentieren und sie zu überdenken, wenn sich das System, der Anbieter, die Datenquelle, die Integration oder die geschäftliche Nutzung ändern.
+
+<a id="entscheidender-test" />
+
+## Der entscheidende Test ist, ob die Organisation die Systeme versteht, von denen sie abhängt
+
+Die Warnung der „Five Eyes“ und die „Pax Silica“-Erklärung gehören in denselben Diskurs, da sie zwei Seiten desselben strukturellen Wandels beschreiben. KI verändert die Geschwindigkeit und das Ausmaß von Cyberrisiken, während KI-Fähigkeiten selbst von einer Infrastruktur abhängen, die konzentriert, physisch, geopolitisch und fragil ist.
+
+Die nächste Phase der KI-Governance wird weniger daran gemessen werden, ob eine Organisation über eine KI-Richtlinie verfügt, sondern vielmehr daran, ob sie nachweisen kann, dass ihre KI-Systeme über ihre gesamte Abhängigkeitskette hinweg sicher, wiederherstellbar und steuerbar sind. KI-Governance wird zu einem Test dafür, ob eine Organisation die Systeme versteht, von denen sie zunehmend abhängig wird. Das Modell bleibt das sichtbare Objekt, doch die vertretbare Arbeit liegt in den darunter liegenden Aufzeichnungen, Lieferanten, Kontrollen und Wiederherstellungspfaden.
+
+<a id="quellen" />
+
+## Quellen
+
+Die sachlichen und rechtlichen Grundlagen dieser Version stammen aus der Erklärung der „Five Eyes“-Cybersicherheitsbehörden, der „Pax Silica“-Ankündigung der Europäischen Kommission, der Verordnung (EU) 2024/1689, den Unterlagen der Europäischen Kommission zu NIS2 und dem Cyber Resilience Act, der Verordnung (EU) 2022/2554 sowie der EU-Zusammenfassung von DORA, NIST CSF 2.0, NIST AI RMF 1.0, ISO/IEC 42001, ISO/IEC 27001, dem OWASP GenAI Security Project LLM Top 10 2025, MITRE ATLAS, dem mehrschichtigen Rahmenwerk der ENISA für bewährte Cybersicherheitspraktiken im Bereich KI sowie den Leitlinien des NCSC zur Entwicklung sicherer KI-Systeme.
+
+</Typography>
