@@ -1,0 +1,146 @@
+import imageJhonathanCampos from '@/images/JhonathanPhoto.jpg'
+
+export const article = {
+  date: '2026-07-03',
+  title: 'AI Governance Has Moved Into the Dependency Chain',
+  description:
+    'A practical analysis of why AI governance now reaches cyber resilience, suppliers, infrastructure, recovery paths, and the evidence behind operational control.',
+  author: {
+    name: 'Jhonathan Campos',
+    role: 'Founder',
+    image: { src: imageJhonathanCampos },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+<Typography className="[&_p]:text-justify">
+
+**Sections:** [The June signals](#the-june-signals) · [Model-level governance](#model-level-governance) · [Cyber risk tempo](#cyber-risk-tempo) · [Infrastructure dependencies](#infrastructure-dependencies) · [European regulation](#european-regulation) · [Frameworks](#frameworks) · [AI inventories](#ai-inventories) · [AI resilience model](#ai-resilience-model) · [Defensible evidence](#defensible-evidence) · [Convergence](#convergence) · [Final test](#final-test) · [Sources](#sources)
+
+<a id="the-june-signals" />
+
+## The June signals place AI governance inside cyber resilience and strategic infrastructure
+
+On 22 June 2026, the Five Eyes cyber agencies issued a statement that should be read as a warning about the operating conditions around AI. The agencies described a cyber environment in which AI is increasing the speed, scale and sophistication of threats, and in which frontier AI can change offensive and defensive capabilities within months rather than years. They also placed the response at leadership level, because cyber resilience now affects business continuity, market confidence and long-term value.
+
+The European Commission's signature of the Pax Silica Declaration on behalf of the European Union on 25 June 2026 belongs in the same discussion, even though the document sits in a different institutional file. The Commission linked AI capability to secure and resilient silicon supply chains, coordination with trusted allies and partners, European business opportunities, technological progress and economic security. AI appears to the user as software, yet the Commission's own framing confirms that the infrastructure beneath it has become strategic.
+
+The link between these two developments is the dependency chain beneath AI systems. The Five Eyes warning concerns the hostile use of AI in cyber operations. Pax Silica concerns the infrastructure that makes AI possible. Together they support a narrower and more defensible claim: AI governance is moving away from model-only governance and toward the systems, suppliers and recovery paths that allow the model to operate.
+
+<a id="model-level-governance" />
+
+## Model-level governance leaves too much operational risk outside the file
+
+The first wave of AI governance was shaped by the model. Compliance teams learned to ask what the system does, what data it uses, whether the output is explainable, whether a human can intervene, whether affected people receive the required information, and whether the system is prohibited, high-risk, subject to transparency obligations, covered by general-purpose AI duties, or outside the stricter tiers of the AI Act. That work remains necessary, although recent cyber and infrastructure signals show that model-level governance leaves too much operational risk untreated.
+
+A serious AI governance programme now has to ask who supplies the model, which cloud services support it, which data sources feed it, which retrieval layer gives it context, which identity system controls access, which vendors can alter the system from outside the organisation, and which records will show what happened when something fails. Those questions are an operational consequence of building AI systems on third-party models, external infrastructure and fast-moving cyber assumptions.
+
+A deployed AI tool is rarely one object in operational terms, since it usually combines a model, a data layer, an integration layer, a vendor contract and a business process. The user sees one interface, and the accountable team has to understand the chain behind it. That is why AI stack governance is a more useful frame than model governance alone. It covers the visible behaviour of the system, including accuracy, robustness, prompt manipulation and output controls. It also covers the data and infrastructure that shape that behaviour, especially retrieval systems, access rights, cloud services, identity controls and supplier relationships. Once AI systems support real business processes, incident response and continuity planning also belong in the same governance file.
+
+<a id="cyber-risk-tempo" />
+
+## AI shortens the time organisations have to understand and respond to cyber risk
+
+The Five Eyes statement changes the tempo of the discussion because traditional cyber governance often assumes that an organisation has time to identify a vulnerability, assess exposure, patch the affected system, brief leadership and adjust controls. The agencies state that AI lowers barriers for malicious actors, increases the speed and complexity of attacks, and shrinks the window between vulnerability discovery and exploitation. Their recommended actions include reducing attack surface, accelerating patching, addressing legacy systems, strengthening identity and access controls, preparing for incidents, applying secure-by-design and secure-by-default practices, and relying on defence in depth.
+
+The same pressure appears inside AI systems themselves, where ordinary application-security problems sit inside a more unstable architecture. Behaviour can be shaped by prompts, embeddings, retrieval context, training data, model updates and tool integrations. A model can be manipulated through the same language channel it is supposed to use. A retrieval system can expose confidential material through an answer that looks normal to the user. A tool-enabled agent can perform an action because the boundary between instruction, context and authority was poorly designed.
+
+OWASP's 2025 work on LLM and generative-AI application risks gives practical language to this problem. Its 2025 list covers risks such as prompt injection, sensitive information disclosure, supply-chain exposure, data and model poisoning, excessive agency, vector and embedding weaknesses, misinformation and unbounded consumption. These are production risks that security, product and governance teams need to test before deployment and monitor afterwards.
+
+MITRE ATLAS adds the adversarial layer by treating attacks on AI-enabled systems as a security problem with tactics and techniques. The official ATLAS description presents it as a knowledge base for adversary tactics and techniques against AI systems, while MITRE's SAFE-AI report describes ATLAS as based on real-world attack observations, AI red-team demonstrations and security research. A governance team that cannot describe how an AI system can be attacked cannot credibly claim that the system has been governed.
+
+Defensive AI creates the same governance problem from another direction, since the Five Eyes agencies also tell defenders to use AI to detect vulnerabilities earlier, improve software quality, monitor unusual behaviour and respond faster to incidents. A security tool that uses AI still needs access controls, logging, escalation rules, accuracy monitoring and vendor-change oversight. Otherwise the organisation has placed reliance on a system it has not properly bounded.
+
+<a id="infrastructure-dependencies" />
+
+## AI resilience depends on infrastructure that companies often fail to map with enough precision
+
+Pax Silica widens the analysis because it makes the physical reality of AI visible. The Commission linked AI to silicon supply chains and economic security because advanced AI capability depends on infrastructure outside the model itself. The announcement creates no direct company-level AI governance duties. Its importance for this article is evidentiary: it shows the Commission treating AI capability, semiconductor resilience and economic security as connected questions.
+
+The same infrastructure point applies at company level. Many organisations adopt AI through external APIs, hyperscale cloud platforms, foundation-model providers, vector databases and monitoring tools operated by third parties. Adoption is fast because someone else has already built the stack. The resilience question is whether the organisation understands what it has become dependent on.
+
+A model provider can change its terms, alter logging, modify model behaviour, restrict access, change processing locations or suffer an outage. A cloud provider can have a regional incident. A subcontractor can enter the processing chain without proper assessment. An open-source component can become vulnerable. A retrieval database can expose documents beyond the intended context. A chip shortage, export restriction or geopolitical disruption can affect availability and cost at the infrastructure level. An AI policy does not solve those problems, because the issue sits in architecture, contracts and recovery planning.
+
+The practical question for critical AI-enabled services is whether the organisation has an exit strategy, a fallback mode and a documented tolerance for disruption. Boards do not need to understand semiconductor fabrication in technical detail. They need to know whether critical services depend on a narrow group of providers, regions, models or technologies with weak recovery options.
+
+<a id="european-regulation" />
+
+## European regulation is creating overlapping expectations around security, recoverability and evidence
+
+European regulation already points in this direction, although the legal regimes remain separate. The EU AI Act brings cybersecurity into AI compliance for high-risk systems. Article 15 of Regulation (EU) 2024/1689 requires high-risk AI systems to achieve appropriate levels of accuracy, robustness and cybersecurity throughout their lifecycle. It also refers to AI-specific vulnerabilities, including attacks that manipulate training data, pre-trained components, inputs designed to cause model mistakes, confidentiality attacks and model flaws.
+
+NIS2 approaches the same problem from the cybersecurity side because it establishes a framework for cybersecurity across 18 critical sectors, introduces risk-management and reporting requirements for more entities, and brings management accountability into the boardroom. Its relevance to AI governance lies in the fact that AI systems increasingly operate inside digital environments that NIS2 is designed to make more secure.
+
+The Cyber Resilience Act adds the product layer. The Commission states that the CRA entered into force on 10 December 2024, that reporting obligations apply from 11 September 2026, and that the main obligations apply from 11 December 2027. Its structure pushes lifecycle cybersecurity into products with digital elements, which matters where AI systems are embedded in products or depend on product components that carry security obligations of their own.
+
+DORA shows the same logic in financial services. Regulation (EU) 2022/2554 is a financial-sector regulation, and the EU's own summary describes it as laying down uniform rules on the security of network and information systems of financial entities such as banks, insurers and investment firms. It requires those entities to withstand, respond to and recover from ICT-related disruption and threats. Its scope does not generalise to all AI systems, but its structure shows how EU law treats ICT dependency when operational resilience becomes regulated.
+
+These laws have different scopes, legal triggers and supervisory paths. Their practical overlap sits in secure design, lifecycle monitoring, incident readiness, supplier control, recoverability and evidence. When an AI system supports a critical business process, the organisation needs a governance file that can handle AI risk, cyber risk, supplier risk and continuity risk without forcing each team to work from a different map.
+
+<a id="frameworks" />
+
+## Frameworks should answer operational questions rather than decorate the governance file
+
+Frameworks are useful only where they answer a concrete operational question. NIST Cybersecurity Framework 2.0 helps connect AI security to enterprise cyber risk because its core functions are Govern, Identify, Protect, Detect, Respond and Recover, and NIST states that the framework is intended to help organisations operationalise cybersecurity risk management. NIST's AI Risk Management Framework helps map and measure AI risk across the system lifecycle through Govern, Map, Measure and Manage, with Govern applying across AI risk-management processes and the other functions applying in system-specific contexts.
+
+ISO/IEC 42001 moves AI governance into a management-system structure because ISO describes it as specifying requirements and guidance for establishing, implementing, maintaining and continually improving an AI management system. ISO/IEC 27001 keeps AI controls connected to information security because ISO describes it as a standard for establishing, implementing, maintaining and continually improving an information security management system.
+
+The technical frameworks fill gaps that management systems leave open. OWASP gives application-level language for LLM and generative-AI weaknesses. MITRE ATLAS supports adversarial threat modelling for AI-enabled systems. ENISA's multilayer framework is expressly designed to guide national competent authorities and AI stakeholders in securing AI systems, operations and processes. The NCSC secure AI development guidance applies to providers of AI systems, including those built on external tools or APIs, and states that implementation should help build AI systems that function as intended, remain available when needed and do not reveal sensitive data to unauthorised parties.
+
+The point is to use the right instrument where the risk requires it.
+
+<a id="ai-inventories" />
+
+## AI inventories become useful only when they map the dependencies behind the system
+
+The operational centre of this shift is the inventory. Many AI governance programmes begin with an AI asset inventory, which is necessary when organisations still do not know what systems are being used. That inventory becomes shallow when it stops at the system name, business owner, use case and risk category. The next step is an AI dependency inventory, which is my proposed governance method rather than a named requirement in the AI Act, NIS2, CRA or DORA.
+
+A dependency inventory asks what must remain available, secure, lawful and recoverable for the AI system to keep working. At the model level, it should record the provider, model version, change policy and fallback option. At the data level, it should record source systems, prompts, embeddings, retrieval indexes, personal data, sensitive data, retention and lineage. At the infrastructure and supplier level, it should record cloud services, identity controls, logging, monitoring, subcontractors, audit rights, incident-notice duties, portability and exit rights. At the operational level, it should record the business process, human takeover, degraded mode, recovery expectations and the person who accepts residual risk.
+
+A customer-service chatbot shows why this matters. It can depend on a foundation-model provider, a cloud environment, a retrieval database, customer-history data, authentication controls, content filters, escalation rules, logging infrastructure and a vendor contract. If the retrieval layer leaks documents, the issue is privacy and security. If a prompt manipulates the system into calling a tool, the issue is access control and product governance. If the model provider suffers an outage, the issue is continuity. If the vendor changes processing terms, the issue is procurement, data protection and compliance. Treating the whole chain as generic AI risk is too imprecise, and separating it into unconnected files leaves the organisation without a defensible view of the system.
+
+<a id="ai-resilience-model" />
+
+## A serious AI resilience model has to cover threat modelling, supplier review, testing and fallback
+
+A serious operating model should require AI-specific threat modelling before deployment, especially where systems connect to internal data, external users or operational tools. Supplier reviews should examine model security, data handling, subcontractors, audit rights, portability and exit. Testing should include prompt injection, sensitive-information disclosure, excessive agency, retrieval leakage and dependency failure. Incident playbooks should cover model compromise, vendor-side model changes, data leakage through retrieval, misuse of tool access, performance collapse and provider outage.
+
+The same operating model needs fallback planning because an AI system that supports a critical process must have a defined degraded mode. The organisation should know whether the process can continue without the system, who takes over, which manual controls return, whether another provider can be used, what data would need to move, and what level of disruption the business can tolerate. At that point, AI governance becomes operational resilience in concrete terms.
+
+<a id="defensible-evidence" />
+
+## Defensible governance depends on evidence that legal, technical and board audiences can inspect
+
+The most underestimated part of AI governance is proof. A policy records intention, but a defensible governance file contains the classification record, dependency map, testing evidence and readiness material that show how the organisation reached its decisions. For AI resilience, that file should show the system purpose, role allocation, applicable legal triggers, model and supplier dependencies, security testing, prompt-injection testing, data-access controls, monitoring, change management, incident playbooks, continuity plans and residual-risk acceptance.
+
+This evidence burden is where privacy, cybersecurity and operational resilience begin to look like one discipline in practice. The privacy team needs data lineage and legal basis. The security team needs logs, access controls and testing records. Procurement needs supplier commitments and exit rights. Product needs deployment limits and escalation paths. The board needs residual risk and progress against remediation. A regulator can ask for classification, testing and oversight records. The same system generates those questions, so the evidence cannot be built in silos after the fact.
+
+The strongest AI governance work will be the set of records that shows what the organisation knew, what it tested, what it accepted, what it mitigated and who approved the residual risk. That is also where the market is moving. Organisations will still need policies, training and governance committees, but those instruments will matter only if they produce evidence that survives legal, technical and board scrutiny.
+
+<a id="convergence" />
+
+## Convergence only works when each discipline keeps its method and threshold
+
+This convergence should remain precise. AI governance, cybersecurity, privacy, procurement and operational resilience have different legal sources, methods, professional cultures and thresholds for action. Treating them as one vague risk function would make governance weaker. The practical point is narrower: these disciplines now share enough infrastructure, evidence and escalation paths that managing them in isolation creates blind spots.
+
+The required depth changes with the use case. A low-risk internal summarisation tool does not need the same resilience architecture as an AI system used in cybersecurity operations, health, credit, employment, education, public services or critical infrastructure. A risk-based model remains essential because proportionality is what keeps governance from becoming paperwork theatre. The discipline lies in deciding where the dependency chain matters most, documenting that judgement, and revisiting it when the system, provider, data source, integration or business use changes.
+
+<a id="final-test" />
+
+## The final test is whether the organisation understands the systems it depends on
+
+The Five Eyes warning and the Pax Silica Declaration belong in the same conversation because they describe two sides of the same structural shift. AI is changing the speed and scale of cyber risk, while AI capability itself depends on infrastructure that is concentrated, physical, geopolitical and fragile.
+
+The next phase of AI governance will be judged less by whether an organisation has an AI policy and more by whether it can prove that its AI systems are secure, recoverable and governable across their dependency chain. AI governance is becoming a test of whether an organisation understands the systems it is beginning to depend on. The model remains the visible object, but the defensible work sits in the records, suppliers, controls and recovery paths underneath it.
+
+<a id="sources" />
+
+## Sources used for factual checks
+
+The factual and legal backbone of this version comes from the Five Eyes cyber security agencies statement, the European Commission's Pax Silica announcement, Regulation (EU) 2024/1689, European Commission materials on NIS2 and the Cyber Resilience Act, Regulation (EU) 2022/2554 and the EU summary of DORA, NIST CSF 2.0, NIST AI RMF 1.0, ISO/IEC 42001, ISO/IEC 27001, OWASP GenAI Security Project LLM Top 10 2025, MITRE ATLAS, ENISA's multilayer framework for good cybersecurity practices for AI, and the NCSC secure AI system development guidance.
+
+</Typography>
