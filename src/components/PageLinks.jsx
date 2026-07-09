@@ -51,9 +51,15 @@ function PageLink({ page }) {
   )
 }
 
-export function PageLinks({ title, pages, intro, className }) {
+export function PageLinks({ title, pages, intro, className, compact = false }) {
   return (
-    <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40', className)}>
+    <div
+      className={clsx(
+        'relative',
+        compact ? 'pt-12 sm:pt-16 lg:pt-20' : 'pt-24 sm:pt-32 lg:pt-40',
+        className,
+      )}
+    >
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-100 stroke-neutral-950/5"
@@ -65,7 +71,7 @@ export function PageLinks({ title, pages, intro, className }) {
         {intro && <p>{intro}</p>}
       </SectionIntro>
 
-      <Container className={intro ? 'mt-24' : 'mt-16'}>
+      <Container className={intro ? (compact ? 'mt-12' : 'mt-24') : 'mt-16'}>
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
             <FadeIn key={page.href}>

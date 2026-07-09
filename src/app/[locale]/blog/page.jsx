@@ -111,7 +111,8 @@ export default async function Blog({ params }) {
           <FeaturedArticle article={featuredArticle} />
           {moreArticles.length > 0 && (
             <PageLinks
-              className="mt-16 sm:mt-20 lg:mt-24"
+              className="mt-8 sm:mt-10 lg:mt-12"
+              compact
               title="Latest articles"
               intro="Our recent thinking on governance, risk, and regulation."
               pages={moreArticles}
