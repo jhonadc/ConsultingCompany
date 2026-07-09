@@ -56,7 +56,7 @@ export function PageLinks({ title, pages, intro, className, compact = false }) {
     <div
       className={clsx(
         'relative',
-        compact ? 'pt-12 sm:pt-16 lg:pt-20' : 'pt-24 sm:pt-32 lg:pt-40',
+        compact ? 'pt-8 sm:pt-10 lg:pt-12' : 'pt-24 sm:pt-32 lg:pt-40',
         className,
       )}
     >
@@ -71,7 +71,7 @@ export function PageLinks({ title, pages, intro, className, compact = false }) {
         {intro && <p>{intro}</p>}
       </SectionIntro>
 
-      <Container className={intro ? (compact ? 'mt-12' : 'mt-24') : 'mt-16'}>
+      <Container className={intro ? (compact ? 'mt-8 sm:mt-10' : 'mt-24') : 'mt-16'}>
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
             <FadeIn key={page.href}>

@@ -51,7 +51,7 @@ function ArrowIcon(props) {
 
 function FeaturedArticle({ article }) {
   return (
-    <Container className="mt-16 sm:mt-20 lg:mt-24">
+    <Container className="mt-10 sm:mt-12 lg:mt-14">
       <FadeIn>
         <LocaleLink
           href={article.href}
@@ -111,7 +111,7 @@ export default async function Blog({ params }) {
           <FeaturedArticle article={featuredArticle} />
           {moreArticles.length > 0 && (
             <PageLinks
-              className="mt-8 sm:mt-10 lg:mt-12"
+              className="mt-4 sm:mt-6 lg:mt-8"
               compact
               title="Latest articles"
               intro="Our recent thinking on governance, risk, and regulation."
