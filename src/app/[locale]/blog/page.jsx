@@ -99,7 +99,11 @@ export default async function Blog({ params }) {
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro
+        eyebrow="Blog"
+        title="The latest articles and news"
+        className="mt-12 sm:mt-16 lg:mt-20"
+      >
         <p>
           Insights, updates, and practical guidance on compliance, AI governance,
           and regulations.
