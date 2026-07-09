@@ -1,0 +1,93 @@
+import imageJhonathanCampos from '@/images/JhonathanPhoto.jpg'
+import anonymisationImage from './anonymisation-ai-governance-control.png'
+
+export const article = {
+  date: '2026-07-09',
+  title: 'Before the AI Model, Anonymisation as an AI Governance Control',
+  description:
+    'A practical analysis of EDPB Guidelines 02/2026 on anonymisation, and why the assessment belongs before data enters the AI training pipeline.',
+  author: {
+    name: 'Jhonathan Campos',
+    role: 'Founder',
+    image: { src: imageJhonathanCampos },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+<Typography className="[&_p]:text-justify">
+
+<div className="my-10 max-sm:-mx-6">
+  <img
+    src={anonymisationImage.src}
+    alt="Redacted records moving through a governed AI pipeline before model training"
+    className="w-full rounded-4xl object-cover"
+  />
+</div>
+
+*EDPB Guidelines 02/2026 in practice, the assessment that decides what enters the AI pipeline*
+
+**Sections:** [Legal test](#legal-test) · [Record isolation, linkage and inference](#record-isolation-linkage-and-inference) · [Web scraping](#web-scraping) · [Decision record](#decision-record) · [Consultation and next steps](#consultation-and-next-steps)
+
+Anonymisation has been engineering work for as long as teams have prepared real datasets for analytics and machine learning. Deleting names and account numbers is the easy part, while the substance lies in quasi-identifiers, linkage risk and the probability that a person can still be singled out from what remains. Competent privacy engineers have treated it that way for years. What changed this week is the legal visibility of that practice, since on 7 July 2026 the European Data Protection Board adopted Guidelines 02/2026 on Anonymisation, together with companion guidelines on web scraping in the context of generative AI, both open for public consultation until 30 October 2026.
+
+The guidelines are the Board's first full statement on the subject since the Article 29 Working Party's Opinion 05/2014. They incorporate the Court of Justice's ruling of 4 September 2025 in C-413/23 P *EDPS v SRB* into a broader entity-relative analysis, under which the anonymity of the same data may differ depending on the relevant entity's perspective. The operative core is a three-part framework, where data can be safely considered anonymous if no record can be isolated, no linkage to other data about the same person is possible, and no specific inference about an identified or identifiable person can be drawn. Where any criterion fails, the guidelines require further analysis to determine whether the data may nevertheless be anonymous in the circumstances.
+
+For teams building AI systems, the consequence lands in one place, the data preparation phase. The guidelines confirm that anonymisation is an assessment with defined criteria, a documented method, testing obligations and a duty to reassess. Every one of those steps has to be completed before the first training run, because a model shaped by identifiable examples cannot be reshaped by paperwork afterwards.
+
+To keep the analysis concrete, I will follow one case through the whole text, a mid-size insurer wants to fine-tune a language model to triage customer claims tickets. The tickets combine structured metadata, such as postcode, claim type and timestamps, with free-text descriptions written by customers. An external vendor will run the fine-tuning. The insurer's question is whether the prepared dataset leaves the GDPR's scope before it leaves the building.
+
+<a id="legal-test" />
+
+## The legal test and the entity-relative perspective
+
+The starting point is Article 4(1) GDPR read with Recital 26, under which information is personal data where it relates to an identified or identifiable natural person, taking into account all the means reasonably likely to be used for identification. The guidelines follow C-434/16 *Nowak* on when information relates to a person and C-582/14 *Breyer* on means available through lawful channels, and they build the *SRB* ruling into the entity-relative frame described above. The same dataset can therefore be personal data in one entity's hands and anonymous in another's, and the assessment must state whose hands it examined.
+
+The Board offers two routes through that assessment. Under the simplified approach, the controller treats the data as personal wherever meaningful uncertainty remains. The Board recognises that this can go beyond the legal standard, since the controller may treat data as personal even where it would be anonymous for some relevant entities, and the approach buys confidence at the price of scope. Under the contextual approach, the controller assesses identifiability for a specific recipient in a specific environment, which requires evidence about that recipient's access rights, auxiliary data and realistic capabilities. My expectation is that the simplified approach will dominate practice, because the contextual route demands evidence about recipients that most controllers cannot produce on demand. The Board has also cautioned against relying on a recipient's supposed lack of motivation to re-identify, which removes the argument controllers reached for most often.
+
+Applied to the insurer, the fine-tuning vendor never sees the policy administration system, but the insurer still holds it, together with the mapping between ticket IDs and policyholders. Because the vendor processes on the insurer's behalf, the assessment runs through the insurer's perspective, and the guidelines cross-refer to Guidelines 07/2020 on controller and processor for this allocation. As long as the insurer retains the join keys, the tickets remain personal data in the pipeline regardless of what the vendor can see. If the insurer instead wanted to release a transformed extract to an independent research partner, the contextual approach could support a different answer, provided the file documents that partner's actual environment and the transformation survives the three criteria below.
+
+<a id="record-isolation-linkage-and-inference" />
+
+## Record isolation, linkage and inference in the ticket dataset
+
+**Record isolation.** The structured metadata falls to classic privacy engineering. A postcode, a claim type and a timestamp are individually harmless, but together they can isolate one policyholder in a rural area. Techniques such as k-anonymity may be useful for structured metadata, since they force the team to ask whether each combination of quasi-identifiers covers enough people, although they are only an entry point. The EDPB's test is broader, covering isolation, linkage and inference, which is why narrative text, embeddings, synthetic outputs and trained models need different forms of assessment. A group of five records that all share the value "arson investigation pending" satisfies k=5 and still tells the vendor something sensitive about each member. The free text is harder. A customer sentence describing a house fire in a named village during a specific week isolates its author more reliably than the deleted customer ID ever did. Automated redaction catches names and account numbers, while chronology and context escape it, and chronology is what identifies people in narrative data. This layer needs sampled human review with documented criteria.
+
+**Linkage.** AI datasets are assembled, and assembly is where linkage risk concentrates. The ticket extract may look self-contained until someone joins it to the CRM export prepared for a churn model six months earlier. Embeddings deserve specific attention here, since a vector index built over the tickets preserves semantic proximity to the source text, and a similarity search over that index can reconnect fragments that redaction separated. The guidelines' linkage criterion covers this in substance, and in my view teams should treat the embedding store as part of the dataset under assessment, with the same access controls and the same test plan.
+
+**Inference.** This criterion carries the AI weight, and it is where I would spend the assessment budget. The Board already signalled in Opinion 28/2024 on AI models that a model trained on personal data cannot be assumed anonymous, and Guidelines 02/2026 generalise the point by recognising that prohibited inferences can arise from record-level data, from aggregates, from trained models and from synthetic outputs, including through prompting. For the insurer, the operational question is whether the fine-tuned model has memorised rare tickets. The guidelines recognise these attack surfaces without prescribing specific tests, so the choice of protocol is itself a judgement the record has to defend. A defensible protocol may include planting canary records in the training set and attempting to extract them by prompting, running membership-inference tests against a held-out sample of real tickets, and searching for near-duplicates between generated outputs and the training corpus at the sampling settings the product will actually use. Each element produces a measurable result that belongs in the assessment file.
+
+Synthetic data enters at the same gate. If the insurer generates artificial tickets from the real corpus to hand the vendor, the generator was still trained on the rare fire claim, and generators reproduce outliers. The synthetic set earns anonymous status by passing the same three criteria, and only then.
+
+This section is where the professional gap shows. A lawyer who cannot read a membership-inference report cannot close the assessment, and an engineer who has never worked through Recital 26 cannot say what the report must demonstrate. The conclusion belongs to whoever can do both, and building that bridge is the core of my own practice. I came to AI governance from software engineering and from compliance law, and the anonymisation file is the single document where those two trainings have to agree.
+
+<a id="web-scraping" />
+
+## Web scraping and the intake side of the pipeline
+
+The companion guidelines matter to the same scenario the moment the insurer decides its tickets are too few and supplements them with complaints scraped from consumer forums. The Board treats scraping as GDPR-relevant processing whenever it involves personal data operations such as collection, storage and retrieval, and public availability changes nothing about that threshold question. The guidelines put particular weight on purpose limitation and transparency, and they are unusually operational on accuracy, with reliable sources, recorded timestamps and validation before training.
+
+Many private controllers will look to Article 6(1)(f) as the legal basis for this collection, and for them anonymisation earns its keep twice. Filtering and transforming personal data at intake reduces what must be justified in the balancing test, and a documented, tested anonymisation step is itself a safeguard the balancing test can credit. Sequencing decides how much credit, since the filter has to run before the scraped material reaches the training corpus, because the legitimate-interest analysis assesses the processing as designed, and a design that ingests first and cleans later is the design the regulator will read.
+
+<a id="decision-record" />
+
+## The decision record and the AI Act connection
+
+The guidelines are explicit that the anonymisation process, including the testing of the supposedly anonymous outputs, must be documented, and that the documentation must be retained after the process completes. They are equally explicit that a security incident can trigger a reassessment of anonymity, which means that if the insurer's mapping tables leak, the extract handed to the research partner may change legal status overnight, and the file has to show who reassesses and when.
+
+The deliverable, in my practice, is a single decision record signed before training starts. It identifies the source data and purpose, the method with its test results, and the residual risk with a named owner and defined reassessment triggers. A short record with test evidence behind it carries more weight than a lengthy policy, because a policy states an intention while the record shows what was actually done.
+
+The same record supports the AI Act file. Article 10 requires high-risk systems to rest on documented data governance, and the anonymisation record contributes the provenance, preparation and residual privacy risk evidence that assessment needs. It does not replace the broader Article 10 exercise, which also covers representativeness, possible biases and the suitability of the data for the intended purpose. Built at the right point in the lifecycle, one piece of evidence serves both regimes, while evidence built late has to be reconstructed from repository history under deadline.
+
+<a id="consultation-and-next-steps" />
+
+## What the consultation should change, and what to do meanwhile
+
+The draft is open for comment until 30 October 2026, and the inference criterion applied to generative models is where the final text can still move. As drafted, a strict reading places nearly every large model trained on human text on the personal-data side of the line. Developers who consider that outcome wrong should say so in the consultation with technical evidence, because the Board has shown, through its December 2025 stakeholder event and the sprint team that produced this draft, that it responds to worked examples over position statements.
+
+My recommendation for the interim is narrower and more useful than waiting. Pick one live pipeline, run the three-criteria assessment against it now, and write the decision record as if the draft were final. The gaps the exercise exposes are simultaneously your compliance backlog and your consultation response. This is the work I do with clients, taking Guidelines 02/2026, Opinion 28/2024 and Article 10 of the AI Act and turning them into pipeline controls that an engineer can implement, a tester can measure and a lawyer can sign. If your model is scheduled to train before 30 October, the assessment should be scheduled first.
+
+</Typography>
